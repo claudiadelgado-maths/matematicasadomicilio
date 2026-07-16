@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <circle cx="32" cy="32" r="32" fill="#0b0b0b"/>
-  <path fill="#fff" d="m32 12.5 5.3 10.8 11.9 1.8-8.6 8.4 2 11.9L32 39.8l-10.6 5.6 2-11.9-8.6-8.4 11.9-1.8L32 12.5Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="favicon-title">
+  <title id="favicon-title">Matemáticas a Domicilio</title>
+  <circle cx="32" cy="32" r="28" fill="#000"/>
+  <g transform="translate(32 32) scale(8)">
+    <path fill="#fff" d="M0-3 .674-.927 2.853-.927 1.09.354 1.763 2.427 0 1.146-1.763 2.427-1.09.354-2.853-.927-.674-.927Z"/>
+    <path fill="#000" transform="scale(.5)" d="M0-3 .674-.927 2.853-.927 1.09.354 1.763 2.427 0 1.146-1.763 2.427-1.09.354-2.853-.927-.674-.927Z"/>
+  </g>
 </svg>
