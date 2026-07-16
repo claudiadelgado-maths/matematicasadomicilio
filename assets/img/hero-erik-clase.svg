@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 920" role="img" aria-labelledby="title desc">
+  <title id="title">Marcador para fotografía de Erik impartiendo una asesoría</title>
+  <desc id="desc">Composición monocromática provisional que será reemplazada por una fotografía.</desc>
+  <rect width="800" height="920" fill="#efefed"/>
+  <rect x="56" y="56" width="688" height="808" rx="4" fill="#f9f9f7" stroke="#c9c9c5" stroke-width="2"/>
+  <circle cx="400" cy="296" r="98" fill="#dadad6"/>
+  <path d="M211 677c16-139 84-225 189-225s173 86 189 225" fill="#dadad6"/>
+  <path d="M171 698h458M218 747h364" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  <path d="m611 151 13 27 30 4-22 21 5 30-26-14-27 14 5-30-21-21 30-4 13-27Z" fill="#111"/>
+  <text x="400" y="811" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="2">FOTOGRAFÍA PROVISIONAL</text>
+  <text x="400" y="839" text-anchor="middle" fill="#777" font-family="Segoe UI,Arial,sans-serif" font-size="15">Erik impartiendo una asesoría individual</text>
+</svg>

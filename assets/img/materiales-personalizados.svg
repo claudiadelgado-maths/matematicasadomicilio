@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Marcador para fotografía de materiales personalizados</title>
+  <desc id="desc">Composición monocromática provisional que será reemplazada por una fotografía.</desc>
+  <rect width="900" height="700" fill="#eeeeeb"/>
+  <rect x="48" y="48" width="804" height="604" fill="#fafaf8" stroke="#cacac6" stroke-width="2"/>
+  <g transform="rotate(-6 324 319)">
+    <rect x="183" y="137" width="307" height="382" fill="#fff" stroke="#111" stroke-width="4"/>
+    <path d="M229 211h212M229 255h167M229 299h212M229 343h139M229 387h212M229 431h175" stroke="#aaa" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="443" cy="254" r="12" fill="none" stroke="#111" stroke-width="4"/>
+  </g>
+  <g transform="rotate(7 586 340)">
+    <rect x="451" y="166" width="270" height="348" fill="#e2e2de" stroke="#111" stroke-width="4"/>
+    <path d="m502 249 25 25 48-60M500 333h164M500 376h127M500 419h147" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="450" y="591" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="17" letter-spacing="2">FOTOGRAFÍA PROVISIONAL</text>
+  <text x="450" y="618" text-anchor="middle" fill="#777" font-family="Segoe UI,Arial,sans-serif" font-size="14">Ejercicios y materiales preparados para el estudiante</text>
+</svg>
