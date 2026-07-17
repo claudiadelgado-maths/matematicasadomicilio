@@ -29,10 +29,7 @@ Todas las rutas son relativas, por lo que el sitio funciona aunque cambie el nom
 ```text
 .
 ├── index.html
-├── servicios.html
-├── metodologia.html
 ├── recursos.html
-├── sobre-erik.html
 ├── contacto.html
 ├── 404.html
 ├── .nojekyll
