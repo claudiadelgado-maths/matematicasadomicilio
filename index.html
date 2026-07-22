@@ -11,7 +11,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <link rel="icon" href="assets/img/favicon.svg?v=20260716-brand1" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260717-cita1">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260722-navpanel2">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
@@ -26,12 +26,12 @@
       </button>
       <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu>
         <ul class="nav-list">
-          <li><a href="index.html" aria-current="page">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html?v=20260722-header2" aria-current="page">Inicio</a></li>
+          <li><a href="nosotros.html?v=20260722-header2">Nosotros</a></li>
+          <li><a href="biblioteca.html?v=20260722-header2">Biblioteca</a></li>
+          <li><a href="usuarios.html?v=20260722-header2">Usuarios</a></li>
+          <li><a href="contacto.html?v=20260722-header2">Contacto</a></li>
         </ul>
-        <a class="button button-compact" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer">Agendar por WhatsApp</a>
       </nav>
     </div>
   </header>
@@ -41,7 +41,7 @@
       <div class="container home-hero-inner">
         <img class="home-hero-brand" src="assets/img/logo-estrella.svg?v=20260716-logo3" width="1020" height="240" alt="Matemáticas a Domicilio">
         <p class="home-hero-subtitle">Asesorías particulares de matemáticas</p>
-        <h1 class="home-hero-title" id="hero-title"><span>Haz de las matemáticas</span><span>una herramienta de utilidad.</span></h1>
+        <h1 class="home-hero-title" id="hero-title"><span>Haz de las matemáticas</span><span class="home-hero-title-light">una herramienta de utilidad.</span></h1>
         <p class="home-hero-description">Ayudamos a estudiantes de secundaria, preparatoria y universidad a obtener conocimientos matemáticos mediante asesorías particulares a domicilio, atención personalizada, materiales adaptados y herramientas tecnológicas modernas. Nuestro propósito es que cada estudiante sea capaz de crear herramientas matemáticas que le sirvan en cualquier momento de su vida.</p>
         <a class="button home-hero-button" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.84 9.84 0 0 0-8.42 14.92L2.05 22l5.2-1.53A9.94 9.94 0 1 0 12.04 2Zm0 17.99a8 8 0 0 1-4.09-1.12l-.29-.17-3.09.91.92-3-.19-.31A8 8 0 1 1 12.04 20Zm4.39-5.99c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19a7.24 7.24 0 0 1-1.34-1.67c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46a.88.88 0 0 0-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg>
@@ -56,148 +56,90 @@
         <p class="philosophy-intro">Esto es lo que pensamos sobre las matemáticas y el aprendizaje:</p>
         <div class="philosophy-list">
           <article class="philosophy-card">
-            <div class="philosophy-card-header">
-              <h3 class="philosophy-question">¿Qué son las matemáticas?</h3>
-              <div class="philosophy-icon" aria-hidden="true">
-                <svg viewBox="0 0 140 140" fill="none">
-                  <circle cx="57" cy="55" r="37" stroke="currentColor" stroke-width="4"/>
-                  <path d="M83 82 118 117" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-                  <path d="M79 78 88 87" stroke="#fff" stroke-width="4"/>
-                  <text x="57" y="70" fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="52" text-anchor="middle">π</text>
-                </svg>
-              </div>
+            <div class="philosophy-icon" aria-hidden="true">
+              <svg viewBox="0 0 140 140" fill="none">
+                <circle cx="57" cy="55" r="37" stroke="currentColor" stroke-width="4"/>
+                <path d="M83 82 118 117" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                <path d="M79 78 88 87" stroke="#fff" stroke-width="4"/>
+                <text x="57" y="70" fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="52" text-anchor="middle">π</text>
+              </svg>
             </div>
-            <p class="philosophy-answer">Para nosotros las matemáticas son mucho más que una asignatura escolar. Son una forma de comprender el mundo, resolver problemas y construir herramientas que permitan afrontar con mayor libertad los desafíos de la vida.</p>
-          </article>
-
-          <article class="philosophy-card philosophy-card-reverse">
-            <div class="philosophy-card-header">
-              <div class="philosophy-icon" aria-hidden="true">
-                <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M24 19h67l24 24v79H24Z"/>
-                  <path d="M91 19v24h24"/>
-                  <path d="M51 62c0-13 9-22 23-22 13 0 22 8 22 19 0 10-6 15-15 20-8 5-11 10-11 19"/>
-                  <circle cx="70" cy="110" r="2.8" fill="currentColor" stroke="none"/>
-                  <path d="m107 12 16 16-49 49-20 5 5-20Z" fill="#fff"/>
-                  <path d="m59 62 15 15M107 12l16 16M54 82l6-20 14 15Z"/>
-                  <path d="m54 82 8-2-6-6Z" fill="currentColor" stroke="none"/>
-                </svg>
-              </div>
-              <h3 class="philosophy-question">¿Para qué sirven las matemáticas?</h3>
-            </div>
-            <p class="philosophy-answer">Las matemáticas sirven para crear soluciones y tomar decisiones en la vida cotidiana. Las usamos al cocinar, al pagar las cuentas, al mirar el reloj y al realizar muchas otras actividades, desde las más simples hasta las más complejas.</p>
+            <p class="philosophy-answer">Para nosotros, las matemáticas son mucho más que una asignatura escolar. Son una forma de comprender el mundo, resolver problemas y construir herramientas que nos permitan afrontar con mayor libertad los desafíos de la vida.</p>
           </article>
 
           <article class="philosophy-card">
-            <div class="philosophy-card-header">
-              <h3 class="philosophy-question">¿Por qué Matemáticas a Domicilio?</h3>
-              <div class="philosophy-icon" aria-hidden="true">
-                <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m14 64 56-49 56 49"/>
-                  <path d="M27 58v67h86V58M93 35V20h15v28"/>
-                  <path d="M70 105 48 85c-15-14 7-34 22-15 15-19 37 1 22 15Z"/>
-                </svg>
-              </div>
+            <div class="philosophy-icon" aria-hidden="true">
+              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M70 12v10M15 22h110"/>
+                <rect x="18" y="22" width="104" height="72" rx="3"/>
+                <circle cx="43" cy="58" r="17"/>
+                <path d="M43 41v17h17"/>
+                <path d="M73 79h39M77 79V68h8v11M90 79V59h8v20M103 79V50h8v29"/>
+                <path d="m75 58 12-11 10 7 15-16M104 38h8v8"/>
+                <path d="M70 94v17M70 111l-27 22M70 111l27 22"/>
+              </svg>
             </div>
-            <p class="philosophy-answer">Elegimos Matemáticas a Domicilio porque creemos que el aprendizaje ocurre mejor cuando el estudiante se encuentra en un entorno donde se siente cómodo, seguro y acompañado. Para nosotros, el mejor lugar siempre será el hogar.</p>
+            <p class="philosophy-answer">Creemos que las matemáticas sirven para crear soluciones y tomar decisiones en la vida cotidiana. Las usamos al cocinar, al pagar las cuentas, al mirar el reloj y al realizar muchas otras actividades, desde las más simples hasta las más complejas.</p>
+          </article>
+
+          <article class="philosophy-card">
+            <div class="philosophy-icon" aria-hidden="true">
+              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m14 64 56-49 56 49"/>
+                <path d="M27 58v67h86V58M93 35V20h15v28"/>
+                <path d="M70 105 48 85c-15-14 7-34 22-15 15-19 37 1 22 15Z"/>
+              </svg>
+            </div>
+            <p class="philosophy-answer">Elegimos <strong>Matemáticas a Domicilio</strong> porque creemos que el aprendizaje ocurre mejor cuando el estudiante se encuentra en un entorno donde se siente cómodo, seguro y acompañado. Para nosotros, el mejor lugar para aprender siempre será el hogar.</p>
           </article>
         </div>
         <a class="text-link philosophy-more" href="nosotros.html">Conoce más sobre nosotros</a>
       </div>
     </section>
 
+    <section class="home-resources-section" id="recursos" aria-labelledby="recursos-inicio-titulo">
+      <div class="container">
+        <h2 class="home-resources-title" id="recursos-inicio-titulo">Recursos</h2>
+        <p class="home-resources-intro">Hemos diseñado recursos para ayudar al público en general y a nuestros estudiantes.</p>
+
+        <div class="home-resources-grid">
+          <article class="home-resource-option">
+            <div class="home-resource-icon" aria-hidden="true">
+              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 25h30v92H18ZM48 19h34v98H48ZM82 31h40v86H82Z"/>
+                <path d="M25 39h16M25 103h16M56 34h18M56 101h18M91 45h22M91 102h22M13 117h114"/>
+              </svg>
+            </div>
+            <a class="text-link home-resource-link" href="biblioteca.html">Ver biblioteca</a>
+            <p class="home-resource-audience">Para todos</p>
+          </article>
+
+          <article class="home-resource-option">
+            <div class="home-resource-icon" aria-hidden="true">
+              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="70" cy="42" r="23"/>
+                <path d="M22 123V92l29-18c11 11 27 11 38 0l29 18v31"/>
+              </svg>
+            </div>
+            <a class="text-link home-resource-link" href="usuarios.html">Ver usuarios</a>
+            <p class="home-resource-audience">Para alumnos</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="services-section" id="servicios" aria-labelledby="servicios-titulo">
       <div class="container">
         <h2 class="services-title" id="servicios-titulo">Servicios</h2>
+        <div class="services-copy">
+          <p>En nuestra experiencia, la mayoría de los estudiantes solicitan una asesoría de matemáticas por primera vez porque necesitan resolver una tarea, preparar un examen o completar un proyecto de una asignatura que les está resultando difícil.</p>
+          <p>Con frecuencia, estas dificultades no se deben únicamente al tema actual, sino a que existen conceptos de cursos anteriores que aún no han sido comprendidos por completo. Por ello, nuestro trabajo no consiste únicamente en resolver un problema inmediato, sino en ayudar al estudiante a construir una base sólida que le permita aprender con mayor seguridad.</p>
 
-        <div class="services-resource-invite">
-          <p>Antes de mencionar los servicios te invitamos a visitar los diversos recursos digitales que tenemos disponibles para todos.</p>
-          <a class="text-link services-resource-link" href="recursos.html">Visita los recursos</a>
+          <h3>Asesorías personalizadas de matemáticas</h3>
+          <p>Ofrecemos sesiones de 2 horas y media, cuidadosamente planificadas y adaptadas a las necesidades de cada estudiante, sin importar el tema o la asignatura.</p>
+          <p>Siempre que sea posible, la primera sesión está dedicada a conocer al alumno. Buscamos comprender sus intereses, fortalezas, dificultades, objetivos, los temas que está estudiando y su nivel actual de conocimientos. Esta información nos permite diseñar un plan de aprendizaje y desarrollar materiales personalizados para las sesiones posteriores.</p>
+          <p>Nuestro objetivo es que todos nuestros alumnos desarrollen la confianza y los conocimientos necesarios para utilizar las matemáticas con seguridad, tanto en la escuela como en su vida diaria.</p>
         </div>
-
-        <div class="services-introduction">
-          <p>Las asesorías se organizan por sesiones con duración de 2 horas y media. La primera sesión siempre es una sesión diagnóstico para determinar el nivel matemático del estudiante y diseñar los materiales personalizados para las sesiones posteriores. Si el alumno necesita repasar temas específicos de forma urgente, la sesión diagnóstico se pospone.</p>
-          <p class="services-chooser">En cada sesión se pueden elegir los siguientes servicios.</p>
-        </div>
-
-        <div class="services-menu">
-          <article class="service-menu-item">
-            <div class="service-menu-icon" aria-hidden="true">
-              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 13h62l22 22v91H21Z"/>
-                <path d="M83 13v22h22"/>
-                <path d="m35 49 5 5 9-11M56 49h22M35 70l5 5 9-11M56 70h22M35 91l5 5 9-11M56 91h13"/>
-                <text x="88" y="103" fill="currentColor" stroke="none" font-family="Arial, sans-serif" font-size="26" font-weight="800" text-anchor="middle">100</text>
-                <path d="M69 109h38M73 115h32"/>
-              </svg>
-            </div>
-            <div>
-              <h3>Apoyo con tareas y exámenes</h3>
-              <p>Orientado para trabajar temas específicos de una tarea o examen.</p>
-            </div>
-          </article>
-
-          <article class="service-menu-item">
-            <div class="service-menu-icon" aria-hidden="true">
-              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M47 42V20c0-7 10-7 10 0v22M66 42V14c0-7 10-7 10 0v28M85 43V24c0-7 10-7 10 0v24"/>
-                <path d="M31 67c0-18 14-31 32-31h15c18 0 32 13 32 31v54H31Z"/>
-                <path d="M31 72h79M47 121V88h47v33M47 96h47M22 70v37M119 70v37M22 79h9M110 79h9"/>
-              </svg>
-            </div>
-            <div>
-              <h3>Acompañamiento escolar</h3>
-              <p>Orientado para profundizar en los temas de una asignatura escolar.</p>
-            </div>
-          </article>
-
-          <article class="service-menu-item">
-            <div class="service-menu-icon" aria-hidden="true">
-              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 93h69v27H16Z"/>
-                <path d="M25 101h51M25 112h42"/>
-                <path d="M21 61h72v26H21Z"/>
-                <path d="M32 69h50M32 79h42"/>
-                <path d="m89 27 24 7-23 78-24-7Z"/>
-                <path d="m94 39 11 3M90 52l11 3M87 65l10 3M83 78l10 3"/>
-              </svg>
-            </div>
-            <div>
-              <h3>Regularización matemática</h3>
-              <p>Orientado para repasar las bases matemáticas y sus aplicaciones.</p>
-            </div>
-          </article>
-
-          <article class="service-menu-item">
-            <div class="service-menu-icon service-menu-icon-cube" aria-hidden="true">
-              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="square" stroke-linejoin="miter">
-                <path d="m35 40 35-20 35 20M35 50l35-20 35 20M35 60l35-20 35 20"/>
-                <path d="M35 60v40l35 20M46 54v40l24 14M58 47v39l12 7"/>
-                <path d="M105 60v40l-35 20M94 54v40l-24 14M82 47v39l-12 7"/>
-              </svg>
-            </div>
-            <div>
-              <h3>Cursos para exámenes de admisión</h3>
-              <p>Orientado para estudiar los temas matemáticos del EXANI I y II.</p>
-            </div>
-          </article>
-
-          <article class="service-menu-item">
-            <div class="service-menu-icon" aria-hidden="true">
-              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 43h104v76H18Z"/>
-                <path d="M47 43V27h46v16M18 66h104M36 61v11M104 61v11"/>
-                <text x="70" y="98" fill="currentColor" stroke="none" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">Math</text>
-              </svg>
-            </div>
-            <div>
-              <h3>Servicios personalizados</h3>
-              <p>Orientado para quienes buscan desarrollar un proyecto matemático.</p>
-            </div>
-          </article>
-        </div>
-
-        <p class="services-note">Para tener una experiencia completa de los servicios se recomienda que los alumnos cuenten con un área de trabajo espaciosa y tranquila, útiles escolares y materiales de referencia para mirar los temas y métodos exactos que están aprendiendo en la escuela. También se recomienda en gran medida que cuenten con una computadora y acceso a internet. En caso de no tener alguna de estas recomendaciones, simplemente avisar y el docente se adapta a los recursos disponibles.</p>
       </div>
     </section>
 
@@ -213,6 +155,17 @@
           <p class="price-note">Asesoría de matemáticas en Mérida, Yucatán.</p>
           <a class="button" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer">Consultar disponibilidad</a>
         </div>
+      </div>
+    </section>
+
+    <section class="community-section" aria-labelledby="comunidad-titulo">
+      <div class="container">
+        <h2 class="community-title" id="comunidad-titulo">Comunidad</h2>
+        <div class="community-copy">
+          <p>Si eres un profesor que da clases de matemáticas a domicilio, un alumno que recibe clases a domicilio, un padre de familia o simplemente alguien interesado en este tema, te invitamos a unirte a nuestra comunidad de WhatsApp.</p>
+          <p>En este espacio podrás compartir experiencias, anécdotas, consejos y recursos relacionados con las matemáticas a domicilio. Para mantener un ambiente agradable para todos, únicamente te pedimos respetar las reglas de la comunidad.</p>
+        </div>
+        <a class="text-link community-link" href="https://chat.whatsapp.com/HI4GOdKd2vAJEzUgWWCnJd?s=cl&amp;p=a&amp;ilr=1&amp;amv=3" target="_blank" rel="noopener noreferrer">Ir a Comunidad | Matemáticas a Domicilio | Yucatán ★</a>
       </div>
     </section>
 
@@ -238,7 +191,10 @@
           <p><strong>“La única manera de aprender matemáticas es haciendo matemáticas.”</strong></p>
           <cite>— Paul Halmos</cite>
         </blockquote>
-        <a class="button" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer">Escribemos por WhatsApp 999 129 34 97</a>
+        <a class="button final-cta-button" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer">
+          <strong>¡Empieza hoy mismo!</strong>
+          <span>999 129 34 97</span>
+        </a>
       </div>
     </section>
   </main>
@@ -249,7 +205,7 @@
         <a class="brand" href="index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="assets/img/logo-estrella.svg?v=20260716-logo3" width="204" height="48" alt=""></a>
         <p>Asesorías particulares de matemáticas</p>
       </div>
-      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="recursos.html">Recursos</a></li><li><a href="contacto.html">Contacto</a></li></ul></nav>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="biblioteca.html">Biblioteca</a></li><li><a href="usuarios.html">Usuarios</a></li><li><a href="contacto.html">Contacto</a></li></ul></nav>
     </div>
     <div class="container footer-legal">
       <p class="footer-copyright">© 2026 Matemáticas a Domicilio</p>
@@ -257,6 +213,8 @@
       <p class="footer-location">Mérida, Yucatán, México</p>
     </div>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 999 129 3497"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.84 9.84 0 0 0-8.42 14.92L2.05 22l5.2-1.53A9.94 9.94 0 1 0 12.04 2Zm0 17.99a8 8 0 0 1-4.09-1.12l-.29-.17-3.09.91.92-3-.19-.31A8 8 0 1 1 12.04 20Zm4.39-5.99c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19a7.24 7.24 0 0 1-1.34-1.67c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46a.88.88 0 0 0-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg></a>
 
 </body>
 </html>
