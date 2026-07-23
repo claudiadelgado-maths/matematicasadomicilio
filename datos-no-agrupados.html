@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datos no agrupados | Alejandrina | Matemáticas a Domicilio</title>
+  <meta name="description" content="Teoría, ejercicio, calculadora y juego para aprender estadística con datos no agrupados.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Datos no agrupados | Matemáticas a Domicilio">
+  <meta property="og:description" content="Aprende moda, mediana, media y tablas de frecuencias.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <link rel="icon" href="assets/img/favicon.svg?v=20260716-brand1" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260723-usuarios1">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/usuarios.js?v=20260723-usuarios1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="assets/img/logo-estrella.svg?v=20260716-logo3" width="204" height="48" alt=""></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu>
+        <ul class="nav-list">
+          <li><a href="index.html?v=20260722-header2">Inicio</a></li>
+          <li><a href="nosotros.html?v=20260723-nosotros2">Nosotros</a></li>
+          <li><a href="biblioteca.html?v=20260723-recursos1">Biblioteca</a></li>
+          <li><a href="usuarios.html?v=20260723-usuarios1" aria-current="page">Usuarios</a></li>
+          <li><a href="contacto.html?v=20260723-contacto1">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="learning-site user-site">
+    <nav class="user-nav-shell" aria-label="Espacios de Usuarios">
+      <div class="container">
+        <a href="alejandrina.html?v=20260723-usuarios1">← Alejandrina</a>
+        <div>
+          <a href="jose.html?v=20260723-usuarios1">José</a>
+          <a href="alejandrina.html?v=20260723-usuarios1" aria-current="page">Alejandrina</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="learning-page-hero statistics-hero">
+      <div class="container">
+        <p class="eyebrow">Estadística</p>
+        <h1>Datos no agrupados</h1>
+        <p class="lead">Aprende a organizar una lista de datos y a encontrar su frecuencia, moda, mediana y media o promedio.</p>
+        <nav class="statistics-nav" aria-label="Apartados de Datos no agrupados">
+          <a href="#teoria">Teoría</a>
+          <a href="#ejercicio">Ejercicio</a>
+          <a href="#calculadora">Calculadora</a>
+          <a href="#juego">Juego</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="statistics-section statistics-section-surface" id="teoria" aria-labelledby="statistics-theory-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>1 · Teoría</p>
+          <h2 id="statistics-theory-title">Comprender los datos</h2>
+          <p>Los datos no agrupados son valores que se presentan individualmente, tal como fueron obtenidos, sin colocarlos dentro de intervalos o grupos.</p>
+        </header>
+
+        <div class="data-example-strip" aria-label="Ejemplo de ocho calificaciones">
+          <span>8</span><span>7</span><span>9</span><span>8</span><span>10</span><span>6</span><span>8</span><span>7</span>
+        </div>
+        <p class="data-example-caption">Estas son las calificaciones de ocho estudiantes. Cada número es un dato.</p>
+
+        <div class="statistics-editorial-grid">
+          <article>
+            <h3>¿Qué son los datos?</h3>
+            <p>Son valores o características obtenidos mediante observaciones, mediciones, preguntas o conteos.</p>
+            <ul>
+              <li>Las edades de un grupo de personas.</li>
+              <li>Las calificaciones de una clase.</li>
+              <li>La cantidad de mascotas de cada estudiante.</li>
+              <li>Los libros leídos durante un mes.</li>
+              <li>Las reproducciones de una canción.</li>
+              <li>Los minutos necesarios para llegar a la escuela.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>¿Para qué sirven?</h3>
+            <p>Permiten describir una situación, comparar resultados, identificar patrones, responder preguntas y tomar decisiones.</p>
+            <p>Por ejemplo, si conocemos las calificaciones de un estudiante durante el semestre, podemos calcular su promedio y observar en qué materias necesita mejorar.</p>
+          </article>
+        </div>
+
+        <section class="frequency-explanation" aria-labelledby="frequency-theory-title">
+          <div>
+            <h3 id="frequency-theory-title">Tabla de frecuencias</h3>
+            <p>Una tabla de frecuencias organiza una lista y muestra cuántas veces aparece cada valor. La suma de las frecuencias debe coincidir con la cantidad total de datos.</p>
+            <p class="formula-line">Datos: 2, 3, 3, 4, 4, 4, 5</p>
+            <p><strong>Comprobación:</strong> 1 + 2 + 3 + 1 = 7 frecuencias, y la lista contiene 7 datos.</p>
+          </div>
+          <table class="statistics-table">
+            <thead><tr><th>Dato</th><th>Frecuencia</th></tr></thead>
+            <tbody>
+              <tr><td>2</td><td>1</td></tr>
+              <tr><td>3</td><td>2</td></tr>
+              <tr><td>4</td><td>3</td></tr>
+              <tr><td>5</td><td>1</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <div class="statistics-concepts">
+          <article>
+            <span class="concept-symbol" aria-hidden="true">↻</span>
+            <h3>Moda</h3>
+            <p>Es el dato que aparece con mayor frecuencia. En 2, 3, 3, 4, 4, 4, 5 la moda es <strong>4</strong> porque aparece tres veces.</p>
+            <p>Puede haber varias modas si diferentes valores comparten la frecuencia más alta. Si todos aparecen la misma cantidad de veces, no existe una moda única.</p>
+            <p>Cuando los datos son categorías, la categoría con mayor frecuencia también es la moda.</p>
+          </article>
+          <article class="mean-concept">
+            <span class="concept-symbol" aria-hidden="true">x̄</span>
+            <h3>Media o promedio</h3>
+            <p class="mean-equals">Media = promedio</p>
+            <p>Se suman todos los datos y el resultado se divide entre la cantidad de datos.</p>
+            <p class="formula-line">Media = suma de los datos ÷ cantidad de datos</p>
+            <div class="worked-example">
+              <h4>Ejemplo: 4, 6, 8</h4>
+              <p><span>Suma</span> 4 + 6 + 8 = 18</p>
+              <p><span>Cantidad</span> 3 datos</p>
+              <p class="worked-result"><span>Media o promedio</span> 18 ÷ 3 = 6</p>
+            </div>
+          </article>
+          <article>
+            <span class="concept-symbol" aria-hidden="true">↔</span>
+            <h3>Mediana</h3>
+            <p>Es el dato que queda en medio después de ordenar los valores de menor a mayor.</p>
+            <div class="worked-example">
+              <h4>Cantidad impar</h4>
+              <p><span>Datos</span> 7, 2, 5, 9, 4</p>
+              <p><span>Ordenados</span> 2, 4, <strong>5</strong>, 7, 9</p>
+              <p class="worked-result"><span>Mediana</span> 5</p>
+            </div>
+            <div class="worked-example">
+              <h4>Cantidad par</h4>
+              <p><span>Ordenados</span> 2, <strong>4, 6</strong>, 8</p>
+              <p class="worked-result"><span>Mediana</span> (4 + 6) ÷ 2 = 5</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="statistics-summary">
+          <article><strong>Moda</strong><span>El dato que más se repite.</span></article>
+          <article><strong>Mediana</strong><span>El dato central después de ordenar.</span></article>
+          <article><strong>Media o promedio</strong><span>La suma dividida entre la cantidad de datos.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics-section" id="ejercicio" aria-labelledby="statistics-exercise-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>2 · Ejercicio</p>
+          <h2 id="statistics-exercise-title">Organiza y analiza</h2>
+          <p>Completa la tabla de frecuencias y calcula la moda, la mediana y la media o promedio. Los nueve datos siempre tienen una sola moda y una media entera.</p>
+        </header>
+
+        <div class="statistics-dataset" data-exercise-dataset aria-live="polite"></div>
+
+        <form class="statistics-exercise-form" id="statistics-exercise-form" novalidate>
+          <div class="statistics-exercise-grid">
+            <div>
+              <h3>Tabla de frecuencias</h3>
+              <table class="statistics-table statistics-input-table">
+                <thead><tr><th>Dato</th><th>Frecuencia</th><th>Revisión</th></tr></thead>
+                <tbody data-exercise-frequency-body></tbody>
+              </table>
+              <p class="frequency-total" data-frequency-total>Frecuencias registradas: 0 de 9</p>
+            </div>
+            <fieldset class="statistics-answer-fields">
+              <legend>Resultados estadísticos</legend>
+              <label for="exercise-mode">Moda
+                <input id="exercise-mode" type="text" inputmode="numeric" autocomplete="off" data-stats-integer>
+                <span data-mode-feedback aria-live="polite"></span>
+              </label>
+              <label for="exercise-median">Mediana
+                <input id="exercise-median" type="text" inputmode="numeric" autocomplete="off" data-stats-integer>
+                <span data-median-feedback aria-live="polite"></span>
+              </label>
+              <label for="exercise-mean">Media o promedio
+                <input id="exercise-mean" type="text" inputmode="numeric" autocomplete="off" data-stats-integer>
+                <span data-mean-feedback aria-live="polite"></span>
+              </label>
+            </fieldset>
+          </div>
+          <div class="interactive-actions">
+            <button class="learning-button learning-button-primary" type="submit">Entregar</button>
+            <button class="learning-button learning-button-secondary" type="button" data-new-statistics-exercise>Nuevo ejercicio</button>
+          </div>
+          <div class="answer-feedback statistics-exercise-feedback" data-statistics-exercise-feedback role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="statistics-section statistics-section-surface" id="calculadora" aria-labelledby="statistics-calculator-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>3 · Calculadora</p>
+          <h2 id="statistics-calculator-title">Analiza una lista de datos</h2>
+          <p>Escribe números enteros separados por comas. Puedes utilizar valores positivos, negativos o cero.</p>
+        </header>
+
+        <form class="statistics-calculator-form" id="statistics-calculator-form" novalidate>
+          <label for="statistics-data-input">Escribe tus datos separados por comas</label>
+          <textarea id="statistics-data-input" rows="4" placeholder="3, 3, 5, 2, 4, 5, 5"></textarea>
+          <div class="interactive-actions">
+            <button class="learning-button learning-button-primary" type="submit">Calcular</button>
+            <button class="learning-button learning-button-secondary" type="reset">Limpiar</button>
+          </div>
+          <div class="form-message" data-statistics-calculator-error role="alert" aria-live="assertive"></div>
+        </form>
+
+        <div class="statistics-calculator-results" data-statistics-calculator-results aria-live="polite" hidden>
+          <div class="statistics-result-overview" data-statistics-overview></div>
+          <div class="statistics-result-details">
+            <div>
+              <h3>Tabla de frecuencias</h3>
+              <table class="statistics-table">
+                <thead><tr><th>Dato</th><th>Frecuencia</th></tr></thead>
+                <tbody data-statistics-calculator-frequency></tbody>
+              </table>
+            </div>
+            <div class="statistics-measures" data-statistics-measures></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics-section music-game-section" id="juego" aria-labelledby="music-game-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>4 · Juego</p>
+          <h2 id="music-game-title">La entrevista musical</h2>
+          <p>Responde tres preguntas sobre moda, mediana y promedio. Para ser contratado debes acertar las tres; la partida termina con el primer error.</p>
+        </header>
+
+        <div class="music-game" id="music-interview-game">
+          <div class="music-game-progress">
+            <span data-music-progress>Pregunta 1 de 3</span>
+            <div><span data-music-progress-bar></span></div>
+          </div>
+
+          <div class="music-interview-scene" data-music-scene>
+            <div class="interview-person interview-candidate" aria-hidden="true"><span></span></div>
+            <div class="interview-desk" aria-hidden="true"><span></span></div>
+            <div class="interview-person interview-employer" aria-hidden="true"><span></span><i></i></div>
+          </div>
+
+          <div class="music-game-content">
+            <table class="statistics-table music-table">
+              <thead><tr><th>Canción</th><th>Reproducciones</th></tr></thead>
+              <tbody data-music-table></tbody>
+            </table>
+
+            <div class="music-question-panel">
+              <p class="eyebrow" data-music-question-label>Moda</p>
+              <h3 data-music-question>¿Cuál es tu canción más popular?</h3>
+              <p data-music-help>Selecciona la canción que tiene más reproducciones.</p>
+              <form id="music-question-form" novalidate>
+                <fieldset class="music-options">
+                  <legend>Selecciona una respuesta</legend>
+                  <div data-music-options></div>
+                </fieldset>
+                <div class="interactive-actions">
+                  <button class="learning-button learning-button-primary" type="submit">Responder</button>
+                  <button class="learning-button learning-button-secondary" type="button" data-music-continue hidden>Continuar</button>
+                </div>
+              </form>
+              <div class="answer-feedback music-feedback" data-music-feedback role="status" aria-live="polite"></div>
+              <div class="music-outcome" data-music-outcome hidden>
+                <strong data-music-stamp></strong>
+                <p data-music-outcome-message></p>
+                <button class="learning-button learning-button-secondary" type="button" data-music-restart>Intentar de nuevo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="assets/img/logo-estrella.svg?v=20260716-logo3" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html?v=20260723-nosotros2">Nosotros</a></li><li><a href="biblioteca.html?v=20260723-recursos1">Biblioteca</a></li><li><a href="usuarios.html?v=20260723-usuarios1">Usuarios</a></li><li><a href="contacto.html">Contacto</a></li></ul></nav>
+    </div>
+    <div class="container footer-legal">
+      <p class="footer-copyright">© 2026 Matemáticas a Domicilio</p>
+      <p class="footer-legal-links"><a href="aviso-privacidad.html?v=20260722-privacy1">Aviso de Privacidad</a><span aria-hidden="true">·</span><a href="terminos-condiciones.html?v=20260722-terms1">Términos y Condiciones</a></p>
+      <p class="footer-location">Mérida, Yucatán, México</p>
+    </div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 999 129 3497"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.84 9.84 0 0 0-8.42 14.92L2.05 22l5.2-1.53A9.94 9.94 0 1 0 12.04 2Zm0 17.99a8 8 0 0 1-4.09-1.12l-.29-.17-3.09.91.92-3-.19-.31A8 8 0 1 1 12.04 20Zm4.39-5.99c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19a7.24 7.24 0 0 1-1.34-1.67c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46a.88.88 0 0 0-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg></a>
+</body>
+</html>
