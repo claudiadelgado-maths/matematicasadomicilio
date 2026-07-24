@@ -1,0 +1,11 @@
+{
+  "id": "combinacion-de-signos",
+  "tipo": "ejercicio",
+  "tema": "ley-de-los-signos",
+  "titulo": "Práctica de signos",
+  "descripcion": "Multiplicaciones y divisiones dinámicas para decidir si el resultado es positivo, negativo o cero.",
+  "nivel": ["secundaria"],
+  "estado": "publicado",
+  "ruta": "/biblioteca/temas/ley-de-los-signos/ejercicios/combinacion-de-signos/",
+  "interactivo": true
+}

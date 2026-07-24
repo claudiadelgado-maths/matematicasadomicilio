@@ -1,0 +1,11 @@
+{
+  "id": "cuanto-pastel-queda",
+  "tipo": "juego",
+  "tema": "operaciones-con-fracciones",
+  "titulo": "¿Cuánto pastel queda?",
+  "descripcion": "Identifica la fracción coloreada de un pastel y responde con cualquier fracción equivalente.",
+  "nivel": ["primaria", "secundaria"],
+  "estado": "publicado",
+  "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/cuanto-pastel-queda/",
+  "interactivo": true
+}

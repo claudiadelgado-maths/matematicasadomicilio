@@ -1,0 +1,20 @@
+.exercise-level fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.exercise-level legend {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.exercise-level .interactive-actions {
+  justify-content: center;
+}
+
+.feedback-procedure .katex {
+  margin-right: 0.35rem;
+}

@@ -1,0 +1,11 @@
+{
+  "id": "operaciones-basicas-con-fracciones",
+  "tipo": "ejercicio",
+  "tema": "operaciones-con-fracciones",
+  "titulo": "Operaciones en tres niveles",
+  "descripcion": "Resultado directo, forma irreducible y operaciones con signos, con procedimiento detallado.",
+  "nivel": ["primaria", "secundaria"],
+  "estado": "publicado",
+  "ruta": "/biblioteca/temas/operaciones-con-fracciones/ejercicios/operaciones-basicas/",
+  "interactivo": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dame-pastel",
+  "tipo": "juego",
+  "tema": "operaciones-con-fracciones",
+  "titulo": "Dame pastel",
+  "descripcion": "Construye una fracción propia o igual a uno seleccionando sectores SVG accesibles.",
+  "nivel": ["primaria", "secundaria"],
+  "estado": "publicado",
+  "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/",
+  "interactivo": true
+}

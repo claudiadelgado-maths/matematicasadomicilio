@@ -1,0 +1,19 @@
+{
+  "id": "operaciones-con-fracciones",
+  "tipo": "tema",
+  "titulo": "Operaciones con fracciones",
+  "descripcion": "Definiciones, teoría, práctica, calculadora y juegos visuales para comprender y operar fracciones.",
+  "categoria": "Aritmética",
+  "nivel": ["secundaria"],
+  "etiquetas": ["fracciones", "operaciones", "aritmética", "simplificación", "números racionales"],
+  "estado": "publicado",
+  "ruta": "/biblioteca/temas/operaciones-con-fracciones/",
+  "componentes": {
+    "definiciones": true,
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
+}

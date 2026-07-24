@@ -1,0 +1,11 @@
+{
+  "id": "guardia-de-los-signos",
+  "tipo": "juego",
+  "tema": "ley-de-los-signos",
+  "titulo": "El guardia de los signos",
+  "descripcion": "Decide si una igualdad de multiplicación o división de signos permite pasar.",
+  "nivel": ["secundaria"],
+  "estado": "publicado",
+  "ruta": "/biblioteca/temas/ley-de-los-signos/juegos/guardia-de-los-signos/",
+  "interactivo": true
+}

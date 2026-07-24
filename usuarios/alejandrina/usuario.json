@@ -1,0 +1,11 @@
+{
+  "id": "alejandrina",
+  "tipo": "usuario",
+  "titulo": "Espacio de Alejandrina",
+  "nombreVisible": "Alejandrina",
+  "descripcion": "Espacio de sesiones y recursos personalizados.",
+  "estado": "activo",
+  "ruta": "/usuarios/alejandrina/",
+  "sesiones": ["datos-no-agrupados"],
+  "almacenamientoLocal": false
+}

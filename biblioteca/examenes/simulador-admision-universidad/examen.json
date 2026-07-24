@@ -1,0 +1,13 @@
+{
+  "id": "simulador-admision-universidad",
+  "tipo": "examen",
+  "titulo": "Simulador de admisión universitaria",
+  "descripcion": "Examen diagnóstico de práctica en formato PDF.",
+  "area": "Matemáticas",
+  "nivel": ["preparatoria", "aspirantes a universidad"],
+  "formato": "pdf",
+  "duracionMinutos": 60,
+  "estado": "publicado",
+  "ruta": "/biblioteca/examenes/simulador-admision-universidad/",
+  "archivo": "recursos/simulador.pdf"
+}

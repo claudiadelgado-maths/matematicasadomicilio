@@ -1,116 +1,134 @@
-# Ayuda en Matemáticas a Domicilio
+# Matemáticas a Domicilio
 
-Sitio web estático de Erik Estrella para presentar asesorías particulares de matemáticas a domicilio en Mérida, Yucatán. Está construido únicamente con HTML, CSS, JavaScript y archivos locales; no necesita instalar dependencias ni utilizar una base de datos.
+Sitio estático de Matemáticas a Domicilio: información del servicio, biblioteca educativa y espacios personalizados para alumnos. Está construido con HTML, CSS, JavaScript y SVG, sin framework, base de datos ni proceso de compilación obligatorio.
 
-## Cómo abrirlo localmente
+## Principios de la arquitectura
 
-La opción más sencilla es abrir `index.html` con un navegador. Para probar la navegación de una forma más parecida a GitHub Pages, conviene usar un servidor local.
+- **Módulos aislados:** cada tema, ejercicio, juego, calculadora, examen, usuario y sesión vive en una carpeta identificable.
+- **URLs limpias:** la URL pública de un módulo termina en `/` y corresponde a un directorio con `index.html`.
+- **Recursos equilibrados:** navegación e identidad visual son compartidas; la lógica educativa permanece dentro de cada módulo.
+- **Componentes opcionales:** un tema o sesión solo anuncia los componentes que existen.
+- **Compatibilidad:** las antiguas páginas `.html` redirigen a sus nuevas rutas mientras se conservan enlaces externos.
+- **Publicación estática:** el resultado funciona en GitHub Pages, tanto en un dominio propio como bajo la ruta de un repositorio.
 
-Si tienes Python instalado:
+## Mapa principal
 
-```bash
+```text
+/
+├── index.html
+├── nosotros/
+├── contacto/
+├── legal/
+├── biblioteca/
+│   ├── temas/
+│   │   └── [tema]/
+│   │       ├── explicacion/
+│   │       ├── ejercicios/[ejercicio]/
+│   │       ├── juegos/[juego]/
+│   │       └── calculadoras/[calculadora]/
+│   ├── calculadoras/
+│   └── examenes/[examen]/
+├── usuarios/
+│   └── [usuario]/
+│       └── sesiones/[sesion]/
+├── recursos/
+│   ├── css/
+│   ├── js/
+│   ├── svg/
+│   ├── imagenes/
+│   └── datos/
+├── documentacion/
+├── herramientas/
+└── páginas antiguas .html (redirecciones)
+```
+
+El árbol detallado y las responsabilidades están en [documentacion/arquitectura.md](documentacion/arquitectura.md).
+
+## Trabajar en una sola carpeta
+
+Cada módulo concreto contiene:
+
+- `index.html`: interfaz pública;
+- `README.md`: objetivo, límites y pruebas del módulo;
+- un JSON de metadatos;
+- `estilos.css` cuando necesita estilos propios;
+- `script.js` cuando tiene interacción;
+- `recursos/` solo cuando utiliza archivos exclusivos.
+
+Una IA que reciba únicamente esa carpeta debe leer primero su `README.md` y su JSON. No debe cambiar rutas públicas ni copiar dentro del módulo el sistema global. Para una modificación local, los únicos recursos externos que debe asumir son:
+
+- `/recursos/css/sistema-visual.css`;
+- `/recursos/css/modulos.css`;
+- `/recursos/js/navegacion.js`;
+- `/recursos/svg/` para la identidad general.
+
+## Desarrollo local
+
+Abrir el sitio mediante un servidor HTTP permite comprobar las rutas limpias:
+
+```powershell
 python -m http.server 8000
 ```
 
-Después abre `http://localhost:8000` en el navegador. Para detener el servidor, regresa a la terminal y presiona `Ctrl + C`.
+Después visita `http://localhost:8000/`. Abrir los archivos directamente con `file://` no representa correctamente la navegación de GitHub Pages.
 
-## Publicar en GitHub Pages
+## Comprobaciones
 
-1. Crea un repositorio en GitHub y sube todos los archivos conservando esta estructura.
-2. En el repositorio, abre **Settings → Pages**.
-3. En **Build and deployment**, elige **Deploy from a branch**.
-4. Selecciona la rama principal y la carpeta raíz (`/ root`).
-5. Guarda los cambios. GitHub mostrará la dirección pública cuando finalice la publicación.
+No hay dependencias de producción. Con Node.js disponible:
 
-Todas las rutas son relativas, por lo que el sitio funciona aunque cambie el nombre del repositorio.
-
-## Estructura
-
-```text
-.
-├── index.html
-├── recursos.html
-├── contacto.html
-├── 404.html
-├── .nojekyll
-├── README.md
-└── assets/
-    ├── css/styles.css
-    ├── js/main.js
-    └── img/
-        ├── logo-estrella.svg
-        ├── favicon.svg
-        ├── hero-erik-clase.svg
-        ├── erik-explicando.svg
-        ├── sesion-tecnologia.svg
-        └── materiales-personalizados.svg
+```powershell
+npm run catalogo
+npm run validar
 ```
 
-Una ampliación futura de recursos puede utilizar:
+`catalogo` reconstruye `recursos/datos/catalogo.json` desde los metadatos. `validar` comprueba JSON, rutas internas, archivos enlazados, identificadores repetidos y estructura básica.
 
-```text
-resources/
-├── diagnostico/
-├── ejercicios/
-└── calculadoras/
-```
+La revisión completa también incluye:
 
-## Cambiar datos del servicio
+1. escritorio y móvil, especialmente 360, 768, 1024 y 1440 px;
+2. navegación por teclado y foco visible;
+3. menú móvil y tecla `Escape`;
+4. consola del navegador sin errores;
+5. ejercicios, calculadoras y juegos;
+6. PDF del examen;
+7. redirecciones heredadas;
+8. ausencia de desplazamiento horizontal.
 
-### Teléfono y WhatsApp
+## Publicación diaria con un solo commit
 
-Busca `999 129 3497` en los archivos HTML para cambiar el número visible. Busca `529991293497` para cambiar el número dentro de los enlaces de WhatsApp. El texto después de `?text=` es el mensaje inicial codificado para una URL.
+1. Trabaja todos los cambios del día.
+2. Ejecuta `npm run catalogo`.
+3. Ejecuta `npm run validar`.
+4. Revisa el sitio localmente en móvil y escritorio.
+5. Consulta `git status` y confirma que el lote contiene solo cambios intencionales.
+6. Crea un único commit descriptivo, por ejemplo:
 
-Revisa todas las páginas después de cambiarlo para evitar que quede algún enlace anterior.
+   ```powershell
+   git add .
+   git commit -m "Actualiza recursos educativos del 23 de julio"
+   git push
+   ```
 
-### Tarifa y duración
+GitHub Pages publica directamente los archivos de la rama configurada. No se debe añadir una fase de servidor o compilación sin documentar y justificar el cambio.
 
-Busca `$250 MXN` para actualizar la tarifa. Busca `2 horas y media` y `dos horas y media` para actualizar la duración en todos los lugares donde se presenta. No cambies solamente una página: estos datos también aparecen en la portada, servicios, contacto y preguntas frecuentes.
+## Guías
 
-### Colores
+- [Arquitectura](documentacion/arquitectura.md)
+- [Auditoría, migración y decisiones](documentacion/auditoria-y-migracion.md)
+- [Sistema visual](documentacion/estilo-visual.md)
+- [Estándares técnicos](documentacion/estandares-tecnicos.md)
+- [Crear un tema](documentacion/creacion-de-temas.md)
+- [Crear una explicación o demostración](documentacion/creacion-de-explicaciones.md)
+- [Crear un ejercicio](documentacion/creacion-de-ejercicios.md)
+- [Crear un juego](documentacion/creacion-de-juegos.md)
+- [Crear una calculadora](documentacion/creacion-de-calculadoras.md)
+- [Crear un examen](documentacion/creacion-de-examenes.md)
+- [Crear un usuario](documentacion/creacion-de-usuarios.md)
+- [Crear una sesión](documentacion/creacion-de-sesiones.md)
+- [Publicación y validación](documentacion/publicacion.md)
 
-Los colores se encuentran al principio de `assets/css/styles.css`, dentro de `:root`. Modifica variables como `--color-background`, `--color-text`, `--color-muted`, `--color-surface` y `--color-border` para mantener el diseño consistente.
+## Datos globales sensibles al cambio
 
-## Sustituir las imágenes provisionales
+El número de WhatsApp visible es `999 129 34 97` y el enlace usa `529991293497`. El correo es `contacto@matematicasadomicilio.com`. La duración y el precio publicados son `2 horas y media` y `$250 MXN`. Si cambian, busca todas sus apariciones y valida el sitio completo.
 
-Los siguientes SVG son marcadores y deben reemplazarse posteriormente:
-
-- `hero-erik-clase.svg`: fotografía horizontal o vertical de Erik impartiendo una asesoría.
-- `erik-explicando.svg`: fotografía de Erik explicando en una libreta, pizarrón o mesa de trabajo.
-- `sesion-tecnologia.svg`: fotografía utilizando GeoGebra, computadora o una herramienta visual.
-- `materiales-personalizados.svg`: fotografía de ejercicios, materiales impresos o computadora.
-
-Se recomienda preparar las fotografías en formato WebP optimizado. Si cambia el nombre o la extensión del archivo, actualiza también cada atributo `src` que lo utiliza en los HTML. Conserva dimensiones razonables —aproximadamente 1200 a 1600 píxeles en el lado más largo— y comprime cada archivo antes de publicarlo. Actualiza `width` y `height` para que coincidan con la proporción final y revisa que el texto alternativo siga describiendo la imagen real.
-
-No presentes amigos como clientes ni agregues testimonios, certificaciones o resultados que no puedan comprobarse.
-
-## Agregar Facebook e Instagram
-
-En `contacto.html` hay un comentario que señala el lugar preparado para enlaces sociales. Agrega solamente perfiles oficiales ya disponibles. Un enlace externo debe incluir `target="_blank"` y `rel="noopener noreferrer"`. También puede añadirse al pie de cada página si se desea que aparezca en todo el sitio.
-
-## Incorporar el diagnóstico
-
-`recursos.html` contiene un comentario que marca el lugar previsto para un diagnóstico interactivo. La futura versión puede vivir en `resources/diagnostico/` y enlazarse desde la tarjeta correspondiente cuando esté terminada. Antes de publicarlo, conviene comprobar que sea usable con teclado, explique claramente los resultados y no recopile información personal innecesaria.
-
-GitHub Pages no ejecuta Python ni código de servidor. Un diagnóstico publicado allí debe funcionar completamente en HTML, CSS y JavaScript, o utilizar un servicio externo evaluado expresamente.
-
-## Incorporar calculadoras
-
-Cada calculadora puede guardarse en una subcarpeta de `resources/calculadoras/` con sus propios archivos HTML, CSS y JavaScript. Activa su enlace en `recursos.html` solamente cuando funcione, tenga instrucciones, valide entradas y pueda utilizarse con teclado y en móvil.
-
-## Revisión antes de publicar
-
-1. Abre todas las páginas desde el menú y el pie de página.
-2. Comprueba cada botón de WhatsApp y confirma el número y el mensaje.
-3. Revisa que no exista ninguna imagen rota.
-4. Prueba el menú móvil y la tecla `Escape`.
-5. Navega con la tecla `Tab` y confirma que el foco siempre sea visible.
-6. Prueba anchos cercanos a 360, 390, 768, 1024 y 1440 píxeles.
-7. Confirma que la página no tenga desplazamiento horizontal.
-8. Abre las herramientas del navegador y revisa que no haya errores en la consola.
-9. Verifica que tarifa, duración, ubicación y teléfono sean correctos en todas las páginas.
-10. Prueba una dirección inexistente después de publicar para comprobar `404.html`.
-
-## Futuras versiones
-
-La estructura ya permite añadir fotografías reales, redes sociales oficiales, diagnóstico, ejercicios y calculadoras sin cambiar el sistema visual ni las páginas principales. El JavaScript actual solo controla el menú móvil y el año automático del pie de página.
+El proyecto no debe presentar testimonios, credenciales, resultados, clientes, redes sociales ni servicios que no hayan sido confirmados.

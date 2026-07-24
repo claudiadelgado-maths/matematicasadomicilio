@@ -1,0 +1,9 @@
+.fraction-game-panel .interactive-actions {
+  justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+  .fraction-game-panel .interactive-actions {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "entrevista-musical",
+  "tipo": "juego",
+  "sesion": "datos-no-agrupados",
+  "usuario": "alejandrina",
+  "titulo": "La entrevista musical",
+  "descripcion": "Juego contextual de moda, mediana y promedio.",
+  "estado": "publicado",
+  "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/juegos/entrevista-musical/",
+  "interactivo": true
+}

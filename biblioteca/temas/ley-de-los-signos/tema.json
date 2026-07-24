@@ -1,0 +1,18 @@
+{
+  "id": "ley-de-los-signos",
+  "tipo": "tema",
+  "titulo": "Ley de los signos",
+  "descripcion": "Significado de los signos y reglas para multiplicar y dividir números positivos, negativos y cero.",
+  "categoria": "Aritmética",
+  "nivel": ["secundaria"],
+  "etiquetas": ["signos", "números negativos", "cero", "multiplicación", "división"],
+  "estado": "publicado",
+  "ruta": "/biblioteca/temas/ley-de-los-signos/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
+}

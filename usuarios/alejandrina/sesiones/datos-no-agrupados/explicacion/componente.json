@@ -1,0 +1,10 @@
+{
+  "id": "explicacion-datos-no-agrupados",
+  "tipo": "explicacion",
+  "sesion": "datos-no-agrupados",
+  "usuario": "alejandrina",
+  "titulo": "Comprender los datos",
+  "descripcion": "Definiciones, tabla de frecuencias completa, gráficas y medidas de tendencia central.",
+  "estado": "publicado",
+  "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/explicacion/"
+}

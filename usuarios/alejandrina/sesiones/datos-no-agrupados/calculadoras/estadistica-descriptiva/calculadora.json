@@ -1,0 +1,11 @@
+{
+  "id": "estadistica-descriptiva",
+  "tipo": "calculadora",
+  "sesion": "datos-no-agrupados",
+  "usuario": "alejandrina",
+  "titulo": "Calculadora estadística",
+  "descripcion": "Genera tabla completa, acumulados, gráficas, media, mediana y moda de enteros o decimales.",
+  "estado": "publicado",
+  "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/calculadoras/estadistica-descriptiva/",
+  "interactivo": true
+}

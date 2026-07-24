@@ -1,0 +1,33 @@
+@import url("../../estadistica.css");
+
+.module-site {
+  --module-accent: #15784e;
+}
+
+.statistics-theme .statistics-input-table td {
+  min-width: 94px;
+}
+
+.statistics-theme .statistics-input-table .given-value {
+  display: block;
+  padding: 0.65rem;
+  background: var(--color-surface);
+  color: var(--color-muted);
+  text-align: right;
+}
+
+.statistics-theme .statistics-input-table .cell-feedback {
+  display: block;
+  min-height: 1rem;
+  margin-top: 0.25rem;
+  color: #9b2626;
+  font-size: 0.68rem;
+  line-height: 1.2;
+  text-align: right;
+}
+
+@media (max-width: 520px) {
+  .statistics-theme .exercise-block {
+    padding-inline: 0.85rem;
+  }
+}

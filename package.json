@@ -1,0 +1,11 @@
+{
+  "name": "matematicas-a-domicilio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio estático modular de Matemáticas a Domicilio.",
+  "scripts": {
+    "catalogo": "node herramientas/generar-catalogo.mjs",
+    "validar": "node herramientas/validar-proyecto.mjs",
+    "verificar": "npm run catalogo && npm run validar"
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "esquema": 1,
+  "generadoDesde": "metadatos locales",
+  "total": 20,
+  "tipos": {
+    "examen": [
+      {
+        "id": "simulador-admision-universidad",
+        "tipo": "examen",
+        "titulo": "Simulador de admisión universitaria",
+        "descripcion": "Examen diagnóstico de práctica en formato PDF.",
+        "area": "Matemáticas",
+        "nivel": [
+          "preparatoria",
+          "aspirantes a universidad"
+        ],
+        "formato": "pdf",
+        "duracionMinutos": 60,
+        "estado": "publicado",
+        "ruta": "/biblioteca/examenes/simulador-admision-universidad/",
+        "archivo": "recursos/simulador.pdf",
+        "archivoMetadatos": "biblioteca/examenes/simulador-admision-universidad/examen.json"
+      }
+    ],
+    "tema": [
+      {
+        "id": "ley-de-los-signos",
+        "tipo": "tema",
+        "titulo": "Ley de los signos",
+        "descripcion": "Significado de los signos y reglas para multiplicar y dividir números positivos, negativos y cero.",
+        "categoria": "Aritmética",
+        "nivel": [
+          "secundaria"
+        ],
+        "etiquetas": [
+          "signos",
+          "números negativos",
+          "cero",
+          "multiplicación",
+          "división"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/ley-de-los-signos/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "biblioteca/temas/ley-de-los-signos/tema.json"
+      },
+      {
+        "id": "operaciones-con-fracciones",
+        "tipo": "tema",
+        "titulo": "Operaciones con fracciones",
+        "descripcion": "Definiciones, teoría, práctica, calculadora y juegos visuales para comprender y operar fracciones.",
+        "categoria": "Aritmética",
+        "nivel": [
+          "secundaria"
+        ],
+        "etiquetas": [
+          "fracciones",
+          "operaciones",
+          "aritmética",
+          "simplificación",
+          "números racionales"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/",
+        "componentes": {
+          "definiciones": true,
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/tema.json"
+      }
+    ],
+    "calculadora": [
+      {
+        "id": "calculadora-de-signos",
+        "tipo": "calculadora",
+        "tema": "ley-de-los-signos",
+        "titulo": "Calculadora de signos",
+        "descripcion": "Multiplica o divide dos enteros y explica la regla del signo en cinco pasos.",
+        "categoria": "Aritmética",
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/ley-de-los-signos/calculadoras/calculadora-de-signos/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/ley-de-los-signos/calculadoras/calculadora-de-signos/calculadora.json"
+      },
+      {
+        "id": "calculadora-operaciones-con-fracciones",
+        "tipo": "calculadora",
+        "tema": "operaciones-con-fracciones",
+        "titulo": "Calculadora de fracciones",
+        "descripcion": "Resuelve una operación con signos y muestra normalización, simplificación, resultado exacto y decimal.",
+        "categoria": "Aritmética",
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/calculadoras/operaciones-con-fracciones/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/calculadoras/operaciones-con-fracciones/calculadora.json"
+      },
+      {
+        "id": "estadistica-descriptiva",
+        "tipo": "calculadora",
+        "sesion": "datos-no-agrupados",
+        "usuario": "alejandrina",
+        "titulo": "Calculadora estadística",
+        "descripcion": "Genera tabla completa, acumulados, gráficas, media, mediana y moda de enteros o decimales.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/calculadoras/estadistica-descriptiva/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/calculadoras/estadistica-descriptiva/calculadora.json"
+      }
+    ],
+    "ejercicio": [
+      {
+        "id": "combinacion-de-signos",
+        "tipo": "ejercicio",
+        "tema": "ley-de-los-signos",
+        "titulo": "Práctica de signos",
+        "descripcion": "Multiplicaciones y divisiones dinámicas para decidir si el resultado es positivo, negativo o cero.",
+        "nivel": [
+          "secundaria"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/ley-de-los-signos/ejercicios/combinacion-de-signos/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/ley-de-los-signos/ejercicios/combinacion-de-signos/ejercicio.json"
+      },
+      {
+        "id": "operaciones-basicas-con-fracciones",
+        "tipo": "ejercicio",
+        "tema": "operaciones-con-fracciones",
+        "titulo": "Operaciones en tres niveles",
+        "descripcion": "Resultado directo, forma irreducible y operaciones con signos, con procedimiento detallado.",
+        "nivel": [
+          "primaria",
+          "secundaria"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/ejercicios/operaciones-basicas/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/ejercicios/operaciones-basicas/ejercicio.json"
+      },
+      {
+        "id": "organiza-y-analiza",
+        "tipo": "ejercicio",
+        "sesion": "datos-no-agrupados",
+        "usuario": "alejandrina",
+        "titulo": "Organiza y analiza",
+        "descripcion": "Cinco actividades sobre orden, frecuencias, acumulados, interpretación, media, mediana y moda.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/ejercicios/organiza-y-analiza/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/ejercicios/organiza-y-analiza/ejercicio.json"
+      }
+    ],
+    "explicacion": [
+      {
+        "id": "explicacion-ley-de-los-signos",
+        "tipo": "explicacion",
+        "tema": "ley-de-los-signos",
+        "titulo": "Comprender la ley de los signos",
+        "descripcion": "Significado, recta numérica, reglas, justificación breve y errores comunes.",
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/ley-de-los-signos/explicacion/",
+        "archivoMetadatos": "biblioteca/temas/ley-de-los-signos/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-operaciones-con-fracciones",
+        "tipo": "explicacion",
+        "tema": "operaciones-con-fracciones",
+        "titulo": "Teoría progresiva de fracciones",
+        "descripcion": "Representación, signos, cuatro operaciones, simplificación, ejemplos completos y expresión decimal.",
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/explicacion/",
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-datos-no-agrupados",
+        "tipo": "explicacion",
+        "sesion": "datos-no-agrupados",
+        "usuario": "alejandrina",
+        "titulo": "Comprender los datos",
+        "descripcion": "Definiciones, tabla de frecuencias completa, gráficas y medidas de tendencia central.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/explicacion/",
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/explicacion/componente.json"
+      }
+    ],
+    "juego": [
+      {
+        "id": "guardia-de-los-signos",
+        "tipo": "juego",
+        "tema": "ley-de-los-signos",
+        "titulo": "El guardia de los signos",
+        "descripcion": "Decide si una igualdad de multiplicación o división de signos permite pasar.",
+        "nivel": [
+          "secundaria"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/ley-de-los-signos/juegos/guardia-de-los-signos/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/ley-de-los-signos/juegos/guardia-de-los-signos/juego.json"
+      },
+      {
+        "id": "cuanto-pastel-queda",
+        "tipo": "juego",
+        "tema": "operaciones-con-fracciones",
+        "titulo": "¿Cuánto pastel queda?",
+        "descripcion": "Identifica la fracción coloreada de un pastel y responde con cualquier fracción equivalente.",
+        "nivel": [
+          "primaria",
+          "secundaria"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/cuanto-pastel-queda/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/juegos/cuanto-pastel-queda/juego.json"
+      },
+      {
+        "id": "dame-pastel",
+        "tipo": "juego",
+        "tema": "operaciones-con-fracciones",
+        "titulo": "Dame pastel",
+        "descripcion": "Construye una fracción propia o igual a uno seleccionando sectores SVG accesibles.",
+        "nivel": [
+          "primaria",
+          "secundaria"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/juego.json"
+      },
+      {
+        "id": "entrevista-musical",
+        "tipo": "juego",
+        "sesion": "datos-no-agrupados",
+        "usuario": "alejandrina",
+        "titulo": "La entrevista musical",
+        "descripcion": "Juego contextual de moda, mediana y promedio.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/juegos/entrevista-musical/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/juegos/entrevista-musical/juego.json"
+      }
+    ],
+    "definiciones": [
+      {
+        "id": "definiciones-operaciones-con-fracciones",
+        "tipo": "definiciones",
+        "tema": "operaciones-con-fracciones",
+        "titulo": "Definiciones fundamentales de fracciones",
+        "descripcion": "Conceptos formales de fracción, racionalidad, equivalencia, simplificación y operaciones.",
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/definiciones/",
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/definiciones/componente.json"
+      }
+    ],
+    "usuario": [
+      {
+        "id": "alejandrina",
+        "tipo": "usuario",
+        "titulo": "Espacio de Alejandrina",
+        "nombreVisible": "Alejandrina",
+        "descripcion": "Espacio de sesiones y recursos personalizados.",
+        "estado": "activo",
+        "ruta": "/usuarios/alejandrina/",
+        "sesiones": [
+          "datos-no-agrupados"
+        ],
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "usuarios/alejandrina/usuario.json"
+      },
+      {
+        "id": "jose",
+        "tipo": "usuario",
+        "titulo": "Espacio de José",
+        "nombreVisible": "José",
+        "descripcion": "Espacio personal para organizar pendientes de estudio.",
+        "estado": "activo",
+        "ruta": "/usuarios/jose/",
+        "sesiones": [],
+        "almacenamientoLocal": true,
+        "archivoMetadatos": "usuarios/jose/usuario.json"
+      }
+    ],
+    "sesion": [
+      {
+        "id": "datos-no-agrupados",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Datos no agrupados",
+        "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
+        "objetivo": "Organizar e interpretar datos no agrupados mediante frecuencias, porcentajes, gráficas y medidas de tendencia central.",
+        "conocimientosPrevios": [
+          "operaciones básicas",
+          "orden de números"
+        ],
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/sesion.json"
+      }
+    ]
+  }
+}

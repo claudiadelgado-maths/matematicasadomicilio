@@ -1,0 +1,11 @@
+{
+  "id": "calculadora-operaciones-con-fracciones",
+  "tipo": "calculadora",
+  "tema": "operaciones-con-fracciones",
+  "titulo": "Calculadora de fracciones",
+  "descripcion": "Resuelve una operación con signos y muestra normalización, simplificación, resultado exacto y decimal.",
+  "categoria": "Aritmética",
+  "estado": "publicado",
+  "ruta": "/biblioteca/temas/operaciones-con-fracciones/calculadoras/operaciones-con-fracciones/",
+  "interactivo": true
+}

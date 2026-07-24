@@ -1,0 +1,9 @@
+.pie-answer-fields .interactive-actions {
+  justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+  .pie-answer-fields .interactive-actions {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+.fraction-calculator-panel fieldset {
+  margin: 0;
+}
+
+.fraction-calculator-panel .interactive-actions {
+  justify-content: center;
+}
+
+.calculator-error {
+  min-height: 1.5rem;
+  margin-top: 1rem;
+  color: var(--learning-red);
+  font-weight: 800;
+  text-align: center;
+}
+
+.calculator-procedure {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}

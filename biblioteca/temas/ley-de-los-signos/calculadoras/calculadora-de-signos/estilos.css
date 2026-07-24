@@ -1,0 +1,11 @@
+.sign-interactive-panel .interactive-actions {
+  justify-content: center;
+}
+
+.calculator-message {
+  text-align: center;
+}
+
+[data-procedure] {
+  margin-top: 2.5rem;
+}

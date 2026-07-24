@@ -1,0 +1,11 @@
+.sign-game-board .answer-feedback strong {
+  display: block;
+}
+
+.sign-game-board .answer-feedback p {
+  margin-bottom: 0;
+}
+
+.sign-game-board .game-controls {
+  gap: 0.8rem;
+}
