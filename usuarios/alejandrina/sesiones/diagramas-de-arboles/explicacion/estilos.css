@@ -1,0 +1,1093 @@
+.tree-theory {
+  --tree-green: #15784e;
+  --tree-green-dark: #0d5f3c;
+  --tree-green-soft: #e7f3ed;
+  --tree-blue: #285f9f;
+  --tree-blue-soft: #e8eff8;
+  --tree-amber: #9a5b17;
+  --tree-amber-soft: #fbefdf;
+  --tree-red: #9d3b3b;
+  --tree-red-soft: #f8e9e9;
+}
+
+.tree-theory .study-route {
+  padding: 1rem 0;
+  border-block: 1px solid var(--color-border);
+  background: var(--color-background);
+}
+
+.tree-theory .study-route ul {
+  display: flex;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  list-style: none;
+  scrollbar-width: thin;
+}
+
+.tree-theory .study-route a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tree-theory .study-route a:hover,
+.tree-theory .study-route a:focus-visible {
+  border-color: var(--tree-green);
+  background: var(--tree-green-soft);
+}
+
+.tree-theory .theory-section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  scroll-margin-top: 1rem;
+}
+
+.tree-theory .theory-section + .theory-section {
+  border-top: 1px solid var(--color-border);
+}
+
+.tree-theory .theory-section-surface {
+  background: var(--color-surface);
+}
+
+.tree-theory .theory-heading {
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.tree-theory .theory-heading > p:first-child,
+.tree-theory .card-kicker {
+  margin: 0 0 0.7rem;
+  color: var(--tree-green-dark);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.tree-theory .theory-heading h2 {
+  max-width: 960px;
+  margin: 0;
+}
+
+.tree-theory .theory-heading > p:last-child {
+  max-width: 880px;
+  margin: 1rem 0 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  line-height: 1.7;
+}
+
+.tree-theory .intro-layout,
+.tree-theory .ingredient-grid,
+.tree-theory .rule-comparison,
+.tree-theory .inverse-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+}
+
+.tree-theory .theory-card,
+.tree-theory .rule-card,
+.tree-theory .reasoning-card,
+.tree-theory .levels-note {
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-border);
+  background: var(--color-background);
+}
+
+.tree-theory .theory-card h3,
+.tree-theory .rule-card h3,
+.tree-theory .reasoning-card h3,
+.tree-theory .levels-note h3,
+.tree-theory .path-state h3,
+.tree-theory .three-types h3,
+.tree-theory .final-summary h3 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  line-height: 1.22;
+  letter-spacing: -0.025em;
+}
+
+.tree-theory .theory-card > p:not(.card-kicker),
+.tree-theory .rule-card > p,
+.tree-theory .reasoning-card p,
+.tree-theory .levels-note > p,
+.tree-theory .path-state > div > p:not(.card-kicker),
+.tree-theory .three-types > div > p:not(.card-kicker) {
+  margin: 0.85rem 0 0;
+  color: #3b3b37;
+  line-height: 1.68;
+}
+
+.tree-theory .collection-strip {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border-block: 1px solid var(--color-text);
+  background: var(--color-surface);
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.tree-theory .inline-collection {
+  white-space: nowrap;
+}
+
+.tree-theory .tree-figure {
+  min-width: 0;
+  margin: 0;
+  padding: clamp(1.1rem, 3vw, 1.7rem);
+  border: 1px solid var(--color-text);
+  background: var(--color-background);
+}
+
+.tree-theory .tree-figure figcaption {
+  margin-bottom: 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.tree-theory .tree-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.tree-theory .tree-scroll:focus-visible {
+  outline: 3px solid var(--tree-green);
+  outline-offset: 3px;
+}
+
+.tree-theory .tree-scroll pre {
+  width: max-content;
+  min-width: 100%;
+  margin: 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  background: var(--tree-green-soft);
+  color: #17372a;
+  font-family: "Cascadia Mono", "Segoe UI Emoji", "Noto Color Emoji", monospace;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 750;
+  line-height: 1.7;
+}
+
+.tree-theory .tree-figure > p {
+  margin: 1rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.tree-theory .tree-figure-wide,
+.tree-theory .tree-result {
+  max-width: 900px;
+  margin: clamp(1.5rem, 4vw, 2.5rem) auto 0;
+}
+
+.tree-theory .idea-callout {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-left: 4px solid var(--tree-green);
+  background: var(--tree-green-soft);
+}
+
+.tree-theory .idea-callout > span {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  place-items: center;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.tree-theory .idea-callout strong,
+.tree-theory .idea-callout p {
+  display: block;
+}
+
+.tree-theory .idea-callout strong {
+  font-size: 1.25rem;
+}
+
+.tree-theory .idea-callout p {
+  margin: 0.4rem 0 0;
+  line-height: 1.62;
+}
+
+.tree-theory .definition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+}
+
+.tree-theory .definition-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.7rem 1rem;
+  align-content: start;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: var(--color-background);
+}
+
+.tree-theory .definition-card-wide {
+  grid-column: 1 / -1;
+}
+
+.tree-theory .definition-symbol {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  grid-row: span 2;
+  place-items: center;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+.tree-theory .definition-card h3 {
+  margin: 0;
+  align-self: end;
+  font-size: 1.2rem;
+}
+
+.tree-theory .definition-card p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.tree-theory .path-example {
+  display: flex;
+  grid-column: 2;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.tree-theory .path-example span,
+.tree-theory .path-list span {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--color-text);
+  background: var(--tree-green-soft);
+  font-weight: 850;
+}
+
+.tree-theory .path-example span + span::before {
+  margin-right: 0.5rem;
+  content: "→";
+}
+
+.tree-theory .central-relation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1.15fr);
+  align-items: stretch;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+  border-block: 2px solid var(--color-text);
+}
+
+.tree-theory .central-relation article {
+  display: grid;
+  align-content: center;
+  min-height: 180px;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.tree-theory .central-relation article > span,
+.tree-theory .central-relation article > strong,
+.tree-theory .central-relation article > small {
+  display: block;
+}
+
+.tree-theory .central-relation article > span {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+.tree-theory .central-relation article > strong {
+  margin-top: 0.6rem;
+  font-size: 1.12rem;
+}
+
+.tree-theory .central-relation article > small {
+  margin-top: 0.35rem;
+  color: var(--color-muted);
+  line-height: 1.45;
+}
+
+.tree-theory .central-relation .relation-result {
+  background: var(--tree-green-soft);
+}
+
+.tree-theory .relation-sign {
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.tree-theory .collection-examples {
+  display: grid;
+  gap: 1px;
+  margin: 1.2rem 0;
+  border: 1px solid var(--color-border);
+  background: var(--color-border);
+}
+
+.tree-theory .collection-examples p {
+  display: grid;
+  grid-template-columns: minmax(130px, auto) minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: center;
+  margin: 0;
+  padding: 0.85rem;
+  background: var(--color-background);
+}
+
+.tree-theory .collection-examples span,
+.tree-theory .collection-examples strong {
+  display: block;
+}
+
+.tree-theory .collection-examples span {
+  font-size: 1.4rem;
+}
+
+.tree-theory .collection-examples strong {
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.tree-theory .do-dont {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 1.3rem;
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+}
+
+.tree-theory .do-dont > div {
+  display: grid;
+  padding: 1rem;
+  background: var(--color-background);
+}
+
+.tree-theory .do-dont > div:first-child {
+  background: var(--tree-green-soft);
+}
+
+.tree-theory .do-dont span,
+.tree-theory .do-dont strong,
+.tree-theory .do-dont small {
+  display: block;
+}
+
+.tree-theory .do-dont span {
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tree-theory .do-dont strong {
+  margin-top: 0.7rem;
+  font-size: 1.35rem;
+}
+
+.tree-theory .do-dont small {
+  margin-top: 0.35rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+
+.tree-theory .stage-strip,
+.tree-theory .problem-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+}
+
+.tree-theory .stage-strip article,
+.tree-theory .problem-summary article {
+  display: grid;
+  align-content: center;
+  min-height: 130px;
+  padding: 1.1rem;
+  background: var(--color-background);
+  text-align: center;
+}
+
+.tree-theory .stage-strip strong,
+.tree-theory .stage-strip span,
+.tree-theory .stage-strip small,
+.tree-theory .problem-summary span,
+.tree-theory .problem-summary strong {
+  display: block;
+}
+
+.tree-theory .stage-strip span {
+  margin-top: 0.4rem;
+  color: var(--tree-green-dark);
+  font-weight: 850;
+}
+
+.tree-theory .stage-strip small {
+  margin-top: 0.4rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+
+.tree-theory .rule-card {
+  border-top: 4px solid var(--tree-green);
+}
+
+.tree-theory .rule-card-without {
+  border-top-color: var(--tree-blue);
+}
+
+.tree-theory .rule-card-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.tree-theory .rule-card-header > span {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+
+.tree-theory .rule-card-header p {
+  margin: 0 0 0.2rem;
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tree-theory .state-line {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 0.8rem;
+  margin: 1.2rem 0;
+  padding: 1rem;
+  border-left: 3px solid var(--tree-green);
+  background: var(--tree-green-soft);
+}
+
+.tree-theory .rule-card-without .state-line {
+  border-left-color: var(--tree-blue);
+  background: var(--tree-blue-soft);
+}
+
+.tree-theory .state-line span {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.tree-theory .state-line strong {
+  text-align: right;
+}
+
+.tree-theory .state-line small {
+  grid-column: 1 / -1;
+  color: var(--color-muted);
+}
+
+.tree-theory .rule-key {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.tree-theory .path-state,
+.tree-theory .three-types {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+  margin-top: clamp(2rem, 5vw, 4rem);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-text);
+  background: var(--color-background);
+}
+
+.tree-theory .state-cases {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--color-border);
+  background: var(--color-border);
+}
+
+.tree-theory .state-cases article {
+  padding: 1rem;
+  background: var(--color-surface);
+}
+
+.tree-theory .state-cases strong,
+.tree-theory .state-cases span {
+  display: block;
+}
+
+.tree-theory .state-cases span {
+  margin-top: 0.35rem;
+  color: var(--tree-green-dark);
+  font-weight: 850;
+}
+
+.tree-theory .state-cases p {
+  margin: 0.4rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.tree-theory .construction-steps {
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  counter-reset: tree-step;
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+  list-style: none;
+}
+
+.tree-theory .construction-steps li {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 1.1rem;
+  counter-increment: tree-step;
+  background: var(--color-background);
+}
+
+.tree-theory .construction-steps li::before {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  content: counter(tree-step);
+  font-weight: 900;
+}
+
+.tree-theory .construction-steps strong,
+.tree-theory .construction-steps span {
+  display: block;
+}
+
+.tree-theory .construction-steps span {
+  margin-top: 0.25rem;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.tree-theory .process-flow {
+  display: grid;
+  grid-template-columns: repeat(11, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  padding: 1.2rem;
+  overflow-x: auto;
+  border: 1px solid var(--color-text);
+  background: var(--tree-green-soft);
+  scrollbar-width: thin;
+}
+
+.tree-theory .process-flow span {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--color-text);
+  background: var(--color-background);
+  font-size: 0.84rem;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.tree-theory .process-flow b {
+  transform: rotate(-90deg);
+}
+
+.tree-theory .remaining-grid {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--color-border);
+  background: var(--color-border);
+}
+
+.tree-theory .remaining-grid p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 1rem;
+  background: var(--color-surface);
+}
+
+.tree-theory .remaining-grid span {
+  color: var(--tree-green-dark);
+  font-weight: 850;
+  text-align: right;
+}
+
+.tree-theory .problem-summary {
+  margin: 0 0 clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.tree-theory .problem-summary span {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tree-theory .problem-summary strong {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.tree-theory .reasoning-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.tree-theory .reasoning-card {
+  border-top: 3px solid var(--tree-green);
+}
+
+.tree-theory .reasoning-card > span {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tree-theory .central-message,
+.tree-theory .final-relation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  border: 2px solid var(--color-text);
+  background: var(--tree-green-soft);
+  font-size: clamp(1.05rem, 2.5vw, 1.4rem);
+  font-weight: 900;
+  text-align: center;
+}
+
+.tree-theory .levels-note {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 1.2rem 2rem;
+  align-items: start;
+  margin-top: clamp(2rem, 5vw, 4rem);
+}
+
+.tree-theory .path-list {
+  display: flex;
+  grid-column: 1 / -1;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tree-theory .inference-list {
+  display: grid;
+  align-content: stretch;
+  gap: 1px;
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+}
+
+.tree-theory .inference-list article {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background: var(--color-background);
+}
+
+.tree-theory .inference-list span {
+  color: var(--tree-green-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.tree-theory .inference-list p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.tree-theory .caution-note,
+.tree-theory .possibility-note {
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-left: 4px solid var(--tree-amber);
+  background: var(--tree-amber-soft);
+}
+
+.tree-theory .caution-note strong {
+  font-size: 1.2rem;
+}
+
+.tree-theory .caution-note p {
+  margin: 0.55rem 0 0;
+  line-height: 1.65;
+}
+
+.tree-theory .two-directions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 1.5rem;
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+}
+
+.tree-theory .two-directions article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 0.6rem;
+  align-items: center;
+  padding: 1.2rem;
+  background: var(--color-background);
+  text-align: center;
+}
+
+.tree-theory .two-directions small {
+  grid-column: 1 / -1;
+  color: var(--color-muted);
+}
+
+.tree-theory .possibility-note {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+  border-left-color: var(--tree-blue);
+  background: var(--tree-blue-soft);
+}
+
+.tree-theory .possibility-note > div:first-child {
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  white-space: nowrap;
+}
+
+.tree-theory .possibility-note h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.tree-theory .possibility-note p {
+  margin: 0.55rem 0 0;
+  line-height: 1.62;
+}
+
+.tree-theory .mistake-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.tree-theory .mistake-grid article {
+  padding: 1.25rem;
+  border-top: 3px solid var(--tree-red);
+  background: var(--color-background);
+}
+
+.tree-theory .mistake-grid article:last-child {
+  grid-column: 1 / -1;
+}
+
+.tree-theory .mistake-grid span {
+  color: var(--tree-red);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tree-theory .mistake-grid h3 {
+  margin: 0.5rem 0 0;
+  font-size: 1.15rem;
+}
+
+.tree-theory .mistake-grid p {
+  margin: 0.6rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.58;
+}
+
+.tree-theory .final-summary {
+  margin-top: clamp(2.5rem, 6vw, 5rem);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 2px solid var(--color-text);
+  background: var(--color-background);
+}
+
+.tree-theory .summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 1.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-border);
+}
+
+.tree-theory .summary-grid p {
+  display: grid;
+  margin: 0;
+  padding: 1rem;
+  background: var(--color-surface);
+}
+
+.tree-theory .summary-grid strong,
+.tree-theory .summary-grid span {
+  display: block;
+}
+
+.tree-theory .summary-grid span {
+  margin-top: 0.35rem;
+  color: var(--color-muted);
+}
+
+.tree-theory .final-relation {
+  grid-template-columns: 1fr;
+}
+
+.tree-theory .final-relation b {
+  color: var(--tree-green-dark);
+}
+
+.tree-theory .summary-close {
+  max-width: 760px;
+  margin: 1.5rem auto 0;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.tree-theory .back-session-link {
+  display: grid;
+  max-width: 900px;
+  min-height: 130px;
+  align-content: center;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  padding: 1.5rem;
+  border: 1px solid var(--color-text);
+  background: var(--color-background);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.tree-theory .back-session-link strong {
+  font-size: 1.25rem;
+}
+
+.tree-theory .back-session-link strong::after {
+  margin-left: 0.5rem;
+  content: "→";
+}
+
+.tree-theory .back-session-link span {
+  margin-top: 0.4rem;
+  color: var(--color-muted);
+}
+
+.tree-theory .back-session-link:hover,
+.tree-theory .back-session-link:focus-visible {
+  background: var(--tree-green-soft);
+}
+
+@media (max-width: 980px) {
+  .tree-theory .central-relation {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-theory .relation-sign {
+    min-height: 42px;
+  }
+
+  .tree-theory .central-relation .relation-sign:not(.relation-arrow) {
+    font-size: 0;
+  }
+
+  .tree-theory .central-relation .relation-sign:not(.relation-arrow)::before {
+    content: "+";
+    font-size: 1.5rem;
+  }
+
+  .tree-theory .central-relation .relation-arrow {
+    transform: rotate(90deg);
+  }
+
+  .tree-theory .central-relation article {
+    min-height: 145px;
+  }
+}
+
+@media (max-width: 760px) {
+  .tree-theory .intro-layout,
+  .tree-theory .ingredient-grid,
+  .tree-theory .rule-comparison,
+  .tree-theory .inverse-layout,
+  .tree-theory .path-state,
+  .tree-theory .three-types,
+  .tree-theory .levels-note {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-theory .definition-grid,
+  .tree-theory .stage-strip,
+  .tree-theory .problem-summary,
+  .tree-theory .reasoning-grid,
+  .tree-theory .two-directions,
+  .tree-theory .mistake-grid,
+  .tree-theory .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-theory .definition-card-wide,
+  .tree-theory .mistake-grid article:last-child {
+    grid-column: auto;
+  }
+
+  .tree-theory .path-list {
+    grid-column: auto;
+  }
+
+  .tree-theory .central-message {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-theory .central-message strong {
+    transform: rotate(90deg);
+  }
+
+  .tree-theory .process-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-theory .process-flow b {
+    text-align: center;
+    transform: none;
+  }
+
+  .tree-theory .possibility-note {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .tree-theory .theory-section {
+    padding: 3.5rem 0;
+  }
+
+  .tree-theory .theory-heading h2 {
+    font-size: clamp(2.15rem, 12vw, 3rem);
+  }
+
+  .tree-theory .idea-callout {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-theory .idea-callout > span {
+    width: 52px;
+    height: 52px;
+  }
+
+  .tree-theory .definition-card {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 0.6rem 0.8rem;
+  }
+
+  .tree-theory .definition-symbol {
+    width: 42px;
+    height: 42px;
+  }
+
+  .tree-theory .path-example {
+    grid-column: 1 / -1;
+  }
+
+  .tree-theory .collection-examples p,
+  .tree-theory .remaining-grid p {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-theory .remaining-grid span {
+    text-align: left;
+  }
+
+  .tree-theory .do-dont {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-theory .construction-steps li {
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: 0.7rem;
+  }
+
+  .tree-theory .construction-steps li::before {
+    width: 38px;
+    height: 38px;
+  }
+
+  .tree-theory .tree-scroll pre {
+    min-width: 300px;
+  }
+
+  .tree-theory .possibility-note > div:first-child {
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tree-theory *,
+  .tree-theory *::before,
+  .tree-theory *::after {
+    scroll-behavior: auto;
+  }
+}

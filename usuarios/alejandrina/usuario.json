@@ -6,6 +6,6 @@
   "descripcion": "Espacio de sesiones y recursos personalizados.",
   "estado": "activo",
   "ruta": "/usuarios/alejandrina/",
-  "sesiones": ["datos-no-agrupados"],
+  "sesiones": ["datos-no-agrupados", "diagramas-de-arboles", "medidas-de-posicion"],
   "almacenamientoLocal": false
 }

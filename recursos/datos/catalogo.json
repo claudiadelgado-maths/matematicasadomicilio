@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 20,
+  "total": 29,
   "tipos": {
     "examen": [
       {
@@ -115,6 +115,30 @@
         "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/calculadoras/estadistica-descriptiva/",
         "interactivo": true,
         "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/calculadoras/estadistica-descriptiva/calculadora.json"
+      },
+      {
+        "id": "constructor-diagramas-de-arboles",
+        "tipo": "calculadora",
+        "sesion": "diagramas-de-arboles",
+        "usuario": "alejandrina",
+        "titulo": "Calculadora de diagramas de árbol",
+        "descripcion": "Herramienta para construir y estudiar diagramas de árbol a partir de una colección, sus etapas y la regla de repetición.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/diagramas-de-arboles/calculadoras/constructor-de-diagramas/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/diagramas-de-arboles/calculadoras/constructor-de-diagramas/calculadora.json"
+      },
+      {
+        "id": "conversor-medidas-de-posicion",
+        "tipo": "calculadora",
+        "sesion": "medidas-de-posicion",
+        "usuario": "alejandrina",
+        "titulo": "Conversor de medidas de posición",
+        "descripcion": "Convierte cuartiles, deciles, percentiles y mediana a porcentaje y muestra sus equivalencias exactas.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/medidas-de-posicion/calculadoras/conversor-de-medidas/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/medidas-de-posicion/calculadoras/conversor-de-medidas/calculadora.json"
       }
     ],
     "ejercicio": [
@@ -158,6 +182,30 @@
         "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/ejercicios/organiza-y-analiza/",
         "interactivo": true,
         "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/ejercicios/organiza-y-analiza/ejercicio.json"
+      },
+      {
+        "id": "construye-el-arbol",
+        "tipo": "ejercicio",
+        "sesion": "diagramas-de-arboles",
+        "usuario": "alejandrina",
+        "titulo": "Practica con diagramas de árbol",
+        "descripcion": "Tres ejercicios generativos para completar, interpretar y construir diagramas de árbol.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/diagramas-de-arboles/ejercicios/construye-el-arbol/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/diagramas-de-arboles/ejercicios/construye-el-arbol/ejercicio.json"
+      },
+      {
+        "id": "relaciona-medidas-de-posicion",
+        "tipo": "ejercicio",
+        "sesion": "medidas-de-posicion",
+        "usuario": "alejandrina",
+        "titulo": "Relaciona las medidas de posición",
+        "descripcion": "Tres ejercicios generativos para convertir, visualizar y relacionar cuartiles, deciles, percentiles y mediana.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/medidas-de-posicion/ejercicios/relaciona-las-medidas/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/medidas-de-posicion/ejercicios/relaciona-las-medidas/ejercicio.json"
       }
     ],
     "explicacion": [
@@ -191,6 +239,17 @@
         "estado": "publicado",
         "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/explicacion/",
         "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-diagramas-de-arboles",
+        "tipo": "explicacion",
+        "sesion": "diagramas-de-arboles",
+        "usuario": "alejandrina",
+        "titulo": "Cómo funcionan los diagramas de árbol",
+        "descripcion": "Teoría visual para comprender, construir e interpretar la estructura de un diagrama de árbol.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/diagramas-de-arboles/explicacion/",
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/diagramas-de-arboles/explicacion/componente.json"
       }
     ],
     "juego": [
@@ -249,6 +308,30 @@
         "ruta": "/usuarios/alejandrina/sesiones/datos-no-agrupados/juegos/entrevista-musical/",
         "interactivo": true,
         "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/juegos/entrevista-musical/juego.json"
+      },
+      {
+        "id": "elige-el-camino",
+        "tipo": "juego",
+        "sesion": "diagramas-de-arboles",
+        "usuario": "alejandrina",
+        "titulo": "El laberinto infinito",
+        "descripcion": "Juego para leer un diagrama de árbol como mapa y recorrer las puertas que conducen hasta una hoja marcada como salida.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/diagramas-de-arboles/juegos/elige-el-camino/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/diagramas-de-arboles/juegos/elige-el-camino/juego.json"
+      },
+      {
+        "id": "recorrido-de-posiciones",
+        "tipo": "juego",
+        "sesion": "medidas-de-posicion",
+        "usuario": "alejandrina",
+        "titulo": "El taller del corte exacto",
+        "descripcion": "Juego para interpretar cuartiles, deciles, percentiles y mediana, y cortar una cinta en su posición porcentual exacta.",
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/medidas-de-posicion/juegos/recorrido-de-posiciones/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/medidas-de-posicion/juegos/recorrido-de-posiciones/juego.json"
       }
     ],
     "definiciones": [
@@ -273,7 +356,9 @@
         "estado": "activo",
         "ruta": "/usuarios/alejandrina/",
         "sesiones": [
-          "datos-no-agrupados"
+          "datos-no-agrupados",
+          "diagramas-de-arboles",
+          "medidas-de-posicion"
         ],
         "almacenamientoLocal": false,
         "archivoMetadatos": "usuarios/alejandrina/usuario.json"
@@ -313,6 +398,50 @@
           "calculadoras": true
         },
         "archivoMetadatos": "usuarios/alejandrina/sesiones/datos-no-agrupados/sesion.json"
+      },
+      {
+        "id": "diagramas-de-arboles",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Diagramas de árboles",
+        "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
+        "objetivo": "Comprender y utilizar diagramas de árbol para organizar posibilidades y procesos por etapas.",
+        "conocimientosPrevios": [
+          "operaciones básicas",
+          "lectura de información"
+        ],
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/diagramas-de-arboles/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/diagramas-de-arboles/sesion.json"
+      },
+      {
+        "id": "medidas-de-posicion",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
+        "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
+        "objetivo": "Relacionar medidas de posición con porcentajes y reconocer notaciones equivalentes exactas.",
+        "conocimientosPrevios": [
+          "porcentajes básicos",
+          "lectura de información"
+        ],
+        "estado": "publicado",
+        "ruta": "/usuarios/alejandrina/sesiones/medidas-de-posicion/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "usuarios/alejandrina/sesiones/medidas-de-posicion/sesion.json"
       }
     ]
   }

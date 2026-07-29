@@ -1,0 +1,739 @@
+.tree-practice {
+  --practice-green: #15784e;
+  --practice-green-dark: #0d5f3c;
+  --practice-green-soft: #e7f3ed;
+  --practice-blue: #285f9f;
+  --practice-blue-dark: #1f4e84;
+  --practice-blue-soft: #e8eff8;
+  --practice-amber: #9a5b17;
+  --practice-amber-soft: #fbefdf;
+  --practice-red: #9d3535;
+  --practice-red-soft: #f8e8e8;
+  --learning-blue: var(--practice-green);
+  --learning-blue-dark: var(--practice-green-dark);
+}
+
+.tree-practice .practice-route {
+  border-block: 1px solid var(--color-border);
+  background: var(--color-background);
+}
+
+.tree-practice .practice-route > .container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding-block: 1rem;
+}
+
+.tree-practice .practice-route a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.8rem;
+  min-height: 64px;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-right: 1px solid var(--color-border);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.tree-practice .practice-route a:last-child {
+  border-right: 0;
+}
+
+.tree-practice .practice-route a:hover,
+.tree-practice .practice-route a:focus-visible {
+  background: var(--practice-green-soft);
+}
+
+.tree-practice .practice-route span {
+  color: var(--practice-green-dark);
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.tree-practice .practice-route strong {
+  font-size: 0.9rem;
+}
+
+.tree-practice .practice-intro,
+.tree-practice .practice-next {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.tree-practice .practice-intro > .container,
+.tree-practice .practice-next > .container {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+}
+
+.tree-practice .practice-intro h2,
+.tree-practice .practice-next h2 {
+  margin: 0;
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.tree-practice .practice-intro > .container > p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.7;
+}
+
+.tree-practice .practice-kicker {
+  margin: 0 0 0.65rem;
+  color: var(--practice-green-dark);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tree-practice .practice-section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  border-top: 1px solid var(--color-border);
+  scroll-margin-top: 1rem;
+}
+
+.tree-practice .practice-complete {
+  background: var(--color-surface);
+}
+
+.tree-practice .practice-read {
+  --section-accent: var(--practice-blue);
+  --section-soft: var(--practice-blue-soft);
+  background: var(--color-background);
+}
+
+.tree-practice .practice-build {
+  --section-accent: var(--practice-amber);
+  --section-soft: var(--practice-amber-soft);
+  background: var(--color-surface);
+}
+
+.tree-practice .practice-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
+.tree-practice .practice-heading > div > p:first-child {
+  margin: 0 0 0.65rem;
+  color: var(--section-accent, var(--practice-green-dark));
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.tree-practice .practice-heading > div > p:first-child span {
+  padding: 0.3rem 0.5rem;
+  background: var(--section-soft, var(--practice-green-soft));
+}
+
+.tree-practice .practice-heading h2 {
+  margin: 0;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.tree-practice .practice-heading > div > p:last-child {
+  max-width: 740px;
+  margin: 0.9rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.65;
+}
+
+.tree-practice .new-exercise-button {
+  min-width: 170px;
+  border-color: var(--section-accent, var(--practice-green));
+  color: var(--section-accent, var(--practice-green-dark));
+  text-transform: uppercase;
+}
+
+.tree-practice .scenario-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+}
+
+.tree-practice .scenario-summary article {
+  display: grid;
+  min-height: 120px;
+  align-content: center;
+  padding: 1rem;
+  background: var(--color-background);
+  text-align: center;
+}
+
+.tree-practice .scenario-summary span,
+.tree-practice .scenario-summary strong {
+  display: block;
+}
+
+.tree-practice .scenario-summary span {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tree-practice .scenario-summary strong {
+  margin-top: 0.45rem;
+  font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+}
+
+.tree-practice .complete-workspace,
+.tree-practice .read-workspace,
+.tree-practice .builder-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
+}
+
+.tree-practice .exercise-tree-card,
+.tree-practice .piece-tray,
+.tree-practice .read-question,
+.tree-practice .node-editor {
+  min-width: 0;
+  border: 1px solid var(--color-text);
+  background: var(--color-background);
+}
+
+.tree-practice .panel-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid var(--color-text);
+}
+
+.tree-practice .panel-heading span {
+  font-weight: 900;
+}
+
+.tree-practice .panel-heading small {
+  color: var(--color-muted);
+}
+
+.tree-practice .exercise-tree-card-dark {
+  border-color: var(--practice-blue-dark);
+}
+
+.tree-practice .exercise-tree-card-dark .panel-heading {
+  border-color: var(--practice-blue-dark);
+  background: var(--practice-blue-dark);
+  color: #fff;
+}
+
+.tree-practice .exercise-tree-card-dark .panel-heading small {
+  color: #dbe8f7;
+}
+
+.tree-practice .interactive-tree,
+.tree-practice .builder-tree {
+  min-height: 260px;
+  max-height: 620px;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  overflow: auto;
+  background: var(--section-soft, var(--practice-green-soft));
+  scrollbar-width: thin;
+}
+
+.tree-practice .practice-read .interactive-tree {
+  background: var(--practice-blue-soft);
+}
+
+.tree-practice .practice-build .builder-tree {
+  background: var(--practice-amber-soft);
+}
+
+.tree-practice .tree-root-line,
+.tree-practice .tree-line {
+  display: flex;
+  width: max-content;
+  min-width: 100%;
+  min-height: 48px;
+  align-items: center;
+  font-family: "Cascadia Mono", "Segoe UI Emoji", "Noto Color Emoji", monospace;
+  font-weight: 750;
+}
+
+.tree-practice .tree-root-line {
+  padding-bottom: 0.25rem;
+}
+
+.tree-practice .tree-guide {
+  white-space: pre;
+}
+
+.tree-practice .tree-label {
+  display: inline-flex;
+  min-width: 44px;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid transparent;
+  font-family: "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 1.25rem;
+}
+
+.tree-practice .tree-slot {
+  display: inline-grid;
+  min-width: 54px;
+  min-height: 44px;
+  place-items: center;
+  padding: 0.25rem 0.55rem;
+  border: 2px dashed var(--practice-green);
+  border-radius: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.tree-practice .tree-slot:hover,
+.tree-practice .tree-slot:focus-visible {
+  background: var(--practice-green-soft);
+}
+
+.tree-practice .tree-slot.is-filled {
+  border-style: solid;
+}
+
+.tree-practice .tree-slot.is-correct {
+  border-color: var(--practice-green);
+  background: #d9f0e4;
+}
+
+.tree-practice .tree-slot.is-incorrect {
+  border-color: var(--practice-red);
+  background: var(--practice-red-soft);
+}
+
+.tree-practice .piece-tray,
+.tree-practice .node-editor {
+  position: sticky;
+  top: 1rem;
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.tree-practice .piece-tray h3,
+.tree-practice .node-editor h3,
+.tree-practice .read-question h3 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.tree-practice .emoji-palette,
+.tree-practice .branch-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.2rem;
+}
+
+.tree-practice .emoji-choice,
+.tree-practice .branch-toggle {
+  display: inline-grid;
+  min-width: 62px;
+  min-height: 58px;
+  place-items: center;
+  padding: 0.5rem;
+  border: 1px solid var(--color-text);
+  border-radius: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.tree-practice .emoji-choice[aria-pressed="true"] {
+  border-color: var(--practice-green);
+  outline: 3px solid var(--practice-green);
+  outline-offset: 2px;
+  background: var(--practice-green-soft);
+}
+
+.tree-practice .palette-help,
+.tree-practice .node-editor-help {
+  margin: 1rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.tree-practice .practice-actions {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.tree-practice .practice-feedback {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--color-border);
+  background: var(--color-background);
+  line-height: 1.55;
+}
+
+.tree-practice .practice-feedback.is-correct {
+  border-color: var(--practice-green);
+  background: var(--practice-green-soft);
+  color: #174631;
+}
+
+.tree-practice .practice-feedback.is-incorrect {
+  border-color: var(--practice-red);
+  background: var(--practice-red-soft);
+  color: #722929;
+}
+
+.tree-practice .read-question {
+  min-height: 100%;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-top: 4px solid var(--practice-blue);
+}
+
+.tree-practice .read-question > p:first-child {
+  margin: 0 0 0.65rem;
+  color: var(--practice-blue-dark);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.tree-practice .read-question > p:not(:first-child) {
+  margin: 0.8rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.tree-practice .level-options {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.tree-practice .level-option {
+  position: relative;
+}
+
+.tree-practice .level-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.tree-practice .level-option span {
+  display: grid;
+  min-height: 52px;
+  place-items: center;
+  border: 1px solid var(--color-text);
+  background: var(--color-background);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.tree-practice .level-option input:checked + span {
+  border-color: var(--practice-blue);
+  outline: 2px solid var(--practice-blue);
+  background: var(--practice-blue-soft);
+}
+
+.tree-practice .level-option input:focus-visible + span {
+  outline: 3px solid var(--practice-blue);
+  outline-offset: 2px;
+}
+
+.tree-practice .counter-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.tree-practice .counter-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.tree-practice .counter-emoji {
+  min-width: 36px;
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+.tree-practice .counter-row strong {
+  text-align: center;
+}
+
+.tree-practice .counter-button {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid var(--color-text);
+  border-radius: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.tree-practice .counter-button:hover,
+.tree-practice .counter-button:focus-visible {
+  background: var(--practice-blue-soft);
+}
+
+.tree-practice .builder-node-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--color-text);
+  border-radius: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font: inherit;
+  font-family: "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  cursor: pointer;
+}
+
+.tree-practice .builder-node-button:hover,
+.tree-practice .builder-node-button:focus-visible,
+.tree-practice .builder-node-button.is-selected {
+  border-color: var(--practice-amber);
+  outline: 2px solid var(--practice-amber);
+  outline-offset: 1px;
+  background: var(--practice-amber-soft);
+}
+
+.tree-practice .builder-node-button.is-problem {
+  border-color: var(--practice-red);
+  background: var(--practice-red-soft);
+}
+
+.tree-practice .builder-node-depth {
+  color: var(--color-muted);
+  font-family: inherit;
+  font-size: 0.7rem;
+}
+
+.tree-practice .node-editor {
+  border-top: 4px solid var(--practice-amber);
+}
+
+.tree-practice .node-editor > p:not(.practice-kicker) {
+  margin: 0.7rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.tree-practice .branch-toggle {
+  grid-template-columns: auto auto;
+  gap: 0.35rem;
+  font-size: 1.3rem;
+}
+
+.tree-practice .branch-toggle::after {
+  content: "+";
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.tree-practice .branch-toggle[aria-pressed="true"] {
+  border-color: var(--practice-amber);
+  outline: 2px solid var(--practice-amber);
+  background: var(--practice-amber-soft);
+}
+
+.tree-practice .branch-toggle[aria-pressed="true"]::after {
+  content: "✓";
+}
+
+.tree-practice .clear-branches-button {
+  min-height: 44px;
+  margin-top: 1rem;
+  padding: 0.65rem 0.8rem;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  color: var(--practice-red);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.tree-practice .clear-branches-button:hover,
+.tree-practice .clear-branches-button:focus-visible {
+  background: var(--practice-red-soft);
+}
+
+.tree-practice .practice-next {
+  border-top: 1px solid var(--color-border);
+  background: var(--color-background);
+}
+
+.tree-practice .practice-next-links {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+}
+
+.tree-practice .practice-next-links a {
+  display: grid;
+  min-height: 120px;
+  align-content: center;
+  padding: 1.25rem;
+  background: var(--color-background);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.tree-practice .practice-next-links a:hover,
+.tree-practice .practice-next-links a:focus-visible {
+  background: var(--practice-green-soft);
+}
+
+.tree-practice .practice-next-links strong::after {
+  margin-left: 0.5rem;
+  content: "→";
+}
+
+.tree-practice .practice-next-links span {
+  margin-top: 0.35rem;
+  color: var(--color-muted);
+}
+
+.tree-practice .noscript-note {
+  margin: 0 0 2rem;
+  padding: 1rem;
+  border-left: 4px solid var(--practice-red);
+  background: var(--practice-red-soft);
+}
+
+@media (max-width: 900px) {
+  .tree-practice .complete-workspace,
+  .tree-practice .read-workspace,
+  .tree-practice .builder-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-practice .piece-tray,
+  .tree-practice .node-editor {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  .tree-practice .practice-route > .container {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-practice .practice-route a {
+    min-height: 54px;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .tree-practice .practice-route a:last-child {
+    border-bottom: 0;
+  }
+
+  .tree-practice .practice-intro > .container,
+  .tree-practice .practice-next > .container {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-practice .practice-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-practice .new-exercise-button {
+    justify-self: start;
+  }
+
+  .tree-practice .scenario-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-practice .scenario-summary article {
+    min-height: 90px;
+  }
+
+  .tree-practice .practice-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-practice .practice-actions .learning-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tree-practice .practice-section {
+    padding: 3.5rem 0;
+  }
+
+  .tree-practice .practice-heading h2 {
+    font-size: clamp(2.55rem, 14vw, 3.5rem);
+  }
+
+  .tree-practice .interactive-tree,
+  .tree-practice .builder-tree {
+    min-height: 220px;
+    padding: 0.85rem;
+  }
+
+  .tree-practice .level-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tree-practice .counter-row {
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    padding-inline: 0.55rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tree-practice *,
+  .tree-practice *::before,
+  .tree-practice *::after {
+    scroll-behavior: auto;
+    transition: none;
+  }
+}

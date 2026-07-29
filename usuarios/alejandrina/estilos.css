@@ -1,0 +1,8 @@
+.alejandrina-session-list {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.alejandrina-session-list .user-module-link {
+  width: 100%;
+}

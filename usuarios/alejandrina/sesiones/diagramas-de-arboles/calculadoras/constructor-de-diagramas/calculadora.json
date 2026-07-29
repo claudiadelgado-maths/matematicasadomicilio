@@ -1,0 +1,11 @@
+{
+  "id": "constructor-diagramas-de-arboles",
+  "tipo": "calculadora",
+  "sesion": "diagramas-de-arboles",
+  "usuario": "alejandrina",
+  "titulo": "Calculadora de diagramas de árbol",
+  "descripcion": "Herramienta para construir y estudiar diagramas de árbol a partir de una colección, sus etapas y la regla de repetición.",
+  "estado": "publicado",
+  "ruta": "/usuarios/alejandrina/sesiones/diagramas-de-arboles/calculadoras/constructor-de-diagramas/",
+  "interactivo": true
+}

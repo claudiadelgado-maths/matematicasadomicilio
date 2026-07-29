@@ -1,0 +1,11 @@
+{
+  "id": "conversor-medidas-de-posicion",
+  "tipo": "calculadora",
+  "sesion": "medidas-de-posicion",
+  "usuario": "alejandrina",
+  "titulo": "Conversor de medidas de posición",
+  "descripcion": "Convierte cuartiles, deciles, percentiles y mediana a porcentaje y muestra sus equivalencias exactas.",
+  "estado": "publicado",
+  "ruta": "/usuarios/alejandrina/sesiones/medidas-de-posicion/calculadoras/conversor-de-medidas/",
+  "interactivo": true
+}
