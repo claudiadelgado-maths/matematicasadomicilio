@@ -1,0 +1,9 @@
+.user-access-andres .user-monogram {
+  color: #b84d18;
+}
+
+@media (min-width: 641px) {
+  .user-access-grid .user-access:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}

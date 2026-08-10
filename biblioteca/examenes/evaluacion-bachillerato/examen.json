@@ -1,0 +1,13 @@
+{
+  "id": "evaluacion-bachillerato",
+  "tipo": "examen",
+  "titulo": "Evaluación bachillerato",
+  "descripcion": "Evaluación web de cinco problemas de bachillerato con solución rápida y solución detallada desplegables.",
+  "area": "Matemáticas",
+  "nivel": ["bachillerato"],
+  "formato": "web",
+  "duracionMinutos": null,
+  "estado": "publicado",
+  "ruta": "/biblioteca/examenes/evaluacion-bachillerato/",
+  "interactivo": false
+}

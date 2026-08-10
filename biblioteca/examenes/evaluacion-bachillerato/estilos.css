@@ -1,0 +1,723 @@
+.baccalaureate-exam {
+  --exam-ink: #152934;
+  --exam-paper: #fffdf8;
+  --exam-line: #cfd8d7;
+  --exam-cream: #f6f0e2;
+  background: #f4f7f6;
+  color: var(--exam-ink);
+}
+
+.baccalaureate-exam .katex {
+  font-size: 1.12em;
+}
+
+.baccalaureate-exam .katex-display {
+  max-width: 100%;
+  margin: 0.55rem 0;
+  padding: 0.15rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.evaluation-hero {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--exam-paper);
+}
+
+.evaluation-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  min-height: 480px;
+  padding-block: clamp(3.5rem, 8vw, 7rem);
+}
+
+.evaluation-hero h1 {
+  max-width: 850px;
+  margin: 0.65rem 0 0;
+  font-size: clamp(3rem, 8vw, 6.8rem);
+  line-height: 0.88;
+  letter-spacing: -0.06em;
+}
+
+.evaluation-hero .lead {
+  max-width: 760px;
+  margin: 1.5rem 0 0;
+  color: #46575f;
+  font-size: clamp(1.02rem, 1.8vw, 1.24rem);
+}
+
+.evaluation-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.evaluation-tags span {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--exam-ink);
+  background: #fff;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.evaluation-hero-mark {
+  position: relative;
+  display: grid;
+  min-height: 330px;
+  place-content: center;
+  border: 2px solid var(--exam-ink);
+  border-radius: 50%;
+  background: #e5eee9;
+  text-align: center;
+  box-shadow: 18px 18px 0 #f2bd4a;
+}
+
+.evaluation-hero-mark span,
+.evaluation-hero-mark strong {
+  display: block;
+}
+
+.evaluation-hero-mark span {
+  font-size: clamp(6rem, 12vw, 9rem);
+  font-weight: 950;
+  line-height: 0.75;
+}
+
+.evaluation-hero-mark strong {
+  margin-top: 1.25rem;
+  font-size: 0.88rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.evaluation-hero-mark i {
+  position: absolute;
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border: 1px solid var(--exam-ink);
+  border-radius: 50%;
+  background: #fff;
+  font-family: Georgia, serif;
+  font-size: 1.45rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.evaluation-hero-mark i:nth-of-type(1) { top: 14%; left: -4%; }
+.evaluation-hero-mark i:nth-of-type(2) { top: -2%; right: 17%; background: #f2bd4a; }
+.evaluation-hero-mark i:nth-of-type(3) { right: -4%; bottom: 17%; background: #d8c8f1; }
+
+.evaluation-intro {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+  background: var(--exam-cream);
+}
+
+.evaluation-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.72fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.section-kicker {
+  margin: 0 0 0.6rem;
+  color: #526b67;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.evaluation-intro h2,
+.evaluation-closing h2 {
+  max-width: 820px;
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 3.35rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.evaluation-intro-grid > div:last-child {
+  padding-left: 1.3rem;
+  border-left: 5px solid #598e7a;
+  color: #43555c;
+}
+
+.problem-index {
+  padding-block: 1.1rem;
+  border-block: 1px solid var(--exam-line);
+  background: #fff;
+}
+
+.problem-index ol {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.problem-index a {
+  display: flex;
+  min-height: 62px;
+  gap: 0.65rem;
+  align-items: center;
+  padding: 0.7rem;
+  border: 1px solid var(--exam-line);
+  background: #f8faf9;
+  color: var(--exam-ink);
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.problem-index a:hover,
+.problem-index a:focus-visible {
+  border-color: var(--exam-ink);
+  background: var(--exam-cream);
+}
+
+.problem-index a span {
+  color: #668179;
+  font-size: 0.68rem;
+  font-weight: 950;
+}
+
+.problem-list {
+  padding-block: clamp(2.5rem, 7vw, 6rem);
+}
+
+.exam-problem {
+  --problem-accent: #7154a5;
+  --problem-soft: #eee8f7;
+  scroll-margin-top: 130px;
+  margin-bottom: clamp(2.5rem, 7vw, 6rem);
+  border: 1px solid var(--exam-ink);
+  background: #fff;
+  box-shadow: 10px 10px 0 color-mix(in srgb, var(--problem-accent) 24%, transparent);
+}
+
+.problem-geometry { --problem-accent: #34765e; --problem-soft: #e3f1e9; }
+.problem-trigonometry { --problem-accent: #a66a16; --problem-soft: #f7ecd8; }
+.problem-line { --problem-accent: #316c97; --problem-soft: #e2edf5; }
+.problem-domain { --problem-accent: #b24f46; --problem-soft: #f8e6e4; }
+
+.problem-heading {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: stretch;
+  border-bottom: 1px solid var(--exam-ink);
+}
+
+.problem-heading > div {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: 180px;
+  padding: 1.2rem;
+  background: var(--problem-accent);
+  color: #fff;
+  text-align: center;
+}
+
+.problem-number {
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-weight: 950;
+  line-height: 0.9;
+}
+
+.problem-heading p {
+  margin: 0.65rem 0 0;
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.problem-heading h2 {
+  align-self: center;
+  max-width: 1050px;
+  margin: 0;
+  padding: clamp(1.4rem, 4vw, 3rem) clamp(1rem, 3vw, 2.5rem) clamp(1.4rem, 4vw, 3rem) 0;
+  font-size: clamp(1.65rem, 4vw, 3.1rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.problem-statement {
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  font-size: clamp(1rem, 1.45vw, 1.14rem);
+}
+
+.problem-statement > :first-child { margin-top: 0; }
+.problem-statement > :last-child { margin-bottom: 0; }
+
+.problem-statement h3 {
+  margin: 1.5rem 0 0.6rem;
+  color: var(--problem-accent);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.featured-equation {
+  margin: 1.5rem 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-left: 6px solid var(--problem-accent);
+  background: var(--problem-soft);
+}
+
+.featured-equation .katex {
+  font-size: clamp(1.28rem, 2.5vw, 1.75rem);
+}
+
+.problem-question {
+  margin-top: 1.5rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--problem-accent);
+  background: var(--problem-soft);
+}
+
+.problem-question > span {
+  display: block;
+  color: var(--problem-accent);
+  font-size: 0.68rem;
+  font-weight: 950;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.problem-question p {
+  margin: 0.4rem 0 0;
+  font-size: 1.1em;
+  font-weight: 750;
+}
+
+.statement-data {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.statement-data li {
+  padding: 0.8rem 1rem 0.8rem 2.6rem;
+  border: 1px solid var(--exam-line);
+  background: #fbfcfb;
+  position: relative;
+}
+
+.statement-data li::before {
+  position: absolute;
+  top: 0.78rem;
+  left: 1rem;
+  color: var(--problem-accent);
+  content: "◆";
+  font-size: 0.74rem;
+}
+
+.problem-figure {
+  display: grid;
+  justify-items: center;
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--exam-line);
+  background: #fbfdfb;
+}
+
+.problem-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.crop-figure img { max-width: 520px; }
+.tree-figure img { max-width: 780px; }
+
+.problem-figure figcaption {
+  margin-top: 0.75rem;
+  color: #526168;
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.solution-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border-top: 1px solid var(--exam-ink);
+  background: var(--exam-ink);
+}
+
+.solution-toggle {
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem clamp(1rem, 3vw, 1.7rem);
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  color: var(--exam-ink);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+  text-align: left;
+}
+
+.solution-toggle:hover,
+.solution-toggle:focus-visible,
+.solution-toggle.is-open {
+  background: var(--problem-soft);
+}
+
+.solution-toggle:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 3px solid var(--problem-accent);
+  outline-offset: -4px;
+}
+
+.solution-toggle i {
+  display: grid;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  font-style: normal;
+  transition: transform 180ms ease;
+}
+
+.solution-toggle.is-open i { transform: rotate(45deg); }
+
+.solution-panel {
+  padding: clamp(1.4rem, 4vw, 3.5rem);
+  border-top: 1px solid var(--exam-ink);
+}
+
+.solution-panel[hidden] { display: none; }
+
+.solution-panel > header {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.3fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--problem-accent) 38%, transparent);
+}
+
+.solution-panel > header p,
+.solution-panel > header h3 {
+  margin: 0;
+}
+
+.solution-panel > header p {
+  color: var(--problem-accent);
+  font-size: 0.68rem;
+  font-weight: 950;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.solution-panel > header h3 {
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+}
+
+.solution-quick {
+  background: var(--problem-soft);
+}
+
+.quick-math {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.quick-math .katex {
+  font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+}
+
+.solution-detail {
+  background: #fff;
+}
+
+.concept-list {
+  display: grid;
+  gap: 0;
+  margin: 1.5rem 0 2rem;
+  padding: 0;
+  border: 1px solid var(--exam-line);
+  list-style: none;
+}
+
+.concept-list li {
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  border-bottom: 1px solid var(--exam-line);
+}
+
+.concept-list li:last-child { border-bottom: 0; }
+
+.concept-list li > span:first-child {
+  display: grid;
+  min-height: 62px;
+  place-items: center;
+  background: var(--problem-soft);
+  color: var(--problem-accent);
+  font-weight: 950;
+}
+
+.concept-list li > p,
+.concept-list li > div,
+.concept-list li > .katex-display {
+  grid-column: 2;
+}
+
+.concept-list li > p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.concept-list li > .katex-display {
+  margin: 0 1rem 1rem;
+}
+
+.logic-statement {
+  margin: 0 1rem 1rem;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid var(--problem-accent);
+  background: var(--problem-soft);
+  font-weight: 750;
+}
+
+.solution-development {
+  margin-top: 2.25rem;
+}
+
+.solution-development h4,
+.solution-conclusion h4 {
+  margin: 0;
+  color: var(--problem-accent);
+  font-size: 0.75rem;
+  font-weight: 950;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.starting-equation {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--exam-line);
+  background: #fafbf9;
+}
+
+.solution-steps {
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  counter-reset: step;
+  list-style: none;
+}
+
+.solution-steps > li {
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border-left: 5px solid var(--problem-accent);
+  background: #f8faf9;
+}
+
+.solution-steps h5 {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.solution-steps p {
+  margin: 0.75rem 0 0;
+}
+
+.solution-steps ul {
+  margin: 0.8rem 0 0;
+}
+
+.solution-conclusion {
+  margin-top: 1.5rem;
+  padding: clamp(1.1rem, 3vw, 1.7rem);
+  border: 1px solid var(--problem-accent);
+  background: var(--problem-soft);
+}
+
+.solution-conclusion p:last-of-type { margin-bottom: 0; }
+
+.evaluation-closing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.58fr);
+  gap: 2rem;
+  align-items: end;
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid var(--exam-ink);
+  background: #e5eee9;
+}
+
+.evaluation-closing > p {
+  margin: 0;
+  color: #46575f;
+}
+
+@media (max-width: 1080px) {
+  .evaluation-hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 0.52fr);
+  }
+
+  .problem-index ol {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .problem-index li:nth-child(4),
+  .problem-index li:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 760px) {
+  .evaluation-hero-grid,
+  .evaluation-intro-grid,
+  .evaluation-closing {
+    grid-template-columns: 1fr;
+  }
+
+  .evaluation-hero-grid {
+    min-height: 0;
+  }
+
+  .evaluation-hero-mark {
+    width: min(100%, 330px);
+    min-height: 300px;
+    margin-inline: auto;
+  }
+
+  .problem-index ol {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .problem-index li:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .problem-heading {
+    grid-template-columns: 92px minmax(0, 1fr);
+  }
+
+  .problem-heading > div {
+    min-height: 150px;
+    padding: 0.75rem;
+  }
+
+  .problem-heading h2 {
+    padding-block: 1.25rem;
+  }
+
+  .solution-panel > header {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .concept-list li {
+    grid-template-columns: 42px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .evaluation-hero h1 {
+    font-size: clamp(2.8rem, 16vw, 4.2rem);
+  }
+
+  .evaluation-tags,
+  .solution-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .evaluation-tags span {
+    text-align: center;
+  }
+
+  .problem-index ol {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-index li:last-child {
+    grid-column: auto;
+  }
+
+  .problem-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-heading > div {
+    display: flex;
+    min-height: 0;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .problem-heading p {
+    margin: 0;
+  }
+
+  .problem-heading h2 {
+    padding: 1.25rem;
+  }
+
+  .problem-statement,
+  .solution-panel {
+    padding: 1.15rem;
+  }
+
+  .solution-actions {
+    gap: 1px;
+  }
+
+  .solution-toggle {
+    min-height: 60px;
+  }
+
+  .concept-list li {
+    grid-template-columns: 36px minmax(0, 1fr);
+  }
+
+  .concept-list li > p {
+    padding: 0.85rem;
+  }
+
+  .problem-figure {
+    padding: 0.5rem;
+  }
+
+  .baccalaureate-exam .katex-display {
+    margin-inline: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .solution-toggle i { transition: none; }
+}

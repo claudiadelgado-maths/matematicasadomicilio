@@ -1,0 +1,18 @@
+{
+  "id": "porcentajes-andres",
+  "tipo": "sesion",
+  "usuario": "andres",
+  "titulo": "Porcentajes",
+  "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
+  "objetivo": "Interpretar, calcular y reconstruir relaciones porcentuales sin depender de una única fórmula memorizada.",
+  "conocimientosPrevios": ["operaciones básicas", "fracciones y decimales", "proporcionalidad básica"],
+  "estado": "publicado",
+  "ruta": "/usuarios/andres/sesiones/porcentajes/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
+}

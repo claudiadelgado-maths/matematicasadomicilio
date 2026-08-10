@@ -1,0 +1,11 @@
+{
+  "id": "andres",
+  "tipo": "usuario",
+  "titulo": "Espacio de Andrés",
+  "nombreVisible": "Andrés",
+  "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+  "estado": "activo",
+  "ruta": "/usuarios/andres/",
+  "sesiones": ["porcentajes"],
+  "almacenamientoLocal": false
+}

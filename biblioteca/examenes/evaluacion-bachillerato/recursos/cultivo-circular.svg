@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" role="img" aria-labelledby="title desc">
+  <title id="title">Cultivo circular con un triángulo interior</title>
+  <desc id="desc">Un círculo verde contiene un triángulo blanco invertido. El área verde representa la parte del círculo que queda fuera del triángulo.</desc>
+  <defs>
+    <radialGradient id="field" cx="38%" cy="30%" r="78%">
+      <stop offset="0" stop-color="#a9cf9e"/>
+      <stop offset="0.68" stop-color="#79aa73"/>
+      <stop offset="1" stop-color="#5d8e62"/>
+    </radialGradient>
+    <filter id="triangle-shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#173229" flood-opacity=".18"/>
+    </filter>
+    <clipPath id="circle-clip"><circle cx="260" cy="190" r="150"/></clipPath>
+  </defs>
+  <circle cx="260" cy="190" r="164" fill="#edf5ea"/>
+  <circle cx="260" cy="190" r="150" fill="url(#field)" stroke="#13211c" stroke-width="3"/>
+  <g clip-path="url(#circle-clip)" fill="none" stroke="#d6ead0" stroke-width="2" opacity=".22">
+    <path d="M72 128c89-33 286-36 378 2"/>
+    <path d="M67 178c105-31 298-31 390 4"/>
+    <path d="M75 235c92-31 275-29 365 4"/>
+    <path d="M101 286c82-21 240-18 318 8"/>
+  </g>
+  <path d="M139 116H381L260 324Z" fill="#fffdf9" stroke="#13211c" stroke-width="3" stroke-linejoin="round" filter="url(#triangle-shadow)"/>
+  <circle cx="260" cy="190" r="150" fill="none" stroke="#13211c" stroke-width="3"/>
+</svg>

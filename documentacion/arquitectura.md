@@ -60,9 +60,14 @@ biblioteca/
 
 usuarios/
 ├── jose/
-└── alejandrina/
+├── alejandrina/
+│   └── sesiones/
+│       ├── datos-no-agrupados/
+│       ├── diagramas-de-arboles/
+│       └── medidas-de-posicion/
+└── andres/
     └── sesiones/
-        └── datos-no-agrupados/
+        └── porcentajes/
 ```
 
 ## Archivos reemplazados

@@ -1,9 +1,25 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 29,
+  "total": 36,
   "tipos": {
     "examen": [
+      {
+        "id": "evaluacion-bachillerato",
+        "tipo": "examen",
+        "titulo": "Evaluación bachillerato",
+        "descripcion": "Evaluación web de cinco problemas de bachillerato con solución rápida y solución detallada desplegables.",
+        "area": "Matemáticas",
+        "nivel": [
+          "bachillerato"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
+        "estado": "publicado",
+        "ruta": "/biblioteca/examenes/evaluacion-bachillerato/",
+        "interactivo": false,
+        "archivoMetadatos": "biblioteca/examenes/evaluacion-bachillerato/examen.json"
+      },
       {
         "id": "simulador-admision-universidad",
         "tipo": "examen",
@@ -139,6 +155,18 @@
         "ruta": "/usuarios/alejandrina/sesiones/medidas-de-posicion/calculadoras/conversor-de-medidas/",
         "interactivo": true,
         "archivoMetadatos": "usuarios/alejandrina/sesiones/medidas-de-posicion/calculadoras/conversor-de-medidas/calculadora.json"
+      },
+      {
+        "id": "relaciones-porcentuales-andres",
+        "tipo": "calculadora",
+        "sesion": "porcentajes-andres",
+        "usuario": "andres",
+        "titulo": "Calculadoras sincronizadas de porcentajes",
+        "descripcion": "Tres calculadoras automáticas para explorar la relación entre porcentaje, cantidad, descuentos, aumentos y resultados.",
+        "estado": "publicado",
+        "ruta": "/usuarios/andres/sesiones/porcentajes/calculadoras/relaciones-porcentuales/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/andres/sesiones/porcentajes/calculadoras/relaciones-porcentuales/calculadora.json"
       }
     ],
     "ejercicio": [
@@ -206,6 +234,18 @@
         "ruta": "/usuarios/alejandrina/sesiones/medidas-de-posicion/ejercicios/relaciona-las-medidas/",
         "interactivo": true,
         "archivoMetadatos": "usuarios/alejandrina/sesiones/medidas-de-posicion/ejercicios/relaciona-las-medidas/ejercicio.json"
+      },
+      {
+        "id": "practica-porcentajes-andres",
+        "tipo": "ejercicio",
+        "sesion": "porcentajes-andres",
+        "usuario": "andres",
+        "titulo": "Práctica de porcentajes",
+        "descripcion": "Cuatro ejercicios dinámicos para evaluar relaciones porcentuales, cambios, descuentos e IVA con retroalimentación por campo.",
+        "estado": "publicado",
+        "ruta": "/usuarios/andres/sesiones/porcentajes/ejercicios/practica-de-porcentajes/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/andres/sesiones/porcentajes/ejercicios/practica-de-porcentajes/ejercicio.json"
       }
     ],
     "explicacion": [
@@ -250,6 +290,17 @@
         "estado": "publicado",
         "ruta": "/usuarios/alejandrina/sesiones/diagramas-de-arboles/explicacion/",
         "archivoMetadatos": "usuarios/alejandrina/sesiones/diagramas-de-arboles/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-porcentajes-andres",
+        "tipo": "explicacion",
+        "sesion": "porcentajes-andres",
+        "usuario": "andres",
+        "titulo": "Comprender los porcentajes",
+        "descripcion": "Teoría progresiva de porcentajes: significado, relaciones parte-total, datos reales, cambios, descuentos e IVA.",
+        "estado": "publicado",
+        "ruta": "/usuarios/andres/sesiones/porcentajes/explicacion/",
+        "archivoMetadatos": "usuarios/andres/sesiones/porcentajes/explicacion/componente.json"
       }
     ],
     "juego": [
@@ -332,6 +383,18 @@
         "ruta": "/usuarios/alejandrina/sesiones/medidas-de-posicion/juegos/recorrido-de-posiciones/",
         "interactivo": true,
         "archivoMetadatos": "usuarios/alejandrina/sesiones/medidas-de-posicion/juegos/recorrido-de-posiciones/juego.json"
+      },
+      {
+        "id": "ticket-bajo-la-lupa-andres",
+        "tipo": "juego",
+        "sesion": "porcentajes-andres",
+        "usuario": "andres",
+        "titulo": "Ticket bajo la lupa",
+        "descripcion": "Juego de auditoría mediante clics para revisar descuentos, tasas ficticias variables de IVA y totales, y localizar un único dato alterado.",
+        "estado": "publicado",
+        "ruta": "/usuarios/andres/sesiones/porcentajes/juegos/ticket-bajo-la-lupa/",
+        "interactivo": true,
+        "archivoMetadatos": "usuarios/andres/sesiones/porcentajes/juegos/ticket-bajo-la-lupa/juego.json"
       }
     ],
     "definiciones": [
@@ -362,6 +425,20 @@
         ],
         "almacenamientoLocal": false,
         "archivoMetadatos": "usuarios/alejandrina/usuario.json"
+      },
+      {
+        "id": "andres",
+        "tipo": "usuario",
+        "titulo": "Espacio de Andrés",
+        "nombreVisible": "Andrés",
+        "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+        "estado": "activo",
+        "ruta": "/usuarios/andres/",
+        "sesiones": [
+          "porcentajes"
+        ],
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "usuarios/andres/usuario.json"
       },
       {
         "id": "jose",
@@ -442,6 +519,29 @@
           "calculadoras": true
         },
         "archivoMetadatos": "usuarios/alejandrina/sesiones/medidas-de-posicion/sesion.json"
+      },
+      {
+        "id": "porcentajes-andres",
+        "tipo": "sesion",
+        "usuario": "andres",
+        "titulo": "Porcentajes",
+        "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
+        "objetivo": "Interpretar, calcular y reconstruir relaciones porcentuales sin depender de una única fórmula memorizada.",
+        "conocimientosPrevios": [
+          "operaciones básicas",
+          "fracciones y decimales",
+          "proporcionalidad básica"
+        ],
+        "estado": "publicado",
+        "ruta": "/usuarios/andres/sesiones/porcentajes/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "usuarios/andres/sesiones/porcentajes/sesion.json"
       }
     ]
   }
