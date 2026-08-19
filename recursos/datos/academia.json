@@ -1,0 +1,321 @@
+{
+  "esquema": 1,
+  "generadoDesde": "maestro.json, usuario.json y sesion.json",
+  "maestros": [
+    {
+      "id": "claudia",
+      "nombreVisible": "Claudia",
+      "rol": "Asesora",
+      "titulo": "Claudia",
+      "descripcion": "Asesora multidisciplinar para alumnos curiosos que quieren explorar, crear y aprender más allá de los contenidos habituales de la escuela.",
+      "sobre": [
+        "Claudia reúne experiencia en matemáticas, programación, marketing, publicidad, educación, moda, turismo y administración para conectar ideas de distintas áreas.",
+        "Acompaña especialmente a alumnos de alto rendimiento que desean ampliar sus conocimientos, desarrollar nuevas habilidades y convertir su curiosidad en proyectos propios."
+      ],
+      "metodologia": [
+        "Parte de una pregunta interesante y ayuda al alumno a descubrir qué necesita aprender para responderla.",
+        "Propone retos, recursos y pistas que favorecen la autonomía sin dejar al estudiante solo durante el proceso.",
+        "Relaciona diferentes disciplinas para que cada aprendizaje tenga un propósito visible y pueda utilizarse en situaciones nuevas.",
+        "Celebra la curiosidad, la experimentación y la capacidad de explicar con palabras propias lo que se ha descubierto."
+      ],
+      "estado": "activo",
+      "ruta": "/claudia/",
+      "imagen": "/recursos/imagenes/claudia.jpg",
+      "imagenAlt": "Claudia, asesora de Matemáticas a Domicilio",
+      "banner": {
+        "colorInicial": "#6f3dc4",
+        "colorFinal": "#ef6f91"
+      },
+      "ubicacion": {
+        "pais": "España",
+        "region": "Andalucía",
+        "ciudad": "Málaga"
+      },
+      "disponibilidad": {
+        "aceptaNuevosAlumnos": true,
+        "etiquetaDisponible": "Aceptando nuevos alumnos",
+        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+      },
+      "precios": [
+        {
+          "id": "sesion-online-60",
+          "titulo": "Sesión",
+          "duracionMinutos": 60,
+          "importe": 120,
+          "moneda": "EUR",
+          "nota": "Incluye orientación individual y materiales preparados para la sesión."
+        }
+      ],
+      "alumnos": [
+        {
+          "id": "luca-claudia",
+          "nombreVisible": "Luca",
+          "descripcion": "Tres aventuras cortas para comprar, medir y jugar con las horas.",
+          "ruta": "/claudia/luca/",
+          "personalizacion": {
+            "simbolo": "🚀",
+            "acento": "#6f3dc4",
+            "fondo": "#f4efff"
+          },
+          "ultimaActividad": "2026-08-19",
+          "sesiones": [
+            {
+              "id": "consigue-el-cambio-luca",
+              "titulo": "Consigue el cambio",
+              "descripcion": "Una pequeña tienda para descubrir cuánto dinero regresa después de pagar.",
+              "fecha": "2026-08-19",
+              "ruta": "/claudia/luca/consigue-el-cambio/"
+            },
+            {
+              "id": "cuanto-mide-cuanto-pesa-luca",
+              "titulo": "¿Cuánto mide? ¿Cuánto pesa?",
+              "descripcion": "Un laboratorio de animales para explorar qué descubrimos con una báscula y con una regla.",
+              "fecha": "2026-08-17",
+              "ruta": "/claudia/luca/cuanto-mide-cuanto-pesa/"
+            },
+            {
+              "id": "las-horas-luca",
+              "titulo": "Las horas",
+              "descripcion": "Un reloj grande para mover la manecilla y resolver pequeños retos con horas exactas.",
+              "fecha": "2026-08-15",
+              "ruta": "/claudia/luca/las-horas/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erik-estrella",
+      "nombreVisible": "Erik",
+      "rol": "Asesor",
+      "titulo": "Erik",
+      "descripcion": "Asesor y administrador de Matemáticas a Domicilio. Coordina sesiones personalizadas y desarrolla materiales adaptados a los objetivos de cada estudiante.",
+      "sobre": [
+        "Erik coordina las asesorías de Matemáticas a Domicilio y prepara experiencias de aprendizaje individuales para estudiantes de secundaria, preparatoria y universidad.",
+        "Su trabajo parte de las necesidades, conocimientos previos y objetivos de cada alumno para convertirlos en una planificación clara y progresiva."
+      ],
+      "metodologia": [
+        "Identifica junto con el estudiante la necesidad concreta y define un objetivo de trabajo verificable.",
+        "Selecciona explicaciones, ejercicios, materiales y herramientas de acuerdo con el proceso particular del alumno.",
+        "Relaciona las matemáticas con situaciones cotidianas y promueve que el estudiante explique, compruebe y utilice lo aprendido.",
+        "Evalúa el avance a partir del objetivo acordado y adapta las sesiones cuando las necesidades del alumno cambian."
+      ],
+      "estado": "activo",
+      "ruta": "/erik/",
+      "imagen": "/recursos/imagenes/admin.jpg",
+      "imagenAlt": "Erik, asesor de Matemáticas a Domicilio",
+      "banner": {
+        "colorInicial": "#11110f",
+        "colorFinal": "#2f5d50"
+      },
+      "ubicacion": {
+        "pais": "México",
+        "region": "Yucatán",
+        "ciudad": "Mérida"
+      },
+      "disponibilidad": {
+        "aceptaNuevosAlumnos": true,
+        "etiquetaDisponible": "Aceptando nuevos alumnos",
+        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+      },
+      "precios": [
+        {
+          "id": "sesion-domicilio-150",
+          "titulo": "Sesión",
+          "duracionMinutos": 150,
+          "importe": 250,
+          "moneda": "MXN",
+          "nota": "Incluye la planificación y los materiales necesarios para la sesión."
+        }
+      ],
+      "alumnos": [
+        {
+          "id": "kenia-erik",
+          "nombreVisible": "Kenia",
+          "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
+          "ruta": "/erik/kenia/",
+          "personalizacion": {
+            "simbolo": "K",
+            "acento": "#7a3f82",
+            "fondo": "#f7eef8"
+          },
+          "ultimaActividad": "2026-08-19",
+          "sesiones": [
+            {
+              "id": "despejes-lineales-kenia",
+              "titulo": "Despejes lineales",
+              "descripcion": "Sesión de álgebra para aislar x mediante operaciones equivalentes en ambos lados de una ecuación lineal.",
+              "fecha": "2026-08-19",
+              "ruta": "/erik/kenia/despejes-lineales/"
+            }
+          ]
+        },
+        {
+          "id": "andres",
+          "nombreVisible": "Andrés",
+          "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+          "ruta": "/erik/andres/",
+          "personalizacion": {
+            "simbolo": "A",
+            "acento": "#b84d18",
+            "fondo": "#fff3ec"
+          },
+          "ultimaActividad": "2026-08-10",
+          "sesiones": [
+            {
+              "id": "porcentajes-andres",
+              "titulo": "Porcentajes",
+              "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
+              "fecha": "2026-08-10",
+              "ruta": "/erik/andres/porcentajes/"
+            }
+          ]
+        },
+        {
+          "id": "alejandrina",
+          "nombreVisible": "Alejandrina",
+          "descripcion": "Espacio de sesiones y recursos personalizados.",
+          "ruta": "/erik/alejandrina/",
+          "personalizacion": {
+            "simbolo": "A",
+            "acento": "#15784e",
+            "fondo": "#edf8f2"
+          },
+          "ultimaActividad": "2026-07-29",
+          "sesiones": [
+            {
+              "id": "diagramas-de-arboles",
+              "titulo": "Diagramas de árboles",
+              "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
+              "fecha": "2026-07-29",
+              "ruta": "/erik/alejandrina/diagramas-de-arboles/"
+            },
+            {
+              "id": "medidas-de-posicion",
+              "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
+              "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
+              "fecha": "2026-07-29",
+              "ruta": "/erik/alejandrina/medidas-de-posicion/"
+            },
+            {
+              "id": "datos-no-agrupados",
+              "titulo": "Datos no agrupados",
+              "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
+              "fecha": "2026-07-24",
+              "ruta": "/erik/alejandrina/datos-no-agrupados/"
+            }
+          ]
+        },
+        {
+          "id": "jose",
+          "nombreVisible": "José",
+          "descripcion": "Espacio personal para organizar pendientes de estudio.",
+          "ruta": "/erik/jose/",
+          "personalizacion": {
+            "simbolo": "J",
+            "acento": "#1f5fbd",
+            "fondo": "#eef5ff"
+          },
+          "ultimaActividad": null,
+          "sesiones": []
+        }
+      ]
+    },
+    {
+      "id": "rainer",
+      "nombreVisible": "Rainer",
+      "rol": "Asesor",
+      "titulo": "Rainer",
+      "descripcion": "Matemático teórico con interés especial por el rigor, la escritura formal y la construcción ordenada de argumentos matemáticos.",
+      "sobre": [
+        "Rainer acompaña a estudiantes universitarios que desean comprender las definiciones con precisión y construir argumentos matemáticos sólidos.",
+        "Su capacidad de liderazgo le permite organizar el trabajo en etapas claras sin perder de vista las preguntas conceptuales de cada tema."
+      ],
+      "metodologia": [
+        "Presenta la teoría y fija con cuidado las definiciones y la notación que se utilizarán.",
+        "Desarrolla ejemplos que muestran tanto el alcance como los límites de cada concepto.",
+        "Propone problemas graduados para convertir las definiciones en herramientas de razonamiento.",
+        "Cierra con demostraciones en las que cada afirmación debe estar justificada con claridad."
+      ],
+      "estado": "activo",
+      "ruta": "/rainer/",
+      "imagen": "/recursos/imagenes/rainer.jpg",
+      "imagenAlt": "Rainer, asesor de Matemáticas a Domicilio",
+      "banner": {
+        "colorInicial": "#172033",
+        "colorFinal": "#38506f"
+      },
+      "ubicacion": {
+        "pais": "México",
+        "region": "Quintana Roo",
+        "ciudad": "Cozumel"
+      },
+      "disponibilidad": {
+        "aceptaNuevosAlumnos": true,
+        "etiquetaDisponible": "Solo para alumnos universitarios",
+        "etiquetaNoDisponible": "Sin disponibilidad"
+      },
+      "precios": [
+        {
+          "id": "sesion-universitaria-80",
+          "titulo": "Sesión",
+          "duracionMinutos": 80,
+          "importe": 750,
+          "moneda": "MXN",
+          "nota": "Sesión individual con desarrollo teórico, ejemplos y problemas."
+        }
+      ],
+      "alumnos": [
+        {
+          "id": "sofia-rainer",
+          "nombreVisible": "Sofía",
+          "descripcion": "Recorrido universitario de Topología: estructuras básicas y conjuntos derivados.",
+          "ruta": "/rainer/sofia/",
+          "personalizacion": {
+            "simbolo": "S",
+            "acento": "#315c88",
+            "fondo": "#eef3f7"
+          },
+          "ultimaActividad": "2026-08-19",
+          "sesiones": [
+            {
+              "id": "espacios-topologicos-sofia",
+              "titulo": "Espacios topológicos",
+              "descripcion": "Definición axiomática, primeros ejemplos y verificación de topologías sobre conjuntos finitos.",
+              "fecha": "2026-08-19",
+              "ruta": "/rainer/sofia/espacios-topologicos/"
+            },
+            {
+              "id": "interior-clausura-frontera-sofia",
+              "titulo": "Interior, clausura y frontera",
+              "descripcion": "Construcciones asociadas a un subconjunto y relaciones básicas entre interior, clausura y frontera.",
+              "fecha": "2026-08-16",
+              "ruta": "/rainer/sofia/interior-clausura-frontera/"
+            }
+          ]
+        },
+        {
+          "id": "mateo-rainer",
+          "nombreVisible": "Mateo",
+          "descripcion": "Recorrido universitario de Topología centrado en continuidad y aplicaciones entre espacios.",
+          "ruta": "/rainer/mateo/",
+          "personalizacion": {
+            "simbolo": "M",
+            "acento": "#465b3f",
+            "fondo": "#f0f4ed"
+          },
+          "ultimaActividad": "2026-08-18",
+          "sesiones": [
+            {
+              "id": "continuidad-topologica-mateo",
+              "titulo": "Continuidad topológica",
+              "descripcion": "Continuidad mediante preimágenes de abiertos, ejemplos básicos y composición de aplicaciones continuas.",
+              "fecha": "2026-08-18",
+              "ruta": "/rainer/mateo/continuidad-topologica/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

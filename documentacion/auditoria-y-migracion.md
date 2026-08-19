@@ -25,9 +25,9 @@ No se detectaron archivos idénticos antes de la migración. Sí existía acopla
 | `calculadoras.html` | `/biblioteca/calculadoras/` |
 | `examen.html` | `/biblioteca/examenes/simulador-admision-universidad/` |
 | `usuarios.html` | `/usuarios/` |
-| `jose.html` | `/usuarios/jose/` |
-| `alejandrina.html` | `/usuarios/alejandrina/` |
-| `datos-no-agrupados.html` | `/usuarios/alejandrina/sesiones/datos-no-agrupados/` |
+| `jose.html` | `/erik/jose/` |
+| `alejandrina.html` | `/erik/alejandrina/` |
+| `datos-no-agrupados.html` | `/erik/alejandrina/datos-no-agrupados/` |
 | `nosotros.html` | `/nosotros/` |
 | `contacto.html` | `/contacto/` |
 | `aviso-privacidad.html` | `/legal/aviso-de-privacidad/` |

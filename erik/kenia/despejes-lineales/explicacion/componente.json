@@ -1,0 +1,10 @@
+{
+  "id": "explicacion-despejes-kenia",
+  "tipo": "explicacion",
+  "sesion": "despejes-lineales-kenia",
+  "usuario": "kenia-erik",
+  "titulo": "Conservar el equilibrio",
+  "descripcion": "Explicación detallada y visual para resolver Ax + B = C mediante operaciones equivalentes, con enteros, signos, fracciones, comprobaciones y casos especiales.",
+  "estado": "publicado",
+  "ruta": "/erik/kenia/despejes-lineales/explicacion/"
+}

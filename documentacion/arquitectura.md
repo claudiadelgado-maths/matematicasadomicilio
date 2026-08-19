@@ -7,15 +7,29 @@
 | Sitio general | `/`, `/nosotros/`, `/contacto/`, `/legal/` | Identidad, servicio e información institucional |
 | Biblioteca | `/biblioteca/` | Catálogo público de temas, calculadoras y exámenes |
 | Tema | `/biblioteca/temas/[tema]/` | Agrupa componentes de un mismo conocimiento |
-| Usuarios | `/usuarios/` | Acceso a espacios de alumnos |
-| Usuario | `/usuarios/[usuario]/` | Perfil operativo y listado de sesiones |
-| Sesión | `/usuarios/[usuario]/sesiones/[sesion]/` | Contenido personalizado de una sesión |
+| Salones | `/usuarios/` | Asesores y acceso a los casilleros de cada salón |
+| Salón del asesor | `/[asesor]/` | Información, ubicación, disponibilidad, precios, metodología y casilleros |
+| Casillero | `/[asesor]/[alumno]/` | Perfil operativo y listado de sesiones dentro de su salón |
+| Sesión | `/[asesor]/[alumno]/[sesion]/` | Contenido personalizado de una sesión |
 
 ## Unidad de aislamiento
 
 La unidad mínima que puede entregarse a otra IA es una carpeta concreta con `index.html`, `README.md` y metadatos. Un componente interactivo incluye también su `script.js`; un estilo particular vive en `estilos.css`.
 
 Los componentes de un tema permanecen bajo la carpeta del tema. Los componentes personalizados permanecen bajo la sesión del usuario. Las colecciones globales enlazan esos módulos, pero no duplican su implementación.
+
+## Relación académica
+
+La fuente de verdad está distribuida junto a cada módulo:
+
+```text
+maestro.json ← usuario.json ← sesion.json
+      id          maestro       usuario + fecha + estado
+```
+
+`npm run catalogo` relaciona los metadatos y genera `recursos/datos/academia.json`. La interfaz muestra únicamente asesores y alumnos activos y sesiones publicadas. Cada asesor se representa públicamente como un salón; `maestro.json` continúa siendo el nombre técnico interno. No se mantienen listas manuales de alumnos ni sesiones.
+
+Los estados `plantilla`, `borrador`, `archivado` e `inactivo` quedan fuera de los índices públicos. La presencia física de una carpeta no implica su publicación.
 
 ## Dependencias
 
@@ -24,6 +38,7 @@ sistema-visual.css ─┬─ sitio general
                     ├─ biblioteca y temas
 modulos.css ────────┤
 navegacion.js ──────┴─ usuarios y sesiones
+academia.css/js ────── maestros, casilleros, sesiones y precios
 
 módulo/index.html ── estilos.css y script.js locales
 ```
@@ -45,7 +60,7 @@ No se crean carpetas ni tarjetas vacías. `tema.json` y `sesion.json` indican ex
 1. el módulo;
 2. sus metadatos;
 3. el índice del tema o sesión;
-4. el catálogo global mediante `npm run catalogo`.
+4. los datos generados mediante `npm run catalogo`.
 
 ## Árbol actual resumido
 
@@ -59,15 +74,38 @@ biblioteca/
     └── simulador-admision-universidad/
 
 usuarios/
+└── index.html
+
+erik/
+├── maestro.json
 ├── jose/
 ├── alejandrina/
-│   └── sesiones/
-│       ├── datos-no-agrupados/
-│       ├── diagramas-de-arboles/
-│       └── medidas-de-posicion/
-└── andres/
-    └── sesiones/
-        └── porcentajes/
+│   ├── datos-no-agrupados/
+│   ├── diagramas-de-arboles/
+│   └── medidas-de-posicion/
+├── andres/
+│   └── porcentajes/
+└── kenia/
+    └── despejes-lineales/
+
+claudia/
+└── luca/
+    ├── consigue-el-cambio/
+    ├── cuanto-mide-cuanto-pesa/
+    └── las-horas/
+
+rainer/
+├── sofia/
+│   ├── espacios-topologicos/
+│   └── interior-clausura-frontera/
+└── mateo/
+    └── continuidad-topologica/
+
+plantillas/
+├── maestro/
+├── alumno/
+│   └── nueva-sesion/
+└── sesion/README.md
 ```
 
 ## Archivos reemplazados

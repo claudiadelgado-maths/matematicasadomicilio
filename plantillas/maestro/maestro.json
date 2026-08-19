@@ -1,0 +1,45 @@
+{
+  "id": "plantilla-maestro",
+  "slug": "nombre-del-asesor",
+  "tipo": "maestro",
+  "titulo": "Nombre del asesor (reemplazar)",
+  "nombreVisible": "Nombre del asesor",
+  "rol": "Asesor o Asesora",
+  "descripcion": "Presentación profesional breve del asesor.",
+  "estado": "plantilla",
+  "ruta": "/plantillas/maestro/",
+  "imagen": "/recursos/svg/logo-estrella.svg",
+  "imagenAlt": "",
+  "banner": {
+    "colorInicial": "#11110f",
+    "colorFinal": "#1f5fbd"
+  },
+  "ubicacion": {
+    "pais": "País",
+    "region": "Región o estado",
+    "ciudad": "Ciudad"
+  },
+  "disponibilidad": {
+    "aceptaNuevosAlumnos": false,
+    "etiquetaDisponible": "Aceptando nuevos alumnos",
+    "etiquetaNoDisponible": "Disponibilidad por confirmar"
+  },
+  "precios": [
+    {
+      "id": "modalidad-principal",
+      "titulo": "Sesión",
+      "duracionMinutos": 60,
+      "importe": 0,
+      "moneda": "MXN",
+      "nota": "Explica qué incluye el precio."
+    }
+  ],
+  "sobre": [
+    "Reemplaza este texto con una presentación profesional verificable.",
+    "Puedes añadir o retirar párrafos según la información disponible."
+  ],
+  "metodologia": [
+    "Describe un principio o etapa de la forma de enseñanza.",
+    "Describe cómo se adapta el trabajo a cada estudiante."
+  ]
+}

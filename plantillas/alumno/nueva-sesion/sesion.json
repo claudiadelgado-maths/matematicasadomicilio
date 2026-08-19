@@ -1,0 +1,20 @@
+{
+  "id": "plantilla-sesion",
+  "slug": "nombre-de-la-sesion",
+  "tipo": "sesion",
+  "usuario": "plantilla-alumno",
+  "titulo": "Título de la sesión",
+  "descripcion": "Descripción breve de la sesión y de lo que encontrará el alumno.",
+  "objetivo": "Objetivo de aprendizaje concreto de la sesión.",
+  "conocimientosPrevios": [],
+  "fecha": null,
+  "estado": "plantilla",
+  "ruta": "/plantillas/alumno/nueva-sesion/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

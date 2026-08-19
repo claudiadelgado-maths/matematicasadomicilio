@@ -12,7 +12,9 @@
   <meta property="og:locale" content="es_MX">
   <link rel="icon" href="recursos/svg/favicon.svg?v=20260716-brand1" type="image/svg+xml">
   <link rel="stylesheet" href="recursos/css/sistema-visual.css?v=20260723-modular1">
+  <link rel="stylesheet" href="recursos/css/academia.css?v=20260819-rutas2">
   <script src="recursos/js/navegacion.js?v=20260723-modular1" defer></script>
+  <script src="recursos/js/academia.js?v=20260819-rutas2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -29,7 +31,7 @@
           <li><a href="index.html?v=20260722-header2" aria-current="page">Inicio</a></li>
           <li><a href="nosotros/">Nosotros</a></li>
           <li><a href="biblioteca/">Biblioteca</a></li>
-          <li><a href="usuarios/">Usuarios</a></li>
+          <li><a href="usuarios/">Salones</a></li>
           <li><a href="contacto/">Contacto</a></li>
         </ul>
       </nav>
@@ -121,7 +123,7 @@
                 <path d="M22 123V92l29-18c11 11 27 11 38 0l29 18v31"/>
               </svg>
             </div>
-            <a class="text-link home-resource-link" href="usuarios/">Ver usuarios</a>
+            <a class="text-link home-resource-link" href="usuarios/">Ver salones</a>
             <p class="home-resource-audience">Para alumnos</p>
           </article>
         </div>
@@ -136,7 +138,7 @@
           <p>Con frecuencia, estas dificultades no se deben únicamente al tema actual, sino a que existen conceptos de cursos anteriores que aún no han sido comprendidos por completo. Por ello, nuestro trabajo no consiste únicamente en resolver un problema inmediato, sino en ayudar al estudiante a construir una base sólida que le permita aprender con mayor seguridad.</p>
 
           <h3>Asesorías personalizadas de matemáticas</h3>
-          <p>Ofrecemos sesiones de 2 horas y media, cuidadosamente planificadas y adaptadas a las necesidades de cada estudiante, sin importar el tema o la asignatura.</p>
+          <p>Ofrecemos sesiones cuidadosamente planificadas y adaptadas a las necesidades de cada estudiante, sin importar el tema o la asignatura. La duración y modalidad se publican en el salón de cada asesor.</p>
           <p>Siempre que sea posible, la primera sesión está dedicada a conocer al alumno. Buscamos comprender sus intereses, fortalezas, dificultades, objetivos, los temas que está estudiando y su nivel actual de conocimientos. Esta información nos permite diseñar un plan de aprendizaje y desarrollar materiales personalizados para las sesiones posteriores.</p>
           <p>Nuestro objetivo es que todos nuestros alumnos desarrollen la confianza y los conocimientos necesarios para utilizar las matemáticas con seguridad, tanto en la escuela como en su vida diaria.</p>
         </div>
@@ -145,16 +147,9 @@
 
     <section class="price-section" aria-labelledby="precio-titulo">
       <div class="container">
-        <h2 class="price-title" id="precio-titulo">Precio</h2>
-        <p class="price-intro">Todo lo necesario para la sesión está incluido en el precio.</p>
-        <div class="price-block">
-          <div class="price-single">
-            <p class="price-kicker">Sesión de 2 horas y media</p>
-            <p class="price">$250 <small>MXN</small></p>
-          </div>
-          <p class="price-note">Asesoría de matemáticas en Mérida, Yucatán.</p>
-          <a class="button" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer">Consultar disponibilidad</a>
-        </div>
+        <h2 class="price-title" id="precio-titulo">Precios</h2>
+        <p class="price-intro">Compara precio, ubicación, duración y asesor.</p>
+        <div class="price-block" data-academia-precios aria-live="polite"><p class="academy-loading">Cargando precios…</p></div>
       </div>
     </section>
 
@@ -174,9 +169,9 @@
         <h2 class="faq-title" id="faq-titulo">Preguntas frecuentes</h2>
         <div class="faq-list">
           <details><summary>¿A quién están dirigidas las asesorías?</summary><p>A estudiantes de secundaria, preparatoria y universidad.</p></details>
-          <details><summary>¿Dónde se imparten?</summary><p>Las sesiones se realizan a domicilio en Mérida, Yucatán.</p></details>
-          <details><summary>¿Cuánto dura cada sesión?</summary><p>Cada sesión tiene una duración de dos horas y media.</p></details>
-          <details><summary>¿Cuál es la tarifa?</summary><p>La tarifa estándar es de $250 MXN por sesión.</p></details>
+          <details><summary>¿Dónde se imparten?</summary><p>La ciudad y modalidad dependen del asesor. Consulta su salón para conocer la ubicación publicada.</p></details>
+          <details><summary>¿Cuánto dura cada sesión?</summary><p>La duración se especifica en las opciones publicadas por cada asesor.</p></details>
+          <details><summary>¿Cuál es la tarifa?</summary><p>Los precios dependen del asesor y la opción elegida. Consulta el apartado “Precios” de esta página para ver la información publicada actualmente.</p></details>
           <details><summary>¿Qué ocurre en la primera sesión?</summary><p>Revisamos el objetivo del estudiante, el tema actual y los conocimientos relacionados. El diagnóstico se realiza mientras comenzamos a trabajar.</p></details>
           <details><summary>¿Utilizas herramientas digitales?</summary><p>Sí. Cuando es útil, empleo herramientas como GeoGebra, Python, LaTeX o inteligencia artificial para visualizar, comprobar o preparar materiales.</p></details>
           <details><summary>¿Se garantiza aprobar un examen?</summary><p>No se puede garantizar una calificación específica. Se ofrece acompañamiento profesional, materiales y explicación personalizada, pero el avance también requiere participación del estudiante.</p></details>
@@ -205,7 +200,7 @@
         <a class="brand" href="index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="recursos/svg/logo-estrella.svg?v=20260716-logo3" width="204" height="48" alt=""></a>
         <p>Asesorías particulares de matemáticas</p>
       </div>
-      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="index.html">Inicio</a></li><li><a href="nosotros/">Nosotros</a></li><li><a href="biblioteca/">Biblioteca</a></li><li><a href="usuarios/">Usuarios</a></li><li><a href="contacto/">Contacto</a></li></ul></nav>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="index.html">Inicio</a></li><li><a href="nosotros/">Nosotros</a></li><li><a href="biblioteca/">Biblioteca</a></li><li><a href="usuarios/">Salones</a></li><li><a href="contacto/">Contacto</a></li></ul></nav>
     </div>
     <div class="container footer-legal">
       <p class="footer-copyright">© 2026 Matemáticas a Domicilio</p>

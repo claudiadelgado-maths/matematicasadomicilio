@@ -1,0 +1,17 @@
+{
+  "id": "luca-claudia",
+  "slug": "luca",
+  "tipo": "usuario",
+  "titulo": "El casillero de Luca",
+  "nombreVisible": "Luca",
+  "descripcion": "Tres aventuras cortas para comprar, medir y jugar con las horas.",
+  "estado": "activo",
+  "ruta": "/claudia/luca/",
+  "maestro": "claudia",
+  "personalizacion": {
+    "simbolo": "🚀",
+    "acento": "#6f3dc4",
+    "fondo": "#f4efff"
+  },
+  "almacenamientoLocal": false
+}

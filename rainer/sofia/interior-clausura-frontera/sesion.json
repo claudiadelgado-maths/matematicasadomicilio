@@ -1,0 +1,14 @@
+{
+  "id": "interior-clausura-frontera-sofia",
+  "slug": "interior-clausura-frontera",
+  "tipo": "sesion",
+  "usuario": "sofia-rainer",
+  "titulo": "Interior, clausura y frontera",
+  "descripcion": "Construcciones asociadas a un subconjunto y relaciones básicas entre interior, clausura y frontera.",
+  "objetivo": "Calcular interior, clausura y frontera en ejemplos sencillos y demostrar una identidad entre estas construcciones.",
+  "conocimientosPrevios": ["espacios topológicos", "conjuntos abiertos y cerrados", "complementos"],
+  "fecha": "2026-08-16",
+  "estado": "publicado",
+  "ruta": "/rainer/sofia/interior-clausura-frontera/",
+  "componentes": { "explicacion": false, "demostraciones": false, "ejercicios": false, "juegos": false, "calculadoras": false }
+}

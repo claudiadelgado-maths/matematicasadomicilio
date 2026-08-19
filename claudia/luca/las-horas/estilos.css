@@ -1,0 +1,57 @@
+:root { --clock-purple: #6457e6; --clock-pink: #ff71a9; --clock-yellow: #ffd84d; --clock-ink: #292650; --clock-blue: #37b9e9; }
+.clock-session { background: #f7f5ff; color: var(--clock-ink); }
+.clock-hero { overflow: hidden; padding: clamp(2.8rem, 8vw, 5.5rem) 0; background: linear-gradient(135deg, #6457e6, #9b5de5 55%, #d45dbe); color: white; }
+.clock-hero-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 2rem; }
+.clock-badge { display: inline-block; margin: 0 0 1rem; padding: .45rem .8rem; border: 2px solid white; border-radius: 999px; font-weight: 950; }
+.clock-hero h1 { margin: 0; font-size: clamp(4rem, 11vw, 8rem); line-height: .83; letter-spacing: -.07em; }
+.clock-hero p:last-child { max-width: 24ch; margin: 1.3rem 0 0; font-size: clamp(1.2rem, 3vw, 1.65rem); font-weight: 800; }
+.hero-clock { position: relative; display: grid; width: clamp(175px, 28vw, 285px); aspect-ratio: 1; place-items: center; border: 6px solid white; border-radius: 50%; background: var(--clock-yellow); box-shadow: 0 0 0 15px rgb(255 255 255 / 15%); }
+.hero-clock span { font-size: clamp(6rem, 16vw, 10rem); }
+.hero-clock i { position: absolute; width: 22px; aspect-ratio: 1; border-radius: 50%; background: var(--clock-pink); }
+.hero-clock i:nth-of-type(1) { top: 4%; right: 8%; }
+.hero-clock i:nth-of-type(2) { bottom: 2%; left: 8%; background: var(--clock-blue); }
+.hero-clock i:nth-of-type(3) { top: 17%; left: -4%; width: 14px; background: white; }
+
+.clock-intro { padding: clamp(3rem, 7vw, 5rem) 0; text-align: center; }
+.clock-intro h2, .clock-game-heading h2 { margin: 0 0 1rem; font-size: clamp(2.2rem, 5vw, 4rem); letter-spacing: -.055em; }
+.clock-types { display: flex; justify-content: center; gap: clamp(1rem, 4vw, 3rem); margin: 1.5rem 0; font-size: clamp(4rem, 10vw, 7rem); }
+.clock-intro p { margin: 0 0 .6rem; font-size: 1.25rem; font-weight: 800; }
+.clock-intro strong { display: inline-block; padding: .55rem 1rem; border-radius: 999px; background: #fff0ad; }
+
+.clock-game-zone { padding: 0 0 clamp(4rem, 9vw, 7rem); }
+.clock-game-card { padding: clamp(1.2rem, 4vw, 3rem); border: 4px solid var(--clock-ink); border-radius: 34px; background: white; box-shadow: 0 15px 0 #d9d3ff; }
+.clock-game-heading { display: flex; justify-content: space-between; gap: 1rem; }
+.clock-game-heading p { margin: 0; font-weight: 900; text-transform: uppercase; }
+.clock-score { height: fit-content; min-width: 82px; padding: .7rem 1rem; border-radius: 999px; background: #fff0ad; text-align: center; }
+.clock-heading-actions { display: flex; align-items: flex-start; flex-wrap: wrap; justify-content: flex-end; gap: .7rem; }
+.new-clock-exercises { min-height: 48px; padding: .65rem 1rem; border: 2px solid var(--clock-ink); border-radius: 999px; background: white; color: var(--clock-ink); font-weight: 900; cursor: pointer; }
+.new-clock-exercises:hover { background: #f0edff; }
+.clock-playground { display: grid; grid-template-columns: minmax(240px, .75fr) minmax(300px, 1fr); align-items: center; gap: clamp(1.5rem, 5vw, 4rem); margin-top: 1rem; }
+.challenge-card { padding: clamp(1.2rem, 4vw, 2.4rem); border-radius: 26px; background: #f0edff; }
+.challenge-start { min-height: 1.6rem; margin: 0 0 .5rem; color: #5a52a0; font-size: 1.15rem; font-weight: 900; }
+.challenge-card h3 { margin: 0; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.05; letter-spacing: -.045em; }
+.challenge-tip { margin: 1rem 0; font-weight: 800; }
+.clock-feedback { min-height: 3.4rem; margin: 0; font-size: 1.15rem; font-weight: 900; }
+.clock-feedback.is-success { color: #176844; }
+.clock-feedback.is-error { color: #b8325b; }
+.next-challenge { min-height: 54px; padding: .8rem 1.3rem; border: 0; border-radius: 999px; background: var(--clock-ink); color: white; font-weight: 950; cursor: pointer; }
+
+.clock-wrap { text-align: center; }
+.clock-face { position: relative; width: min(100%, 520px); aspect-ratio: 1; margin: auto; border: clamp(10px, 2vw, 18px) solid var(--clock-purple); border-radius: 50%; background: radial-gradient(circle, white 0 63%, #f6f2ff 63% 100%); box-shadow: inset 0 0 0 4px white, 0 13px 0 #c7bff7; touch-action: none; user-select: none; cursor: crosshair; }
+.clock-face::before { position: absolute; inset: 13%; border: 3px dashed #ddd6ff; border-radius: 50%; content: ""; }
+.hour-hand { position: absolute; z-index: 2; bottom: 50%; left: calc(50% - 7px); width: 14px; height: 31%; border-radius: 999px 999px 5px 5px; background: var(--clock-pink); box-shadow: 0 0 0 3px white; transform: rotate(0deg); transform-origin: 50% 100%; transition: transform 280ms cubic-bezier(.2,.9,.3,1.2); pointer-events: none; }
+.clock-pin { position: absolute; z-index: 4; top: 50%; left: 50%; width: 28px; aspect-ratio: 1; border: 5px solid white; border-radius: 50%; background: var(--clock-ink); transform: translate(-50%, -50%); pointer-events: none; }
+.clock-number { position: absolute; z-index: 3; top: var(--y); left: var(--x); display: grid; width: clamp(44px, 8vw, 54px); aspect-ratio: 1; place-items: center; padding: 0; border: 2px solid transparent; border-radius: 50%; background: transparent; color: var(--clock-ink); font-size: clamp(1rem, 3vw, 1.5rem); font-weight: 950; transform: translate(-50%, -50%); cursor: pointer; }
+.clock-number:hover, .clock-number.is-selected { background: var(--clock-yellow); border-color: var(--clock-ink); }
+.clock-number:focus-visible, .next-challenge:focus-visible, .new-clock-exercises:focus-visible { outline: 4px solid #1473e6; outline-offset: 4px; }
+.chosen-hour { display: inline-block; margin: 1.6rem 0 0; padding: .55rem 1rem; border-radius: 999px; background: var(--clock-ink); color: white; font-size: 1.1rem; }
+
+@media (max-width: 760px) {
+  .clock-hero-inner, .clock-playground { grid-template-columns: 1fr; }
+  .hero-clock { width: 175px; }
+  .clock-wrap { grid-row: 1; }
+  .challenge-card { text-align: center; }
+  .clock-game-heading { display: grid; }
+  .clock-heading-actions { justify-content: start; }
+}
+@media (prefers-reduced-motion: reduce) { .hour-hand { transition: none; } }

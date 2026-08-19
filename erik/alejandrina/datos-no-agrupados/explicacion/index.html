@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprender los datos | Datos no agrupados</title>
+  <meta name="description" content="Explicación de datos, frecuencias, moda, mediana y media o promedio.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Comprender los datos | Datos no agrupados">
+  <meta property="og:description" content="Explicación de datos, frecuencias, moda, mediana y media o promedio.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <link rel="icon" href="../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../../recursos/css/sistema-visual.css?v=20260723-modular1">
+  <link rel="stylesheet" href="../../../../recursos/css/modulos.css?v=20260723-modular1">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="../../../../recursos/js/navegacion.js?v=20260723-modular1" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false,strict:'ignore'});"></script>
+  <script type="module" src="script.mjs"></script>
+</head>
+<body class="statistics-theme">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../usuarios/" aria-current="page">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="learning-site module-site">
+    <div class="container">
+    <nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../usuarios/">Salones</a></li><li><a href="../../../">Erik</a></li><li><a href="../../">Alejandrina</a></li><li><a href="../">Datos no agrupados</a></li><li aria-current="page">Explicación</li></ol>
+    </nav></div>
+    <header class="learning-page-hero component-hero">
+      <div class="container">
+        <p class="eyebrow">Explicación · Sesión de Alejandrina</p>
+        <h1>Comprender los datos</h1>
+        <p class="lead">De una lista cotidiana a una tabla, dos gráficas y tres maneras de describir su centro.</p>
+      </div>
+    </header>
+
+    <nav class="study-route" aria-label="Secciones de la explicación">
+      <div class="container">
+        <ul>
+          <li><a href="#primeras-ideas">Primeras ideas</a></li>
+          <li><a href="#definiciones">Definiciones</a></li>
+          <li><a href="#datos-no-agrupados">Datos no agrupados</a></li>
+          <li><a href="#tabla-frecuencias">Tabla de frecuencias</a></li>
+          <li><a href="#graficas">Gráficas</a></li>
+          <li><a href="#medidas">Media, mediana y moda</a></li>
+          <li><a href="#ejemplos-reales">Ejemplos reales</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="statistics-section statistics-section-surface" id="primeras-ideas" aria-labelledby="first-ideas-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>1 · Primeras ideas</p>
+          <h2 id="first-ideas-title">Los datos aparecen todos los días</h2>
+          <p>Cuando contamos, medimos, observamos o preguntamos, obtenemos información: calificaciones, mensajes recibidos, edades, libros leídos, mascotas, goles, tiempos o temperaturas.</p>
+        </header>
+
+        <div class="data-example-strip" aria-label="Lista de diez calificaciones">
+          <span>8</span><span>6</span><span>9</span><span>8</span><span>7</span><span>10</span><span>6</span><span>8</span><span>7</span><span>9</span>
+        </div>
+        <p class="data-example-caption">La lista contiene diez calificaciones. Todavía no está ordenada ni resumida.</p>
+
+        <div class="statistics-intro-grid">
+          <article class="statistics-card">
+            <h3>Una lista puede ocultar información</h3>
+            <p>Con pocos datos podemos contar mentalmente. Cuando la lista crece, es fácil repetir un conteo, omitir un valor o confundir el dato con el número de veces que aparece.</p>
+            <div class="question-list" aria-label="Preguntas que podemos responder">
+              <p>¿Qué valor aparece más?</p>
+              <p>¿Cuántos datos hay?</p>
+              <p>¿Cuántos son menores o iguales que \(8\)?</p>
+              <p>¿Cuál es el promedio?</p>
+              <p>¿Cuál es el valor central?</p>
+            </div>
+          </article>
+          <article class="statistics-card">
+            <h3>Organizar ayuda a comprender</h3>
+            <p>La estadística descriptiva ordena y resume lo observado sin cambiar los datos. Así podemos detectar valores frecuentes, comparar cantidades, observar tendencias, comunicar resultados y tomar decisiones.</p>
+            <ul>
+              <li>Un profesor identifica el promedio y la calificación más frecuente.</li>
+              <li>Una tienda compara sus ventas diarias y reconoce días altos o bajos.</li>
+              <li>Una persona registra sus tiempos para observar si mejora con la práctica.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics-section" id="definiciones" aria-labelledby="definitions-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>2 · Definiciones</p>
+          <h2 id="definitions-title">El vocabulario que utilizaremos</h2>
+          <p>Cada definición formal precisa el concepto; el recuadro verde lo traduce a una idea rápida sin sustituirla.</p>
+        </header>
+
+        <div class="definition-grid">
+          <article class="definition-card">
+            <h3>Dato</h3>
+            <p class="definition-formal">Valor, observación o resultado obtenido al estudiar una característica. Una edad, una calificación, una estatura, una cantidad de mascotas o un tiempo son datos.</p>
+            <p class="definition-simple"><strong>En palabras simples</strong>Es cada pieza de información que reunimos.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Conjunto de datos</h3>
+            <p class="definition-formal">Colección de observaciones relacionadas con una misma característica o estudio. Ejemplo: \(6,\ 8,\ 7,\ 9,\ 8,\ 10,\ 7,\ 8\).</p>
+            <p class="definition-simple"><strong>La idea es</strong>Todos los datos que analizaremos juntos.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Variable</h3>
+            <p class="definition-formal">Característica que se observa o mide, como edad, calificación, número de hermanos, temperatura o tiempo de espera. Puede ser numérica o representar categorías.</p>
+            <p class="definition-simple"><strong>Dicho fácilmente</strong>Es aquello sobre lo que estamos reuniendo información.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Datos no agrupados</h3>
+            <p class="definition-formal">Datos que conservan sus valores individuales sin reunirse en intervalos o clases. Por ejemplo: \(2,\ 3,\ 3,\ 4,\ 4,\ 4,\ 5\).</p>
+            <p class="definition-simple"><strong>Para entenderlo rápido</strong>Podemos resumirlos sin perder cada valor distinto.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Tamaño del conjunto</h3>
+            <p class="definition-formal">La letra \(n\) representa la cantidad total de observaciones. Si hay ocho datos, entonces \(n=8\).</p>
+            <p class="definition-simple"><strong>En palabras simples</strong>\(n\) responde “¿cuántos datos hay en total?”.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Valor observado</h3>
+            <p class="definition-formal">\(x_i\) representa uno de los valores distintos del conjunto. En una tabla, cada valor distinto se escribe normalmente una sola vez.</p>
+            <p class="definition-simple"><strong>La idea es</strong>La columna \(x_i\) evita repetir el mismo valor en varias filas.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Frecuencia absoluta</h3>
+            <p class="definition-formal">\(f_i\) es el número de veces que aparece \(x_i\). Si el \(8\) aparece tres veces, su frecuencia es \(f_i=3\).</p>
+            <p class="definition-simple"><strong>Dicho fácilmente</strong>Cuenta apariciones.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Frecuencia relativa</h3>
+            <p class="definition-formal">Proporción del total correspondiente a \(x_i\): \(h_i=\frac{f_i}{n}\). Puede expresarse como fracción, decimal o porcentaje.</p>
+            <p class="definition-simple"><strong>En palabras simples</strong>Compara las apariciones con el total.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Frecuencia porcentual</h3>
+            <p class="definition-formal">Porcentaje del conjunto correspondiente a un valor: \(p_i=h_i\cdot100\%=\frac{f_i}{n}\cdot100\%\).</p>
+            <p class="definition-simple"><strong>La idea es</strong>Dice cuántos de cada cien corresponden a ese valor.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Frecuencia acumulada</h3>
+            <p class="definition-formal">Suma de frecuencias absolutas desde el primer valor hasta el actual: \(F_i=f_1+f_2+\cdots+f_i=\sum_{j=1}^{i}f_j\).</p>
+            <p class="definition-simple"><strong>En palabras simples</strong>Indica cuántos datos se han contado hasta ese valor.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Frecuencia relativa acumulada</h3>
+            <p class="definition-formal">Proporción acumulada hasta \(x_i\): \(H_i=h_1+h_2+\cdots+h_i=\frac{F_i}{n}\).</p>
+            <p class="definition-simple"><strong>Dicho fácilmente</strong>Es la parte del total que ya se acumuló.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Porcentaje acumulado</h3>
+            <p class="definition-formal">\(P_i=\frac{F_i}{n}\cdot100\%\). El último porcentaje acumulado debe ser \(100\%\), salvo una mínima diferencia visual causada por redondeo.</p>
+            <p class="definition-simple"><strong>Para entenderlo rápido</strong>Muestra qué porcentaje se ha reunido hasta un valor.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Tabla de frecuencias</h3>
+            <p class="definition-formal">Organización que muestra los valores distintos y la cantidad o proporción de veces que aparece cada uno.</p>
+            <p class="definition-simple"><strong>En palabras simples</strong>Convierte una lista larga en un resumen que puede comprobarse.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Media aritmética</h3>
+            <p class="definition-formal">Suma de todos los datos dividida entre \(n\): \(\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}\). Desde una tabla: \(\bar{x}=\frac{\sum x_i f_i}{n}\).</p>
+            <p class="definition-simple"><strong>La idea es</strong>Es el promedio que resultaría al repartir el total por igual.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Mediana</h3>
+            <p class="definition-formal">Valor central de los datos ordenados. Si \(n\) es impar hay un dato central; si es par se promedian los dos centrales.</p>
+            <p class="definition-simple"><strong>Dicho fácilmente</strong>Deja la misma cantidad de datos a cada lado.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Moda</h3>
+            <p class="definition-formal">Valor o valores con mayor frecuencia. Un conjunto puede ser unimodal, bimodal, multimodal o no tener moda cuando ningún valor se repite más que los demás.</p>
+            <p class="definition-simple"><strong>En palabras simples</strong>Es el valor más frecuente, no la frecuencia misma.</p>
+          </article>
+          <article class="definition-card">
+            <h3>Gráfica de frecuencias</h3>
+            <p class="definition-formal">Representación de cada valor discreto \(x_i\) mediante una barra cuya altura corresponde a \(f_i\), \(h_i\) o \(p_i\).</p>
+            <p class="definition-simple"><strong>La idea es</strong>Las barras se comparan sin inventar intervalos entre los valores.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics-section statistics-section-surface" id="datos-no-agrupados" aria-labelledby="ungrouped-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>3 · Datos no agrupados</p>
+          <h2 id="ungrouped-title">Cada observación conserva su valor</h2>
+          <p>No agrupamos los datos en clases. Primero conservamos la lista y después ordenamos sus valores individuales.</p>
+        </header>
+
+        <div class="ordered-data">
+          <strong>Originales</strong><span>\(2,\ 5,\ 3,\ 2,\ 4,\ 5,\ 2,\ 3\)</span>
+          <strong>Ordenados</strong><span>\(2,\ 2,\ 2,\ 3,\ 3,\ 4,\ 5,\ 5\)</span>
+        </div>
+
+        <div class="statistics-intro-grid">
+          <article class="statistics-card">
+            <h3>¿Qué facilita el orden?</h3>
+            <ul>
+              <li>Contar las repeticiones.</li>
+              <li>Identificar la moda.</li>
+              <li>Localizar la mediana.</li>
+              <li>Construir una tabla.</li>
+              <li>Calcular frecuencias acumuladas.</li>
+            </ul>
+          </article>
+          <article class="statistics-card">
+            <h3>Lo que no haremos aquí</h3>
+            <p>Intervalos como <strong>0–10, 11–20 y 21–30</strong> corresponden a datos agrupados en clases. En esta sesión las barras y las filas representan únicamente valores observados, no intervalos inventados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics-section" id="tabla-frecuencias" aria-labelledby="frequency-table-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>4 · Tabla de frecuencias</p>
+          <h2 id="frequency-table-title">Construir el resumen paso a paso</h2>
+          <p>Diez personas registraron cuántos libros leyeron. Usaremos la lista completa para construir y comprobar cada columna.</p>
+        </header>
+
+        <ol class="step-list">
+          <li><div><strong>Cuenta las observaciones</strong><span>\(1,\ 2,\ 2,\ 3,\ 1,\ 4,\ 2,\ 3,\ 3,\ 2\), por lo tanto \(n=10\).</span></div></li>
+          <li><div><strong>Ordena e identifica valores distintos</strong><span>Los valores que aparecerán una sola vez en la primera columna son \(1,\ 2,\ 3,\ 4\).</span></div></li>
+          <li><div><strong>Cuenta y compara con el total</strong><span>Calcula \(f_i\), después divide entre \(n\) para obtener \(h_i\) y \(p_i\).</span></div></li>
+          <li><div><strong>Acumula en orden ascendente</strong><span>Suma cada fila con las anteriores para obtener \(F_i\) y \(P_i\).</span></div></li>
+        </ol>
+
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Tabla completa del ejemplo de libros leídos">
+          <table class="statistics-table">
+            <thead>
+              <tr>
+                <th scope="col">Valor \(x_i\)<small>libros</small></th>
+                <th scope="col">Absoluta \(f_i\)<small>apariciones</small></th>
+                <th scope="col">Relativa \(h_i\)<small>proporción</small></th>
+                <th scope="col">Porcentaje \(p_i\)<small>del valor</small></th>
+                <th scope="col">Acumulada \(F_i\)<small>hasta \(x_i\)</small></th>
+                <th scope="col">Acumulado \(P_i\)<small>hasta \(x_i\)</small></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>2</td><td>0.20</td><td>20%</td><td>2</td><td>20%</td></tr>
+              <tr><td>2</td><td>4</td><td>0.40</td><td>40%</td><td>6</td><td>60%</td></tr>
+              <tr><td>3</td><td>3</td><td>0.30</td><td>30%</td><td>9</td><td>90%</td></tr>
+              <tr><td>4</td><td>1</td><td>0.10</td><td>10%</td><td>10</td><td>100%</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td>Total</td><td>10</td><td>1.00</td><td>100%</td><td>10</td><td>100%</td></tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="frequency-column-grid">
+          <article class="column-card">
+            <h3>Frecuencia absoluta \(f_i\)</h3>
+            <p>El valor \(2\) aparece cuatro veces: \(f_i=4\). La suma debe cumplir \(\sum f_i=n\): \(2+4+3+1=10\).</p>
+          </article>
+          <article class="column-card">
+            <h3>Frecuencia relativa \(h_i\)</h3>
+            <p>Para \(x_i=2\): \(h_i=\frac{4}{10}=0.4\). Todas las frecuencias relativas deben sumar \(1\).</p>
+          </article>
+          <article class="column-card">
+            <h3>Porcentaje \(p_i\)</h3>
+            <p>\(p_i=0.4\cdot100\%=40\%\). Todos los porcentajes deben sumar \(100\%\), salvo pequeñas diferencias de redondeo.</p>
+          </article>
+          <article class="column-card">
+            <h3>Frecuencia acumulada \(F_i\)</h3>
+            <p>\(F_1=2\), \(F_2=2+4=6\), \(F_3=9\) y \(F_4=10\). Siempre aumenta o se mantiene y termina en \(n\).</p>
+          </article>
+          <article class="column-card">
+            <h3>Porcentaje acumulado \(P_i\)</h3>
+            <p>Para \(x_i=2\): \(P_i=\frac{6}{10}\cdot100\%=60\%\). Termina en \(100\%\).</p>
+          </article>
+          <article class="column-card">
+            <h3>Interpretar “hasta”</h3>
+            <p>\(F_2=6\) significa que seis observaciones tienen un valor menor o igual que \(2\), porque las filas están ordenadas.</p>
+          </article>
+        </div>
+
+        <div class="check-strip" aria-label="Comprobaciones de la tabla">
+          <span>\(\sum f_i=n\)</span>
+          <span>\(\sum h_i=1\)</span>
+          <span>\(\sum p_i=100\%\)</span>
+          <span>\(F_{\text{final}}=n\)</span>
+          <span>\(P_{\text{final}}=100\%\)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics-section statistics-section-surface" id="graficas" aria-labelledby="charts-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>5 · Representaciones gráficas</p>
+          <h2 id="charts-title">Las mismas frecuencias, vistas de dos maneras</h2>
+          <p>Como los libros son valores discretos, usamos barras separadas. La primera gráfica compara conteos; la segunda compara porcentajes. Ninguna utiliza intervalos.</p>
+        </header>
+
+        <div class="calculator-chart-grid">
+          <div data-theory-absolute-chart>
+            <p>Frecuencias absolutas: 1 libro → 2; 2 libros → 4; 3 libros → 3; 4 libros → 1.</p>
+          </div>
+          <div data-theory-percentage-chart>
+            <p>Porcentajes: 1 libro → 20%; 2 libros → 40%; 3 libros → 30%; 4 libros → 10%.</p>
+          </div>
+        </div>
+
+        <p class="interpretation-note"><strong>Lectura:</strong> la barra más alta corresponde a \(2\) libros. En la gráfica absoluta llega a \(4\) observaciones; en la porcentual llega a \(40\%\). Cambia la escala, no la distribución.</p>
+
+        <h3>Cómo crece la acumulación</h3>
+        <div class="cumulative-track-wrap" tabindex="0" role="region" aria-label="Porcentaje acumulado del ejemplo de libros">
+          <div class="cumulative-track">
+            <article><span>Hasta 1 libro</span><strong>20%</strong></article>
+            <article><span>Hasta 2 libros</span><strong>60%</strong></article>
+            <article><span>Hasta 3 libros</span><strong>90%</strong></article>
+            <article><span>Hasta 4 libros</span><strong>100%</strong></article>
+          </div>
+        </div>
+        <p class="data-example-caption">La acumulación nunca disminuye: incorpora cada fila anterior hasta alcanzar el total.</p>
+      </div>
+    </section>
+
+    <section class="statistics-section" id="medidas" aria-labelledby="measures-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>6 · Medidas de tendencia central</p>
+          <h2 id="measures-title">Tres respuestas a preguntas distintas</h2>
+          <p>Media, mediana y moda describen el comportamiento central de un conjunto, pero no significan lo mismo.</p>
+        </header>
+
+        <div class="measure-grid">
+          <article class="measure-card">
+            <h3>Media o promedio</h3>
+            <p>Se suman todos los datos y se divide entre \(n\).</p>
+            <div class="formula-box">
+              <p>\(\bar{x}=\frac{4+6+8+10}{4}=\frac{28}{4}=7\)</p>
+            </div>
+            <p>Con la tabla de libros:</p>
+            <div class="formula-box">
+              <p>\(\bar{x}=\frac{\sum x_i f_i}{n}\)</p>
+              <p>\(\bar{x}=\frac{1(2)+2(4)+3(3)+4(1)}{10}=\frac{23}{10}=2.3\)</p>
+            </div>
+            <p>En promedio se leyeron \(2.3\) libros por persona. La media no necesita coincidir con un dato observado.</p>
+          </article>
+          <article class="measure-card">
+            <h3>Mediana</h3>
+            <p>Primero se ordenan los datos.</p>
+            <div class="formula-box">
+              <p><strong>Cantidad impar:</strong> \(2,\ 4,\ \mathbf{5},\ 7,\ 9\)</p>
+              <p>Posición: \(\frac{n+1}{2}=\frac{5+1}{2}=3\). Mediana \(=5\).</p>
+            </div>
+            <div class="formula-box">
+              <p><strong>Cantidad par:</strong> \(2,\ 4,\ 6,\ 10\)</p>
+              <p>\(\operatorname{Mediana}=\frac{4+6}{2}=5\)</p>
+            </div>
+            <p>En la tabla de libros, las posiciones \(5\) y \(6\) caen en \(x_i=2\), pues \(F_i\) pasa de \(2\) a \(6\). La mediana es \(2\).</p>
+          </article>
+          <article class="measure-card">
+            <h3>Moda</h3>
+            <p>Es el valor con mayor frecuencia, no la frecuencia.</p>
+            <div class="formula-box">
+              <p>\(2,\ 3,\ 3,\ 4,\ 5\Rightarrow\operatorname{Moda}=3\)</p>
+              <p>\(1,\ 1,\ 2,\ 2,\ 3\Rightarrow\) modas \(1\) y \(2\)</p>
+              <p>\(1,\ 2,\ 3,\ 4\Rightarrow\) sin moda</p>
+            </div>
+            <p>Puede haber una moda, dos, varias o ninguna. No se debe elegir una por obligación.</p>
+          </article>
+        </div>
+
+        <div class="comparison-table table-scroll" tabindex="0" role="region" aria-label="Comparación entre media, mediana y moda">
+          <table class="statistics-table">
+            <thead><tr><th scope="col">Medida</th><th scope="col">Qué representa</th><th scope="col">Cómo se obtiene</th><th scope="col">¿Le afectan valores extremos?</th></tr></thead>
+            <tbody>
+              <tr><td>Media</td><td>Promedio aritmético</td><td>Suma entre cantidad</td><td>Sí</td></tr>
+              <tr><td>Mediana</td><td>Valor central</td><td>Ordenar y localizar el centro</td><td>Menos</td></tr>
+              <tr><td>Moda</td><td>Valor más frecuente</td><td>Contar repeticiones</td><td>Generalmente no</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <article class="statistics-card">
+          <h3>Cuando las tres son diferentes</h3>
+          <p>En \(2,\ 3,\ 3,\ 4,\ 20\), la media es \(\frac{32}{5}=6.4\), la mediana es \(3\) y la moda es \(3\). El valor extremo \(20\) eleva la media; la mediana sigue señalando el centro de las posiciones y la moda identifica el valor más repetido.</p>
+          <p>Lo mismo ocurre en \(5,\ 5,\ 6,\ 6,\ 30\): aunque la mayoría está cerca de \(5\) y \(6\), el \(30\) aumenta notablemente el promedio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="statistics-section statistics-section-surface" id="ejemplos-reales" aria-labelledby="real-examples-title">
+      <div class="container">
+        <header class="statistics-heading">
+          <p>7 · Ejemplos reales</p>
+          <h2 id="real-examples-title">Interpretar antes de terminar</h2>
+          <p>Un resultado estadístico cobra sentido cuando volvemos a la situación que produjo los datos.</p>
+        </header>
+
+        <div class="real-example-grid">
+          <article class="real-example-card">
+            <h3>Calificaciones</h3>
+            <p>\(7,\ 8,\ 8,\ 9,\ 10,\ 7,\ 8\)</p>
+            <ul>
+              <li>Moda: \(8\).</li>
+              <li>Media: \(\frac{57}{7}\approx8.14\).</li>
+              <li>Mediana: \(8\).</li>
+              <li>Menores o iguales que \(8\): \(\frac{5}{7}\cdot100\%\approx71.4\%\).</li>
+            </ul>
+          </article>
+          <article class="real-example-card">
+            <h3>Número de mascotas</h3>
+            <p>\(0,\ 1,\ 2,\ 1,\ 3,\ 2,\ 1,\ 0\)</p>
+            <ul>
+              <li>\(0\) mascotas: frecuencia \(2\).</li>
+              <li>\(1\) mascota: frecuencia \(3\).</li>
+              <li>\(2\) mascotas: frecuencia \(2\).</li>
+              <li>\(3\) mascotas: frecuencia \(1\).</li>
+              <li>Moda: \(1\) mascota.</li>
+            </ul>
+          </article>
+          <article class="real-example-card">
+            <h3>Tiempo de una actividad</h3>
+            <p>Minutos: \(12,\ 10,\ 15,\ 11,\ 10,\ 13\)</p>
+            <ul>
+              <li>Media: \(\frac{71}{6}\approx11.83\) minutos.</li>
+              <li>Ordenados: \(10,\ 10,\ 11,\ 12,\ 13,\ 15\).</li>
+              <li>Mediana: \(\frac{11+12}{2}=11.5\) minutos.</li>
+            </ul>
+          </article>
+          <article class="real-example-card">
+            <h3>Libros leídos</h3>
+            <p>La tabla mostró que \(40\%\) leyó exactamente \(2\) libros y \(60\%\) leyó como máximo \(2\). La media fue \(2.3\), la mediana \(2\) y la moda \(2\).</p>
+            <p>Cada medida responde una pregunta distinta sobre la misma lista.</p>
+          </article>
+        </div>
+
+        <div class="next-actions">
+          <a href="../ejercicios/organiza-y-analiza/"><strong>Practicar paso a paso →</strong><span>Completa tablas, interpreta acumulados y calcula las tres medidas.</span></a>
+          <a href="../calculadoras/estadistica-descriptiva/"><strong>Analizar una lista propia →</strong><span>Obtén tabla, procedimientos y gráficas con enteros o decimales.</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../usuarios/">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav>
+    </div>
+    <div class="container footer-legal">
+      <p class="footer-copyright">© 2026 Matemáticas a Domicilio</p>
+      <p class="footer-legal-links"><a href="../../../../legal/aviso-de-privacidad/">Aviso de Privacidad</a><span aria-hidden="true">·</span><a href="../../../../legal/terminos-y-condiciones/">Términos y Condiciones</a></p>
+      <p class="footer-location">Mérida, Yucatán, México</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 999 129 3497"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.84 9.84 0 0 0-8.42 14.92L2.05 22l5.2-1.53A9.94 9.94 0 1 0 12.04 2Zm0 17.99a8 8 0 0 1-4.09-1.12l-.29-.17-3.09.91.92-3-.19-.31A8 8 0 1 1 12.04 20Zm4.39-5.99c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19a7.24 7.24 0 0 1-1.34-1.67c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46a.88.88 0 0 0-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg></a>
+</body>
+</html>

@@ -29,8 +29,17 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 │   ├── calculadoras/
 │   └── examenes/[examen]/
 ├── usuarios/
-│   └── [usuario]/
-│       └── sesiones/[sesion]/
+│   └── index.html (catálogo de salones)
+├── [asesor]/
+│   ├── maestro.json
+│   ├── index.html
+│   └── [alumno]/
+│       ├── usuario.json
+│       └── [sesion]/
+├── plantillas/
+│   ├── maestro/
+│   ├── alumno/
+│   └── sesion/
 ├── recursos/
 │   ├── css/
 │   ├── js/
@@ -123,12 +132,14 @@ GitHub Pages publica directamente los archivos de la rama configurada. No se deb
 - [Crear un juego](documentacion/creacion-de-juegos.md)
 - [Crear una calculadora](documentacion/creacion-de-calculadoras.md)
 - [Crear un examen](documentacion/creacion-de-examenes.md)
+- [Crear un asesor](documentacion/creacion-de-maestros.md)
 - [Crear un usuario](documentacion/creacion-de-usuarios.md)
 - [Crear una sesión](documentacion/creacion-de-sesiones.md)
+- [Gestión de asesores, alumnos y sesiones](documentacion/gestion-academica.md)
 - [Publicación y validación](documentacion/publicacion.md)
 
 ## Datos globales sensibles al cambio
 
-El número de WhatsApp visible es `999 129 34 97` y el enlace usa `529991293497`. El correo es `contacto@matematicasadomicilio.com`. La duración y el precio publicados son `2 horas y media` y `$250 MXN`. Si cambian, busca todas sus apariciones y valida el sitio completo.
+El número de WhatsApp visible es `999 129 34 97` y el enlace usa `529991293497`. El correo es `contacto@matematicasadomicilio.com`. Los precios, duración, ubicación y disponibilidad de cada asesor se administran técnicamente en su `maestro.json` y se publican mediante `npm run catalogo`; no deben duplicarse manualmente en la portada.
 
 El proyecto no debe presentar testimonios, credenciales, resultados, clientes, redes sociales ni servicios que no hayan sido confirmados.

@@ -2,8 +2,8 @@
 
 Estas herramientas usan únicamente módulos nativos de Node.js y no forman parte del sitio publicado en el navegador.
 
-- `generar-catalogo.mjs`: reúne los JSON de módulos en `/recursos/datos/catalogo.json`.
-- `validar-proyecto.mjs`: comprueba metadatos, identificadores, rutas, referencias HTML y sintaxis de scripts locales.
+- `generar-catalogo.mjs`: genera `/recursos/datos/catalogo.json` y la relación pública `/recursos/datos/academia.json` a partir de los metadatos distribuidos.
+- `validar-proyecto.mjs`: comprueba metadatos, identificadores, estados, relaciones maestro–alumno–sesión, fechas editoriales, rutas, referencias HTML y sintaxis de scripts locales.
 
 Ejecuta desde la raíz:
 
@@ -12,4 +12,4 @@ npm run catalogo
 npm run validar
 ```
 
-El catálogo generado sí se versiona para que otras herramientas o una futura interfaz puedan consultarlo sin ejecutar Node.
+Los datos generados se versionan para que el sitio estático pueda consultarlos sin ejecutar Node en producción. Las plantillas y los estados no publicables se excluyen de los índices visibles.

@@ -14,6 +14,7 @@ const metadataNames = new Set([
   "examen.json",
   "usuario.json",
   "sesion.json",
+  "maestro.json",
 ]);
 const errors = [];
 const warnings = [];
@@ -34,6 +35,7 @@ const files = walk(root);
 const htmlFiles = files.filter((file) => file.endsWith(".html"));
 const metadataFiles = files.filter((file) => metadataNames.has(path.basename(file)));
 const ids = new Map();
+const metadata = [];
 
 const reportError = (message) => errors.push(message);
 const reportWarning = (message) => warnings.push(message);
@@ -69,6 +71,7 @@ for (const file of metadataFiles) {
     reportError(`${relative(file)}: JSON inválido (${error.message}).`);
     continue;
   }
+  metadata.push({ data, file });
 
   for (const key of ["id", "tipo", "titulo", "estado", "ruta"]) {
     if (!data[key]) reportError(`${relative(file)}: falta "${key}".`);
@@ -102,6 +105,107 @@ for (const file of metadataFiles) {
           `${relative(file)}: declara "${component}" disponible, pero no existe su carpeta.`,
         );
       }
+    }
+  }
+}
+
+const metadataById = new Map(metadata.filter(({ data }) => data.id).map(({ data }) => [data.id, data]));
+const allowedStates = {
+  maestro: new Set(["activo", "inactivo", "plantilla"]),
+  usuario: new Set(["activo", "inactivo", "plantilla"]),
+  sesion: new Set(["publicado", "borrador", "archivado", "plantilla"]),
+};
+
+for (const { data, file } of metadata) {
+  const states = allowedStates[data.tipo];
+  if (states && !states.has(data.estado)) {
+    reportError(`${relative(file)}: estado "${data.estado}" no permitido para ${data.tipo}.`);
+  }
+
+  if (data.tipo === "maestro" && data.estado === "activo") {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(data.slug ?? "")) {
+      reportError(`${relative(file)}: el asesor necesita un slug público válido sin espacios ni acentos.`);
+    }
+    const expectedRoute = `/${data.slug}/`;
+    if (data.ruta !== expectedRoute) {
+      reportError(`${relative(file)}: la ruta del asesor debe ser ${expectedRoute}.`);
+    }
+    for (const key of ["nombreVisible", "imagen", "ubicacion", "disponibilidad", "precios"]) {
+      if (!data[key]) reportError(`${relative(file)}: maestro activo sin "${key}".`);
+    }
+    if (!Array.isArray(data.precios) || data.precios.length === 0) {
+      reportError(`${relative(file)}: maestro activo sin precios configurados.`);
+    } else {
+      for (const price of data.precios) {
+        if (!price.id || !price.titulo || !price.moneda) {
+          reportError(`${relative(file)}: cada precio necesita id, título y moneda.`);
+        }
+        if (!Number.isFinite(price.importe) || price.importe < 0) {
+          reportError(`${relative(file)}: importe inválido en el precio "${price.id}".`);
+        }
+        if (!Number.isInteger(price.duracionMinutos) || price.duracionMinutos <= 0) {
+          reportError(`${relative(file)}: duración inválida en el precio "${price.id}".`);
+        }
+      }
+    }
+    if (!data.ubicacion?.pais || !data.ubicacion?.ciudad) {
+      reportError(`${relative(file)}: maestro activo sin país o ciudad.`);
+    }
+    if (typeof data.disponibilidad?.aceptaNuevosAlumnos !== "boolean") {
+      reportError(`${relative(file)}: disponibilidad sin aceptaNuevosAlumnos booleano.`);
+    }
+    validateLocalReference(file, data.imagen, "imagen de maestro");
+  }
+
+  if (data.tipo === "usuario" && data.estado === "activo") {
+    const teacher = metadataById.get(data.maestro);
+    if (!teacher || teacher.tipo !== "maestro") {
+      reportError(`${relative(file)}: referencia al maestro inexistente "${data.maestro}".`);
+    } else if (teacher.estado !== "activo") {
+      reportError(`${relative(file)}: el maestro "${data.maestro}" no está activo.`);
+    }
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(data.slug ?? "")) {
+      reportError(`${relative(file)}: el alumno necesita un slug válido sin espacios ni acentos.`);
+    }
+    if (teacher?.ruta) {
+      const expectedRoute = `${teacher.ruta}${data.slug}/`;
+      if (data.ruta !== expectedRoute) {
+        reportError(
+          `${relative(file)}: la ruta del alumno debe ser ${expectedRoute} para evitar colisiones entre salones.`,
+        );
+      }
+    }
+    for (const key of ["acento", "fondo"]) {
+      const color = data.personalizacion?.[key];
+      if (color && !/^#[0-9a-f]{6}$/i.test(color)) {
+        reportError(`${relative(file)}: color "${key}" inválido; usa #RRGGBB.`);
+      }
+    }
+  }
+
+  if (data.tipo === "sesion" && data.estado === "publicado") {
+    const student = metadataById.get(data.usuario);
+    if (!student || student.tipo !== "usuario") {
+      reportError(`${relative(file)}: referencia al alumno inexistente "${data.usuario}".`);
+    } else {
+      if (student.estado !== "activo") {
+        reportError(`${relative(file)}: el alumno "${data.usuario}" no está activo.`);
+      }
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(data.slug ?? "")) {
+        reportError(`${relative(file)}: la sesión necesita un slug válido sin espacios ni acentos.`);
+      }
+      const expectedRoute = `${student.ruta}${data.slug}/`;
+      if (data.ruta !== expectedRoute) {
+        reportError(`${relative(file)}: la ruta publicada debe ser ${expectedRoute}.`);
+      }
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(data.fecha ?? "")) {
+      reportError(`${relative(file)}: una sesión publicada necesita fecha YYYY-MM-DD.`);
+    } else if (
+      Number.isNaN(Date.parse(`${data.fecha}T00:00:00Z`)) ||
+      new Date(`${data.fecha}T00:00:00Z`).toISOString().slice(0, 10) !== data.fecha
+    ) {
+      reportError(`${relative(file)}: fecha inválida "${data.fecha}".`);
     }
   }
 }

@@ -7,7 +7,8 @@ Esta carpeta contiene únicamente recursos usados por varias áreas:
 - `js/navegacion.js`: menú, navegación y comportamiento común;
 - `svg/`: logotipo, favicon e ilustraciones generales;
 - `imagenes/`: fotografías generales;
-- `datos/catalogo.json`: índice generado desde metadatos.
+- `datos/catalogo.json`: índice público generado desde metadatos.
+- `datos/academia.json`: relación generada maestro → alumnos → sesiones para las interfaces académicas.
 
 No coloques aquí la lógica de un ejercicio, juego o calculadora concreta. Si un archivo solo pertenece a un módulo, debe vivir dentro de ese módulo.
 

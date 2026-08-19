@@ -1,0 +1,17 @@
+{
+  "id": "plantilla-alumno",
+  "slug": "nombre-del-alumno",
+  "tipo": "usuario",
+  "titulo": "Espacio del alumno (reemplazar)",
+  "nombreVisible": "Nombre del alumno",
+  "descripcion": "Espacio de sesiones y recursos personalizados.",
+  "estado": "plantilla",
+  "ruta": "/plantillas/alumno/",
+  "maestro": "plantilla-maestro",
+  "personalizacion": {
+    "simbolo": "A",
+    "acento": "#1f5fbd",
+    "fondo": "#eef5ff"
+  },
+  "almacenamientoLocal": false
+}

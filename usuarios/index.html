@@ -3,19 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Usuarios | Matemáticas a Domicilio</title>
-  <meta name="description" content="Espacios independientes de actividades y sesiones para Andrés, José y Alejandrina.">
+  <title>Salones | Matemáticas a Domicilio</title>
+  <meta name="description" content="Explora los asesores disponibles y entra al salón de cada uno.">
   <meta name="theme-color" content="#ffffff">
-  <meta property="og:title" content="Usuarios | Matemáticas a Domicilio">
-  <meta property="og:description" content="Espacios independientes de actividades y sesiones para Andrés, José y Alejandrina.">
+  <meta property="og:title" content="Salones | Matemáticas a Domicilio">
+  <meta property="og:description" content="Explora los asesores disponibles y entra al salón de cada uno.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <link rel="icon" href="../recursos/svg/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../recursos/css/sistema-visual.css?v=20260723-modular1">
   <link rel="stylesheet" href="../recursos/css/modulos.css?v=20260723-modular1">
+  <link rel="stylesheet" href="../recursos/css/academia.css?v=20260819-rutas2">
   <link rel="stylesheet" href="estilos.css?v=20260810-usuarios1">
 
   <script src="../recursos/js/navegacion.js?v=20260723-modular1" defer></script>
+  <script src="../recursos/js/academia.js?v=20260819-rutas2" defer></script>
 
 </head>
 <body>
@@ -24,29 +26,20 @@
     <div class="container header-inner">
       <a class="brand" href="../" aria-label="Matemáticas a Domicilio, inicio"><img src="../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
-      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../">Inicio</a></li><li><a href="../nosotros/">Nosotros</a></li><li><a href="../biblioteca/">Biblioteca</a></li><li><a href="../usuarios/" aria-current="page">Usuarios</a></li><li><a href="../contacto/">Contacto</a></li></ul></nav>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../">Inicio</a></li><li><a href="../nosotros/">Nosotros</a></li><li><a href="../biblioteca/">Biblioteca</a></li><li><a href="../usuarios/" aria-current="page">Salones</a></li><li><a href="../contacto/">Contacto</a></li></ul></nav>
     </div>
   </header>
 
   <main id="contenido" class="learning-site user-site module-site">
     <header class="learning-hero">
-      <div class="container"><p class="eyebrow">Espacios personales</p><h1>Usuarios</h1><p class="lead">Selecciona un espacio para consultar sesiones, actividades y herramientas. La información de cada usuario permanece separada.</p><p class="lead">Todos pueden consultar y utilizar estos apartados, aunque fueron creados para cada cliente. Si quieres un espacio personalizado, comienza a tomar sesiones.</p></div>
+      <div class="container"><h1>Salones</h1><p class="lead">Elige un asesor y entra a su salón.</p></div>
     </header>
-    <section class="user-hub" aria-labelledby="user-options-title">
-      <div class="container">
-        <div class="learning-section-heading"><h2 id="user-options-title">Elige un espacio</h2><p>Cada carpeta contiene sus propios metadatos, sesiones y reglas de mantenimiento.</p></div>
-        <div class="user-access-grid">
-          <a class="user-access" href="jose/"><span class="user-monogram" aria-hidden="true">J</span><span><strong>José</strong><small>Definir, organizar y completar tareas.</small></span><span aria-hidden="true">→</span></a>
-          <a class="user-access" href="alejandrina/"><span class="user-monogram" aria-hidden="true">A</span><span><strong>Alejandrina</strong><small>Sesiones y actividades personalizadas de estadística.</small></span><span aria-hidden="true">→</span></a>
-          <a class="user-access user-access-andres" href="andres/"><span class="user-monogram" aria-hidden="true">A</span><span><strong>Andrés</strong><small>Porcentajes, descuentos, IVA y razonamiento aplicado a compras.</small></span><span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </section>
+    <div data-academia-maestros aria-live="polite"><p class="academy-loading container">Cargando salones…</p></div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand"><a class="brand" href="../" aria-label="Matemáticas a Domicilio, inicio"><img src="../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div>
-      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../">Inicio</a></li><li><a href="../nosotros/">Nosotros</a></li><li><a href="../biblioteca/">Biblioteca</a></li><li><a href="../usuarios/">Usuarios</a></li><li><a href="../contacto/">Contacto</a></li></ul></nav>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../">Inicio</a></li><li><a href="../nosotros/">Nosotros</a></li><li><a href="../biblioteca/">Biblioteca</a></li><li><a href="../usuarios/">Salones</a></li><li><a href="../contacto/">Contacto</a></li></ul></nav>
     </div>
     <div class="container footer-legal">
       <p class="footer-copyright">© 2026 Matemáticas a Domicilio</p>

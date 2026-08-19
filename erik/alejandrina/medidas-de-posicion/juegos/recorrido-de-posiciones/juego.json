@@ -1,0 +1,11 @@
+{
+  "id": "recorrido-de-posiciones",
+  "tipo": "juego",
+  "sesion": "medidas-de-posicion",
+  "usuario": "alejandrina",
+  "titulo": "El taller del corte exacto",
+  "descripcion": "Juego para interpretar cuartiles, deciles, percentiles y mediana, y cortar una cinta en su posición porcentual exacta.",
+  "estado": "publicado",
+  "ruta": "/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/",
+  "interactivo": true
+}

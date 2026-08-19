@@ -1,0 +1,47 @@
+{
+  "id": "rainer",
+  "slug": "rainer",
+  "tipo": "maestro",
+  "titulo": "Rainer",
+  "nombreVisible": "Rainer",
+  "rol": "Asesor",
+  "descripcion": "Matemático teórico con interés especial por el rigor, la escritura formal y la construcción ordenada de argumentos matemáticos.",
+  "estado": "activo",
+  "ruta": "/rainer/",
+  "imagen": "/recursos/imagenes/rainer.jpg",
+  "imagenAlt": "Rainer, asesor de Matemáticas a Domicilio",
+  "banner": {
+    "colorInicial": "#172033",
+    "colorFinal": "#38506f"
+  },
+  "ubicacion": {
+    "pais": "México",
+    "region": "Quintana Roo",
+    "ciudad": "Cozumel"
+  },
+  "disponibilidad": {
+    "aceptaNuevosAlumnos": true,
+    "etiquetaDisponible": "Solo para alumnos universitarios",
+    "etiquetaNoDisponible": "Sin disponibilidad"
+  },
+  "precios": [
+    {
+      "id": "sesion-universitaria-80",
+      "titulo": "Sesión",
+      "duracionMinutos": 80,
+      "importe": 750,
+      "moneda": "MXN",
+      "nota": "Sesión individual con desarrollo teórico, ejemplos y problemas."
+    }
+  ],
+  "sobre": [
+    "Rainer acompaña a estudiantes universitarios que desean comprender las definiciones con precisión y construir argumentos matemáticos sólidos.",
+    "Su capacidad de liderazgo le permite organizar el trabajo en etapas claras sin perder de vista las preguntas conceptuales de cada tema."
+  ],
+  "metodologia": [
+    "Presenta la teoría y fija con cuidado las definiciones y la notación que se utilizarán.",
+    "Desarrolla ejemplos que muestran tanto el alcance como los límites de cada concepto.",
+    "Propone problemas graduados para convertir las definiciones en herramientas de razonamiento.",
+    "Cierra con demostraciones en las que cada afirmación debe estar justificada con claridad."
+  ]
+}

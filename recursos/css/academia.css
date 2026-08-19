@@ -1,0 +1,498 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.academy-loading,
+.academy-data-error,
+.academy-empty-state {
+  padding: 1.5rem;
+  background: var(--color-surface);
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* Índice de salones */
+.teacher-catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  gap: 1.5rem;
+  padding-block: clamp(3.25rem, 7vw, 6rem);
+}
+
+.teacher-card {
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--color-surface);
+}
+
+.teacher-card-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.teacher-card-body {
+  display: grid;
+  gap: 0.8rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.teacher-card-label,
+.teacher-card-location,
+.teacher-card-prices span,
+.teacher-card-prices small {
+  margin: 0;
+}
+
+.teacher-card-label {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.teacher-card h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.teacher-card-location {
+  color: var(--color-muted);
+}
+
+.teacher-card-prices {
+  display: grid;
+  gap: 0;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--color-border);
+  list-style: none;
+}
+
+.teacher-card-prices li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.15rem 1rem;
+  align-items: end;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.teacher-card-prices span { font-weight: 800; }
+.teacher-card-prices small { color: var(--color-muted); }
+
+.teacher-card-prices strong {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.teacher-card-button {
+  width: 100%;
+  margin-top: 0.35rem;
+}
+
+.student-locker-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.student-locker {
+  --student-accent: #1f5fbd;
+  --student-background: #eef5ff;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  min-height: 92px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-left: 5px solid var(--student-accent);
+  border-radius: 8px;
+  background: var(--student-background);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.student-locker:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.student-locker:focus-visible {
+  outline: 3px solid var(--student-accent);
+  outline-offset: 3px;
+}
+
+.student-locker-symbol {
+  display: grid;
+  width: 44px;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 2px solid var(--student-accent);
+  border-radius: 50%;
+  color: var(--student-accent);
+  font-weight: 900;
+}
+
+.student-locker-copy,
+.student-locker-copy > strong,
+.student-locker-copy > small { display: block; }
+.student-locker-copy > strong { font-size: 1.15rem; }
+
+.student-locker-copy > small {
+  margin-top: 0.15rem;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+}
+
+.student-locker-arrow {
+  color: var(--student-accent);
+  font-size: 1.35rem;
+}
+
+/* Sesiones de los casilleros */
+.student-session-list {
+  --student-accent: #1f5fbd;
+  display: grid;
+  gap: 1rem;
+}
+
+.student-session-link {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.28fr) minmax(0, 1fr) auto;
+  min-height: 132px;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: clamp(1.15rem, 3vw, 1.8rem);
+  border: 1px solid var(--color-border);
+  border-left: 6px solid var(--student-accent);
+  background: var(--color-background);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.student-session-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.student-session-date {
+  color: var(--student-accent);
+  font-size: 0.82rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.student-session-link strong,
+.student-session-link small { display: block; }
+.student-session-link strong { font-size: clamp(1.35rem, 2.6vw, 1.9rem); }
+
+.student-session-link small {
+  max-width: 650px;
+  margin-top: 0.35rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.student-session-link > span:last-child {
+  color: var(--student-accent);
+  font-size: 1.6rem;
+}
+
+/* Catálogo compacto de precios */
+.academy-price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 250px));
+  gap: 1.25rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.academy-price-card {
+  position: relative;
+  display: flex;
+  min-height: 315px;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 1.35rem;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 90% 10%, rgb(255 216 77 / 35%), transparent 32%),
+    linear-gradient(145deg, #fffdf5, #f3f1e7);
+  color: var(--color-text);
+  box-shadow: 0 18px 45px rgb(17 17 15 / 10%);
+  text-align: center;
+}
+
+.academy-price-card::after {
+  position: absolute;
+  right: -38px;
+  bottom: -48px;
+  width: 120px;
+  height: 120px;
+  border: 18px solid rgb(47 93 80 / 9%);
+  border-radius: 50%;
+  content: "";
+}
+
+.academy-price-burst {
+  display: grid;
+  width: 132px;
+  aspect-ratio: 1;
+  place-items: center;
+  background: #ffd84d;
+  clip-path: polygon(50% 0%, 59% 12%, 71% 4%, 77% 18%, 93% 15%, 91% 31%, 100% 40%, 86% 49%, 96% 62%, 81% 68%, 83% 84%, 67% 82%, 58% 98%, 48% 86%, 35% 96%, 29% 80%, 13% 84%, 15% 67%, 0% 58%, 13% 47%, 3% 34%, 19% 28%, 18% 12%, 35% 16%);
+  filter: drop-shadow(0 10px 18px rgb(17 17 15 / 14%));
+}
+
+.academy-price-value {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.academy-price-value small {
+  font-size: 0.3em;
+  letter-spacing: 0;
+}
+
+.academy-price-details {
+  display: grid;
+  gap: 0.05rem;
+  margin: 0.9rem 0 1rem;
+  color: var(--color-text);
+  font-size: 1.02rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.academy-price-details p { margin: 0; }
+
+.academy-price-details p:last-child {
+  color: #2f5d50;
+  font-size: 1.08rem;
+  font-weight: 900;
+}
+
+.academy-price-link {
+  z-index: 1;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Salón individual */
+.advisor-room-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 2fr) minmax(0, 3fr);
+  align-items: start;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.advisor-room-main {
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--color-surface);
+}
+
+.advisor-room-banner {
+  --teacher-banner-start: #11110f;
+  --teacher-banner-end: #2f5d50;
+  min-height: clamp(170px, 18vw, 230px);
+  background: linear-gradient(125deg, var(--teacher-banner-start), var(--teacher-banner-end));
+}
+
+.advisor-room-identity {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 0 clamp(1.25rem, 4vw, 3rem) clamp(2rem, 4vw, 3rem);
+}
+
+.advisor-room-photo {
+  width: 145px;
+  height: auto;
+  aspect-ratio: 1;
+  margin-top: -70px;
+  border: 5px solid var(--color-surface);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.advisor-room-identity-copy { padding-top: 0; }
+
+.advisor-room-identity h1 {
+  margin: 0;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.advisor-room-location {
+  margin: 0.65rem 0 1.35rem;
+  color: var(--color-muted);
+}
+
+.advisor-room-lead,
+.advisor-room-about {
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+.advisor-room-about { color: var(--color-muted); }
+
+.advisor-room-section {
+  padding: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--color-border);
+}
+
+.advisor-room-section h2 {
+  margin: 0 0 1.4rem;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  letter-spacing: -0.04em;
+}
+
+.advisor-method-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advisor-method-list li {
+  padding-left: 1rem;
+  border-left: 3px solid #2f5d50;
+  line-height: 1.6;
+}
+
+.advisor-session-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.advisor-session-option {
+  padding: 1.1rem 0 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.advisor-session-option h3 { margin: 0 0 1rem; }
+
+.advisor-session-facts {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+}
+
+.advisor-session-facts div {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.advisor-session-facts dt {
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.advisor-session-facts dd {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.advisor-availability {
+  margin: 0;
+  font-weight: 750;
+}
+
+.availability-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+}
+
+.availability-pill > span {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.availability-pill.is-available { color: #12613f; }
+.availability-pill.is-unavailable { color: #923c36; }
+
+.advisor-contact-button {
+  display: flex;
+  width: 100%;
+  margin-top: 1.25rem;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.advisor-contact-note {
+  margin: 1.5rem clamp(1.25rem, 4vw, 3rem) 2.25rem;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.advisor-contact-note .text-link {
+  margin-left: 0.25rem;
+  font-size: inherit;
+}
+
+.advisor-room-lockers {
+  position: sticky;
+  top: calc(var(--header-height) + 1rem);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-radius: 14px;
+  background: var(--color-surface);
+}
+
+.advisor-room-lockers h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: -0.04em;
+}
+
+@media (max-width: 900px) {
+  .advisor-room-layout { grid-template-columns: 1fr; }
+  .advisor-room-lockers { position: static; }
+}
+
+@media (max-width: 620px) {
+  .advisor-room-photo { width: 130px; }
+}
+
+@media (max-width: 430px) {
+  .student-locker { grid-template-columns: auto minmax(0, 1fr); }
+  .student-locker-arrow { display: none; }
+  .student-session-link { grid-template-columns: 1fr auto; }
+  .student-session-date { grid-column: 1 / -1; }
+}

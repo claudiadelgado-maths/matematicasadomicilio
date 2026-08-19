@@ -1,9 +1,2 @@
-.user-access-andres .user-monogram {
-  color: #b84d18;
-}
-
-@media (min-width: 641px) {
-  .user-access-grid .user-access:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-  }
-}
+/* Los salones y casilleros se definen en recursos/css/academia.css.
+   Este archivo queda disponible para ajustes exclusivos del índice de usuarios. */

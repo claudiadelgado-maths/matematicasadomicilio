@@ -1,0 +1,20 @@
+{
+  "id": "cuanto-mide-cuanto-pesa-luca",
+  "slug": "cuanto-mide-cuanto-pesa",
+  "tipo": "sesion",
+  "usuario": "luca-claudia",
+  "titulo": "¿Cuánto mide? ¿Cuánto pesa?",
+  "descripcion": "Un laboratorio de animales para explorar qué descubrimos con una báscula y con una regla.",
+  "objetivo": "Distinguir intuitivamente el peso y la altura, así como las herramientas y unidades sencillas que se usan para medirlos.",
+  "conocimientosPrevios": ["reconocer animales", "comparar cantidades pequeñas"],
+  "fecha": "2026-08-17",
+  "estado": "publicado",
+  "ruta": "/claudia/luca/cuanto-mide-cuanto-pesa/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}
