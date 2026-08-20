@@ -31,6 +31,9 @@
         "region": "Andalucía",
         "ciudad": "Málaga"
       },
+      "modalidad": {
+        "tipo": "individual"
+      },
       "disponibilidad": {
         "aceptaNuevosAlumnos": true,
         "etiquetaDisponible": "Aceptando nuevos alumnos",
@@ -85,6 +88,372 @@
       ]
     },
     {
+      "id": "cortes",
+      "nombreVisible": "Cortés",
+      "rol": "Asesor",
+      "titulo": "Cortés",
+      "descripcion": "Dibujante y diseñador gráfico que acompaña materias de diseño y dibujo mediante explicaciones visuales, práctica compartida y referencias de la cultura pop.",
+      "sobre": [
+        "Cortés es un dibujante y diseñador gráfico que disfruta la cultura pop y procura que sus sesiones sean creativas, cercanas y agradables.",
+        "Se enfoca en materias relacionadas con diseño y dibujo, desde fundamentos del color hasta herramientas geométricas útiles para construir imágenes."
+      ],
+      "metodologia": [
+        "Dibuja junto con el alumno para que cada concepto aparezca dentro de una decisión visual concreta.",
+        "Explica mientras construye: muestra el trazo, la selección de color o la relación geométrica y verbaliza por qué funciona.",
+        "Utiliza referencias de diseño y cultura pop para reconocer los conceptos en imágenes familiares.",
+        "Alterna observación y práctica para que el alumno pruebe inmediatamente cada idea y reciba retroalimentación."
+      ],
+      "estado": "activo",
+      "ruta": "/cortes/",
+      "imagen": "/recursos/imagenes/cortes.jpg",
+      "imagenAlt": "Personaje colorido con gafas pixeladas, imagen del salón de Cortés",
+      "imagenAjuste": "cover",
+      "banner": {
+        "colorInicial": "#17152c",
+        "colorFinal": "#8b1e69"
+      },
+      "ubicacion": {
+        "pais": "México",
+        "region": "Quintana Roo",
+        "ciudad": "Cancún"
+      },
+      "modalidad": {
+        "tipo": "individual"
+      },
+      "disponibilidad": {
+        "aceptaNuevosAlumnos": true,
+        "etiquetaDisponible": "Acepta nuevos alumnos",
+        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+      },
+      "precios": [
+        {
+          "id": "sesion-individual-45",
+          "titulo": "Sesión",
+          "duracionMinutos": 45,
+          "importe": 350,
+          "moneda": "MXN",
+          "nota": "Sesión individual de diseño o dibujo con explicación visual y práctica guiada."
+        }
+      ],
+      "alumnos": [
+        {
+          "id": "pamela-cortes",
+          "nombreVisible": "Pamela",
+          "descripcion": "Sesiones de secundaria con geometría visual y práctica interactiva.",
+          "ruta": "/cortes/pamela/",
+          "personalizacion": {
+            "simbolo": "P",
+            "acento": "#087f8c",
+            "fondo": "#e5f5f5"
+          },
+          "ultimaActividad": "2026-08-20",
+          "sesiones": [
+            {
+              "id": "teorema-pitagoras-pamela",
+              "titulo": "Teorema de Pitágoras",
+              "descripcion": "Relación entre los lados de un triángulo rectángulo y práctica dinámica con respuestas enteras o raíces exactas.",
+              "fecha": "2026-08-20",
+              "ruta": "/cortes/pamela/teorema-de-pitagoras/"
+            }
+          ]
+        },
+        {
+          "id": "pedro-cortes",
+          "nombreVisible": "Pedro",
+          "descripcion": "Sesiones universitarias de teoría y aplicación del color.",
+          "ruta": "/cortes/pedro/",
+          "personalizacion": {
+            "simbolo": "P",
+            "acento": "#b21f78",
+            "fondo": "#faeaf3"
+          },
+          "ultimaActividad": "2026-08-20",
+          "sesiones": [
+            {
+              "id": "color-modelos-pedro",
+              "titulo": "1. El color y los modelos del color",
+              "descripcion": "Percepción del color y diferencias de uso entre los modelos RGB, CMYK y HSL.",
+              "fecha": "2026-08-20",
+              "ruta": "/cortes/pedro/color-y-modelos-del-color/"
+            },
+            {
+              "id": "propiedades-circulo-cromatico-pedro",
+              "titulo": "2. Propiedades del color y círculo cromático",
+              "descripcion": "Matiz, saturación, luminosidad y organización relacional del círculo cromático.",
+              "fecha": "2026-08-20",
+              "ruta": "/cortes/pedro/propiedades-del-color-y-circulo-cromatico/"
+            },
+            {
+              "id": "armonia-temperaturas-pedro",
+              "titulo": "3. Armonía del color y temperaturas",
+              "descripcion": "Construcción de paletas análogas, complementarias y triádicas; lectura expresiva de colores cálidos y fríos.",
+              "fecha": "2026-08-20",
+              "ruta": "/cortes/pedro/armonia-del-color-y-temperaturas/"
+            },
+            {
+              "id": "contraste-contexto-pedro",
+              "titulo": "4. Contraste y contexto",
+              "descripcion": "Contraste de valor, saturación, temperatura y extensión; influencia del entorno en la percepción del color.",
+              "fecha": "2026-08-20",
+              "ruta": "/cortes/pedro/contraste-y-contexto/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elizabeth",
+      "nombreVisible": "Elizabeth",
+      "rol": "Asesora",
+      "titulo": "Elizabeth",
+      "descripcion": "Asesora de matemáticas universitarias especializada en Álgebra Lineal y Cálculo I, II y III, con una enseñanza ordenada, paciente y rigurosa.",
+      "sobre": [
+        "Elizabeth trabaja con estudiantes que buscan comprender las matemáticas con mayor profundidad, reforzar una materia, recuperar bases o prepararse para evaluaciones universitarias.",
+        "Cuenta con experiencia acompañando a estudiantes de ingeniería, ciencias y otras carreras con formación matemática, adaptando el ritmo y los ejercicios a cada dificultad."
+      ],
+      "metodologia": [
+        "Identifica primero qué conceptos domina el alumno y dónde se originan sus dificultades.",
+        "Explica cada tema desde su significado antes de introducir procedimientos y fórmulas.",
+        "Combina ejemplos guiados con ejercicios que el estudiante debe resolver de manera independiente.",
+        "Utiliza gráficas, interpretaciones geométricas y distintas representaciones cuando ayudan a comprender conceptos abstractos.",
+        "Corrige errores mediante preguntas y pistas antes de mostrar directamente la solución.",
+        "Mantiene un seguimiento de los errores recurrentes para retomarlos en sesiones posteriores.",
+        "Adapta los ejercicios y recursos de cada sesión al progreso individual del estudiante."
+      ],
+      "estado": "activo",
+      "ruta": "/elizabeth/",
+      "imagen": "/recursos/imagenes/elizabeth.jpg",
+      "imagenAlt": "Ilustración de mujer rubia con detalles verdes, imagen del salón de Elizabeth",
+      "imagenAjuste": "cover",
+      "banner": {
+        "colorInicial": "#17241e",
+        "colorFinal": "#62754f"
+      },
+      "ubicacion": {
+        "pais": "México",
+        "region": "Nuevo León",
+        "ciudad": "San Pedro"
+      },
+      "modalidad": {
+        "tipo": "individual"
+      },
+      "disponibilidad": {
+        "aceptaNuevosAlumnos": true,
+        "etiquetaDisponible": "Aceptando nuevos alumnos",
+        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+      },
+      "precios": [
+        {
+          "id": "sesion-individual-90",
+          "titulo": "Sesión",
+          "duracionMinutos": 90,
+          "importe": 650,
+          "moneda": "MXN",
+          "nota": "Sesión individual universitaria con teoría, ejemplos guiados y ejercicios adaptados al progreso del estudiante."
+        }
+      ],
+      "alumnos": [
+        {
+          "id": "gloria-elizabeth",
+          "nombreVisible": "Gloria",
+          "descripcion": "Sesiones universitarias sobre derivación, integración y el teorema fundamental del cálculo.",
+          "ruta": "/elizabeth/gloria/",
+          "personalizacion": {
+            "simbolo": "G",
+            "acento": "#7a5f37",
+            "fondo": "#f5efe4"
+          },
+          "ultimaActividad": "2026-08-20",
+          "sesiones": [
+            {
+              "id": "reglas-derivacion-gloria",
+              "titulo": "1. Reglas de derivación",
+              "descripcion": "Reglas de potencia, suma, producto, cociente y cadena para derivar con rapidez.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/gloria/reglas-de-derivacion/"
+            },
+            {
+              "id": "reglas-integracion-gloria",
+              "titulo": "2. Reglas esenciales de integración",
+              "descripcion": "Antiderivadas, linealidad, regla de potencia y fórmulas elementales.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/gloria/reglas-de-integracion/"
+            },
+            {
+              "id": "teorema-fundamental-gloria",
+              "titulo": "3. Teorema fundamental del cálculo",
+              "descripcion": "Relación entre derivación e integración y evaluación de integrales definidas.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/gloria/teorema-fundamental-del-calculo/"
+            }
+          ]
+        },
+        {
+          "id": "jimena-elizabeth",
+          "nombreVisible": "Jimena",
+          "descripcion": "Sesiones universitarias de cálculo paramétrico e integrales de curva.",
+          "ruta": "/elizabeth/jimena/",
+          "personalizacion": {
+            "simbolo": "J",
+            "acento": "#6b5878",
+            "fondo": "#f0ebf3"
+          },
+          "ultimaActividad": "2026-08-20",
+          "sesiones": [
+            {
+              "id": "derivada-parametrica-jimena",
+              "titulo": "1. Derivada paramétrica",
+              "descripcion": "Pendiente de una curva dada por x(t) e y(t), y condición para aplicar dy/dx.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/jimena/derivada-parametrica/"
+            },
+            {
+              "id": "integral-curva-jimena",
+              "titulo": "2. Integral de curva",
+              "descripcion": "Parametrización, elemento de longitud ds e integración de campos escalares sobre una curva.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/jimena/integral-de-curva/"
+            }
+          ]
+        },
+        {
+          "id": "kevin-elizabeth",
+          "nombreVisible": "Kevin",
+          "descripcion": "Sesiones universitarias sobre conjuntos, límites y derivada como límite.",
+          "ruta": "/elizabeth/kevin/",
+          "personalizacion": {
+            "simbolo": "K",
+            "acento": "#4b6670",
+            "fondo": "#e8f0f2"
+          },
+          "ultimaActividad": "2026-08-20",
+          "sesiones": [
+            {
+              "id": "conjuntos-kevin",
+              "titulo": "1. Conjuntos",
+              "descripcion": "Notación, pertenencia, subconjuntos y operaciones de unión, intersección, diferencia y complemento.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/kevin/conjuntos/"
+            },
+            {
+              "id": "limites-kevin",
+              "titulo": "2. Límites",
+              "descripcion": "Aproximación, leyes de límites y resolución de indeterminaciones sencillas por factorización.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/kevin/limites/"
+            },
+            {
+              "id": "derivada-limite-kevin",
+              "titulo": "3. La derivada como límite",
+              "descripcion": "Definición de derivada como límite del cociente incremental e interpretación como pendiente.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/kevin/derivada-como-limite/"
+            }
+          ]
+        },
+        {
+          "id": "renata-elizabeth",
+          "nombreVisible": "Renata",
+          "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
+          "ruta": "/elizabeth/renata/",
+          "personalizacion": {
+            "simbolo": "R",
+            "acento": "#526a42",
+            "fondo": "#edf2e7"
+          },
+          "ultimaActividad": "2026-08-20",
+          "sesiones": [
+            {
+              "id": "espacio-vectorial-renata",
+              "titulo": "1. Propiedades de un espacio vectorial",
+              "descripcion": "Axiomas de espacio vectorial y criterio de subespacio con ejemplos en R² y polinomios.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/renata/propiedades-de-un-espacio-vectorial/"
+            },
+            {
+              "id": "matrices-operaciones-renata",
+              "titulo": "2. Matrices y sus operaciones",
+              "descripcion": "Definición, dimensiones, suma, producto por escalar y multiplicación matricial.",
+              "fecha": "2026-08-20",
+              "ruta": "/elizabeth/renata/matrices-y-operaciones/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erick-chan",
+      "nombreVisible": "Erick Chan",
+      "rol": "Asesor",
+      "titulo": "Erick Chan",
+      "descripcion": "Asesor con experiencia en ventas que utiliza la estadística para comparar productos, interpretar información comercial y tomar decisiones útiles en contextos reales.",
+      "sobre": [
+        "Erick Chan tiene experiencia en ventas y utiliza la estadística en su trabajo para comparar teléfonos, accesorios y otros productos.",
+        "Su enfoque busca que cada concepto matemático tenga una utilidad reconocible en la vida diaria o en una situación laboral."
+      ],
+      "metodologia": [
+        "Parte de una pregunta concreta de ventas, tecnología o trabajo para mostrar dónde aparece la matemática.",
+        "Organiza los datos antes de calcular para que el alumno distinga categorías, cantidades y unidades.",
+        "Desarrolla tres ejemplos por sesión y explica qué información aporta cada resultado.",
+        "Cierra cada caso relacionando la interpretación matemática con una decisión útil del contexto real."
+      ],
+      "estado": "activo",
+      "ruta": "/erick-chan/",
+      "imagen": "/recursos/imagenes/erick-chan.jpg",
+      "imagenAlt": "Ilustración en blanco y negro del salón de Erick Chan",
+      "imagenAjuste": "contain",
+      "banner": {
+        "colorInicial": "#171b1c",
+        "colorFinal": "#276b70"
+      },
+      "ubicacion": {
+        "pais": "México",
+        "region": "Yucatán",
+        "ciudad": "Mérida"
+      },
+      "modalidad": {
+        "tipo": "individual"
+      },
+      "disponibilidad": {
+        "aceptaNuevosAlumnos": true,
+        "etiquetaDisponible": "Acepta nuevos alumnos",
+        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+      },
+      "precios": [
+        {
+          "id": "sesion-individual-60",
+          "titulo": "Sesión",
+          "duracionMinutos": 60,
+          "importe": 200,
+          "moneda": "MXN",
+          "nota": "Sesión individual con ejemplos de estadística aplicados a ventas, tecnología y situaciones de trabajo."
+        }
+      ],
+      "alumnos": [
+        {
+          "id": "alex-erick-chan",
+          "nombreVisible": "Alex",
+          "descripcion": "Sesiones de estadística aplicada a ventas y tecnología.",
+          "ruta": "/erick-chan/alex/",
+          "personalizacion": {
+            "simbolo": "A",
+            "acento": "#276b70",
+            "fondo": "#e7f1f1"
+          },
+          "ultimaActividad": "2026-08-20",
+          "sesiones": [
+            {
+              "id": "graficas-barras-ventas-alex",
+              "titulo": "Gráficas de barras en ventas",
+              "descripcion": "Cómo organizar, comparar e interpretar datos de ventas mediante tres ejemplos de tecnología.",
+              "fecha": "2026-08-20",
+              "ruta": "/erick-chan/alex/graficas-de-barras-en-ventas/"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "erik-estrella",
       "nombreVisible": "Erik",
       "rol": "Asesor",
@@ -112,6 +481,9 @@
         "pais": "México",
         "region": "Yucatán",
         "ciudad": "Mérida"
+      },
+      "modalidad": {
+        "tipo": "individual"
       },
       "disponibilidad": {
         "aceptaNuevosAlumnos": true,
@@ -222,6 +594,163 @@
       ]
     },
     {
+      "id": "karen-mariana",
+      "nombreVisible": "Karen Mariana",
+      "rol": "Asesora",
+      "titulo": "Karen Mariana",
+      "descripcion": "Asesora de secundaria que acompaña la regularización mediante teoría clara, fórmulas, procedimientos y ejercicios vinculados con los contenidos actuales de la escuela.",
+      "sobre": [
+        "Karen Mariana trabaja con estudiantes de secundaria que necesitan regularización y acostumbra acompañarlos en grupos pequeños, principalmente de cuatro a seis alumnos.",
+        "Mantiene comunicación con las familias para conocer los temas y tareas que el estudiante está trabajando actualmente en la escuela."
+      ],
+      "metodologia": [
+        "Revisa los contenidos y tareas actuales para identificar las dificultades concretas del estudiante.",
+        "Explica la teoría y las fórmulas con procedimientos ordenados, ejemplos manejables y apoyos visuales.",
+        "Propone ejercicios progresivos para practicar cada paso antes de integrar el procedimiento completo.",
+        "Destaca la información importante con una jerarquía visual clara y verifica qué necesita reforzarse en la siguiente sesión."
+      ],
+      "estado": "activo",
+      "ruta": "/karen/",
+      "imagen": "/recursos/imagenes/karen-mariana.png",
+      "imagenAlt": "Gata tricolor dormida, imagen del salón de Karen Mariana",
+      "imagenAjuste": "cover",
+      "banner": {
+        "colorInicial": "#184f49",
+        "colorFinal": "#d39a45"
+      },
+      "ubicacion": {
+        "pais": "México",
+        "region": "Estado de México",
+        "ciudad": "Toluca"
+      },
+      "modalidad": {
+        "tipo": "grupal",
+        "maximoAlumnos": 6
+      },
+      "disponibilidad": {
+        "aceptaNuevosAlumnos": true,
+        "etiquetaDisponible": "Acepta nuevos alumnos",
+        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+      },
+      "precios": [
+        {
+          "id": "sesion-grupal-60",
+          "titulo": "Sesión",
+          "duracionMinutos": 60,
+          "importe": 360,
+          "moneda": "MXN",
+          "nota": "Sesión grupal para un máximo de seis alumnos, con teoría y ejercicios preparados según los contenidos escolares actuales."
+        }
+      ],
+      "alumnos": [
+        {
+          "id": "raul-karen",
+          "nombreVisible": "Raul",
+          "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
+          "ruta": "/karen/raul/",
+          "personalizacion": {
+            "simbolo": "R",
+            "acento": "#a45c18",
+            "fondo": "#fff2da"
+          },
+          "ultimaActividad": "2026-08-20",
+          "sesiones": [
+            {
+              "id": "triangulos-semejantes-raul",
+              "titulo": "Triángulos semejantes",
+              "descripcion": "Criterios AA, LAL y LLL, figuras comparables y cálculo de longitudes por proporcionalidad.",
+              "fecha": "2026-08-20",
+              "ruta": "/karen/raul/triangulos-semejantes/"
+            }
+          ]
+        },
+        {
+          "id": "esteba-karen",
+          "nombreVisible": "Esteba",
+          "descripcion": "Sesiones de secundaria para comprender exponentes desconocidos y logaritmos.",
+          "ruta": "/karen/esteba/",
+          "personalizacion": {
+            "simbolo": "E",
+            "acento": "#84509a",
+            "fondo": "#f5ecf8"
+          },
+          "ultimaActividad": "2026-08-19",
+          "sesiones": [
+            {
+              "id": "logaritmos-esteba",
+              "titulo": "Logaritmos",
+              "descripcion": "Relación entre forma exponencial y logarítmica, identificación de sus partes y cálculos básicos.",
+              "fecha": "2026-08-19",
+              "ruta": "/karen/esteba/logaritmos/"
+            },
+            {
+              "id": "encontrar-exponente-esteba",
+              "titulo": "Encontrar el exponente",
+              "descripcion": "Ecuaciones exponenciales sencillas resueltas al reconocer potencias conocidas.",
+              "fecha": "2026-08-11",
+              "ruta": "/karen/esteba/encontrar-el-exponente/"
+            }
+          ]
+        },
+        {
+          "id": "milndred-karen",
+          "nombreVisible": "Milndred",
+          "descripcion": "Sesiones de secundaria sobre exponentes y geometría del círculo.",
+          "ruta": "/karen/milndred/",
+          "personalizacion": {
+            "simbolo": "M",
+            "acento": "#1f6f65",
+            "fondo": "#e8f5f1"
+          },
+          "ultimaActividad": "2026-08-18",
+          "sesiones": [
+            {
+              "id": "partes-circulo-milndred",
+              "titulo": "Partes del círculo",
+              "descripcion": "Centro, radio, diámetro, cuerda, arco, circunferencia y fórmulas básicas.",
+              "fecha": "2026-08-18",
+              "ruta": "/karen/milndred/partes-del-circulo/"
+            },
+            {
+              "id": "teoria-exponentes-milndred",
+              "titulo": "Teoría de exponentes",
+              "descripcion": "Multiplicación repetida, base, exponente, potencia y primeras expresiones algebraicas.",
+              "fecha": "2026-08-12",
+              "ruta": "/karen/milndred/teoria-de-exponentes/"
+            }
+          ]
+        },
+        {
+          "id": "jonny-karen",
+          "nombreVisible": "Jonny",
+          "descripcion": "Sesiones de secundaria sobre ecuaciones cuadráticas y cuadriláteros.",
+          "ruta": "/karen/jonny/",
+          "personalizacion": {
+            "simbolo": "J",
+            "acento": "#a44548",
+            "fondo": "#fcebec"
+          },
+          "ultimaActividad": "2026-08-17",
+          "sesiones": [
+            {
+              "id": "cuadrilateros-jonny",
+              "titulo": "Cuadriláteros",
+              "descripcion": "Clasificación visual, propiedades, perímetros y áreas de los cuadriláteros principales.",
+              "fecha": "2026-08-17",
+              "ruta": "/karen/jonny/cuadrilateros/"
+            },
+            {
+              "id": "formula-general-jonny",
+              "titulo": "Fórmula general",
+              "descripcion": "Identificación de coeficientes y resolución paso a paso de ecuaciones cuadráticas.",
+              "fecha": "2026-08-13",
+              "ruta": "/karen/jonny/formula-general/"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "rainer",
       "nombreVisible": "Rainer",
       "rol": "Asesor",
@@ -249,6 +778,10 @@
         "pais": "México",
         "region": "Quintana Roo",
         "ciudad": "Cozumel"
+      },
+      "modalidad": {
+        "tipo": "grupal",
+        "maximoAlumnos": 2
       },
       "disponibilidad": {
         "aceptaNuevosAlumnos": true,

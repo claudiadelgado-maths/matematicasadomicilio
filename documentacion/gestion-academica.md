@@ -4,7 +4,7 @@
 
 No existe un JSON central que deba editarse manualmente. La información vive junto a cada módulo:
 
-- `/[asesor]/maestro.json`: identidad, ubicación, disponibilidad, precios, presentación y metodología.
+- `/[asesor]/maestro.json`: identidad, ubicación, modalidad, disponibilidad, precios, presentación y metodología.
 - `/[asesor]/[alumno]/usuario.json`: asesor propietario, identidad operativa y personalización del casillero.
 - `/[asesor]/[alumno]/[sesion]/sesion.json`: alumno propietario, fecha editorial, estado, ruta y contrato de contenido.
 
@@ -20,7 +20,7 @@ La interfaz usa **asesor**, **salón** y **casillero**. Los nombres técnicos `m
 ## Agregar un asesor
 
 1. Copia `/plantillas/maestro/` a `/[slug-del-asesor]/`.
-2. Sustituye los campos provisionales de `maestro.json`, conservando un ID técnico estable y un `slug` público, y guarda su imagen en `recursos/` o reutiliza una existente.
+2. Sustituye los campos provisionales de `maestro.json`, conservando un ID técnico estable y un `slug` público; configura `modalidad.tipo` y, para grupos, `modalidad.maximoAlumnos`; guarda su imagen en `recursos/` o reutiliza una existente.
 3. Actualiza `data-maestro-id`, título y metadatos de `index.html`.
 4. Usa `estado: "activo"` cuando la información esté completa.
 5. Ejecuta catálogo y validación.

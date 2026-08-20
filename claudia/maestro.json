@@ -19,6 +19,9 @@
     "region": "Andalucía",
     "ciudad": "Málaga"
   },
+  "modalidad": {
+    "tipo": "individual"
+  },
   "disponibilidad": {
     "aceptaNuevosAlumnos": true,
     "etiquetaDisponible": "Aceptando nuevos alumnos",

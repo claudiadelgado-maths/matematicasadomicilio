@@ -1,2 +1,125 @@
-/* Los salones y casilleros se definen en recursos/css/academia.css.
-   Este archivo queda disponible para ajustes exclusivos del índice de usuarios. */
+/* Ajustes exclusivos del buscador y la cuadrícula pública de Salones. */
+
+.teacher-directory { padding-block: clamp(2.5rem, 5vw, 4.5rem); }
+
+.teacher-directory-tools {
+  display: grid;
+  grid-template-columns: minmax(190px, .65fr) minmax(280px, 1fr);
+  gap: 1rem clamp(1.5rem, 4vw, 4rem);
+  align-items: end;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: var(--color-surface);
+}
+
+.teacher-directory-tools .eyebrow { margin: 0 0 .35rem; }
+.teacher-directory-tools h2 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.4rem); }
+
+.teacher-search-field {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  min-height: 54px;
+  border: 2px solid var(--color-text);
+  border-radius: 9px;
+  background: var(--color-background);
+}
+
+.teacher-search-field:focus-within {
+  outline: 3px solid #2f5d50;
+  outline-offset: 3px;
+}
+
+.teacher-search-field svg {
+  width: 22px;
+  margin-left: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.teacher-search-field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 50px;
+  padding: .7rem 1rem .7rem .7rem;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+}
+
+.teacher-search-status {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: .86rem;
+  font-weight: 750;
+}
+
+.teacher-directory .teacher-catalog {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  padding-block: clamp(1.5rem, 4vw, 3rem) 0;
+}
+
+.teacher-directory .teacher-card { border-radius: 11px; }
+.teacher-directory .teacher-card-photo[data-image-fit="contain"] { padding: .5rem; }
+
+.teacher-directory .teacher-card-body {
+  gap: .55rem;
+  padding: clamp(.8rem, 1.6vw, 1.15rem);
+}
+
+.teacher-directory .teacher-card-label { font-size: .64rem; }
+.teacher-directory .teacher-card h2 { font-size: clamp(1.35rem, 2.2vw, 1.9rem); }
+.teacher-directory .teacher-card-location { font-size: .82rem; line-height: 1.35; }
+.teacher-directory .teacher-card-modality { font-size: .72rem; }
+.teacher-directory .teacher-card-prices { margin-top: .2rem; }
+
+.teacher-directory .teacher-card-prices li {
+  gap: .1rem .45rem;
+  padding: .6rem 0;
+}
+
+.teacher-directory .teacher-card-prices span,
+.teacher-directory .teacher-card-prices small { font-size: .74rem; }
+.teacher-directory .teacher-card-prices strong { font-size: 1.25rem; }
+
+.teacher-directory .teacher-card-button {
+  min-height: 42px;
+  margin-top: .15rem;
+  padding: .65rem .5rem;
+  font-size: .82rem;
+}
+
+.teacher-search-empty {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: clamp(2rem, 6vw, 4rem);
+  border: 1px dashed var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+  color: var(--color-muted);
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .teacher-directory .teacher-catalog { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .teacher-directory { padding-block: 1.5rem 3rem; }
+  .teacher-directory-tools { grid-template-columns: 1fr; padding: 1rem; }
+  .teacher-search-status { grid-column: auto; }
+  .teacher-directory .teacher-catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+  .teacher-directory .teacher-card-body { padding: .7rem; }
+  .teacher-directory .teacher-card h2 { font-size: clamp(1.15rem, 5vw, 1.45rem); }
+  .teacher-directory .teacher-card-location { font-size: .72rem; }
+  .teacher-directory .teacher-card-prices strong { font-size: 1rem; }
+  .teacher-directory .teacher-card-prices span,
+  .teacher-directory .teacher-card-prices small { font-size: .66rem; }
+}

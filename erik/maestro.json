@@ -19,6 +19,9 @@
     "region": "Yucatán",
     "ciudad": "Mérida"
   },
+  "modalidad": {
+    "tipo": "individual"
+  },
   "disponibilidad": {
     "aceptaNuevosAlumnos": true,
     "etiquetaDisponible": "Aceptando nuevos alumnos",

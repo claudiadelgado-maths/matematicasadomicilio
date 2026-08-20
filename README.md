@@ -140,6 +140,6 @@ GitHub Pages publica directamente los archivos de la rama configurada. No se deb
 
 ## Datos globales sensibles al cambio
 
-El número de WhatsApp visible es `999 129 34 97` y el enlace usa `529991293497`. El correo es `contacto@matematicasadomicilio.com`. Los precios, duración, ubicación y disponibilidad de cada asesor se administran técnicamente en su `maestro.json` y se publican mediante `npm run catalogo`; no deben duplicarse manualmente en la portada.
+El número de WhatsApp visible es `999 129 34 97` y el enlace usa `529991293497`. El correo es `contacto@matematicasadomicilio.com`. Los precios, duración, modalidad, máximo de alumnos, ubicación y disponibilidad de cada asesor se administran técnicamente en su `maestro.json` y se publican mediante `npm run catalogo`; no deben duplicarse manualmente en la portada.
 
 El proyecto no debe presentar testimonios, credenciales, resultados, clientes, redes sociales ni servicios que no hayan sido confirmados.

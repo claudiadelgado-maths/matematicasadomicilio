@@ -39,6 +39,12 @@
   object-fit: cover;
 }
 
+.teacher-card-photo[data-image-fit="contain"] {
+  padding: 0.75rem;
+  background: #11110f;
+  object-fit: contain;
+}
+
 .teacher-card-body {
   display: grid;
   gap: 0.8rem;
@@ -69,6 +75,13 @@
 
 .teacher-card-location {
   color: var(--color-muted);
+}
+
+.teacher-card-modality {
+  margin: 0;
+  color: #2f5d50;
+  font-size: 0.82rem;
+  font-weight: 850;
 }
 
 .teacher-card-prices {
@@ -338,6 +351,12 @@
   object-fit: cover;
 }
 
+.advisor-room-photo[data-image-fit="contain"] {
+  border-radius: 14px;
+  background: #11110f;
+  object-fit: contain;
+}
+
 .advisor-room-identity-copy { padding-top: 0; }
 
 .advisor-room-identity h1 {
@@ -423,6 +442,10 @@
   font-size: clamp(1.35rem, 2.5vw, 1.9rem);
   font-weight: 900;
   line-height: 1.15;
+}
+
+.advisor-session-facts div:last-child dd {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
 }
 
 .advisor-availability {

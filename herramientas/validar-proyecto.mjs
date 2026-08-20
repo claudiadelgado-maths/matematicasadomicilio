@@ -130,8 +130,14 @@ for (const { data, file } of metadata) {
     if (data.ruta !== expectedRoute) {
       reportError(`${relative(file)}: la ruta del asesor debe ser ${expectedRoute}.`);
     }
-    for (const key of ["nombreVisible", "imagen", "ubicacion", "disponibilidad", "precios"]) {
+    for (const key of ["nombreVisible", "imagen", "ubicacion", "modalidad", "disponibilidad", "precios"]) {
       if (!data[key]) reportError(`${relative(file)}: maestro activo sin "${key}".`);
+    }
+    if (!["individual", "grupal"].includes(data.modalidad?.tipo)) {
+      reportError(`${relative(file)}: modalidad debe ser "individual" o "grupal".`);
+    }
+    if (data.modalidad?.tipo === "grupal" && (!Number.isInteger(data.modalidad.maximoAlumnos) || data.modalidad.maximoAlumnos < 2)) {
+      reportError(`${relative(file)}: la modalidad grupal necesita maximoAlumnos entero mayor o igual a 2.`);
     }
     if (!Array.isArray(data.precios) || data.precios.length === 0) {
       reportError(`${relative(file)}: maestro activo sin precios configurados.`);
@@ -155,6 +161,9 @@ for (const { data, file } of metadata) {
       reportError(`${relative(file)}: disponibilidad sin aceptaNuevosAlumnos booleano.`);
     }
     validateLocalReference(file, data.imagen, "imagen de maestro");
+    if (data.imagenAjuste && !["cover", "contain"].includes(data.imagenAjuste)) {
+      reportError(`${relative(file)}: imagenAjuste debe ser "cover" o "contain".`);
+    }
   }
 
   if (data.tipo === "usuario" && data.estado === "activo") {

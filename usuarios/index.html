@@ -13,11 +13,11 @@
   <link rel="icon" href="../recursos/svg/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../recursos/css/sistema-visual.css?v=20260723-modular1">
   <link rel="stylesheet" href="../recursos/css/modulos.css?v=20260723-modular1">
-  <link rel="stylesheet" href="../recursos/css/academia.css?v=20260819-rutas2">
-  <link rel="stylesheet" href="estilos.css?v=20260810-usuarios1">
+  <link rel="stylesheet" href="../recursos/css/academia.css?v=20260820-imagenfit1">
+  <link rel="stylesheet" href="estilos.css?v=20260820-buscador1">
 
   <script src="../recursos/js/navegacion.js?v=20260723-modular1" defer></script>
-  <script src="../recursos/js/academia.js?v=20260819-rutas2" defer></script>
+  <script src="../recursos/js/academia.js?v=20260820-buscador1" defer></script>
 
 </head>
 <body>
@@ -34,7 +34,21 @@
     <header class="learning-hero">
       <div class="container"><h1>Salones</h1><p class="lead">Elige un asesor y entra a su salón.</p></div>
     </header>
-    <div data-academia-maestros aria-live="polite"><p class="academy-loading container">Cargando salones…</p></div>
+    <section class="teacher-directory" aria-labelledby="teacher-search-title">
+      <div class="container teacher-directory-tools">
+        <div>
+          <p class="eyebrow">Encuentra tu asesor</p>
+          <h2 id="teacher-search-title">Buscar por nombre</h2>
+        </div>
+        <label class="teacher-search-field" for="teacher-search">
+          <span class="visually-hidden">Nombre del asesor</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+          <input id="teacher-search" type="search" placeholder="Escribe un nombre…" autocomplete="off" spellcheck="false" data-academia-search aria-controls="catalogo-salones">
+        </label>
+        <p class="teacher-search-status" data-academia-search-status aria-live="polite">Preparando asesores…</p>
+      </div>
+      <div id="catalogo-salones" data-academia-maestros><p class="academy-loading container">Cargando salones…</p></div>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">

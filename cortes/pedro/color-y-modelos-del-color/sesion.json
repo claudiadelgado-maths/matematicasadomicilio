@@ -1,0 +1,14 @@
+{
+  "id": "color-modelos-pedro",
+  "slug": "color-y-modelos-del-color",
+  "tipo": "sesion",
+  "usuario": "pedro-cortes",
+  "titulo": "1. El color y los modelos del color",
+  "descripcion": "Percepción del color y diferencias de uso entre los modelos RGB, CMYK y HSL.",
+  "objetivo": "Distinguir los modelos aditivo, sustractivo y perceptual, y seleccionar el adecuado según el medio de diseño.",
+  "conocimientosPrevios": ["fundamentos de comunicación visual", "manejo básico de herramientas de diseño"],
+  "fecha": "2026-08-20",
+  "estado": "publicado",
+  "ruta": "/cortes/pedro/color-y-modelos-del-color/",
+  "componentes": {"explicacion": false, "demostraciones": false, "ejercicios": false, "juegos": false, "calculadoras": false}
+}

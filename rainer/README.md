@@ -2,7 +2,7 @@
 
 Perfil público de Rainer y acceso a los casilleros universitarios de Sofía y Mateo.
 
-`maestro.json` es la fuente de verdad para su ubicación, disponibilidad, tarifa, presentación y metodología. El salón reutiliza el componente académico compartido.
+`maestro.json` es la fuente de verdad para su ubicación, modalidad grupal con máximo de dos alumnos, disponibilidad, tarifa, presentación y metodología. El salón reutiliza el componente académico compartido.
 
 ## Verificación
 

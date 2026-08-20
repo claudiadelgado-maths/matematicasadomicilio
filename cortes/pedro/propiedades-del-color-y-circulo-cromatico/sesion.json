@@ -1,0 +1,14 @@
+{
+  "id": "propiedades-circulo-cromatico-pedro",
+  "slug": "propiedades-del-color-y-circulo-cromatico",
+  "tipo": "sesion",
+  "usuario": "pedro-cortes",
+  "titulo": "2. Propiedades del color y círculo cromático",
+  "descripcion": "Matiz, saturación, luminosidad y organización relacional del círculo cromático.",
+  "objetivo": "Analizar un color mediante sus propiedades y ubicar relaciones primarias, secundarias y terciarias en el círculo cromático.",
+  "conocimientosPrevios": ["modelos RGB y CMYK", "mezcla aditiva y sustractiva"],
+  "fecha": "2026-08-20",
+  "estado": "publicado",
+  "ruta": "/cortes/pedro/propiedades-del-color-y-circulo-cromatico/",
+  "componentes": {"explicacion": false, "demostraciones": false, "ejercicios": false, "juegos": false, "calculadoras": false}
+}

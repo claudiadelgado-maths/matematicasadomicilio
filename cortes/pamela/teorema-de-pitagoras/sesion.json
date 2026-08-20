@@ -1,0 +1,14 @@
+{
+  "id": "teorema-pitagoras-pamela",
+  "slug": "teorema-de-pitagoras",
+  "tipo": "sesion",
+  "usuario": "pamela-cortes",
+  "titulo": "Teorema de Pitágoras",
+  "descripcion": "Relación entre los lados de un triángulo rectángulo y práctica dinámica con respuestas enteras o raíces exactas.",
+  "objetivo": "Identificar la hipotenusa, despejar el lado faltante y expresar el resultado como entero o raíz cuadrada exacta.",
+  "conocimientosPrevios": ["potencias al cuadrado", "raíces cuadradas", "despeje básico"],
+  "fecha": "2026-08-20",
+  "estado": "publicado",
+  "ruta": "/cortes/pamela/teorema-de-pitagoras/",
+  "componentes": {"explicacion": false, "demostraciones": false, "ejercicios": false, "juegos": false, "calculadoras": false}
+}

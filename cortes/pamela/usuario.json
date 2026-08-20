@@ -1,0 +1,17 @@
+{
+  "id": "pamela-cortes",
+  "slug": "pamela",
+  "tipo": "usuario",
+  "titulo": "El casillero de Pamela",
+  "nombreVisible": "Pamela",
+  "descripcion": "Sesiones de secundaria con geometría visual y práctica interactiva.",
+  "estado": "activo",
+  "ruta": "/cortes/pamela/",
+  "maestro": "cortes",
+  "personalizacion": {
+    "simbolo": "P",
+    "acento": "#087f8c",
+    "fondo": "#e5f5f5"
+  },
+  "almacenamientoLocal": false
+}

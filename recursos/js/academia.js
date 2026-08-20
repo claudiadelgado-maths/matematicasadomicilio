@@ -15,6 +15,23 @@
   const resolveRoute = (route) => new URL(String(route).replace(/^\/+/, ""), siteRoot).href;
   const safeColor = (value, fallback) =>
     /^#[0-9a-f]{6}$/i.test(value ?? "") ? value : fallback;
+  const imageFit = (teacher) => teacher.imagenAjuste === "contain" ? "contain" : "cover";
+  const normalizeSearch = (value = "") =>
+    String(value)
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLocaleLowerCase("es-MX")
+      .trim();
+  const compareTeacherNames = (a, b) =>
+    a.nombreVisible.localeCompare(b.nombreVisible, "es-MX", { sensitivity: "base" });
+  const shuffle = (values) => {
+    const shuffled = [...values];
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+      const randomIndex = Math.floor(Math.random() * (index + 1));
+      [shuffled[index], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[index]];
+    }
+    return shuffled;
+  };
   const locationLabel = (teacher) =>
     [teacher.ubicacion?.ciudad, teacher.ubicacion?.region].filter(Boolean).join(", ");
   const availability = (teacher) => {
@@ -25,6 +42,15 @@
         ? teacher.disponibilidad?.etiquetaDisponible || "Acepta nuevos alumnos"
         : teacher.disponibilidad?.etiquetaNoDisponible || "Sin disponibilidad",
     };
+  };
+  const formatModality = (teacher) => {
+    const modality = teacher.modalidad;
+    if (modality?.tipo === "grupal") {
+      return Number.isInteger(modality.maximoAlumnos)
+        ? `Grupal · Máx. ${modality.maximoAlumnos} alumnos`
+        : "Grupal";
+    }
+    return "Individual";
   };
   const priceLocale = (currency) => (currency === "EUR" ? "es-ES" : "es-MX");
   const formatPrice = (price) =>
@@ -44,6 +70,7 @@
   };
   const formatDurationLong = (minutes) => {
     if (!Number.isFinite(minutes)) return "Por confirmar";
+    if (minutes === 60) return "60 minutos";
     const hours = Math.floor(minutes / 60);
     const remainder = minutes % 60;
     const hourLabel = hours === 1 ? "hora" : "horas";
@@ -72,11 +99,12 @@
   const teacherCardMarkup = (teacher) => {
     return `
       <article class="teacher-card">
-        <img class="teacher-card-photo" src="${resolveRoute(teacher.imagen)}" width="576" height="576" loading="lazy" alt="${escapeHtml(teacher.imagenAlt)}">
+        <img class="teacher-card-photo" data-image-fit="${imageFit(teacher)}" src="${resolveRoute(teacher.imagen)}" width="576" height="576" loading="lazy" alt="${escapeHtml(teacher.imagenAlt)}">
         <div class="teacher-card-body">
           <p class="teacher-card-label">${escapeHtml(teacher.rol || "Asesor")}</p>
           <h2>${escapeHtml(teacher.nombreVisible)}</h2>
           <p class="teacher-card-location">${escapeHtml(locationLabel(teacher))}</p>
+          <p class="teacher-card-modality">${escapeHtml(formatModality(teacher))}</p>
           <ul class="teacher-card-prices">${teacher.precios.map((price) => `<li><span>${escapeHtml(price.titulo)}</span><small>${escapeHtml(formatDuration(price.duracionMinutos))}</small><strong>${escapeHtml(formatPrice(price))}</strong></li>`).join("")}</ul>
           <a class="button teacher-card-button" href="${resolveRoute(teacher.ruta)}">Ver salón</a>
         </div>
@@ -114,16 +142,45 @@
       container.innerHTML = '<p class="academy-data-error">No hay asesores activos en este momento.</p>';
       return;
     }
-    container.innerHTML = `<div class="container teacher-catalog">${teachers
-      .map(teacherCardMarkup)
-      .join("")}</div>`;
+    const randomizedTeachers = shuffle(teachers);
+    const searchInput = container.id
+      ? document.querySelector(`[data-academia-search][aria-controls="${container.id}"]`)
+      : null;
+    const status = searchInput
+      ?.closest(".teacher-directory")
+      ?.querySelector("[data-academia-search-status]");
+
+    const render = () => {
+      const query = normalizeSearch(searchInput?.value);
+      const visibleTeachers = query
+        ? teachers
+            .filter((teacher) => normalizeSearch(teacher.nombreVisible).includes(query))
+            .sort(compareTeacherNames)
+        : randomizedTeachers;
+
+      container.innerHTML = `<div class="container teacher-catalog">${visibleTeachers.length
+        ? visibleTeachers.map(teacherCardMarkup).join("")
+        : '<p class="teacher-search-empty">No encontramos un asesor con ese nombre.</p>'}</div>`;
+
+      if (status) {
+        if (!query) {
+          status.textContent = `${visibleTeachers.length} asesores disponibles en orden aleatorio.`;
+        } else {
+          const noun = visibleTeachers.length === 1 ? "asesor encontrado" : "asesores encontrados";
+          status.textContent = `${visibleTeachers.length} ${noun}, en orden alfabético.`;
+        }
+      }
+    };
+
+    render();
+    searchInput?.addEventListener("input", render);
   };
 
   const priceMarkup = (teacher, price) => {
     return `
       <article class="academy-price-card">
         <div class="academy-price-burst"><strong class="academy-price-value">${escapeHtml(formatPrice(price))}</strong></div>
-        <div class="academy-price-details"><p>${escapeHtml(teacher.ubicacion?.ciudad || locationLabel(teacher))}</p><p>${escapeHtml(formatDuration(price.duracionMinutos))}</p><p>${escapeHtml(teacher.nombreVisible)}</p></div>
+        <div class="academy-price-details"><p>${escapeHtml(teacher.ubicacion?.ciudad || locationLabel(teacher))}</p><p>${escapeHtml(formatDuration(price.duracionMinutos))}</p><p>${escapeHtml(formatModality(teacher))}</p><p>${escapeHtml(teacher.nombreVisible)}</p></div>
         <a class="button academy-price-link" href="${resolveRoute(teacher.ruta)}">Ver salón</a>
       </article>`;
   };
@@ -181,11 +238,11 @@
         <article class="advisor-room-main">
           <div class="advisor-room-banner" aria-hidden="true"></div>
           <section class="advisor-room-identity">
-            <img class="advisor-room-photo" src="${resolveRoute(teacher.imagen)}" width="576" height="576" alt="${escapeHtml(teacher.imagenAlt)}">
+            <img class="advisor-room-photo" data-image-fit="${imageFit(teacher)}" src="${resolveRoute(teacher.imagen)}" width="576" height="576" alt="${escapeHtml(teacher.imagenAlt)}">
             <div class="advisor-room-identity-copy"><h1>${escapeHtml(teacher.nombreVisible)}</h1><p class="advisor-room-location">${escapeHtml(locationLabel(teacher))}</p><p class="advisor-room-lead">${escapeHtml(teacher.descripcion)}</p>${(teacher.sobre ?? []).map((item) => `<p class="advisor-room-about">${escapeHtml(item)}</p>`).join("")}</div>
           </section>
           <section class="advisor-room-section" aria-labelledby="advisor-method-title"><h2 id="advisor-method-title">Forma de trabajo</h2><ul class="advisor-method-list">${(teacher.metodologia ?? []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
-          <section class="advisor-room-section" aria-labelledby="advisor-session-title"><h2 id="advisor-session-title">Sesión</h2><div class="advisor-session-options">${teacher.precios.map((price) => `<article class="advisor-session-option">${teacher.precios.length > 1 || price.titulo.toLocaleLowerCase("es-MX") !== "sesión" ? `<h3>${escapeHtml(price.titulo)}</h3>` : ""}<dl class="advisor-session-facts"><div><dt>Duración</dt><dd>${escapeHtml(formatDurationLong(price.duracionMinutos))}</dd></div><div><dt>Precio</dt><dd>${escapeHtml(formatPriceWithCode(price))}</dd></div></dl></article>`).join("")}</div></section>
+          <section class="advisor-room-section" aria-labelledby="advisor-session-title"><h2 id="advisor-session-title">Sesión</h2><div class="advisor-session-options">${teacher.precios.map((price) => `<article class="advisor-session-option">${teacher.precios.length > 1 || price.titulo.toLocaleLowerCase("es-MX") !== "sesión" ? `<h3>${escapeHtml(price.titulo)}</h3>` : ""}<dl class="advisor-session-facts"><div><dt>Duración</dt><dd>${escapeHtml(formatDurationLong(price.duracionMinutos))}</dd></div><div><dt>Precio</dt><dd>${escapeHtml(formatPriceWithCode(price))}</dd></div><div><dt>Modalidad</dt><dd>${escapeHtml(formatModality(teacher))}</dd></div></dl></article>`).join("")}</div></section>
           <section class="advisor-room-section advisor-availability" aria-labelledby="advisor-availability-title"><h2 id="advisor-availability-title">Disponibilidad</h2><p class="availability-pill ${status.accepts ? "is-available" : "is-unavailable"}"><span aria-hidden="true"></span>${escapeHtml(status.label)}</p><a class="button advisor-contact-button" href="${escapeHtml(whatsappUrl)}" target="_blank" rel="noopener noreferrer">Contactar</a></section>
           <p class="advisor-contact-note">La primera sesión se agenda a través de Matemáticas a Domicilio y debe ser pagada por adelantado.</p>
         </article>

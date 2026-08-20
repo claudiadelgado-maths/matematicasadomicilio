@@ -4,7 +4,7 @@ Salón del primer asesor registrado en la arquitectura académica.
 
 ## Fuente de verdad
 
-- `maestro.json`: identidad, ubicación, imagen, disponibilidad, precios y presentación.
+- `maestro.json`: identidad, ubicación, imagen, modalidad individual, disponibilidad, precios y presentación.
 - `index.html`: contenedor reutilizable que carga el perfil desde `recursos/datos/academia.json`.
 - La fotografía reutiliza `/recursos/imagenes/admin.jpg`, también utilizada en Contacto.
 

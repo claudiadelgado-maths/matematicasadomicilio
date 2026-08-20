@@ -4,7 +4,7 @@ Perfil público de Claudia y punto de entrada a los casilleros de sus alumnos.
 
 ## Fuente de verdad
 
-`maestro.json` contiene su presentación, ubicación, disponibilidad y tarifa. El salón y los catálogos de Salones y Precios se generan con los componentes académicos compartidos; no deben duplicarse manualmente.
+`maestro.json` contiene su presentación, ubicación, modalidad individual, disponibilidad y tarifa. El salón y los catálogos de Salones y Precios se generan con los componentes académicos compartidos; no deben duplicarse manualmente.
 
 ## Verificación
 

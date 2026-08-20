@@ -1,0 +1,17 @@
+{
+  "id": "alex-erick-chan",
+  "slug": "alex",
+  "tipo": "usuario",
+  "titulo": "El casillero de Alex",
+  "nombreVisible": "Alex",
+  "descripcion": "Sesiones de estadística aplicada a ventas y tecnología.",
+  "estado": "activo",
+  "ruta": "/erick-chan/alex/",
+  "maestro": "erick-chan",
+  "personalizacion": {
+    "simbolo": "A",
+    "acento": "#276b70",
+    "fondo": "#e7f1f1"
+  },
+  "almacenamientoLocal": false
+}

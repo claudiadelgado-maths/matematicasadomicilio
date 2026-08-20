@@ -1,0 +1,14 @@
+{
+  "id": "armonia-temperaturas-pedro",
+  "slug": "armonia-del-color-y-temperaturas",
+  "tipo": "sesion",
+  "usuario": "pedro-cortes",
+  "titulo": "3. Armonía del color y temperaturas",
+  "descripcion": "Construcción de paletas análogas, complementarias y triádicas; lectura expresiva de colores cálidos y fríos.",
+  "objetivo": "Construir armonías cromáticas intencionales y utilizar la temperatura para jerarquizar y comunicar una atmósfera.",
+  "conocimientosPrevios": ["propiedades del color", "círculo cromático de doce posiciones"],
+  "fecha": "2026-08-20",
+  "estado": "publicado",
+  "ruta": "/cortes/pedro/armonia-del-color-y-temperaturas/",
+  "componentes": {"explicacion": false, "demostraciones": false, "ejercicios": false, "juegos": false, "calculadoras": false}
+}

@@ -10,6 +10,7 @@
   "ruta": "/plantillas/maestro/",
   "imagen": "/recursos/svg/logo-estrella.svg",
   "imagenAlt": "",
+  "imagenAjuste": "cover",
   "banner": {
     "colorInicial": "#11110f",
     "colorFinal": "#1f5fbd"
@@ -18,6 +19,9 @@
     "pais": "País",
     "region": "Región o estado",
     "ciudad": "Ciudad"
+  },
+  "modalidad": {
+    "tipo": "individual"
   },
   "disponibilidad": {
     "aceptaNuevosAlumnos": false,

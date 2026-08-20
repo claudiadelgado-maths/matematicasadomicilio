@@ -19,6 +19,10 @@
     "region": "Quintana Roo",
     "ciudad": "Cozumel"
   },
+  "modalidad": {
+    "tipo": "grupal",
+    "maximoAlumnos": 2
+  },
   "disponibilidad": {
     "aceptaNuevosAlumnos": true,
     "etiquetaDisponible": "Solo para alumnos universitarios",

@@ -1,0 +1,51 @@
+{
+  "id": "erick-chan",
+  "slug": "erick-chan",
+  "tipo": "maestro",
+  "titulo": "Erick Chan",
+  "nombreVisible": "Erick Chan",
+  "rol": "Asesor",
+  "descripcion": "Asesor con experiencia en ventas que utiliza la estadística para comparar productos, interpretar información comercial y tomar decisiones útiles en contextos reales.",
+  "estado": "activo",
+  "ruta": "/erick-chan/",
+  "imagen": "/recursos/imagenes/erick-chan.jpg",
+  "imagenAlt": "Ilustración en blanco y negro del salón de Erick Chan",
+  "imagenAjuste": "contain",
+  "banner": {
+    "colorInicial": "#171b1c",
+    "colorFinal": "#276b70"
+  },
+  "ubicacion": {
+    "pais": "México",
+    "region": "Yucatán",
+    "ciudad": "Mérida"
+  },
+  "modalidad": {
+    "tipo": "individual"
+  },
+  "disponibilidad": {
+    "aceptaNuevosAlumnos": true,
+    "etiquetaDisponible": "Acepta nuevos alumnos",
+    "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+  },
+  "precios": [
+    {
+      "id": "sesion-individual-60",
+      "titulo": "Sesión",
+      "duracionMinutos": 60,
+      "importe": 200,
+      "moneda": "MXN",
+      "nota": "Sesión individual con ejemplos de estadística aplicados a ventas, tecnología y situaciones de trabajo."
+    }
+  ],
+  "sobre": [
+    "Erick Chan tiene experiencia en ventas y utiliza la estadística en su trabajo para comparar teléfonos, accesorios y otros productos.",
+    "Su enfoque busca que cada concepto matemático tenga una utilidad reconocible en la vida diaria o en una situación laboral."
+  ],
+  "metodologia": [
+    "Parte de una pregunta concreta de ventas, tecnología o trabajo para mostrar dónde aparece la matemática.",
+    "Organiza los datos antes de calcular para que el alumno distinga categorías, cantidades y unidades.",
+    "Desarrolla tres ejemplos por sesión y explica qué información aporta cada resultado.",
+    "Cierra cada caso relacionando la interpretación matemática con una decisión útil del contexto real."
+  ]
+}
