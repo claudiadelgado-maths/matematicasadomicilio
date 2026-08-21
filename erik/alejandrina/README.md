@@ -6,9 +6,10 @@ Alejandrina pertenece al maestro `erik-estrella`. El índice carga automáticame
 
 ## Contenido actual
 
-- `sesiones/datos-no-agrupados/`: explicación, ejercicio, calculadora y juego de estadística descriptiva.
-- `sesiones/diagramas-de-arboles/`: teoría, ejercicios, calculadora y juego publicados.
-- `sesiones/medidas-de-posicion/`: teoría, ejercicios, conversor y juego publicados.
+- `datos-no-agrupados/`: explicación, ejercicio, calculadora y juego de estadística descriptiva.
+- `diagramas-de-arboles/`: teoría, ejercicios, calculadora y juego publicados.
+- `medidas-de-posicion/`: teoría, ejercicios, conversor y juego publicados.
+- `multiplicacion-de-binomios/`: teoría, ejercicios dinámicos, calculadora exacta y juego publicados.
 
 ## Para una IA
 

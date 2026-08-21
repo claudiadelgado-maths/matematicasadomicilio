@@ -502,6 +502,48 @@
       ],
       "alumnos": [
         {
+          "id": "alejandrina",
+          "nombreVisible": "Alejandrina",
+          "descripcion": "Espacio de sesiones y recursos personalizados.",
+          "ruta": "/erik/alejandrina/",
+          "personalizacion": {
+            "simbolo": "A",
+            "acento": "#15784e",
+            "fondo": "#edf8f2"
+          },
+          "ultimaActividad": "2026-08-21",
+          "sesiones": [
+            {
+              "id": "multiplicacion-de-binomios",
+              "titulo": "Multiplicación de binomios",
+              "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
+              "fecha": "2026-08-21",
+              "ruta": "/erik/alejandrina/multiplicacion-de-binomios/"
+            },
+            {
+              "id": "diagramas-de-arboles",
+              "titulo": "Diagramas de árboles",
+              "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
+              "fecha": "2026-07-29",
+              "ruta": "/erik/alejandrina/diagramas-de-arboles/"
+            },
+            {
+              "id": "medidas-de-posicion",
+              "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
+              "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
+              "fecha": "2026-07-29",
+              "ruta": "/erik/alejandrina/medidas-de-posicion/"
+            },
+            {
+              "id": "datos-no-agrupados",
+              "titulo": "Datos no agrupados",
+              "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
+              "fecha": "2026-07-24",
+              "ruta": "/erik/alejandrina/datos-no-agrupados/"
+            }
+          ]
+        },
+        {
           "id": "kenia-erik",
           "nombreVisible": "Kenia",
           "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
@@ -540,41 +582,6 @@
               "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
               "fecha": "2026-08-10",
               "ruta": "/erik/andres/porcentajes/"
-            }
-          ]
-        },
-        {
-          "id": "alejandrina",
-          "nombreVisible": "Alejandrina",
-          "descripcion": "Espacio de sesiones y recursos personalizados.",
-          "ruta": "/erik/alejandrina/",
-          "personalizacion": {
-            "simbolo": "A",
-            "acento": "#15784e",
-            "fondo": "#edf8f2"
-          },
-          "ultimaActividad": "2026-07-29",
-          "sesiones": [
-            {
-              "id": "diagramas-de-arboles",
-              "titulo": "Diagramas de árboles",
-              "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
-              "fecha": "2026-07-29",
-              "ruta": "/erik/alejandrina/diagramas-de-arboles/"
-            },
-            {
-              "id": "medidas-de-posicion",
-              "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
-              "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
-              "fecha": "2026-07-29",
-              "ruta": "/erik/alejandrina/medidas-de-posicion/"
-            },
-            {
-              "id": "datos-no-agrupados",
-              "titulo": "Datos no agrupados",
-              "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
-              "fecha": "2026-07-24",
-              "ruta": "/erik/alejandrina/datos-no-agrupados/"
             }
           ]
         },

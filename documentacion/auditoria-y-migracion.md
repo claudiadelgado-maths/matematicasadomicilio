@@ -55,7 +55,7 @@ Los originales se eliminaron después de verificar sus copias. Las páginas HTML
 3. **CSS compartido más acentos locales:** evita duplicación sin convertir cada cambio específico en una regla global.
 4. **JavaScript por módulo:** un error en un juego no carga ni afecta otras páginas.
 5. **Metadatos cercanos al contenido:** una IA aislada comprende objetivo, estado, ruta y relaciones.
-6. **Redirecciones heredadas:** conservan marcadores y enlaces externos mientras la navegación usa rutas limpias.
+6. **Redirecciones heredadas:** las páginas `.html` de raíz conservan marcadores y enlaces externos mientras la navegación usa rutas limpias. Las redirecciones duplicadas que existían bajo `usuarios/[alumno]/sesiones/` se retiraron el 2026-08-21 tras comprobar que ninguna página actual las consumía.
 7. **PDF dentro del examen:** el módulo puede moverse o entregarse completo.
 8. **Sin carpetas opcionales vacías:** la estructura pública describe solo recursos reales.
 9. **Catálogo determinista:** se regenera sin fecha variable para evitar cambios innecesarios en cada commit.

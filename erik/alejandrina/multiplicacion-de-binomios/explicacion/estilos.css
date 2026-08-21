@@ -1,0 +1,363 @@
+.binomial-theory-site {
+  --theory-deep: #132f29;
+}
+
+.theory-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, .65fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.theory-hero-note {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.35rem;
+  border: 2px solid var(--bin-ink);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 8px 8px 0 var(--bin-yellow);
+}
+
+.theory-hero-note > span,
+.meaning-card > div:first-child > span,
+.verification-card > div:first-child > span {
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background: var(--bin-green);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.theory-hero-note > span { background: var(--bin-coral); }
+.theory-hero-note p { margin: 0; }
+.theory-hero-note strong { display: block; margin-bottom: .35rem; }
+
+.theory-chapter { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+.theory-chapter + .theory-chapter { border-top: 1px solid var(--bin-line); }
+.theory-chapter-tint { background: linear-gradient(180deg, #fffaf0, #f5fbf8); }
+
+.chapter-heading {
+  max-width: 800px;
+  margin-bottom: clamp(1.8rem, 4vw, 3rem);
+}
+
+.chapter-heading h2 {
+  max-width: 720px;
+  margin: .35rem 0 .85rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.02;
+}
+
+.chapter-heading > p:last-child {
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  line-height: 1.75;
+}
+
+.two-paths,
+.fraction-rules {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.concept-card {
+  min-width: 0;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid var(--bin-line);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 14px 35px rgba(23, 51, 43, .06);
+}
+
+.concept-card-accent { background: var(--bin-cream); }
+
+.concept-number {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--bin-yellow);
+  color: var(--bin-ink);
+  font-weight: 900;
+}
+
+.concept-card h3 { margin: 1rem 0 .55rem; }
+
+.meaning-card,
+.verification-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: start;
+  margin-top: 1.25rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-radius: 22px;
+  background: var(--bin-mint);
+}
+
+.meaning-card h3,
+.verification-card h3 { margin: .15rem 0 .5rem; }
+.formula-feature .katex { font-size: clamp(1.35rem, 4vw, 2.2rem); }
+.result-formula { border: 2px solid var(--bin-green); background: var(--bin-mint); }
+
+.anatomy-list {
+  display: grid;
+  gap: .75rem;
+  margin: 1.25rem 0 0;
+}
+
+.anatomy-list > div {
+  display: grid;
+  grid-template-columns: minmax(4.25rem, auto) 1fr;
+  gap: .8rem;
+  padding: .85rem;
+  border-radius: 14px;
+  background: #f6faf8;
+}
+
+.anatomy-list dt { font-weight: 900; }
+.anatomy-list dd { margin: 0; }
+
+.binomial-worked-example {
+  min-width: 0;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border: 1px solid var(--bin-line);
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(23, 51, 43, .08);
+}
+
+.worked-example-title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.worked-example-title h3 { margin: .2rem 0 0; }
+
+.reasoning-steps {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reasoning-steps > li {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1rem;
+  position: relative;
+  padding-bottom: 1.4rem;
+}
+
+.reasoning-steps > li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 2.45rem;
+  bottom: -.1rem;
+  left: 1.4rem;
+  width: 2px;
+  background: var(--bin-line);
+}
+
+.reasoning-steps > li > div > span {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 2px solid var(--bin-green);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--bin-green);
+  font-weight: 900;
+}
+
+.reasoning-steps article {
+  min-width: 0;
+  padding: .2rem 0 1rem;
+}
+
+.reasoning-steps h4 {
+  margin: .25rem 0 .45rem;
+  font-size: 1.1rem;
+}
+
+.final-answer {
+  padding: 1.25rem;
+  border: 2px solid var(--bin-ink);
+  border-radius: 20px;
+  background: var(--bin-yellow);
+}
+
+.final-answer > p {
+  margin: 0 0 .55rem;
+  font-size: .76rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.final-answer .formula-scroll { border-color: rgba(23, 51, 43, .25); }
+
+.verification-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+}
+
+.verification-grid > div {
+  min-width: 0;
+  padding: .85rem;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.verification-grid > div > strong,
+.verification-grid > div > span { display: block; }
+.verification-grid strong { margin-bottom: .35rem; }
+
+.theory-chapter-dark {
+  color: #fff;
+  background: var(--theory-deep);
+}
+
+.theory-chapter-dark .section-kicker { color: #8ee0bd; }
+.theory-chapter-dark .chapter-heading > p:last-child { color: #d9e8e2; }
+
+.general-derivation {
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .08);
+}
+
+.general-derivation .formula-scroll {
+  border: 0;
+  background: #fff;
+  color: var(--bin-ink);
+}
+
+.origin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.origin-grid article {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .07);
+}
+
+.origin-grid article > span {
+  display: inline-grid;
+  place-items: center;
+  min-height: 2.5rem;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  background: var(--bin-yellow);
+  color: var(--bin-ink);
+  font-weight: 900;
+}
+
+.origin-grid h3 { margin: 1rem 0 .45rem; color: #fff; }
+.origin-grid p { margin-bottom: 0; color: #d9e8e2; }
+.fraction-example { margin-top: 1.25rem; }
+
+.mistake-list {
+  display: grid;
+  gap: .75rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mistake-list li {
+  padding: 1rem;
+  border-left: 4px solid var(--bin-coral);
+  border-radius: 0 14px 14px 0;
+  background: #fff5f1;
+}
+
+.mistake-list li > strong,
+.mistake-list li > span { display: block; }
+.mistake-list li > span { margin-top: .25rem; }
+
+.understanding-summary {
+  padding: clamp(1.4rem, 4vw, 2.6rem);
+  border: 2px solid var(--bin-ink);
+  border-radius: 28px;
+  background: linear-gradient(135deg, #fff8dd, #e8f7ef);
+  box-shadow: 10px 10px 0 var(--bin-ink);
+}
+
+.understanding-summary > div:first-child { max-width: 720px; }
+.understanding-summary h2 { margin: .35rem 0 .6rem; }
+
+.understanding-summary ol {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .75rem;
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.understanding-summary li {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--bin-line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .82);
+}
+
+.understanding-summary li > span {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: .75rem;
+  border-radius: 50%;
+  background: var(--bin-green);
+  color: #fff;
+  font-weight: 900;
+}
+
+.understanding-summary li p { margin: 0; }
+.theory-action { display: inline-flex; align-items: center; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .theory-hero-grid,
+  .origin-grid { grid-template-columns: 1fr; }
+  .understanding-summary ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 620px) {
+  .two-paths,
+  .fraction-rules,
+  .verification-grid,
+  .understanding-summary ol { grid-template-columns: 1fr; }
+  .meaning-card,
+  .verification-card { grid-template-columns: 1fr; }
+  .anatomy-list > div { grid-template-columns: 1fr; }
+  .worked-example-title { align-items: flex-start; }
+  .reasoning-steps > li { grid-template-columns: 2.5rem minmax(0, 1fr); gap: .65rem; }
+  .reasoning-steps > li > div > span { width: 2.35rem; height: 2.35rem; }
+  .reasoning-steps > li:not(:last-child)::before { top: 2rem; left: 1.12rem; }
+}

@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 92,
+  "total": 97,
   "tipos": {
     "examen": [
       {
@@ -157,6 +157,18 @@
         "archivoMetadatos": "erik/alejandrina/medidas-de-posicion/calculadoras/conversor-de-medidas/calculadora.json"
       },
       {
+        "id": "producto-de-binomios",
+        "tipo": "calculadora",
+        "sesion": "multiplicacion-de-binomios",
+        "usuario": "alejandrina",
+        "titulo": "Calculadora",
+        "descripcion": "Multiplica dos binomios Ax+B y Cx+D con enteros o fracciones y muestra en LaTeX la distribución, los cuatro productos, la suma de términos semejantes y el resultado exacto.",
+        "estado": "publicado",
+        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/calculadoras/producto-de-binomios/",
+        "interactivo": true,
+        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/calculadoras/producto-de-binomios/calculadora.json"
+      },
+      {
         "id": "relaciones-porcentuales-andres",
         "tipo": "calculadora",
         "sesion": "porcentajes-andres",
@@ -248,6 +260,18 @@
         "archivoMetadatos": "erik/alejandrina/medidas-de-posicion/ejercicios/relaciona-las-medidas/ejercicio.json"
       },
       {
+        "id": "practica-de-binomios",
+        "tipo": "ejercicio",
+        "sesion": "multiplicacion-de-binomios",
+        "usuario": "alejandrina",
+        "titulo": "Ejercicio",
+        "descripcion": "Práctica dinámica en tres fases: distribuir un término, organizar la distribución y simplificar el trinomio.",
+        "estado": "publicado",
+        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/ejercicios/practica-de-binomios/",
+        "interactivo": true,
+        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/ejercicios/practica-de-binomios/ejercicio.json"
+      },
+      {
         "id": "practica-porcentajes-andres",
         "tipo": "ejercicio",
         "sesion": "porcentajes-andres",
@@ -314,6 +338,17 @@
         "estado": "publicado",
         "ruta": "/erik/alejandrina/diagramas-de-arboles/explicacion/",
         "archivoMetadatos": "erik/alejandrina/diagramas-de-arboles/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-multiplicacion-de-binomios",
+        "tipo": "explicacion",
+        "sesion": "multiplicacion-de-binomios",
+        "usuario": "alejandrina",
+        "titulo": "Teoría de la multiplicación de binomios",
+        "descripcion": "Explicación conceptual de la propiedad distributiva, los términos semejantes y la multiplicación de binomios con enteros y fracciones.",
+        "estado": "publicado",
+        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/explicacion/",
+        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/explicacion/componente.json"
       },
       {
         "id": "explicacion-porcentajes-andres",
@@ -418,6 +453,18 @@
         "ruta": "/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/",
         "interactivo": true,
         "archivoMetadatos": "erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/juego.json"
+      },
+      {
+        "id": "fabrica-de-trinomios",
+        "tipo": "juego",
+        "sesion": "multiplicacion-de-binomios",
+        "usuario": "alejandrina",
+        "titulo": "La fábrica de trinomios",
+        "descripcion": "Juego narrativo de opción múltiple para ayudar a una trabajadora a construir, en cuatro etapas y con enteros sencillos, todo el procedimiento del producto de binomios.",
+        "estado": "publicado",
+        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/",
+        "interactivo": true,
+        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/juego.json"
       },
       {
         "id": "ticket-bajo-la-lupa-andres",
@@ -1687,6 +1734,31 @@
           "calculadoras": true
         },
         "archivoMetadatos": "erik/alejandrina/medidas-de-posicion/sesion.json"
+      },
+      {
+        "id": "multiplicacion-de-binomios",
+        "slug": "multiplicacion-de-binomios",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Multiplicación de binomios",
+        "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
+        "objetivo": "Aplicar la propiedad distributiva para multiplicar dos binomios, reunir términos semejantes y expresar el trinomio resultante con coeficientes simplificados.",
+        "conocimientosPrevios": [
+          "ley de los signos",
+          "suma y multiplicación de fracciones",
+          "términos semejantes"
+        ],
+        "fecha": "2026-08-21",
+        "estado": "publicado",
+        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/sesion.json"
       },
       {
         "id": "porcentajes-andres",

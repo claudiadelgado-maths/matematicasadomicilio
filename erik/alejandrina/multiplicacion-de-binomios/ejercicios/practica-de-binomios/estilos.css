@@ -1,0 +1,178 @@
+.phased-exercise-site { overflow-x: hidden; }
+.exercise-hero .lead { max-width: 760px; }
+
+.phased-exercise-site .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.phase-route {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.phase-route a {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .55rem .8rem;
+  border: 1px solid var(--bin-line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .82);
+  color: var(--bin-ink);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.phase-route a > span {
+  display: grid;
+  place-items: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 50%;
+  background: var(--bin-green);
+  color: #fff;
+  font-size: .78rem;
+}
+
+.exercise-stage { padding: clamp(3rem, 7vw, 5.5rem) 0; }
+.exercise-stage + .exercise-stage { border-top: 1px solid var(--bin-line); }
+.exercise-stage-two { background: var(--bin-cream); }
+.exercise-stage-three { background: #f3f8ff; }
+
+.binomial-phase-card {
+  min-width: 0;
+  padding: clamp(1.2rem, 4vw, 2.4rem);
+  border: 1px solid var(--bin-line);
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 18px 44px rgba(23, 51, 43, .08);
+}
+
+.binomial-phase-heading {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+}
+
+.phase-badge {
+  display: grid;
+  place-items: center;
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 50%;
+  background: var(--bin-yellow);
+  color: var(--bin-ink);
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.binomial-phase-heading h2 { margin: .2rem 0 .35rem; }
+.binomial-phase-heading p:last-child { margin-bottom: 0; }
+.binomial-phase-heading > strong {
+  padding: .45rem .7rem;
+  border-radius: 999px;
+  background: var(--bin-mint);
+  color: var(--bin-green);
+  font-size: .78rem;
+  white-space: nowrap;
+}
+
+.phase-problem {
+  margin: 1.7rem 0 1rem;
+  padding: clamp(1.2rem, 4vw, 2rem);
+  border: 2px solid var(--bin-ink);
+  border-radius: 20px;
+  background: var(--bin-ink);
+  color: #fff;
+}
+
+.phase-problem .katex { color: #fff; font-size: clamp(1.25rem, 4vw, 2rem); }
+.phase-instruction { max-width: 760px; }
+
+.answer-expression-shell {
+  contain: inline-size;
+  max-width: 100%;
+  margin: 1.4rem 0;
+  padding: .75rem;
+  overflow-x: auto;
+  border: 1px solid var(--bin-line);
+  border-radius: 18px;
+  background: #f8fcfa;
+  scrollbar-width: thin;
+}
+
+.answer-expression {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  width: max-content;
+  min-width: 100%;
+  padding: .35rem;
+  color: var(--bin-ink);
+  font: 850 clamp(1rem, 3vw, 1.35rem)/1 system-ui, sans-serif;
+  white-space: nowrap;
+}
+
+.number-slot input,
+.sign-slot select {
+  height: 3rem;
+  border: 1px solid #91b4a7;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--bin-ink);
+  font: 850 1.05rem/1 system-ui, sans-serif;
+  text-align: center;
+}
+
+.number-slot input { width: 4.2rem; padding: .4rem; }
+.sign-slot select { width: 3.4rem; padding: .35rem; cursor: pointer; }
+.number-slot input:focus,
+.sign-slot select:focus { outline: 3px solid rgba(23, 107, 82, .22); border-color: var(--bin-green); }
+.parenthesis { font: 500 2rem/1 Georgia, serif; }
+.main-sign select { border-color: var(--bin-coral); }
+
+.phase-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+}
+
+.phase-actions > span {
+  margin-left: auto;
+  color: var(--bin-green);
+  font-weight: 850;
+}
+
+.phase-solution {
+  margin-top: 1.25rem;
+  padding: 1.15rem;
+  border-left: 5px solid var(--bin-green);
+  border-radius: 0 16px 16px 0;
+  background: var(--bin-mint);
+}
+
+.phase-solution[hidden] { display: none; }
+.phase-solution .math-output { padding: .85rem; border-radius: 12px; background: #fff; }
+.phase-solution .katex-display { margin: .2rem 0; }
+
+@media (max-width: 620px) {
+  .binomial-phase-heading { grid-template-columns: auto minmax(0, 1fr); }
+  .binomial-phase-heading > strong { grid-column: 2; justify-self: start; }
+  .phase-actions > span { width: 100%; margin-left: 0; }
+  .number-slot input { width: 3.6rem; }
+}

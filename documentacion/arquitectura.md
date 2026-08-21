@@ -82,7 +82,8 @@ erik/
 ├── alejandrina/
 │   ├── datos-no-agrupados/
 │   ├── diagramas-de-arboles/
-│   └── medidas-de-posicion/
+│   ├── medidas-de-posicion/
+│   └── multiplicacion-de-binomios/
 ├── andres/
 │   └── porcentajes/
 └── kenia/

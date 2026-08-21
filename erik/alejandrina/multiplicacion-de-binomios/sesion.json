@@ -1,0 +1,20 @@
+{
+  "id": "multiplicacion-de-binomios",
+  "slug": "multiplicacion-de-binomios",
+  "tipo": "sesion",
+  "usuario": "alejandrina",
+  "titulo": "Multiplicación de binomios",
+  "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
+  "objetivo": "Aplicar la propiedad distributiva para multiplicar dos binomios, reunir términos semejantes y expresar el trinomio resultante con coeficientes simplificados.",
+  "conocimientosPrevios": ["ley de los signos", "suma y multiplicación de fracciones", "términos semejantes"],
+  "fecha": "2026-08-21",
+  "estado": "publicado",
+  "ruta": "/erik/alejandrina/multiplicacion-de-binomios/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
+}
