@@ -1,0 +1,20 @@
+{
+  "id": "consigue-el-cambio-luca",
+  "slug": "consigue-el-cambio",
+  "tipo": "sesion",
+  "usuario": "luca-claudia",
+  "titulo": "Consigue el cambio",
+  "descripcion": "Una pequeña tienda para descubrir cuánto dinero regresa después de pagar.",
+  "objetivo": "Reconocer de forma intuitiva el cambio como la diferencia entre el dinero entregado y el precio de una compra.",
+  "conocimientosPrevios": ["contar hasta 10", "reconocer cantidades pequeñas"],
+  "fecha": "2026-08-19",
+  "estado": "publicado",
+  "ruta": "/asesores/claudia/luca/consigue-el-cambio/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

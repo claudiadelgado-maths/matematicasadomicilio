@@ -1,8 +1,0 @@
-/* Estilos exclusivos de este módulo. */
-.module-site {
-  --module-accent: #15784e;
-}
-
-.module-site .catalog-card {
-  border-top: 3px solid var(--module-accent);
-}

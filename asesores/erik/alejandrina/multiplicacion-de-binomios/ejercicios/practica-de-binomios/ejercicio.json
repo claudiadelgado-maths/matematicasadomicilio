@@ -1,0 +1,11 @@
+{
+  "id": "practica-de-binomios",
+  "tipo": "ejercicio",
+  "sesion": "multiplicacion-de-binomios",
+  "usuario": "alejandrina",
+  "titulo": "Ejercicio",
+  "descripcion": "Práctica dinámica en tres fases: distribuir un término, organizar la distribución y simplificar el trinomio.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/ejercicios/practica-de-binomios/",
+  "interactivo": true
+}

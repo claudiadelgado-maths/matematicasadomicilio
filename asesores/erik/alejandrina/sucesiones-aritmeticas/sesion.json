@@ -1,0 +1,20 @@
+{
+  "id": "sucesiones-aritmeticas-sesion-1",
+  "slug": "sucesiones-aritmeticas",
+  "tipo": "sesion",
+  "usuario": "alejandrina",
+  "titulo": "Sucesiones aritméticas: términos, diferencia y fórmula general",
+  "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
+  "objetivo": "Reconocer una sucesión aritmética, distinguir posición y valor, construir aₙ = a₁ + (n − 1)d mediante la idea de saltos y usarla para encontrar términos específicos.",
+  "conocimientosPrevios": ["operaciones con números enteros", "patrones numéricos", "sustitución algebraica básica"],
+  "fecha": "2026-08-25",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
+}

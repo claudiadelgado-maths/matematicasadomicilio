@@ -1,0 +1,17 @@
+{
+  "id": "andres",
+  "slug": "andres",
+  "tipo": "usuario",
+  "titulo": "Espacio de Andrés",
+  "nombreVisible": "Andrés",
+  "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+  "estado": "activo",
+  "ruta": "/asesores/erik/andres/",
+  "maestro": "erik-estrella",
+  "personalizacion": {
+    "simbolo": "A",
+    "acento": "#b84d18",
+    "fondo": "#fff3ec"
+  },
+  "almacenamientoLocal": false
+}

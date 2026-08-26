@@ -1,0 +1,20 @@
+{
+  "id": "medidas-de-posicion",
+  "slug": "medidas-de-posicion",
+  "tipo": "sesion",
+  "usuario": "alejandrina",
+  "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
+  "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
+  "objetivo": "Relacionar medidas de posición con porcentajes y reconocer notaciones equivalentes exactas.",
+  "conocimientosPrevios": ["porcentajes básicos", "lectura de información"],
+  "fecha": "2026-07-29",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
+}

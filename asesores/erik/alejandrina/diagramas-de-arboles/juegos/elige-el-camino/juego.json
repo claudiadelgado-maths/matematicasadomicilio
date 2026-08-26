@@ -1,0 +1,11 @@
+{
+  "id": "elige-el-camino",
+  "tipo": "juego",
+  "sesion": "diagramas-de-arboles",
+  "usuario": "alejandrina",
+  "titulo": "El laberinto infinito",
+  "descripcion": "Juego para leer un diagrama de árbol como mapa y recorrer las puertas que conducen hasta una hoja marcada como salida.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/",
+  "interactivo": true
+}

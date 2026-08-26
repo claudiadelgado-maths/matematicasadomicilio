@@ -24,10 +24,10 @@ No se detectaron archivos idénticos antes de la migración. Sí existía acopla
 | `temas.html` | `/biblioteca/temas/` |
 | `calculadoras.html` | `/biblioteca/calculadoras/` |
 | `examen.html` | `/biblioteca/examenes/simulador-admision-universidad/` |
-| `usuarios.html` | `/usuarios/` |
-| `jose.html` | `/erik/jose/` |
-| `alejandrina.html` | `/erik/alejandrina/` |
-| `datos-no-agrupados.html` | `/erik/alejandrina/datos-no-agrupados/` |
+| `usuarios.html` | `/asesores/` |
+| `jose.html` | `/asesores/erik/jose/` |
+| `alejandrina.html` | `/asesores/erik/alejandrina/` |
+| `datos-no-agrupados.html` | `/asesores/erik/alejandrina/datos-no-agrupados/` |
 | `nosotros.html` | `/nosotros/` |
 | `contacto.html` | `/contacto/` |
 | `aviso-privacidad.html` | `/legal/aviso-de-privacidad/` |
@@ -38,12 +38,12 @@ No se detectaron archivos idénticos antes de la migración. Sí existía acopla
 
 ## Archivos reemplazados
 
-- `assets/css/styles.css` → `recursos/css/sistema-visual.css`.
+- `assets/css/styles.css` → `recursos/css/base.css` y los `estilos.css` locales de cada página.
 - `assets/js/main.js` → `recursos/js/navegacion.js`.
 - `assets/js/recursos.js` → scripts locales de cinco módulos.
 - `assets/js/usuarios.js` → scripts locales del usuario José y tres componentes de sesión.
 - `assets/img/*` → `recursos/svg/*`.
-- `admin.jpg` → `recursos/imagenes/admin.jpg`.
+- `admin.jpg` → `asesores/erik/recursos/admin.jpg`.
 - `Simulador.pdf` → recursos exclusivos del módulo de examen.
 
 Los originales se eliminaron después de verificar sus copias. Las páginas HTML antiguas no contienen la aplicación duplicada: son redirecciones pequeñas de compatibilidad.
@@ -52,10 +52,10 @@ Los originales se eliminaron después de verificar sus copias. Las páginas HTML
 
 1. **Sin framework:** la escala actual no justifica una cadena de compilación.
 2. **Índices escritos en HTML:** siguen siendo legibles y editables sin herramientas; el catálogo JSON sirve como fuente estructurada para automatización futura.
-3. **CSS compartido más acentos locales:** evita duplicación sin convertir cada cambio específico en una regla global.
+3. **CSS propiedad de cada página:** todo `index.html` conserva un `estilos.css` hermano; la base compartida contiene únicamente identidad y estructura universal. Esta separación permite copiar asesores y módulos completos sin arrastrar reglas ajenas.
 4. **JavaScript por módulo:** un error en un juego no carga ni afecta otras páginas.
 5. **Metadatos cercanos al contenido:** una IA aislada comprende objetivo, estado, ruta y relaciones.
-6. **Redirecciones heredadas:** las páginas `.html` de raíz conservan marcadores y enlaces externos mientras la navegación usa rutas limpias. Las redirecciones duplicadas que existían bajo `usuarios/[alumno]/sesiones/` se retiraron el 2026-08-21 tras comprobar que ninguna página actual las consumía.
+6. **Rutas académicas directas:** los módulos viven en `asesores/[asesor]/[alumno]/[sesion]/`, sin carpetas intermedias llamadas `alumnos` o `sesiones`.
 7. **PDF dentro del examen:** el módulo puede moverse o entregarse completo.
 8. **Sin carpetas opcionales vacías:** la estructura pública describe solo recursos reales.
 9. **Catálogo determinista:** se regenera sin fecha variable para evitar cambios innecesarios en cada commit.

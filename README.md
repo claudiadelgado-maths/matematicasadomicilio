@@ -5,10 +5,11 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 ## Principios de la arquitectura
 
 - **Módulos aislados:** cada tema, ejercicio, juego, calculadora, examen, usuario y sesión vive en una carpeta identificable.
-- **URLs limpias:** la URL pública de un módulo termina en `/` y corresponde a un directorio con `index.html`.
-- **Recursos equilibrados:** navegación e identidad visual son compartidas; la lógica educativa permanece dentro de cada módulo.
+- **Fuente directa:** todos los asesores viven en `asesores/`; cada alumno es una subcarpeta directa de su asesor y cada sesión una subcarpeta directa de su alumno.
+- **URLs físicas:** la URL pública termina en `/` y corresponde directamente a una carpeta versionada con `index.html`.
+- **Recursos locales:** cada página conserva junto a su `index.html` su propio `estilos.css` y, cuando lo necesita, su JavaScript y sus imágenes.
+- **Base global mínima:** solo la identidad, la estructura común, la navegación y los SVG de marca permanecen compartidos.
 - **Componentes opcionales:** un tema o sesión solo anuncia los componentes que existen.
-- **Compatibilidad:** las antiguas páginas `.html` redirigen a sus nuevas rutas mientras se conservan enlaces externos.
 - **Publicación estática:** el resultado funciona en GitHub Pages, tanto en un dominio propio como bajo la ruta de un repositorio.
 
 ## Mapa principal
@@ -16,9 +17,17 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 ```text
 /
 ├── index.html
+├── estilos.css
 ├── nosotros/
+│   ├── index.html
+│   └── estilos.css
 ├── contacto/
+│   ├── index.html
+│   └── estilos.css
 ├── legal/
+├── talleres/
+├── laboratorios/
+├── anuncios/
 ├── biblioteca/
 │   ├── temas/
 │   │   └── [tema]/
@@ -28,27 +37,30 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 │   │       └── calculadoras/[calculadora]/
 │   ├── calculadoras/
 │   └── examenes/[examen]/
-├── usuarios/
-│   └── index.html (catálogo de salones)
-├── [asesor]/
-│   ├── maestro.json
+├── asesores/
 │   ├── index.html
-│   └── [alumno]/
-│       ├── usuario.json
-│       └── [sesion]/
+│   └── [asesor]/
+│       ├── maestro.json
+│       ├── index.html
+│       ├── estilos.css
+│       ├── script.js
+│       ├── recursos/
+│       └── [alumno]/
+│           ├── usuario.json
+│           ├── index.html
+│           ├── estilos.css
+│           ├── script.js
+│           └── [sesion]/
+│               ├── index.html
+│               └── estilos.css
 ├── plantillas/
-│   ├── maestro/
-│   ├── alumno/
-│   └── sesion/
 ├── recursos/
-│   ├── css/
-│   ├── js/
+│   ├── css/base.css
+│   ├── js/navegacion.js
 │   ├── svg/
-│   ├── imagenes/
 │   └── datos/
 ├── documentacion/
-├── herramientas/
-└── páginas antiguas .html (redirecciones)
+└── herramientas/
 ```
 
 El árbol detallado y las responsabilidades están en [documentacion/arquitectura.md](documentacion/arquitectura.md).
@@ -58,28 +70,30 @@ El árbol detallado y las responsabilidades están en [documentacion/arquitectur
 Cada módulo concreto contiene:
 
 - `index.html`: interfaz pública;
+- `estilos.css`: estilos propios de esa página, obligatorio junto a cada `index.html`;
 - `README.md`: objetivo, límites y pruebas del módulo;
 - un JSON de metadatos;
-- `estilos.css` cuando necesita estilos propios;
-- `script.js` cuando tiene interacción;
+- `script.js` cuando tiene interacción propia; no se crean scripts vacíos;
 - `recursos/` solo cuando utiliza archivos exclusivos.
 
-Una IA que reciba únicamente esa carpeta debe leer primero su `README.md` y su JSON. No debe cambiar rutas públicas ni copiar dentro del módulo el sistema global. Para una modificación local, los únicos recursos externos que debe asumir son:
+Una IA que reciba únicamente esa carpeta debe leer primero su `README.md` y su JSON. No debe cambiar rutas públicas. Para una modificación local, los únicos recursos externos que puede asumir son:
 
-- `/recursos/css/sistema-visual.css`;
-- `/recursos/css/modulos.css`;
+- `/recursos/css/base.css`, para la base realmente común;
 - `/recursos/js/navegacion.js`;
 - `/recursos/svg/` para la identidad general.
 
+El diseño particular de una página, un asesor, un alumno o una sesión no se agrega a los archivos globales. Debe permanecer en su propia carpeta, aunque exista cierta repetición entre módulos independientes.
+
 ## Desarrollo local
 
-Abrir el sitio mediante un servidor HTTP permite comprobar las rutas limpias:
+Genera los datos públicos y abre la raíz directamente con un servidor HTTP estándar:
 
 ```powershell
+npm run catalogo
 python -m http.server 8000
 ```
 
-Después visita `http://localhost:8000/`. Abrir los archivos directamente con `file://` no representa correctamente la navegación de GitHub Pages.
+Después visita `http://localhost:8000/`. Las rutas funcionan porque `asesores/`, cada asesor, cada alumno y cada sesión existen físicamente en la rama. Abrir los archivos directamente con `file://` no representa correctamente la navegación de GitHub Pages.
 
 ## Comprobaciones
 
@@ -90,7 +104,7 @@ npm run catalogo
 npm run validar
 ```
 
-`catalogo` reconstruye `recursos/datos/catalogo.json` desde los metadatos. `validar` comprueba JSON, rutas internas, archivos enlazados, identificadores repetidos y estructura básica.
+`catalogo` reconstruye `recursos/datos/catalogo.json` y `recursos/datos/academia.json` desde los metadatos modulares. `validar` comprueba directamente la rama: JSON, relaciones académicas, rutas, archivos enlazados, identificadores repetidos y estructura básica.
 
 La revisión completa también incluye:
 
@@ -100,8 +114,7 @@ La revisión completa también incluye:
 4. consola del navegador sin errores;
 5. ejercicios, calculadoras y juegos;
 6. PDF del examen;
-7. redirecciones heredadas;
-8. ausencia de desplazamiento horizontal.
+7. ausencia de desplazamiento horizontal.
 
 ## Publicación diaria con un solo commit
 
@@ -118,7 +131,7 @@ La revisión completa también incluye:
    git push
    ```
 
-GitHub Pages publica directamente los archivos de la rama configurada. No se debe añadir una fase de servidor o compilación sin documentar y justificar el cambio.
+GitHub Pages publica directamente los archivos de `main`. No existe fase de construcción, servidor especial ni artefacto intermedio.
 
 ## Guías
 
@@ -132,7 +145,7 @@ GitHub Pages publica directamente los archivos de la rama configurada. No se deb
 - [Crear un juego](documentacion/creacion-de-juegos.md)
 - [Crear una calculadora](documentacion/creacion-de-calculadoras.md)
 - [Crear un examen](documentacion/creacion-de-examenes.md)
-- [Crear un asesor](documentacion/creacion-de-maestros.md)
+- [Crear un asesor](documentacion/creacion-de-asesores.md)
 - [Crear un usuario](documentacion/creacion-de-usuarios.md)
 - [Crear una sesión](documentacion/creacion-de-sesiones.md)
 - [Gestión de asesores, alumnos y sesiones](documentacion/gestion-academica.md)
@@ -140,6 +153,6 @@ GitHub Pages publica directamente los archivos de la rama configurada. No se deb
 
 ## Datos globales sensibles al cambio
 
-El número de WhatsApp visible es `999 129 34 97` y el enlace usa `529991293497`. El correo es `contacto@matematicasadomicilio.com`. Los precios, duración, modalidad, máximo de alumnos, ubicación y disponibilidad de cada asesor se administran técnicamente en su `maestro.json` y se publican mediante `npm run catalogo`; no deben duplicarse manualmente en la portada.
+El número de WhatsApp visible es `999 129 34 97` y el enlace usa `529991293497`. El correo es `contacto@matematicasadomicilio.com`. Los precios, duración, modalidad, máximo de alumnos, ubicación y disponibilidad de cada asesor se administran técnicamente en su `maestro.json` y se muestran en Salones y en el perfil del asesor; no deben duplicarse manualmente en la portada.
 
 El proyecto no debe presentar testimonios, credenciales, resultados, clientes, redes sociales ni servicios que no hayan sido confirmados.

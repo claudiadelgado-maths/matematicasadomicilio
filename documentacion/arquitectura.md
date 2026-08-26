@@ -7,14 +7,14 @@
 | Sitio general | `/`, `/nosotros/`, `/contacto/`, `/legal/` | Identidad, servicio e información institucional |
 | Biblioteca | `/biblioteca/` | Catálogo público de temas, calculadoras y exámenes |
 | Tema | `/biblioteca/temas/[tema]/` | Agrupa componentes de un mismo conocimiento |
-| Salones | `/usuarios/` | Asesores y acceso a los casilleros de cada salón |
-| Salón del asesor | `/[asesor]/` | Información, ubicación, disponibilidad, precios, metodología y casilleros |
-| Casillero | `/[asesor]/[alumno]/` | Perfil operativo y listado de sesiones dentro de su salón |
-| Sesión | `/[asesor]/[alumno]/[sesion]/` | Contenido personalizado de una sesión |
+| Salones | `/asesores/` | Asesores y acceso a los casilleros de cada salón |
+| Salón del asesor | `/asesores/[asesor]/` | Información, ubicación, disponibilidad, precios, metodología y casilleros |
+| Casillero | `/asesores/[asesor]/[alumno]/` | Perfil operativo y listado de sesiones dentro de su salón |
+| Sesión | `/asesores/[asesor]/[alumno]/[sesion]/` | Contenido personalizado de una sesión |
 
 ## Unidad de aislamiento
 
-La unidad mínima que puede entregarse a otra IA es una carpeta concreta con `index.html`, `README.md` y metadatos. Un componente interactivo incluye también su `script.js`; un estilo particular vive en `estilos.css`.
+La unidad mínima que puede entregarse a otra IA es una carpeta concreta con `index.html`, su `estilos.css`, `README.md` y metadatos. Si tiene comportamiento propio, incluye también su JavaScript; si usa fotografías, ilustraciones u otros archivos exclusivos, los conserva en un `recursos/` local. No se crean scripts vacíos.
 
 Los componentes de un tema permanecen bajo la carpeta del tema. Los componentes personalizados permanecen bajo la sesión del usuario. Las colecciones globales enlazan esos módulos, pero no duplican su implementación.
 
@@ -34,16 +34,18 @@ Los estados `plantilla`, `borrador`, `archivado` e `inactivo` quedan fuera de lo
 ## Dependencias
 
 ```text
-sistema-visual.css ─┬─ sitio general
-                    ├─ biblioteca y temas
-modulos.css ────────┤
-navegacion.js ──────┴─ usuarios y sesiones
-academia.css/js ────── maestros, casilleros, sesiones y precios
+recursos/css/base.css ───── base visual realmente común
+recursos/js/navegacion.js ─ menú común
+recursos/svg/ ────────────── identidad general
 
-módulo/index.html ── estilos.css y script.js locales
+carpeta/index.html ───────── carpeta/estilos.css
+                      └───── carpeta/script.js, solo si hace falta
+academia.json ────────────── scripts locales de catálogos académicos
 ```
 
-`sistema-visual.css` conserva la identidad y los componentes históricos. `modulos.css` contiene catálogos, tarjetas, migas de pan y cabeceras modulares. `navegacion.js` controla solamente comportamiento compartido, como el menú.
+`base.css` contiene únicamente la base que todas las páginas necesitan. El diseño de portada, secciones institucionales, catálogos, perfiles, alumnos, sesiones y componentes se encuentra en el `estilos.css` de cada página. `navegacion.js` controla solamente comportamiento compartido, como el menú.
+
+La repetición razonable entre carpetas independientes es intencional: permite copiar un asesor completo sin depender de una hoja global que contenga reglas de otros asesores. Un recurso solo asciende a `recursos/` cuando es verdaderamente común a todo el sitio.
 
 ## Rutas
 
@@ -73,34 +75,40 @@ biblioteca/
 └── examenes/
     └── simulador-admision-universidad/
 
-usuarios/
-└── index.html
-
-erik/
-├── maestro.json
-├── jose/
-├── alejandrina/
-│   ├── datos-no-agrupados/
-│   ├── diagramas-de-arboles/
-│   ├── medidas-de-posicion/
-│   └── multiplicacion-de-binomios/
-├── andres/
-│   └── porcentajes/
-└── kenia/
-    └── despejes-lineales/
-
-claudia/
-└── luca/
-    ├── consigue-el-cambio/
-    ├── cuanto-mide-cuanto-pesa/
-    └── las-horas/
-
-rainer/
-├── sofia/
-│   ├── espacios-topologicos/
-│   └── interior-clausura-frontera/
-└── mateo/
-    └── continuidad-topologica/
+asesores/
+├── index.html
+├── estilos.css
+├── erik/
+│   ├── maestro.json
+│   ├── index.html
+│   ├── estilos.css
+│   ├── script.js
+│   ├── recursos/
+│   ├── alejandrina/
+│   │   ├── usuario.json
+│   │   ├── index.html
+│   │   ├── estilos.css
+│   │   ├── script.js
+│   │   ├── datos-no-agrupados/
+│   │   ├── diagramas-de-arboles/
+│   │   ├── medidas-de-posicion/
+│   │   ├── multiplicacion-de-binomios/
+│   │   └── sucesiones-aritmeticas/
+│   ├── andres/
+│   │   └── porcentajes/
+│   └── kenia/
+│       └── despejes-lineales/
+├── claudia/
+│   └── luca/
+│       ├── consigue-el-cambio/
+│       ├── cuanto-mide-cuanto-pesa/
+│       └── las-horas/
+└── rainer/
+    ├── sofia/
+    │   ├── espacios-topologicos/
+    │   └── interior-clausura-frontera/
+    └── mateo/
+        └── continuidad-topologica/
 
 plantillas/
 ├── maestro/
@@ -111,6 +119,6 @@ plantillas/
 
 ## Archivos reemplazados
 
-Las antiguas páginas `biblioteca.html`, `temas.html`, `ejercicios.html`, `juegos.html`, `calculadoras.html`, `examen.html`, `usuarios.html`, `jose.html`, `alejandrina.html`, `datos-no-agrupados.html`, `nosotros.html`, `contacto.html` y las páginas legales ahora son redirecciones. Su contenido real fue distribuido en módulos.
+Las antiguas páginas `.html` de la raíz son compatibilidad heredada cuando todavía existen; el contenido real vive en sus carpetas modulares.
 
-Los antiguos `assets/css/styles.css`, `assets/js/*.js`, `assets/img/*`, `admin.jpg` y `Simulador.pdf` fueron reemplazados por archivos bajo `recursos/` o dentro del módulo que los utiliza.
+Los antiguos `assets/css/styles.css`, `assets/js/*.js`, `assets/img/*`, `admin.jpg` y `Simulador.pdf` fueron reemplazados por una base global mínima o por archivos dentro del módulo que los utiliza.

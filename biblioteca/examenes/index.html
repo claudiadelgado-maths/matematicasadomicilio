@@ -11,10 +11,12 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <link rel="icon" href="../../recursos/svg/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../recursos/css/sistema-visual.css?v=20260723-modular1">
-  <link rel="stylesheet" href="../../recursos/css/modulos.css?v=20260723-modular1">
+  
+  
 
-  <script src="../../recursos/js/navegacion.js?v=20260723-modular1" defer></script>
+  <link rel="stylesheet" href="../../recursos/css/base.css?v=20260826-base1">
+  <link rel="stylesheet" href="estilos.css?v=20260826-local1">
+  <script src="../../recursos/js/navegacion.js?v=20260825-espacios1" defer></script>
 
 </head>
 <body>
@@ -23,7 +25,7 @@
     <div class="container header-inner">
       <a class="brand" href="../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
-      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../">Inicio</a></li><li><a href="../../nosotros/">Nosotros</a></li><li><a href="../../biblioteca/" aria-current="page">Biblioteca</a></li><li><a href="../../usuarios/">Salones</a></li><li><a href="../../contacto/">Contacto</a></li></ul></nav>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../">Inicio</a></li><li><a href="../../nosotros/">Nosotros</a></li><li><a href="../" aria-current="page">Biblioteca</a></li><li><a href="../../asesores/">Salones</a></li><li><a href="../../contacto/">Contacto</a></li></ul></nav>
     </div>
   </header>
 
@@ -40,28 +42,29 @@
       </div>
     </header>
     <section class="module-catalog-section" aria-label="Exámenes">
-      <div class="container"><div class="module-catalog">
-          <article class="catalog-card">
-            <span class="catalog-card-symbol" aria-hidden="true">?</span>
-            <div class="catalog-card-meta"><span>Universidad · 60 minutos</span><span>Publicado</span></div>
-            <h3>Simulador de admisión a universidad</h3>
-            <p>Documento PDF de práctica para el área de Matemáticas del EXANI II 2025.</p>
-            
-            <a class="text-link" href="simulador-admision-universidad/">Abrir recurso →</a>
-          </article>
+      <div class="container"><div class="module-catalog" data-catalogo-biblioteca="examen">
           <article class="catalog-card">
             <span class="catalog-card-symbol" aria-hidden="true">5</span>
-            <div class="catalog-card-meta"><span>Bachillerato · 5 problemas</span><span>Publicado</span></div>
+            <div class="catalog-card-meta"><span>Bachillerato · Web</span><span>Publicado</span></div>
             <h3>Evaluación bachillerato</h3>
-            <p>Evaluación web con problemas de álgebra, geometría, trigonometría y funciones; cada uno incluye solución rápida y detallada.</p>
-            <a class="text-link" href="evaluacion-bachillerato/">Abrir evaluación →</a>
+            <p>Evaluación web de cinco problemas de bachillerato con solución rápida y solución detallada desplegables.</p>
+            
+            <a class="text-link" href="evaluacion-bachillerato/">Abrir recurso →</a>
+          </article>
+          <article class="catalog-card">
+            <span class="catalog-card-symbol" aria-hidden="true">?</span>
+            <div class="catalog-card-meta"><span>Preparatoria, Aspirantes a universidad · 60 minutos</span><span>Publicado</span></div>
+            <h3>Simulador de admisión universitaria</h3>
+            <p>Examen diagnóstico de práctica en formato PDF.</p>
+            
+            <a class="text-link" href="simulador-admision-universidad/">Abrir recurso →</a>
           </article></div></div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand"><a class="brand" href="../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div>
-      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../">Inicio</a></li><li><a href="../../nosotros/">Nosotros</a></li><li><a href="../../biblioteca/">Biblioteca</a></li><li><a href="../../usuarios/">Salones</a></li><li><a href="../../contacto/">Contacto</a></li></ul></nav>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../">Inicio</a></li><li><a href="../../nosotros/">Nosotros</a></li><li><a href="../">Biblioteca</a></li><li><a href="../../asesores/">Salones</a></li><li><a href="../../contacto/">Contacto</a></li></ul></nav>
     </div>
     <div class="container footer-legal">
       <p class="footer-copyright">© 2026 Matemáticas a Domicilio</p>

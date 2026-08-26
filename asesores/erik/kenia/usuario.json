@@ -1,0 +1,17 @@
+{
+  "id": "kenia-erik",
+  "slug": "kenia",
+  "tipo": "usuario",
+  "titulo": "Espacio de Kenia",
+  "nombreVisible": "Kenia",
+  "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
+  "estado": "activo",
+  "ruta": "/asesores/erik/kenia/",
+  "maestro": "erik-estrella",
+  "personalizacion": {
+    "simbolo": "K",
+    "acento": "#7a3f82",
+    "fondo": "#f7eef8"
+  },
+  "almacenamientoLocal": false
+}

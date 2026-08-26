@@ -1,0 +1,17 @@
+{
+  "id": "jose",
+  "slug": "jose",
+  "tipo": "usuario",
+  "titulo": "Espacio de José",
+  "nombreVisible": "José",
+  "descripcion": "Espacio personal para organizar pendientes de estudio.",
+  "estado": "activo",
+  "ruta": "/asesores/erik/jose/",
+  "maestro": "erik-estrella",
+  "personalizacion": {
+    "simbolo": "J",
+    "acento": "#1f5fbd",
+    "fondo": "#eef5ff"
+  },
+  "almacenamientoLocal": true
+}

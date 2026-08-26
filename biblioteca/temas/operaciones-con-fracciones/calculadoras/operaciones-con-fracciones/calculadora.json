@@ -1,6 +1,7 @@
 {
   "id": "calculadora-operaciones-con-fracciones",
   "tipo": "calculadora",
+  "simbolo": "½",
   "tema": "operaciones-con-fracciones",
   "titulo": "Calculadora de fracciones",
   "descripcion": "Resuelve una operación con signos y muestra normalización, simplificación, resultado exacto y decimal.",

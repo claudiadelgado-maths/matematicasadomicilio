@@ -2,4 +2,6 @@
 
 La plantilla copiable está en [`../alumno/nueva-sesion/`](../alumno/nueva-sesion/README.md).
 
-La plantilla canónica vive en `/plantillas/alumno/nueva-sesion/` y coincide con la profundidad de una sesión real dentro de `/[asesor]/[alumno]/[sesion]/`.
+La plantilla canónica vive en `/plantillas/alumno/nueva-sesion/` y coincide con la profundidad de una sesión real dentro de `/asesores/[asesor]/[alumno]/[sesion]/`.
+
+La copia debe conservar `index.html` y `estilos.css` en la misma carpeta. Añade JavaScript local solo si la sesión necesita interacción.

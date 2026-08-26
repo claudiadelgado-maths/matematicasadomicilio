@@ -126,7 +126,7 @@ for (const { data, file } of metadata) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(data.slug ?? "")) {
       reportError(`${relative(file)}: el asesor necesita un slug público válido sin espacios ni acentos.`);
     }
-    const expectedRoute = `/${data.slug}/`;
+    const expectedRoute = `/asesores/${data.slug}/`;
     if (data.ruta !== expectedRoute) {
       reportError(`${relative(file)}: la ruta del asesor debe ser ${expectedRoute}.`);
     }

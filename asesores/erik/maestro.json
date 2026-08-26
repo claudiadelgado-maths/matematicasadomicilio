@@ -1,0 +1,50 @@
+{
+  "id": "erik-estrella",
+  "slug": "erik",
+  "tipo": "maestro",
+  "titulo": "Erik",
+  "nombreVisible": "Erik",
+  "rol": "Asesor",
+  "descripcion": "Asesor y administrador de Matemáticas a Domicilio. Coordina sesiones personalizadas y desarrolla materiales adaptados a los objetivos de cada estudiante.",
+  "estado": "activo",
+  "ruta": "/asesores/erik/",
+  "imagen": "/asesores/erik/recursos/admin.jpg",
+  "imagenAlt": "Erik, asesor de Matemáticas a Domicilio",
+  "banner": {
+    "colorInicial": "#11110f",
+    "colorFinal": "#2f5d50"
+  },
+  "ubicacion": {
+    "pais": "México",
+    "region": "Yucatán",
+    "ciudad": "Mérida"
+  },
+  "modalidad": {
+    "tipo": "individual"
+  },
+  "disponibilidad": {
+    "aceptaNuevosAlumnos": true,
+    "etiquetaDisponible": "Aceptando nuevos alumnos",
+    "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+  },
+  "precios": [
+    {
+      "id": "sesion-domicilio-150",
+      "titulo": "Sesión",
+      "duracionMinutos": 150,
+      "importe": 250,
+      "moneda": "MXN",
+      "nota": "Incluye la planificación y los materiales necesarios para la sesión."
+    }
+  ],
+  "sobre": [
+    "Erik coordina las asesorías de Matemáticas a Domicilio y prepara experiencias de aprendizaje individuales para estudiantes de secundaria, preparatoria y universidad.",
+    "Su trabajo parte de las necesidades, conocimientos previos y objetivos de cada alumno para convertirlos en una planificación clara y progresiva."
+  ],
+  "metodologia": [
+    "Identifica junto con el estudiante la necesidad concreta y define un objetivo de trabajo verificable.",
+    "Selecciona explicaciones, ejercicios, materiales y herramientas de acuerdo con el proceso particular del alumno.",
+    "Relaciona las matemáticas con situaciones cotidianas y promueve que el estudiante explique, compruebe y utilice lo aprendido.",
+    "Evalúa el avance a partir del objetivo acordado y adapta las sesiones cuando las necesidades del alumno cambian."
+  ]
+}

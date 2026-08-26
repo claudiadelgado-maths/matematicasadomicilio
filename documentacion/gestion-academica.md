@@ -4,9 +4,9 @@
 
 No existe un JSON central que deba editarse manualmente. La información vive junto a cada módulo:
 
-- `/[asesor]/maestro.json`: identidad, ubicación, modalidad, disponibilidad, precios, presentación y metodología.
-- `/[asesor]/[alumno]/usuario.json`: asesor propietario, identidad operativa y personalización del casillero.
-- `/[asesor]/[alumno]/[sesion]/sesion.json`: alumno propietario, fecha editorial, estado, ruta y contrato de contenido.
+- `/asesores/[asesor]/maestro.json`: identidad, ubicación, modalidad, disponibilidad, precios, presentación y metodología.
+- `/asesores/[asesor]/[alumno]/usuario.json`: asesor propietario, identidad operativa y personalización del casillero.
+- `/asesores/[asesor]/[alumno]/[sesion]/sesion.json`: alumno propietario, fecha editorial, estado, ruta y contrato de contenido.
 
 `npm run catalogo` genera dos derivados versionados:
 
@@ -19,17 +19,17 @@ La interfaz usa **asesor**, **salón** y **casillero**. Los nombres técnicos `m
 
 ## Agregar un asesor
 
-1. Copia `/plantillas/maestro/` a `/[slug-del-asesor]/`.
+1. Copia `/plantillas/maestro/` a `/asesores/[slug-del-asesor]/`.
 2. Sustituye los campos provisionales de `maestro.json`, conservando un ID técnico estable y un `slug` público; configura `modalidad.tipo` y, para grupos, `modalidad.maximoAlumnos`; guarda su imagen en `recursos/` o reutiliza una existente.
 3. Actualiza `data-maestro-id`, título y metadatos de `index.html`.
 4. Usa `estado: "activo"` cuando la información esté completa.
 5. Ejecuta catálogo y validación.
 
-No hay que editar la portada ni `/usuarios/index.html`.
+No hay que editar la portada ni `/asesores/index.html`.
 
 ## Agregar un alumno
 
-1. Copia `/plantillas/alumno/` a `/[asesor]/[id-estable-del-alumno]/`.
+1. Copia `/plantillas/alumno/` a `/asesores/[asesor]/[id-estable-del-alumno]/`.
 2. Completa `usuario.json`, especialmente `id`, `slug`, `ruta`, `maestro`, `estado` y `personalizacion`.
 3. Actualiza el ID y los textos del `index.html`.
 4. Elimina `nueva-sesion/` de la copia si todavía no habrá una sesión real.
@@ -39,13 +39,13 @@ El alumno aparecerá en el salón correcto. Todos los casilleros usan las mismas
 
 ## Agregar o actualizar una sesión
 
-1. Copia `/plantillas/alumno/nueva-sesion/` a `/[asesor]/[alumno]/[slug]/`, o sustituye una sesión existente conservando su ruta.
+1. Copia `/plantillas/alumno/nueva-sesion/` a `/asesores/[asesor]/[alumno]/[slug]/`, o sustituye una sesión existente conservando su ruta.
 2. Completa `sesion.json` con un ID globalmente único, un `slug` para la URL, el ID del alumno, objetivo y componentes reales.
 3. Nosotros asignamos `fecha` en formato `AAAA-MM-DD` al incorporar o actualizar la sesión.
 4. Conserva `borrador` hasta que esté lista y cambia a `publicado` para anunciarla.
 5. Ejecuta catálogo y validación.
 
-No hay que editar `usuario.json`, el índice del alumno ni `/usuarios/index.html`. La fecha más reciente de sus sesiones publicadas determina la posición del alumno dentro del salón.
+No hay que editar `usuario.json`, el índice del alumno ni `/asesores/index.html`. La fecha más reciente de sus sesiones publicadas determina la posición del alumno dentro del salón.
 
 ## Estados y visibilidad
 

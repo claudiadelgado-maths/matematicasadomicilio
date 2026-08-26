@@ -10,7 +10,7 @@ Esta carpeta contiene únicamente la infraestructura común. El contenido intern
 
 ## Cuando regrese la sesión
 
-1. Copia la carpeta a `/[asesor]/[alumno]/[slug]/`.
+1. Copia la carpeta a `/asesores/[asesor]/[alumno]/[slug]/`.
 2. Establece un `id` único y el ID real en `usuario`.
 3. Actualiza título, descripción, objetivo, ruta y los componentes que realmente existan.
 4. Asigna `fecha` en formato `AAAA-MM-DD`. Esta es la fecha administrada de incorporación o actualización y determina la actividad reciente del alumno.

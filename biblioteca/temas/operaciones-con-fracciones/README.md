@@ -23,4 +23,4 @@ Los denominadores nunca pueden ser cero. Los ejercicios indican expresamente cu�
 
 ## Para una IA
 
-Trabaja únicamente dentro de esta carpeta salvo por los índices y el catálogo que la integran con Biblioteca. Lee `tema.json`, conserva la ruta pública y las migas de pan, y no edites otros temas. Comprueba las cuatro operaciones, equivalencia exacta, signos, cero, enteros, división entre cero, SVG, entradas inválidas, teclado, tacto, móvil, escritorio, enlaces y consola. Si añades o retiras componentes, actualiza `tema.json`, `index.html`, el índice de Temas y el catálogo generado.
+Trabaja únicamente dentro de esta carpeta salvo por los datos generados que la integran con Biblioteca. Lee `tema.json`, conserva la ruta pública y las migas de pan, y no edites otros temas. Comprueba las cuatro operaciones, equivalencia exacta, signos, cero, enteros, división entre cero, SVG, entradas inválidas, teclado, tacto, móvil, escritorio, enlaces y consola. Si añades o retiras componentes, actualiza `tema.json`, el índice interno del tema y regenera el catálogo; el índice global de Temas se construye automáticamente.

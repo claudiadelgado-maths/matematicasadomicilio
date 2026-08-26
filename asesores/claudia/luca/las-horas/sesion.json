@@ -1,0 +1,20 @@
+{
+  "id": "las-horas-luca",
+  "slug": "las-horas",
+  "tipo": "sesion",
+  "usuario": "luca-claudia",
+  "titulo": "Las horas",
+  "descripcion": "Un reloj grande para mover la manecilla y resolver pequeños retos con horas exactas.",
+  "objetivo": "Leer y representar horas exactas en un reloj de doce horas, incluyendo sumas y restas muy pequeñas.",
+  "conocimientosPrevios": ["reconocer los números del 1 al 12", "sumar y restar cantidades pequeñas"],
+  "fecha": "2026-08-15",
+  "estado": "publicado",
+  "ruta": "/asesores/claudia/luca/las-horas/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

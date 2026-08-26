@@ -1,0 +1,11 @@
+{
+  "id": "analizador-de-sucesiones-aritmeticas",
+  "tipo": "calculadora",
+  "sesion": "sucesiones-aritmeticas-sesion-1",
+  "usuario": "alejandrina",
+  "titulo": "Analizador de sucesiones",
+  "descripcion": "Analiza una lista, muestra diferencias consecutivas y determina si corresponde a una sucesión aritmética.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/calculadoras/",
+  "interactivo": true
+}

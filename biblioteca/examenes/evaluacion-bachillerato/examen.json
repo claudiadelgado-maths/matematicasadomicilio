@@ -1,6 +1,7 @@
 {
   "id": "evaluacion-bachillerato",
   "tipo": "examen",
+  "simbolo": "5",
   "titulo": "Evaluación bachillerato",
   "descripcion": "Evaluación web de cinco problemas de bachillerato con solución rápida y solución detallada desplegables.",
   "area": "Matemáticas",

@@ -1,6 +1,6 @@
 # Crear una sesión
 
-Ruta: `/[asesor]/[alumno]/[slug-de-la-sesion]/`.
+Ruta: `/asesores/[asesor]/[alumno]/[slug-de-la-sesion]/`.
 
 Incluye `index.html`, `README.md`, `sesion.json` y solo los componentes disponibles. Cada ejercicio, juego o calculadora complejo usa una subcarpeta propia.
 

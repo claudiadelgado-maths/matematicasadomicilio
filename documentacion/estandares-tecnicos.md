@@ -13,8 +13,10 @@
 - Diseño móvil y fluido; preferir `clamp`, grid y flex.
 - Usar variables existentes antes de inventar valores.
 - Selectores locales bajo una clase de módulo.
+- Cada `index.html` debe enlazar un `estilos.css` ubicado en su misma carpeta.
+- `recursos/css/base.css` contiene solo la base realmente común; no recibe reglas particulares de áreas o módulos.
 - Sin `!important` salvo una utilidad documentada.
-- No duplicar el sistema global dentro de módulos.
+- Mantener el diseño específico dentro del módulo, incluso si existe cierta repetición entre carpetas que deben poder copiarse de forma independiente.
 
 ## JavaScript
 
@@ -24,6 +26,7 @@
 - No crear estado global.
 - No incorporar paquetes de producción para una operación sencilla.
 - Conservar navegación por teclado y mensajes accesibles.
+- Guardar el comportamiento particular junto a su página y no crear archivos JavaScript vacíos.
 
 ## SVG
 

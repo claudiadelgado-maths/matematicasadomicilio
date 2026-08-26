@@ -4,7 +4,7 @@
 
 La marca utiliza blanco, negro y grises cálidos; es minimalista, tipográfica y de alto contraste. El color crema se llama `color-surface` y su valor es `#f3f3f0`.
 
-Variables principales en `recursos/css/sistema-visual.css`:
+Variables principales en `recursos/css/base.css`:
 
 | Variable | Valor | Uso |
 |---|---|---|
@@ -37,4 +37,6 @@ Variables principales en `recursos/css/sistema-visual.css`:
 
 ## Estilos locales
 
-Un módulo puede definir `--module-accent` en su `estilos.css`. No debe redefinir encabezado, pie, tipografía global o variables de marca. Si una regla se repite en tres o más módulos, evalúa moverla a `modulos.css`.
+Cada `index.html` tiene un `estilos.css` en su misma carpeta. Allí vive todo lo particular de esa página: composición, tarjetas, perfiles, contenido educativo, acentos y ajustes responsivos.
+
+Un módulo puede definir `--module-accent` y otras variables locales. `base.css` no debe recibir reglas de una página concreta. La repetición entre módulos es aceptable cuando conserva su independencia; una regla solo pasa a la base global si es realmente necesaria en todo el sitio. El encabezado, el pie y las variables de marca se reutilizan desde la base, salvo que una página necesite deliberadamente una variante propia.

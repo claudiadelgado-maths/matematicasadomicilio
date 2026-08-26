@@ -1,0 +1,11 @@
+{
+  "id": "practica-despejes-kenia",
+  "tipo": "ejercicio",
+  "sesion": "despejes-lineales-kenia",
+  "usuario": "kenia-erik",
+  "titulo": "Práctica de despejes",
+  "descripcion": "Series dinámicas de cuatro retos simultáneos para practicar despejes con enteros, signos y respuestas fraccionarias mediante entradas apiladas.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/",
+  "interactivo": true
+}

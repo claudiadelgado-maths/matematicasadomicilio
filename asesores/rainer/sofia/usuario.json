@@ -1,0 +1,13 @@
+{
+  "id": "sofia-rainer",
+  "slug": "sofia",
+  "tipo": "usuario",
+  "titulo": "Espacio de Sofía",
+  "nombreVisible": "Sofía",
+  "descripcion": "Recorrido universitario de Topología: estructuras básicas y conjuntos derivados.",
+  "estado": "activo",
+  "ruta": "/asesores/rainer/sofia/",
+  "maestro": "rainer",
+  "personalizacion": { "simbolo": "S", "acento": "#315c88", "fondo": "#eef3f7" },
+  "almacenamientoLocal": false
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora exacta de despejes | Sesión de Kenia</title>
+  <meta name="description" content="Resuelve Ax más B igual a C con dos calculadoras: una de enteros y otra de fracciones, ambas con procedimiento paso a paso.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="../../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="../../../../../../recursos/css/base.css?v=20260826-base1">
+  <link rel="stylesheet" href="estilos.css?v=20260826-local1">
+  <script src="../../../../../../recursos/js/navegacion.js?v=20260825-espacios1" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous" defer></script>
+  <script type="module" src="script.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu>
+        <ul class="nav-list"><li><a href="../../../../../../">Inicio</a></li><li><a href="../../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../../" aria-current="page">Salones</a></li><li><a href="../../../../../../contacto/">Contacto</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="learning-site module-site linear-theme linear-calculator">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../../">Salones</a></li><li><a href="../../../../">Erik</a></li><li><a href="../../../">Kenia</a></li><li><a href="../../">Despejes lineales</a></li><li aria-current="page">Calculadora</li></ol></nav>
+    </div>
+    <header class="linear-component-hero">
+      <div class="container linear-component-grid">
+        <div><p class="eyebrow">Calculadora paso a paso</p><h1>Dos formas de encontrar <em>x</em></h1><p class="lead">Elige números enteros o construye tus propias fracciones. La calculadora despeja <strong>x</strong>, simplifica el resultado y comprueba la respuesta.</p></div>
+        <div class="linear-component-mark" aria-hidden="true">x</div>
+      </div>
+    </header>
+
+    <nav class="linear-route" aria-label="Secciones de la sesión">
+      <div class="container"><ul><li><a href="../../">Inicio</a></li><li><a href="../../explicacion/">Teoría</a></li><li><a href="../../ejercicios/practica-de-despejes/">Ejercicios</a></li><li><a href="./" aria-current="page">Calculadora</a></li><li><a href="../../juegos/brigada-del-despeje/">Juego</a></li></ul></div>
+    </nav>
+
+    <section class="calculator-area" aria-label="Calculadoras de despeje">
+      <div class="container">
+        <div class="calculator-workbench">
+          <div class="calculator-mode-tabs" role="tablist" aria-label="Tipo de calculadora">
+            <button class="calculator-mode-tab" id="tab-integers" type="button" role="tab" aria-selected="true" aria-controls="panel-integers" data-mode-tab="integers">Calculadora con enteros<span>A, B y C son enteros</span></button>
+            <button class="calculator-mode-tab" id="tab-fractions" type="button" role="tab" aria-selected="false" aria-controls="panel-fractions" data-mode-tab="fractions">Calculadora con fracciones<span>Numerador y denominador</span></button>
+          </div>
+
+          <section class="calculator-panel" id="panel-integers" role="tabpanel" aria-labelledby="tab-integers" data-calculator-panel data-mode="integers">
+            <header class="calculator-panel-header">
+              <div><p class="eyebrow">Modo 1 · Enteros</p><h2>Construye una ecuación con enteros</h2><p>Escribe cualquier número entero en cada casilla. Aquí también puedes obtener una respuesta fraccionaria: la calculadora la mostrará de forma exacta.</p></div>
+              <span class="mode-chip">Ax + B = C</span>
+            </header>
+            <form novalidate>
+              <div class="integer-coefficients">
+                <div class="coefficient-card"><label for="integer-a">A</label><input class="calculator-input" id="integer-a" data-value="a" value="2" inputmode="numeric" autocomplete="off"><small>Coeficiente que multiplica a x</small></div>
+                <div class="coefficient-card"><label for="integer-b">B</label><input class="calculator-input" id="integer-b" data-value="b" value="3" inputmode="numeric" autocomplete="off"><small>Término que suma o resta</small></div>
+                <div class="coefficient-card"><label for="integer-c">C</label><input class="calculator-input" id="integer-c" data-value="c" value="9" inputmode="numeric" autocomplete="off"><small>Resultado de la igualdad</small></div>
+              </div>
+              <div class="equation-preview" data-preview aria-live="polite"></div>
+              <div class="calculator-actions">
+                <button class="calculate-button" type="submit">Resolver con enteros</button>
+                <button class="example-button" type="button" data-example="2|3|9">Ejemplo sencillo</button>
+                <button class="example-button" type="button" data-example="3|1|5">Resultado fraccionario</button>
+                <button class="example-button" type="button" data-example="-2|5|1">Con negativos</button>
+                <button class="example-button" type="button" data-example="0|2|2">Infinitas soluciones</button>
+                <button class="example-button" type="button" data-example="0|2|3">Sin solución</button>
+              </div>
+            </form>
+            <p class="calculator-feedback" data-feedback aria-live="polite"></p>
+            <section class="calculator-output" data-output aria-live="polite" hidden>
+              <header class="calculator-output-header"><span>Resultado</span><h3 data-output-title></h3></header>
+              <div class="calculator-result-math" data-result-math></div>
+              <div class="special-message" data-special-message hidden></div>
+              <div class="procedure-list" data-procedure></div>
+            </section>
+          </section>
+
+          <section class="calculator-panel" id="panel-fractions" role="tabpanel" aria-labelledby="tab-fractions" data-calculator-panel data-mode="fractions" hidden>
+            <header class="calculator-panel-header">
+              <div><p class="eyebrow">Modo 2 · Fracciones</p><h2>Construye una ecuación con fracciones</h2><p>Forma A, B y C con una casilla para el numerador y otra para el denominador. Puedes usar signos negativos y la respuesta siempre se simplifica.</p></div>
+              <span class="mode-chip">Ax + B = C</span>
+            </header>
+            <form novalidate>
+              <div class="fraction-coefficients">
+                <div class="coefficient-card" data-coefficient="a">
+                  <span class="coefficient-label">A</span>
+                  <div class="coefficient-fraction">
+                    <label for="fraction-a-n">Numerador<input class="calculator-input" id="fraction-a-n" data-numerator value="3" inputmode="numeric" autocomplete="off"></label>
+                    <span class="coefficient-fraction-bar" aria-hidden="true"></span>
+                    <label for="fraction-a-d">Denominador<input class="calculator-input" id="fraction-a-d" data-denominator value="4" inputmode="numeric" autocomplete="off"></label>
+                  </div>
+                  <small>Coeficiente que multiplica a x</small>
+                </div>
+                <div class="coefficient-card" data-coefficient="b">
+                  <span class="coefficient-label">B</span>
+                  <div class="coefficient-fraction">
+                    <label for="fraction-b-n">Numerador<input class="calculator-input" id="fraction-b-n" data-numerator value="2" inputmode="numeric" autocomplete="off"></label>
+                    <span class="coefficient-fraction-bar" aria-hidden="true"></span>
+                    <label for="fraction-b-d">Denominador<input class="calculator-input" id="fraction-b-d" data-denominator value="1" inputmode="numeric" autocomplete="off"></label>
+                  </div>
+                  <small>Término que suma o resta</small>
+                </div>
+                <div class="coefficient-card" data-coefficient="c">
+                  <span class="coefficient-label">C</span>
+                  <div class="coefficient-fraction">
+                    <label for="fraction-c-n">Numerador<input class="calculator-input" id="fraction-c-n" data-numerator value="5" inputmode="numeric" autocomplete="off"></label>
+                    <span class="coefficient-fraction-bar" aria-hidden="true"></span>
+                    <label for="fraction-c-d">Denominador<input class="calculator-input" id="fraction-c-d" data-denominator value="2" inputmode="numeric" autocomplete="off"></label>
+                  </div>
+                  <small>Resultado de la igualdad</small>
+                </div>
+              </div>
+              <div class="equation-preview" data-preview aria-live="polite"></div>
+              <div class="calculator-actions">
+                <button class="calculate-button" type="submit">Resolver con fracciones</button>
+                <button class="example-button" type="button" data-example="3|4|2|1|5|2">Ejemplo sencillo</button>
+                <button class="example-button" type="button" data-example="-4|-6|1|3|1|1">Signos negativos</button>
+                <button class="example-button" type="button" data-example="0|1|2|3|2|3">Infinitas soluciones</button>
+                <button class="example-button" type="button" data-example="0|1|2|3|1|1">Sin solución</button>
+              </div>
+            </form>
+            <p class="calculator-feedback" data-feedback aria-live="polite"></p>
+            <section class="calculator-output" data-output aria-live="polite" hidden>
+              <header class="calculator-output-header"><span>Resultado</span><h3 data-output-title></h3></header>
+              <div class="calculator-result-math" data-result-math></div>
+              <div class="special-message" data-special-message hidden></div>
+              <div class="procedure-list" data-procedure></div>
+            </section>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../../">Inicio</a></li><li><a href="../../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../../">Salones</a></li><li><a href="../../../../../../contacto/">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p class="footer-copyright">© 2026 Matemáticas a Domicilio</p><p class="footer-legal-links"><a href="../../../../../../legal/aviso-de-privacidad/">Aviso de Privacidad</a><span aria-hidden="true">·</span><a href="../../../../../../legal/terminos-y-condiciones/">Términos y Condiciones</a></p><p class="footer-location">Mérida, Yucatán, México</p></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 999 129 3497"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.84 9.84 0 0 0-8.42 14.92L2.05 22l5.2-1.53A9.94 9.94 0 1 0 12.04 2Zm0 17.99a8 8 0 0 1-4.09-1.12l-.29-.17-3.09.91.92-3-.19-.31A8 8 0 1 1 12.04 20Zm4.39-5.99c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19a7.24 7.24 0 0 1-1.34-1.67c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46a.88.88 0 0 0-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg></a>
+</body>
+</html>

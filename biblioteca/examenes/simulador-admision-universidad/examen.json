@@ -1,6 +1,7 @@
 {
   "id": "simulador-admision-universidad",
   "tipo": "examen",
+  "simbolo": "?",
   "titulo": "Simulador de admisión universitaria",
   "descripcion": "Examen diagnóstico de práctica en formato PDF.",
   "area": "Matemáticas",

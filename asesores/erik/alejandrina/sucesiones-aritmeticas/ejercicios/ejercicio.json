@@ -1,0 +1,11 @@
+{
+  "id": "practica-de-sucesiones-aritmeticas",
+  "tipo": "ejercicio",
+  "sesion": "sucesiones-aritmeticas-sesion-1",
+  "usuario": "alejandrina",
+  "titulo": "Práctica de sucesiones",
+  "descripcion": "Práctica generativa para identificar a₁, d, términos, posiciones y fórmula general con pistas específicas.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/ejercicios/",
+  "interactivo": true
+}

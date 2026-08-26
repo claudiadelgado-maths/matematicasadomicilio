@@ -1,104 +1,1675 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 97,
+  "total": 103,
   "tipos": {
-    "examen": [
+    "maestro": [
       {
-        "id": "evaluacion-bachillerato",
-        "tipo": "examen",
-        "titulo": "Evaluación bachillerato",
-        "descripcion": "Evaluación web de cinco problemas de bachillerato con solución rápida y solución detallada desplegables.",
-        "area": "Matemáticas",
-        "nivel": [
-          "bachillerato"
+        "id": "claudia",
+        "slug": "claudia",
+        "tipo": "maestro",
+        "titulo": "Claudia",
+        "nombreVisible": "Claudia",
+        "rol": "Asesora",
+        "descripcion": "Asesora multidisciplinar para alumnos curiosos que quieren explorar, crear y aprender más allá de los contenidos habituales de la escuela.",
+        "estado": "activo",
+        "ruta": "/asesores/claudia/",
+        "imagen": "/asesores/claudia/recursos/claudia.jpg",
+        "imagenAlt": "Claudia, asesora de Matemáticas a Domicilio",
+        "banner": {
+          "colorInicial": "#6f3dc4",
+          "colorFinal": "#ef6f91"
+        },
+        "ubicacion": {
+          "pais": "España",
+          "region": "Andalucía",
+          "ciudad": "Málaga"
+        },
+        "modalidad": {
+          "tipo": "individual"
+        },
+        "disponibilidad": {
+          "aceptaNuevosAlumnos": true,
+          "etiquetaDisponible": "Aceptando nuevos alumnos",
+          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+        },
+        "precios": [
+          {
+            "id": "sesion-online-60",
+            "titulo": "Sesión",
+            "duracionMinutos": 60,
+            "importe": 120,
+            "moneda": "EUR",
+            "nota": "Incluye orientación individual y materiales preparados para la sesión."
+          }
         ],
-        "formato": "web",
-        "duracionMinutos": null,
-        "estado": "publicado",
-        "ruta": "/biblioteca/examenes/evaluacion-bachillerato/",
-        "interactivo": false,
-        "archivoMetadatos": "biblioteca/examenes/evaluacion-bachillerato/examen.json"
+        "sobre": [
+          "Claudia reúne experiencia en matemáticas, programación, marketing, publicidad, educación, moda, turismo y administración para conectar ideas de distintas áreas.",
+          "Acompaña especialmente a alumnos de alto rendimiento que desean ampliar sus conocimientos, desarrollar nuevas habilidades y convertir su curiosidad en proyectos propios."
+        ],
+        "metodologia": [
+          "Parte de una pregunta interesante y ayuda al alumno a descubrir qué necesita aprender para responderla.",
+          "Propone retos, recursos y pistas que favorecen la autonomía sin dejar al estudiante solo durante el proceso.",
+          "Relaciona diferentes disciplinas para que cada aprendizaje tenga un propósito visible y pueda utilizarse en situaciones nuevas.",
+          "Celebra la curiosidad, la experimentación y la capacidad de explicar con palabras propias lo que se ha descubierto."
+        ],
+        "archivoMetadatos": "asesores/claudia/maestro.json"
       },
       {
-        "id": "simulador-admision-universidad",
-        "tipo": "examen",
-        "titulo": "Simulador de admisión universitaria",
-        "descripcion": "Examen diagnóstico de práctica en formato PDF.",
-        "area": "Matemáticas",
-        "nivel": [
-          "preparatoria",
-          "aspirantes a universidad"
+        "id": "cortes",
+        "slug": "cortes",
+        "tipo": "maestro",
+        "titulo": "Cortés",
+        "nombreVisible": "Cortés",
+        "rol": "Asesor",
+        "descripcion": "Dibujante y diseñador gráfico que acompaña materias de diseño y dibujo mediante explicaciones visuales, práctica compartida y referencias de la cultura pop.",
+        "estado": "activo",
+        "ruta": "/asesores/cortes/",
+        "imagen": "/asesores/cortes/recursos/cortes.jpg",
+        "imagenAlt": "Personaje colorido con gafas pixeladas, imagen del salón de Cortés",
+        "imagenAjuste": "cover",
+        "banner": {
+          "colorInicial": "#17152c",
+          "colorFinal": "#8b1e69"
+        },
+        "ubicacion": {
+          "pais": "México",
+          "region": "Quintana Roo",
+          "ciudad": "Cancún"
+        },
+        "modalidad": {
+          "tipo": "individual"
+        },
+        "disponibilidad": {
+          "aceptaNuevosAlumnos": true,
+          "etiquetaDisponible": "Acepta nuevos alumnos",
+          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+        },
+        "precios": [
+          {
+            "id": "sesion-individual-45",
+            "titulo": "Sesión",
+            "duracionMinutos": 45,
+            "importe": 350,
+            "moneda": "MXN",
+            "nota": "Sesión individual de diseño o dibujo con explicación visual y práctica guiada."
+          }
         ],
-        "formato": "pdf",
-        "duracionMinutos": 60,
-        "estado": "publicado",
-        "ruta": "/biblioteca/examenes/simulador-admision-universidad/",
-        "archivo": "recursos/simulador.pdf",
-        "archivoMetadatos": "biblioteca/examenes/simulador-admision-universidad/examen.json"
+        "sobre": [
+          "Cortés es un dibujante y diseñador gráfico que disfruta la cultura pop y procura que sus sesiones sean creativas, cercanas y agradables.",
+          "Se enfoca en materias relacionadas con diseño y dibujo, desde fundamentos del color hasta herramientas geométricas útiles para construir imágenes."
+        ],
+        "metodologia": [
+          "Dibuja junto con el alumno para que cada concepto aparezca dentro de una decisión visual concreta.",
+          "Explica mientras construye: muestra el trazo, la selección de color o la relación geométrica y verbaliza por qué funciona.",
+          "Utiliza referencias de diseño y cultura pop para reconocer los conceptos en imágenes familiares.",
+          "Alterna observación y práctica para que el alumno pruebe inmediatamente cada idea y reciba retroalimentación."
+        ],
+        "archivoMetadatos": "asesores/cortes/maestro.json"
+      },
+      {
+        "id": "elizabeth",
+        "slug": "elizabeth",
+        "tipo": "maestro",
+        "titulo": "Elizabeth",
+        "nombreVisible": "Elizabeth",
+        "rol": "Asesora",
+        "descripcion": "Asesora de matemáticas universitarias especializada en Álgebra Lineal y Cálculo I, II y III, con una enseñanza ordenada, paciente y rigurosa.",
+        "estado": "activo",
+        "ruta": "/asesores/elizabeth/",
+        "imagen": "/asesores/elizabeth/recursos/elizabeth.jpg",
+        "imagenAlt": "Ilustración de mujer rubia con detalles verdes, imagen del salón de Elizabeth",
+        "imagenAjuste": "cover",
+        "banner": {
+          "colorInicial": "#17241e",
+          "colorFinal": "#62754f"
+        },
+        "ubicacion": {
+          "pais": "México",
+          "region": "Nuevo León",
+          "ciudad": "San Pedro"
+        },
+        "modalidad": {
+          "tipo": "individual"
+        },
+        "disponibilidad": {
+          "aceptaNuevosAlumnos": true,
+          "etiquetaDisponible": "Aceptando nuevos alumnos",
+          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+        },
+        "precios": [
+          {
+            "id": "sesion-individual-90",
+            "titulo": "Sesión",
+            "duracionMinutos": 90,
+            "importe": 650,
+            "moneda": "MXN",
+            "nota": "Sesión individual universitaria con teoría, ejemplos guiados y ejercicios adaptados al progreso del estudiante."
+          }
+        ],
+        "sobre": [
+          "Elizabeth trabaja con estudiantes que buscan comprender las matemáticas con mayor profundidad, reforzar una materia, recuperar bases o prepararse para evaluaciones universitarias.",
+          "Cuenta con experiencia acompañando a estudiantes de ingeniería, ciencias y otras carreras con formación matemática, adaptando el ritmo y los ejercicios a cada dificultad."
+        ],
+        "metodologia": [
+          "Identifica primero qué conceptos domina el alumno y dónde se originan sus dificultades.",
+          "Explica cada tema desde su significado antes de introducir procedimientos y fórmulas.",
+          "Combina ejemplos guiados con ejercicios que el estudiante debe resolver de manera independiente.",
+          "Utiliza gráficas, interpretaciones geométricas y distintas representaciones cuando ayudan a comprender conceptos abstractos.",
+          "Corrige errores mediante preguntas y pistas antes de mostrar directamente la solución.",
+          "Mantiene un seguimiento de los errores recurrentes para retomarlos en sesiones posteriores.",
+          "Adapta los ejercicios y recursos de cada sesión al progreso individual del estudiante."
+        ],
+        "archivoMetadatos": "asesores/elizabeth/maestro.json"
+      },
+      {
+        "id": "erick-chan",
+        "slug": "erick-chan",
+        "tipo": "maestro",
+        "titulo": "Erick Chan",
+        "nombreVisible": "Erick Chan",
+        "rol": "Asesor",
+        "descripcion": "Asesor con experiencia en ventas que utiliza la estadística para comparar productos, interpretar información comercial y tomar decisiones útiles en contextos reales.",
+        "estado": "activo",
+        "ruta": "/asesores/erick-chan/",
+        "imagen": "/asesores/erick-chan/recursos/erick-chan.jpg",
+        "imagenAlt": "Ilustración en blanco y negro del salón de Erick Chan",
+        "imagenAjuste": "contain",
+        "banner": {
+          "colorInicial": "#171b1c",
+          "colorFinal": "#276b70"
+        },
+        "ubicacion": {
+          "pais": "México",
+          "region": "Yucatán",
+          "ciudad": "Mérida"
+        },
+        "modalidad": {
+          "tipo": "individual"
+        },
+        "disponibilidad": {
+          "aceptaNuevosAlumnos": true,
+          "etiquetaDisponible": "Acepta nuevos alumnos",
+          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+        },
+        "precios": [
+          {
+            "id": "sesion-individual-60",
+            "titulo": "Sesión",
+            "duracionMinutos": 60,
+            "importe": 200,
+            "moneda": "MXN",
+            "nota": "Sesión individual con ejemplos de estadística aplicados a ventas, tecnología y situaciones de trabajo."
+          }
+        ],
+        "sobre": [
+          "Erick Chan tiene experiencia en ventas y utiliza la estadística en su trabajo para comparar teléfonos, accesorios y otros productos.",
+          "Su enfoque busca que cada concepto matemático tenga una utilidad reconocible en la vida diaria o en una situación laboral."
+        ],
+        "metodologia": [
+          "Parte de una pregunta concreta de ventas, tecnología o trabajo para mostrar dónde aparece la matemática.",
+          "Organiza los datos antes de calcular para que el alumno distinga categorías, cantidades y unidades.",
+          "Desarrolla tres ejemplos por sesión y explica qué información aporta cada resultado.",
+          "Cierra cada caso relacionando la interpretación matemática con una decisión útil del contexto real."
+        ],
+        "archivoMetadatos": "asesores/erick-chan/maestro.json"
+      },
+      {
+        "id": "erik-estrella",
+        "slug": "erik",
+        "tipo": "maestro",
+        "titulo": "Erik",
+        "nombreVisible": "Erik",
+        "rol": "Asesor",
+        "descripcion": "Asesor y administrador de Matemáticas a Domicilio. Coordina sesiones personalizadas y desarrolla materiales adaptados a los objetivos de cada estudiante.",
+        "estado": "activo",
+        "ruta": "/asesores/erik/",
+        "imagen": "/asesores/erik/recursos/admin.jpg",
+        "imagenAlt": "Erik, asesor de Matemáticas a Domicilio",
+        "banner": {
+          "colorInicial": "#11110f",
+          "colorFinal": "#2f5d50"
+        },
+        "ubicacion": {
+          "pais": "México",
+          "region": "Yucatán",
+          "ciudad": "Mérida"
+        },
+        "modalidad": {
+          "tipo": "individual"
+        },
+        "disponibilidad": {
+          "aceptaNuevosAlumnos": true,
+          "etiquetaDisponible": "Aceptando nuevos alumnos",
+          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+        },
+        "precios": [
+          {
+            "id": "sesion-domicilio-150",
+            "titulo": "Sesión",
+            "duracionMinutos": 150,
+            "importe": 250,
+            "moneda": "MXN",
+            "nota": "Incluye la planificación y los materiales necesarios para la sesión."
+          }
+        ],
+        "sobre": [
+          "Erik coordina las asesorías de Matemáticas a Domicilio y prepara experiencias de aprendizaje individuales para estudiantes de secundaria, preparatoria y universidad.",
+          "Su trabajo parte de las necesidades, conocimientos previos y objetivos de cada alumno para convertirlos en una planificación clara y progresiva."
+        ],
+        "metodologia": [
+          "Identifica junto con el estudiante la necesidad concreta y define un objetivo de trabajo verificable.",
+          "Selecciona explicaciones, ejercicios, materiales y herramientas de acuerdo con el proceso particular del alumno.",
+          "Relaciona las matemáticas con situaciones cotidianas y promueve que el estudiante explique, compruebe y utilice lo aprendido.",
+          "Evalúa el avance a partir del objetivo acordado y adapta las sesiones cuando las necesidades del alumno cambian."
+        ],
+        "archivoMetadatos": "asesores/erik/maestro.json"
+      },
+      {
+        "id": "karen-mariana",
+        "slug": "karen",
+        "tipo": "maestro",
+        "titulo": "Karen Mariana",
+        "nombreVisible": "Karen Mariana",
+        "rol": "Asesora",
+        "descripcion": "Asesora de secundaria que acompaña la regularización mediante teoría clara, fórmulas, procedimientos y ejercicios vinculados con los contenidos actuales de la escuela.",
+        "estado": "activo",
+        "ruta": "/asesores/karen/",
+        "imagen": "/asesores/karen/recursos/karen-mariana.png",
+        "imagenAlt": "Gata tricolor dormida, imagen del salón de Karen Mariana",
+        "imagenAjuste": "cover",
+        "banner": {
+          "colorInicial": "#184f49",
+          "colorFinal": "#d39a45"
+        },
+        "ubicacion": {
+          "pais": "México",
+          "region": "Estado de México",
+          "ciudad": "Toluca"
+        },
+        "modalidad": {
+          "tipo": "grupal",
+          "maximoAlumnos": 6
+        },
+        "disponibilidad": {
+          "aceptaNuevosAlumnos": true,
+          "etiquetaDisponible": "Acepta nuevos alumnos",
+          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+        },
+        "precios": [
+          {
+            "id": "sesion-grupal-60",
+            "titulo": "Sesión",
+            "duracionMinutos": 60,
+            "importe": 360,
+            "moneda": "MXN",
+            "nota": "Sesión grupal para un máximo de seis alumnos, con teoría y ejercicios preparados según los contenidos escolares actuales."
+          }
+        ],
+        "sobre": [
+          "Karen Mariana trabaja con estudiantes de secundaria que necesitan regularización y acostumbra acompañarlos en grupos pequeños, principalmente de cuatro a seis alumnos.",
+          "Mantiene comunicación con las familias para conocer los temas y tareas que el estudiante está trabajando actualmente en la escuela."
+        ],
+        "metodologia": [
+          "Revisa los contenidos y tareas actuales para identificar las dificultades concretas del estudiante.",
+          "Explica la teoría y las fórmulas con procedimientos ordenados, ejemplos manejables y apoyos visuales.",
+          "Propone ejercicios progresivos para practicar cada paso antes de integrar el procedimiento completo.",
+          "Destaca la información importante con una jerarquía visual clara y verifica qué necesita reforzarse en la siguiente sesión."
+        ],
+        "archivoMetadatos": "asesores/karen/maestro.json"
+      },
+      {
+        "id": "rainer",
+        "slug": "rainer",
+        "tipo": "maestro",
+        "titulo": "Rainer",
+        "nombreVisible": "Rainer",
+        "rol": "Asesor",
+        "descripcion": "Matemático teórico con interés especial por el rigor, la escritura formal y la construcción ordenada de argumentos matemáticos.",
+        "estado": "activo",
+        "ruta": "/asesores/rainer/",
+        "imagen": "/asesores/rainer/recursos/rainer.jpg",
+        "imagenAlt": "Rainer, asesor de Matemáticas a Domicilio",
+        "banner": {
+          "colorInicial": "#172033",
+          "colorFinal": "#38506f"
+        },
+        "ubicacion": {
+          "pais": "México",
+          "region": "Quintana Roo",
+          "ciudad": "Cozumel"
+        },
+        "modalidad": {
+          "tipo": "grupal",
+          "maximoAlumnos": 2
+        },
+        "disponibilidad": {
+          "aceptaNuevosAlumnos": true,
+          "etiquetaDisponible": "Solo para alumnos universitarios",
+          "etiquetaNoDisponible": "Sin disponibilidad"
+        },
+        "precios": [
+          {
+            "id": "sesion-universitaria-80",
+            "titulo": "Sesión",
+            "duracionMinutos": 80,
+            "importe": 750,
+            "moneda": "MXN",
+            "nota": "Sesión individual con desarrollo teórico, ejemplos y problemas."
+          }
+        ],
+        "sobre": [
+          "Rainer acompaña a estudiantes universitarios que desean comprender las definiciones con precisión y construir argumentos matemáticos sólidos.",
+          "Su capacidad de liderazgo le permite organizar el trabajo en etapas claras sin perder de vista las preguntas conceptuales de cada tema."
+        ],
+        "metodologia": [
+          "Presenta la teoría y fija con cuidado las definiciones y la notación que se utilizarán.",
+          "Desarrolla ejemplos que muestran tanto el alcance como los límites de cada concepto.",
+          "Propone problemas graduados para convertir las definiciones en herramientas de razonamiento.",
+          "Cierra con demostraciones en las que cada afirmación debe estar justificada con claridad."
+        ],
+        "archivoMetadatos": "asesores/rainer/maestro.json"
       }
     ],
-    "tema": [
+    "usuario": [
       {
-        "id": "ley-de-los-signos",
-        "tipo": "tema",
-        "titulo": "Ley de los signos",
-        "descripcion": "Significado de los signos y reglas para multiplicar y dividir números positivos, negativos y cero.",
-        "categoria": "Aritmética",
-        "nivel": [
-          "secundaria"
-        ],
-        "etiquetas": [
-          "signos",
-          "números negativos",
-          "cero",
-          "multiplicación",
-          "división"
-        ],
-        "estado": "publicado",
-        "ruta": "/biblioteca/temas/ley-de-los-signos/",
-        "componentes": {
-          "explicacion": true,
-          "demostraciones": false,
-          "ejercicios": true,
-          "juegos": true,
-          "calculadoras": true
+        "id": "luca-claudia",
+        "slug": "luca",
+        "tipo": "usuario",
+        "titulo": "El casillero de Luca",
+        "nombreVisible": "Luca",
+        "descripcion": "Tres aventuras cortas para comprar, medir y jugar con las horas.",
+        "estado": "activo",
+        "ruta": "/asesores/claudia/luca/",
+        "maestro": "claudia",
+        "personalizacion": {
+          "simbolo": "🚀",
+          "acento": "#6f3dc4",
+          "fondo": "#f4efff"
         },
-        "archivoMetadatos": "biblioteca/temas/ley-de-los-signos/tema.json"
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/claudia/luca/usuario.json"
       },
       {
-        "id": "operaciones-con-fracciones",
-        "tipo": "tema",
-        "titulo": "Operaciones con fracciones",
-        "descripcion": "Definiciones, teoría, práctica, calculadora y juegos visuales para comprender y operar fracciones.",
-        "categoria": "Aritmética",
-        "nivel": [
-          "secundaria"
+        "id": "pamela-cortes",
+        "slug": "pamela",
+        "tipo": "usuario",
+        "titulo": "El casillero de Pamela",
+        "nombreVisible": "Pamela",
+        "descripcion": "Sesiones de secundaria con geometría visual y práctica interactiva.",
+        "estado": "activo",
+        "ruta": "/asesores/cortes/pamela/",
+        "maestro": "cortes",
+        "personalizacion": {
+          "simbolo": "P",
+          "acento": "#087f8c",
+          "fondo": "#e5f5f5"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/cortes/pamela/usuario.json"
+      },
+      {
+        "id": "pedro-cortes",
+        "slug": "pedro",
+        "tipo": "usuario",
+        "titulo": "El casillero de Pedro",
+        "nombreVisible": "Pedro",
+        "descripcion": "Sesiones universitarias de teoría y aplicación del color.",
+        "estado": "activo",
+        "ruta": "/asesores/cortes/pedro/",
+        "maestro": "cortes",
+        "personalizacion": {
+          "simbolo": "P",
+          "acento": "#b21f78",
+          "fondo": "#faeaf3"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/cortes/pedro/usuario.json"
+      },
+      {
+        "id": "gloria-elizabeth",
+        "slug": "gloria",
+        "tipo": "usuario",
+        "titulo": "El casillero de Gloria",
+        "nombreVisible": "Gloria",
+        "descripcion": "Sesiones universitarias sobre derivación, integración y el teorema fundamental del cálculo.",
+        "estado": "activo",
+        "ruta": "/asesores/elizabeth/gloria/",
+        "maestro": "elizabeth",
+        "personalizacion": {
+          "simbolo": "G",
+          "acento": "#7a5f37",
+          "fondo": "#f5efe4"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/elizabeth/gloria/usuario.json"
+      },
+      {
+        "id": "jimena-elizabeth",
+        "slug": "jimena",
+        "tipo": "usuario",
+        "titulo": "El casillero de Jimena",
+        "nombreVisible": "Jimena",
+        "descripcion": "Sesiones universitarias de cálculo paramétrico e integrales de curva.",
+        "estado": "activo",
+        "ruta": "/asesores/elizabeth/jimena/",
+        "maestro": "elizabeth",
+        "personalizacion": {
+          "simbolo": "J",
+          "acento": "#6b5878",
+          "fondo": "#f0ebf3"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/elizabeth/jimena/usuario.json"
+      },
+      {
+        "id": "kevin-elizabeth",
+        "slug": "kevin",
+        "tipo": "usuario",
+        "titulo": "El casillero de Kevin",
+        "nombreVisible": "Kevin",
+        "descripcion": "Sesiones universitarias sobre conjuntos, límites y derivada como límite.",
+        "estado": "activo",
+        "ruta": "/asesores/elizabeth/kevin/",
+        "maestro": "elizabeth",
+        "personalizacion": {
+          "simbolo": "K",
+          "acento": "#4b6670",
+          "fondo": "#e8f0f2"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/elizabeth/kevin/usuario.json"
+      },
+      {
+        "id": "renata-elizabeth",
+        "slug": "renata",
+        "tipo": "usuario",
+        "titulo": "El casillero de Renata",
+        "nombreVisible": "Renata",
+        "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
+        "estado": "activo",
+        "ruta": "/asesores/elizabeth/renata/",
+        "maestro": "elizabeth",
+        "personalizacion": {
+          "simbolo": "R",
+          "acento": "#526a42",
+          "fondo": "#edf2e7"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/elizabeth/renata/usuario.json"
+      },
+      {
+        "id": "alex-erick-chan",
+        "slug": "alex",
+        "tipo": "usuario",
+        "titulo": "El casillero de Alex",
+        "nombreVisible": "Alex",
+        "descripcion": "Sesiones de estadística aplicada a ventas y tecnología.",
+        "estado": "activo",
+        "ruta": "/asesores/erick-chan/alex/",
+        "maestro": "erick-chan",
+        "personalizacion": {
+          "simbolo": "A",
+          "acento": "#276b70",
+          "fondo": "#e7f1f1"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/erick-chan/alex/usuario.json"
+      },
+      {
+        "id": "alejandrina",
+        "slug": "alejandrina",
+        "tipo": "usuario",
+        "titulo": "Espacio de Alejandrina",
+        "nombreVisible": "Alejandrina",
+        "descripcion": "Espacio de sesiones y recursos personalizados.",
+        "estado": "activo",
+        "ruta": "/asesores/erik/alejandrina/",
+        "maestro": "erik-estrella",
+        "personalizacion": {
+          "simbolo": "A",
+          "acento": "#15784e",
+          "fondo": "#edf8f2"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/erik/alejandrina/usuario.json"
+      },
+      {
+        "id": "andres",
+        "slug": "andres",
+        "tipo": "usuario",
+        "titulo": "Espacio de Andrés",
+        "nombreVisible": "Andrés",
+        "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+        "estado": "activo",
+        "ruta": "/asesores/erik/andres/",
+        "maestro": "erik-estrella",
+        "personalizacion": {
+          "simbolo": "A",
+          "acento": "#b84d18",
+          "fondo": "#fff3ec"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/erik/andres/usuario.json"
+      },
+      {
+        "id": "jose",
+        "slug": "jose",
+        "tipo": "usuario",
+        "titulo": "Espacio de José",
+        "nombreVisible": "José",
+        "descripcion": "Espacio personal para organizar pendientes de estudio.",
+        "estado": "activo",
+        "ruta": "/asesores/erik/jose/",
+        "maestro": "erik-estrella",
+        "personalizacion": {
+          "simbolo": "J",
+          "acento": "#1f5fbd",
+          "fondo": "#eef5ff"
+        },
+        "almacenamientoLocal": true,
+        "archivoMetadatos": "asesores/erik/jose/usuario.json"
+      },
+      {
+        "id": "kenia-erik",
+        "slug": "kenia",
+        "tipo": "usuario",
+        "titulo": "Espacio de Kenia",
+        "nombreVisible": "Kenia",
+        "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
+        "estado": "activo",
+        "ruta": "/asesores/erik/kenia/",
+        "maestro": "erik-estrella",
+        "personalizacion": {
+          "simbolo": "K",
+          "acento": "#7a3f82",
+          "fondo": "#f7eef8"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/erik/kenia/usuario.json"
+      },
+      {
+        "id": "esteba-karen",
+        "slug": "esteba",
+        "tipo": "usuario",
+        "titulo": "El casillero de Esteba",
+        "nombreVisible": "Esteba",
+        "descripcion": "Sesiones de secundaria para comprender exponentes desconocidos y logaritmos.",
+        "estado": "activo",
+        "ruta": "/asesores/karen/esteba/",
+        "maestro": "karen-mariana",
+        "personalizacion": {
+          "simbolo": "E",
+          "acento": "#84509a",
+          "fondo": "#f5ecf8"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/karen/esteba/usuario.json"
+      },
+      {
+        "id": "jonny-karen",
+        "slug": "jonny",
+        "tipo": "usuario",
+        "titulo": "El casillero de Jonny",
+        "nombreVisible": "Jonny",
+        "descripcion": "Sesiones de secundaria sobre ecuaciones cuadráticas y cuadriláteros.",
+        "estado": "activo",
+        "ruta": "/asesores/karen/jonny/",
+        "maestro": "karen-mariana",
+        "personalizacion": {
+          "simbolo": "J",
+          "acento": "#a44548",
+          "fondo": "#fcebec"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/karen/jonny/usuario.json"
+      },
+      {
+        "id": "milndred-karen",
+        "slug": "milndred",
+        "tipo": "usuario",
+        "titulo": "El casillero de Milndred",
+        "nombreVisible": "Milndred",
+        "descripcion": "Sesiones de secundaria sobre exponentes y geometría del círculo.",
+        "estado": "activo",
+        "ruta": "/asesores/karen/milndred/",
+        "maestro": "karen-mariana",
+        "personalizacion": {
+          "simbolo": "M",
+          "acento": "#1f6f65",
+          "fondo": "#e8f5f1"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/karen/milndred/usuario.json"
+      },
+      {
+        "id": "raul-karen",
+        "slug": "raul",
+        "tipo": "usuario",
+        "titulo": "El casillero de Raul",
+        "nombreVisible": "Raul",
+        "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
+        "estado": "activo",
+        "ruta": "/asesores/karen/raul/",
+        "maestro": "karen-mariana",
+        "personalizacion": {
+          "simbolo": "R",
+          "acento": "#a45c18",
+          "fondo": "#fff2da"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/karen/raul/usuario.json"
+      },
+      {
+        "id": "mateo-rainer",
+        "slug": "mateo",
+        "tipo": "usuario",
+        "titulo": "Espacio de Mateo",
+        "nombreVisible": "Mateo",
+        "descripcion": "Recorrido universitario de Topología centrado en continuidad y aplicaciones entre espacios.",
+        "estado": "activo",
+        "ruta": "/asesores/rainer/mateo/",
+        "maestro": "rainer",
+        "personalizacion": {
+          "simbolo": "M",
+          "acento": "#465b3f",
+          "fondo": "#f0f4ed"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/rainer/mateo/usuario.json"
+      },
+      {
+        "id": "sofia-rainer",
+        "slug": "sofia",
+        "tipo": "usuario",
+        "titulo": "Espacio de Sofía",
+        "nombreVisible": "Sofía",
+        "descripcion": "Recorrido universitario de Topología: estructuras básicas y conjuntos derivados.",
+        "estado": "activo",
+        "ruta": "/asesores/rainer/sofia/",
+        "maestro": "rainer",
+        "personalizacion": {
+          "simbolo": "S",
+          "acento": "#315c88",
+          "fondo": "#eef3f7"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/rainer/sofia/usuario.json"
+      }
+    ],
+    "sesion": [
+      {
+        "id": "consigue-el-cambio-luca",
+        "slug": "consigue-el-cambio",
+        "tipo": "sesion",
+        "usuario": "luca-claudia",
+        "titulo": "Consigue el cambio",
+        "descripcion": "Una pequeña tienda para descubrir cuánto dinero regresa después de pagar.",
+        "objetivo": "Reconocer de forma intuitiva el cambio como la diferencia entre el dinero entregado y el precio de una compra.",
+        "conocimientosPrevios": [
+          "contar hasta 10",
+          "reconocer cantidades pequeñas"
         ],
-        "etiquetas": [
-          "fracciones",
-          "operaciones",
-          "aritmética",
-          "simplificación",
-          "números racionales"
-        ],
+        "fecha": "2026-08-19",
         "estado": "publicado",
-        "ruta": "/biblioteca/temas/operaciones-con-fracciones/",
+        "ruta": "/asesores/claudia/luca/consigue-el-cambio/",
         "componentes": {
-          "definiciones": true,
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/claudia/luca/consigue-el-cambio/sesion.json"
+      },
+      {
+        "id": "cuanto-mide-cuanto-pesa-luca",
+        "slug": "cuanto-mide-cuanto-pesa",
+        "tipo": "sesion",
+        "usuario": "luca-claudia",
+        "titulo": "¿Cuánto mide? ¿Cuánto pesa?",
+        "descripcion": "Un laboratorio de animales para explorar qué descubrimos con una báscula y con una regla.",
+        "objetivo": "Distinguir intuitivamente el peso y la altura, así como las herramientas y unidades sencillas que se usan para medirlos.",
+        "conocimientosPrevios": [
+          "reconocer animales",
+          "comparar cantidades pequeñas"
+        ],
+        "fecha": "2026-08-17",
+        "estado": "publicado",
+        "ruta": "/asesores/claudia/luca/cuanto-mide-cuanto-pesa/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/claudia/luca/cuanto-mide-cuanto-pesa/sesion.json"
+      },
+      {
+        "id": "las-horas-luca",
+        "slug": "las-horas",
+        "tipo": "sesion",
+        "usuario": "luca-claudia",
+        "titulo": "Las horas",
+        "descripcion": "Un reloj grande para mover la manecilla y resolver pequeños retos con horas exactas.",
+        "objetivo": "Leer y representar horas exactas en un reloj de doce horas, incluyendo sumas y restas muy pequeñas.",
+        "conocimientosPrevios": [
+          "reconocer los números del 1 al 12",
+          "sumar y restar cantidades pequeñas"
+        ],
+        "fecha": "2026-08-15",
+        "estado": "publicado",
+        "ruta": "/asesores/claudia/luca/las-horas/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/claudia/luca/las-horas/sesion.json"
+      },
+      {
+        "id": "teorema-pitagoras-pamela",
+        "slug": "teorema-de-pitagoras",
+        "tipo": "sesion",
+        "usuario": "pamela-cortes",
+        "titulo": "Teorema de Pitágoras",
+        "descripcion": "Relación entre los lados de un triángulo rectángulo y práctica dinámica con respuestas enteras o raíces exactas.",
+        "objetivo": "Identificar la hipotenusa, despejar el lado faltante y expresar el resultado como entero o raíz cuadrada exacta.",
+        "conocimientosPrevios": [
+          "potencias al cuadrado",
+          "raíces cuadradas",
+          "despeje básico"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/cortes/pamela/teorema-de-pitagoras/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/cortes/pamela/teorema-de-pitagoras/sesion.json"
+      },
+      {
+        "id": "armonia-temperaturas-pedro",
+        "slug": "armonia-del-color-y-temperaturas",
+        "tipo": "sesion",
+        "usuario": "pedro-cortes",
+        "titulo": "3. Armonía del color y temperaturas",
+        "descripcion": "Construcción de paletas análogas, complementarias y triádicas; lectura expresiva de colores cálidos y fríos.",
+        "objetivo": "Construir armonías cromáticas intencionales y utilizar la temperatura para jerarquizar y comunicar una atmósfera.",
+        "conocimientosPrevios": [
+          "propiedades del color",
+          "círculo cromático de doce posiciones"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/cortes/pedro/armonia-del-color-y-temperaturas/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/cortes/pedro/armonia-del-color-y-temperaturas/sesion.json"
+      },
+      {
+        "id": "color-modelos-pedro",
+        "slug": "color-y-modelos-del-color",
+        "tipo": "sesion",
+        "usuario": "pedro-cortes",
+        "titulo": "1. El color y los modelos del color",
+        "descripcion": "Percepción del color y diferencias de uso entre los modelos RGB, CMYK y HSL.",
+        "objetivo": "Distinguir los modelos aditivo, sustractivo y perceptual, y seleccionar el adecuado según el medio de diseño.",
+        "conocimientosPrevios": [
+          "fundamentos de comunicación visual",
+          "manejo básico de herramientas de diseño"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/cortes/pedro/color-y-modelos-del-color/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/cortes/pedro/color-y-modelos-del-color/sesion.json"
+      },
+      {
+        "id": "contraste-contexto-pedro",
+        "slug": "contraste-y-contexto",
+        "tipo": "sesion",
+        "usuario": "pedro-cortes",
+        "titulo": "4. Contraste y contexto",
+        "descripcion": "Contraste de valor, saturación, temperatura y extensión; influencia del entorno en la percepción del color.",
+        "objetivo": "Evaluar el contraste de una composición y explicar cómo el contexto modifica la percepción y la jerarquía visual.",
+        "conocimientosPrevios": [
+          "armonías cromáticas",
+          "temperatura del color",
+          "saturación y luminosidad"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/cortes/pedro/contraste-y-contexto/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/cortes/pedro/contraste-y-contexto/sesion.json"
+      },
+      {
+        "id": "propiedades-circulo-cromatico-pedro",
+        "slug": "propiedades-del-color-y-circulo-cromatico",
+        "tipo": "sesion",
+        "usuario": "pedro-cortes",
+        "titulo": "2. Propiedades del color y círculo cromático",
+        "descripcion": "Matiz, saturación, luminosidad y organización relacional del círculo cromático.",
+        "objetivo": "Analizar un color mediante sus propiedades y ubicar relaciones primarias, secundarias y terciarias en el círculo cromático.",
+        "conocimientosPrevios": [
+          "modelos RGB y CMYK",
+          "mezcla aditiva y sustractiva"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/cortes/pedro/propiedades-del-color-y-circulo-cromatico/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/cortes/pedro/propiedades-del-color-y-circulo-cromatico/sesion.json"
+      },
+      {
+        "id": "reglas-derivacion-gloria",
+        "slug": "reglas-de-derivacion",
+        "tipo": "sesion",
+        "usuario": "gloria-elizabeth",
+        "titulo": "1. Reglas de derivación",
+        "descripcion": "Reglas de potencia, suma, producto, cociente y cadena para derivar con rapidez.",
+        "objetivo": "Seleccionar y combinar reglas de derivación sin perder la estructura de la función.",
+        "conocimientosPrevios": [
+          "derivada como límite",
+          "álgebra de funciones"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/gloria/reglas-de-derivacion/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/gloria/reglas-de-derivacion/sesion.json"
+      },
+      {
+        "id": "reglas-integracion-gloria",
+        "slug": "reglas-de-integracion",
+        "tipo": "sesion",
+        "usuario": "gloria-elizabeth",
+        "titulo": "2. Reglas esenciales de integración",
+        "descripcion": "Antiderivadas, linealidad, regla de potencia y fórmulas elementales.",
+        "objetivo": "Reconocer integrales inmediatas y aplicar las reglas esenciales con su constante de integración.",
+        "conocimientosPrevios": [
+          "reglas de derivación",
+          "potencias",
+          "funciones trigonométricas básicas"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/gloria/reglas-de-integracion/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/gloria/reglas-de-integracion/sesion.json"
+      },
+      {
+        "id": "teorema-fundamental-gloria",
+        "slug": "teorema-fundamental-del-calculo",
+        "tipo": "sesion",
+        "usuario": "gloria-elizabeth",
+        "titulo": "3. Teorema fundamental del cálculo",
+        "descripcion": "Relación entre derivación e integración y evaluación de integrales definidas.",
+        "objetivo": "Usar las dos partes del teorema fundamental para derivar funciones de acumulación y calcular integrales definidas.",
+        "conocimientosPrevios": [
+          "derivadas",
+          "antiderivadas",
+          "integral definida"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/gloria/teorema-fundamental-del-calculo/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/gloria/teorema-fundamental-del-calculo/sesion.json"
+      },
+      {
+        "id": "derivada-parametrica-jimena",
+        "slug": "derivada-parametrica",
+        "tipo": "sesion",
+        "usuario": "jimena-elizabeth",
+        "titulo": "1. Derivada paramétrica",
+        "descripcion": "Pendiente de una curva dada por x(t) e y(t), y condición para aplicar dy/dx.",
+        "objetivo": "Calcular la derivada de una curva paramétrica e interpretar su pendiente en un valor del parámetro.",
+        "conocimientosPrevios": [
+          "reglas de derivación",
+          "curvas en el plano",
+          "regla de la cadena"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/jimena/derivada-parametrica/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/jimena/derivada-parametrica/sesion.json"
+      },
+      {
+        "id": "integral-curva-jimena",
+        "slug": "integral-de-curva",
+        "tipo": "sesion",
+        "usuario": "jimena-elizabeth",
+        "titulo": "2. Integral de curva",
+        "descripcion": "Parametrización, elemento de longitud ds e integración de campos escalares sobre una curva.",
+        "objetivo": "Plantear y evaluar integrales escalares de curva mediante una parametrización regular.",
+        "conocimientosPrevios": [
+          "integrales definidas",
+          "vectores",
+          "curvas paramétricas"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/jimena/integral-de-curva/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/jimena/integral-de-curva/sesion.json"
+      },
+      {
+        "id": "conjuntos-kevin",
+        "slug": "conjuntos",
+        "tipo": "sesion",
+        "usuario": "kevin-elizabeth",
+        "titulo": "1. Conjuntos",
+        "descripcion": "Notación, pertenencia, subconjuntos y operaciones de unión, intersección, diferencia y complemento.",
+        "objetivo": "Representar conjuntos y resolver operaciones básicas con notación correcta.",
+        "conocimientosPrevios": [
+          "lógica elemental",
+          "desigualdades básicas"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/kevin/conjuntos/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/kevin/conjuntos/sesion.json"
+      },
+      {
+        "id": "derivada-limite-kevin",
+        "slug": "derivada-como-limite",
+        "tipo": "sesion",
+        "usuario": "kevin-elizabeth",
+        "titulo": "3. La derivada como límite",
+        "descripcion": "Definición de derivada como límite del cociente incremental e interpretación como pendiente.",
+        "objetivo": "Construir la derivada desde la razón de cambio promedio y relacionarla con la pendiente tangente.",
+        "conocimientosPrevios": [
+          "límites",
+          "pendiente de una recta",
+          "álgebra de funciones"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/kevin/derivada-como-limite/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/kevin/derivada-como-limite/sesion.json"
+      },
+      {
+        "id": "limites-kevin",
+        "slug": "limites",
+        "tipo": "sesion",
+        "usuario": "kevin-elizabeth",
+        "titulo": "2. Límites",
+        "descripcion": "Aproximación, leyes de límites y resolución de indeterminaciones sencillas por factorización.",
+        "objetivo": "Interpretar un límite y calcularlo mediante sustitución o simplificación algebraica.",
+        "conocimientosPrevios": [
+          "funciones",
+          "factorización",
+          "fracciones algebraicas"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/kevin/limites/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/kevin/limites/sesion.json"
+      },
+      {
+        "id": "matrices-operaciones-renata",
+        "slug": "matrices-y-operaciones",
+        "tipo": "sesion",
+        "usuario": "renata-elizabeth",
+        "titulo": "2. Matrices y sus operaciones",
+        "descripcion": "Definición, dimensiones, suma, producto por escalar y multiplicación matricial.",
+        "objetivo": "Interpretar una matriz por sus dimensiones y efectuar operaciones compatibles.",
+        "conocimientosPrevios": [
+          "operaciones con números reales",
+          "sistemas de ecuaciones"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/renata/matrices-y-operaciones/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/renata/matrices-y-operaciones/sesion.json"
+      },
+      {
+        "id": "espacio-vectorial-renata",
+        "slug": "propiedades-de-un-espacio-vectorial",
+        "tipo": "sesion",
+        "usuario": "renata-elizabeth",
+        "titulo": "1. Propiedades de un espacio vectorial",
+        "descripcion": "Axiomas de espacio vectorial y criterio de subespacio con ejemplos en R² y polinomios.",
+        "objetivo": "Reconocer las propiedades de un espacio vectorial y comprobar si un subconjunto es subespacio.",
+        "conocimientosPrevios": [
+          "vectores en R²",
+          "suma y multiplicación por escalar"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/elizabeth/renata/propiedades-de-un-espacio-vectorial/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/elizabeth/renata/propiedades-de-un-espacio-vectorial/sesion.json"
+      },
+      {
+        "id": "graficas-barras-ventas-alex",
+        "slug": "graficas-de-barras-en-ventas",
+        "tipo": "sesion",
+        "usuario": "alex-erick-chan",
+        "titulo": "Gráficas de barras en ventas",
+        "descripcion": "Cómo organizar, comparar e interpretar datos de ventas mediante tres ejemplos de tecnología.",
+        "objetivo": "Leer una gráfica de barras, realizar comparaciones correctas y explicar qué decisión comercial puede apoyarse en los datos.",
+        "conocimientosPrevios": [
+          "suma y resta de números enteros",
+          "multiplicación",
+          "porcentajes básicos"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/erick-chan/alex/graficas-de-barras-en-ventas/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erick-chan/alex/graficas-de-barras-en-ventas/sesion.json"
+      },
+      {
+        "id": "datos-no-agrupados",
+        "slug": "datos-no-agrupados",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Datos no agrupados",
+        "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
+        "objetivo": "Organizar e interpretar datos no agrupados mediante frecuencias, porcentajes, gráficas y medidas de tendencia central.",
+        "conocimientosPrevios": [
+          "operaciones básicas",
+          "orden de números"
+        ],
+        "fecha": "2026-07-24",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/",
+        "componentes": {
           "explicacion": true,
           "demostraciones": false,
           "ejercicios": true,
           "juegos": true,
           "calculadoras": true
         },
-        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/tema.json"
+        "archivoMetadatos": "asesores/erik/alejandrina/datos-no-agrupados/sesion.json"
+      },
+      {
+        "id": "diagramas-de-arboles",
+        "slug": "diagramas-de-arboles",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Diagramas de árboles",
+        "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
+        "objetivo": "Comprender y utilizar diagramas de árbol para organizar posibilidades y procesos por etapas.",
+        "conocimientosPrevios": [
+          "operaciones básicas",
+          "lectura de información"
+        ],
+        "fecha": "2026-07-29",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/sesion.json"
+      },
+      {
+        "id": "medidas-de-posicion",
+        "slug": "medidas-de-posicion",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
+        "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
+        "objetivo": "Relacionar medidas de posición con porcentajes y reconocer notaciones equivalentes exactas.",
+        "conocimientosPrevios": [
+          "porcentajes básicos",
+          "lectura de información"
+        ],
+        "fecha": "2026-07-29",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/sesion.json"
+      },
+      {
+        "id": "multiplicacion-de-binomios",
+        "slug": "multiplicacion-de-binomios",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Multiplicación de binomios",
+        "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
+        "objetivo": "Aplicar la propiedad distributiva para multiplicar dos binomios, reunir términos semejantes y expresar el trinomio resultante con coeficientes simplificados.",
+        "conocimientosPrevios": [
+          "ley de los signos",
+          "suma y multiplicación de fracciones",
+          "términos semejantes"
+        ],
+        "fecha": "2026-08-21",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/sesion.json"
+      },
+      {
+        "id": "sucesiones-aritmeticas-sesion-1",
+        "slug": "sucesiones-aritmeticas",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Sucesiones aritméticas: términos, diferencia y fórmula general",
+        "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
+        "objetivo": "Reconocer una sucesión aritmética, distinguir posición y valor, construir aₙ = a₁ + (n − 1)d mediante la idea de saltos y usarla para encontrar términos específicos.",
+        "conocimientosPrevios": [
+          "operaciones con números enteros",
+          "patrones numéricos",
+          "sustitución algebraica básica"
+        ],
+        "fecha": "2026-08-25",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "asesores/erik/alejandrina/sucesiones-aritmeticas/sesion.json"
+      },
+      {
+        "id": "porcentajes-andres",
+        "slug": "porcentajes",
+        "tipo": "sesion",
+        "usuario": "andres",
+        "titulo": "Porcentajes",
+        "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
+        "objetivo": "Interpretar, calcular y reconstruir relaciones porcentuales sin depender de una única fórmula memorizada.",
+        "conocimientosPrevios": [
+          "operaciones básicas",
+          "fracciones y decimales",
+          "proporcionalidad básica"
+        ],
+        "fecha": "2026-08-10",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/andres/porcentajes/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "asesores/erik/andres/porcentajes/sesion.json"
+      },
+      {
+        "id": "despejes-lineales-kenia",
+        "slug": "despejes-lineales",
+        "tipo": "sesion",
+        "usuario": "kenia-erik",
+        "titulo": "Despejes lineales",
+        "descripcion": "Sesión de álgebra para aislar x mediante operaciones equivalentes en ambos lados de una ecuación lineal.",
+        "objetivo": "Resolver ecuaciones de la forma Ax + B = C justificando cada operación y extendiendo el procedimiento a coeficientes racionales sencillos.",
+        "conocimientosPrevios": [
+          "operaciones con enteros",
+          "igualdad",
+          "fracciones básicas"
+        ],
+        "fecha": "2026-08-19",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/sesion.json"
+      },
+      {
+        "id": "encontrar-exponente-esteba",
+        "slug": "encontrar-el-exponente",
+        "tipo": "sesion",
+        "usuario": "esteba-karen",
+        "titulo": "Encontrar el exponente",
+        "descripcion": "Ecuaciones exponenciales sencillas resueltas al reconocer potencias conocidas.",
+        "objetivo": "Resolver ecuaciones exponenciales básicas reescribiendo ambos miembros con la misma base.",
+        "conocimientosPrevios": [
+          "notación exponencial",
+          "potencias de números naturales"
+        ],
+        "fecha": "2026-08-11",
+        "estado": "publicado",
+        "ruta": "/asesores/karen/esteba/encontrar-el-exponente/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/karen/esteba/encontrar-el-exponente/sesion.json"
+      },
+      {
+        "id": "logaritmos-esteba",
+        "slug": "logaritmos",
+        "tipo": "sesion",
+        "usuario": "esteba-karen",
+        "titulo": "Logaritmos",
+        "descripcion": "Relación entre forma exponencial y logarítmica, identificación de sus partes y cálculos básicos.",
+        "objetivo": "Convertir entre forma exponencial y logarítmica e interpretar base, argumento y resultado.",
+        "conocimientosPrevios": [
+          "potencias conocidas",
+          "resolución de exponentes con bases iguales"
+        ],
+        "fecha": "2026-08-19",
+        "estado": "publicado",
+        "ruta": "/asesores/karen/esteba/logaritmos/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/karen/esteba/logaritmos/sesion.json"
+      },
+      {
+        "id": "cuadrilateros-jonny",
+        "slug": "cuadrilateros",
+        "tipo": "sesion",
+        "usuario": "jonny-karen",
+        "titulo": "Cuadriláteros",
+        "descripcion": "Clasificación visual, propiedades, perímetros y áreas de los cuadriláteros principales.",
+        "objetivo": "Identificar cuadriláteros por sus propiedades y calcular perímetros y áreas en casos sencillos.",
+        "conocimientosPrevios": [
+          "medición de lados",
+          "perímetro y área",
+          "ángulos rectos"
+        ],
+        "fecha": "2026-08-17",
+        "estado": "publicado",
+        "ruta": "/asesores/karen/jonny/cuadrilateros/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/karen/jonny/cuadrilateros/sesion.json"
+      },
+      {
+        "id": "formula-general-jonny",
+        "slug": "formula-general",
+        "tipo": "sesion",
+        "usuario": "jonny-karen",
+        "titulo": "Fórmula general",
+        "descripcion": "Identificación de coeficientes y resolución paso a paso de ecuaciones cuadráticas.",
+        "objetivo": "Resolver ecuaciones cuadráticas mediante la fórmula general identificando y sustituyendo correctamente a, b y c.",
+        "conocimientosPrevios": [
+          "números con signo",
+          "potencias y raíces cuadradas",
+          "operaciones con fracciones"
+        ],
+        "fecha": "2026-08-13",
+        "estado": "publicado",
+        "ruta": "/asesores/karen/jonny/formula-general/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/karen/jonny/formula-general/sesion.json"
+      },
+      {
+        "id": "partes-circulo-milndred",
+        "slug": "partes-del-circulo",
+        "tipo": "sesion",
+        "usuario": "milndred-karen",
+        "titulo": "Partes del círculo",
+        "descripcion": "Centro, radio, diámetro, cuerda, arco, circunferencia y fórmulas básicas.",
+        "objetivo": "Identificar visualmente las partes principales del círculo y usar radio y diámetro en cálculos sencillos.",
+        "conocimientosPrevios": [
+          "medición de segmentos",
+          "multiplicación y uso de pi"
+        ],
+        "fecha": "2026-08-18",
+        "estado": "publicado",
+        "ruta": "/asesores/karen/milndred/partes-del-circulo/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/karen/milndred/partes-del-circulo/sesion.json"
+      },
+      {
+        "id": "teoria-exponentes-milndred",
+        "slug": "teoria-de-exponentes",
+        "tipo": "sesion",
+        "usuario": "milndred-karen",
+        "titulo": "Teoría de exponentes",
+        "descripcion": "Multiplicación repetida, base, exponente, potencia y primeras expresiones algebraicas.",
+        "objetivo": "Relacionar la multiplicación repetida con la notación exponencial e identificar base, exponente y potencia.",
+        "conocimientosPrevios": [
+          "multiplicación de números naturales",
+          "uso básico de letras en expresiones"
+        ],
+        "fecha": "2026-08-12",
+        "estado": "publicado",
+        "ruta": "/asesores/karen/milndred/teoria-de-exponentes/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/karen/milndred/teoria-de-exponentes/sesion.json"
+      },
+      {
+        "id": "triangulos-semejantes-raul",
+        "slug": "triangulos-semejantes",
+        "tipo": "sesion",
+        "usuario": "raul-karen",
+        "titulo": "Triángulos semejantes",
+        "descripcion": "Criterios AA, LAL y LLL, figuras comparables y cálculo de longitudes por proporcionalidad.",
+        "objetivo": "Determinar cuándo dos triángulos son semejantes, identificar el criterio y calcular longitudes faltantes.",
+        "conocimientosPrevios": [
+          "razones y proporciones",
+          "suma de ángulos interiores de un triángulo"
+        ],
+        "fecha": "2026-08-20",
+        "estado": "publicado",
+        "ruta": "/asesores/karen/raul/triangulos-semejantes/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/karen/raul/triangulos-semejantes/sesion.json"
+      },
+      {
+        "id": "continuidad-topologica-mateo",
+        "slug": "continuidad-topologica",
+        "tipo": "sesion",
+        "usuario": "mateo-rainer",
+        "titulo": "Continuidad topológica",
+        "descripcion": "Continuidad mediante preimágenes de abiertos, ejemplos básicos y composición de aplicaciones continuas.",
+        "objetivo": "Utilizar la definición topológica de continuidad y justificar formalmente ejemplos y composiciones.",
+        "conocimientosPrevios": [
+          "espacios topológicos",
+          "preimagen de un conjunto",
+          "composición de funciones"
+        ],
+        "fecha": "2026-08-18",
+        "estado": "publicado",
+        "ruta": "/asesores/rainer/mateo/continuidad-topologica/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/rainer/mateo/continuidad-topologica/sesion.json"
+      },
+      {
+        "id": "espacios-topologicos-sofia",
+        "slug": "espacios-topologicos",
+        "tipo": "sesion",
+        "usuario": "sofia-rainer",
+        "titulo": "Espacios topológicos",
+        "descripcion": "Definición axiomática, primeros ejemplos y verificación de topologías sobre conjuntos finitos.",
+        "objetivo": "Reconocer una topología, comprobar sus axiomas y distinguir las topologías indiscreta y discreta.",
+        "conocimientosPrevios": [
+          "teoría elemental de conjuntos",
+          "uniones e intersecciones",
+          "funciones"
+        ],
+        "fecha": "2026-08-19",
+        "estado": "publicado",
+        "ruta": "/asesores/rainer/sofia/espacios-topologicos/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/rainer/sofia/espacios-topologicos/sesion.json"
+      },
+      {
+        "id": "interior-clausura-frontera-sofia",
+        "slug": "interior-clausura-frontera",
+        "tipo": "sesion",
+        "usuario": "sofia-rainer",
+        "titulo": "Interior, clausura y frontera",
+        "descripcion": "Construcciones asociadas a un subconjunto y relaciones básicas entre interior, clausura y frontera.",
+        "objetivo": "Calcular interior, clausura y frontera en ejemplos sencillos y demostrar una identidad entre estas construcciones.",
+        "conocimientosPrevios": [
+          "espacios topológicos",
+          "conjuntos abiertos y cerrados",
+          "complementos"
+        ],
+        "fecha": "2026-08-16",
+        "estado": "publicado",
+        "ruta": "/asesores/rainer/sofia/interior-clausura-frontera/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/rainer/sofia/interior-clausura-frontera/sesion.json"
       }
     ],
     "calculadora": [
       {
+        "id": "estadistica-descriptiva",
+        "tipo": "calculadora",
+        "sesion": "datos-no-agrupados",
+        "usuario": "alejandrina",
+        "titulo": "Calculadora estadística",
+        "descripcion": "Genera tabla completa, acumulados, gráficas, media, mediana y moda de enteros o decimales.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/calculadoras/estadistica-descriptiva/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/datos-no-agrupados/calculadoras/estadistica-descriptiva/calculadora.json"
+      },
+      {
+        "id": "constructor-diagramas-de-arboles",
+        "tipo": "calculadora",
+        "sesion": "diagramas-de-arboles",
+        "usuario": "alejandrina",
+        "titulo": "Calculadora de diagramas de árbol",
+        "descripcion": "Herramienta para construir y estudiar diagramas de árbol a partir de una colección, sus etapas y la regla de repetición.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/calculadoras/constructor-de-diagramas/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/calculadoras/constructor-de-diagramas/calculadora.json"
+      },
+      {
+        "id": "conversor-medidas-de-posicion",
+        "tipo": "calculadora",
+        "sesion": "medidas-de-posicion",
+        "usuario": "alejandrina",
+        "titulo": "Conversor de medidas de posición",
+        "descripcion": "Convierte cuartiles, deciles, percentiles y mediana a porcentaje y muestra sus equivalencias exactas.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/calculadoras/conversor-de-medidas/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/calculadoras/conversor-de-medidas/calculadora.json"
+      },
+      {
+        "id": "producto-de-binomios",
+        "tipo": "calculadora",
+        "sesion": "multiplicacion-de-binomios",
+        "usuario": "alejandrina",
+        "titulo": "Calculadora",
+        "descripcion": "Multiplica dos binomios Ax+B y Cx+D con enteros o fracciones y muestra en LaTeX la distribución, los cuatro productos, la suma de términos semejantes y el resultado exacto.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/calculadoras/producto-de-binomios/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/calculadoras/producto-de-binomios/calculadora.json"
+      },
+      {
+        "id": "analizador-de-sucesiones-aritmeticas",
+        "tipo": "calculadora",
+        "sesion": "sucesiones-aritmeticas-sesion-1",
+        "usuario": "alejandrina",
+        "titulo": "Analizador de sucesiones",
+        "descripcion": "Analiza una lista, muestra diferencias consecutivas y determina si corresponde a una sucesión aritmética.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/calculadoras/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/sucesiones-aritmeticas/calculadoras/calculadora.json"
+      },
+      {
+        "id": "relaciones-porcentuales-andres",
+        "tipo": "calculadora",
+        "sesion": "porcentajes-andres",
+        "usuario": "andres",
+        "titulo": "Calculadoras sincronizadas de porcentajes",
+        "descripcion": "Tres calculadoras automáticas para explorar la relación entre porcentaje, cantidad, descuentos, aumentos y resultados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/andres/porcentajes/calculadoras/relaciones-porcentuales/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/andres/porcentajes/calculadoras/relaciones-porcentuales/calculadora.json"
+      },
+      {
+        "id": "calculadora-despejes-kenia",
+        "tipo": "calculadora",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Calculadora exacta de despejes",
+        "descripcion": "Dos modos para resolver Ax + B = C: entradas enteras o coeficientes fraccionarios apilados, con solución exacta, comprobación y procedimiento paso a paso.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/calculadoras/calculadora-de-despejes/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/calculadoras/calculadora-de-despejes/calculadora.json"
+      },
+      {
         "id": "calculadora-de-signos",
         "tipo": "calculadora",
+        "simbolo": "±",
         "tema": "ley-de-los-signos",
         "titulo": "Calculadora de signos",
         "descripcion": "Multiplica o divide dos enteros y explica la regla del signo en cinco pasos.",
@@ -111,6 +1682,7 @@
       {
         "id": "calculadora-operaciones-con-fracciones",
         "tipo": "calculadora",
+        "simbolo": "½",
         "tema": "operaciones-con-fracciones",
         "titulo": "Calculadora de fracciones",
         "descripcion": "Resuelve una operación con signos y muestra normalización, simplificación, resultado exacto y decimal.",
@@ -119,81 +1691,93 @@
         "ruta": "/biblioteca/temas/operaciones-con-fracciones/calculadoras/operaciones-con-fracciones/",
         "interactivo": true,
         "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/calculadoras/operaciones-con-fracciones/calculadora.json"
-      },
-      {
-        "id": "estadistica-descriptiva",
-        "tipo": "calculadora",
-        "sesion": "datos-no-agrupados",
-        "usuario": "alejandrina",
-        "titulo": "Calculadora estadística",
-        "descripcion": "Genera tabla completa, acumulados, gráficas, media, mediana y moda de enteros o decimales.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/datos-no-agrupados/calculadoras/estadistica-descriptiva/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/datos-no-agrupados/calculadoras/estadistica-descriptiva/calculadora.json"
-      },
-      {
-        "id": "constructor-diagramas-de-arboles",
-        "tipo": "calculadora",
-        "sesion": "diagramas-de-arboles",
-        "usuario": "alejandrina",
-        "titulo": "Calculadora de diagramas de árbol",
-        "descripcion": "Herramienta para construir y estudiar diagramas de árbol a partir de una colección, sus etapas y la regla de repetición.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/diagramas-de-arboles/calculadoras/constructor-de-diagramas/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/diagramas-de-arboles/calculadoras/constructor-de-diagramas/calculadora.json"
-      },
-      {
-        "id": "conversor-medidas-de-posicion",
-        "tipo": "calculadora",
-        "sesion": "medidas-de-posicion",
-        "usuario": "alejandrina",
-        "titulo": "Conversor de medidas de posición",
-        "descripcion": "Convierte cuartiles, deciles, percentiles y mediana a porcentaje y muestra sus equivalencias exactas.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/medidas-de-posicion/calculadoras/conversor-de-medidas/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/medidas-de-posicion/calculadoras/conversor-de-medidas/calculadora.json"
-      },
-      {
-        "id": "producto-de-binomios",
-        "tipo": "calculadora",
-        "sesion": "multiplicacion-de-binomios",
-        "usuario": "alejandrina",
-        "titulo": "Calculadora",
-        "descripcion": "Multiplica dos binomios Ax+B y Cx+D con enteros o fracciones y muestra en LaTeX la distribución, los cuatro productos, la suma de términos semejantes y el resultado exacto.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/calculadoras/producto-de-binomios/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/calculadoras/producto-de-binomios/calculadora.json"
-      },
-      {
-        "id": "relaciones-porcentuales-andres",
-        "tipo": "calculadora",
-        "sesion": "porcentajes-andres",
-        "usuario": "andres",
-        "titulo": "Calculadoras sincronizadas de porcentajes",
-        "descripcion": "Tres calculadoras automáticas para explorar la relación entre porcentaje, cantidad, descuentos, aumentos y resultados.",
-        "estado": "publicado",
-        "ruta": "/erik/andres/porcentajes/calculadoras/relaciones-porcentuales/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/andres/porcentajes/calculadoras/relaciones-porcentuales/calculadora.json"
-      },
-      {
-        "id": "calculadora-despejes-kenia",
-        "tipo": "calculadora",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
-        "titulo": "Calculadora exacta de despejes",
-        "descripcion": "Dos modos para resolver Ax + B = C: entradas enteras o coeficientes fraccionarios apilados, con solución exacta, comprobación y procedimiento paso a paso.",
-        "estado": "publicado",
-        "ruta": "/erik/kenia/despejes-lineales/calculadoras/calculadora-de-despejes/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/kenia/despejes-lineales/calculadoras/calculadora-de-despejes/calculadora.json"
       }
     ],
     "ejercicio": [
+      {
+        "id": "organiza-y-analiza",
+        "tipo": "ejercicio",
+        "sesion": "datos-no-agrupados",
+        "usuario": "alejandrina",
+        "titulo": "Organiza y analiza",
+        "descripcion": "Cinco actividades sobre orden, frecuencias, acumulados, interpretación, media, mediana y moda.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/ejercicios/organiza-y-analiza/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/datos-no-agrupados/ejercicios/organiza-y-analiza/ejercicio.json"
+      },
+      {
+        "id": "construye-el-arbol",
+        "tipo": "ejercicio",
+        "sesion": "diagramas-de-arboles",
+        "usuario": "alejandrina",
+        "titulo": "Practica con diagramas de árbol",
+        "descripcion": "Tres ejercicios generativos para completar, interpretar y construir diagramas de árbol.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/ejercicios/construye-el-arbol/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/ejercicios/construye-el-arbol/ejercicio.json"
+      },
+      {
+        "id": "relaciona-medidas-de-posicion",
+        "tipo": "ejercicio",
+        "sesion": "medidas-de-posicion",
+        "usuario": "alejandrina",
+        "titulo": "Relaciona las medidas de posición",
+        "descripcion": "Tres ejercicios generativos para convertir, visualizar y relacionar cuartiles, deciles, percentiles y mediana.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/ejercicios/relaciona-las-medidas/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/ejercicios/relaciona-las-medidas/ejercicio.json"
+      },
+      {
+        "id": "practica-de-binomios",
+        "tipo": "ejercicio",
+        "sesion": "multiplicacion-de-binomios",
+        "usuario": "alejandrina",
+        "titulo": "Ejercicio",
+        "descripcion": "Práctica dinámica en tres fases: distribuir un término, organizar la distribución y simplificar el trinomio.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/ejercicios/practica-de-binomios/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/ejercicios/practica-de-binomios/ejercicio.json"
+      },
+      {
+        "id": "practica-de-sucesiones-aritmeticas",
+        "tipo": "ejercicio",
+        "sesion": "sucesiones-aritmeticas-sesion-1",
+        "usuario": "alejandrina",
+        "titulo": "Práctica de sucesiones",
+        "descripcion": "Práctica generativa para identificar a₁, d, términos, posiciones y fórmula general con pistas específicas.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/ejercicios/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/sucesiones-aritmeticas/ejercicios/ejercicio.json"
+      },
+      {
+        "id": "practica-porcentajes-andres",
+        "tipo": "ejercicio",
+        "sesion": "porcentajes-andres",
+        "usuario": "andres",
+        "titulo": "Práctica de porcentajes",
+        "descripcion": "Cuatro ejercicios dinámicos para evaluar relaciones porcentuales, cambios, descuentos e IVA con retroalimentación por campo.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/andres/porcentajes/ejercicios/practica-de-porcentajes/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/andres/porcentajes/ejercicios/practica-de-porcentajes/ejercicio.json"
+      },
+      {
+        "id": "practica-despejes-kenia",
+        "tipo": "ejercicio",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Práctica de despejes",
+        "descripcion": "Series dinámicas de cuatro retos simultáneos para practicar despejes con enteros, signos y respuestas fraccionarias mediante entradas apiladas.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/ejercicio.json"
+      },
       {
         "id": "combinacion-de-signos",
         "tipo": "ejercicio",
@@ -222,81 +1806,86 @@
         "ruta": "/biblioteca/temas/operaciones-con-fracciones/ejercicios/operaciones-basicas/",
         "interactivo": true,
         "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/ejercicios/operaciones-basicas/ejercicio.json"
-      },
-      {
-        "id": "organiza-y-analiza",
-        "tipo": "ejercicio",
-        "sesion": "datos-no-agrupados",
-        "usuario": "alejandrina",
-        "titulo": "Organiza y analiza",
-        "descripcion": "Cinco actividades sobre orden, frecuencias, acumulados, interpretación, media, mediana y moda.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/datos-no-agrupados/ejercicios/organiza-y-analiza/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/datos-no-agrupados/ejercicios/organiza-y-analiza/ejercicio.json"
-      },
-      {
-        "id": "construye-el-arbol",
-        "tipo": "ejercicio",
-        "sesion": "diagramas-de-arboles",
-        "usuario": "alejandrina",
-        "titulo": "Practica con diagramas de árbol",
-        "descripcion": "Tres ejercicios generativos para completar, interpretar y construir diagramas de árbol.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/diagramas-de-arboles/ejercicios/construye-el-arbol/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/diagramas-de-arboles/ejercicios/construye-el-arbol/ejercicio.json"
-      },
-      {
-        "id": "relaciona-medidas-de-posicion",
-        "tipo": "ejercicio",
-        "sesion": "medidas-de-posicion",
-        "usuario": "alejandrina",
-        "titulo": "Relaciona las medidas de posición",
-        "descripcion": "Tres ejercicios generativos para convertir, visualizar y relacionar cuartiles, deciles, percentiles y mediana.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/medidas-de-posicion/ejercicios/relaciona-las-medidas/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/medidas-de-posicion/ejercicios/relaciona-las-medidas/ejercicio.json"
-      },
-      {
-        "id": "practica-de-binomios",
-        "tipo": "ejercicio",
-        "sesion": "multiplicacion-de-binomios",
-        "usuario": "alejandrina",
-        "titulo": "Ejercicio",
-        "descripcion": "Práctica dinámica en tres fases: distribuir un término, organizar la distribución y simplificar el trinomio.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/ejercicios/practica-de-binomios/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/ejercicios/practica-de-binomios/ejercicio.json"
-      },
-      {
-        "id": "practica-porcentajes-andres",
-        "tipo": "ejercicio",
-        "sesion": "porcentajes-andres",
-        "usuario": "andres",
-        "titulo": "Práctica de porcentajes",
-        "descripcion": "Cuatro ejercicios dinámicos para evaluar relaciones porcentuales, cambios, descuentos e IVA con retroalimentación por campo.",
-        "estado": "publicado",
-        "ruta": "/erik/andres/porcentajes/ejercicios/practica-de-porcentajes/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/andres/porcentajes/ejercicios/practica-de-porcentajes/ejercicio.json"
-      },
-      {
-        "id": "practica-despejes-kenia",
-        "tipo": "ejercicio",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
-        "titulo": "Práctica de despejes",
-        "descripcion": "Series dinámicas de cuatro retos simultáneos para practicar despejes con enteros, signos y respuestas fraccionarias mediante entradas apiladas.",
-        "estado": "publicado",
-        "ruta": "/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/ejercicio.json"
       }
     ],
     "explicacion": [
+      {
+        "id": "explicacion-datos-no-agrupados",
+        "tipo": "explicacion",
+        "sesion": "datos-no-agrupados",
+        "usuario": "alejandrina",
+        "titulo": "Comprender los datos",
+        "descripcion": "Definiciones, tabla de frecuencias completa, gráficas y medidas de tendencia central.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/explicacion/",
+        "archivoMetadatos": "asesores/erik/alejandrina/datos-no-agrupados/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-diagramas-de-arboles",
+        "tipo": "explicacion",
+        "sesion": "diagramas-de-arboles",
+        "usuario": "alejandrina",
+        "titulo": "Cómo funcionan los diagramas de árbol",
+        "descripcion": "Teoría visual para comprender, construir e interpretar la estructura de un diagrama de árbol.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/explicacion/",
+        "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-medidas-de-posicion",
+        "tipo": "explicacion",
+        "sesion": "medidas-de-posicion",
+        "usuario": "alejandrina",
+        "titulo": "Comprender las medidas de posición",
+        "descripcion": "Teoría visual sobre cuartiles, deciles, percentiles, mediana y sus equivalencias porcentuales.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/explicacion/",
+        "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-multiplicacion-de-binomios",
+        "tipo": "explicacion",
+        "sesion": "multiplicacion-de-binomios",
+        "usuario": "alejandrina",
+        "titulo": "Teoría de la multiplicación de binomios",
+        "descripcion": "Explicación conceptual de la propiedad distributiva, los términos semejantes y la multiplicación de binomios con enteros y fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/explicacion/",
+        "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-sucesiones-aritmeticas-sesion-1",
+        "tipo": "explicacion",
+        "sesion": "sucesiones-aritmeticas-sesion-1",
+        "usuario": "alejandrina",
+        "titulo": "Comprender las sucesiones aritméticas",
+        "descripcion": "Explicación progresiva de términos, posiciones, diferencia común y construcción de la fórmula general mediante saltos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/explicacion/",
+        "archivoMetadatos": "asesores/erik/alejandrina/sucesiones-aritmeticas/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-porcentajes-andres",
+        "tipo": "explicacion",
+        "sesion": "porcentajes-andres",
+        "usuario": "andres",
+        "titulo": "Comprender los porcentajes",
+        "descripcion": "Teoría progresiva de porcentajes: significado, relaciones parte-total, datos reales, cambios, descuentos e IVA.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/andres/porcentajes/explicacion/",
+        "archivoMetadatos": "asesores/erik/andres/porcentajes/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-despejes-kenia",
+        "tipo": "explicacion",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Conservar el equilibrio",
+        "descripcion": "Explicación detallada y visual para resolver Ax + B = C mediante operaciones equivalentes, con enteros, signos, fracciones, comprobaciones y casos especiales.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/",
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/componente.json"
+      },
       {
         "id": "explicacion-ley-de-los-signos",
         "tipo": "explicacion",
@@ -316,64 +1905,93 @@
         "estado": "publicado",
         "ruta": "/biblioteca/temas/operaciones-con-fracciones/explicacion/",
         "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/explicacion/componente.json"
-      },
-      {
-        "id": "explicacion-datos-no-agrupados",
-        "tipo": "explicacion",
-        "sesion": "datos-no-agrupados",
-        "usuario": "alejandrina",
-        "titulo": "Comprender los datos",
-        "descripcion": "Definiciones, tabla de frecuencias completa, gráficas y medidas de tendencia central.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/datos-no-agrupados/explicacion/",
-        "archivoMetadatos": "erik/alejandrina/datos-no-agrupados/explicacion/componente.json"
-      },
-      {
-        "id": "explicacion-diagramas-de-arboles",
-        "tipo": "explicacion",
-        "sesion": "diagramas-de-arboles",
-        "usuario": "alejandrina",
-        "titulo": "Cómo funcionan los diagramas de árbol",
-        "descripcion": "Teoría visual para comprender, construir e interpretar la estructura de un diagrama de árbol.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/diagramas-de-arboles/explicacion/",
-        "archivoMetadatos": "erik/alejandrina/diagramas-de-arboles/explicacion/componente.json"
-      },
-      {
-        "id": "explicacion-multiplicacion-de-binomios",
-        "tipo": "explicacion",
-        "sesion": "multiplicacion-de-binomios",
-        "usuario": "alejandrina",
-        "titulo": "Teoría de la multiplicación de binomios",
-        "descripcion": "Explicación conceptual de la propiedad distributiva, los términos semejantes y la multiplicación de binomios con enteros y fracciones.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/explicacion/",
-        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/explicacion/componente.json"
-      },
-      {
-        "id": "explicacion-porcentajes-andres",
-        "tipo": "explicacion",
-        "sesion": "porcentajes-andres",
-        "usuario": "andres",
-        "titulo": "Comprender los porcentajes",
-        "descripcion": "Teoría progresiva de porcentajes: significado, relaciones parte-total, datos reales, cambios, descuentos e IVA.",
-        "estado": "publicado",
-        "ruta": "/erik/andres/porcentajes/explicacion/",
-        "archivoMetadatos": "erik/andres/porcentajes/explicacion/componente.json"
-      },
-      {
-        "id": "explicacion-despejes-kenia",
-        "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
-        "titulo": "Conservar el equilibrio",
-        "descripcion": "Explicación detallada y visual para resolver Ax + B = C mediante operaciones equivalentes, con enteros, signos, fracciones, comprobaciones y casos especiales.",
-        "estado": "publicado",
-        "ruta": "/erik/kenia/despejes-lineales/explicacion/",
-        "archivoMetadatos": "erik/kenia/despejes-lineales/explicacion/componente.json"
       }
     ],
     "juego": [
+      {
+        "id": "entrevista-musical",
+        "tipo": "juego",
+        "sesion": "datos-no-agrupados",
+        "usuario": "alejandrina",
+        "titulo": "La entrevista musical",
+        "descripcion": "Juego contextual de moda, mediana y promedio.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/juegos/entrevista-musical/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/datos-no-agrupados/juegos/entrevista-musical/juego.json"
+      },
+      {
+        "id": "elige-el-camino",
+        "tipo": "juego",
+        "sesion": "diagramas-de-arboles",
+        "usuario": "alejandrina",
+        "titulo": "El laberinto infinito",
+        "descripcion": "Juego para leer un diagrama de árbol como mapa y recorrer las puertas que conducen hasta una hoja marcada como salida.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/juego.json"
+      },
+      {
+        "id": "recorrido-de-posiciones",
+        "tipo": "juego",
+        "sesion": "medidas-de-posicion",
+        "usuario": "alejandrina",
+        "titulo": "El taller del corte exacto",
+        "descripcion": "Juego para interpretar cuartiles, deciles, percentiles y mediana, y cortar una cinta en su posición porcentual exacta.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/juego.json"
+      },
+      {
+        "id": "fabrica-de-trinomios",
+        "tipo": "juego",
+        "sesion": "multiplicacion-de-binomios",
+        "usuario": "alejandrina",
+        "titulo": "La fábrica de trinomios",
+        "descripcion": "Juego narrativo de opción múltiple para ayudar a una trabajadora a construir, en cuatro etapas y con enteros sencillos, todo el procedimiento del producto de binomios.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/juego.json"
+      },
+      {
+        "id": "ruta-de-las-sucesiones",
+        "tipo": "juego",
+        "sesion": "sucesiones-aritmeticas-sesion-1",
+        "usuario": "alejandrina",
+        "titulo": "Ruta de las sucesiones",
+        "descripcion": "Juego de quince preguntas en tres niveles para completar patrones, identificar elementos y utilizar la fórmula general.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/juegos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/sucesiones-aritmeticas/juegos/juego.json"
+      },
+      {
+        "id": "ticket-bajo-la-lupa-andres",
+        "tipo": "juego",
+        "sesion": "porcentajes-andres",
+        "usuario": "andres",
+        "titulo": "Ticket bajo la lupa",
+        "descripcion": "Juego de auditoría mediante clics para revisar descuentos, tasas ficticias variables de IVA y totales, y localizar un único dato alterado.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/juego.json"
+      },
+      {
+        "id": "brigada-despeje-kenia",
+        "tipo": "juego",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Brigada del despeje",
+        "descripcion": "Juego de opción múltiple con veinte personajes y ecuaciones lineales sencillas cuyas soluciones son enteros entre 2 y 9.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/juegos/brigada-del-despeje/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/juegos/brigada-del-despeje/juego.json"
+      },
       {
         "id": "guardia-de-los-signos",
         "tipo": "juego",
@@ -417,78 +2035,102 @@
         "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/",
         "interactivo": true,
         "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/juego.json"
+      }
+    ],
+    "examen": [
+      {
+        "id": "evaluacion-bachillerato",
+        "tipo": "examen",
+        "simbolo": "5",
+        "titulo": "Evaluación bachillerato",
+        "descripcion": "Evaluación web de cinco problemas de bachillerato con solución rápida y solución detallada desplegables.",
+        "area": "Matemáticas",
+        "nivel": [
+          "bachillerato"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
+        "estado": "publicado",
+        "ruta": "/biblioteca/examenes/evaluacion-bachillerato/",
+        "interactivo": false,
+        "archivoMetadatos": "biblioteca/examenes/evaluacion-bachillerato/examen.json"
       },
       {
-        "id": "entrevista-musical",
-        "tipo": "juego",
-        "sesion": "datos-no-agrupados",
-        "usuario": "alejandrina",
-        "titulo": "La entrevista musical",
-        "descripcion": "Juego contextual de moda, mediana y promedio.",
+        "id": "simulador-admision-universidad",
+        "tipo": "examen",
+        "simbolo": "?",
+        "titulo": "Simulador de admisión universitaria",
+        "descripcion": "Examen diagnóstico de práctica en formato PDF.",
+        "area": "Matemáticas",
+        "nivel": [
+          "preparatoria",
+          "aspirantes a universidad"
+        ],
+        "formato": "pdf",
+        "duracionMinutos": 60,
         "estado": "publicado",
-        "ruta": "/erik/alejandrina/datos-no-agrupados/juegos/entrevista-musical/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/datos-no-agrupados/juegos/entrevista-musical/juego.json"
+        "ruta": "/biblioteca/examenes/simulador-admision-universidad/",
+        "archivo": "recursos/simulador.pdf",
+        "archivoMetadatos": "biblioteca/examenes/simulador-admision-universidad/examen.json"
+      }
+    ],
+    "tema": [
+      {
+        "id": "ley-de-los-signos",
+        "tipo": "tema",
+        "simbolo": "±",
+        "titulo": "Ley de los signos",
+        "descripcion": "Significado de los signos y reglas para multiplicar y dividir números positivos, negativos y cero.",
+        "categoria": "Aritmética",
+        "nivel": [
+          "secundaria"
+        ],
+        "etiquetas": [
+          "signos",
+          "números negativos",
+          "cero",
+          "multiplicación",
+          "división"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/ley-de-los-signos/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "biblioteca/temas/ley-de-los-signos/tema.json"
       },
       {
-        "id": "elige-el-camino",
-        "tipo": "juego",
-        "sesion": "diagramas-de-arboles",
-        "usuario": "alejandrina",
-        "titulo": "El laberinto infinito",
-        "descripcion": "Juego para leer un diagrama de árbol como mapa y recorrer las puertas que conducen hasta una hoja marcada como salida.",
+        "id": "operaciones-con-fracciones",
+        "tipo": "tema",
+        "simbolo": "½",
+        "titulo": "Operaciones con fracciones",
+        "descripcion": "Definiciones, teoría, práctica, calculadora y juegos visuales para comprender y operar fracciones.",
+        "categoria": "Aritmética",
+        "nivel": [
+          "secundaria"
+        ],
+        "etiquetas": [
+          "fracciones",
+          "operaciones",
+          "aritmética",
+          "simplificación",
+          "números racionales"
+        ],
         "estado": "publicado",
-        "ruta": "/erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/juego.json"
-      },
-      {
-        "id": "recorrido-de-posiciones",
-        "tipo": "juego",
-        "sesion": "medidas-de-posicion",
-        "usuario": "alejandrina",
-        "titulo": "El taller del corte exacto",
-        "descripcion": "Juego para interpretar cuartiles, deciles, percentiles y mediana, y cortar una cinta en su posición porcentual exacta.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/juego.json"
-      },
-      {
-        "id": "fabrica-de-trinomios",
-        "tipo": "juego",
-        "sesion": "multiplicacion-de-binomios",
-        "usuario": "alejandrina",
-        "titulo": "La fábrica de trinomios",
-        "descripcion": "Juego narrativo de opción múltiple para ayudar a una trabajadora a construir, en cuatro etapas y con enteros sencillos, todo el procedimiento del producto de binomios.",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/juego.json"
-      },
-      {
-        "id": "ticket-bajo-la-lupa-andres",
-        "tipo": "juego",
-        "sesion": "porcentajes-andres",
-        "usuario": "andres",
-        "titulo": "Ticket bajo la lupa",
-        "descripcion": "Juego de auditoría mediante clics para revisar descuentos, tasas ficticias variables de IVA y totales, y localizar un único dato alterado.",
-        "estado": "publicado",
-        "ruta": "/erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/juego.json"
-      },
-      {
-        "id": "brigada-despeje-kenia",
-        "tipo": "juego",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
-        "titulo": "Brigada del despeje",
-        "descripcion": "Juego de opción múltiple con veinte personajes y ecuaciones lineales sencillas cuyas soluciones son enteros entre 2 y 9.",
-        "estado": "publicado",
-        "ruta": "/erik/kenia/despejes-lineales/juegos/brigada-del-despeje/",
-        "interactivo": true,
-        "archivoMetadatos": "erik/kenia/despejes-lineales/juegos/brigada-del-despeje/juego.json"
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/",
+        "componentes": {
+          "definiciones": true,
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/tema.json"
       }
     ],
     "definiciones": [
@@ -501,1559 +2143,6 @@
         "estado": "publicado",
         "ruta": "/biblioteca/temas/operaciones-con-fracciones/definiciones/",
         "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/definiciones/componente.json"
-      }
-    ],
-    "maestro": [
-      {
-        "id": "claudia",
-        "slug": "claudia",
-        "tipo": "maestro",
-        "titulo": "Claudia",
-        "nombreVisible": "Claudia",
-        "rol": "Asesora",
-        "descripcion": "Asesora multidisciplinar para alumnos curiosos que quieren explorar, crear y aprender más allá de los contenidos habituales de la escuela.",
-        "estado": "activo",
-        "ruta": "/claudia/",
-        "imagen": "/recursos/imagenes/claudia.jpg",
-        "imagenAlt": "Claudia, asesora de Matemáticas a Domicilio",
-        "banner": {
-          "colorInicial": "#6f3dc4",
-          "colorFinal": "#ef6f91"
-        },
-        "ubicacion": {
-          "pais": "España",
-          "region": "Andalucía",
-          "ciudad": "Málaga"
-        },
-        "modalidad": {
-          "tipo": "individual"
-        },
-        "disponibilidad": {
-          "aceptaNuevosAlumnos": true,
-          "etiquetaDisponible": "Aceptando nuevos alumnos",
-          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-        },
-        "precios": [
-          {
-            "id": "sesion-online-60",
-            "titulo": "Sesión",
-            "duracionMinutos": 60,
-            "importe": 120,
-            "moneda": "EUR",
-            "nota": "Incluye orientación individual y materiales preparados para la sesión."
-          }
-        ],
-        "sobre": [
-          "Claudia reúne experiencia en matemáticas, programación, marketing, publicidad, educación, moda, turismo y administración para conectar ideas de distintas áreas.",
-          "Acompaña especialmente a alumnos de alto rendimiento que desean ampliar sus conocimientos, desarrollar nuevas habilidades y convertir su curiosidad en proyectos propios."
-        ],
-        "metodologia": [
-          "Parte de una pregunta interesante y ayuda al alumno a descubrir qué necesita aprender para responderla.",
-          "Propone retos, recursos y pistas que favorecen la autonomía sin dejar al estudiante solo durante el proceso.",
-          "Relaciona diferentes disciplinas para que cada aprendizaje tenga un propósito visible y pueda utilizarse en situaciones nuevas.",
-          "Celebra la curiosidad, la experimentación y la capacidad de explicar con palabras propias lo que se ha descubierto."
-        ],
-        "archivoMetadatos": "claudia/maestro.json"
-      },
-      {
-        "id": "cortes",
-        "slug": "cortes",
-        "tipo": "maestro",
-        "titulo": "Cortés",
-        "nombreVisible": "Cortés",
-        "rol": "Asesor",
-        "descripcion": "Dibujante y diseñador gráfico que acompaña materias de diseño y dibujo mediante explicaciones visuales, práctica compartida y referencias de la cultura pop.",
-        "estado": "activo",
-        "ruta": "/cortes/",
-        "imagen": "/recursos/imagenes/cortes.jpg",
-        "imagenAlt": "Personaje colorido con gafas pixeladas, imagen del salón de Cortés",
-        "imagenAjuste": "cover",
-        "banner": {
-          "colorInicial": "#17152c",
-          "colorFinal": "#8b1e69"
-        },
-        "ubicacion": {
-          "pais": "México",
-          "region": "Quintana Roo",
-          "ciudad": "Cancún"
-        },
-        "modalidad": {
-          "tipo": "individual"
-        },
-        "disponibilidad": {
-          "aceptaNuevosAlumnos": true,
-          "etiquetaDisponible": "Acepta nuevos alumnos",
-          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-        },
-        "precios": [
-          {
-            "id": "sesion-individual-45",
-            "titulo": "Sesión",
-            "duracionMinutos": 45,
-            "importe": 350,
-            "moneda": "MXN",
-            "nota": "Sesión individual de diseño o dibujo con explicación visual y práctica guiada."
-          }
-        ],
-        "sobre": [
-          "Cortés es un dibujante y diseñador gráfico que disfruta la cultura pop y procura que sus sesiones sean creativas, cercanas y agradables.",
-          "Se enfoca en materias relacionadas con diseño y dibujo, desde fundamentos del color hasta herramientas geométricas útiles para construir imágenes."
-        ],
-        "metodologia": [
-          "Dibuja junto con el alumno para que cada concepto aparezca dentro de una decisión visual concreta.",
-          "Explica mientras construye: muestra el trazo, la selección de color o la relación geométrica y verbaliza por qué funciona.",
-          "Utiliza referencias de diseño y cultura pop para reconocer los conceptos en imágenes familiares.",
-          "Alterna observación y práctica para que el alumno pruebe inmediatamente cada idea y reciba retroalimentación."
-        ],
-        "archivoMetadatos": "cortes/maestro.json"
-      },
-      {
-        "id": "elizabeth",
-        "slug": "elizabeth",
-        "tipo": "maestro",
-        "titulo": "Elizabeth",
-        "nombreVisible": "Elizabeth",
-        "rol": "Asesora",
-        "descripcion": "Asesora de matemáticas universitarias especializada en Álgebra Lineal y Cálculo I, II y III, con una enseñanza ordenada, paciente y rigurosa.",
-        "estado": "activo",
-        "ruta": "/elizabeth/",
-        "imagen": "/recursos/imagenes/elizabeth.jpg",
-        "imagenAlt": "Ilustración de mujer rubia con detalles verdes, imagen del salón de Elizabeth",
-        "imagenAjuste": "cover",
-        "banner": {
-          "colorInicial": "#17241e",
-          "colorFinal": "#62754f"
-        },
-        "ubicacion": {
-          "pais": "México",
-          "region": "Nuevo León",
-          "ciudad": "San Pedro"
-        },
-        "modalidad": {
-          "tipo": "individual"
-        },
-        "disponibilidad": {
-          "aceptaNuevosAlumnos": true,
-          "etiquetaDisponible": "Aceptando nuevos alumnos",
-          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-        },
-        "precios": [
-          {
-            "id": "sesion-individual-90",
-            "titulo": "Sesión",
-            "duracionMinutos": 90,
-            "importe": 650,
-            "moneda": "MXN",
-            "nota": "Sesión individual universitaria con teoría, ejemplos guiados y ejercicios adaptados al progreso del estudiante."
-          }
-        ],
-        "sobre": [
-          "Elizabeth trabaja con estudiantes que buscan comprender las matemáticas con mayor profundidad, reforzar una materia, recuperar bases o prepararse para evaluaciones universitarias.",
-          "Cuenta con experiencia acompañando a estudiantes de ingeniería, ciencias y otras carreras con formación matemática, adaptando el ritmo y los ejercicios a cada dificultad."
-        ],
-        "metodologia": [
-          "Identifica primero qué conceptos domina el alumno y dónde se originan sus dificultades.",
-          "Explica cada tema desde su significado antes de introducir procedimientos y fórmulas.",
-          "Combina ejemplos guiados con ejercicios que el estudiante debe resolver de manera independiente.",
-          "Utiliza gráficas, interpretaciones geométricas y distintas representaciones cuando ayudan a comprender conceptos abstractos.",
-          "Corrige errores mediante preguntas y pistas antes de mostrar directamente la solución.",
-          "Mantiene un seguimiento de los errores recurrentes para retomarlos en sesiones posteriores.",
-          "Adapta los ejercicios y recursos de cada sesión al progreso individual del estudiante."
-        ],
-        "archivoMetadatos": "elizabeth/maestro.json"
-      },
-      {
-        "id": "erick-chan",
-        "slug": "erick-chan",
-        "tipo": "maestro",
-        "titulo": "Erick Chan",
-        "nombreVisible": "Erick Chan",
-        "rol": "Asesor",
-        "descripcion": "Asesor con experiencia en ventas que utiliza la estadística para comparar productos, interpretar información comercial y tomar decisiones útiles en contextos reales.",
-        "estado": "activo",
-        "ruta": "/erick-chan/",
-        "imagen": "/recursos/imagenes/erick-chan.jpg",
-        "imagenAlt": "Ilustración en blanco y negro del salón de Erick Chan",
-        "imagenAjuste": "contain",
-        "banner": {
-          "colorInicial": "#171b1c",
-          "colorFinal": "#276b70"
-        },
-        "ubicacion": {
-          "pais": "México",
-          "region": "Yucatán",
-          "ciudad": "Mérida"
-        },
-        "modalidad": {
-          "tipo": "individual"
-        },
-        "disponibilidad": {
-          "aceptaNuevosAlumnos": true,
-          "etiquetaDisponible": "Acepta nuevos alumnos",
-          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-        },
-        "precios": [
-          {
-            "id": "sesion-individual-60",
-            "titulo": "Sesión",
-            "duracionMinutos": 60,
-            "importe": 200,
-            "moneda": "MXN",
-            "nota": "Sesión individual con ejemplos de estadística aplicados a ventas, tecnología y situaciones de trabajo."
-          }
-        ],
-        "sobre": [
-          "Erick Chan tiene experiencia en ventas y utiliza la estadística en su trabajo para comparar teléfonos, accesorios y otros productos.",
-          "Su enfoque busca que cada concepto matemático tenga una utilidad reconocible en la vida diaria o en una situación laboral."
-        ],
-        "metodologia": [
-          "Parte de una pregunta concreta de ventas, tecnología o trabajo para mostrar dónde aparece la matemática.",
-          "Organiza los datos antes de calcular para que el alumno distinga categorías, cantidades y unidades.",
-          "Desarrolla tres ejemplos por sesión y explica qué información aporta cada resultado.",
-          "Cierra cada caso relacionando la interpretación matemática con una decisión útil del contexto real."
-        ],
-        "archivoMetadatos": "erick-chan/maestro.json"
-      },
-      {
-        "id": "erik-estrella",
-        "slug": "erik",
-        "tipo": "maestro",
-        "titulo": "Erik",
-        "nombreVisible": "Erik",
-        "rol": "Asesor",
-        "descripcion": "Asesor y administrador de Matemáticas a Domicilio. Coordina sesiones personalizadas y desarrolla materiales adaptados a los objetivos de cada estudiante.",
-        "estado": "activo",
-        "ruta": "/erik/",
-        "imagen": "/recursos/imagenes/admin.jpg",
-        "imagenAlt": "Erik, asesor de Matemáticas a Domicilio",
-        "banner": {
-          "colorInicial": "#11110f",
-          "colorFinal": "#2f5d50"
-        },
-        "ubicacion": {
-          "pais": "México",
-          "region": "Yucatán",
-          "ciudad": "Mérida"
-        },
-        "modalidad": {
-          "tipo": "individual"
-        },
-        "disponibilidad": {
-          "aceptaNuevosAlumnos": true,
-          "etiquetaDisponible": "Aceptando nuevos alumnos",
-          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-        },
-        "precios": [
-          {
-            "id": "sesion-domicilio-150",
-            "titulo": "Sesión",
-            "duracionMinutos": 150,
-            "importe": 250,
-            "moneda": "MXN",
-            "nota": "Incluye la planificación y los materiales necesarios para la sesión."
-          }
-        ],
-        "sobre": [
-          "Erik coordina las asesorías de Matemáticas a Domicilio y prepara experiencias de aprendizaje individuales para estudiantes de secundaria, preparatoria y universidad.",
-          "Su trabajo parte de las necesidades, conocimientos previos y objetivos de cada alumno para convertirlos en una planificación clara y progresiva."
-        ],
-        "metodologia": [
-          "Identifica junto con el estudiante la necesidad concreta y define un objetivo de trabajo verificable.",
-          "Selecciona explicaciones, ejercicios, materiales y herramientas de acuerdo con el proceso particular del alumno.",
-          "Relaciona las matemáticas con situaciones cotidianas y promueve que el estudiante explique, compruebe y utilice lo aprendido.",
-          "Evalúa el avance a partir del objetivo acordado y adapta las sesiones cuando las necesidades del alumno cambian."
-        ],
-        "archivoMetadatos": "erik/maestro.json"
-      },
-      {
-        "id": "karen-mariana",
-        "slug": "karen",
-        "tipo": "maestro",
-        "titulo": "Karen Mariana",
-        "nombreVisible": "Karen Mariana",
-        "rol": "Asesora",
-        "descripcion": "Asesora de secundaria que acompaña la regularización mediante teoría clara, fórmulas, procedimientos y ejercicios vinculados con los contenidos actuales de la escuela.",
-        "estado": "activo",
-        "ruta": "/karen/",
-        "imagen": "/recursos/imagenes/karen-mariana.png",
-        "imagenAlt": "Gata tricolor dormida, imagen del salón de Karen Mariana",
-        "imagenAjuste": "cover",
-        "banner": {
-          "colorInicial": "#184f49",
-          "colorFinal": "#d39a45"
-        },
-        "ubicacion": {
-          "pais": "México",
-          "region": "Estado de México",
-          "ciudad": "Toluca"
-        },
-        "modalidad": {
-          "tipo": "grupal",
-          "maximoAlumnos": 6
-        },
-        "disponibilidad": {
-          "aceptaNuevosAlumnos": true,
-          "etiquetaDisponible": "Acepta nuevos alumnos",
-          "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-        },
-        "precios": [
-          {
-            "id": "sesion-grupal-60",
-            "titulo": "Sesión",
-            "duracionMinutos": 60,
-            "importe": 360,
-            "moneda": "MXN",
-            "nota": "Sesión grupal para un máximo de seis alumnos, con teoría y ejercicios preparados según los contenidos escolares actuales."
-          }
-        ],
-        "sobre": [
-          "Karen Mariana trabaja con estudiantes de secundaria que necesitan regularización y acostumbra acompañarlos en grupos pequeños, principalmente de cuatro a seis alumnos.",
-          "Mantiene comunicación con las familias para conocer los temas y tareas que el estudiante está trabajando actualmente en la escuela."
-        ],
-        "metodologia": [
-          "Revisa los contenidos y tareas actuales para identificar las dificultades concretas del estudiante.",
-          "Explica la teoría y las fórmulas con procedimientos ordenados, ejemplos manejables y apoyos visuales.",
-          "Propone ejercicios progresivos para practicar cada paso antes de integrar el procedimiento completo.",
-          "Destaca la información importante con una jerarquía visual clara y verifica qué necesita reforzarse en la siguiente sesión."
-        ],
-        "archivoMetadatos": "karen/maestro.json"
-      },
-      {
-        "id": "rainer",
-        "slug": "rainer",
-        "tipo": "maestro",
-        "titulo": "Rainer",
-        "nombreVisible": "Rainer",
-        "rol": "Asesor",
-        "descripcion": "Matemático teórico con interés especial por el rigor, la escritura formal y la construcción ordenada de argumentos matemáticos.",
-        "estado": "activo",
-        "ruta": "/rainer/",
-        "imagen": "/recursos/imagenes/rainer.jpg",
-        "imagenAlt": "Rainer, asesor de Matemáticas a Domicilio",
-        "banner": {
-          "colorInicial": "#172033",
-          "colorFinal": "#38506f"
-        },
-        "ubicacion": {
-          "pais": "México",
-          "region": "Quintana Roo",
-          "ciudad": "Cozumel"
-        },
-        "modalidad": {
-          "tipo": "grupal",
-          "maximoAlumnos": 2
-        },
-        "disponibilidad": {
-          "aceptaNuevosAlumnos": true,
-          "etiquetaDisponible": "Solo para alumnos universitarios",
-          "etiquetaNoDisponible": "Sin disponibilidad"
-        },
-        "precios": [
-          {
-            "id": "sesion-universitaria-80",
-            "titulo": "Sesión",
-            "duracionMinutos": 80,
-            "importe": 750,
-            "moneda": "MXN",
-            "nota": "Sesión individual con desarrollo teórico, ejemplos y problemas."
-          }
-        ],
-        "sobre": [
-          "Rainer acompaña a estudiantes universitarios que desean comprender las definiciones con precisión y construir argumentos matemáticos sólidos.",
-          "Su capacidad de liderazgo le permite organizar el trabajo en etapas claras sin perder de vista las preguntas conceptuales de cada tema."
-        ],
-        "metodologia": [
-          "Presenta la teoría y fija con cuidado las definiciones y la notación que se utilizarán.",
-          "Desarrolla ejemplos que muestran tanto el alcance como los límites de cada concepto.",
-          "Propone problemas graduados para convertir las definiciones en herramientas de razonamiento.",
-          "Cierra con demostraciones en las que cada afirmación debe estar justificada con claridad."
-        ],
-        "archivoMetadatos": "rainer/maestro.json"
-      }
-    ],
-    "usuario": [
-      {
-        "id": "luca-claudia",
-        "slug": "luca",
-        "tipo": "usuario",
-        "titulo": "El casillero de Luca",
-        "nombreVisible": "Luca",
-        "descripcion": "Tres aventuras cortas para comprar, medir y jugar con las horas.",
-        "estado": "activo",
-        "ruta": "/claudia/luca/",
-        "maestro": "claudia",
-        "personalizacion": {
-          "simbolo": "🚀",
-          "acento": "#6f3dc4",
-          "fondo": "#f4efff"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "claudia/luca/usuario.json"
-      },
-      {
-        "id": "pamela-cortes",
-        "slug": "pamela",
-        "tipo": "usuario",
-        "titulo": "El casillero de Pamela",
-        "nombreVisible": "Pamela",
-        "descripcion": "Sesiones de secundaria con geometría visual y práctica interactiva.",
-        "estado": "activo",
-        "ruta": "/cortes/pamela/",
-        "maestro": "cortes",
-        "personalizacion": {
-          "simbolo": "P",
-          "acento": "#087f8c",
-          "fondo": "#e5f5f5"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "cortes/pamela/usuario.json"
-      },
-      {
-        "id": "pedro-cortes",
-        "slug": "pedro",
-        "tipo": "usuario",
-        "titulo": "El casillero de Pedro",
-        "nombreVisible": "Pedro",
-        "descripcion": "Sesiones universitarias de teoría y aplicación del color.",
-        "estado": "activo",
-        "ruta": "/cortes/pedro/",
-        "maestro": "cortes",
-        "personalizacion": {
-          "simbolo": "P",
-          "acento": "#b21f78",
-          "fondo": "#faeaf3"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "cortes/pedro/usuario.json"
-      },
-      {
-        "id": "gloria-elizabeth",
-        "slug": "gloria",
-        "tipo": "usuario",
-        "titulo": "El casillero de Gloria",
-        "nombreVisible": "Gloria",
-        "descripcion": "Sesiones universitarias sobre derivación, integración y el teorema fundamental del cálculo.",
-        "estado": "activo",
-        "ruta": "/elizabeth/gloria/",
-        "maestro": "elizabeth",
-        "personalizacion": {
-          "simbolo": "G",
-          "acento": "#7a5f37",
-          "fondo": "#f5efe4"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "elizabeth/gloria/usuario.json"
-      },
-      {
-        "id": "jimena-elizabeth",
-        "slug": "jimena",
-        "tipo": "usuario",
-        "titulo": "El casillero de Jimena",
-        "nombreVisible": "Jimena",
-        "descripcion": "Sesiones universitarias de cálculo paramétrico e integrales de curva.",
-        "estado": "activo",
-        "ruta": "/elizabeth/jimena/",
-        "maestro": "elizabeth",
-        "personalizacion": {
-          "simbolo": "J",
-          "acento": "#6b5878",
-          "fondo": "#f0ebf3"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "elizabeth/jimena/usuario.json"
-      },
-      {
-        "id": "kevin-elizabeth",
-        "slug": "kevin",
-        "tipo": "usuario",
-        "titulo": "El casillero de Kevin",
-        "nombreVisible": "Kevin",
-        "descripcion": "Sesiones universitarias sobre conjuntos, límites y derivada como límite.",
-        "estado": "activo",
-        "ruta": "/elizabeth/kevin/",
-        "maestro": "elizabeth",
-        "personalizacion": {
-          "simbolo": "K",
-          "acento": "#4b6670",
-          "fondo": "#e8f0f2"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "elizabeth/kevin/usuario.json"
-      },
-      {
-        "id": "renata-elizabeth",
-        "slug": "renata",
-        "tipo": "usuario",
-        "titulo": "El casillero de Renata",
-        "nombreVisible": "Renata",
-        "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
-        "estado": "activo",
-        "ruta": "/elizabeth/renata/",
-        "maestro": "elizabeth",
-        "personalizacion": {
-          "simbolo": "R",
-          "acento": "#526a42",
-          "fondo": "#edf2e7"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "elizabeth/renata/usuario.json"
-      },
-      {
-        "id": "alex-erick-chan",
-        "slug": "alex",
-        "tipo": "usuario",
-        "titulo": "El casillero de Alex",
-        "nombreVisible": "Alex",
-        "descripcion": "Sesiones de estadística aplicada a ventas y tecnología.",
-        "estado": "activo",
-        "ruta": "/erick-chan/alex/",
-        "maestro": "erick-chan",
-        "personalizacion": {
-          "simbolo": "A",
-          "acento": "#276b70",
-          "fondo": "#e7f1f1"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "erick-chan/alex/usuario.json"
-      },
-      {
-        "id": "alejandrina",
-        "slug": "alejandrina",
-        "tipo": "usuario",
-        "titulo": "Espacio de Alejandrina",
-        "nombreVisible": "Alejandrina",
-        "descripcion": "Espacio de sesiones y recursos personalizados.",
-        "estado": "activo",
-        "ruta": "/erik/alejandrina/",
-        "maestro": "erik-estrella",
-        "personalizacion": {
-          "simbolo": "A",
-          "acento": "#15784e",
-          "fondo": "#edf8f2"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "erik/alejandrina/usuario.json"
-      },
-      {
-        "id": "andres",
-        "slug": "andres",
-        "tipo": "usuario",
-        "titulo": "Espacio de Andrés",
-        "nombreVisible": "Andrés",
-        "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
-        "estado": "activo",
-        "ruta": "/erik/andres/",
-        "maestro": "erik-estrella",
-        "personalizacion": {
-          "simbolo": "A",
-          "acento": "#b84d18",
-          "fondo": "#fff3ec"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "erik/andres/usuario.json"
-      },
-      {
-        "id": "jose",
-        "slug": "jose",
-        "tipo": "usuario",
-        "titulo": "Espacio de José",
-        "nombreVisible": "José",
-        "descripcion": "Espacio personal para organizar pendientes de estudio.",
-        "estado": "activo",
-        "ruta": "/erik/jose/",
-        "maestro": "erik-estrella",
-        "personalizacion": {
-          "simbolo": "J",
-          "acento": "#1f5fbd",
-          "fondo": "#eef5ff"
-        },
-        "almacenamientoLocal": true,
-        "archivoMetadatos": "erik/jose/usuario.json"
-      },
-      {
-        "id": "kenia-erik",
-        "slug": "kenia",
-        "tipo": "usuario",
-        "titulo": "Espacio de Kenia",
-        "nombreVisible": "Kenia",
-        "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
-        "estado": "activo",
-        "ruta": "/erik/kenia/",
-        "maestro": "erik-estrella",
-        "personalizacion": {
-          "simbolo": "K",
-          "acento": "#7a3f82",
-          "fondo": "#f7eef8"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "erik/kenia/usuario.json"
-      },
-      {
-        "id": "esteba-karen",
-        "slug": "esteba",
-        "tipo": "usuario",
-        "titulo": "El casillero de Esteba",
-        "nombreVisible": "Esteba",
-        "descripcion": "Sesiones de secundaria para comprender exponentes desconocidos y logaritmos.",
-        "estado": "activo",
-        "ruta": "/karen/esteba/",
-        "maestro": "karen-mariana",
-        "personalizacion": {
-          "simbolo": "E",
-          "acento": "#84509a",
-          "fondo": "#f5ecf8"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "karen/esteba/usuario.json"
-      },
-      {
-        "id": "jonny-karen",
-        "slug": "jonny",
-        "tipo": "usuario",
-        "titulo": "El casillero de Jonny",
-        "nombreVisible": "Jonny",
-        "descripcion": "Sesiones de secundaria sobre ecuaciones cuadráticas y cuadriláteros.",
-        "estado": "activo",
-        "ruta": "/karen/jonny/",
-        "maestro": "karen-mariana",
-        "personalizacion": {
-          "simbolo": "J",
-          "acento": "#a44548",
-          "fondo": "#fcebec"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "karen/jonny/usuario.json"
-      },
-      {
-        "id": "milndred-karen",
-        "slug": "milndred",
-        "tipo": "usuario",
-        "titulo": "El casillero de Milndred",
-        "nombreVisible": "Milndred",
-        "descripcion": "Sesiones de secundaria sobre exponentes y geometría del círculo.",
-        "estado": "activo",
-        "ruta": "/karen/milndred/",
-        "maestro": "karen-mariana",
-        "personalizacion": {
-          "simbolo": "M",
-          "acento": "#1f6f65",
-          "fondo": "#e8f5f1"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "karen/milndred/usuario.json"
-      },
-      {
-        "id": "raul-karen",
-        "slug": "raul",
-        "tipo": "usuario",
-        "titulo": "El casillero de Raul",
-        "nombreVisible": "Raul",
-        "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
-        "estado": "activo",
-        "ruta": "/karen/raul/",
-        "maestro": "karen-mariana",
-        "personalizacion": {
-          "simbolo": "R",
-          "acento": "#a45c18",
-          "fondo": "#fff2da"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "karen/raul/usuario.json"
-      },
-      {
-        "id": "mateo-rainer",
-        "slug": "mateo",
-        "tipo": "usuario",
-        "titulo": "Espacio de Mateo",
-        "nombreVisible": "Mateo",
-        "descripcion": "Recorrido universitario de Topología centrado en continuidad y aplicaciones entre espacios.",
-        "estado": "activo",
-        "ruta": "/rainer/mateo/",
-        "maestro": "rainer",
-        "personalizacion": {
-          "simbolo": "M",
-          "acento": "#465b3f",
-          "fondo": "#f0f4ed"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "rainer/mateo/usuario.json"
-      },
-      {
-        "id": "sofia-rainer",
-        "slug": "sofia",
-        "tipo": "usuario",
-        "titulo": "Espacio de Sofía",
-        "nombreVisible": "Sofía",
-        "descripcion": "Recorrido universitario de Topología: estructuras básicas y conjuntos derivados.",
-        "estado": "activo",
-        "ruta": "/rainer/sofia/",
-        "maestro": "rainer",
-        "personalizacion": {
-          "simbolo": "S",
-          "acento": "#315c88",
-          "fondo": "#eef3f7"
-        },
-        "almacenamientoLocal": false,
-        "archivoMetadatos": "rainer/sofia/usuario.json"
-      }
-    ],
-    "sesion": [
-      {
-        "id": "consigue-el-cambio-luca",
-        "slug": "consigue-el-cambio",
-        "tipo": "sesion",
-        "usuario": "luca-claudia",
-        "titulo": "Consigue el cambio",
-        "descripcion": "Una pequeña tienda para descubrir cuánto dinero regresa después de pagar.",
-        "objetivo": "Reconocer de forma intuitiva el cambio como la diferencia entre el dinero entregado y el precio de una compra.",
-        "conocimientosPrevios": [
-          "contar hasta 10",
-          "reconocer cantidades pequeñas"
-        ],
-        "fecha": "2026-08-19",
-        "estado": "publicado",
-        "ruta": "/claudia/luca/consigue-el-cambio/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "claudia/luca/consigue-el-cambio/sesion.json"
-      },
-      {
-        "id": "cuanto-mide-cuanto-pesa-luca",
-        "slug": "cuanto-mide-cuanto-pesa",
-        "tipo": "sesion",
-        "usuario": "luca-claudia",
-        "titulo": "¿Cuánto mide? ¿Cuánto pesa?",
-        "descripcion": "Un laboratorio de animales para explorar qué descubrimos con una báscula y con una regla.",
-        "objetivo": "Distinguir intuitivamente el peso y la altura, así como las herramientas y unidades sencillas que se usan para medirlos.",
-        "conocimientosPrevios": [
-          "reconocer animales",
-          "comparar cantidades pequeñas"
-        ],
-        "fecha": "2026-08-17",
-        "estado": "publicado",
-        "ruta": "/claudia/luca/cuanto-mide-cuanto-pesa/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "claudia/luca/cuanto-mide-cuanto-pesa/sesion.json"
-      },
-      {
-        "id": "las-horas-luca",
-        "slug": "las-horas",
-        "tipo": "sesion",
-        "usuario": "luca-claudia",
-        "titulo": "Las horas",
-        "descripcion": "Un reloj grande para mover la manecilla y resolver pequeños retos con horas exactas.",
-        "objetivo": "Leer y representar horas exactas en un reloj de doce horas, incluyendo sumas y restas muy pequeñas.",
-        "conocimientosPrevios": [
-          "reconocer los números del 1 al 12",
-          "sumar y restar cantidades pequeñas"
-        ],
-        "fecha": "2026-08-15",
-        "estado": "publicado",
-        "ruta": "/claudia/luca/las-horas/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "claudia/luca/las-horas/sesion.json"
-      },
-      {
-        "id": "teorema-pitagoras-pamela",
-        "slug": "teorema-de-pitagoras",
-        "tipo": "sesion",
-        "usuario": "pamela-cortes",
-        "titulo": "Teorema de Pitágoras",
-        "descripcion": "Relación entre los lados de un triángulo rectángulo y práctica dinámica con respuestas enteras o raíces exactas.",
-        "objetivo": "Identificar la hipotenusa, despejar el lado faltante y expresar el resultado como entero o raíz cuadrada exacta.",
-        "conocimientosPrevios": [
-          "potencias al cuadrado",
-          "raíces cuadradas",
-          "despeje básico"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/cortes/pamela/teorema-de-pitagoras/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "cortes/pamela/teorema-de-pitagoras/sesion.json"
-      },
-      {
-        "id": "armonia-temperaturas-pedro",
-        "slug": "armonia-del-color-y-temperaturas",
-        "tipo": "sesion",
-        "usuario": "pedro-cortes",
-        "titulo": "3. Armonía del color y temperaturas",
-        "descripcion": "Construcción de paletas análogas, complementarias y triádicas; lectura expresiva de colores cálidos y fríos.",
-        "objetivo": "Construir armonías cromáticas intencionales y utilizar la temperatura para jerarquizar y comunicar una atmósfera.",
-        "conocimientosPrevios": [
-          "propiedades del color",
-          "círculo cromático de doce posiciones"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/cortes/pedro/armonia-del-color-y-temperaturas/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "cortes/pedro/armonia-del-color-y-temperaturas/sesion.json"
-      },
-      {
-        "id": "color-modelos-pedro",
-        "slug": "color-y-modelos-del-color",
-        "tipo": "sesion",
-        "usuario": "pedro-cortes",
-        "titulo": "1. El color y los modelos del color",
-        "descripcion": "Percepción del color y diferencias de uso entre los modelos RGB, CMYK y HSL.",
-        "objetivo": "Distinguir los modelos aditivo, sustractivo y perceptual, y seleccionar el adecuado según el medio de diseño.",
-        "conocimientosPrevios": [
-          "fundamentos de comunicación visual",
-          "manejo básico de herramientas de diseño"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/cortes/pedro/color-y-modelos-del-color/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "cortes/pedro/color-y-modelos-del-color/sesion.json"
-      },
-      {
-        "id": "contraste-contexto-pedro",
-        "slug": "contraste-y-contexto",
-        "tipo": "sesion",
-        "usuario": "pedro-cortes",
-        "titulo": "4. Contraste y contexto",
-        "descripcion": "Contraste de valor, saturación, temperatura y extensión; influencia del entorno en la percepción del color.",
-        "objetivo": "Evaluar el contraste de una composición y explicar cómo el contexto modifica la percepción y la jerarquía visual.",
-        "conocimientosPrevios": [
-          "armonías cromáticas",
-          "temperatura del color",
-          "saturación y luminosidad"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/cortes/pedro/contraste-y-contexto/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "cortes/pedro/contraste-y-contexto/sesion.json"
-      },
-      {
-        "id": "propiedades-circulo-cromatico-pedro",
-        "slug": "propiedades-del-color-y-circulo-cromatico",
-        "tipo": "sesion",
-        "usuario": "pedro-cortes",
-        "titulo": "2. Propiedades del color y círculo cromático",
-        "descripcion": "Matiz, saturación, luminosidad y organización relacional del círculo cromático.",
-        "objetivo": "Analizar un color mediante sus propiedades y ubicar relaciones primarias, secundarias y terciarias en el círculo cromático.",
-        "conocimientosPrevios": [
-          "modelos RGB y CMYK",
-          "mezcla aditiva y sustractiva"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/cortes/pedro/propiedades-del-color-y-circulo-cromatico/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "cortes/pedro/propiedades-del-color-y-circulo-cromatico/sesion.json"
-      },
-      {
-        "id": "reglas-derivacion-gloria",
-        "slug": "reglas-de-derivacion",
-        "tipo": "sesion",
-        "usuario": "gloria-elizabeth",
-        "titulo": "1. Reglas de derivación",
-        "descripcion": "Reglas de potencia, suma, producto, cociente y cadena para derivar con rapidez.",
-        "objetivo": "Seleccionar y combinar reglas de derivación sin perder la estructura de la función.",
-        "conocimientosPrevios": [
-          "derivada como límite",
-          "álgebra de funciones"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/gloria/reglas-de-derivacion/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/gloria/reglas-de-derivacion/sesion.json"
-      },
-      {
-        "id": "reglas-integracion-gloria",
-        "slug": "reglas-de-integracion",
-        "tipo": "sesion",
-        "usuario": "gloria-elizabeth",
-        "titulo": "2. Reglas esenciales de integración",
-        "descripcion": "Antiderivadas, linealidad, regla de potencia y fórmulas elementales.",
-        "objetivo": "Reconocer integrales inmediatas y aplicar las reglas esenciales con su constante de integración.",
-        "conocimientosPrevios": [
-          "reglas de derivación",
-          "potencias",
-          "funciones trigonométricas básicas"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/gloria/reglas-de-integracion/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/gloria/reglas-de-integracion/sesion.json"
-      },
-      {
-        "id": "teorema-fundamental-gloria",
-        "slug": "teorema-fundamental-del-calculo",
-        "tipo": "sesion",
-        "usuario": "gloria-elizabeth",
-        "titulo": "3. Teorema fundamental del cálculo",
-        "descripcion": "Relación entre derivación e integración y evaluación de integrales definidas.",
-        "objetivo": "Usar las dos partes del teorema fundamental para derivar funciones de acumulación y calcular integrales definidas.",
-        "conocimientosPrevios": [
-          "derivadas",
-          "antiderivadas",
-          "integral definida"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/gloria/teorema-fundamental-del-calculo/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/gloria/teorema-fundamental-del-calculo/sesion.json"
-      },
-      {
-        "id": "derivada-parametrica-jimena",
-        "slug": "derivada-parametrica",
-        "tipo": "sesion",
-        "usuario": "jimena-elizabeth",
-        "titulo": "1. Derivada paramétrica",
-        "descripcion": "Pendiente de una curva dada por x(t) e y(t), y condición para aplicar dy/dx.",
-        "objetivo": "Calcular la derivada de una curva paramétrica e interpretar su pendiente en un valor del parámetro.",
-        "conocimientosPrevios": [
-          "reglas de derivación",
-          "curvas en el plano",
-          "regla de la cadena"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/jimena/derivada-parametrica/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/jimena/derivada-parametrica/sesion.json"
-      },
-      {
-        "id": "integral-curva-jimena",
-        "slug": "integral-de-curva",
-        "tipo": "sesion",
-        "usuario": "jimena-elizabeth",
-        "titulo": "2. Integral de curva",
-        "descripcion": "Parametrización, elemento de longitud ds e integración de campos escalares sobre una curva.",
-        "objetivo": "Plantear y evaluar integrales escalares de curva mediante una parametrización regular.",
-        "conocimientosPrevios": [
-          "integrales definidas",
-          "vectores",
-          "curvas paramétricas"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/jimena/integral-de-curva/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/jimena/integral-de-curva/sesion.json"
-      },
-      {
-        "id": "conjuntos-kevin",
-        "slug": "conjuntos",
-        "tipo": "sesion",
-        "usuario": "kevin-elizabeth",
-        "titulo": "1. Conjuntos",
-        "descripcion": "Notación, pertenencia, subconjuntos y operaciones de unión, intersección, diferencia y complemento.",
-        "objetivo": "Representar conjuntos y resolver operaciones básicas con notación correcta.",
-        "conocimientosPrevios": [
-          "lógica elemental",
-          "desigualdades básicas"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/kevin/conjuntos/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/kevin/conjuntos/sesion.json"
-      },
-      {
-        "id": "derivada-limite-kevin",
-        "slug": "derivada-como-limite",
-        "tipo": "sesion",
-        "usuario": "kevin-elizabeth",
-        "titulo": "3. La derivada como límite",
-        "descripcion": "Definición de derivada como límite del cociente incremental e interpretación como pendiente.",
-        "objetivo": "Construir la derivada desde la razón de cambio promedio y relacionarla con la pendiente tangente.",
-        "conocimientosPrevios": [
-          "límites",
-          "pendiente de una recta",
-          "álgebra de funciones"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/kevin/derivada-como-limite/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/kevin/derivada-como-limite/sesion.json"
-      },
-      {
-        "id": "limites-kevin",
-        "slug": "limites",
-        "tipo": "sesion",
-        "usuario": "kevin-elizabeth",
-        "titulo": "2. Límites",
-        "descripcion": "Aproximación, leyes de límites y resolución de indeterminaciones sencillas por factorización.",
-        "objetivo": "Interpretar un límite y calcularlo mediante sustitución o simplificación algebraica.",
-        "conocimientosPrevios": [
-          "funciones",
-          "factorización",
-          "fracciones algebraicas"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/kevin/limites/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/kevin/limites/sesion.json"
-      },
-      {
-        "id": "matrices-operaciones-renata",
-        "slug": "matrices-y-operaciones",
-        "tipo": "sesion",
-        "usuario": "renata-elizabeth",
-        "titulo": "2. Matrices y sus operaciones",
-        "descripcion": "Definición, dimensiones, suma, producto por escalar y multiplicación matricial.",
-        "objetivo": "Interpretar una matriz por sus dimensiones y efectuar operaciones compatibles.",
-        "conocimientosPrevios": [
-          "operaciones con números reales",
-          "sistemas de ecuaciones"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/renata/matrices-y-operaciones/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/renata/matrices-y-operaciones/sesion.json"
-      },
-      {
-        "id": "espacio-vectorial-renata",
-        "slug": "propiedades-de-un-espacio-vectorial",
-        "tipo": "sesion",
-        "usuario": "renata-elizabeth",
-        "titulo": "1. Propiedades de un espacio vectorial",
-        "descripcion": "Axiomas de espacio vectorial y criterio de subespacio con ejemplos en R² y polinomios.",
-        "objetivo": "Reconocer las propiedades de un espacio vectorial y comprobar si un subconjunto es subespacio.",
-        "conocimientosPrevios": [
-          "vectores en R²",
-          "suma y multiplicación por escalar"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/elizabeth/renata/propiedades-de-un-espacio-vectorial/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "elizabeth/renata/propiedades-de-un-espacio-vectorial/sesion.json"
-      },
-      {
-        "id": "graficas-barras-ventas-alex",
-        "slug": "graficas-de-barras-en-ventas",
-        "tipo": "sesion",
-        "usuario": "alex-erick-chan",
-        "titulo": "Gráficas de barras en ventas",
-        "descripcion": "Cómo organizar, comparar e interpretar datos de ventas mediante tres ejemplos de tecnología.",
-        "objetivo": "Leer una gráfica de barras, realizar comparaciones correctas y explicar qué decisión comercial puede apoyarse en los datos.",
-        "conocimientosPrevios": [
-          "suma y resta de números enteros",
-          "multiplicación",
-          "porcentajes básicos"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/erick-chan/alex/graficas-de-barras-en-ventas/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "erick-chan/alex/graficas-de-barras-en-ventas/sesion.json"
-      },
-      {
-        "id": "datos-no-agrupados",
-        "slug": "datos-no-agrupados",
-        "tipo": "sesion",
-        "usuario": "alejandrina",
-        "titulo": "Datos no agrupados",
-        "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
-        "objetivo": "Organizar e interpretar datos no agrupados mediante frecuencias, porcentajes, gráficas y medidas de tendencia central.",
-        "conocimientosPrevios": [
-          "operaciones básicas",
-          "orden de números"
-        ],
-        "fecha": "2026-07-24",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/datos-no-agrupados/",
-        "componentes": {
-          "explicacion": true,
-          "demostraciones": false,
-          "ejercicios": true,
-          "juegos": true,
-          "calculadoras": true
-        },
-        "archivoMetadatos": "erik/alejandrina/datos-no-agrupados/sesion.json"
-      },
-      {
-        "id": "diagramas-de-arboles",
-        "slug": "diagramas-de-arboles",
-        "tipo": "sesion",
-        "usuario": "alejandrina",
-        "titulo": "Diagramas de árboles",
-        "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
-        "objetivo": "Comprender y utilizar diagramas de árbol para organizar posibilidades y procesos por etapas.",
-        "conocimientosPrevios": [
-          "operaciones básicas",
-          "lectura de información"
-        ],
-        "fecha": "2026-07-29",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/diagramas-de-arboles/",
-        "componentes": {
-          "explicacion": true,
-          "demostraciones": false,
-          "ejercicios": true,
-          "juegos": true,
-          "calculadoras": true
-        },
-        "archivoMetadatos": "erik/alejandrina/diagramas-de-arboles/sesion.json"
-      },
-      {
-        "id": "medidas-de-posicion",
-        "slug": "medidas-de-posicion",
-        "tipo": "sesion",
-        "usuario": "alejandrina",
-        "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
-        "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
-        "objetivo": "Relacionar medidas de posición con porcentajes y reconocer notaciones equivalentes exactas.",
-        "conocimientosPrevios": [
-          "porcentajes básicos",
-          "lectura de información"
-        ],
-        "fecha": "2026-07-29",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/medidas-de-posicion/",
-        "componentes": {
-          "explicacion": true,
-          "demostraciones": false,
-          "ejercicios": true,
-          "juegos": true,
-          "calculadoras": true
-        },
-        "archivoMetadatos": "erik/alejandrina/medidas-de-posicion/sesion.json"
-      },
-      {
-        "id": "multiplicacion-de-binomios",
-        "slug": "multiplicacion-de-binomios",
-        "tipo": "sesion",
-        "usuario": "alejandrina",
-        "titulo": "Multiplicación de binomios",
-        "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
-        "objetivo": "Aplicar la propiedad distributiva para multiplicar dos binomios, reunir términos semejantes y expresar el trinomio resultante con coeficientes simplificados.",
-        "conocimientosPrevios": [
-          "ley de los signos",
-          "suma y multiplicación de fracciones",
-          "términos semejantes"
-        ],
-        "fecha": "2026-08-21",
-        "estado": "publicado",
-        "ruta": "/erik/alejandrina/multiplicacion-de-binomios/",
-        "componentes": {
-          "explicacion": true,
-          "demostraciones": false,
-          "ejercicios": true,
-          "juegos": true,
-          "calculadoras": true
-        },
-        "archivoMetadatos": "erik/alejandrina/multiplicacion-de-binomios/sesion.json"
-      },
-      {
-        "id": "porcentajes-andres",
-        "slug": "porcentajes",
-        "tipo": "sesion",
-        "usuario": "andres",
-        "titulo": "Porcentajes",
-        "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
-        "objetivo": "Interpretar, calcular y reconstruir relaciones porcentuales sin depender de una única fórmula memorizada.",
-        "conocimientosPrevios": [
-          "operaciones básicas",
-          "fracciones y decimales",
-          "proporcionalidad básica"
-        ],
-        "fecha": "2026-08-10",
-        "estado": "publicado",
-        "ruta": "/erik/andres/porcentajes/",
-        "componentes": {
-          "explicacion": true,
-          "demostraciones": false,
-          "ejercicios": true,
-          "juegos": true,
-          "calculadoras": true
-        },
-        "archivoMetadatos": "erik/andres/porcentajes/sesion.json"
-      },
-      {
-        "id": "despejes-lineales-kenia",
-        "slug": "despejes-lineales",
-        "tipo": "sesion",
-        "usuario": "kenia-erik",
-        "titulo": "Despejes lineales",
-        "descripcion": "Sesión de álgebra para aislar x mediante operaciones equivalentes en ambos lados de una ecuación lineal.",
-        "objetivo": "Resolver ecuaciones de la forma Ax + B = C justificando cada operación y extendiendo el procedimiento a coeficientes racionales sencillos.",
-        "conocimientosPrevios": [
-          "operaciones con enteros",
-          "igualdad",
-          "fracciones básicas"
-        ],
-        "fecha": "2026-08-19",
-        "estado": "publicado",
-        "ruta": "/erik/kenia/despejes-lineales/",
-        "componentes": {
-          "explicacion": true,
-          "demostraciones": false,
-          "ejercicios": true,
-          "juegos": true,
-          "calculadoras": true
-        },
-        "archivoMetadatos": "erik/kenia/despejes-lineales/sesion.json"
-      },
-      {
-        "id": "encontrar-exponente-esteba",
-        "slug": "encontrar-el-exponente",
-        "tipo": "sesion",
-        "usuario": "esteba-karen",
-        "titulo": "Encontrar el exponente",
-        "descripcion": "Ecuaciones exponenciales sencillas resueltas al reconocer potencias conocidas.",
-        "objetivo": "Resolver ecuaciones exponenciales básicas reescribiendo ambos miembros con la misma base.",
-        "conocimientosPrevios": [
-          "notación exponencial",
-          "potencias de números naturales"
-        ],
-        "fecha": "2026-08-11",
-        "estado": "publicado",
-        "ruta": "/karen/esteba/encontrar-el-exponente/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "karen/esteba/encontrar-el-exponente/sesion.json"
-      },
-      {
-        "id": "logaritmos-esteba",
-        "slug": "logaritmos",
-        "tipo": "sesion",
-        "usuario": "esteba-karen",
-        "titulo": "Logaritmos",
-        "descripcion": "Relación entre forma exponencial y logarítmica, identificación de sus partes y cálculos básicos.",
-        "objetivo": "Convertir entre forma exponencial y logarítmica e interpretar base, argumento y resultado.",
-        "conocimientosPrevios": [
-          "potencias conocidas",
-          "resolución de exponentes con bases iguales"
-        ],
-        "fecha": "2026-08-19",
-        "estado": "publicado",
-        "ruta": "/karen/esteba/logaritmos/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "karen/esteba/logaritmos/sesion.json"
-      },
-      {
-        "id": "cuadrilateros-jonny",
-        "slug": "cuadrilateros",
-        "tipo": "sesion",
-        "usuario": "jonny-karen",
-        "titulo": "Cuadriláteros",
-        "descripcion": "Clasificación visual, propiedades, perímetros y áreas de los cuadriláteros principales.",
-        "objetivo": "Identificar cuadriláteros por sus propiedades y calcular perímetros y áreas en casos sencillos.",
-        "conocimientosPrevios": [
-          "medición de lados",
-          "perímetro y área",
-          "ángulos rectos"
-        ],
-        "fecha": "2026-08-17",
-        "estado": "publicado",
-        "ruta": "/karen/jonny/cuadrilateros/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "karen/jonny/cuadrilateros/sesion.json"
-      },
-      {
-        "id": "formula-general-jonny",
-        "slug": "formula-general",
-        "tipo": "sesion",
-        "usuario": "jonny-karen",
-        "titulo": "Fórmula general",
-        "descripcion": "Identificación de coeficientes y resolución paso a paso de ecuaciones cuadráticas.",
-        "objetivo": "Resolver ecuaciones cuadráticas mediante la fórmula general identificando y sustituyendo correctamente a, b y c.",
-        "conocimientosPrevios": [
-          "números con signo",
-          "potencias y raíces cuadradas",
-          "operaciones con fracciones"
-        ],
-        "fecha": "2026-08-13",
-        "estado": "publicado",
-        "ruta": "/karen/jonny/formula-general/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "karen/jonny/formula-general/sesion.json"
-      },
-      {
-        "id": "partes-circulo-milndred",
-        "slug": "partes-del-circulo",
-        "tipo": "sesion",
-        "usuario": "milndred-karen",
-        "titulo": "Partes del círculo",
-        "descripcion": "Centro, radio, diámetro, cuerda, arco, circunferencia y fórmulas básicas.",
-        "objetivo": "Identificar visualmente las partes principales del círculo y usar radio y diámetro en cálculos sencillos.",
-        "conocimientosPrevios": [
-          "medición de segmentos",
-          "multiplicación y uso de pi"
-        ],
-        "fecha": "2026-08-18",
-        "estado": "publicado",
-        "ruta": "/karen/milndred/partes-del-circulo/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "karen/milndred/partes-del-circulo/sesion.json"
-      },
-      {
-        "id": "teoria-exponentes-milndred",
-        "slug": "teoria-de-exponentes",
-        "tipo": "sesion",
-        "usuario": "milndred-karen",
-        "titulo": "Teoría de exponentes",
-        "descripcion": "Multiplicación repetida, base, exponente, potencia y primeras expresiones algebraicas.",
-        "objetivo": "Relacionar la multiplicación repetida con la notación exponencial e identificar base, exponente y potencia.",
-        "conocimientosPrevios": [
-          "multiplicación de números naturales",
-          "uso básico de letras en expresiones"
-        ],
-        "fecha": "2026-08-12",
-        "estado": "publicado",
-        "ruta": "/karen/milndred/teoria-de-exponentes/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "karen/milndred/teoria-de-exponentes/sesion.json"
-      },
-      {
-        "id": "triangulos-semejantes-raul",
-        "slug": "triangulos-semejantes",
-        "tipo": "sesion",
-        "usuario": "raul-karen",
-        "titulo": "Triángulos semejantes",
-        "descripcion": "Criterios AA, LAL y LLL, figuras comparables y cálculo de longitudes por proporcionalidad.",
-        "objetivo": "Determinar cuándo dos triángulos son semejantes, identificar el criterio y calcular longitudes faltantes.",
-        "conocimientosPrevios": [
-          "razones y proporciones",
-          "suma de ángulos interiores de un triángulo"
-        ],
-        "fecha": "2026-08-20",
-        "estado": "publicado",
-        "ruta": "/karen/raul/triangulos-semejantes/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "karen/raul/triangulos-semejantes/sesion.json"
-      },
-      {
-        "id": "continuidad-topologica-mateo",
-        "slug": "continuidad-topologica",
-        "tipo": "sesion",
-        "usuario": "mateo-rainer",
-        "titulo": "Continuidad topológica",
-        "descripcion": "Continuidad mediante preimágenes de abiertos, ejemplos básicos y composición de aplicaciones continuas.",
-        "objetivo": "Utilizar la definición topológica de continuidad y justificar formalmente ejemplos y composiciones.",
-        "conocimientosPrevios": [
-          "espacios topológicos",
-          "preimagen de un conjunto",
-          "composición de funciones"
-        ],
-        "fecha": "2026-08-18",
-        "estado": "publicado",
-        "ruta": "/rainer/mateo/continuidad-topologica/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "rainer/mateo/continuidad-topologica/sesion.json"
-      },
-      {
-        "id": "espacios-topologicos-sofia",
-        "slug": "espacios-topologicos",
-        "tipo": "sesion",
-        "usuario": "sofia-rainer",
-        "titulo": "Espacios topológicos",
-        "descripcion": "Definición axiomática, primeros ejemplos y verificación de topologías sobre conjuntos finitos.",
-        "objetivo": "Reconocer una topología, comprobar sus axiomas y distinguir las topologías indiscreta y discreta.",
-        "conocimientosPrevios": [
-          "teoría elemental de conjuntos",
-          "uniones e intersecciones",
-          "funciones"
-        ],
-        "fecha": "2026-08-19",
-        "estado": "publicado",
-        "ruta": "/rainer/sofia/espacios-topologicos/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "rainer/sofia/espacios-topologicos/sesion.json"
-      },
-      {
-        "id": "interior-clausura-frontera-sofia",
-        "slug": "interior-clausura-frontera",
-        "tipo": "sesion",
-        "usuario": "sofia-rainer",
-        "titulo": "Interior, clausura y frontera",
-        "descripcion": "Construcciones asociadas a un subconjunto y relaciones básicas entre interior, clausura y frontera.",
-        "objetivo": "Calcular interior, clausura y frontera en ejemplos sencillos y demostrar una identidad entre estas construcciones.",
-        "conocimientosPrevios": [
-          "espacios topológicos",
-          "conjuntos abiertos y cerrados",
-          "complementos"
-        ],
-        "fecha": "2026-08-16",
-        "estado": "publicado",
-        "ruta": "/rainer/sofia/interior-clausura-frontera/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "archivoMetadatos": "rainer/sofia/interior-clausura-frontera/sesion.json"
       }
     ]
   }

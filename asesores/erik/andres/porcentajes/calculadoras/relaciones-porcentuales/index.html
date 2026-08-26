@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadoras de porcentajes | Sesión de Andrés</title>
+  <meta name="description" content="Tres calculadoras automáticas para explorar porcentajes, descuentos y aumentos desde diferentes valores fijos.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Calculadoras de porcentajes | Sesión de Andrés">
+  <meta property="og:description" content="Modifica una cantidad y observa cómo se actualizan automáticamente porcentajes, cambios y resultados.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <link rel="icon" href="../../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="../../../../../../recursos/css/base.css?v=20260826-base1">
+  <link rel="stylesheet" href="estilos.css?v=20260826-local1">
+  <script src="../../../../../../recursos/js/navegacion.js?v=20260825-espacios1" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
+  <script type="module" src="script.mjs?v=20260810-calculadora2"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../../">Inicio</a></li><li><a href="../../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../../" aria-current="page">Salones</a></li><li><a href="../../../../../../contacto/">Contacto</a></li></ul></nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="learning-site module-site percentage-theme percentage-calculator">
+    <div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../../">Salones</a></li><li><a href="../../../../">Erik</a></li><li><a href="../../../">Andrés</a></li><li><a href="../../">Porcentajes</a></li><li aria-current="page">Calculadora</li></ol></nav></div>
+
+    <header class="percentage-component-hero calculator-hero">
+      <div class="container component-intro-grid">
+        <div><p class="eyebrow">Calculadoras · Actualización automática</p><h1>Tres relaciones en movimiento</h1><p class="lead">Elige qué valor debe permanecer fijo y modifica cualquier otro. Las demás cantidades se actualizarán al instante para mostrar cómo se conectan.</p></div>
+        <div class="component-mark calculator-mark" aria-hidden="true"><strong>3</strong><small>calculadoras sincronizadas</small></div>
+      </div>
+    </header>
+
+    <nav class="percentage-route" aria-label="Secciones de la sesión"><div class="container"><ul><li><a href="../../">Inicio</a></li><li><a href="../../explicacion/">Teoría</a></li><li><a href="../../ejercicios/practica-de-porcentajes/">Ejercicios</a></li><li><a href="./" aria-current="page">Calculadora</a></li><li><a href="../../juegos/ticket-bajo-la-lupa/">Juego</a></li></ul></div></nav>
+
+    <section class="calculator-introduction" aria-labelledby="calculator-intro-title">
+      <div class="container calculator-intro-grid">
+        <div><p class="eyebrow">Cómo utilizarlas</p><h2 id="calculator-intro-title">Dos datos determinan toda la relación</h2><p>Una sola cantidad no siempre basta para encontrar las demás. Por eso cada calculadora conserva un valor fijo y toma como segundo dato la casilla que editas.</p></div>
+        <ol class="calculator-steps"><li><span>1</span><strong>Elige qué valor mantener fijo</strong></li><li><span>2</span><strong>Modifica cualquier otra casilla</strong></li><li><span>3</span><strong>Observa los valores reconstruidos</strong></li></ol>
+      </div>
+    </section>
+
+    <section class="calculator-section" aria-labelledby="basic-calculator-title">
+      <div class="container">
+        <article class="synced-calculator" data-calculator="basic">
+          <header class="calculator-heading"><span>1</span><div><p>Relación fundamental</p><h2 id="basic-calculator-title">Calculadora de porcentajes</h2><small>Relaciona una cantidad total, una tasa y la parte correspondiente.</small></div></header>
+          <div class="calculator-workspace">
+            <div class="calculator-controls">
+              <label class="anchor-control" for="basic-anchor"><span>Mantener fijo</span><select id="basic-anchor" data-anchor><option value="total">Cantidad total</option><option value="rate">Porcentaje</option><option value="part">Parte correspondiente</option></select><small>La casilla fija no se modifica automáticamente.</small></label>
+              <button class="reset-calculator" type="button" data-reset>Restablecer ejemplo</button>
+            </div>
+            <div class="calculation-stack">
+              <label class="sync-row" data-row="total" for="basic-total"><span class="sync-label"><strong>Cantidad total</strong><small>Representa la referencia completa</small></span><span class="sync-input"><input id="basic-total" name="total" type="text" inputmode="decimal" value="100" data-value="total"><i class="fixed-indicator">Fijo</i></span></label>
+              <span class="stack-connector" aria-hidden="true">×</span>
+              <label class="sync-row" data-row="rate" for="basic-rate"><span class="sync-label"><strong>Porcentaje</strong><small>Tasa de cada cien</small></span><span class="sync-input"><input id="basic-rate" name="rate" type="text" inputmode="decimal" value="100" data-value="rate"><b>%</b><i class="fixed-indicator">Fijo</i></span></label>
+              <span class="stack-connector" aria-hidden="true">=</span>
+              <label class="sync-row result-row" data-row="part" for="basic-part"><span class="sync-label"><strong>Parte correspondiente</strong><small>Resultado de aplicar el porcentaje</small></span><span class="sync-input"><input id="basic-part" name="part" type="text" inputmode="decimal" value="100" data-value="part"><i class="fixed-indicator">Fijo</i></span></label>
+            </div>
+            <div class="calculator-reading"><span>Relación utilizada</span><strong data-formula aria-label="Parte igual a total por porcentaje entre cien">P = T por p entre 100</strong><p data-summary>100% de 100 es 100.</p></div>
+            <p class="calculator-status" role="status" aria-live="polite" data-status>La cantidad total está fija. Modifica el porcentaje o la parte.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="calculator-section alternate-calculator-section" aria-labelledby="discount-calculator-title">
+      <div class="container">
+        <article class="synced-calculator" data-calculator="discount">
+          <header class="calculator-heading"><span>2</span><div><p>Disminución porcentual</p><h2 id="discount-calculator-title">Calculadora de descuentos</h2><small>Distingue la tasa, la cantidad descontada y lo que queda.</small></div></header>
+          <div class="calculator-workspace">
+            <div class="calculator-controls">
+              <label class="anchor-control" for="discount-anchor"><span>Mantener fijo</span><select id="discount-anchor" data-anchor><option value="original">Cantidad original</option><option value="rate">Porcentaje de descuento</option><option value="amount">Cantidad descontada</option><option value="result">Cantidad resultante</option></select><small>Elige una de las cuatro cantidades como referencia.</small></label>
+              <button class="reset-calculator" type="button" data-reset>Restablecer ejemplo</button>
+            </div>
+            <div class="calculation-stack">
+              <label class="sync-row" data-row="original" for="discount-original"><span class="sync-label"><strong>Cantidad original</strong><small>Representa 100% antes del descuento</small></span><span class="sync-input"><input id="discount-original" name="original" type="text" inputmode="decimal" value="100" data-value="original"><i class="fixed-indicator">Fijo</i></span></label>
+              <span class="stack-connector" aria-hidden="true">−</span>
+              <fieldset class="change-group"><legend>Descuento</legend><div class="change-pair">
+                <label class="sync-row" data-row="rate" for="discount-rate"><span class="sync-label"><strong>Porcentaje</strong><small>Tasa descontada</small></span><span class="sync-input"><input id="discount-rate" name="rate" type="text" inputmode="decimal" value="100" data-value="rate"><b>%</b><i class="fixed-indicator">Fijo</i></span></label>
+                <label class="sync-row" data-row="amount" for="discount-amount"><span class="sync-label"><strong>Cantidad descontada</strong><small>Parte que se resta</small></span><span class="sync-input"><input id="discount-amount" name="amount" type="text" inputmode="decimal" value="100" data-value="amount"><i class="fixed-indicator">Fijo</i></span></label>
+              </div></fieldset>
+              <span class="stack-connector" aria-hidden="true">=</span>
+              <label class="sync-row result-row" data-row="result" for="discount-result"><span class="sync-label"><strong>Cantidad resultante</strong><small>Parte conservada después del descuento</small></span><span class="sync-input"><input id="discount-result" name="result" type="text" inputmode="decimal" value="0" data-value="result"><i class="fixed-indicator">Fijo</i></span></label>
+            </div>
+            <div class="calculator-reading"><span>Relación utilizada</span><strong data-formula>resultado = original − cantidad descontada</strong><p data-summary>De 100 se descuentan 100 (100%) y quedan 0.</p></div>
+            <p class="calculator-status" role="status" aria-live="polite" data-status>La cantidad original está fija. Modifica el porcentaje, la cantidad descontada o el resultado.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="calculator-section" aria-labelledby="increase-calculator-title">
+      <div class="container">
+        <article class="synced-calculator" data-calculator="increase">
+          <header class="calculator-heading"><span>3</span><div><p>Aumento porcentual</p><h2 id="increase-calculator-title">Calculadora de aumentos</h2><small>Conecta la tasa, la cantidad agregada y el nuevo resultado.</small></div></header>
+          <div class="calculator-workspace">
+            <div class="calculator-controls">
+              <label class="anchor-control" for="increase-anchor"><span>Mantener fijo</span><select id="increase-anchor" data-anchor><option value="original">Cantidad original</option><option value="rate">Porcentaje de aumento</option><option value="amount">Cantidad aumentada</option><option value="result">Cantidad resultante</option></select><small>Elige una de las cuatro cantidades como referencia.</small></label>
+              <button class="reset-calculator" type="button" data-reset>Restablecer ejemplo</button>
+            </div>
+            <div class="calculation-stack">
+              <label class="sync-row" data-row="original" for="increase-original"><span class="sync-label"><strong>Cantidad original</strong><small>Representa 100% antes del aumento</small></span><span class="sync-input"><input id="increase-original" name="original" type="text" inputmode="decimal" value="100" data-value="original"><i class="fixed-indicator">Fijo</i></span></label>
+              <span class="stack-connector" aria-hidden="true">+</span>
+              <fieldset class="change-group"><legend>Aumento</legend><div class="change-pair">
+                <label class="sync-row" data-row="rate" for="increase-rate"><span class="sync-label"><strong>Porcentaje</strong><small>Tasa agregada</small></span><span class="sync-input"><input id="increase-rate" name="rate" type="text" inputmode="decimal" value="100" data-value="rate"><b>%</b><i class="fixed-indicator">Fijo</i></span></label>
+                <label class="sync-row" data-row="amount" for="increase-amount"><span class="sync-label"><strong>Cantidad aumentada</strong><small>Parte que se suma</small></span><span class="sync-input"><input id="increase-amount" name="amount" type="text" inputmode="decimal" value="100" data-value="amount"><i class="fixed-indicator">Fijo</i></span></label>
+              </div></fieldset>
+              <span class="stack-connector" aria-hidden="true">=</span>
+              <label class="sync-row result-row" data-row="result" for="increase-result"><span class="sync-label"><strong>Cantidad resultante</strong><small>Total después del aumento</small></span><span class="sync-input"><input id="increase-result" name="result" type="text" inputmode="decimal" value="200" data-value="result"><i class="fixed-indicator">Fijo</i></span></label>
+            </div>
+            <div class="calculator-reading"><span>Relación utilizada</span><strong data-formula>resultado = original + cantidad aumentada</strong><p data-summary>A 100 se agregan 100 (100%) y se obtienen 200.</p></div>
+            <p class="calculator-status" role="status" aria-live="polite" data-status>La cantidad original está fija. Modifica el porcentaje, la cantidad aumentada o el resultado.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="calculator-closing" aria-labelledby="calculator-closing-title"><div class="container calculator-closing-grid"><div><p class="eyebrow">La idea que debes observar</p><h2 id="calculator-closing-title">Aplicar un cambio multiplica; deshacerlo divide</h2></div><p>Cuando fijas una tasa, cambiar la cantidad original produce el resultado directo. Cuando fijas el resultado o la cantidad modificada, la calculadora utiliza la relación inversa para reconstruir la base.</p></div></section>
+
+    <noscript><div class="container"><p class="calculator-noscript">Activa JavaScript en tu navegador para utilizar las calculadoras automáticas.</p></div></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../../">Inicio</a></li><li><a href="../../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../../">Salones</a></li><li><a href="../../../../../../contacto/">Contacto</a></li></ul></nav></div>
+    <div class="container footer-legal"><p class="footer-copyright">© 2026 Matemáticas a Domicilio</p><p class="footer-legal-links"><a href="../../../../../../legal/aviso-de-privacidad/">Aviso de Privacidad</a><span aria-hidden="true">·</span><a href="../../../../../../legal/terminos-y-condiciones/">Términos y Condiciones</a></p><p class="footer-location">Mérida, Yucatán, México</p></div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 999 129 3497"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.84 9.84 0 0 0-8.42 14.92L2.05 22l5.2-1.53A9.94 9.94 0 1 0 12.04 2Zm0 17.99a8 8 0 0 1-4.09-1.12l-.29-.17-3.09.91.92-3-.19-.31A8 8 0 1 1 12.04 20Zm4.39-5.99c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19a7.24 7.24 0 0 1-1.34-1.67c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46a.88.88 0 0 0-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg></a>
+</body>
+</html>

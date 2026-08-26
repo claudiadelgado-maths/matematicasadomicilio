@@ -1,6 +1,7 @@
 {
   "id": "calculadora-de-signos",
   "tipo": "calculadora",
+  "simbolo": "±",
   "tema": "ley-de-los-signos",
   "titulo": "Calculadora de signos",
   "descripcion": "Multiplica o divide dos enteros y explica la regla del signo en cinco pasos.",

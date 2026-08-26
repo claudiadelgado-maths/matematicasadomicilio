@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprender las sucesiones aritméticas | Alejandrina</title>
+  <meta name="description" content="Construye paso a paso la fórmula de una sucesión aritmética a partir de posiciones, diferencias y saltos.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="../../../../../recursos/css/base.css?v=20260826-base1">
+  <link rel="stylesheet" href="estilos.css?v=20260826-local1">
+  <script src="../../../../../recursos/js/navegacion.js?v=20260825-espacios1" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false,strict:'ignore'});"></script>
+  <script type="module" src="script.mjs?v=20260825-teoria1"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../" aria-current="page">Salones</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav></div></header>
+
+  <main id="contenido" class="learning-site module-site sequence-site sequence-theory-site">
+    <div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../">Salones</a></li><li><a href="../../../">Erik</a></li><li><a href="../../">Alejandrina</a></li><li><a href="../">Sucesiones aritméticas</a></li><li aria-current="page">Explicación</li></ol></nav></div>
+
+    <header class="learning-page-hero sequence-hero theory-hero"><div class="container theory-hero-grid">
+      <div><p class="eyebrow">Teoría y explicación · Sesión 1</p><h1>Comprender una sucesión aritmética</h1><p class="lead">No comenzaremos memorizando una fórmula. Primero observaremos qué cambia, cuánto cambia y cuántos saltos necesitamos para llegar a una posición.</p></div>
+      <aside class="theory-focus"><span aria-hidden="true">→</span><p><strong>Pregunta guía</strong>Si cada paso cambia siempre lo mismo, ¿cómo podemos llegar directamente a cualquier término?</p></aside>
+    </div></header>
+
+    <section class="theory-chapter" aria-labelledby="everyday-title"><div class="container">
+      <header class="chapter-heading"><p class="section-kicker">1 · Antes del vocabulario</p><h2 id="everyday-title">Un patrón que aumenta siempre lo mismo</h2><p>Imagina que comienzas con 10 puntos y en cada nivel de un juego ganas 5 puntos más que en el anterior.</p></header>
+      <div class="everyday-pattern">
+        <ol class="pattern-terms" aria-label="Sucesión diez, quince, veinte, veinticinco, treinta"><li><small>nivel 1</small><strong>10</strong></li><li><span>+5</span><small>nivel 2</small><strong>15</strong></li><li><span>+5</span><small>nivel 3</small><strong>20</strong></li><li><span>+5</span><small>nivel 4</small><strong>25</strong></li><li><span>+5</span><small>nivel 5</small><strong>30</strong></li></ol>
+        <div class="observation-grid"><article><strong>¿Qué está pasando?</strong><p>Los números aumentan siguiendo un patrón.</p></article><article><strong>¿Cuánto aumenta?</strong><p>Cada nuevo término suma exactamente 5.</p></article><article><strong>¿Qué número sigue?</strong><p>Después de 30 viene 35, porque volvemos a sumar 5.</p></article><article><strong>¿Dónde empezamos?</strong><p>El primer valor de la lista fue 10.</p></article></div>
+      </div>
+      <aside class="concept-callout"><span aria-hidden="true">✓</span><p><strong>Esta es la idea central.</strong> Una sucesión aritmética es una lista ordenada en la que pasar de un término al siguiente siempre requiere sumar la misma cantidad.</p></aside>
+    </div></section>
+
+    <section class="theory-chapter theory-tint" aria-labelledby="positions-title"><div class="container">
+      <header class="chapter-heading"><p class="section-kicker">2 · Posición y valor</p><h2 id="positions-title">n indica el lugar; aₙ indica el número que vive ahí</h2><p>Observa la sucesión \(7, 12, 17, 22, 27, \ldots\). Cada término tiene una posición y un valor. Son datos relacionados, pero no significan lo mismo.</p></header>
+      <div class="position-table" role="table" aria-label="Posiciones y términos de la sucesión">
+        <div role="row"><strong role="columnheader">posición n</strong><span role="cell">1</span><span role="cell">2</span><span role="cell">3</span><span role="cell">4</span><span role="cell">5</span></div>
+        <div role="row"><strong role="columnheader">término aₙ</strong><span role="cell">7</span><span role="cell">12</span><span role="cell">17</span><span role="cell">22</span><span role="cell">27</span></div>
+      </div>
+      <div class="position-examples"><article><div class="sequence-math">$$n=1\quad\longleftrightarrow\quad a_1=7$$</div><p>La posición es 1 y el valor que ocupa esa posición es 7.</p></article><article><div class="sequence-math">$$n=4\quad\longleftrightarrow\quad a_4=22$$</div><p>La posición es 4 y el valor situado ahí es 22; no debemos confundir 4 con 22.</p></article></div>
+    </div></section>
+
+    <section class="theory-chapter" aria-labelledby="difference-title"><div class="container">
+      <header class="chapter-heading"><p class="section-kicker">3 · Diferencia común</p><h2 id="difference-title">Compara siempre términos consecutivos</h2><p>La diferencia común se representa con \(d\) y se obtiene restando a cada término el término anterior. El orden importa porque conserva el signo del cambio.</p></header>
+      <div class="difference-grid"><article class="difference-card"><p class="section-kicker">Sucesión creciente</p><h3>\(7, 12, 17, 22, 27, \ldots\)</h3><div class="difference-steps"><span>\(12-7=5\)</span><span>\(17-12=5\)</span><span>\(22-17=5\)</span></div><div class="sequence-math">$$d=5$$</div><p>La diferencia es positiva porque cada término es mayor que el anterior.</p></article><article class="difference-card difference-card-negative"><p class="section-kicker">Sucesión decreciente</p><h3>\(30, 26, 22, 18, 14, \ldots\)</h3><div class="difference-steps"><span>\(26-30=-4\)</span><span>\(22-26=-4\)</span><span>\(18-22=-4\)</span></div><div class="sequence-math">$$d=-4$$</div><p>También es aritmética: la diferencia es constante aunque cada salto reste 4.</p></article></div>
+      <div class="definition-strip"><div class="sequence-math">$$d=a_{n+1}-a_n$$</div><p>No necesitas comenzar con símbolos para encontrarla: compara cada par de términos vecinos. Si todas las restas coinciden, la sucesión es aritmética; si alguna cambia, no lo es.</p></div>
+    </div></section>
+
+    <section class="theory-chapter theory-highlight" aria-labelledby="jumps-title"><div class="container">
+      <header class="chapter-heading"><p class="section-kicker">4 · Construir, no memorizar</p><h2 id="jumps-title">Desde a₁ hasta aₙ hay n − 1 saltos</h2><p>Partimos de 7 y cada salto vale 5. Observa cómo cambia únicamente la cantidad de saltos.</p></header>
+      <ol class="jump-line"><li><strong>a₁ = 7</strong><small>0 saltos</small></li><li><strong>a₂ = 7 + 1(5)</strong><small>1 salto</small></li><li><strong>a₃ = 7 + 2(5)</strong><small>2 saltos</small></li><li><strong>a₄ = 7 + 3(5)</strong><small>3 saltos</small></li></ol>
+      <div class="jump-conclusion"><p>Si la posición es \(n\), la cantidad de saltos siempre es una unidad menor:</p><div class="sequence-math">$$a_n=a_1+(n-1)d$$</div><p>Primer término + cantidad de saltos × tamaño de cada salto. Por ejemplo, para llegar a \(a_5\) desde \(a_1\) se necesitan \(5-1=4\) saltos.</p></div>
+    </div></section>
+
+    <section class="theory-chapter" aria-labelledby="formula-title"><div class="container">
+      <header class="chapter-heading"><p class="section-kicker">5 · Anatomía interactiva</p><h2 id="formula-title">Explora cada parte de la fórmula</h2><p>Pulsa un elemento para recordar qué representa y cómo se relaciona con la sucesión.</p></header>
+      <div class="formula-lab">
+        <div class="formula-selector" role="group" aria-label="Partes de la fórmula general"><button type="button" data-formula-part="an" aria-pressed="true">aₙ</button><span>=</span><button type="button" data-formula-part="a1" aria-pressed="false">a₁</button><span>+</span><span>(</span><button type="button" data-formula-part="n" aria-pressed="false">n</button><span>− 1)</span><button type="button" data-formula-part="d" aria-pressed="false">d</button><button class="jumps-button" type="button" data-formula-part="jumps" aria-pressed="false">¿por qué n − 1?</button></div>
+        <article class="formula-meaning" aria-live="polite"><p class="section-kicker">Significado</p><h3 data-meaning-title>aₙ · El valor que buscamos</h3><p data-meaning-description></p><div class="sequence-output" data-meaning-math></div><p class="meaning-example" data-meaning-example></p></article>
+      </div>
+    </div></section>
+
+    <section class="theory-chapter theory-tint" aria-labelledby="examples-title"><div class="container">
+      <header class="chapter-heading"><p class="section-kicker">6 · Ejemplos guiados</p><h2 id="examples-title">De una lista a su fórmula y de la fórmula a un término</h2><p>Trabaja siempre en el mismo orden: identifica el inicio, calcula la diferencia, escribe la fórmula y sustituye la posición.</p></header>
+      <div class="worked-examples"><article class="worked-example"><header><span class="sequence-number">1</span><div><p class="section-kicker">Construir la fórmula</p><h3>\(4, 10, 16, 22, 28, \ldots\)</h3></div></header><ol><li><strong>Primer término</strong><div class="sequence-math">$$a_1=4$$</div></li><li><strong>Diferencia común</strong><div class="sequence-math">$$d=10-4=6$$</div></li><li><strong>Sustituye en la estructura</strong><div class="sequence-math">$$a_n=4+6(n-1)$$</div></li><li><strong>Encuentra a₈</strong><div class="sequence-math">$$a_8=4+6(8-1)=4+42=46$$</div></li><li><strong>Comprueba el resultado</strong><p>Desde 4 hasta el octavo término hay siete saltos de 6; por eso sumamos 42 y obtenemos 46.</p></li></ol></article><article class="worked-example"><header><span class="sequence-number">2</span><div><p class="section-kicker">Una diferencia negativa</p><h3>\(30, 26, 22, 18, 14, \ldots\)</h3></div></header><ol><li><strong>Primer término</strong><div class="sequence-math">$$a_1=30$$</div></li><li><strong>Diferencia común</strong><div class="sequence-math">$$d=26-30=-4$$</div></li><li><strong>Escribe la resta con claridad</strong><div class="sequence-math">$$a_n=30-4(n-1)$$</div></li><li><strong>Encuentra a₆</strong><div class="sequence-math">$$a_6=30-4(6-1)=30-20=10$$</div></li><li><strong>Comprueba el resultado</strong><p>Al continuar la lista después de 14 restamos 4 una vez más y obtenemos 10, el mismo valor que produjo la fórmula.</p></li></ol></article></div>
+    </div></section>
+
+    <section class="theory-chapter" aria-labelledby="mistakes-title"><div class="container theory-two-columns">
+      <article><p class="section-kicker">7 · Errores que conviene detener</p><h2 id="mistakes-title">Pregunta qué representa cada número</h2><ul class="mistake-list"><li><strong>Confundir n con aₙ.</strong><span>n es una posición; aₙ es el valor colocado en esa posición.</span></li><li><strong>Usar n saltos.</strong><span>Desde el primer término hasta el término n existen n − 1 cambios.</span></li><li><strong>Restar en el orden contrario.</strong><span>Calcula término siguiente menos término anterior.</span></li><li><strong>Creer que siempre aumenta.</strong><span>Una diferencia negativa también puede ser constante.</span></li></ul></article>
+      <article class="not-arithmetic"><p class="section-kicker">Contraste importante</p><h2>No toda lista con patrón es aritmética</h2><div class="sequence-math">$$3,7,12,18,25,\ldots$$</div><div class="difference-steps"><span>+4</span><span>+5</span><span>+6</span><span>+7</span></div><p>Las diferencias cambian. Por eso esta lista <strong>no</strong> es una sucesión aritmética.</p></article>
+    </div></section>
+
+    <section class="theory-chapter" aria-labelledby="summary-title"><div class="container"><article class="understanding-summary"><div><p class="section-kicker">Cierre de la sesión</p><h2 id="summary-title">Una idea conecta toda la sesión</h2><p>Una sucesión aritmética tiene una diferencia constante y cada término se alcanza contando saltos desde el primero.</p></div><div class="summary-formulas"><div class="sequence-math">$$d=a_2-a_1=a_3-a_2=\cdots$$</div><div class="sequence-math">$$a_n=a_1+(n-1)d$$</div></div><dl><div><dt>\(a_1\)</dt><dd>primer término</dd></div><div><dt>\(d\)</dt><dd>diferencia común</dd></div><div><dt>\(n\)</dt><dd>posición</dd></div><div><dt>\(a_n\)</dt><dd>valor en esa posición</dd></div></dl><p class="summary-message"><strong>Para llegar desde a₁ hasta aₙ, damos n − 1 saltos de tamaño d.</strong></p><a class="primary-button theory-action" href="../ejercicios/">Practicar con sucesiones nuevas</a></article></div></section>
+
+    <section class="component-next"><div class="container"><a href="../">← Volver a la sesión</a><a href="../calculadoras/">Analizar una sucesión →</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../">Salones</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p>© 2026 Matemáticas a Domicilio</p><p><a href="../../../../../legal/aviso-de-privacidad/">Aviso de Privacidad</a> · <a href="../../../../../legal/terminos-y-condiciones/">Términos y Condiciones</a></p><p>Mérida, Yucatán, México</p></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/529991293497?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas%20de%20matem%C3%A1ticas%20a%20domicilio." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 999 129 3497"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.84 9.84 0 0 0-8.42 14.92L2.05 22l5.2-1.53A9.94 9.94 0 1 0 12.04 2Zm0 17.99a8 8 0 0 1-4.09-1.12l-.29-.17-3.09.91.92-3-.19-.31A8 8 0 1 1 12.04 20Zm4.39-5.99c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19a7.24 7.24 0 0 1-1.34-1.67c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46a.88.88 0 0 0-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg></a>
+</body>
+</html>

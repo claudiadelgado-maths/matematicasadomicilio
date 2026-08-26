@@ -1,6 +1,6 @@
 # Crear un usuario
 
-Ruta: `/[asesor]/[slug-del-alumno]/`.
+Ruta: `/asesores/[asesor]/[slug-del-alumno]/`.
 
 Incluye `index.html`, `README.md` y `usuario.json`. Las sesiones viven directamente dentro del casillero. Evita datos sensibles: usa solo el nombre o identificador autorizado y contenido educativo necesario.
 

@@ -11,10 +11,12 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <link rel="icon" href="../../recursos/svg/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../recursos/css/sistema-visual.css?v=20260723-modular1">
-  <link rel="stylesheet" href="../../recursos/css/modulos.css?v=20260723-modular1">
+  
+  
 
-  <script src="../../recursos/js/navegacion.js?v=20260723-modular1" defer></script>
+  <link rel="stylesheet" href="../../recursos/css/base.css?v=20260826-base1">
+  <link rel="stylesheet" href="estilos.css?v=20260826-local1">
+  <script src="../../recursos/js/navegacion.js?v=20260825-espacios1" defer></script>
 
 </head>
 <body>
@@ -23,7 +25,7 @@
     <div class="container header-inner">
       <a class="brand" href="../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
-      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../">Inicio</a></li><li><a href="../../nosotros/">Nosotros</a></li><li><a href="../../biblioteca/" aria-current="page">Biblioteca</a></li><li><a href="../../usuarios/">Salones</a></li><li><a href="../../contacto/">Contacto</a></li></ul></nav>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../">Inicio</a></li><li><a href="../../nosotros/">Nosotros</a></li><li><a href="../" aria-current="page">Biblioteca</a></li><li><a href="../../asesores/">Salones</a></li><li><a href="../../contacto/">Contacto</a></li></ul></nav>
     </div>
   </header>
 
@@ -40,12 +42,12 @@
       </div>
     </header>
     <section class="module-catalog-section" aria-label="Calculadoras">
-      <div class="container"><div class="module-catalog">
+      <div class="container"><div class="module-catalog" data-catalogo-biblioteca="calculadora">
           <article class="catalog-card">
             <span class="catalog-card-symbol" aria-hidden="true">½</span>
             <div class="catalog-card-meta"><span>Aritmética</span><span>Publicado</span></div>
             <h3>Calculadora de fracciones</h3>
-            <p>Suma, resta, multiplica y divide dos fracciones mostrando el procedimiento.</p>
+            <p>Resuelve una operación con signos y muestra normalización, simplificación, resultado exacto y decimal.</p>
             
             <a class="text-link" href="../temas/operaciones-con-fracciones/calculadoras/operaciones-con-fracciones/">Abrir recurso →</a>
           </article>
@@ -53,7 +55,7 @@
             <span class="catalog-card-symbol" aria-hidden="true">±</span>
             <div class="catalog-card-meta"><span>Aritmética</span><span>Publicado</span></div>
             <h3>Calculadora de signos</h3>
-            <p>Determina el signo resultante de una multiplicación y explica la regla.</p>
+            <p>Multiplica o divide dos enteros y explica la regla del signo en cinco pasos.</p>
             
             <a class="text-link" href="../temas/ley-de-los-signos/calculadoras/calculadora-de-signos/">Abrir recurso →</a>
           </article></div></div>
@@ -62,7 +64,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand"><a class="brand" href="../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div>
-      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../">Inicio</a></li><li><a href="../../nosotros/">Nosotros</a></li><li><a href="../../biblioteca/">Biblioteca</a></li><li><a href="../../usuarios/">Salones</a></li><li><a href="../../contacto/">Contacto</a></li></ul></nav>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../">Inicio</a></li><li><a href="../../nosotros/">Nosotros</a></li><li><a href="../">Biblioteca</a></li><li><a href="../../asesores/">Salones</a></li><li><a href="../../contacto/">Contacto</a></li></ul></nav>
     </div>
     <div class="container footer-legal">
       <p class="footer-copyright">© 2026 Matemáticas a Domicilio</p>

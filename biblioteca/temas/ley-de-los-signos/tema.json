@@ -1,6 +1,7 @@
 {
   "id": "ley-de-los-signos",
   "tipo": "tema",
+  "simbolo": "±",
   "titulo": "Ley de los signos",
   "descripcion": "Significado de los signos y reglas para multiplicar y dividir números positivos, negativos y cero.",
   "categoria": "Aritmética",

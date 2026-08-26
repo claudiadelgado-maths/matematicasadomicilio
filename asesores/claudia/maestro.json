@@ -1,0 +1,50 @@
+{
+  "id": "claudia",
+  "slug": "claudia",
+  "tipo": "maestro",
+  "titulo": "Claudia",
+  "nombreVisible": "Claudia",
+  "rol": "Asesora",
+  "descripcion": "Asesora multidisciplinar para alumnos curiosos que quieren explorar, crear y aprender más allá de los contenidos habituales de la escuela.",
+  "estado": "activo",
+  "ruta": "/asesores/claudia/",
+  "imagen": "/asesores/claudia/recursos/claudia.jpg",
+  "imagenAlt": "Claudia, asesora de Matemáticas a Domicilio",
+  "banner": {
+    "colorInicial": "#6f3dc4",
+    "colorFinal": "#ef6f91"
+  },
+  "ubicacion": {
+    "pais": "España",
+    "region": "Andalucía",
+    "ciudad": "Málaga"
+  },
+  "modalidad": {
+    "tipo": "individual"
+  },
+  "disponibilidad": {
+    "aceptaNuevosAlumnos": true,
+    "etiquetaDisponible": "Aceptando nuevos alumnos",
+    "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+  },
+  "precios": [
+    {
+      "id": "sesion-online-60",
+      "titulo": "Sesión",
+      "duracionMinutos": 60,
+      "importe": 120,
+      "moneda": "EUR",
+      "nota": "Incluye orientación individual y materiales preparados para la sesión."
+    }
+  ],
+  "sobre": [
+    "Claudia reúne experiencia en matemáticas, programación, marketing, publicidad, educación, moda, turismo y administración para conectar ideas de distintas áreas.",
+    "Acompaña especialmente a alumnos de alto rendimiento que desean ampliar sus conocimientos, desarrollar nuevas habilidades y convertir su curiosidad en proyectos propios."
+  ],
+  "metodologia": [
+    "Parte de una pregunta interesante y ayuda al alumno a descubrir qué necesita aprender para responderla.",
+    "Propone retos, recursos y pistas que favorecen la autonomía sin dejar al estudiante solo durante el proceso.",
+    "Relaciona diferentes disciplinas para que cada aprendizaje tenga un propósito visible y pueda utilizarse en situaciones nuevas.",
+    "Celebra la curiosidad, la experimentación y la capacidad de explicar con palabras propias lo que se ha descubierto."
+  ]
+}

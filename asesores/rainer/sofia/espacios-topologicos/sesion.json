@@ -1,0 +1,14 @@
+{
+  "id": "espacios-topologicos-sofia",
+  "slug": "espacios-topologicos",
+  "tipo": "sesion",
+  "usuario": "sofia-rainer",
+  "titulo": "Espacios topológicos",
+  "descripcion": "Definición axiomática, primeros ejemplos y verificación de topologías sobre conjuntos finitos.",
+  "objetivo": "Reconocer una topología, comprobar sus axiomas y distinguir las topologías indiscreta y discreta.",
+  "conocimientosPrevios": ["teoría elemental de conjuntos", "uniones e intersecciones", "funciones"],
+  "fecha": "2026-08-19",
+  "estado": "publicado",
+  "ruta": "/asesores/rainer/sofia/espacios-topologicos/",
+  "componentes": { "explicacion": false, "demostraciones": false, "ejercicios": false, "juegos": false, "calculadoras": false }
+}

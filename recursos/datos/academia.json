@@ -19,8 +19,8 @@
         "Celebra la curiosidad, la experimentación y la capacidad de explicar con palabras propias lo que se ha descubierto."
       ],
       "estado": "activo",
-      "ruta": "/claudia/",
-      "imagen": "/recursos/imagenes/claudia.jpg",
+      "ruta": "/asesores/claudia/",
+      "imagen": "/asesores/claudia/recursos/claudia.jpg",
       "imagenAlt": "Claudia, asesora de Matemáticas a Domicilio",
       "banner": {
         "colorInicial": "#6f3dc4",
@@ -54,7 +54,7 @@
           "id": "luca-claudia",
           "nombreVisible": "Luca",
           "descripcion": "Tres aventuras cortas para comprar, medir y jugar con las horas.",
-          "ruta": "/claudia/luca/",
+          "ruta": "/asesores/claudia/luca/",
           "personalizacion": {
             "simbolo": "🚀",
             "acento": "#6f3dc4",
@@ -67,21 +67,21 @@
               "titulo": "Consigue el cambio",
               "descripcion": "Una pequeña tienda para descubrir cuánto dinero regresa después de pagar.",
               "fecha": "2026-08-19",
-              "ruta": "/claudia/luca/consigue-el-cambio/"
+              "ruta": "/asesores/claudia/luca/consigue-el-cambio/"
             },
             {
               "id": "cuanto-mide-cuanto-pesa-luca",
               "titulo": "¿Cuánto mide? ¿Cuánto pesa?",
               "descripcion": "Un laboratorio de animales para explorar qué descubrimos con una báscula y con una regla.",
               "fecha": "2026-08-17",
-              "ruta": "/claudia/luca/cuanto-mide-cuanto-pesa/"
+              "ruta": "/asesores/claudia/luca/cuanto-mide-cuanto-pesa/"
             },
             {
               "id": "las-horas-luca",
               "titulo": "Las horas",
               "descripcion": "Un reloj grande para mover la manecilla y resolver pequeños retos con horas exactas.",
               "fecha": "2026-08-15",
-              "ruta": "/claudia/luca/las-horas/"
+              "ruta": "/asesores/claudia/luca/las-horas/"
             }
           ]
         }
@@ -104,8 +104,8 @@
         "Alterna observación y práctica para que el alumno pruebe inmediatamente cada idea y reciba retroalimentación."
       ],
       "estado": "activo",
-      "ruta": "/cortes/",
-      "imagen": "/recursos/imagenes/cortes.jpg",
+      "ruta": "/asesores/cortes/",
+      "imagen": "/asesores/cortes/recursos/cortes.jpg",
       "imagenAlt": "Personaje colorido con gafas pixeladas, imagen del salón de Cortés",
       "imagenAjuste": "cover",
       "banner": {
@@ -140,7 +140,7 @@
           "id": "pamela-cortes",
           "nombreVisible": "Pamela",
           "descripcion": "Sesiones de secundaria con geometría visual y práctica interactiva.",
-          "ruta": "/cortes/pamela/",
+          "ruta": "/asesores/cortes/pamela/",
           "personalizacion": {
             "simbolo": "P",
             "acento": "#087f8c",
@@ -153,7 +153,7 @@
               "titulo": "Teorema de Pitágoras",
               "descripcion": "Relación entre los lados de un triángulo rectángulo y práctica dinámica con respuestas enteras o raíces exactas.",
               "fecha": "2026-08-20",
-              "ruta": "/cortes/pamela/teorema-de-pitagoras/"
+              "ruta": "/asesores/cortes/pamela/teorema-de-pitagoras/"
             }
           ]
         },
@@ -161,7 +161,7 @@
           "id": "pedro-cortes",
           "nombreVisible": "Pedro",
           "descripcion": "Sesiones universitarias de teoría y aplicación del color.",
-          "ruta": "/cortes/pedro/",
+          "ruta": "/asesores/cortes/pedro/",
           "personalizacion": {
             "simbolo": "P",
             "acento": "#b21f78",
@@ -174,28 +174,28 @@
               "titulo": "1. El color y los modelos del color",
               "descripcion": "Percepción del color y diferencias de uso entre los modelos RGB, CMYK y HSL.",
               "fecha": "2026-08-20",
-              "ruta": "/cortes/pedro/color-y-modelos-del-color/"
+              "ruta": "/asesores/cortes/pedro/color-y-modelos-del-color/"
             },
             {
               "id": "propiedades-circulo-cromatico-pedro",
               "titulo": "2. Propiedades del color y círculo cromático",
               "descripcion": "Matiz, saturación, luminosidad y organización relacional del círculo cromático.",
               "fecha": "2026-08-20",
-              "ruta": "/cortes/pedro/propiedades-del-color-y-circulo-cromatico/"
+              "ruta": "/asesores/cortes/pedro/propiedades-del-color-y-circulo-cromatico/"
             },
             {
               "id": "armonia-temperaturas-pedro",
               "titulo": "3. Armonía del color y temperaturas",
               "descripcion": "Construcción de paletas análogas, complementarias y triádicas; lectura expresiva de colores cálidos y fríos.",
               "fecha": "2026-08-20",
-              "ruta": "/cortes/pedro/armonia-del-color-y-temperaturas/"
+              "ruta": "/asesores/cortes/pedro/armonia-del-color-y-temperaturas/"
             },
             {
               "id": "contraste-contexto-pedro",
               "titulo": "4. Contraste y contexto",
               "descripcion": "Contraste de valor, saturación, temperatura y extensión; influencia del entorno en la percepción del color.",
               "fecha": "2026-08-20",
-              "ruta": "/cortes/pedro/contraste-y-contexto/"
+              "ruta": "/asesores/cortes/pedro/contraste-y-contexto/"
             }
           ]
         }
@@ -221,8 +221,8 @@
         "Adapta los ejercicios y recursos de cada sesión al progreso individual del estudiante."
       ],
       "estado": "activo",
-      "ruta": "/elizabeth/",
-      "imagen": "/recursos/imagenes/elizabeth.jpg",
+      "ruta": "/asesores/elizabeth/",
+      "imagen": "/asesores/elizabeth/recursos/elizabeth.jpg",
       "imagenAlt": "Ilustración de mujer rubia con detalles verdes, imagen del salón de Elizabeth",
       "imagenAjuste": "cover",
       "banner": {
@@ -257,7 +257,7 @@
           "id": "gloria-elizabeth",
           "nombreVisible": "Gloria",
           "descripcion": "Sesiones universitarias sobre derivación, integración y el teorema fundamental del cálculo.",
-          "ruta": "/elizabeth/gloria/",
+          "ruta": "/asesores/elizabeth/gloria/",
           "personalizacion": {
             "simbolo": "G",
             "acento": "#7a5f37",
@@ -270,21 +270,21 @@
               "titulo": "1. Reglas de derivación",
               "descripcion": "Reglas de potencia, suma, producto, cociente y cadena para derivar con rapidez.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/gloria/reglas-de-derivacion/"
+              "ruta": "/asesores/elizabeth/gloria/reglas-de-derivacion/"
             },
             {
               "id": "reglas-integracion-gloria",
               "titulo": "2. Reglas esenciales de integración",
               "descripcion": "Antiderivadas, linealidad, regla de potencia y fórmulas elementales.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/gloria/reglas-de-integracion/"
+              "ruta": "/asesores/elizabeth/gloria/reglas-de-integracion/"
             },
             {
               "id": "teorema-fundamental-gloria",
               "titulo": "3. Teorema fundamental del cálculo",
               "descripcion": "Relación entre derivación e integración y evaluación de integrales definidas.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/gloria/teorema-fundamental-del-calculo/"
+              "ruta": "/asesores/elizabeth/gloria/teorema-fundamental-del-calculo/"
             }
           ]
         },
@@ -292,7 +292,7 @@
           "id": "jimena-elizabeth",
           "nombreVisible": "Jimena",
           "descripcion": "Sesiones universitarias de cálculo paramétrico e integrales de curva.",
-          "ruta": "/elizabeth/jimena/",
+          "ruta": "/asesores/elizabeth/jimena/",
           "personalizacion": {
             "simbolo": "J",
             "acento": "#6b5878",
@@ -305,14 +305,14 @@
               "titulo": "1. Derivada paramétrica",
               "descripcion": "Pendiente de una curva dada por x(t) e y(t), y condición para aplicar dy/dx.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/jimena/derivada-parametrica/"
+              "ruta": "/asesores/elizabeth/jimena/derivada-parametrica/"
             },
             {
               "id": "integral-curva-jimena",
               "titulo": "2. Integral de curva",
               "descripcion": "Parametrización, elemento de longitud ds e integración de campos escalares sobre una curva.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/jimena/integral-de-curva/"
+              "ruta": "/asesores/elizabeth/jimena/integral-de-curva/"
             }
           ]
         },
@@ -320,7 +320,7 @@
           "id": "kevin-elizabeth",
           "nombreVisible": "Kevin",
           "descripcion": "Sesiones universitarias sobre conjuntos, límites y derivada como límite.",
-          "ruta": "/elizabeth/kevin/",
+          "ruta": "/asesores/elizabeth/kevin/",
           "personalizacion": {
             "simbolo": "K",
             "acento": "#4b6670",
@@ -333,21 +333,21 @@
               "titulo": "1. Conjuntos",
               "descripcion": "Notación, pertenencia, subconjuntos y operaciones de unión, intersección, diferencia y complemento.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/kevin/conjuntos/"
+              "ruta": "/asesores/elizabeth/kevin/conjuntos/"
             },
             {
               "id": "limites-kevin",
               "titulo": "2. Límites",
               "descripcion": "Aproximación, leyes de límites y resolución de indeterminaciones sencillas por factorización.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/kevin/limites/"
+              "ruta": "/asesores/elizabeth/kevin/limites/"
             },
             {
               "id": "derivada-limite-kevin",
               "titulo": "3. La derivada como límite",
               "descripcion": "Definición de derivada como límite del cociente incremental e interpretación como pendiente.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/kevin/derivada-como-limite/"
+              "ruta": "/asesores/elizabeth/kevin/derivada-como-limite/"
             }
           ]
         },
@@ -355,7 +355,7 @@
           "id": "renata-elizabeth",
           "nombreVisible": "Renata",
           "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
-          "ruta": "/elizabeth/renata/",
+          "ruta": "/asesores/elizabeth/renata/",
           "personalizacion": {
             "simbolo": "R",
             "acento": "#526a42",
@@ -368,14 +368,14 @@
               "titulo": "1. Propiedades de un espacio vectorial",
               "descripcion": "Axiomas de espacio vectorial y criterio de subespacio con ejemplos en R² y polinomios.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/renata/propiedades-de-un-espacio-vectorial/"
+              "ruta": "/asesores/elizabeth/renata/propiedades-de-un-espacio-vectorial/"
             },
             {
               "id": "matrices-operaciones-renata",
               "titulo": "2. Matrices y sus operaciones",
               "descripcion": "Definición, dimensiones, suma, producto por escalar y multiplicación matricial.",
               "fecha": "2026-08-20",
-              "ruta": "/elizabeth/renata/matrices-y-operaciones/"
+              "ruta": "/asesores/elizabeth/renata/matrices-y-operaciones/"
             }
           ]
         }
@@ -398,8 +398,8 @@
         "Cierra cada caso relacionando la interpretación matemática con una decisión útil del contexto real."
       ],
       "estado": "activo",
-      "ruta": "/erick-chan/",
-      "imagen": "/recursos/imagenes/erick-chan.jpg",
+      "ruta": "/asesores/erick-chan/",
+      "imagen": "/asesores/erick-chan/recursos/erick-chan.jpg",
       "imagenAlt": "Ilustración en blanco y negro del salón de Erick Chan",
       "imagenAjuste": "contain",
       "banner": {
@@ -434,7 +434,7 @@
           "id": "alex-erick-chan",
           "nombreVisible": "Alex",
           "descripcion": "Sesiones de estadística aplicada a ventas y tecnología.",
-          "ruta": "/erick-chan/alex/",
+          "ruta": "/asesores/erick-chan/alex/",
           "personalizacion": {
             "simbolo": "A",
             "acento": "#276b70",
@@ -447,7 +447,7 @@
               "titulo": "Gráficas de barras en ventas",
               "descripcion": "Cómo organizar, comparar e interpretar datos de ventas mediante tres ejemplos de tecnología.",
               "fecha": "2026-08-20",
-              "ruta": "/erick-chan/alex/graficas-de-barras-en-ventas/"
+              "ruta": "/asesores/erick-chan/alex/graficas-de-barras-en-ventas/"
             }
           ]
         }
@@ -470,8 +470,8 @@
         "Evalúa el avance a partir del objetivo acordado y adapta las sesiones cuando las necesidades del alumno cambian."
       ],
       "estado": "activo",
-      "ruta": "/erik/",
-      "imagen": "/recursos/imagenes/admin.jpg",
+      "ruta": "/asesores/erik/",
+      "imagen": "/asesores/erik/recursos/admin.jpg",
       "imagenAlt": "Erik, asesor de Matemáticas a Domicilio",
       "banner": {
         "colorInicial": "#11110f",
@@ -505,41 +505,48 @@
           "id": "alejandrina",
           "nombreVisible": "Alejandrina",
           "descripcion": "Espacio de sesiones y recursos personalizados.",
-          "ruta": "/erik/alejandrina/",
+          "ruta": "/asesores/erik/alejandrina/",
           "personalizacion": {
             "simbolo": "A",
             "acento": "#15784e",
             "fondo": "#edf8f2"
           },
-          "ultimaActividad": "2026-08-21",
+          "ultimaActividad": "2026-08-25",
           "sesiones": [
+            {
+              "id": "sucesiones-aritmeticas-sesion-1",
+              "titulo": "Sucesiones aritméticas: términos, diferencia y fórmula general",
+              "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
+              "fecha": "2026-08-25",
+              "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/"
+            },
             {
               "id": "multiplicacion-de-binomios",
               "titulo": "Multiplicación de binomios",
               "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
               "fecha": "2026-08-21",
-              "ruta": "/erik/alejandrina/multiplicacion-de-binomios/"
+              "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/"
             },
             {
               "id": "diagramas-de-arboles",
               "titulo": "Diagramas de árboles",
               "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
               "fecha": "2026-07-29",
-              "ruta": "/erik/alejandrina/diagramas-de-arboles/"
+              "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/"
             },
             {
               "id": "medidas-de-posicion",
               "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
               "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
               "fecha": "2026-07-29",
-              "ruta": "/erik/alejandrina/medidas-de-posicion/"
+              "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/"
             },
             {
               "id": "datos-no-agrupados",
               "titulo": "Datos no agrupados",
               "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
               "fecha": "2026-07-24",
-              "ruta": "/erik/alejandrina/datos-no-agrupados/"
+              "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/"
             }
           ]
         },
@@ -547,7 +554,7 @@
           "id": "kenia-erik",
           "nombreVisible": "Kenia",
           "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
-          "ruta": "/erik/kenia/",
+          "ruta": "/asesores/erik/kenia/",
           "personalizacion": {
             "simbolo": "K",
             "acento": "#7a3f82",
@@ -560,7 +567,7 @@
               "titulo": "Despejes lineales",
               "descripcion": "Sesión de álgebra para aislar x mediante operaciones equivalentes en ambos lados de una ecuación lineal.",
               "fecha": "2026-08-19",
-              "ruta": "/erik/kenia/despejes-lineales/"
+              "ruta": "/asesores/erik/kenia/despejes-lineales/"
             }
           ]
         },
@@ -568,7 +575,7 @@
           "id": "andres",
           "nombreVisible": "Andrés",
           "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
-          "ruta": "/erik/andres/",
+          "ruta": "/asesores/erik/andres/",
           "personalizacion": {
             "simbolo": "A",
             "acento": "#b84d18",
@@ -581,7 +588,7 @@
               "titulo": "Porcentajes",
               "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
               "fecha": "2026-08-10",
-              "ruta": "/erik/andres/porcentajes/"
+              "ruta": "/asesores/erik/andres/porcentajes/"
             }
           ]
         },
@@ -589,7 +596,7 @@
           "id": "jose",
           "nombreVisible": "José",
           "descripcion": "Espacio personal para organizar pendientes de estudio.",
-          "ruta": "/erik/jose/",
+          "ruta": "/asesores/erik/jose/",
           "personalizacion": {
             "simbolo": "J",
             "acento": "#1f5fbd",
@@ -617,8 +624,8 @@
         "Destaca la información importante con una jerarquía visual clara y verifica qué necesita reforzarse en la siguiente sesión."
       ],
       "estado": "activo",
-      "ruta": "/karen/",
-      "imagen": "/recursos/imagenes/karen-mariana.png",
+      "ruta": "/asesores/karen/",
+      "imagen": "/asesores/karen/recursos/karen-mariana.png",
       "imagenAlt": "Gata tricolor dormida, imagen del salón de Karen Mariana",
       "imagenAjuste": "cover",
       "banner": {
@@ -654,7 +661,7 @@
           "id": "raul-karen",
           "nombreVisible": "Raul",
           "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
-          "ruta": "/karen/raul/",
+          "ruta": "/asesores/karen/raul/",
           "personalizacion": {
             "simbolo": "R",
             "acento": "#a45c18",
@@ -667,7 +674,7 @@
               "titulo": "Triángulos semejantes",
               "descripcion": "Criterios AA, LAL y LLL, figuras comparables y cálculo de longitudes por proporcionalidad.",
               "fecha": "2026-08-20",
-              "ruta": "/karen/raul/triangulos-semejantes/"
+              "ruta": "/asesores/karen/raul/triangulos-semejantes/"
             }
           ]
         },
@@ -675,7 +682,7 @@
           "id": "esteba-karen",
           "nombreVisible": "Esteba",
           "descripcion": "Sesiones de secundaria para comprender exponentes desconocidos y logaritmos.",
-          "ruta": "/karen/esteba/",
+          "ruta": "/asesores/karen/esteba/",
           "personalizacion": {
             "simbolo": "E",
             "acento": "#84509a",
@@ -688,14 +695,14 @@
               "titulo": "Logaritmos",
               "descripcion": "Relación entre forma exponencial y logarítmica, identificación de sus partes y cálculos básicos.",
               "fecha": "2026-08-19",
-              "ruta": "/karen/esteba/logaritmos/"
+              "ruta": "/asesores/karen/esteba/logaritmos/"
             },
             {
               "id": "encontrar-exponente-esteba",
               "titulo": "Encontrar el exponente",
               "descripcion": "Ecuaciones exponenciales sencillas resueltas al reconocer potencias conocidas.",
               "fecha": "2026-08-11",
-              "ruta": "/karen/esteba/encontrar-el-exponente/"
+              "ruta": "/asesores/karen/esteba/encontrar-el-exponente/"
             }
           ]
         },
@@ -703,7 +710,7 @@
           "id": "milndred-karen",
           "nombreVisible": "Milndred",
           "descripcion": "Sesiones de secundaria sobre exponentes y geometría del círculo.",
-          "ruta": "/karen/milndred/",
+          "ruta": "/asesores/karen/milndred/",
           "personalizacion": {
             "simbolo": "M",
             "acento": "#1f6f65",
@@ -716,14 +723,14 @@
               "titulo": "Partes del círculo",
               "descripcion": "Centro, radio, diámetro, cuerda, arco, circunferencia y fórmulas básicas.",
               "fecha": "2026-08-18",
-              "ruta": "/karen/milndred/partes-del-circulo/"
+              "ruta": "/asesores/karen/milndred/partes-del-circulo/"
             },
             {
               "id": "teoria-exponentes-milndred",
               "titulo": "Teoría de exponentes",
               "descripcion": "Multiplicación repetida, base, exponente, potencia y primeras expresiones algebraicas.",
               "fecha": "2026-08-12",
-              "ruta": "/karen/milndred/teoria-de-exponentes/"
+              "ruta": "/asesores/karen/milndred/teoria-de-exponentes/"
             }
           ]
         },
@@ -731,7 +738,7 @@
           "id": "jonny-karen",
           "nombreVisible": "Jonny",
           "descripcion": "Sesiones de secundaria sobre ecuaciones cuadráticas y cuadriláteros.",
-          "ruta": "/karen/jonny/",
+          "ruta": "/asesores/karen/jonny/",
           "personalizacion": {
             "simbolo": "J",
             "acento": "#a44548",
@@ -744,14 +751,14 @@
               "titulo": "Cuadriláteros",
               "descripcion": "Clasificación visual, propiedades, perímetros y áreas de los cuadriláteros principales.",
               "fecha": "2026-08-17",
-              "ruta": "/karen/jonny/cuadrilateros/"
+              "ruta": "/asesores/karen/jonny/cuadrilateros/"
             },
             {
               "id": "formula-general-jonny",
               "titulo": "Fórmula general",
               "descripcion": "Identificación de coeficientes y resolución paso a paso de ecuaciones cuadráticas.",
               "fecha": "2026-08-13",
-              "ruta": "/karen/jonny/formula-general/"
+              "ruta": "/asesores/karen/jonny/formula-general/"
             }
           ]
         }
@@ -774,8 +781,8 @@
         "Cierra con demostraciones en las que cada afirmación debe estar justificada con claridad."
       ],
       "estado": "activo",
-      "ruta": "/rainer/",
-      "imagen": "/recursos/imagenes/rainer.jpg",
+      "ruta": "/asesores/rainer/",
+      "imagen": "/asesores/rainer/recursos/rainer.jpg",
       "imagenAlt": "Rainer, asesor de Matemáticas a Domicilio",
       "banner": {
         "colorInicial": "#172033",
@@ -810,7 +817,7 @@
           "id": "sofia-rainer",
           "nombreVisible": "Sofía",
           "descripcion": "Recorrido universitario de Topología: estructuras básicas y conjuntos derivados.",
-          "ruta": "/rainer/sofia/",
+          "ruta": "/asesores/rainer/sofia/",
           "personalizacion": {
             "simbolo": "S",
             "acento": "#315c88",
@@ -823,14 +830,14 @@
               "titulo": "Espacios topológicos",
               "descripcion": "Definición axiomática, primeros ejemplos y verificación de topologías sobre conjuntos finitos.",
               "fecha": "2026-08-19",
-              "ruta": "/rainer/sofia/espacios-topologicos/"
+              "ruta": "/asesores/rainer/sofia/espacios-topologicos/"
             },
             {
               "id": "interior-clausura-frontera-sofia",
               "titulo": "Interior, clausura y frontera",
               "descripcion": "Construcciones asociadas a un subconjunto y relaciones básicas entre interior, clausura y frontera.",
               "fecha": "2026-08-16",
-              "ruta": "/rainer/sofia/interior-clausura-frontera/"
+              "ruta": "/asesores/rainer/sofia/interior-clausura-frontera/"
             }
           ]
         },
@@ -838,7 +845,7 @@
           "id": "mateo-rainer",
           "nombreVisible": "Mateo",
           "descripcion": "Recorrido universitario de Topología centrado en continuidad y aplicaciones entre espacios.",
-          "ruta": "/rainer/mateo/",
+          "ruta": "/asesores/rainer/mateo/",
           "personalizacion": {
             "simbolo": "M",
             "acento": "#465b3f",
@@ -851,7 +858,7 @@
               "titulo": "Continuidad topológica",
               "descripcion": "Continuidad mediante preimágenes de abiertos, ejemplos básicos y composición de aplicaciones continuas.",
               "fecha": "2026-08-18",
-              "ruta": "/rainer/mateo/continuidad-topologica/"
+              "ruta": "/asesores/rainer/mateo/continuidad-topologica/"
             }
           ]
         }

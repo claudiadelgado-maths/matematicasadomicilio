@@ -1,0 +1,24 @@
+{
+  "id": "graficas-barras-ventas-alex",
+  "slug": "graficas-de-barras-en-ventas",
+  "tipo": "sesion",
+  "usuario": "alex-erick-chan",
+  "titulo": "Gráficas de barras en ventas",
+  "descripcion": "Cómo organizar, comparar e interpretar datos de ventas mediante tres ejemplos de tecnología.",
+  "objetivo": "Leer una gráfica de barras, realizar comparaciones correctas y explicar qué decisión comercial puede apoyarse en los datos.",
+  "conocimientosPrevios": [
+    "suma y resta de números enteros",
+    "multiplicación",
+    "porcentajes básicos"
+  ],
+  "fecha": "2026-08-20",
+  "estado": "publicado",
+  "ruta": "/asesores/erick-chan/alex/graficas-de-barras-en-ventas/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "raul-karen",
+  "slug": "raul",
+  "tipo": "usuario",
+  "titulo": "El casillero de Raul",
+  "nombreVisible": "Raul",
+  "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
+  "estado": "activo",
+  "ruta": "/asesores/karen/raul/",
+  "maestro": "karen-mariana",
+  "personalizacion": { "simbolo": "R", "acento": "#a45c18", "fondo": "#fff2da" },
+  "almacenamientoLocal": false
+}
