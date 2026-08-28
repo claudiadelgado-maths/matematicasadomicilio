@@ -1,0 +1,29 @@
+/* Portada de la sesión Fórmulas de sucesiones aritméticas. */
+.formula-orbit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  border-radius: 20px;
+  background: var(--formula-ink);
+  color: #fff;
+  font: 850 clamp(1.4rem, 3.5vw, 2.2rem)/1.2 Georgia, serif;
+}
+
+.formula-orbit strong { padding: .55rem .7rem; border-radius: 12px; background: var(--formula-green); }
+.formula-stage > p { margin: 1rem 0 0; color: #53635d; text-align: center; }
+
+.formula-catalog { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.formula-catalog article { min-width: 0; display: flex; flex-direction: column; padding: 1.4rem; border: 1px solid var(--formula-line); border-radius: 22px; background: #fff; box-shadow: var(--formula-shadow); }
+.formula-catalog article:nth-child(2) { background: var(--formula-cream); }
+.formula-catalog article:nth-child(3) { background: var(--formula-blue); }
+.formula-catalog article:nth-child(4) { background: #f3edff; }
+.formula-catalog article > p:first-of-type { margin: 1rem 0 .2rem; color: var(--formula-green); font-size: .76rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+.formula-catalog h3 { margin: .25rem 0 .7rem; }
+.formula-catalog article > p:last-of-type { flex: 1; color: #4d5c57; }
+.formula-catalog a { color: var(--formula-green); font-weight: 850; }
+
+@media (max-width: 1000px) { .formula-catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .formula-catalog { grid-template-columns: 1fr; } }

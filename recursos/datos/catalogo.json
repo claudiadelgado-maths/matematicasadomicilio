@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 103,
+  "total": 108,
   "tipos": {
     "maestro": [
       {
@@ -1212,6 +1212,31 @@
         "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/sesion.json"
       },
       {
+        "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
+        "slug": "formulas-de-sucesiones",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Fórmulas de sucesiones aritméticas",
+        "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
+        "objetivo": "Elegir, despejar y aplicar la fórmula adecuada para encontrar cualquier elemento básico de una sucesión aritmética, verificando las condiciones de uso y el signo de la diferencia.",
+        "conocimientosPrevios": [
+          "elementos de una sucesión aritmética",
+          "operaciones con números enteros",
+          "despeje algebraico básico"
+        ],
+        "fecha": "2026-08-28",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "asesores/erik/alejandrina/formulas-de-sucesiones/sesion.json"
+      },
+      {
         "id": "medidas-de-posicion",
         "slug": "medidas-de-posicion",
         "tipo": "sesion",
@@ -1265,7 +1290,7 @@
         "slug": "sucesiones-aritmeticas",
         "tipo": "sesion",
         "usuario": "alejandrina",
-        "titulo": "Sucesiones aritméticas: términos, diferencia y fórmula general",
+        "titulo": "Elementos de una sucesión aritmética",
         "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
         "objetivo": "Reconocer una sucesión aritmética, distinguir posición y valor, construir aₙ = a₁ + (n − 1)d mediante la idea de saltos y usarla para encontrar términos específicos.",
         "conocimientosPrevios": [
@@ -1607,6 +1632,18 @@
         "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/calculadoras/constructor-de-diagramas/calculadora.json"
       },
       {
+        "id": "calculadora-formulas-sucesiones-aritmeticas",
+        "tipo": "calculadora",
+        "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
+        "usuario": "alejandrina",
+        "titulo": "Calculadora de elementos de una sucesión",
+        "descripcion": "Encuentra d, n o aₙ y muestra la sustitución paso a paso con notación matemática.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/calculadoras/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/formulas-de-sucesiones/calculadoras/calculadora.json"
+      },
+      {
         "id": "conversor-medidas-de-posicion",
         "tipo": "calculadora",
         "sesion": "medidas-de-posicion",
@@ -1717,6 +1754,18 @@
         "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/ejercicios/construye-el-arbol/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/ejercicios/construye-el-arbol/ejercicio.json"
+      },
+      {
+        "id": "practica-formulas-sucesiones-aritmeticas",
+        "tipo": "ejercicio",
+        "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
+        "usuario": "alejandrina",
+        "titulo": "Encuentra el elemento que falta",
+        "descripcion": "Tandas generativas de seis ejercicios para encontrar a₁, d, n y aₙ con soluciones enteras.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/ejercicios/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/formulas-de-sucesiones/ejercicios/ejercicio.json"
       },
       {
         "id": "relaciona-medidas-de-posicion",
@@ -1832,6 +1881,17 @@
         "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/explicacion/componente.json"
       },
       {
+        "id": "explicacion-formulas-sucesiones-aritmeticas",
+        "tipo": "explicacion",
+        "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
+        "usuario": "alejandrina",
+        "titulo": "Cómo encontrar los elementos de una sucesión",
+        "descripcion": "Explicación progresiva de los despejes para encontrar a₁, d, n y aₙ, con condiciones y ejemplos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/explicacion/",
+        "archivoMetadatos": "asesores/erik/alejandrina/formulas-de-sucesiones/explicacion/componente.json"
+      },
+      {
         "id": "explicacion-medidas-de-posicion",
         "tipo": "explicacion",
         "sesion": "medidas-de-posicion",
@@ -1933,6 +1993,18 @@
         "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/juego.json"
       },
       {
+        "id": "trivia-formulas-sucesiones-aritmeticas",
+        "tipo": "juego",
+        "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
+        "usuario": "alejandrina",
+        "titulo": "Trivia de las fórmulas perdidas",
+        "descripcion": "Trivia aleatoria de doce preguntas con la fórmula base siempre visible para repasar cómo encontrar a₁, d, n y aₙ.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/juegos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/formulas-de-sucesiones/juegos/juego.json"
+      },
+      {
         "id": "recorrido-de-posiciones",
         "tipo": "juego",
         "sesion": "medidas-de-posicion",
@@ -1962,7 +2034,7 @@
         "sesion": "sucesiones-aritmeticas-sesion-1",
         "usuario": "alejandrina",
         "titulo": "Ruta de las sucesiones",
-        "descripcion": "Juego de quince preguntas en tres niveles para completar patrones, identificar elementos y utilizar la fórmula general.",
+        "descripcion": "Juego de quince preguntas en tres niveles, resueltas con botones, para completar patrones, identificar elementos y utilizar la fórmula general.",
         "estado": "publicado",
         "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/juegos/",
         "interactivo": true,

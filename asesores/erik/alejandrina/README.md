@@ -11,6 +11,7 @@ Alejandrina pertenece al maestro `erik-estrella`. El índice carga automáticame
 - `medidas-de-posicion/`: teoría, ejercicios, conversor y juego publicados.
 - `multiplicacion-de-binomios/`: teoría, ejercicios dinámicos, calculadora exacta y juego publicados.
 - `sucesiones-aritmeticas/`: primera sesión del bloque, con teoría progresiva, práctica generativa, analizador y juego de tres niveles.
+- `formulas-de-sucesiones/`: segunda sesión del bloque, dedicada a despejar y encontrar a₁, d, n y aₙ mediante explicación, práctica, calculadora y trivia.
 
 ## Para una IA
 

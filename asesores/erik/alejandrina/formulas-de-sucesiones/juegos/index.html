@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trivia de las fórmulas perdidas | Alejandrina</title>
+  <meta name="description" content="Trivia con botones para repasar cómo encontrar los elementos de una sucesión aritmética.">
+  <meta name="theme-color" content="#f3f3f0">
+  <link rel="icon" href="../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../../../recursos/css/base.css?v=20260828-floating1">
+  <link rel="stylesheet" href="../formulas.css?v=20260828-sesion2">
+  <link rel="stylesheet" href="estilos.css?v=20260828-trivia2">
+  <script src="../../../../../recursos/js/navegacion.js?v=20260828-floating2" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+  <script type="module" src="script.mjs?v=20260828-trivia2"></script>
+</head>
+<body id="inicio">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+    <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../" aria-current="page">Salones</a></li><li><a href="../../../../../talleres/">Talleres</a></li><li><a href="../../../../../laboratorios/">Laboratorios</a></li><li><a href="../../../../../anuncios/">Anuncios</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav>
+  </div></header>
+
+  <main id="contenido" class="formula-site trivia-site">
+    <div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../">Salones</a></li><li><a href="../../../">Erik</a></li><li><a href="../../">Alejandrina</a></li><li><a href="../">Fórmulas de sucesiones aritméticas</a></li><li aria-current="page">Juego</li></ol></nav></div>
+
+    <header class="formula-hero"><div class="container formula-hero-grid">
+      <div><p class="eyebrow">🎮 Juego · Sesión 2</p><h1>Trivia de las fórmulas perdidas</h1><p class="lead">Doce retos, cuatro botones y una misión: encontrar la fórmula correcta antes de que se escape la incógnita. 🕵️‍♀️</p></div>
+      <div class="formula-stage"><span class="formula-stage-label">Equipo de rescate</span><div class="missing-team" aria-hidden="true"><span>a₁</span><span>d</span><span>n</span><span>aₙ</span></div><p>¡Cada respuesta correcta recupera 10 estrellas! ⭐</p></div>
+    </div></header>
+
+    <section class="formula-section trivia-section" aria-labelledby="trivia-title"><div class="container trivia-shell">
+      <div class="trivia-panel">
+        <header class="trivia-hud"><div><span data-progress-label>Reto 1 de 12</span><strong data-category>Elige la fórmula</strong></div><div><span>⭐ Estrellas</span><strong data-score>0</strong></div><div><span>✅ Aciertos</span><strong data-correct>0</strong></div></header>
+        <div class="progress-track" aria-hidden="true"><span data-progress-bar></span></div>
+        <aside class="base-formula-reminder" aria-label="Fórmula base de las sucesiones aritméticas">
+          <span>🧠 Fórmula base</span>
+          <div class="math-output" data-base-formula>aₙ = a₁ + (n − 1)d</div>
+          <small>Tu pista para todos los retos ✨</small>
+        </aside>
+
+        <section class="trivia-question" data-question-panel aria-labelledby="trivia-title">
+          <div class="trivia-heading"><span class="trivia-number" data-question-number>1</span><div><p class="section-kicker">Elige un botón</p><h2 id="trivia-title" tabindex="-1" data-prompt>¿Qué fórmula necesitas?</h2></div></div>
+          <div class="trivia-context" data-context></div>
+          <div class="choice-grid" data-options></div>
+          <p class="feedback" data-feedback role="status" aria-live="polite" hidden></p>
+          <button class="formula-button" type="button" data-next hidden>➡️ Siguiente reto</button>
+        </section>
+
+        <section class="trivia-summary" data-summary hidden>
+          <p class="section-kicker">🏁 Misión terminada</p><h2 tabindex="-1" data-summary-title>¡Las fórmulas están a salvo!</h2>
+          <div class="star-score"><strong data-final-score>0</strong><span>estrellas ⭐</span></div>
+          <p data-final-message></p>
+          <button class="formula-button" type="button" data-restart>🔄 Jugar otra vez</button>
+        </section>
+      </div>
+    </div></section>
+
+    <section class="component-next"><div class="container"><a href="../calculadoras/">← Volver a la calculadora</a><a href="../explicacion/">Repasar las fórmulas →</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../">Salones</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p>© 2026 Matemáticas a Domicilio</p><p><a href="../../../../../legal/aviso-de-privacidad/">Aviso de Privacidad</a> · <a href="../../../../../legal/terminos-y-condiciones/">Términos y Condiciones</a></p><p>Mérida, Yucatán, México</p></div></footer>
+</body>
+</html>

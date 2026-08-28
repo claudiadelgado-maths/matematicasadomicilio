@@ -3,7 +3,7 @@
   "slug": "sucesiones-aritmeticas",
   "tipo": "sesion",
   "usuario": "alejandrina",
-  "titulo": "Sucesiones aritméticas: términos, diferencia y fórmula general",
+  "titulo": "Elementos de una sucesión aritmética",
   "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
   "objetivo": "Reconocer una sucesión aritmética, distinguir posición y valor, construir aₙ = a₁ + (n − 1)d mediante la idea de saltos y usarla para encontrar términos específicos.",
   "conocimientosPrevios": ["operaciones con números enteros", "patrones numéricos", "sustitución algebraica básica"],

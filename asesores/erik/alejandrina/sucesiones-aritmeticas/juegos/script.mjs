@@ -21,8 +21,8 @@ const levelNumber = document.querySelector("[data-challenge-level]");
 const questionType = document.querySelector("[data-question-type]");
 const prompt = document.querySelector("[data-prompt]");
 const sequenceElement = document.querySelector("[data-sequence]");
-const answerForm = document.querySelector("[data-answer-form]");
 const answerArea = document.querySelector("[data-answer-area]");
+const checkButton = document.querySelector("[data-check-answer]");
 const feedback = document.querySelector("[data-feedback]");
 const nextButton = document.querySelector("[data-next]");
 const levelChips = [...document.querySelectorAll("[data-level-chip]")];
@@ -37,6 +37,16 @@ let locked = false;
 let errorsByConcept = {};
 
 const randomIndex = (length) => Math.floor(Math.random() * length);
+
+const numberOptions = (answer, candidates = []) => {
+  const distractors = [...candidates];
+  let distance = 1;
+  while (new Set([answer, ...distractors]).size < 4) {
+    distractors.push(answer + distance, answer - distance);
+    distance += 1;
+  }
+  return uniqueOptions(answer, distractors);
+};
 
 const formulaWith = (first, difference, jumpExpression = "n-1") => {
   const operator = difference < 0 ? "-" : "+";
@@ -66,12 +76,19 @@ const levelOneQuestion = (sequence) => {
   const missingIndex = 1 + randomIndex(3);
   const display = values.map((value, index) => index === missingIndex ? "\\boxed{?}" : String(value)).join(",\\; ");
   return {
-    type: "number",
-    label: "Nivel 1 · Completa el patrón",
-    prompt: "¿Qué término falta en la sucesión?",
+    type: "choice",
+    label: "🧩 Nivel 1 · Completa el patrón",
+    prompt: "🤔 ¿Qué término falta en la sucesión?",
     display,
     answer: values[missingIndex],
     answerText: String(values[missingIndex]),
+    options: numberOptions(values[missingIndex], [
+      values[missingIndex - 1],
+      values[missingIndex + 1],
+      values[missingIndex] + sequence.difference,
+      values[missingIndex] - sequence.difference,
+      missingIndex + 1,
+    ]),
     concept: "patrón",
     hint: "Compara los dos primeros términos para encontrar el tamaño de cada salto.",
   };
@@ -79,20 +96,29 @@ const levelOneQuestion = (sequence) => {
 
 const levelTwoQuestion = (sequence, indexInLevel) => {
   const definitions = [
-    { prompt: "¿Cuál es el primer término a₁?", answer: sequence.first, concept: "primer término", hint: "a₁ es el valor que ocupa la posición 1." },
-    { prompt: "¿Cuál es la diferencia común d?", answer: sequence.difference, concept: "diferencia", hint: "Resta término siguiente menos término anterior y conserva el signo." },
-    { prompt: "¿Cuánto vale a₄?", answer: arithmeticTerm(sequence, 4), concept: "posición y valor", hint: "La posición es 4; responde con el valor que aparece en ese lugar." },
-    { prompt: "¿Cuánto vale a₅?", answer: arithmeticTerm(sequence, 5), concept: "posición y valor", hint: "No escribas 5 por ser la posición: busca el valor del quinto término." },
-    { prompt: "¿Qué término corresponde a n = 3?", answer: arithmeticTerm(sequence, 3), concept: "posición y valor", hint: "n = 3 señala el tercer lugar de la lista." },
+    { prompt: "🌱 ¿Cuál es el primer término a₁?", answer: sequence.first, concept: "primer término", hint: "a₁ es el valor que ocupa la posición 1." },
+    { prompt: "🪜 ¿Cuál es la diferencia común d?", answer: sequence.difference, concept: "diferencia", hint: "Resta término siguiente menos término anterior y conserva el signo." },
+    { prompt: "🔎 ¿Cuánto vale a₄?", answer: arithmeticTerm(sequence, 4), concept: "posición y valor", hint: "La posición es 4; busca el valor que aparece en ese lugar." },
+    { prompt: "🎯 ¿Cuánto vale a₅?", answer: arithmeticTerm(sequence, 5), concept: "posición y valor", hint: "El 5 indica la posición: busca el valor del quinto término." },
+    { prompt: "🧠 ¿Qué término corresponde a n = 3?", answer: arithmeticTerm(sequence, 3), concept: "posición y valor", hint: "n = 3 señala el tercer lugar de la lista." },
   ];
   const definition = definitions[indexInLevel];
   return {
-    type: "number",
-    label: "Nivel 2 · Identifica los elementos",
+    type: "choice",
+    label: "🔎 Nivel 2 · Identifica los elementos",
     prompt: definition.prompt,
     display: sequenceLatex(sequence),
     answer: definition.answer,
     answerText: String(definition.answer),
+    options: numberOptions(definition.answer, [
+      sequence.first,
+      sequence.difference,
+      arithmeticTerm(sequence, 2),
+      arithmeticTerm(sequence, 3),
+      arithmeticTerm(sequence, 4),
+      arithmeticTerm(sequence, 5),
+      indexInLevel + 1,
+    ]),
     concept: definition.concept,
     hint: definition.hint,
   };
@@ -108,8 +134,8 @@ const formulaChoiceQuestion = (sequence) => {
   ];
   return {
     type: "choice",
-    label: "Nivel 3 · Trabaja con la fórmula",
-    prompt: "¿Cuál fórmula representa esta sucesión?",
+    label: "🚀 Nivel 3 · Trabaja con la fórmula",
+    prompt: "🧠 ¿Cuál fórmula representa esta sucesión?",
     display: sequenceLatex(sequence),
     answer: correct,
     answerText: plainFormula(sequence),
@@ -119,31 +145,26 @@ const formulaChoiceQuestion = (sequence) => {
   };
 };
 
-const formulaFillQuestion = (sequence) => ({
-  type: "formula",
-  label: "Nivel 3 · Trabaja con la fórmula",
-  prompt: "Completa la fórmula general de la sucesión.",
-  display: sequenceLatex(sequence),
-  answer: sequence,
-  answerText: plainFormula(sequence),
-  concept: "fórmula",
-  hint: "La primera casilla es a₁. Después elige el signo de d y escribe su magnitud.",
-});
-
 const targetQuestion = (sequence, position) => ({
-  type: "number",
-  label: "Nivel 3 · Trabaja con la fórmula",
-  prompt: "Usa la fórmula para encontrar a" + position + ".",
+  type: "choice",
+  label: "🚀 Nivel 3 · Trabaja con la fórmula",
+  prompt: "🎯 Usa la fórmula y elige el valor de a" + position + ".",
   display: formulaLatex(sequence),
   answer: arithmeticTerm(sequence, position),
   answerText: String(arithmeticTerm(sequence, position)),
+  options: numberOptions(arithmeticTerm(sequence, position), [
+    arithmeticTerm(sequence, position - 1),
+    arithmeticTerm(sequence, position + 1),
+    arithmeticTerm(sequence, position) + sequence.first,
+    arithmeticTerm(sequence, position) - sequence.difference,
+    position,
+  ]),
   concept: "saltos",
   hint: "Desde a₁ hasta a" + position + " hay " + (position - 1) + " saltos de tamaño d.",
 });
 
 const levelThreeQuestion = (sequence, indexInLevel) => {
-  if (indexInLevel === 0 || indexInLevel === 4) return formulaChoiceQuestion(sequence);
-  if (indexInLevel === 1) return formulaFillQuestion(sequence);
+  if (indexInLevel === 0 || indexInLevel === 1 || indexInLevel === 4) return formulaChoiceQuestion(sequence);
   if (indexInLevel === 2) return targetQuestion(sequence, 10);
   return targetQuestion(sequence, 15);
 };
@@ -157,80 +178,40 @@ const createQuestion = () => {
   return levelThreeQuestion(sequence, indexInLevel);
 };
 
-const createNumberAnswer = () => {
-  const wrapper = document.createElement("div");
-  wrapper.className = "number-answer";
-  const label = document.createElement("label");
-  label.textContent = "Tu respuesta";
-  label.htmlFor = "game-number-answer";
-  const input = document.createElement("input");
-  input.className = "sequence-field";
-  input.id = "game-number-answer";
-  input.type = "number";
-  input.step = "1";
-  input.inputMode = "numeric";
-  input.dataset.numberAnswer = "";
-  wrapper.append(label, input);
-  return wrapper;
-};
-
-const createFormulaAnswer = () => {
-  const wrapper = document.createElement("div");
-  wrapper.className = "formula-answer";
-  const prefix = document.createElement("span");
-  prefix.textContent = "aₙ =";
-  const first = document.createElement("input");
-  first.className = "sequence-field";
-  first.type = "number";
-  first.step = "1";
-  first.inputMode = "numeric";
-  first.dataset.formulaFirst = "";
-  first.setAttribute("aria-label", "Primer término");
-  const operator = document.createElement("select");
-  operator.className = "sequence-select";
-  operator.dataset.formulaOperator = "";
-  operator.setAttribute("aria-label", "Operador de la diferencia");
-  operator.innerHTML = '<option value="1">+</option><option value="-1">−</option>';
-  const jumps = document.createElement("span");
-  jumps.textContent = "(n − 1)";
-  const magnitude = document.createElement("input");
-  magnitude.className = "sequence-field";
-  magnitude.type = "number";
-  magnitude.min = "1";
-  magnitude.step = "1";
-  magnitude.inputMode = "numeric";
-  magnitude.dataset.formulaMagnitude = "";
-  magnitude.setAttribute("aria-label", "Magnitud de la diferencia");
-  wrapper.append(prefix, first, operator, jumps, magnitude);
-  return wrapper;
-};
-
 const createChoiceAnswer = (options) => {
   const wrapper = document.createElement("div");
   wrapper.className = "choice-grid";
   options.forEach((option, index) => {
-    const label = document.createElement("label");
-    label.className = "choice-option";
-    const input = document.createElement("input");
-    input.type = "radio";
-    input.name = "formula-option";
-    input.value = option.value;
-    input.dataset.correct = String(option.correct);
+    const button = document.createElement("button");
+    button.className = "choice-option";
+    button.type = "button";
+    button.dataset.optionValue = String(option.value);
+    button.dataset.correct = String(option.correct);
+    button.setAttribute("aria-pressed", "false");
+    const badge = document.createElement("span");
+    badge.className = "choice-badge";
+    badge.textContent = String.fromCharCode(65 + index);
     const math = document.createElement("span");
     math.className = "sequence-option-math";
-    renderLatex(math, option.value);
-    label.append(input, math);
-    wrapper.append(label);
-    if (index === 0) input.dataset.firstOption = "";
+    renderLatex(math, String(option.value));
+    button.append(badge, math);
+    button.addEventListener("click", () => {
+      if (locked) return;
+      wrapper.querySelectorAll(".choice-option").forEach((item) => {
+        item.classList.remove("is-selected");
+        item.setAttribute("aria-pressed", "false");
+      });
+      button.classList.add("is-selected");
+      button.setAttribute("aria-pressed", "true");
+    });
+    wrapper.append(button);
   });
   return wrapper;
 };
 
 const renderAnswerArea = () => {
   answerArea.replaceChildren();
-  if (currentQuestion.type === "number") answerArea.append(createNumberAnswer());
-  else if (currentQuestion.type === "formula") answerArea.append(createFormulaAnswer());
-  else answerArea.append(createChoiceAnswer(currentQuestion.options));
+  answerArea.append(createChoiceAnswer(currentQuestion.options));
 };
 
 const updateLevelTrack = (level) => {
@@ -244,8 +225,8 @@ const updateLevelTrack = (level) => {
 
 const updateHud = () => {
   const level = Math.floor(questionIndex / questionsPerLevel);
-  levelLabel.textContent = "Nivel " + (level + 1) + " de 3";
-  questionLabel.textContent = "Pregunta " + (questionIndex + 1) + " de " + totalQuestions;
+  levelLabel.textContent = "🧭 Nivel " + (level + 1) + " de 3";
+  questionLabel.textContent = "Reto " + (questionIndex + 1) + " de " + totalQuestions;
   scoreElement.textContent = String(points);
   correctElement.textContent = String(correctAnswers);
   levelNumber.textContent = String(level + 1);
@@ -255,8 +236,7 @@ const updateHud = () => {
 const showQuestion = (focusTitle = false) => {
   currentQuestion = createQuestion();
   locked = false;
-  answerForm.reset();
-  answerForm.querySelector('button[type="submit"]').disabled = false;
+  checkButton.disabled = false;
   feedback.hidden = true;
   feedback.removeAttribute("data-kind");
   nextButton.hidden = true;
@@ -268,40 +248,21 @@ const showQuestion = (focusTitle = false) => {
   if (focusTitle) prompt.focus();
 };
 
-const readIntegerInput = (input) => {
-  const raw = input.value.trim();
-  const value = Number(raw);
-  if (raw === "" || !Number.isInteger(value)) {
-    input.focus();
-    throw new Error("Escribe un número entero antes de comprobar.");
-  }
-  return value;
-};
-
 const checkAnswer = () => {
-  if (currentQuestion.type === "number") {
-    return readIntegerInput(answerArea.querySelector("[data-number-answer]")) === currentQuestion.answer;
-  }
-  if (currentQuestion.type === "choice") {
-    const selected = answerArea.querySelector('input[name="formula-option"]:checked');
-    if (!selected) throw new Error("Selecciona una fórmula antes de comprobar.");
-    return selected.value === currentQuestion.answer;
-  }
-  const first = readIntegerInput(answerArea.querySelector("[data-formula-first]"));
-  const operator = Number(answerArea.querySelector("[data-formula-operator]").value);
-  const magnitude = readIntegerInput(answerArea.querySelector("[data-formula-magnitude]"));
-  if (magnitude < 1) throw new Error("La magnitud de d debe ser positiva; el signo se elige aparte.");
-  return first === currentQuestion.answer.first
-    && operator * magnitude === currentQuestion.answer.difference;
+  const selected = answerArea.querySelector('.choice-option[aria-pressed="true"]');
+  if (!selected) throw new Error("👇 Elige uno de los botones antes de comprobar.");
+  const correct = selected.dataset.optionValue === String(currentQuestion.answer);
+  selected.classList.add(correct ? "is-correct" : "is-wrong");
+  if (!correct) answerArea.querySelector('.choice-option[data-correct="true"]')?.classList.add("is-correct");
+  return correct;
 };
 
 const lockControls = () => {
-  answerArea.querySelectorAll("input, select").forEach((control) => { control.disabled = true; });
-  answerForm.querySelector('button[type="submit"]').disabled = true;
+  answerArea.querySelectorAll("button").forEach((control) => { control.disabled = true; });
+  checkButton.disabled = true;
 };
 
-answerForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+checkButton.addEventListener("click", () => {
   if (locked) return;
   try {
     const correct = checkAnswer();
@@ -312,20 +273,20 @@ answerForm.addEventListener("submit", (event) => {
     if (correct) {
       points += 10;
       correctAnswers += 1;
-      feedback.textContent = "Correcto. " + currentQuestion.answerText;
+      feedback.textContent = "🎉 ¡Correcto! La respuesta es " + currentQuestion.answerText + ". ¡Sigue así! 🚀";
     } else {
       errors += 1;
       errorsByConcept[currentQuestion.concept] = (errorsByConcept[currentQuestion.concept] || 0) + 1;
-      feedback.textContent = currentQuestion.hint + " La respuesta correcta era: " + currentQuestion.answerText + ".";
+      feedback.textContent = "💡 Casi. " + currentQuestion.hint + " La respuesta correcta es " + currentQuestion.answerText + ". ¡A por la siguiente! 💪";
     }
     scoreElement.textContent = String(points);
     correctElement.textContent = String(correctAnswers);
     nextButton.hidden = false;
     nextButton.textContent = questionIndex === totalQuestions - 1
-      ? "Ver resumen"
+      ? "🏁 Ver resumen"
       : (questionIndex + 1) % questionsPerLevel === 0
-        ? "Pasar al siguiente nivel"
-        : "Siguiente pregunta";
+        ? "🚀 Pasar al siguiente nivel"
+        : "➡️ Siguiente reto";
     nextButton.focus();
   } catch (error) {
     feedback.hidden = false;
@@ -344,8 +305,8 @@ const finishGame = () => {
   const advice = document.querySelector("[data-review-advice]");
   const concepts = Object.entries(errorsByConcept).sort((left, right) => right[1] - left[1]);
   advice.textContent = concepts.length
-    ? "Conviene repasar especialmente: " + concepts[0][0] + ". Vuelve a la explicación y pregunta qué representa cada parte antes de calcular."
-    : "Dominaste los tres niveles sin errores. Puedes repetir la partida para comprobarlo con sucesiones diferentes.";
+    ? "💡 Te vendrá bien repasar especialmente: " + concepts[0][0] + ". Mira qué representa cada parte y vuelve a intentarlo. ¡Puedes con ello! 💪"
+    : "🌟 ¡Has dominado los tres niveles sin errores! Repite la partida para descubrir nuevos retos. 🚀";
   document.querySelector("[data-summary-title]").focus();
 };
 
@@ -363,7 +324,7 @@ const startGame = () => {
   errorsByConcept = {};
   challenge.hidden = false;
   summary.hidden = true;
-  answerForm.querySelector('button[type="submit"]').disabled = false;
+  checkButton.disabled = false;
   showQuestion(false);
 };
 

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de elementos de una sucesión | Alejandrina</title>
+  <meta name="description" content="Calculadora para encontrar d, n o aₙ con sustitución visual en las fórmulas de sucesiones aritméticas.">
+  <meta name="theme-color" content="#f3f3f0">
+  <link rel="icon" href="../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../../../recursos/css/base.css?v=20260828-floating1">
+  <link rel="stylesheet" href="../formulas.css?v=20260828-sesion2">
+  <link rel="stylesheet" href="estilos.css?v=20260828-calculadora1">
+  <script src="../../../../../recursos/js/navegacion.js?v=20260828-floating2" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+  <script type="module" src="script.mjs?v=20260828-calculadora1"></script>
+</head>
+<body id="inicio">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+    <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../" aria-current="page">Salones</a></li><li><a href="../../../../../talleres/">Talleres</a></li><li><a href="../../../../../laboratorios/">Laboratorios</a></li><li><a href="../../../../../anuncios/">Anuncios</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav>
+  </div></header>
+
+  <main id="contenido" class="formula-site calculator-site">
+    <div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../">Salones</a></li><li><a href="../../../">Erik</a></li><li><a href="../../">Alejandrina</a></li><li><a href="../">Fórmulas de sucesiones aritméticas</a></li><li aria-current="page">Calculadora</li></ol></nav></div>
+
+    <header class="formula-hero"><div class="container formula-hero-grid">
+      <div><p class="eyebrow">🧮 Calculadora · Sesión 2</p><h1>Sustituye, calcula y comprueba</h1><p class="lead">Elige lo que quieres encontrar. Cada resultado muestra la fórmula con tus valores, no solo el número final.</p></div>
+      <div class="formula-stage"><span class="formula-stage-label">Tres herramientas</span><div class="calculator-icons" aria-hidden="true"><span>d</span><span>n</span><span>aₙ</span></div><p>Dos términos para d · un término para n · una posición para aₙ</p></div>
+    </div></header>
+
+    <section class="formula-section" aria-labelledby="calculator-title"><div class="container">
+      <header class="section-heading"><p class="section-kicker">Calculadora paso a paso</p><h2 id="calculator-title">¿Qué dato falta?</h2><p>Completa únicamente la herramienta que necesites. Los resultados de las demás permanecen intactos.</p></header>
+
+      <div class="calculator-stack">
+        <article class="calculator-panel" aria-labelledby="difference-title"><div class="calculator-heading"><span class="emoji-badge" aria-hidden="true">🪜</span><div><p class="section-kicker">Herramienta 1</p><h3 id="difference-title">Encontrar d con dos términos</h3><p>Introduce dos valores conocidos y las posiciones que ocupan.</p></div></div>
+          <form data-difference-form novalidate><div class="field-grid"><label class="field-label">Valor de aᵢ<input class="formula-field" name="termI" type="number" step="1" inputmode="numeric" placeholder="Ej. 23"></label><label class="field-label">Posición i<input class="formula-field" name="positionI" type="number" min="1" step="1" inputmode="numeric" placeholder="Ej. 4"></label><label class="field-label">Valor de aⱼ<input class="formula-field" name="termJ" type="number" step="1" inputmode="numeric" placeholder="Ej. 53"></label><label class="field-label">Posición j<input class="formula-field" name="positionJ" type="number" min="1" step="1" inputmode="numeric" placeholder="Ej. 10"></label></div><div class="button-row"><button class="formula-button" type="submit">Calcular d</button><button class="formula-button-secondary" type="reset">Limpiar</button></div></form>
+          <div class="feedback" data-difference-feedback role="status" aria-live="polite" hidden></div><div class="result-card" data-difference-result hidden><h3>Resultado</h3><div class="math-output" data-difference-math></div><p data-difference-direction></p></div>
+        </article>
+
+        <article class="calculator-panel" aria-labelledby="position-title"><div class="calculator-heading"><span class="emoji-badge" aria-hidden="true">📍</span><div><p class="section-kicker">Herramienta 2</p><h3 id="position-title">Encontrar la posición n</h3><p>Indica el término que buscas, el primer término y la diferencia.</p></div></div>
+          <form data-position-form novalidate><div class="field-grid three"><label class="field-label">Valor de aₙ<input class="formula-field" name="term" type="number" step="1" inputmode="numeric" placeholder="Ej. 68"></label><label class="field-label">Primer término a₁<input class="formula-field" name="first" type="number" step="1" inputmode="numeric" placeholder="Ej. 8"></label><label class="field-label">Diferencia d<input class="formula-field" name="difference" type="number" step="1" inputmode="numeric" placeholder="Ej. 5"></label></div><div class="button-row"><button class="formula-button" type="submit">Calcular n</button><button class="formula-button-secondary" type="reset">Limpiar</button></div></form>
+          <div class="feedback" data-position-feedback role="status" aria-live="polite" hidden></div><div class="result-card" data-position-result hidden><h3>Resultado</h3><div class="math-output" data-position-math></div><p data-position-note></p></div>
+        </article>
+
+        <article class="calculator-panel term-panel" aria-labelledby="term-title"><div class="calculator-heading"><span class="emoji-badge" aria-hidden="true">🎯</span><div><p class="section-kicker">Herramienta 3</p><h3 id="term-title">Encontrar el término aₙ</h3><p>La vista previa cambia mientras escribes para mostrar cada dato dentro de la fórmula.</p></div></div>
+          <form data-term-form novalidate><div class="field-grid three"><label class="field-label">Primer término a₁<input class="formula-field" name="first" type="number" step="1" inputmode="numeric" placeholder="Ej. 80"></label><label class="field-label">Diferencia d<input class="formula-field" name="difference" type="number" step="1" inputmode="numeric" placeholder="Ej. -3"></label><label class="field-label">Posición n<input class="formula-field" name="position" type="number" min="1" step="1" inputmode="numeric" placeholder="Ej. 7"></label></div><div class="live-preview"><span>Vista previa</span><div class="math-output" data-term-preview aria-live="polite"></div></div><div class="button-row"><button class="formula-button" type="submit">Calcular aₙ</button><button class="formula-button-secondary" type="reset">Limpiar</button></div></form>
+          <div class="feedback" data-term-feedback role="status" aria-live="polite" hidden></div><div class="result-card" data-term-result hidden><h3>Resultado</h3><div class="math-output" data-term-math></div><p data-term-direction></p></div>
+        </article>
+      </div>
+    </div></section>
+
+    <section class="component-next"><div class="container"><a href="../ejercicios/">← Volver a los ejercicios</a><a href="../juegos/">Jugar la trivia →</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../">Salones</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p>© 2026 Matemáticas a Domicilio</p><p><a href="../../../../../legal/aviso-de-privacidad/">Aviso de Privacidad</a> · <a href="../../../../../legal/terminos-y-condiciones/">Términos y Condiciones</a></p><p>Mérida, Yucatán, México</p></div></footer>
+</body>
+</html>

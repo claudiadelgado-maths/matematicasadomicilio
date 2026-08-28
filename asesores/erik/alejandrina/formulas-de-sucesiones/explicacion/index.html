@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cómo encontrar los elementos de una sucesión | Alejandrina</title>
+  <meta name="description" content="Explicación de los despejes para encontrar a₁, d, n y aₙ en una sucesión aritmética.">
+  <meta name="theme-color" content="#f3f3f0">
+  <link rel="icon" href="../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../../../recursos/css/base.css?v=20260828-floating1">
+  <link rel="stylesheet" href="../formulas.css?v=20260828-sesion2">
+  <link rel="stylesheet" href="estilos.css?v=20260828-explicacion1">
+  <script src="../../../../../recursos/js/navegacion.js?v=20260828-floating2" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script>
+  <script type="module" src="script.mjs?v=20260828-explicacion1"></script>
+</head>
+<body id="inicio">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+    <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../" aria-current="page">Salones</a></li><li><a href="../../../../../talleres/">Talleres</a></li><li><a href="../../../../../laboratorios/">Laboratorios</a></li><li><a href="../../../../../anuncios/">Anuncios</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav>
+  </div></header>
+
+  <main id="contenido" class="formula-site explanation-site">
+    <div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../">Salones</a></li><li><a href="../../../">Erik</a></li><li><a href="../../">Alejandrina</a></li><li><a href="../">Fórmulas de sucesiones aritméticas</a></li><li aria-current="page">Explicación</li></ol></nav></div>
+
+    <header class="formula-hero"><div class="container formula-hero-grid">
+      <div><p class="eyebrow">📖 Explicación · Sesión 2</p><h1>Encuentra el elemento que falta</h1><p class="lead">No necesitas memorizar fórmulas sueltas. Todas nacen de una sola relación y cada dato conocido te dice qué camino seguir.</p></div>
+      <div class="formula-stage"><span class="formula-stage-label">Nuestro punto de partida</span><div class="math-output hero-math" data-math="a_n=a_1+(n-1)d">a_n=a_1+(n-1)d</div><p>Primer término + número de saltos × tamaño de cada salto.</p></div>
+    </div></header>
+
+    <section class="formula-section" aria-labelledby="formula-base"><div class="container lesson-grid">
+      <div><p class="section-kicker">Paso 1 · Lee los símbolos</p><h2 id="formula-base">Una fórmula, cuatro elementos</h2><p><strong>a₁</strong> es el punto de partida, <strong>d</strong> es el salto constante, <strong>n</strong> es la posición y <strong>aₙ</strong> es el valor que ocupa esa posición.</p><p>Desde la posición 1 hasta la posición n hay <strong>n − 1 saltos</strong>. Esa idea explica toda la fórmula.</p></div>
+      <dl class="symbol-list"><div><dt>a₁</dt><dd>Primer término</dd></div><div><dt>d</dt><dd>Diferencia común</dd></div><div><dt>n</dt><dd>Posición</dd></div><div><dt>aₙ</dt><dd>Término en la posición n</dd></div></dl>
+    </div></section>
+
+    <section class="formula-section alt" aria-labelledby="despejes-title"><div class="container">
+      <header class="section-heading"><p class="section-kicker">Paso 2 · Elige la incógnita</p><h2 id="despejes-title">Las cuatro rutas</h2><p>Mira qué dato falta y usa la tarjeta correspondiente.</p></header>
+      <div class="card-grid">
+        <article class="formula-card"><span class="number-badge">aₙ</span><h3>Encontrar un término</h3><div class="math-box" data-math="a_n=a_1+(n-1)d">a_n=a_1+(n-1)d</div><p>Úsala cuando conoces el primer término, la diferencia y la posición.</p></article>
+        <article class="formula-card"><span class="number-badge">a₁</span><h3>Encontrar el primer término</h3><div class="math-box" data-math="a_1=a_n-(n-1)d">a_1=a_n-(n-1)d</div><p>Si ves la lista, a₁ es el primer valor. Si solo conoces otro término, despeja con esta fórmula.</p></article>
+        <article class="formula-card"><span class="number-badge">d</span><h3>Encontrar la diferencia</h3><div class="math-box" data-math="d=\frac{a_i-a_j}{i-j},\quad i\ne j">d=\frac{a_i-a_j}{i-j},\quad i\ne j</div><p>Sirve con dos términos conocidos y sus posiciones. El orden debe ser el mismo arriba y abajo.</p></article>
+        <article class="formula-card"><span class="number-badge">n</span><h3>Encontrar una posición</h3><div class="math-box" data-math="n=\frac{a_n-a_1}{d}+1,\quad d\ne0">n=\frac{a_n-a_1}{d}+1,\quad d\ne0</div><p>El resultado debe ser un entero positivo para representar una posición de la sucesión.</p></article>
+      </div>
+    </div></section>
+
+    <section class="formula-section" aria-labelledby="d-title"><div class="container">
+      <header class="section-heading"><p class="section-kicker">Zoom sobre d</p><h2 id="d-title">La diferencia cuenta los saltos</h2><p>Con términos consecutivos basta una resta. Con términos separados, divide el cambio de valores entre el cambio de posiciones.</p></header>
+      <div class="difference-grid">
+        <article class="workspace-panel"><span class="emoji-badge" aria-hidden="true">👣</span><h3>Términos consecutivos</h3><div class="math-box" data-math="d=a_{k+1}-a_k">d=a_{k+1}-a_k</div><p>Ejemplo: entre 18 y 23, d = 23 − 18 = 5.</p></article>
+        <article class="workspace-panel"><span class="emoji-badge" aria-hidden="true">🪜</span><h3>Términos separados</h3><div class="math-box" data-math="d=\frac{a_i-a_j}{i-j}">d=\frac{a_i-a_j}{i-j}</div><p>Si intercambias i y j, intercambia también los términos del numerador.</p></article>
+        <article class="workspace-panel"><span class="emoji-badge" aria-hidden="true">🎯</span><h3>Desde a₁ hasta aₙ</h3><div class="math-box" data-math="d=\frac{a_n-a_1}{n-1},\quad n\ne1">d=\frac{a_n-a_1}{n-1},\quad n\ne1</div><p>Es el mismo razonamiento usando la posición 1 como referencia.</p></article>
+      </div>
+    </section>
+
+    <section class="formula-section direction-section" aria-labelledby="direction-title"><div class="container">
+      <header class="section-heading"><p class="section-kicker">Lee el signo</p><h2 id="direction-title">d también indica la dirección</h2></header>
+      <div class="direction-grid"><article><strong>d &gt; 0</strong><span aria-hidden="true">📈</span><h3>Creciente</h3><p>Cada término es mayor que el anterior.</p></article><article><strong>d &lt; 0</strong><span aria-hidden="true">📉</span><h3>Decreciente</h3><p>Cada término es menor que el anterior.</p></article><article><strong>d = 0</strong><span aria-hidden="true">➡️</span><h3>Constante</h3><p>Todos los términos tienen el mismo valor.</p></article></div>
+    </div></section>
+
+    <section class="formula-section" aria-labelledby="example-title"><div class="container worked-example">
+      <div><p class="section-kicker">Ejemplo completo</p><h2 id="example-title">Conocemos a₄ = 23 y a₁₀ = 53</h2><p>Primero hallamos d. Después reconstruimos a₁ y ya podemos encontrar cualquier término o posición.</p></div>
+      <ol class="example-steps">
+        <li><span>1</span><div><h3>Calcula d</h3><div class="math-box" data-math="d=\frac{53-23}{10-4}=\frac{30}{6}=5">d=\frac{53-23}{10-4}=5</div></div></li>
+        <li><span>2</span><div><h3>Calcula a₁</h3><div class="math-box" data-math="a_1=23-(4-1)5=8">a_1=23-(4-1)5=8</div></div></li>
+        <li><span>3</span><div><h3>Escribe la fórmula</h3><div class="math-box" data-math="a_n=8+(n-1)5">a_n=8+(n-1)5</div></div></li>
+        <li><span>4</span><div><h3>Encuentra la posición de 68</h3><div class="math-box" data-math="n=\frac{68-8}{5}+1=13">n=\frac{68-8}{5}+1=13</div></div></li>
+      </ol>
+    </div></section>
+
+    <section class="formula-section alt" aria-labelledby="checks-title"><div class="container">
+      <header class="section-heading"><p class="section-kicker">Antes de terminar</p><h2 id="checks-title">Tres comprobaciones rápidas</h2></header>
+      <div class="card-grid three"><article class="formula-card"><span class="emoji-badge" aria-hidden="true">🔁</span><h3>Mismo orden</h3><p>En la fórmula de d, si arriba haces aᵢ − aⱼ, abajo debe ser i − j.</p></article><article class="formula-card"><span class="emoji-badge" aria-hidden="true">🚫</span><h3>No dividas entre cero</h3><p>Necesitas posiciones distintas para calcular d y una diferencia no nula para despejar una posición única.</p></article><article class="formula-card"><span class="emoji-badge" aria-hidden="true">✅</span><h3>Sustituye para verificar</h3><p>Coloca tu resultado en la fórmula original. Si recuperas el término conocido, el despeje funciona.</p></article></div>
+    </section>
+
+    <section class="component-next"><div class="container"><a href="../">← Volver a la sesión</a><a href="../ejercicios/">Practicar ahora →</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../">Salones</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p>© 2026 Matemáticas a Domicilio</p><p><a href="../../../../../legal/aviso-de-privacidad/">Aviso de Privacidad</a> · <a href="../../../../../legal/terminos-y-condiciones/">Términos y Condiciones</a></p><p>Mérida, Yucatán, México</p></div></footer>
+</body>
+</html>

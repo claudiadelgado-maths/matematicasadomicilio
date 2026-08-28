@@ -1,0 +1,11 @@
+{
+  "id": "practica-formulas-sucesiones-aritmeticas",
+  "tipo": "ejercicio",
+  "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
+  "usuario": "alejandrina",
+  "titulo": "Encuentra el elemento que falta",
+  "descripcion": "Tandas generativas de seis ejercicios para encontrar a₁, d, n y aₙ con soluciones enteras.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/ejercicios/",
+  "interactivo": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": "calculadora-formulas-sucesiones-aritmeticas",
+  "tipo": "calculadora",
+  "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
+  "usuario": "alejandrina",
+  "titulo": "Calculadora de elementos de una sucesión",
+  "descripcion": "Encuentra d, n o aₙ y muestra la sustitución paso a paso con notación matemática.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/calculadoras/",
+  "interactivo": true
+}

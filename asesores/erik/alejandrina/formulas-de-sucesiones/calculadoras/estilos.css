@@ -1,0 +1,22 @@
+/* Calculadora de elementos de sucesiones aritméticas. */
+.formula-stage > p { margin: 1rem 0 0; color: #52635d; text-align: center; }
+.calculator-icons { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+.calculator-icons span { display: grid; place-items: center; min-height: 5rem; border: 2px solid var(--formula-ink); border-radius: 18px; background: var(--formula-mint); color: var(--formula-ink); font: 900 1.7rem/1 Georgia, serif; box-shadow: 4px 4px 0 var(--formula-yellow); }
+.calculator-icons span:nth-child(2) { background: var(--formula-cream); }
+.calculator-icons span:nth-child(3) { background: #f2eaff; }
+.calculator-stack { display: grid; gap: 1.25rem; }
+.calculator-panel { padding: clamp(1.2rem, 3.5vw, 2rem); border: 1px solid var(--formula-line); border-radius: 24px; background: #fff; box-shadow: var(--formula-shadow); }
+.calculator-panel:nth-child(2) { background: var(--formula-cream); }
+.calculator-panel:nth-child(3) { background: #f1f8ff; }
+.calculator-heading { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1rem; align-items: start; margin-bottom: 1.4rem; }
+.calculator-heading h3 { margin: .2rem 0 .45rem; font-size: clamp(1.45rem, 3vw, 2.2rem); }
+.calculator-heading p:last-child { margin: 0; color: #52635d; }
+.calculator-panel form { display: grid; gap: 1rem; }
+.live-preview { padding: 1rem; border: 2px dashed var(--formula-green); border-radius: 18px; background: #fff; }
+.live-preview > span { display: block; margin-bottom: .55rem; color: var(--formula-green); font-size: .76rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+.live-preview .math-output { min-height: 3rem; }
+
+@media (max-width: 580px) {
+  .calculator-icons { grid-template-columns: 1fr; }
+  .calculator-heading { grid-template-columns: 1fr; }
+}

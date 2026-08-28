@@ -511,11 +511,18 @@
             "acento": "#15784e",
             "fondo": "#edf8f2"
           },
-          "ultimaActividad": "2026-08-25",
+          "ultimaActividad": "2026-08-28",
           "sesiones": [
             {
+              "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
+              "titulo": "Fórmulas de sucesiones aritméticas",
+              "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
+              "fecha": "2026-08-28",
+              "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/"
+            },
+            {
               "id": "sucesiones-aritmeticas-sesion-1",
-              "titulo": "Sucesiones aritméticas: términos, diferencia y fórmula general",
+              "titulo": "Elementos de una sucesión aritmética",
               "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
               "fecha": "2026-08-25",
               "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/"

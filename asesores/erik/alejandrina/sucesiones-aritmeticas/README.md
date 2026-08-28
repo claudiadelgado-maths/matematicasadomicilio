@@ -1,4 +1,4 @@
-# Sucesiones aritméticas · Sesión 1
+# Elementos de una sucesión aritmética
 
 Primera sesión de un bloque progresivo para Alejandrina. Se concentra en reconocer una diferencia constante, distinguir posición y valor, construir la fórmula general y utilizarla para encontrar términos.
 
@@ -17,7 +17,7 @@ No introduce suma de términos, series, medios aritméticos, recurrencias ni res
 - `explicacion/`: recorrido conceptual y progresivo con fórmula interactiva y ejemplos guiados.
 - `ejercicios/`: práctica generativa sobre una misma sucesión, con pistas específicas.
 - `calculadoras/`: analiza listas escritas por la alumna y explica sus diferencias.
-- `juegos/`: juego de tres niveles y quince preguntas nuevas por partida.
+- `juegos/`: juego de tres niveles y quince preguntas nuevas por partida, resueltas únicamente mediante botones de opción.
 
 ## Recursos compartidos
 

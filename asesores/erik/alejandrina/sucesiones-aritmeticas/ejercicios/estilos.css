@@ -707,9 +707,5 @@ h1 { font-size: clamp(2.35rem, 13vw, 3.7rem); }
 .formula-question { grid-column: 1 / -1; }
 .formula-input { width: 100%; display: flex; flex-wrap: wrap; gap: .55rem; align-items: center; padding: 1rem; border-radius: 16px; background: var(--seq-mint); font: 850 clamp(1.05rem, 3vw, 1.35rem)/1.2 Georgia, serif; }
 .formula-input .sequence-field { width: 5.5rem; }
-.practice-reminder { margin-top: 1rem; padding: clamp(1.2rem, 3vw, 1.7rem); border-radius: 22px; background: var(--seq-ink); color: #fff; }
-.practice-reminder .section-kicker { color: #8ee0bd; }
-.practice-reminder .sequence-math { color: var(--seq-ink); }
-.practice-reminder > p:last-child { margin-bottom: 0; }
 @media (max-width: 760px) { .practice-toolbar { display: grid; }.practice-controls { justify-items: start; }.question-grid { grid-template-columns: 1fr; }.formula-question { grid-column: auto; } }
 @media (max-width: 560px) { .practice-shell { width: min(calc(100% - 2rem), 1400px); }.practice-progress { display: grid; }.question-card form { align-items: stretch; }.question-card form > label,.question-card form > button { width: 100%; }.question-card .sequence-field { width: 100%; }.formula-input label { flex: 1 1 5rem; }.formula-input .sequence-field { width: 100%; } }

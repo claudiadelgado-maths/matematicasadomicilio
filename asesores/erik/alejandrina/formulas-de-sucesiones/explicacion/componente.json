@@ -1,0 +1,10 @@
+{
+  "id": "explicacion-formulas-sucesiones-aritmeticas",
+  "tipo": "explicacion",
+  "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
+  "usuario": "alejandrina",
+  "titulo": "Cómo encontrar los elementos de una sucesión",
+  "descripcion": "Explicación progresiva de los despejes para encontrar a₁, d, n y aₙ, con condiciones y ejemplos.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/explicacion/"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "trivia-formulas-sucesiones-aritmeticas",
+  "tipo": "juego",
+  "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
+  "usuario": "alejandrina",
+  "titulo": "Trivia de las fórmulas perdidas",
+  "descripcion": "Trivia aleatoria de doce preguntas con la fórmula base siempre visible para repasar cómo encontrar a₁, d, n y aₙ.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/juegos/",
+  "interactivo": true
+}

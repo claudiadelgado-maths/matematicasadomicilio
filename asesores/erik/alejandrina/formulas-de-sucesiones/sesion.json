@@ -1,0 +1,24 @@
+{
+  "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
+  "slug": "formulas-de-sucesiones",
+  "tipo": "sesion",
+  "usuario": "alejandrina",
+  "titulo": "Fórmulas de sucesiones aritméticas",
+  "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
+  "objetivo": "Elegir, despejar y aplicar la fórmula adecuada para encontrar cualquier elemento básico de una sucesión aritmética, verificando las condiciones de uso y el signo de la diferencia.",
+  "conocimientosPrevios": [
+    "elementos de una sucesión aritmética",
+    "operaciones con números enteros",
+    "despeje algebraico básico"
+  ],
+  "fecha": "2026-08-28",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
+}

@@ -94,7 +94,7 @@ button {
   z-index: 100;
   min-height: var(--header-height);
   border-bottom: 1px solid var(--color-border);
-  background: rgb(255 255 255 / 50%);
+  background: var(--color-surface);
 }
 
 .header-inner {
@@ -321,10 +321,10 @@ button {
   padding-bottom: 0.1rem;
 }
 
+.back-to-top,
 .whatsapp-float {
   position: fixed;
   right: max(1rem, env(safe-area-inset-right));
-  bottom: max(1rem, env(safe-area-inset-bottom));
   z-index: 90;
   display: grid;
   width: 46px;
@@ -336,6 +336,35 @@ button {
   color: var(--color-dark);
   animation: whatsapp-float-bob 3s ease-in-out infinite;
   transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.back-to-top {
+  bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 3.75rem);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.whatsapp-float {
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.back-to-top svg {
+  width: 30px;
+  height: 30px;
+}
+
+.back-to-top:hover {
+  animation: none;
+  transform: translateY(-2px) scale(1.06);
+}
+
+.back-to-top:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
 
 .whatsapp-float svg {
@@ -377,7 +406,7 @@ button {
     border: 1px solid var(--color-border);
     border-top: 0;
     border-radius: 0 0 0 var(--radius);
-    background: rgb(255 255 255 / 98%);
+    background: rgb(243 243 240 / 98%);
     box-shadow: var(--shadow-soft);
   }
   .site-nav.is-open { display: block; animation: nav-panel-enter 180ms ease-out both; }
@@ -424,6 +453,7 @@ button {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+  .back-to-top,
   .whatsapp-float { animation: none; }
   .site-nav.is-open { animation: none; }
 }

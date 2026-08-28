@@ -1,0 +1,47 @@
+/* Trivia de las fórmulas de sucesiones aritméticas. */
+.formula-stage > p { margin: 1rem 0 0; color: #52635d; text-align: center; }
+.missing-team { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .65rem; }
+.missing-team span { display: grid; place-items: center; aspect-ratio: 1; border: 2px solid var(--formula-ink); border-radius: 50%; background: var(--formula-mint); color: var(--formula-ink); font: 900 clamp(1rem, 2.6vw, 1.55rem)/1 Georgia, serif; box-shadow: 3px 3px 0 var(--formula-yellow); }
+.missing-team span:nth-child(2) { background: var(--formula-cream); }
+.missing-team span:nth-child(3) { background: var(--formula-blue); }
+.missing-team span:nth-child(4) { background: #f2eaff; }
+.trivia-section { background: #eff6f2; }
+.trivia-shell { max-width: 1080px; }
+.trivia-panel { border: 2px solid var(--formula-ink); border-radius: 28px; background: #fff; box-shadow: 10px 10px 0 var(--formula-yellow); }
+.trivia-hud { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(120px, .7fr)); gap: 1rem; padding: 1.2rem; border-radius: 25px 25px 0 0; background: var(--formula-ink); color: #fff; }
+.trivia-hud div:not(:first-child) { text-align: right; }
+.trivia-hud span,
+.trivia-hud strong { display: block; }
+.trivia-hud span { color: #bfe8d5; font-size: .78rem; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; }
+.trivia-hud strong { margin-top: .25rem; font-size: 1.12rem; }
+.progress-track { height: .7rem; background: #d7e5df; }
+.progress-track span { display: block; width: 0; height: 100%; background: linear-gradient(90deg, var(--formula-yellow), var(--formula-coral)); transition: width 220ms ease; }
+.base-formula-reminder { position: sticky; top: calc(var(--header-height, 76px) + .65rem); z-index: 4; display: grid; grid-template-columns: auto minmax(12rem, 1fr) auto; gap: 1rem; align-items: center; margin: 1rem; padding: .85rem 1rem; border: 2px solid var(--formula-green); border-radius: 18px; background: var(--formula-cream); color: var(--formula-ink); box-shadow: 0 8px 22px rgb(21 54 43 / 14%); }
+.base-formula-reminder > span { color: var(--formula-green); font-size: .8rem; font-weight: 950; letter-spacing: .06em; text-transform: uppercase; }
+.base-formula-reminder .math-output { min-width: 0; font-size: clamp(1.15rem, 2.3vw, 1.55rem); font-weight: 850; text-align: center; }
+.base-formula-reminder small { color: #52635d; font-weight: 800; text-align: right; }
+.trivia-question { padding: clamp(1.2rem, 4vw, 2.5rem); }
+.trivia-heading { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1rem; align-items: center; }
+.trivia-number { display: grid; place-items: center; width: 3.6rem; height: 3.6rem; border-radius: 17px; background: var(--formula-yellow); color: var(--formula-ink); font-size: 1.45rem; font-weight: 950; box-shadow: 4px 4px 0 var(--formula-ink); }
+.trivia-heading h2 { margin: .2rem 0 0; font-size: clamp(1.7rem, 4vw, 2.8rem); }
+.trivia-context { min-height: 5rem; display: grid; place-items: center; margin: 1.3rem 0; padding: 1rem; border-radius: 19px; background: var(--formula-ink); color: #fff; font-size: 1.08rem; font-weight: 800; text-align: center; }
+.trivia-context .katex { color: #fff; }
+.trivia-question > .formula-button { margin-top: 1rem; }
+.trivia-summary { padding: clamp(2rem, 6vw, 4rem); text-align: center; }
+.trivia-summary h2 { margin: .3rem 0 1rem; }
+.star-score { display: grid; place-items: center; width: 10rem; height: 10rem; margin: 1.5rem auto; border: 3px solid var(--formula-ink); border-radius: 50%; background: var(--formula-yellow); box-shadow: 7px 7px 0 var(--formula-ink); }
+.star-score strong { font-size: 3rem; line-height: 1; }
+.star-score span { font-weight: 850; }
+.trivia-summary > p:not(.section-kicker) { max-width: 650px; margin: 1rem auto 1.5rem; color: #52635d; font-size: 1.1rem; }
+
+@media (max-width: 650px) {
+  .missing-team { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .missing-team span { aspect-ratio: auto; min-height: 4rem; }
+  .trivia-panel { border-radius: 21px; box-shadow: 6px 6px 0 var(--formula-yellow); }
+  .trivia-hud { grid-template-columns: 1fr 1fr; }
+  .trivia-hud div:first-child { grid-column: 1 / -1; }
+  .trivia-hud div:not(:first-child) { text-align: left; }
+  .base-formula-reminder { top: calc(var(--header-height, 68px) + .4rem); grid-template-columns: 1fr; gap: .35rem; text-align: center; }
+  .base-formula-reminder small { text-align: center; }
+  .trivia-heading { grid-template-columns: 1fr; }
+}
