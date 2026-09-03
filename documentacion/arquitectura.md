@@ -14,7 +14,7 @@
 
 ## Unidad de aislamiento
 
-La unidad mínima que puede entregarse a otra IA es una carpeta concreta con `index.html`, su `estilos.css`, `README.md` y metadatos. Si tiene comportamiento propio, incluye también su JavaScript; si usa fotografías, ilustraciones u otros archivos exclusivos, los conserva en un `recursos/` local. No se crean scripts vacíos.
+La unidad mínima que puede entregarse a otra IA es una carpeta concreta con `index.html`, su `estilos.css`, `README.md` y metadatos. Si tiene comportamiento exclusivo, incluye también su JavaScript; si reutiliza comportamiento o estilos idénticos, enlaza el recurso del ancestro común más cercano. Las fotografías, ilustraciones y otros archivos exclusivos se conservan en un `recursos/` local. No se crean scripts vacíos.
 
 Los componentes de un tema permanecen bajo la carpeta del tema. Los componentes personalizados permanecen bajo la sesión del usuario. Las colecciones globales enlazan esos módulos, pero no duplican su implementación.
 
@@ -35,17 +35,18 @@ Los estados `plantilla`, `borrador`, `archivado` e `inactivo` quedan fuera de lo
 
 ```text
 recursos/css/base.css ───── base visual realmente común
-recursos/js/navegacion.js ─ menú común
+recursos/js/navegacion.js ─ menú y controles flotantes comunes
 recursos/svg/ ────────────── identidad general
 
 carpeta/index.html ───────── carpeta/estilos.css
-                      └───── carpeta/script.js, solo si hace falta
+                      ├───── carpeta/script.js, solo para lógica exclusiva
+                      └───── ancestro/recursos/, para código idéntico de una familia
 academia.json ────────────── scripts locales de catálogos académicos
 ```
 
-`base.css` contiene únicamente la base que todas las páginas necesitan. El diseño de portada, secciones institucionales, catálogos, perfiles, alumnos, sesiones y componentes se encuentra en el `estilos.css` de cada página. `navegacion.js` controla solamente comportamiento compartido, como el menú.
+`base.css` contiene únicamente la base que todas las páginas necesitan: identidad, accesibilidad, encabezado, pie, botones comunes y controles flotantes. El diseño de portada, secciones institucionales, catálogos, perfiles, alumnos, sesiones y componentes se encuentra en el `estilos.css` de cada página o en recursos limitados a su familia. `navegacion.js` controla el menú y crea una sola instancia de WhatsApp y de volver arriba.
 
-La repetición razonable entre carpetas independientes es intencional: permite copiar un asesor completo sin depender de una hoja global que contenga reglas de otros asesores. Un recurso solo asciende a `recursos/` cuando es verdaderamente común a todo el sitio.
+Los módulos independientes no se acoplan entre sí. Cuando varios descendientes de una misma familia usan una implementación idéntica, esta vive en su ancestro común; no se asciende a la base global ni se duplica. Un recurso solo llega a `/recursos/` cuando es verdaderamente común a todo el sitio.
 
 ## Rutas
 
@@ -78,17 +79,16 @@ biblioteca/
 asesores/
 ├── index.html
 ├── estilos.css
+├── recursos/js/
 ├── erik/
 │   ├── maestro.json
 │   ├── index.html
 │   ├── estilos.css
-│   ├── script.js
 │   ├── recursos/
 │   ├── alejandrina/
 │   │   ├── usuario.json
 │   │   ├── index.html
 │   │   ├── estilos.css
-│   │   ├── script.js
 │   │   ├── datos-no-agrupados/
 │   │   ├── diagramas-de-arboles/
 │   │   ├── medidas-de-posicion/

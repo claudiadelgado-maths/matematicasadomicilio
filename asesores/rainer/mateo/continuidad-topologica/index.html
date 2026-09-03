@@ -1,12 +1,136 @@
-<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Continuidad topológica | Mateo | Matemáticas a Domicilio</title><meta name="description" content="Sesión universitaria sobre continuidad entre espacios topológicos."><link rel="icon" href="../../../../recursos/svg/favicon.svg" type="image/svg+xml"><script src="../../../../recursos/js/navegacion.js?v=20260828-floating2" defer></script>  <link rel="stylesheet" href="../../../../recursos/css/base.css?v=20260828-floating1">
-  <link rel="stylesheet" href="estilos.css?v=20260826-local1">
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Continuidad topológica | Mateo | Matemáticas a Domicilio</title><meta name="description" content="Sesión universitaria sobre continuidad entre espacios topológicos."><link rel="icon" href="../../../../recursos/svg/favicon.svg" type="image/svg+xml"><script src="../../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>  <link rel="stylesheet" href="../../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="estilos.css?v=20260902-topology2">
 </head>
 <body><a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../" aria-current="page">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav></div></header>
 <main id="contenido" class="topology-site"><div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../">Salones</a></li><li><a href="../../">Rainer</a></li><li><a href="../">Mateo</a></li><li aria-current="page">Continuidad topológica</li></ol></nav></div><header class="topology-hero"><div class="container"><p class="eyebrow">Topología · Sesión 1</p><h1>Continuidad topológica</h1><p class="lead">Una aplicación es continua cuando las preimágenes de abiertos siguen siendo abiertas.</p></div></header>
 <article class="topology-article">
-  <section class="topology-section" aria-labelledby="concepto"><h2 id="concepto">Concepto</h2><p>Sean (<var>X</var>, τ<sub>X</sub>) y (<var>Y</var>, τ<sub>Y</sub>) espacios topológicos. Una función <var>f</var>: <var>X</var> → <var>Y</var> es <strong>continua</strong> si para todo abierto <var>V</var> de <var>Y</var>, su preimagen <var>f</var><sup>−1</sup>(<var>V</var>) es abierta en <var>X</var>.</p><div class="math-block"><var>V</var> ∈ τ<sub>Y</sub> ⟹ <var>f</var><sup>−1</sup>(<var>V</var>) ∈ τ<sub>X</sub>.</div><p>La definición utiliza preimágenes porque estas conservan uniones e intersecciones sin exigir que <var>f</var> sea inyectiva o sobreyectiva.</p></section>
-  <section class="topology-section" aria-labelledby="ejemplo"><h2 id="ejemplo">Ejemplo</h2><p>Toda función constante <var>f</var>: <var>X</var> → <var>Y</var>, dada por <var>f</var>(<var>x</var>) = <var>y</var><sub>0</sub>, es continua. Para un abierto <var>V</var> de <var>Y</var>, su preimagen es <var>X</var> si <var>y</var><sub>0</sub> pertenece a <var>V</var>, y es ∅ en caso contrario. Ambos conjuntos son abiertos en cualquier topología sobre <var>X</var>.</p></section>
-  <section class="topology-section" aria-labelledby="demostracion"><h2 id="demostracion">Demostración</h2><p>La composición de aplicaciones continuas es continua.</p><details class="proof-details"><summary>Ver demostración</summary><div class="proof-body"><p>Sean <var>f</var>: <var>X</var> → <var>Y</var> y <var>g</var>: <var>Y</var> → <var>Z</var> continuas. Si <var>W</var> es abierto en <var>Z</var>, entonces <var>g</var><sup>−1</sup>(<var>W</var>) es abierto en <var>Y</var>. Por la continuidad de <var>f</var>, <var>f</var><sup>−1</sup>(<var>g</var><sup>−1</sup>(<var>W</var>)) es abierto en <var>X</var>. Como este conjunto coincide con (<var>g</var> ∘ <var>f</var>)<sup>−1</sup>(<var>W</var>), la composición es continua.</p></div></details></section>
-  <section class="topology-section" aria-labelledby="ejercicios"><h2 id="ejercicios">Ejercicios</h2><ol class="exercise-list"><li>Demuestra que la identidad id: (<var>X</var>, τ) → (<var>X</var>, τ) es continua.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>Para todo abierto <var>U</var> ∈ τ se cumple id<sup>−1</sup>(<var>U</var>) = <var>U</var>, que es abierto en el dominio.</p></div></details></li><li>Sean τ<sub>1</sub> y τ<sub>2</sub> topologías sobre <var>X</var>. Determina cuándo la identidad id: (<var>X</var>, τ<sub>1</sub>) → (<var>X</var>, τ<sub>2</sub>) es continua.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>Es continua exactamente cuando τ<sub>2</sub> ⊆ τ<sub>1</sub>, pues la preimagen por la identidad de cada abierto de τ<sub>2</sub> es el mismo conjunto y debe pertenecer a τ<sub>1</sub>.</p></div></details></li></ol></section>
+  <section class="topology-section" aria-labelledby="objetivos">
+    <h2 id="objetivos">Objetivos de la sesión</h2>
+    <p>Al terminar podrás analizar la continuidad sin depender de fórmulas con distancias. La meta es leer simultáneamente la función, la topología del dominio y la topología del codominio.</p>
+    <ul class="topology-goals">
+      <li>Aplicar la definición de continuidad mediante preimágenes de abiertos.</li>
+      <li>Usar criterios equivalentes con cerrados y vecindades.</li>
+      <li>Verificar funciones entre espacios finitos de manera ordenada.</li>
+      <li>Explicar cómo influyen las topologías del dominio y del codominio.</li>
+      <li>Producir ejemplos continuos y contraejemplos con una justificación formal.</li>
+    </ul>
+  </section>
+
+  <section class="topology-section" aria-labelledby="intuicion">
+    <h2 id="intuicion">La idea detrás de la continuidad</h2>
+    <p>En cálculo se suele decir que una función continua no presenta saltos. Esa imagen funciona en la recta real, pero no explica qué hacer en espacios donde no hay una distancia, una gráfica o intervalos. La topología reemplaza la idea de “puntos cercanos” por la de <strong>conjuntos abiertos</strong>.</p>
+    <p>Si <var>V</var> es una región abierta del codominio, su preimagen reúne todos los puntos del dominio que la función envía a <var>V</var>. Pedir que esa preimagen sea abierta significa que entrar en una región abierta de llegada no obliga a hacer un corte extraño en el espacio de partida.</p>
+    <aside class="topology-callout"><strong>Importante:</strong> la continuidad no es una propiedad de la fórmula por sí sola. La misma función puede ser continua o no según las topologías elegidas en el dominio y el codominio.</aside>
+  </section>
+
+  <section class="topology-section" aria-labelledby="definicion">
+    <h2 id="definicion">Definición mediante abiertos</h2>
+    <p>Sean (<var>X</var>, τ<sub>X</sub>) y (<var>Y</var>, τ<sub>Y</sub>) espacios topológicos. Una función <var>f</var>: <var>X</var> → <var>Y</var> es <strong>continua</strong> si la preimagen de cada abierto del codominio es abierta en el dominio.</p>
+    <div class="math-block"><var>V</var> ∈ τ<sub>Y</sub> ⟹ <var>f</var><sup>−1</sup>(<var>V</var>) ∈ τ<sub>X</sub>.</div>
+    <p>La preimagen de <var>V</var> se define por</p>
+    <div class="math-block"><var>f</var><sup>−1</sup>(<var>V</var>) = {<var>x</var> ∈ <var>X</var> : <var>f</var>(<var>x</var>) ∈ <var>V</var>}.</div>
+    <p>Esta notación no supone que exista una función inversa. Las preimágenes están definidas para cualquier función y satisfacen dos reglas decisivas:</p>
+    <ul class="property-list">
+      <li><var>f</var><sup>−1</sup>(⋃<sub>i</sub> <var>V</var><sub>i</sub>) = ⋃<sub>i</sub> <var>f</var><sup>−1</sup>(<var>V</var><sub>i</sub>).</li>
+      <li><var>f</var><sup>−1</sup>(<var>V</var> ∩ <var>W</var>) = <var>f</var><sup>−1</sup>(<var>V</var>) ∩ <var>f</var><sup>−1</sup>(<var>W</var>).</li>
+    </ul>
+    <p>Por eso la definición encaja exactamente con los axiomas de una topología.</p>
+  </section>
+
+  <section class="topology-section" aria-labelledby="criterios">
+    <h2 id="criterios">Tres criterios equivalentes</h2>
+    <div class="concept-grid">
+      <article class="concept-card"><h3>Mediante abiertos</h3><p>Para todo abierto <var>V</var> de <var>Y</var>, la preimagen <var>f</var><sup>−1</sup>(<var>V</var>) es abierta en <var>X</var>.</p></article>
+      <article class="concept-card"><h3>Mediante cerrados</h3><p>Para todo cerrado <var>F</var> de <var>Y</var>, la preimagen <var>f</var><sup>−1</sup>(<var>F</var>) es cerrada en <var>X</var>.</p></article>
+      <article class="concept-card"><h3>Mediante vecindades</h3><p>Si <var>V</var> es una vecindad abierta de <var>f</var>(<var>x</var>), existe una vecindad abierta <var>U</var> de <var>x</var> con <var>f</var>(<var>U</var>) ⊆ <var>V</var>.</p></article>
+    </div>
+    <details class="proof-details"><summary>¿Por qué el criterio de cerrados es equivalente?</summary><div class="proof-body"><p>Para cualquier subconjunto <var>F</var> de <var>Y</var>, se cumple <var>f</var><sup>−1</sup>(<var>Y</var> ∖ <var>F</var>) = <var>X</var> ∖ <var>f</var><sup>−1</sup>(<var>F</var>). Si las preimágenes de abiertos son abiertas y <var>F</var> es cerrado, entonces <var>Y</var> ∖ <var>F</var> es abierto; su preimagen es abierta y, por complemento, <var>f</var><sup>−1</sup>(<var>F</var>) es cerrada. El argumento inverso es el mismo intercambiando abiertos y cerrados.</p></div></details>
+  </section>
+
+  <section class="topology-section" aria-labelledby="metodo">
+    <h2 id="metodo">Cómo verificar continuidad</h2>
+    <p>En un espacio finito se puede revisar la definición directamente. Conviene mantener separados el dominio y el codominio para no confundir en qué topología debe ser abierto cada conjunto.</p>
+    <div class="worked-example">
+      <ol class="example-steps">
+        <li><strong>Escribe ambas topologías</strong> e identifica los abiertos del codominio.</li>
+        <li><strong>Calcula la preimagen</strong> de cada abierto relevante del codominio.</li>
+        <li><strong>Busca cada preimagen en τ<sub>X</sub>.</strong> Si todas aparecen, la función es continua.</li>
+        <li><strong>Detente ante el primer fallo.</strong> Un solo abierto cuya preimagen no sea abierta basta para demostrar que la función no es continua.</li>
+      </ol>
+    </div>
+    <p>No hace falta dedicar tiempo a ∅ y <var>Y</var>: sus preimágenes siempre son ∅ y <var>X</var>, que son abiertos en cualquier topología.</p>
+  </section>
+
+  <section class="topology-section" aria-labelledby="ejemplo-finito">
+    <h2 id="ejemplo-finito">Ejemplo guiado en espacios finitos</h2>
+    <p>Considera los espacios</p>
+    <div class="math-block"><var>X</var> = {a, b, c}, τ<sub>X</sub> = {∅, {a}, {a, b}, <var>X</var>}<br><var>Y</var> = {0, 1}, τ<sub>Y</sub> = {∅, {1}, <var>Y</var>}.</div>
+    <p>Define <var>f</var>: <var>X</var> → <var>Y</var> por <var>f</var>(a) = 1 y <var>f</var>(b) = <var>f</var>(c) = 0. El único abierto no trivial del codominio es {1}, y</p>
+    <div class="math-block"><var>f</var><sup>−1</sup>({1}) = {a} ∈ τ<sub>X</sub>.</div>
+    <p>Las preimágenes de ∅ y <var>Y</var> también son abiertas, de modo que <var>f</var> es continua.</p>
+    <p>Ahora define <var>g</var> por <var>g</var>(b) = 1 y <var>g</var>(a) = <var>g</var>(c) = 0. Entonces <var>g</var><sup>−1</sup>({1}) = {b}, que no pertenece a τ<sub>X</sub>. Este único abierto demuestra que <var>g</var> no es continua.</p>
+  </section>
+
+  <section class="topology-section" aria-labelledby="topologias-extremas">
+    <h2 id="topologias-extremas">Cómo influyen las topologías</h2>
+    <p>La continuidad exige que el dominio tenga suficientes abiertos para recibir las preimágenes de los abiertos del codominio.</p>
+    <div class="topology-table-wrap" tabindex="0" aria-label="Tabla desplazable sobre continuidad y topologías extremas">
+      <table class="topology-table">
+        <thead><tr><th scope="col">Situación</th><th scope="col">Consecuencia</th><th scope="col">Razón</th></tr></thead>
+        <tbody>
+          <tr><td>El dominio es discreto</td><td>Toda función que sale de él es continua.</td><td>Toda preimagen es un subconjunto del dominio y todos sus subconjuntos son abiertos.</td></tr>
+          <tr><td>El codominio es indiscreto</td><td>Toda función que llega a él es continua.</td><td>Solo hay que revisar ∅ y el espacio completo.</td></tr>
+          <tr><td>Se hace más fina la topología del dominio</td><td>La continuidad se vuelve más fácil de satisfacer.</td><td>Hay más conjuntos disponibles como abiertos.</td></tr>
+          <tr><td>Se hace más fina la topología del codominio</td><td>La continuidad se vuelve más exigente.</td><td>Aparecen más abiertos cuyas preimágenes deben revisarse.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <aside class="topology-callout"><strong>Regla para recordar:</strong> más abiertos en el dominio ayudan; más abiertos en el codominio exigen más.</aside>
+  </section>
+
+  <section class="topology-section" aria-labelledby="ejemplos-basicos">
+    <h2 id="ejemplos-basicos">Ejemplos fundamentales</h2>
+    <div class="concept-grid">
+      <article class="concept-card"><h3>Función constante</h3><p>Si <var>f</var>(<var>x</var>) = <var>y</var><sub>0</sub>, la preimagen de un abierto es <var>X</var> cuando contiene a <var>y</var><sub>0</sub>, y ∅ cuando no lo contiene. Siempre es continua.</p></article>
+      <article class="concept-card"><h3>Función identidad</h3><p>La identidad id: (<var>X</var>, τ) → (<var>X</var>, τ) es continua porque id<sup>−1</sup>(<var>U</var>) = <var>U</var> para cada abierto.</p></article>
+      <article class="concept-card"><h3>Función afín en ℝ</h3><p>Para <var>f</var>(<var>x</var>) = 2<var>x</var> + 1, la preimagen de (<var>a</var>, <var>b</var>) es ((<var>a</var> − 1)/2, (<var>b</var> − 1)/2), un intervalo abierto. Las uniones de intervalos también conservan esta propiedad.</p></article>
+    </div>
+    <p>El tercer ejemplo conecta la definición topológica con la continuidad conocida de cálculo: los abiertos usuales de ℝ son uniones de intervalos abiertos.</p>
+  </section>
+
+  <section class="topology-section" aria-labelledby="composicion">
+    <h2 id="composicion">Composición de funciones continuas</h2>
+    <p>Si una primera función preserva la apertura al tomar preimágenes y una segunda también lo hace, recorrer ambas sucesivamente mantiene esa propiedad.</p>
+    <details class="proof-details"><summary>Ver demostración</summary><div class="proof-body"><p>Sean <var>f</var>: <var>X</var> → <var>Y</var> y <var>g</var>: <var>Y</var> → <var>Z</var> continuas. Toma un abierto <var>W</var> de <var>Z</var>. Por la continuidad de <var>g</var>, el conjunto <var>g</var><sup>−1</sup>(<var>W</var>) es abierto en <var>Y</var>. Ahora se puede aplicar la continuidad de <var>f</var>, por lo que <var>f</var><sup>−1</sup>(<var>g</var><sup>−1</sup>(<var>W</var>)) es abierto en <var>X</var>. Finalmente, la regla de preimagen de una composición da</p><div class="math-block">(<var>g</var> ∘ <var>f</var>)<sup>−1</sup>(<var>W</var>) = <var>f</var><sup>−1</sup>(<var>g</var><sup>−1</sup>(<var>W</var>)).</div><p>Así, la preimagen por <var>g</var> ∘ <var>f</var> de cualquier abierto de <var>Z</var> es abierta en <var>X</var>; por definición, la composición es continua.</p></div></details>
+  </section>
+
+  <section class="topology-section" aria-labelledby="errores">
+    <h2 id="errores">Errores frecuentes</h2>
+    <ul class="common-mistakes">
+      <li><strong>Calcular la imagen en lugar de la preimagen.</strong> La definición exige <var>f</var><sup>−1</sup>(<var>V</var>), no <var>f</var>(<var>U</var>).</li>
+      <li><strong>Revisar la apertura en el espacio incorrecto.</strong> <var>V</var> es abierto en <var>Y</var>, pero su preimagen debe ser abierta en <var>X</var>.</li>
+      <li><strong>Suponer que <var>f</var><sup>−1</sup> es una función inversa.</strong> Una preimagen existe aunque <var>f</var> no sea biyectiva.</li>
+      <li><strong>Comprobar solo algunos abiertos sin justificación.</strong> Se pueden revisar elementos de una base, pero primero hay que saber que realmente forman una base del codominio.</li>
+      <li><strong>Ignorar las topologías.</strong> Conocer únicamente la regla de correspondencia de <var>f</var> no permite decidir continuidad.</li>
+    </ul>
+  </section>
+
+  <section class="topology-section" aria-labelledby="ejercicios">
+    <h2 id="ejercicios">Ejercicios</h2>
+    <ol class="exercise-list">
+      <li>Demuestra que la identidad id: (<var>X</var>, τ) → (<var>X</var>, τ) es continua.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>Para todo abierto <var>U</var> ∈ τ se cumple id<sup>−1</sup>(<var>U</var>) = <var>U</var>. Como <var>U</var> ya es abierto en el dominio, la identidad satisface la definición de continuidad.</p></div></details></li>
+      <li>Sean τ<sub>1</sub> y τ<sub>2</sub> topologías sobre <var>X</var>. Determina cuándo id: (<var>X</var>, τ<sub>1</sub>) → (<var>X</var>, τ<sub>2</sub>) es continua.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>Es continua exactamente cuando τ<sub>2</sub> ⊆ τ<sub>1</sub>. La preimagen por la identidad de cada <var>U</var> ∈ τ<sub>2</sub> es el mismo conjunto <var>U</var>, y este debe pertenecer a la topología del dominio τ<sub>1</sub>.</p></div></details></li>
+      <li>En el ejemplo finito de la sesión, define <var>h</var>(a) = <var>h</var>(b) = 1 y <var>h</var>(c) = 0. Decide si <var>h</var> es continua.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>El único abierto no trivial de <var>Y</var> es {1}. Su preimagen es <var>h</var><sup>−1</sup>({1}) = {a, b}, que pertenece a τ<sub>X</sub>. Las preimágenes de ∅ y <var>Y</var> son ∅ y <var>X</var>; por tanto, <var>h</var> es continua.</p></div></details></li>
+      <li>Sea <var>X</var> un conjunto con al menos dos elementos. Compara las identidades id: (<var>X</var>, τ<sub>disc</sub>) → (<var>X</var>, τ<sub>ind</sub>) e id: (<var>X</var>, τ<sub>ind</sub>) → (<var>X</var>, τ<sub>disc</sub>).<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>La primera es continua porque los únicos abiertos del codominio indiscreto son ∅ y <var>X</var>. La segunda no es continua: si <var>U</var> es un subconjunto propio, no vacío, entonces es abierto en el codominio discreto, pero id<sup>−1</sup>(<var>U</var>) = <var>U</var> no es abierto en el dominio indiscreto.</p></div></details></li>
+      <li>Demuestra directamente que toda función constante entre espacios topológicos es continua.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>Sea <var>f</var>(<var>x</var>) = <var>y</var><sub>0</sub>. Para cualquier abierto <var>V</var> del codominio, <var>f</var><sup>−1</sup>(<var>V</var>) es <var>X</var> si <var>y</var><sub>0</sub> ∈ <var>V</var>, y ∅ si <var>y</var><sub>0</sub> ∉ <var>V</var>. Ambos son abiertos en todo espacio topológico.</p></div></details></li>
+      <li>Prueba que si <var>f</var>: <var>X</var> → <var>Y</var> y <var>g</var>: <var>Y</var> → <var>Z</var> son continuas, entonces <var>g</var> ∘ <var>f</var> también lo es.<details class="proof-details"><summary>Ver una orientación</summary><div class="proof-body"><p>Empieza con un abierto <var>W</var> de <var>Z</var>. Usa primero la continuidad de <var>g</var> y después la de <var>f</var>. Concluye mediante la igualdad (<var>g</var> ∘ <var>f</var>)<sup>−1</sup>(<var>W</var>) = <var>f</var><sup>−1</sup>(<var>g</var><sup>−1</sup>(<var>W</var>)).</p></div></details></li>
+    </ol>
+  </section>
+
+  <section class="topology-section" aria-labelledby="resumen">
+    <h2 id="resumen">Resumen</h2>
+    <p>Una función es continua cuando lleva los abiertos del codominio a abiertos del dominio al tomar preimágenes. Los criterios con cerrados y vecindades expresan la misma idea, y la elección de las topologías puede facilitar o dificultar la continuidad. La composición conserva esta propiedad.</p>
+    <nav class="session-navigation" aria-label="Navegación de la sesión de Mateo"><a href="../">Volver a las sesiones de Mateo</a></nav>
+  </section>
 </article></main>
 <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav></div></footer></body></html>

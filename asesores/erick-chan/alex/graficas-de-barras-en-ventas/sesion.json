@@ -4,8 +4,8 @@
   "tipo": "sesion",
   "usuario": "alex-erick-chan",
   "titulo": "Gráficas de barras en ventas",
-  "descripcion": "Cómo organizar, comparar e interpretar datos de ventas mediante tres ejemplos de tecnología.",
-  "objetivo": "Leer una gráfica de barras, realizar comparaciones correctas y explicar qué decisión comercial puede apoyarse en los datos.",
+  "descripcion": "Recorrido interactivo para leer, construir y evaluar gráficas de barras mediante datos de ventas y decisiones rápidas.",
+  "objetivo": "Interpretar escalas y categorías, comparar cantidades, distinguir unidades de ingresos y detectar presentaciones engañosas de los datos.",
   "conocimientosPrevios": [
     "suma y resta de números enteros",
     "multiplicación",

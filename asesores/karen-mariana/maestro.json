@@ -1,0 +1,52 @@
+{
+  "id": "karen-mariana",
+  "slug": "karen-mariana",
+  "tipo": "maestro",
+  "titulo": "Karen Mariana",
+  "nombreVisible": "Karen Mariana",
+  "rol": "Asesora",
+  "descripcion": "Asesora de secundaria que acompaña la regularización mediante teoría clara, fórmulas, procedimientos y ejercicios vinculados con los contenidos actuales de la escuela.",
+  "estado": "activo",
+  "ruta": "/asesores/karen-mariana/",
+  "imagen": "/asesores/karen-mariana/recursos/karen-mariana.png",
+  "imagenAlt": "Gata tricolor dormida, imagen del salón de Karen Mariana",
+  "imagenAjuste": "cover",
+  "banner": {
+    "colorInicial": "#184f49",
+    "colorFinal": "#d39a45"
+  },
+  "ubicacion": {
+    "pais": "México",
+    "region": "Estado de México",
+    "ciudad": "Toluca"
+  },
+  "modalidad": {
+    "tipo": "grupal",
+    "maximoAlumnos": 6
+  },
+  "disponibilidad": {
+    "aceptaNuevosAlumnos": true,
+    "etiquetaDisponible": "Acepta nuevos alumnos",
+    "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
+  },
+  "precios": [
+    {
+      "id": "sesion-grupal-60",
+      "titulo": "Sesión",
+      "duracionMinutos": 60,
+      "importe": 360,
+      "moneda": "MXN",
+      "nota": "Sesión grupal para un máximo de seis alumnos, con teoría y ejercicios preparados según los contenidos escolares actuales."
+    }
+  ],
+  "sobre": [
+    "Karen Mariana trabaja con estudiantes de secundaria que necesitan regularización y acostumbra acompañarlos en grupos pequeños, principalmente de cuatro a seis alumnos.",
+    "Mantiene comunicación con las familias para conocer los temas y tareas que el estudiante está trabajando actualmente en la escuela."
+  ],
+  "metodologia": [
+    "Revisa los contenidos y tareas actuales para identificar las dificultades concretas del estudiante.",
+    "Explica la teoría y las fórmulas con procedimientos ordenados, ejemplos manejables y apoyos visuales.",
+    "Propone ejercicios progresivos para practicar cada paso antes de integrar el procedimiento completo.",
+    "Destaca la información importante con una jerarquía visual clara y verifica qué necesita reforzarse en la siguiente sesión."
+  ]
+}

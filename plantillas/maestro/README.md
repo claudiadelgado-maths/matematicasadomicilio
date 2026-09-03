@@ -10,7 +10,7 @@
 6. Cambia `estado` de `plantilla` a `activo` solo cuando el perfil sea publicable.
 7. Ejecuta `npm run catalogo` y `npm run validar`.
 
-`index.html`, `estilos.css` y `script.js` forman una unidad: la plantilla usa el script para cargar los datos académicos. Conserva los recursos particulares dentro de esta carpeta al crear el asesor.
+`index.html` y `estilos.css` forman la unidad local. La carga de datos académicos se enlaza desde `/asesores/recursos/js/perfil-asesor.js`; no copies ese script al crear el asesor. Conserva en esta carpeta únicamente sus recursos particulares.
 
 Los alumnos no se agregan en este JSON. Cada alumno declara el ID del maestro en su propio `usuario.json`, evitando mantener listas duplicadas.
 

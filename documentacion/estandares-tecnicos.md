@@ -16,7 +16,7 @@
 - Cada `index.html` debe enlazar un `estilos.css` ubicado en su misma carpeta.
 - `recursos/css/base.css` contiene solo la base realmente común; no recibe reglas particulares de áreas o módulos.
 - Sin `!important` salvo una utilidad documentada.
-- Mantener el diseño específico dentro del módulo, incluso si existe cierta repetición entre carpetas que deben poder copiarse de forma independiente.
+- Mantener el diseño específico dentro del módulo. El código idéntico de varios descendientes se comparte desde su ancestro común, sin trasladarlo a la base global.
 
 ## JavaScript
 
@@ -26,7 +26,7 @@
 - No crear estado global.
 - No incorporar paquetes de producción para una operación sencilla.
 - Conservar navegación por teclado y mensajes accesibles.
-- Guardar el comportamiento particular junto a su página y no crear archivos JavaScript vacíos.
+- Guardar el comportamiento particular junto a su página; compartir el comportamiento idéntico desde la familia más cercana y no crear archivos JavaScript vacíos.
 
 ## SVG
 

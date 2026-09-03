@@ -267,15 +267,15 @@
       },
       {
         "id": "karen-mariana",
-        "slug": "karen",
+        "slug": "karen-mariana",
         "tipo": "maestro",
         "titulo": "Karen Mariana",
         "nombreVisible": "Karen Mariana",
         "rol": "Asesora",
         "descripcion": "Asesora de secundaria que acompaña la regularización mediante teoría clara, fórmulas, procedimientos y ejercicios vinculados con los contenidos actuales de la escuela.",
         "estado": "activo",
-        "ruta": "/asesores/karen/",
-        "imagen": "/asesores/karen/recursos/karen-mariana.png",
+        "ruta": "/asesores/karen-mariana/",
+        "imagen": "/asesores/karen-mariana/recursos/karen-mariana.png",
         "imagenAlt": "Gata tricolor dormida, imagen del salón de Karen Mariana",
         "imagenAjuste": "cover",
         "banner": {
@@ -316,7 +316,7 @@
           "Propone ejercicios progresivos para practicar cada paso antes de integrar el procedimiento completo.",
           "Destaca la información importante con una jerarquía visual clara y verifica qué necesita reforzarse en la siguiente sesión."
         ],
-        "archivoMetadatos": "asesores/karen/maestro.json"
+        "archivoMetadatos": "asesores/karen-mariana/maestro.json"
       },
       {
         "id": "rainer",
@@ -596,7 +596,7 @@
         "nombreVisible": "Esteba",
         "descripcion": "Sesiones de secundaria para comprender exponentes desconocidos y logaritmos.",
         "estado": "activo",
-        "ruta": "/asesores/karen/esteba/",
+        "ruta": "/asesores/karen-mariana/esteba/",
         "maestro": "karen-mariana",
         "personalizacion": {
           "simbolo": "E",
@@ -604,7 +604,7 @@
           "fondo": "#f5ecf8"
         },
         "almacenamientoLocal": false,
-        "archivoMetadatos": "asesores/karen/esteba/usuario.json"
+        "archivoMetadatos": "asesores/karen-mariana/esteba/usuario.json"
       },
       {
         "id": "jonny-karen",
@@ -614,7 +614,7 @@
         "nombreVisible": "Jonny",
         "descripcion": "Sesiones de secundaria sobre ecuaciones cuadráticas y cuadriláteros.",
         "estado": "activo",
-        "ruta": "/asesores/karen/jonny/",
+        "ruta": "/asesores/karen-mariana/jonny/",
         "maestro": "karen-mariana",
         "personalizacion": {
           "simbolo": "J",
@@ -622,7 +622,7 @@
           "fondo": "#fcebec"
         },
         "almacenamientoLocal": false,
-        "archivoMetadatos": "asesores/karen/jonny/usuario.json"
+        "archivoMetadatos": "asesores/karen-mariana/jonny/usuario.json"
       },
       {
         "id": "milndred-karen",
@@ -632,7 +632,7 @@
         "nombreVisible": "Milndred",
         "descripcion": "Sesiones de secundaria sobre exponentes y geometría del círculo.",
         "estado": "activo",
-        "ruta": "/asesores/karen/milndred/",
+        "ruta": "/asesores/karen-mariana/milndred/",
         "maestro": "karen-mariana",
         "personalizacion": {
           "simbolo": "M",
@@ -640,7 +640,7 @@
           "fondo": "#e8f5f1"
         },
         "almacenamientoLocal": false,
-        "archivoMetadatos": "asesores/karen/milndred/usuario.json"
+        "archivoMetadatos": "asesores/karen-mariana/milndred/usuario.json"
       },
       {
         "id": "raul-karen",
@@ -650,7 +650,7 @@
         "nombreVisible": "Raul",
         "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
         "estado": "activo",
-        "ruta": "/asesores/karen/raul/",
+        "ruta": "/asesores/karen-mariana/raul/",
         "maestro": "karen-mariana",
         "personalizacion": {
           "simbolo": "R",
@@ -658,7 +658,7 @@
           "fondo": "#fff2da"
         },
         "almacenamientoLocal": false,
-        "archivoMetadatos": "asesores/karen/raul/usuario.json"
+        "archivoMetadatos": "asesores/karen-mariana/raul/usuario.json"
       },
       {
         "id": "mateo-rainer",
@@ -898,8 +898,8 @@
         "tipo": "sesion",
         "usuario": "gloria-elizabeth",
         "titulo": "1. Reglas de derivación",
-        "descripcion": "Reglas de potencia, suma, producto, cociente y cadena para derivar con rapidez.",
-        "objetivo": "Seleccionar y combinar reglas de derivación sin perder la estructura de la función.",
+        "descripcion": "Mapa interactivo de reglas de derivación con método de elección, ejemplos desarrollados y práctica.",
+        "objetivo": "Seleccionar, combinar y comprobar reglas de derivación según la estructura de cada función.",
         "conocimientosPrevios": [
           "derivada como límite",
           "álgebra de funciones"
@@ -922,8 +922,8 @@
         "tipo": "sesion",
         "usuario": "gloria-elizabeth",
         "titulo": "2. Reglas esenciales de integración",
-        "descripcion": "Antiderivadas, linealidad, regla de potencia y fórmulas elementales.",
-        "objetivo": "Reconocer integrales inmediatas y aplicar las reglas esenciales con su constante de integración.",
+        "descripcion": "Antiderivadas y fórmulas de integración con consulta interactiva, ejemplos detallados y práctica.",
+        "objetivo": "Reconocer integrales inmediatas, aplicar sustituciones sencillas y comprobar cada antiderivada mediante derivación.",
         "conocimientosPrevios": [
           "reglas de derivación",
           "potencias",
@@ -947,8 +947,8 @@
         "tipo": "sesion",
         "usuario": "gloria-elizabeth",
         "titulo": "3. Teorema fundamental del cálculo",
-        "descripcion": "Relación entre derivación e integración y evaluación de integrales definidas.",
-        "objetivo": "Usar las dos partes del teorema fundamental para derivar funciones de acumulación y calcular integrales definidas.",
+        "descripcion": "Construcción gradual del teorema fundamental con fórmulas revelables, ejemplos y práctica.",
+        "objetivo": "Relacionar acumulación y derivación, derivar integrales con límite variable y evaluar integrales definidas.",
         "conocimientosPrevios": [
           "derivadas",
           "antiderivadas",
@@ -972,8 +972,8 @@
         "tipo": "sesion",
         "usuario": "jimena-elizabeth",
         "titulo": "1. Derivada paramétrica",
-        "descripcion": "Pendiente de una curva dada por x(t) e y(t), y condición para aplicar dy/dx.",
-        "objetivo": "Calcular la derivada de una curva paramétrica e interpretar su pendiente en un valor del parámetro.",
+        "descripcion": "Pendiente, tangentes, segunda derivada y rapidez de curvas paramétricas con ejemplos detallados.",
+        "objetivo": "Calcular e interpretar derivadas paramétricas, rectas tangentes, concavidad y condiciones de tangencia horizontal o vertical.",
         "conocimientosPrevios": [
           "reglas de derivación",
           "curvas en el plano",
@@ -997,8 +997,8 @@
         "tipo": "sesion",
         "usuario": "jimena-elizabeth",
         "titulo": "2. Integral de curva",
-        "descripcion": "Parametrización, elemento de longitud ds e integración de campos escalares sobre una curva.",
-        "objetivo": "Plantear y evaluar integrales escalares de curva mediante una parametrización regular.",
+        "descripcion": "Integrales escalares, elemento de longitud y longitud de arco con ejemplos planos y espaciales.",
+        "objetivo": "Parametrizar trayectorias y evaluar integrales escalares de curva interpretando el papel del campo y del elemento de longitud.",
         "conocimientosPrevios": [
           "integrales definidas",
           "vectores",
@@ -1022,8 +1022,8 @@
         "tipo": "sesion",
         "usuario": "kevin-elizabeth",
         "titulo": "1. Conjuntos",
-        "descripcion": "Notación, pertenencia, subconjuntos y operaciones de unión, intersección, diferencia y complemento.",
-        "objetivo": "Representar conjuntos y resolver operaciones básicas con notación correcta.",
+        "descripcion": "Notación, operaciones, cardinalidad, intervalos y leyes de conjuntos con ejemplos detallados.",
+        "objetivo": "Representar conjuntos, traducir enunciados y resolver operaciones y problemas de conteo con notación correcta.",
         "conocimientosPrevios": [
           "lógica elemental",
           "desigualdades básicas"
@@ -1046,8 +1046,8 @@
         "tipo": "sesion",
         "usuario": "kevin-elizabeth",
         "titulo": "3. La derivada como límite",
-        "descripcion": "Definición de derivada como límite del cociente incremental e interpretación como pendiente.",
-        "objetivo": "Construir la derivada desde la razón de cambio promedio y relacionarla con la pendiente tangente.",
+        "descripcion": "Construcción de la derivada desde secantes, cociente incremental y límite con aplicaciones y ejemplos.",
+        "objetivo": "Obtener derivadas desde la definición, interpretar la pendiente tangente e identificar casos donde la derivada no existe.",
         "conocimientosPrevios": [
           "límites",
           "pendiente de una recta",
@@ -1071,8 +1071,8 @@
         "tipo": "sesion",
         "usuario": "kevin-elizabeth",
         "titulo": "2. Límites",
-        "descripcion": "Aproximación, leyes de límites y resolución de indeterminaciones sencillas por factorización.",
-        "objetivo": "Interpretar un límite y calcularlo mediante sustitución o simplificación algebraica.",
+        "descripcion": "Aproximación, límites laterales, indeterminaciones y comportamiento al infinito con ejemplos detallados.",
+        "objetivo": "Interpretar la existencia de un límite y elegir entre sustitución, factorización, racionalización y análisis lateral o al infinito.",
         "conocimientosPrevios": [
           "funciones",
           "factorización",
@@ -1096,13 +1096,14 @@
         "tipo": "sesion",
         "usuario": "renata-elizabeth",
         "titulo": "2. Matrices y sus operaciones",
-        "descripcion": "Definición, dimensiones, suma, producto por escalar y multiplicación matricial.",
-        "objetivo": "Interpretar una matriz por sus dimensiones y efectuar operaciones compatibles.",
+        "descripcion": "Dimensiones, suma, resta, escalares, producto matricial y transpuesta con fórmulas revelables, ejemplos guiados y práctica.",
+        "objetivo": "Leer dimensiones y entradas, comprobar compatibilidad y resolver operaciones matriciales justificando cada paso.",
         "conocimientosPrevios": [
           "operaciones con números reales",
-          "sistemas de ecuaciones"
+          "manejo de signos",
+          "lectura de filas y columnas"
         ],
-        "fecha": "2026-08-20",
+        "fecha": "2026-09-03",
         "estado": "publicado",
         "ruta": "/asesores/elizabeth/renata/matrices-y-operaciones/",
         "componentes": {
@@ -1120,13 +1121,14 @@
         "tipo": "sesion",
         "usuario": "renata-elizabeth",
         "titulo": "1. Propiedades de un espacio vectorial",
-        "descripcion": "Axiomas de espacio vectorial y criterio de subespacio con ejemplos en R² y polinomios.",
-        "objetivo": "Reconocer las propiedades de un espacio vectorial y comprobar si un subconjunto es subespacio.",
+        "descripcion": "Axiomas y criterio de subespacio con fórmulas revelables, demostraciones, contraejemplos y práctica en vectores y polinomios.",
+        "objetivo": "Reconocer los axiomas de un espacio vectorial y demostrar o descartar subespacios mediante el cero y la cerradura.",
         "conocimientosPrevios": [
-          "vectores en R²",
-          "suma y multiplicación por escalar"
+          "vectores en R² y R³",
+          "suma y multiplicación por escalar",
+          "operaciones básicas con polinomios"
         ],
-        "fecha": "2026-08-20",
+        "fecha": "2026-09-03",
         "estado": "publicado",
         "ruta": "/asesores/elizabeth/renata/propiedades-de-un-espacio-vectorial/",
         "componentes": {
@@ -1144,8 +1146,8 @@
         "tipo": "sesion",
         "usuario": "alex-erick-chan",
         "titulo": "Gráficas de barras en ventas",
-        "descripcion": "Cómo organizar, comparar e interpretar datos de ventas mediante tres ejemplos de tecnología.",
-        "objetivo": "Leer una gráfica de barras, realizar comparaciones correctas y explicar qué decisión comercial puede apoyarse en los datos.",
+        "descripcion": "Recorrido interactivo para leer, construir y evaluar gráficas de barras mediante datos de ventas y decisiones rápidas.",
+        "objetivo": "Interpretar escalas y categorías, comparar cantidades, distinguir unidades de ingresos y detectar presentaciones engañosas de los datos.",
         "conocimientosPrevios": [
           "suma y resta de números enteros",
           "multiplicación",
@@ -1374,7 +1376,7 @@
         ],
         "fecha": "2026-08-11",
         "estado": "publicado",
-        "ruta": "/asesores/karen/esteba/encontrar-el-exponente/",
+        "ruta": "/asesores/karen-mariana/esteba/encontrar-el-exponente/",
         "componentes": {
           "explicacion": false,
           "demostraciones": false,
@@ -1382,7 +1384,7 @@
           "juegos": false,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/karen/esteba/encontrar-el-exponente/sesion.json"
+        "archivoMetadatos": "asesores/karen-mariana/esteba/encontrar-el-exponente/sesion.json"
       },
       {
         "id": "logaritmos-esteba",
@@ -1398,7 +1400,7 @@
         ],
         "fecha": "2026-08-19",
         "estado": "publicado",
-        "ruta": "/asesores/karen/esteba/logaritmos/",
+        "ruta": "/asesores/karen-mariana/esteba/logaritmos/",
         "componentes": {
           "explicacion": false,
           "demostraciones": false,
@@ -1406,7 +1408,7 @@
           "juegos": false,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/karen/esteba/logaritmos/sesion.json"
+        "archivoMetadatos": "asesores/karen-mariana/esteba/logaritmos/sesion.json"
       },
       {
         "id": "cuadrilateros-jonny",
@@ -1423,7 +1425,7 @@
         ],
         "fecha": "2026-08-17",
         "estado": "publicado",
-        "ruta": "/asesores/karen/jonny/cuadrilateros/",
+        "ruta": "/asesores/karen-mariana/jonny/cuadrilateros/",
         "componentes": {
           "explicacion": false,
           "demostraciones": false,
@@ -1431,7 +1433,7 @@
           "juegos": false,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/karen/jonny/cuadrilateros/sesion.json"
+        "archivoMetadatos": "asesores/karen-mariana/jonny/cuadrilateros/sesion.json"
       },
       {
         "id": "formula-general-jonny",
@@ -1448,7 +1450,7 @@
         ],
         "fecha": "2026-08-13",
         "estado": "publicado",
-        "ruta": "/asesores/karen/jonny/formula-general/",
+        "ruta": "/asesores/karen-mariana/jonny/formula-general/",
         "componentes": {
           "explicacion": false,
           "demostraciones": false,
@@ -1456,7 +1458,7 @@
           "juegos": false,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/karen/jonny/formula-general/sesion.json"
+        "archivoMetadatos": "asesores/karen-mariana/jonny/formula-general/sesion.json"
       },
       {
         "id": "partes-circulo-milndred",
@@ -1472,7 +1474,7 @@
         ],
         "fecha": "2026-08-18",
         "estado": "publicado",
-        "ruta": "/asesores/karen/milndred/partes-del-circulo/",
+        "ruta": "/asesores/karen-mariana/milndred/partes-del-circulo/",
         "componentes": {
           "explicacion": false,
           "demostraciones": false,
@@ -1480,7 +1482,7 @@
           "juegos": false,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/karen/milndred/partes-del-circulo/sesion.json"
+        "archivoMetadatos": "asesores/karen-mariana/milndred/partes-del-circulo/sesion.json"
       },
       {
         "id": "teoria-exponentes-milndred",
@@ -1496,7 +1498,7 @@
         ],
         "fecha": "2026-08-12",
         "estado": "publicado",
-        "ruta": "/asesores/karen/milndred/teoria-de-exponentes/",
+        "ruta": "/asesores/karen-mariana/milndred/teoria-de-exponentes/",
         "componentes": {
           "explicacion": false,
           "demostraciones": false,
@@ -1504,7 +1506,7 @@
           "juegos": false,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/karen/milndred/teoria-de-exponentes/sesion.json"
+        "archivoMetadatos": "asesores/karen-mariana/milndred/teoria-de-exponentes/sesion.json"
       },
       {
         "id": "triangulos-semejantes-raul",
@@ -1520,7 +1522,7 @@
         ],
         "fecha": "2026-08-20",
         "estado": "publicado",
-        "ruta": "/asesores/karen/raul/triangulos-semejantes/",
+        "ruta": "/asesores/karen-mariana/raul/triangulos-semejantes/",
         "componentes": {
           "explicacion": false,
           "demostraciones": false,
@@ -1528,7 +1530,7 @@
           "juegos": false,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/karen/raul/triangulos-semejantes/sesion.json"
+        "archivoMetadatos": "asesores/karen-mariana/raul/triangulos-semejantes/sesion.json"
       },
       {
         "id": "continuidad-topologica-mateo",
@@ -1536,8 +1538,8 @@
         "tipo": "sesion",
         "usuario": "mateo-rainer",
         "titulo": "Continuidad topológica",
-        "descripcion": "Continuidad mediante preimágenes de abiertos, ejemplos básicos y composición de aplicaciones continuas.",
-        "objetivo": "Utilizar la definición topológica de continuidad y justificar formalmente ejemplos y composiciones.",
+        "descripcion": "Continuidad mediante abiertos, cerrados y vecindades, método de verificación, ejemplos finitos y reales, composición y práctica resuelta.",
+        "objetivo": "Verificar y justificar continuidad con criterios equivalentes, reconocer el efecto de las topologías y construir ejemplos y contraejemplos.",
         "conocimientosPrevios": [
           "espacios topológicos",
           "preimagen de un conjunto",
@@ -1561,8 +1563,8 @@
         "tipo": "sesion",
         "usuario": "sofia-rainer",
         "titulo": "Espacios topológicos",
-        "descripcion": "Definición axiomática, primeros ejemplos y verificación de topologías sobre conjuntos finitos.",
-        "objetivo": "Reconocer una topología, comprobar sus axiomas y distinguir las topologías indiscreta y discreta.",
+        "descripcion": "Definición axiomática, vocabulario, método de verificación, ejemplos y práctica con topologías finitas e infinitas.",
+        "objetivo": "Reconocer y verificar una topología, producir contraejemplos, identificar abiertos y cerrados y comparar topologías por inclusión.",
         "conocimientosPrevios": [
           "teoría elemental de conjuntos",
           "uniones e intersecciones",
@@ -1586,8 +1588,8 @@
         "tipo": "sesion",
         "usuario": "sofia-rainer",
         "titulo": "Interior, clausura y frontera",
-        "descripcion": "Construcciones asociadas a un subconjunto y relaciones básicas entre interior, clausura y frontera.",
-        "objetivo": "Calcular interior, clausura y frontera en ejemplos sencillos y demostrar una identidad entre estas construcciones.",
+        "descripcion": "Interior, clausura, exterior y frontera mediante vecindades, propiedades, ejemplos en la recta y espacios finitos y práctica resuelta.",
+        "objetivo": "Calcular y justificar interior, clausura y frontera, aplicar sus caracterizaciones por vecindades y demostrar identidades básicas.",
         "conocimientosPrevios": [
           "espacios topológicos",
           "conjuntos abiertos y cerrados",

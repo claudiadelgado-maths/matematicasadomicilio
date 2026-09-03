@@ -1,0 +1,158 @@
+/* Sistema visual compartido únicamente por las tres sesiones de Kevin. */
+:root {
+  --kevin-ink: #292230;
+  --kevin-plum: #65486f;
+  --kevin-plum-dark: #493451;
+  --kevin-lilac: #eee7f1;
+  --kevin-amber: #c98d2b;
+  --kevin-amber-soft: #f8ecd3;
+  --kevin-paper: #fffdf8;
+  --kevin-surface: #f6f3f1;
+  --kevin-line: #d9d0d9;
+  --kevin-muted: #69606d;
+}
+
+.kevin-session { overflow-x: clip; background: var(--kevin-surface); color: var(--kevin-ink); }
+.kevin-session .breadcrumbs { padding-block: 1.1rem; color: var(--kevin-muted); font-size: 0.84rem; }
+.kevin-session .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 0.35rem 0.55rem; margin: 0; padding: 0; list-style: none; }
+.kevin-session .breadcrumbs li { display: inline-flex; align-items: center; gap: 0.55rem; }
+.kevin-session .breadcrumbs li:not(:last-child)::after { color: #a097a3; content: "/"; }
+.kevin-session .breadcrumbs a { text-decoration: none; }
+.kevin-session .breadcrumbs a:hover { text-decoration: underline; }
+
+.kevin-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4rem, 8vw, 7.5rem) 0;
+  border-block: 1px solid var(--kevin-line);
+  background: var(--kevin-paper);
+}
+
+.kevin-hero::after {
+  position: absolute;
+  top: -9rem;
+  right: -5rem;
+  width: min(45vw, 560px);
+  aspect-ratio: 1;
+  border: 2px dashed rgb(101 72 111 / 18%);
+  border-radius: 50%;
+  content: "";
+  transform: rotate(12deg);
+}
+
+.kevin-hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) 130px; align-items: end; gap: 2rem; }
+.kevin-eyebrow,
+.section-kicker,
+.formula-label,
+.example-label { color: var(--kevin-plum); font-size: 0.75rem; font-weight: 900; letter-spacing: 0.13em; text-transform: uppercase; }
+.kevin-hero h1 { max-width: 950px; margin: 0.55rem 0 1rem; color: var(--kevin-ink); font-size: clamp(3rem, 7vw, 6.4rem); line-height: 0.94; letter-spacing: -0.06em; }
+.kevin-hero .lead { max-width: 790px; margin: 0; color: var(--kevin-muted); font-size: clamp(1.05rem, 1.8vw, 1.25rem); line-height: 1.65; }
+.kevin-mark { display: grid; width: 120px; aspect-ratio: 1; place-items: center; border: 2px solid var(--kevin-plum); border-radius: 50%; background: var(--kevin-lilac); color: var(--kevin-plum); font-family: Georgia, serif; font-size: 1.7rem; font-weight: 900; }
+
+.kevin-nav { border-bottom: 1px solid var(--kevin-line); background: var(--kevin-paper); }
+.kevin-nav ul { display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
+.kevin-nav a { display: block; padding: 1rem 1.15rem; color: var(--kevin-ink); font-weight: 850; text-decoration: none; }
+.kevin-nav a:hover,
+.kevin-nav a:focus-visible { background: var(--kevin-plum); color: white; }
+
+.kevin-section { padding: clamp(4rem, 7vw, 6.5rem) 0; scroll-margin-top: calc(var(--header-height) + 1rem); }
+.kevin-section:nth-of-type(even) { border-block: 1px solid var(--kevin-line); background: var(--kevin-paper); }
+.section-heading { display: grid; grid-template-columns: minmax(130px, 0.25fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); margin-bottom: clamp(2rem, 5vw, 3.75rem); }
+.section-heading > p { margin: 0; }
+.section-heading h2 { max-width: 900px; margin: 0; font-size: clamp(2.45rem, 5.5vw, 4.9rem); line-height: 0.98; letter-spacing: -0.055em; }
+.section-intro { max-width: 800px; margin: 0.9rem 0 0; color: var(--kevin-muted); font-size: 1.08rem; line-height: 1.7; }
+
+.concept-grid,
+.example-grid,
+.practice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem 2rem; }
+.concept-card,
+.example-card,
+.practice-card { min-width: 0; padding: 1.4rem 0; border-top: 3px solid var(--kevin-plum); }
+.concept-card.amber,
+.practice-card { border-top-color: var(--kevin-amber); }
+.concept-card h3,
+.example-card h3,
+.practice-card h3 { margin: 0 0 0.75rem; font-size: clamp(1.25rem, 2.6vw, 1.85rem); }
+.concept-card p,
+.example-card p,
+.practice-card p { line-height: 1.7; }
+.concept-card p:last-child,
+.example-card p:last-child { margin-bottom: 0; }
+
+.formula-toolbar { display: flex; flex-wrap: wrap; gap: 0.65rem; padding: 0 0 1.35rem; border-bottom: 1px solid var(--kevin-line); }
+.formula-button,
+.show-all-button { min-height: 44px; padding: 0.65rem 0.95rem; border: 1px solid #af9fb4; border-radius: 999px; background: white; color: var(--kevin-ink); font: inherit; font-weight: 850; cursor: pointer; transition: background 160ms ease, color 160ms ease, transform 160ms ease; }
+.formula-button:hover,
+.show-all-button:hover { transform: translateY(-2px); }
+.formula-button.is-active { border-color: var(--kevin-plum); background: var(--kevin-plum); color: white; }
+.show-all-button { margin-left: auto; border-color: var(--kevin-amber); background: var(--kevin-amber-soft); }
+.formula-placeholder { margin: 0; padding: clamp(2.5rem, 6vw, 5rem) 1rem; color: var(--kevin-muted); font-size: clamp(1.1rem, 2vw, 1.35rem); text-align: center; }
+.formula-panel { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(250px, 0.9fr); align-items: center; gap: clamp(1rem, 4vw, 3rem); padding: clamp(1.8rem, 4vw, 3rem) 0; border-bottom: 1px solid var(--kevin-line); }
+.formula-panel[hidden] { display: none !important; }
+.formula-panel h3 { margin: 0.35rem 0 0.75rem; font-size: clamp(1.35rem, 3vw, 2.1rem); }
+.formula-panel p { color: var(--kevin-muted); line-height: 1.65; }
+
+.formula-display { min-width: 0; width: 100%; padding: 0.85rem 0; color: var(--kevin-ink); font-size: clamp(1.15rem, 2.7vw, 1.75rem); text-align: center; }
+.formula-display.compact { font-size: clamp(1rem, 2.1vw, 1.4rem); }
+.kevin-session .katex-display { max-width: 100%; margin: 0; overflow: visible; padding: 0; }
+.kevin-session .formula-display .katex-display > .katex { display: inline-block; min-width: 0; font-size: calc(1.21em * var(--formula-fit, 1)); white-space: nowrap; }
+.kevin-session [data-math]:not([data-display="true"]) .katex { white-space: nowrap; }
+
+.method-list { display: grid; margin: 0; padding: 0; list-style: none; counter-reset: method; }
+.method-list li { display: grid; grid-template-columns: 54px minmax(0, 1fr); align-items: start; gap: 1rem; padding: 1.25rem 0; border-top: 1px solid var(--kevin-line); line-height: 1.65; counter-increment: method; }
+.method-list li:last-child { border-bottom: 1px solid var(--kevin-line); }
+.method-list li::before { display: grid; width: 44px; aspect-ratio: 1; place-items: center; border-radius: 50%; background: var(--kevin-plum); color: white; content: counter(method); font-weight: 900; }
+.key-note,
+.warning-note { margin-top: 1.5rem; padding: 1.15rem 0 1.15rem 1.25rem; border-left: 4px solid var(--kevin-amber); line-height: 1.7; }
+.warning-note { border-left-color: #a95343; }
+
+.example-card > header { padding-bottom: 1.15rem; border-bottom: 1px solid var(--kevin-line); }
+.example-card > header p { margin: 0; color: var(--kevin-muted); }
+.example-card details { padding-bottom: 1rem; }
+.example-card summary,
+.practice-card summary { padding: 1rem 0; color: var(--kevin-plum); font-weight: 900; cursor: pointer; }
+.example-steps { display: grid; margin: 0; padding: 0; list-style: none; counter-reset: example-step; }
+.example-steps li { position: relative; padding: 0.9rem 0 0.9rem 3.25rem; border-top: 1px solid var(--kevin-line); line-height: 1.65; counter-increment: example-step; }
+.example-steps li::before { position: absolute; top: 0.8rem; left: 0; display: grid; width: 28px; aspect-ratio: 1; place-items: center; border-radius: 50%; background: var(--kevin-plum); color: white; content: counter(example-step); font-size: 0.75rem; font-weight: 900; }
+.example-steps .formula-display { margin-top: 0.7rem; padding: 0.55rem 0; font-size: clamp(0.95rem, 2vw, 1.35rem); }
+.practice-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.practice-card > p { min-height: 3.5rem; margin: 0; }
+.practice-answer { padding: 0.75rem 0 0.75rem 1rem; border-left: 3px solid var(--kevin-plum); }
+.practice-answer .formula-display { padding: 0.6rem 0; font-size: clamp(0.9rem, 1.7vw, 1.15rem); }
+.session-links { display: grid; grid-template-columns: minmax(0, 440px); margin-top: 2.5rem; }
+.session-links a { padding: 1rem; border: 1px solid var(--kevin-line); border-radius: 999px; background: white; color: var(--kevin-ink); font-weight: 850; text-align: center; text-decoration: none; }
+.session-links a:hover { border-color: var(--kevin-plum); background: var(--kevin-lilac); }
+.kevin-session button:focus-visible,
+.kevin-session a:focus-visible,
+.kevin-session summary:focus-visible { outline: 3px solid var(--kevin-amber); outline-offset: 3px; }
+
+@media (max-width: 850px) {
+  .kevin-hero-grid,
+  .section-heading,
+  .formula-panel { grid-template-columns: 1fr; }
+  .kevin-mark { width: 84px; grid-row: 1; font-size: 1.3rem; }
+  .concept-grid,
+  .example-grid { grid-template-columns: 1fr; }
+  .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .practice-card > p { min-height: 0; }
+}
+
+@media (max-width: 560px) {
+  .kevin-session .breadcrumbs { font-size: 0.76rem; }
+  .kevin-hero { padding-block: 3.5rem; }
+  .kevin-hero::after { display: none; }
+  .kevin-hero h1 { font-size: clamp(2.8rem, 14vw, 4.3rem); }
+  .kevin-nav ul { flex-wrap: nowrap; overflow-x: auto; }
+  .kevin-nav a { padding: 0.85rem 0.75rem; white-space: nowrap; }
+  .kevin-section { padding-block: 3.5rem; }
+  .section-heading h2 { font-size: clamp(2.4rem, 12vw, 3.6rem); }
+  .formula-button { flex: 1 1 calc(50% - 0.65rem); }
+  .show-all-button { flex-basis: 100%; margin-left: 0; }
+  .formula-panel { padding: 1.6rem 0; }
+  .formula-display,
+  .formula-display.compact { padding: 0.7rem 0; font-size: clamp(0.9rem, 4vw, 1.05rem); }
+  .method-list li { grid-template-columns: 38px minmax(0, 1fr); gap: 0.75rem; }
+  .method-list li::before { width: 34px; }
+  .practice-grid,
+  .session-links { grid-template-columns: 1fr; }
+}

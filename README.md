@@ -7,7 +7,7 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 - **Módulos aislados:** cada tema, ejercicio, juego, calculadora, examen, usuario y sesión vive en una carpeta identificable.
 - **Fuente directa:** todos los asesores viven en `asesores/`; cada alumno es una subcarpeta directa de su asesor y cada sesión una subcarpeta directa de su alumno.
 - **URLs físicas:** la URL pública termina en `/` y corresponde directamente a una carpeta versionada con `index.html`.
-- **Recursos locales:** cada página conserva junto a su `index.html` su propio `estilos.css` y, cuando lo necesita, su JavaScript y sus imágenes.
+- **Recursos locales:** cada página conserva junto a su `index.html` su propio `estilos.css`; la lógica y los estilos repetidos dentro de una misma familia se comparten desde el ancestro común más cercano.
 - **Base global mínima:** solo la identidad, la estructura común, la navegación y los SVG de marca permanecen compartidos.
 - **Componentes opcionales:** un tema o sesión solo anuncia los componentes que existen.
 - **Publicación estática:** el resultado funciona en GitHub Pages, tanto en un dominio propio como bajo la ruta de un repositorio.
@@ -25,9 +25,6 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 │   ├── index.html
 │   └── estilos.css
 ├── legal/
-├── talleres/
-├── laboratorios/
-├── anuncios/
 ├── biblioteca/
 │   ├── temas/
 │   │   └── [tema]/
@@ -39,17 +36,16 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 │   └── examenes/[examen]/
 ├── asesores/
 │   ├── index.html
+│   ├── recursos/js/
 │   └── [asesor]/
 │       ├── maestro.json
 │       ├── index.html
 │       ├── estilos.css
-│       ├── script.js
 │       ├── recursos/
 │       └── [alumno]/
 │           ├── usuario.json
 │           ├── index.html
 │           ├── estilos.css
-│           ├── script.js
 │           └── [sesion]/
 │               ├── index.html
 │               └── estilos.css
@@ -73,16 +69,17 @@ Cada módulo concreto contiene:
 - `estilos.css`: estilos propios de esa página, obligatorio junto a cada `index.html`;
 - `README.md`: objetivo, límites y pruebas del módulo;
 - un JSON de metadatos;
-- `script.js` cuando tiene interacción propia; no se crean scripts vacíos;
+- `script.js` cuando tiene interacción exclusiva; si el comportamiento es idéntico en una familia, se enlaza el recurso compartido de esa familia;
 - `recursos/` solo cuando utiliza archivos exclusivos.
 
 Una IA que reciba únicamente esa carpeta debe leer primero su `README.md` y su JSON. No debe cambiar rutas públicas. Para una modificación local, los únicos recursos externos que puede asumir son:
 
 - `/recursos/css/base.css`, para la base realmente común;
 - `/recursos/js/navegacion.js`;
-- `/recursos/svg/` para la identidad general.
+- `/recursos/svg/` para la identidad general;
+- un recurso compartido de su propia familia, cuando el `README.md` del módulo lo documente.
 
-El diseño particular de una página, un asesor, un alumno o una sesión no se agrega a los archivos globales. Debe permanecer en su propia carpeta, aunque exista cierta repetición entre módulos independientes.
+El diseño particular de una página, un asesor, un alumno o una sesión no se agrega a los archivos globales. Permanece en su carpeta o en un recurso compartido por su familia cuando la implementación es exactamente la misma; no se copia en cada descendiente.
 
 ## Desarrollo local
 

@@ -211,28 +211,6 @@ button {
   background: #292926;
 }
 
-.button-outline {
-  background: transparent;
-  color: var(--color-text);
-}
-
-.button-outline:hover {
-  background: var(--color-surface);
-}
-
-.button svg {
-  width: 19px;
-  height: 19px;
-  flex: none;
-}
-
-.button-compact {
-  min-height: 44px;
-  padding-inline: 0.95rem;
-  font-size: 0.78rem;
-}
-
-
 .site-footer {
   padding: 4rem 0 1.5rem;
   border-top: 1px solid #2f2f2c;
@@ -367,7 +345,7 @@ button {
   outline-offset: 3px;
 }
 
-.whatsapp-float svg {
+.whatsapp-float img {
   width: 34px;
   height: 34px;
 }
@@ -406,7 +384,7 @@ button {
     border: 1px solid var(--color-border);
     border-top: 0;
     border-radius: 0 0 0 var(--radius);
-    background: rgb(243 243 240 / 98%);
+    background: rgb(255 255 255 / 98%);
     box-shadow: var(--shadow-soft);
   }
   .site-nav.is-open { display: block; animation: nav-panel-enter 180ms ease-out both; }
@@ -424,7 +402,6 @@ button {
     border-right: 3px solid var(--color-text);
     border-bottom-color: var(--color-border);
   }
-  .site-nav .button { width: 100%; margin-top: 1rem; }
 }
 
 @keyframes nav-panel-enter {

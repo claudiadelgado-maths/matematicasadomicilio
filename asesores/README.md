@@ -8,6 +8,7 @@ Esta carpeta contiene el catálogo público de salones y todos los asesores. Cad
 asesores/
 ├── index.html
 ├── estilos.css
+├── recursos/js/       comportamiento común de esta familia
 └── [asesor]/
     ├── index.html
     ├── maestro.json
@@ -25,3 +26,5 @@ asesores/
 No existen carpetas intermedias llamadas `alumnos` o `sesiones`: la estructura es siempre `asesores/[asesor]/[alumno]/[sesion]/`. Las plantillas sin datos reales viven por separado en `/plantillas/`.
 
 Los archivos de esta carpeta se sirven tal como están con `python -m http.server 8000` y se publican directamente desde `main`. No hay construcción ni copia a otro directorio.
+
+`recursos/js/` contiene exclusivamente comportamiento idéntico de perfiles, alumnos y representación matemática. La navegación general continúa en `/recursos/js/navegacion.js` y la lógica exclusiva de una sesión permanece junto a esa sesión.

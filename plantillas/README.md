@@ -9,4 +9,4 @@ Estas carpetas son puntos de partida y permanecen fuera de la interfaz porque su
 
 Después de copiar una plantilla, sustituye todos los identificadores, rutas y textos provisionales antes de activar o publicar. Los IDs deben ser únicos en todo el repositorio.
 
-Cada plantilla con `index.html` incluye su propio `estilos.css`. Conserva ambos juntos al copiarla. Mantén el JavaScript local únicamente cuando la página tenga comportamiento propio; no dejes scripts vacíos.
+Cada plantilla con `index.html` incluye su propio `estilos.css`. Conserva ambos juntos al copiarla. Los índices de maestro y alumno enlazan la lógica académica compartida de `/asesores/recursos/js/`; crea JavaScript local únicamente cuando la página tenga comportamiento exclusivo.

@@ -8,7 +8,8 @@ La fotografía pública es `/asesores/erick-chan/recursos/erick-chan.jpg`. El ca
 
 - Estadística aplicada a ventas, tecnología y trabajo.
 - Explicación basada en contextos reales y decisiones útiles.
-- Tres ejemplos desarrollados por sesión.
+- Experiencias visuales con exploración, práctica y respuesta inmediata cuando el tema lo permite.
+- Interacciones locales y accesibles, sin dependencias innecesarias.
 - Diseño sobrio con acentos turquesa y naranja.
 
 Después de cambiar el maestro o sus alumnos, ejecuta `npm run catalogo` y `npm run validar`.

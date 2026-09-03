@@ -9,6 +9,6 @@
 5. Si el alumno todavía no tiene sesiones, elimina la subcarpeta `nueva-sesion/` de la copia. La plantilla canónica permanece aquí.
 6. Cambia `estado` a `activo`, ejecuta `npm run catalogo` y después `npm run validar`.
 
-`index.html`, `estilos.css` y `script.js` forman una unidad: la plantilla usa el script para cargar las sesiones publicadas. Conserva juntos estos archivos al copiarla.
+`index.html` y `estilos.css` forman la unidad local. La carga de sesiones publicadas se enlaza desde `/asesores/recursos/js/alumno.js`; no copies ese script al crear el alumno.
 
 No agregues una lista manual de sesiones. El índice académico encuentra los `sesion.json` publicados que hagan referencia al ID del alumno.

@@ -154,10 +154,6 @@ body {
   border: 1px solid rgb(255 255 255 / 34%);
 }
 
-.site-footer {
-  border-top-color: var(--chat-line);
-}
-
 @media (max-width: 760px) {
   .about-chat {
     padding-block: 2.25rem 4rem;

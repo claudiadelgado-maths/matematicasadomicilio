@@ -1,0 +1,96 @@
+/* Diseño compartido solo por las dos sesiones de Renata. */
+.renata-session {
+  --renata-ink: #243126;
+  --renata-accent: #526a42;
+  --renata-soft: #edf2e7;
+  --renata-muted: #586353;
+  --renata-line: #cfd7c8;
+  --renata-paper: #fffef9;
+  color: var(--renata-ink);
+  background: var(--renata-paper);
+}
+.renata-session .container { max-width: 1080px; }
+.renata-session :is(h1, h2, h3, p) { overflow-wrap: break-word; }
+.renata-session :is(h1, h2, h3) { line-height: 1.12; letter-spacing: -0.035em; }
+.renata-session p { max-width: 82ch; }
+.renata-session .breadcrumbs { padding-block: 1.2rem; font-size: 0.82rem; color: var(--renata-muted); }
+.renata-session .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 0.3rem 0.6rem; margin: 0; padding: 0; list-style: none; }
+.renata-session .breadcrumbs li:not(:last-child)::after { content: "/"; margin-left: 0.6rem; color: var(--renata-muted); }
+.renata-session .breadcrumbs a { text-decoration: none; }
+.renata-session .breadcrumbs a:hover { text-decoration: underline; }
+
+.renata-hero { padding-block: clamp(3.4rem, 7vw, 6.5rem); border-block: 1px solid var(--renata-line); background: var(--renata-soft); }
+.renata-session :is(.section-kicker, .formula-label, .example-label) { margin: 0 0 0.8rem; color: var(--renata-accent); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.renata-hero h1 { max-width: 1000px; margin: 0 0 1.5rem; font-size: clamp(2.7rem, 6.3vw, 5.6rem); line-height: 1; letter-spacing: -0.05em; }
+.renata-hero .lead { max-width: 740px; margin: 0; font-size: clamp(1.1rem, 1.8vw, 1.3rem); }
+.renata-hero .hero-note { margin: 1.5rem 0 0; color: var(--renata-muted); font-size: 0.92rem; }
+.renata-nav { border-bottom: 1px solid var(--renata-line); }
+.renata-nav ul { display: flex; flex-wrap: wrap; gap: 0 1.4rem; padding: 0; margin: 0; list-style: none; }
+.renata-nav a { display: inline-flex; min-height: 48px; align-items: center; padding-block: 0.7rem; font-weight: 750; text-decoration: none; }
+.renata-nav a:hover { color: var(--renata-accent); text-decoration: underline; }
+
+.renata-section { padding-block: clamp(3.5rem, 6vw, 6rem); scroll-margin-top: 1rem; }
+.renata-section + .renata-section { border-top: 1px solid var(--renata-line); }
+.renata-session .section-heading { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 2rem; margin-bottom: 2.7rem; }
+.renata-session .section-heading h2 { margin: 0; font-size: clamp(2rem, 4.4vw, 3.6rem); }
+.renata-session .section-intro { margin: 1rem 0 0; color: var(--renata-muted); font-size: 1.08rem; }
+.renata-session .concept-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 3rem; }
+.renata-session .concept { min-width: 0; padding-top: 1.3rem; border-top: 2px solid var(--renata-accent); }
+.renata-session :is(.concept, .example, .exercise) h3 { margin: 0 0 1rem; font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+.renata-session :is(.concept, .exercise) p:last-child { margin-bottom: 0; }
+
+.renata-session .formula-toolbar { display: flex; flex-wrap: wrap; gap: 0.7rem; padding-bottom: 1.4rem; border-bottom: 1px solid var(--renata-line); }
+.renata-session :is(.formula-button, .show-all-button) { min-height: 44px; padding: 0.65rem 1rem; border: 1px solid var(--renata-accent); border-radius: 999px; background: transparent; color: var(--renata-ink); font: inherit; font-weight: 700; cursor: pointer; }
+.renata-session :is(.formula-button, .show-all-button):hover { background: var(--renata-soft); }
+.renata-session .formula-button.is-active { background: var(--renata-accent); color: #fff; }
+.renata-session .show-all-button { background: var(--renata-soft); }
+.renata-session .formula-placeholder { max-width: none; margin: 0; padding: 3.5rem 0; color: var(--renata-muted); text-align: center; }
+.renata-session .formula-panel { padding-block: 2rem; border-bottom: 1px solid var(--renata-line); }
+.renata-session .formula-panel[hidden] { display: none !important; }
+.renata-session .formula-panel h3 { margin: 0; font-size: clamp(1.45rem, 3vw, 2.1rem); }
+.renata-session .formula-panel:focus { outline-offset: 5px; }
+.renata-session .formula-display { width: 100%; min-width: 0; margin: 1rem 0; padding: 0.65rem 0; color: var(--renata-ink); font-size: clamp(1.05rem, 2vw, 1.55rem); text-align: center; }
+.renata-session .katex-display { max-width: 100%; margin: 0; padding: 0; overflow: visible; }
+.renata-session .formula-display .katex-display > .katex { display: inline-block; min-width: 0; font-size: calc(1.21em * var(--formula-fit, 1)); white-space: nowrap; }
+.renata-session .matrix-pair { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 3rem; }
+.renata-session .matrix-pair > .formula-display { flex: 1 1 230px; max-width: 430px; }
+
+.renata-session .worked-steps { padding: 0; margin: 1.5rem 0 0; list-style: none; counter-reset: step; }
+.renata-session .worked-steps > li { position: relative; min-width: 0; padding: 1.5rem 0 1.5rem 3.3rem; border-top: 1px solid var(--renata-line); counter-increment: step; }
+.renata-session .worked-steps > li::before { position: absolute; top: 1.4rem; left: 0; display: grid; width: 34px; height: 34px; place-items: center; border-radius: 50%; color: white; background: var(--renata-accent); font-weight: 750; content: counter(step); }
+.renata-session .worked-steps > li > p:last-child { margin-bottom: 0; }
+.renata-session .worked-steps > li > strong { font-size: 1.05rem; }
+.renata-session :is(.key-note, .warning-note) { max-width: none; margin-top: 2rem; padding-left: 1rem; border-left: 3px solid var(--renata-accent); }
+.renata-session .warning-note { border-left-color: #97613d; }
+
+.renata-session .examples { display: grid; gap: 2.5rem; }
+.renata-session .example { min-width: 0; padding-top: 1.5rem; border-top: 2px solid var(--renata-accent); }
+.renata-session details { border-top: 1px solid var(--renata-line); }
+.renata-session summary { min-height: 48px; padding: 0.9rem 0; color: var(--renata-accent); font-weight: 750; cursor: pointer; }
+.renata-session summary:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+.renata-session details[open] > summary { margin-bottom: 0.3rem; }
+.renata-session .reveal-content { min-width: 0; padding-bottom: 1rem; }
+.renata-session .reveal-content > :first-child { margin-top: 0; }
+.renata-session .practice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 3rem; align-items: start; }
+.renata-session .exercise { min-width: 0; padding-top: 1.5rem; border-top: 2px solid var(--renata-accent); }
+.renata-session .exercise .formula-display { font-size: 1.1rem; }
+.renata-session .session-links { margin-top: 2.5rem; }
+.renata-session .session-links a { display: inline-flex; min-height: 48px; align-items: center; padding: 0.7rem 1.3rem; border-radius: 999px; border: 1px solid var(--renata-accent); font-weight: 750; text-decoration: none; }
+.renata-session .session-links a:hover { background: var(--renata-soft); }
+.renata-session :is(button, summary, a):focus-visible { outline: 3px solid #8f5b26; outline-offset: 4px; }
+
+@media (max-width: 800px) {
+  .renata-session .section-heading { grid-template-columns: 1fr; gap: 0.3rem; }
+  .renata-session :is(.concept-grid, .practice-grid) { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .renata-session .breadcrumbs { font-size: 0.75rem; }
+  .renata-nav ul { gap: 0 1rem; }
+  .renata-nav a { font-size: 0.9rem; }
+  .renata-session .formula-button { flex: 1 1 130px; font-size: 0.93rem; }
+  .renata-session .show-all-button { flex-basis: 100%; }
+  .renata-session .worked-steps > li { padding-left: 0; padding-top: 4rem; }
+  .renata-session .worked-steps > li::before { top: 1.1rem; }
+  .renata-session .formula-display { font-size: 1.05rem; }
+  .renata-session .session-links a { width: 100%; justify-content: center; text-align: center; }
+}

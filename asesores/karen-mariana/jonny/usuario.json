@@ -1,0 +1,13 @@
+{
+  "id": "jonny-karen",
+  "slug": "jonny",
+  "tipo": "usuario",
+  "titulo": "El casillero de Jonny",
+  "nombreVisible": "Jonny",
+  "descripcion": "Sesiones de secundaria sobre ecuaciones cuadráticas y cuadriláteros.",
+  "estado": "activo",
+  "ruta": "/asesores/karen-mariana/jonny/",
+  "maestro": "karen-mariana",
+  "personalizacion": { "simbolo": "J", "acento": "#a44548", "fondo": "#fcebec" },
+  "almacenamientoLocal": false
+}

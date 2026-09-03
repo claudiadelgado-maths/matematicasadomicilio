@@ -23,4 +23,26 @@
 .exercise-list { display: grid; gap: 1.2rem; padding: 0; list-style: none; counter-reset: exercise; }
 .exercise-list > li { padding: 1.25rem; border: 1px solid var(--topology-line); background: white; counter-increment: exercise; }
 .exercise-list > li::before { display: block; margin-bottom: .5rem; color: var(--topology-accent); font-size: .75rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; content: "Ejercicio " counter(exercise); }
-@media (max-width: 620px) { .topology-article { width: min(100% - 1.3rem, 900px); } .math-block { padding: 1rem; } }
+.topology-goals { display: grid; gap: .65rem; margin: 1.2rem 0 0; padding: 1.25rem 1.4rem 1.25rem 2.8rem; border: 1px solid var(--topology-line); background: white; }
+.concept-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.concept-card { min-width: 0; padding: 1.25rem; border: 1px solid var(--topology-line); background: white; }
+.concept-card h3 { margin-top: 0; color: var(--topology-accent); }
+.concept-card p:last-child { margin-bottom: 0; }
+.topology-callout { margin: 1.5rem 0; padding: 1.15rem 1.3rem; border-left: 4px solid var(--topology-accent); background: #eaf0f6; }
+.topology-callout strong { color: var(--topology-ink); }
+.worked-example { margin-top: 1.5rem; padding: clamp(1.2rem, 3vw, 1.8rem); border: 1px solid #aeb9c8; background: white; }
+.worked-example > h3 { margin-top: 0; }
+.example-steps { display: grid; gap: 1rem; margin: 1.2rem 0 0; padding: 0; list-style: none; counter-reset: example-step; }
+.example-steps > li { position: relative; padding-left: 3rem; counter-increment: example-step; }
+.example-steps > li::before { position: absolute; top: .1rem; left: 0; display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: 50%; background: var(--topology-accent); color: white; font-size: .8rem; font-weight: 900; content: counter(example-step); }
+.topology-table-wrap { max-width: 100%; overflow-x: auto; margin-top: 1.5rem; }
+.topology-table { width: 100%; min-width: 650px; border-collapse: collapse; background: white; }
+.topology-table th,
+.topology-table td { padding: .9rem 1rem; border: 1px solid var(--topology-line); text-align: left; vertical-align: top; }
+.topology-table th { background: #eaf0f6; color: var(--topology-ink); }
+.property-list { display: grid; gap: .75rem; padding-left: 1.25rem; }
+.common-mistakes { margin-top: 1.5rem; padding: 1.3rem; border: 1px solid #c9b9ad; background: #fff8f2; }
+.common-mistakes h3 { margin-top: 0; }
+.session-navigation { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem; padding: 1.4rem; border: 1px solid var(--topology-line); background: var(--topology-paper); }
+.session-navigation a { color: var(--topology-accent); font-weight: 850; }
+@media (max-width: 620px) { .topology-article { width: min(100% - 1.3rem, 900px); } .math-block { padding: 1rem; } .concept-grid { grid-template-columns: 1fr; } .example-steps > li { padding-left: 2.6rem; } .session-navigation { display: grid; } }

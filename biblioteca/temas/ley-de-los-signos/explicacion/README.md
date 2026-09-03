@@ -11,4 +11,4 @@ Lectura progresiva que conserva el foco del tema en multiplicación y división.
 - Patrón breve que justifica negativo por negativo.
 - Regla para varios factores y errores comunes.
 
-La notación usa KaTeX 0.18.1. La página no tiene JavaScript local ni incorpora módulos nuevos como definiciones, demostraciones o laboratorios.
+La notación usa KaTeX 0.18.1. La página no tiene JavaScript local ni incorpora módulos adicionales.

@@ -4,6 +4,8 @@
 
   const siteRoot = new URL(document.querySelector(".brand")?.href || "/", window.location.href);
   const dataUrl = new URL("recursos/datos/academia.json", siteRoot);
+  const dataVersion = new URL(script.src, window.location.href).searchParams.get("v");
+  if (dataVersion) dataUrl.searchParams.set("v", dataVersion);
   const escapeHtml = (value = "") =>
     String(value).replace(
       /[&<>'"]/g,

@@ -1,6 +1,614 @@
-<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Matrices y sus operaciones | Renata</title><meta name="description" content="Dimensiones, suma, producto por escalar y multiplicación de matrices."><meta name="theme-color" content="#17241e"><link rel="icon" href="../../../../recursos/svg/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" crossorigin="anonymous"><script src="../../../../recursos/js/navegacion.js?v=20260828-floating2" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" crossorigin="anonymous" defer></script><script src="matematicas.js?v=20260826-local1" defer></script>  <link rel="stylesheet" href="../../../../recursos/css/base.css?v=20260828-floating1">
-  <link rel="stylesheet" href="estilos.css?v=20260826-local1">
-</head><body><a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../" aria-current="page">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav></div></header><main id="contenido" class="elizabeth-session"><div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../">Salones</a></li><li><a href="../../">Elizabeth</a></li><li><a href="../">Renata</a></li><li aria-current="page">Matrices y sus operaciones</li></ol></nav></div><header class="elizabeth-session-hero"><div class="container elizabeth-session-hero-grid"><div><p class="eyebrow">Renata · Sesión 2 · Álgebra Lineal</p><h1>Matrices y sus operaciones</h1><p class="lead">Una matriz organiza números por filas y columnas. Sus dimensiones determinan qué operaciones tienen sentido.</p></div><div class="eli-mark" aria-hidden="true">A</div></div></header><nav class="elizabeth-session-nav" aria-label="Partes de la sesión"><div class="container"><ul><li><a href="#teoria">Teoría</a></li><li><a href="#guiado">Ejemplo guiado</a></li><li><a href="#resueltos">2 resueltos</a></li></ul></div></nav>
-<section class="eli-section" id="teoria" aria-labelledby="theory-title"><div class="container"><div class="eli-heading"><p>Parte 1</p><div><h2 id="theory-title">Teoría</h2><p class="lesson-intro">Una matriz <span data-math>A=(a_{ij})</span> de tamaño <span data-math>m\times n</span> tiene <span data-math>m</span> filas y <span data-math>n</span> columnas.</p></div></div><div class="eli-grid"><article class="eli-card"><h3>Suma y producto por escalar</h3><div class="math-display" data-math data-display="true">(A+B)_{ij}=a_{ij}+b_{ij},\qquad (\lambda A)_{ij}=\lambda a_{ij}</div><p>Para sumar, las matrices deben tener las mismas dimensiones.</p></article><article class="eli-card gold"><h3>Producto matricial</h3><div class="math-display" data-math data-display="true">A_{m\times n}B_{n\times p}=C_{m\times p},\qquad c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}</div><p>El número de columnas de <span data-math>A</span> debe coincidir con el número de filas de <span data-math>B</span>.</p></article><div class="key-point span-two"><strong>Idea central:</strong> cada entrada del producto se obtiene combinando una fila de la primera matriz con una columna de la segunda.</div></div></div></section>
-<section class="eli-section" id="guiado" aria-labelledby="guided-title"><div class="container"><div class="eli-heading"><p>Parte 2</p><div><h2 id="guided-title">Ejemplo guiado</h2><p class="lesson-intro">Calcula <span data-math>AB</span> para las siguientes matrices.</p></div></div><article class="guided-example"><div class="math-display" data-math data-display="true">A=\begin{pmatrix}1&2\\3&4\end{pmatrix},\qquad B=\begin{pmatrix}2&0\\1&5\end{pmatrix}</div><ol class="guided-steps"><li><div><strong>Revisa dimensiones.</strong> Ambas son <span data-math>2\times2</span>; el producto existe y será <span data-math>2\times2</span>.</div></li><li><div><strong>Primera fila por cada columna.</strong><div class="math-display" data-math data-display="true">c_{11}=1(2)+2(1)=4,\qquad c_{12}=1(0)+2(5)=10</div></div></li><li><div><strong>Segunda fila por cada columna.</strong><div class="math-display" data-math data-display="true">c_{21}=3(2)+4(1)=10,\qquad c_{22}=3(0)+4(5)=20</div></div></li><li><div><strong>Organiza las entradas.</strong><div class="math-display" data-math data-display="true">AB=\begin{pmatrix}4&10\\10&20\end{pmatrix}</div></div></li></ol></article></div></section>
-<section class="eli-section" id="resueltos" aria-labelledby="solved-title"><div class="container"><div class="eli-heading"><p>Parte 3</p><div><h2 id="solved-title">Dos ejemplos resueltos</h2><p class="lesson-intro">Operaciones directas.</p></div></div><div class="resolved-grid"><article class="resolved-example"><span class="result-label">Ejemplo 1</span><h3>Suma</h3><div class="math-display" data-math data-display="true">\begin{pmatrix}1&-2\\0&3\end{pmatrix}+\begin{pmatrix}4&1\\2&-1\end{pmatrix}=\begin{pmatrix}5&-1\\2&2\end{pmatrix}</div></article><article class="resolved-example"><span class="result-label">Ejemplo 2</span><h3>Producto por escalar</h3><div class="math-display" data-math data-display="true">-2\begin{pmatrix}3&0\\-1&4\end{pmatrix}=\begin{pmatrix}-6&0\\2&-8\end{pmatrix}</div></article></div></div></section></main><footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Pie"><ul class="footer-nav"><li><a href="../../../">Salones</a></li><li><a href="../">Renata</a></li></ul></nav></div></footer><a class="whatsapp-float" href="https://wa.me/529991293497" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><img src="../../../../recursos/svg/whatsapp-mono.svg" width="34" height="34" alt=""></a></body></html>
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matrices y sus operaciones | Renata</title>
+<meta name="description" content="Aprende a leer una matriz, elegir operaciones compatibles y resolver sumas, productos y transpuestas con ejemplos explicados entrada por entrada.">
+<meta name="theme-color" content="#526a42">
+<link rel="icon" href="../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="../../../../recursos/css/base.css?v=20260902-global1">
+<link rel="stylesheet" href="estilos.css?v=20260903-renata1">
+<script src="../../../../recursos/js/navegacion.js?v=20260902-global1" defer>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" crossorigin="anonymous" defer>
+</script>
+<script src="../../../recursos/js/matematicas.js?v=20260902-shared1" defer>
+</script>
+<script src="../../recursos/js/sesiones-interactivas.js?v=20260902-elizabeth1" defer>
+</script>
+</head>
+<body data-whatsapp-href="https://wa.me/529991293497" data-whatsapp-label="Escribir por WhatsApp">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="../../../../">
+<img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt="">
+</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle>
+<span class="menu-toggle-lines" aria-hidden="true">
+</span>
+</button>
+<nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu>
+<ul class="nav-list">
+<li>
+<a href="../../../../">Inicio</a>
+</li>
+<li>
+<a href="../../../../biblioteca/">Biblioteca</a>
+</li>
+<li>
+<a href="../../../" aria-current="page">Salones</a>
+</li>
+<li>
+<a href="../../../../contacto/">Contacto</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="contenido" class="renata-session">
+<div class="container">
+<nav class="breadcrumbs" aria-label="Migas de pan">
+<ol>
+<li>
+<a href="../../../">Salones</a>
+</li>
+<li>
+<a href="../../">Elizabeth</a>
+</li>
+<li>
+<a href="../">Renata</a>
+</li>
+<li aria-current="page">Matrices y sus operaciones</li>
+</ol>
+</nav>
+</div>
+<header class="renata-hero">
+<div class="container">
+<p class="section-kicker">Renata · Sesión 2 · Álgebra Lineal</p>
+<h1>Matrices y sus operaciones</h1>
+<p class="lead">Aprende a leer una matriz, elegir operaciones compatibles y resolver sumas, productos y transpuestas con ejemplos explicados entrada por entrada.</p>
+<p class="hero-note">Lee, intenta y descubre. Las fórmulas y las soluciones se abren cuando tú decidas.</p>
+</div>
+</header>
+<nav class="renata-nav" aria-label="Partes de la sesión">
+<div class="container">
+<ul>
+<li>
+<a href="#ideas">Ideas clave</a>
+</li>
+<li>
+<a href="#formulas">Fórmulas</a>
+</li>
+<li>
+<a href="#metodo">Paso a paso</a>
+</li>
+<li>
+<a href="#ejemplos">Ejemplos</a>
+</li>
+<li>
+<a href="#practica">Practica</a>
+</li>
+<li>
+<a href="#cierre">Repaso</a>
+</li>
+</ul>
+</div>
+</nav>
+<section class="renata-section" id="ideas" aria-labelledby="ideas-title">
+<div class="container">
+<header class="section-heading">
+<p class="section-kicker">01 · Entender</p>
+<div>
+<h2 id="ideas-title">Leer antes de operar</h2>
+<p class="section-intro">Las dimensiones no son un detalle al final: deciden desde el principio si una operación está definida.</p>
+</div>
+</header>
+<div class="concept-grid">
+<article class="concept">
+<h3>Una dirección para cada entrada</h3>
+<div class="formula-display" data-math data-display="true">M=\begin{pmatrix}2&-1&4\\0&3&5\end{pmatrix}</div>
+<p>Hay dos filas y tres columnas: M es 2 × 3. La entrada <span data-math>m_{23}</span> vale 5 porque está en la fila 2, columna 3. La entrada <span data-math>m_{12}</span> vale −1.</p>
+</article>
+<article class="concept">
+<h3>Formas que conviene reconocer</h3>
+<p>Una matriz fila tiene una sola fila; una matriz columna tiene una sola columna. Es cuadrada si tiene tantas filas como columnas. Una matriz rectangular no cuadrada tiene cantidades distintas.</p>
+<p>En una matriz cuadrada, la diagonal principal reúne las posiciones (1, 1), (2, 2), (3, 3)… No es una fila.</p>
+</article>
+<article class="concept">
+<h3>Tres operaciones, tres preguntas</h3>
+<p>
+<strong>Suma o resta:</strong> ¿las dimensiones son idénticas? <strong>Escalar:</strong> ¿multipliqué cada entrada? <strong>Producto AB:</strong> ¿las columnas de A coinciden con las filas de B?</p>
+<p>Escribir el tamaño del resultado antes de calcular evita muchas respuestas imposibles.</p>
+</article>
+<article class="concept">
+<h3>El orden sí importa</h3>
+<p>Con números reales, 2·3 = 3·2. Con matrices no puedes suponer AB = BA. Puede que los dos productos existan y sean distintos, o que solo uno de ellos exista.</p>
+<p>La suma sí es conmutativa para matrices del mismo tamaño. No traslademos automáticamente esa propiedad al producto.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="renata-section" id="formulas" aria-labelledby="formulas-title">
+<div class="container">
+<header class="section-heading">
+<p class="section-kicker">02 · Consultar</p>
+<div>
+<h2 id="formulas-title">Una fórmula para cada operación</h2>
+<p class="section-intro">Selecciona la regla que necesitas. Cada fórmula incluye sus condiciones de uso.</p>
+</div>
+</header>
+<div data-formula-explorer>
+<div class="formula-toolbar" role="group" aria-label="Elegir una fórmula">
+<button type="button" class="formula-button" data-formula-target="dimensiones" aria-controls="dimensiones">Dimensiones</button>
+<button type="button" class="formula-button" data-formula-target="suma" aria-controls="suma">Sumar y restar</button>
+<button type="button" class="formula-button" data-formula-target="escalar" aria-controls="escalar">Multiplicar por un número</button>
+<button type="button" class="formula-button" data-formula-target="producto" aria-controls="producto">Producto de matrices</button>
+<button type="button" class="formula-button" data-formula-target="cero-identidad" aria-controls="cero-identidad">Cero e identidad</button>
+<button type="button" class="formula-button" data-formula-target="transpuesta" aria-controls="transpuesta">Transpuesta</button>
+<button type="button" class="show-all-button" data-show-all-formulas aria-pressed="false">Mostrar todas</button>
+</div>
+<p class="formula-placeholder" data-formula-placeholder hidden>Elige un tema para descubrir su fórmula y cuándo usarla.</p>
+<article class="formula-panel" id="dimensiones" data-formula-panel tabindex="-1">
+<p class="formula-label">Fórmula 01</p>
+<h3>Primero filas; después columnas</h3>
+<div class="formula-display" data-math data-display="true">A=(a_{ij})_{m\times n}</div>
+<p>m cuenta las filas horizontales; n cuenta las columnas verticales. En <span data-math>a_{ij}</span>, i indica la fila y j la columna. Los índices empiezan en 1.</p>
+<div class="formula-display" data-math data-display="true">1\le i\le m,\qquad 1\le j\le n</div>
+<p>Dos matrices son iguales si tienen el mismo tamaño y coinciden entrada por entrada. Tener la misma cantidad total de números no es suficiente.</p>
+</article>
+<article class="formula-panel" id="suma" data-formula-panel tabindex="-1">
+<p class="formula-label">Fórmula 02</p>
+<h3>Misma posición, mismo tamaño</h3>
+<div class="formula-display" data-math data-display="true">(A+B)_{ij}=a_{ij}+b_{ij}</div>
+<div class="formula-display" data-math data-display="true">(A-B)_{ij}=a_{ij}-b_{ij}</div>
+<p>A y B deben tener exactamente las mismas dimensiones. El resultado conserva ese tamaño. Restar B equivale a sumar su opuesta, cambiando el signo de cada entrada de B.</p>
+<p class="warning-note">No sumes una matriz de 2 × 3 con otra de 3 × 2: sus posiciones no corresponden, aunque ambas tengan seis entradas.</p>
+</article>
+<article class="formula-panel" id="escalar" data-formula-panel tabindex="-1">
+<p class="formula-label">Fórmula 03</p>
+<h3>El escalar alcanza a todas las entradas</h3>
+<div class="formula-display" data-math data-display="true">(\lambda A)_{ij}=\lambda a_{ij}</div>
+<p>El número λ multiplica todos los elementos, no solamente una fila o la diagonal. El tamaño de la matriz no cambia.</p>
+<div class="formula-display" data-math data-display="true">0A=0_{m\times n},\qquad (-1)A=-A</div>
+<p>Si λ es negativo, revisa los signos con cuidado. Un número negativo por una entrada negativa da una entrada positiva.</p>
+</article>
+<article class="formula-panel" id="producto" data-formula-panel tabindex="-1">
+<p class="formula-label">Fórmula 04</p>
+<h3>Columnas de A = filas de B</h3>
+<div class="formula-display" data-math data-display="true">A_{m\times n}B_{n\times p}=C_{m\times p}</div>
+<p>Los tamaños interiores deben coincidir. Los exteriores te dicen el tamaño del resultado. Cada entrada combina una fila de A con una columna de B:</p>
+<div class="formula-display" data-math data-display="true">c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}</div>
+<p>La letra k recorre las posiciones de esa fila y esa columna. Multiplica cada pareja y suma los productos. No es multiplicación entrada por entrada.</p>
+</article>
+<article class="formula-panel" id="cero-identidad" data-formula-panel tabindex="-1">
+<p class="formula-label">Fórmula 05</p>
+<h3>Una no cambia la suma; la otra no cambia el producto</h3>
+<div class="formula-display" data-math data-display="true">A+0_{m\times n}=A</div>
+<div class="formula-display" data-math data-display="true">I_mA=A=AI_n</div>
+<p>Para A de tamaño m × n, la matriz cero tiene su mismo tamaño. La identidad tiene unos en la diagonal principal y ceros fuera de ella; a la izquierda necesita tamaño m × m y a la derecha n × n.</p>
+<div class="formula-display" data-math data-display="true">I_2=\begin{pmatrix}1&0\\0&1\end{pmatrix}</div>
+<p>Una matriz llena de unos no es la identidad.</p>
+</article>
+<article class="formula-panel" id="transpuesta" data-formula-panel tabindex="-1">
+<p class="formula-label">Fórmula 06</p>
+<h3>Las filas se convierten en columnas</h3>
+<div class="formula-display" data-math data-display="true">(A^{\mathsf T})_{ij}=a_{ji}</div>
+<div class="formula-display" data-math data-display="true">A_{m\times n}\ \longrightarrow\ A^{\mathsf T}_{n\times m}</div>
+<p>La primera fila de A pasa a ser la primera columna de su transpuesta, y así sucesivamente. Los números no cambian de signo: solo cambian de posición.</p>
+<div class="formula-display" data-math data-display="true">(A^{\mathsf T})^{\mathsf T}=A</div>
+</article>
+</div>
+</div>
+</section>
+<section class="renata-section" id="metodo" aria-labelledby="metodo-title">
+<div class="container">
+<header class="section-heading">
+<p class="section-kicker">03 · Calcular</p>
+<div>
+<h2 id="metodo-title">Fila por columna, sin saltos</h2>
+<p class="section-intro">Calcula AB. Dejaremos visibles los operandos y podrás abrir cada parte del cálculo por separado.</p>
+</div>
+</header>
+<div class="matrix-pair">
+<div class="formula-display" data-math data-display="true">A=\begin{pmatrix}1&2\\3&4\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">B=\begin{pmatrix}2&0\\1&5\end{pmatrix}</div>
+</div>
+<ol class="worked-steps">
+<li>
+<strong>Antes de multiplicar, revisa las dimensiones.</strong>
+<p>Ambas matrices son 2 × 2. Los tamaños interiores coinciden y el resultado tendrá dos filas y dos columnas.</p>
+<div class="formula-display" data-math data-display="true">(2\times2)(2\times2)\ \longrightarrow\ 2\times2</div>
+</li>
+<li>
+<strong>Construye la primera fila del resultado.</strong>
+<p>Conserva la primera fila de A, (1, 2), y combínala con cada columna de B.</p>
+<details>
+<summary>Mostrar el cálculo de la primera fila</summary>
+<div class="reveal-content">
+<div class="formula-display" data-math data-display="true">c_{11}=1(2)+2(1)=4</div>
+<p>Primera fila de A por primera columna de B: (2, 1).</p>
+<div class="formula-display" data-math data-display="true">c_{12}=1(0)+2(5)=10</div>
+<p>Primera fila de A por segunda columna de B: (0, 5).</p>
+</div>
+</details>
+</li>
+<li>
+<strong>Construye la segunda fila.</strong>
+<p>Ahora conserva la segunda fila de A, (3, 4), y repite con las dos columnas de B.</p>
+<details>
+<summary>Mostrar el cálculo de la segunda fila</summary>
+<div class="reveal-content">
+<div class="formula-display" data-math data-display="true">c_{21}=3(2)+4(1)=10</div>
+<div class="formula-display" data-math data-display="true">c_{22}=3(0)+4(5)=20</div>
+<p>Cada cálculo sigue teniendo dos productos, porque cada fila de A tiene dos entradas.</p>
+</div>
+</details>
+</li>
+<li>
+<strong>Coloca cada resultado en su posición.</strong>
+<p>El primer índice es la fila de salida; el segundo es la columna. No cambies de lugar c₁₂ y c₂₁ aunque en este ejemplo coincidan.</p>
+<details>
+<summary>Mostrar la matriz resultado</summary>
+<div class="reveal-content">
+<div class="formula-display" data-math data-display="true">AB=\begin{pmatrix}4&10\\10&20\end{pmatrix}</div>
+<p>Cuatro entradas, organizadas en 2 × 2. El tamaño coincide con lo que predijimos.</p>
+</div>
+</details>
+</li>
+</ol>
+<p class="key-note">Al multiplicar matrices, cada entrada del resultado es una suma de productos. Si solo multiplicaste las entradas que están en la misma posición, calculaste otra operación.</p>
+</div>
+</section>
+<section class="renata-section" id="ejemplos" aria-labelledby="ejemplos-title">
+<div class="container">
+<header class="section-heading">
+<p class="section-kicker">04 · Desarrollar</p>
+<div>
+<h2 id="ejemplos-title">Seis maneras de practicar</h2>
+<p class="section-intro">Compara las condiciones de cada operación antes de abrir su solución.</p>
+</div>
+</header>
+<div class="examples">
+<article class="example">
+<header>
+<p class="example-label">Ejemplo 01</p>
+<h3>Sumar y restar sin perder los signos</h3>
+<div class="matrix-pair">
+<div class="formula-display" data-math data-display="true">P=\begin{pmatrix}1&-2\\0&3\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">Q=\begin{pmatrix}4&1\\2&-1\end{pmatrix}</div>
+</div>
+<p>Calcula P + Q y P − Q.</p>
+</header>
+<details>
+<summary>Ver desarrollo paso a paso</summary>
+<div class="reveal-content">
+<ol class="worked-steps">
+<li>
+<strong>Compatibilidad.</strong>
+<p>Las dos son 2 × 2, así que la suma y la resta están definidas.</p>
+</li>
+<li>
+<strong>Suma las posiciones correspondientes.</strong>
+<div class="formula-display" data-math data-display="true">P+Q=\begin{pmatrix}1+4&-2+1\\0+2&3+(-1)\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">P+Q=\begin{pmatrix}5&-1\\2&2\end{pmatrix}</div>
+</li>
+<li>
+<strong>Resta las posiciones correspondientes.</strong>
+<div class="formula-display" data-math data-display="true">P-Q=\begin{pmatrix}1-4&-2-1\\0-2&3-(-1)\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">P-Q=\begin{pmatrix}-3&-3\\-2&4\end{pmatrix}</div>
+<p>En la última entrada restamos −1; por eso 3 − (−1) = 4.</p>
+</li>
+</ol>
+</div>
+</details>
+</article>
+<article class="example">
+<header>
+<p class="example-label">Ejemplo 02</p>
+<h3>Combinar un escalar y una resta</h3>
+<div class="formula-display" data-math data-display="true">A=\begin{pmatrix}3&0\\-1&4\end{pmatrix}</div>
+<p>Calcula −2A y después −2A − I₂.</p>
+</header>
+<details>
+<summary>Ver desarrollo paso a paso</summary>
+<div class="reveal-content">
+<ol class="worked-steps">
+<li>
+<strong>Multiplica todas las entradas por −2.</strong>
+<div class="formula-display" data-math data-display="true">-2A=\begin{pmatrix}-6&0\\2&-8\end{pmatrix}</div>
+<p>La entrada −1 se convierte en 2; el cero sigue siendo cero.</p>
+</li>
+<li>
+<strong>Resta la identidad.</strong>
+<p>La identidad tiene unos solamente en la diagonal. La resta cambia las dos entradas diagonales:</p>
+<div class="formula-display" data-math data-display="true">-2A-I_2=\begin{pmatrix}-7&0\\2&-9\end{pmatrix}</div>
+</li>
+<li>
+<strong>Comprueba el tamaño.</strong>
+<p>Multiplicar por un escalar y restar otra matriz 2 × 2 no modifica las dimensiones.</p>
+</li>
+</ol>
+</div>
+</details>
+</article>
+<article class="example">
+<header>
+<p class="example-label">Ejemplo 03</p>
+<h3>Un producto rectangular</h3>
+<div class="formula-display" data-math data-display="true">A=\begin{pmatrix}1&0&-1\\2&3&1\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">B=\begin{pmatrix}2&1\\0&-2\\4&3\end{pmatrix}</div>
+<p>Calcula AB.</p>
+</header>
+<details>
+<summary>Ver desarrollo paso a paso</summary>
+<div class="reveal-content">
+<ol class="worked-steps">
+<li>
+<strong>Predice el tamaño.</strong>
+<div class="formula-display" data-math data-display="true">(2\times3)(3\times2)\ \longrightarrow\ 2\times2</div>
+<p>Cada entrada será la suma de tres productos.</p>
+</li>
+<li>
+<strong>Primera fila.</strong>
+<div class="formula-display" data-math data-display="true">c_{11}=1(2)+0(0)+(-1)(4)=-2</div>
+<div class="formula-display" data-math data-display="true">c_{12}=1(1)+0(-2)+(-1)(3)=-2</div>
+</li>
+<li>
+<strong>Segunda fila.</strong>
+<div class="formula-display" data-math data-display="true">c_{21}=2(2)+3(0)+1(4)=8</div>
+<div class="formula-display" data-math data-display="true">c_{22}=2(1)+3(-2)+1(3)=-1</div>
+</li>
+<li>
+<strong>Organiza el resultado.</strong>
+<div class="formula-display" data-math data-display="true">AB=\begin{pmatrix}-2&-2\\8&-1\end{pmatrix}</div>
+<p>No se conserva el tamaño de A ni el de B: el resultado toma las dimensiones exteriores.</p>
+</li>
+</ol>
+</div>
+</details>
+</article>
+<article class="example">
+<header>
+<p class="example-label">Ejemplo 04</p>
+<h3>AB y BA no son intercambiables</h3>
+<div class="matrix-pair">
+<div class="formula-display" data-math data-display="true">A=\begin{pmatrix}1&1\\0&1\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">B=\begin{pmatrix}1&0\\1&1\end{pmatrix}</div>
+</div>
+<p>Ambos productos existen. ¿Serán iguales?</p>
+</header>
+<details>
+<summary>Ver desarrollo paso a paso</summary>
+<div class="reveal-content">
+<ol class="worked-steps">
+<li>
+<strong>Calcula AB.</strong>
+<div class="formula-display" data-math data-display="true">AB=\begin{pmatrix}1(1)+1(1)&1(0)+1(1)\\0(1)+1(1)&0(0)+1(1)\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">AB=\begin{pmatrix}2&1\\1&1\end{pmatrix}</div>
+</li>
+<li>
+<strong>Invierte el orden de los operandos.</strong>
+<div class="formula-display" data-math data-display="true">BA=\begin{pmatrix}1(1)+0(0)&1(1)+0(1)\\1(1)+1(0)&1(1)+1(1)\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">BA=\begin{pmatrix}1&1\\1&2\end{pmatrix}</div>
+</li>
+<li>
+<strong>Compara entrada por entrada.</strong>
+<p>Las entradas diagonales son distintas. Por tanto, AB ≠ BA. Ser cuadradas del mismo tamaño garantiza que ambos productos existan, no que coincidan.</p>
+</li>
+</ol>
+</div>
+</details>
+</article>
+<article class="example">
+<header>
+<p class="example-label">Ejemplo 05</p>
+<h3>Transponer una matriz rectangular</h3>
+<div class="formula-display" data-math data-display="true">M=\begin{pmatrix}2&-1&4\\0&3&5\end{pmatrix}</div>
+<p>Encuentra su transpuesta.</p>
+</header>
+<details>
+<summary>Ver desarrollo paso a paso</summary>
+<div class="reveal-content">
+<ol class="worked-steps">
+<li>
+<strong>Intercambia las dimensiones.</strong>
+<p>M es 2 × 3. Su transpuesta será 3 × 2.</p>
+</li>
+<li>
+<strong>Convierte cada fila en una columna.</strong>
+<p>La fila (2, −1, 4) se coloca como primera columna. La fila (0, 3, 5), como segunda columna.</p>
+<div class="formula-display" data-math data-display="true">M^{\mathsf T}=\begin{pmatrix}2&0\\-1&3\\4&5\end{pmatrix}</div>
+</li>
+<li>
+<strong>Verifica una entrada.</strong>
+<p>El 5 que estaba en la posición (2, 3) pasa a la posición (3, 2). Sus signos y valores no cambian.</p>
+</li>
+</ol>
+</div>
+</details>
+</article>
+<article class="example">
+<header>
+<p class="example-label">Ejemplo 06</p>
+<h3>Una matriz que calcula dos totales</h3>
+<p>Cada fila registra una compra: la primera tiene 2 cuadernos y 1 lápiz; la segunda, 1 cuaderno y 3 lápices. Un cuaderno cuesta $30 y un lápiz $5.</p>
+<div class="formula-display" data-math data-display="true">C=\begin{pmatrix}2&1\\1&3\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">p=\begin{pmatrix}30\\5\end{pmatrix}</div>
+</header>
+<details>
+<summary>Ver desarrollo paso a paso</summary>
+<div class="reveal-content">
+<ol class="worked-steps">
+<li>
+<strong>Relaciona las columnas con los precios.</strong>
+<p>La primera columna cuenta cuadernos y el primer precio es el de un cuaderno. La segunda columna y el segundo precio corresponden a lápices. Ese orden debe coincidir.</p>
+</li>
+<li>
+<strong>Multiplica.</strong>
+<div class="formula-display" data-math data-display="true">Cp=\begin{pmatrix}2(30)+1(5)\\1(30)+3(5)\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">Cp=\begin{pmatrix}65\\45\end{pmatrix}</div>
+</li>
+<li>
+<strong>Interpreta.</strong>
+<p>La primera compra cuesta $65 y la segunda $45. Un producto 2 × 2 por 2 × 1 produce una columna 2 × 1: un total por compra.</p>
+</li>
+</ol>
+</div>
+</details>
+</article>
+</div>
+</div>
+</section>
+<section class="renata-section" id="practica" aria-labelledby="practica-title">
+<div class="container">
+<header class="section-heading">
+<p class="section-kicker">05 · Intentar</p>
+<div>
+<h2 id="practica-title">Resuelve antes de desplegar</h2>
+<p class="section-intro">Escribe siempre el tamaño esperado. Después verifica el procedimiento, no únicamente el resultado.</p>
+</div>
+</header>
+<div class="practice-grid">
+<article class="exercise">
+<p class="example-label">Práctica 01</p>
+<h3>Ubica una entrada</h3>
+<div class="formula-display" data-math data-display="true">M=\begin{pmatrix}2&0&-1\\4&3&5\end{pmatrix}</div>
+<p>Indica el tamaño de M y el valor de m₂₃.</p>
+<details>
+<summary>Ver respuesta y explicación</summary>
+<div class="reveal-content">
+<p>M es 2 × 3: dos filas y tres columnas. m₂₃ = 5, porque está en la segunda fila y tercera columna. No inviertas los índices.</p>
+</div>
+</details>
+</article>
+<article class="exercise">
+<p class="example-label">Práctica 02</p>
+<h3>Compatibilidad sin calcular</h3>
+<p>A es 2 × 3 y B es 3 × 4. ¿Existen A + B, AB y BA?</p>
+<details>
+<summary>Ver respuesta y explicación</summary>
+<div class="reveal-content">
+<p>
+<strong>A + B:</strong> no; los tamaños no son iguales.</p>
+<p>
+<strong>AB:</strong> sí; coinciden los tamaños interiores 3 y 3. El resultado es 2 × 4.</p>
+<p>
+<strong>BA:</strong> no; los tamaños interiores serían 4 y 2.</p>
+</div>
+</details>
+</article>
+<article class="exercise">
+<p class="example-label">Práctica 03</p>
+<h3>Resta con signos</h3>
+<div class="formula-display" data-math data-display="true">P=\begin{pmatrix}2&-1\\0&4\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">Q=\begin{pmatrix}-3&2\\5&1\end{pmatrix}</div>
+<p>Calcula P − Q.</p>
+<details>
+<summary>Ver respuesta y explicación</summary>
+<div class="reveal-content">
+<div class="formula-display" data-math data-display="true">P-Q=\begin{pmatrix}5&-3\\-5&3\end{pmatrix}</div>
+<p>Las cuatro operaciones son 2 − (−3) = 5, −1 − 2 = −3, 0 − 5 = −5 y 4 − 1 = 3.</p>
+</div>
+</details>
+</article>
+<article class="exercise">
+<p class="example-label">Práctica 04</p>
+<h3>Escala y luego suma</h3>
+<div class="formula-display" data-math data-display="true">A=\begin{pmatrix}1&-2\\0&3\end{pmatrix}</div>
+<p>Calcula 3A + I₂.</p>
+<details>
+<summary>Ver respuesta y explicación</summary>
+<div class="reveal-content">
+<div class="formula-display" data-math data-display="true">3A=\begin{pmatrix}3&-6\\0&9\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">3A+I_2=\begin{pmatrix}4&-6\\0&10\end{pmatrix}</div>
+<p>El 3 multiplica toda la matriz. Al sumar I₂ agregas 1 a cada entrada diagonal y 0 a las demás.</p>
+</div>
+</details>
+</article>
+<article class="exercise">
+<p class="example-label">Práctica 05</p>
+<h3>Una fila por una columna</h3>
+<div class="formula-display" data-math data-display="true">r=\begin{pmatrix}2&-1&3\end{pmatrix}</div>
+<div class="formula-display" data-math data-display="true">v=\begin{pmatrix}1\\4\\-2\end{pmatrix}</div>
+<p>Calcula rv e indica su tamaño.</p>
+<details>
+<summary>Ver respuesta y explicación</summary>
+<div class="reveal-content">
+<div class="formula-display" data-math data-display="true">2(1)+(-1)(4)+3(-2)=-8</div>
+<div class="formula-display" data-math data-display="true">rv=\begin{pmatrix}-8\end{pmatrix}</div>
+<p>El tamaño es 1 × 1. Solo hay una entrada, pero sigue siendo una matriz. No es una columna con tres productos separados.</p>
+</div>
+</details>
+</article>
+<article class="exercise">
+<p class="example-label">Práctica 06</p>
+<h3>Cambiar filas por columnas</h3>
+<div class="formula-display" data-math data-display="true">N=\begin{pmatrix}1&0\\-2&5\\3&4\end{pmatrix}</div>
+<p>Calcula la transpuesta y sus dimensiones.</p>
+<details>
+<summary>Ver respuesta y explicación</summary>
+<div class="reveal-content">
+<div class="formula-display" data-math data-display="true">N^{\mathsf T}=\begin{pmatrix}1&-2&3\\0&5&4\end{pmatrix}</div>
+<p>El resultado es 2 × 3. La primera columna de N se volvió la primera fila; la segunda columna, la segunda fila.</p>
+</div>
+</details>
+</article>
+</div>
+</div>
+</section>
+<section class="renata-section" id="cierre" aria-labelledby="cierre-title">
+<div class="container">
+<header class="section-heading">
+<p class="section-kicker">06 · Repasar</p>
+<div>
+<h2 id="cierre-title">Un control antes de entregar</h2>
+<p class="section-intro">Estos tres errores se detectan sin repetir todas las cuentas.</p>
+</div>
+</header>
+<div class="concept-grid">
+<article class="concept">
+<h3>Tamaño y posiciones</h3>
+<p>Una suma conserva el tamaño de sus operandos. Un producto usa las dimensiones exteriores. Una transpuesta intercambia filas y columnas. Comprueba que cada entrada quedó en su sitio.</p>
+</article>
+<article class="concept">
+<h3>Signos y orden</h3>
+<p>Un escalar afecta todas las entradas. Al restar una matriz, se resta cada valor con su signo. En un producto, conserva el orden AB: cambiarlo puede cambiar el resultado o volver imposible la operación.</p>
+</article>
+</div>
+<details>
+<summary>Pregunta final: ¿una matriz llena de unos es la identidad?</summary>
+<div class="reveal-content">
+<p>No. La identidad tiene unos en la diagonal principal y ceros fuera. Esos ceros eliminan los términos que no corresponden y dejan cada entrada de A exactamente en su lugar. Una matriz llena de unos mezcla sumas de entradas y, en general, cambia A.</p>
+</div>
+</details>
+<div class="session-links">
+<a href="../">Volver al casillero de Renata</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a class="brand" href="../../../../">
+<img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt="">
+</a>
+<p>Asesorías particulares de matemáticas</p>
+</div>
+<nav aria-label="Pie">
+<ul class="footer-nav">
+<li>
+<a href="../../../">Salones</a>
+</li>
+<li>
+<a href="../">Renata</a>
+</li>
+</ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

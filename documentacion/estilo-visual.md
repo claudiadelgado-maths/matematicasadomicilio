@@ -39,4 +39,4 @@ Variables principales en `recursos/css/base.css`:
 
 Cada `index.html` tiene un `estilos.css` en su misma carpeta. Allí vive todo lo particular de esa página: composición, tarjetas, perfiles, contenido educativo, acentos y ajustes responsivos.
 
-Un módulo puede definir `--module-accent` y otras variables locales. `base.css` no debe recibir reglas de una página concreta. La repetición entre módulos es aceptable cuando conserva su independencia; una regla solo pasa a la base global si es realmente necesaria en todo el sitio. El encabezado, el pie y las variables de marca se reutilizan desde la base, salvo que una página necesite deliberadamente una variante propia.
+Un módulo puede definir `--module-accent` y otras variables locales. `base.css` no debe recibir reglas de una página concreta. Una regla idéntica usada por varios descendientes se comparte desde el ancestro de esa familia; solo pasa a la base global si pertenece a todo el sitio. El encabezado, el pie, WhatsApp, volver arriba y las variables de marca se reutilizan desde la base.

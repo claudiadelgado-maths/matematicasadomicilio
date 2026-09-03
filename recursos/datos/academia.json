@@ -254,6 +254,34 @@
       ],
       "alumnos": [
         {
+          "id": "renata-elizabeth",
+          "nombreVisible": "Renata",
+          "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
+          "ruta": "/asesores/elizabeth/renata/",
+          "personalizacion": {
+            "simbolo": "R",
+            "acento": "#526a42",
+            "fondo": "#edf2e7"
+          },
+          "ultimaActividad": "2026-09-03",
+          "sesiones": [
+            {
+              "id": "espacio-vectorial-renata",
+              "titulo": "1. Propiedades de un espacio vectorial",
+              "descripcion": "Axiomas y criterio de subespacio con fórmulas revelables, demostraciones, contraejemplos y práctica en vectores y polinomios.",
+              "fecha": "2026-09-03",
+              "ruta": "/asesores/elizabeth/renata/propiedades-de-un-espacio-vectorial/"
+            },
+            {
+              "id": "matrices-operaciones-renata",
+              "titulo": "2. Matrices y sus operaciones",
+              "descripcion": "Dimensiones, suma, resta, escalares, producto matricial y transpuesta con fórmulas revelables, ejemplos guiados y práctica.",
+              "fecha": "2026-09-03",
+              "ruta": "/asesores/elizabeth/renata/matrices-y-operaciones/"
+            }
+          ]
+        },
+        {
           "id": "gloria-elizabeth",
           "nombreVisible": "Gloria",
           "descripcion": "Sesiones universitarias sobre derivación, integración y el teorema fundamental del cálculo.",
@@ -268,21 +296,21 @@
             {
               "id": "reglas-derivacion-gloria",
               "titulo": "1. Reglas de derivación",
-              "descripcion": "Reglas de potencia, suma, producto, cociente y cadena para derivar con rapidez.",
+              "descripcion": "Mapa interactivo de reglas de derivación con método de elección, ejemplos desarrollados y práctica.",
               "fecha": "2026-08-20",
               "ruta": "/asesores/elizabeth/gloria/reglas-de-derivacion/"
             },
             {
               "id": "reglas-integracion-gloria",
               "titulo": "2. Reglas esenciales de integración",
-              "descripcion": "Antiderivadas, linealidad, regla de potencia y fórmulas elementales.",
+              "descripcion": "Antiderivadas y fórmulas de integración con consulta interactiva, ejemplos detallados y práctica.",
               "fecha": "2026-08-20",
               "ruta": "/asesores/elizabeth/gloria/reglas-de-integracion/"
             },
             {
               "id": "teorema-fundamental-gloria",
               "titulo": "3. Teorema fundamental del cálculo",
-              "descripcion": "Relación entre derivación e integración y evaluación de integrales definidas.",
+              "descripcion": "Construcción gradual del teorema fundamental con fórmulas revelables, ejemplos y práctica.",
               "fecha": "2026-08-20",
               "ruta": "/asesores/elizabeth/gloria/teorema-fundamental-del-calculo/"
             }
@@ -303,14 +331,14 @@
             {
               "id": "derivada-parametrica-jimena",
               "titulo": "1. Derivada paramétrica",
-              "descripcion": "Pendiente de una curva dada por x(t) e y(t), y condición para aplicar dy/dx.",
+              "descripcion": "Pendiente, tangentes, segunda derivada y rapidez de curvas paramétricas con ejemplos detallados.",
               "fecha": "2026-08-20",
               "ruta": "/asesores/elizabeth/jimena/derivada-parametrica/"
             },
             {
               "id": "integral-curva-jimena",
               "titulo": "2. Integral de curva",
-              "descripcion": "Parametrización, elemento de longitud ds e integración de campos escalares sobre una curva.",
+              "descripcion": "Integrales escalares, elemento de longitud y longitud de arco con ejemplos planos y espaciales.",
               "fecha": "2026-08-20",
               "ruta": "/asesores/elizabeth/jimena/integral-de-curva/"
             }
@@ -331,51 +359,23 @@
             {
               "id": "conjuntos-kevin",
               "titulo": "1. Conjuntos",
-              "descripcion": "Notación, pertenencia, subconjuntos y operaciones de unión, intersección, diferencia y complemento.",
+              "descripcion": "Notación, operaciones, cardinalidad, intervalos y leyes de conjuntos con ejemplos detallados.",
               "fecha": "2026-08-20",
               "ruta": "/asesores/elizabeth/kevin/conjuntos/"
             },
             {
               "id": "limites-kevin",
               "titulo": "2. Límites",
-              "descripcion": "Aproximación, leyes de límites y resolución de indeterminaciones sencillas por factorización.",
+              "descripcion": "Aproximación, límites laterales, indeterminaciones y comportamiento al infinito con ejemplos detallados.",
               "fecha": "2026-08-20",
               "ruta": "/asesores/elizabeth/kevin/limites/"
             },
             {
               "id": "derivada-limite-kevin",
               "titulo": "3. La derivada como límite",
-              "descripcion": "Definición de derivada como límite del cociente incremental e interpretación como pendiente.",
+              "descripcion": "Construcción de la derivada desde secantes, cociente incremental y límite con aplicaciones y ejemplos.",
               "fecha": "2026-08-20",
               "ruta": "/asesores/elizabeth/kevin/derivada-como-limite/"
-            }
-          ]
-        },
-        {
-          "id": "renata-elizabeth",
-          "nombreVisible": "Renata",
-          "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
-          "ruta": "/asesores/elizabeth/renata/",
-          "personalizacion": {
-            "simbolo": "R",
-            "acento": "#526a42",
-            "fondo": "#edf2e7"
-          },
-          "ultimaActividad": "2026-08-20",
-          "sesiones": [
-            {
-              "id": "espacio-vectorial-renata",
-              "titulo": "1. Propiedades de un espacio vectorial",
-              "descripcion": "Axiomas de espacio vectorial y criterio de subespacio con ejemplos en R² y polinomios.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/renata/propiedades-de-un-espacio-vectorial/"
-            },
-            {
-              "id": "matrices-operaciones-renata",
-              "titulo": "2. Matrices y sus operaciones",
-              "descripcion": "Definición, dimensiones, suma, producto por escalar y multiplicación matricial.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/renata/matrices-y-operaciones/"
             }
           ]
         }
@@ -445,7 +445,7 @@
             {
               "id": "graficas-barras-ventas-alex",
               "titulo": "Gráficas de barras en ventas",
-              "descripcion": "Cómo organizar, comparar e interpretar datos de ventas mediante tres ejemplos de tecnología.",
+              "descripcion": "Recorrido interactivo para leer, construir y evaluar gráficas de barras mediante datos de ventas y decisiones rápidas.",
               "fecha": "2026-08-20",
               "ruta": "/asesores/erick-chan/alex/graficas-de-barras-en-ventas/"
             }
@@ -631,8 +631,8 @@
         "Destaca la información importante con una jerarquía visual clara y verifica qué necesita reforzarse en la siguiente sesión."
       ],
       "estado": "activo",
-      "ruta": "/asesores/karen/",
-      "imagen": "/asesores/karen/recursos/karen-mariana.png",
+      "ruta": "/asesores/karen-mariana/",
+      "imagen": "/asesores/karen-mariana/recursos/karen-mariana.png",
       "imagenAlt": "Gata tricolor dormida, imagen del salón de Karen Mariana",
       "imagenAjuste": "cover",
       "banner": {
@@ -668,7 +668,7 @@
           "id": "raul-karen",
           "nombreVisible": "Raul",
           "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
-          "ruta": "/asesores/karen/raul/",
+          "ruta": "/asesores/karen-mariana/raul/",
           "personalizacion": {
             "simbolo": "R",
             "acento": "#a45c18",
@@ -681,7 +681,7 @@
               "titulo": "Triángulos semejantes",
               "descripcion": "Criterios AA, LAL y LLL, figuras comparables y cálculo de longitudes por proporcionalidad.",
               "fecha": "2026-08-20",
-              "ruta": "/asesores/karen/raul/triangulos-semejantes/"
+              "ruta": "/asesores/karen-mariana/raul/triangulos-semejantes/"
             }
           ]
         },
@@ -689,7 +689,7 @@
           "id": "esteba-karen",
           "nombreVisible": "Esteba",
           "descripcion": "Sesiones de secundaria para comprender exponentes desconocidos y logaritmos.",
-          "ruta": "/asesores/karen/esteba/",
+          "ruta": "/asesores/karen-mariana/esteba/",
           "personalizacion": {
             "simbolo": "E",
             "acento": "#84509a",
@@ -702,14 +702,14 @@
               "titulo": "Logaritmos",
               "descripcion": "Relación entre forma exponencial y logarítmica, identificación de sus partes y cálculos básicos.",
               "fecha": "2026-08-19",
-              "ruta": "/asesores/karen/esteba/logaritmos/"
+              "ruta": "/asesores/karen-mariana/esteba/logaritmos/"
             },
             {
               "id": "encontrar-exponente-esteba",
               "titulo": "Encontrar el exponente",
               "descripcion": "Ecuaciones exponenciales sencillas resueltas al reconocer potencias conocidas.",
               "fecha": "2026-08-11",
-              "ruta": "/asesores/karen/esteba/encontrar-el-exponente/"
+              "ruta": "/asesores/karen-mariana/esteba/encontrar-el-exponente/"
             }
           ]
         },
@@ -717,7 +717,7 @@
           "id": "milndred-karen",
           "nombreVisible": "Milndred",
           "descripcion": "Sesiones de secundaria sobre exponentes y geometría del círculo.",
-          "ruta": "/asesores/karen/milndred/",
+          "ruta": "/asesores/karen-mariana/milndred/",
           "personalizacion": {
             "simbolo": "M",
             "acento": "#1f6f65",
@@ -730,14 +730,14 @@
               "titulo": "Partes del círculo",
               "descripcion": "Centro, radio, diámetro, cuerda, arco, circunferencia y fórmulas básicas.",
               "fecha": "2026-08-18",
-              "ruta": "/asesores/karen/milndred/partes-del-circulo/"
+              "ruta": "/asesores/karen-mariana/milndred/partes-del-circulo/"
             },
             {
               "id": "teoria-exponentes-milndred",
               "titulo": "Teoría de exponentes",
               "descripcion": "Multiplicación repetida, base, exponente, potencia y primeras expresiones algebraicas.",
               "fecha": "2026-08-12",
-              "ruta": "/asesores/karen/milndred/teoria-de-exponentes/"
+              "ruta": "/asesores/karen-mariana/milndred/teoria-de-exponentes/"
             }
           ]
         },
@@ -745,7 +745,7 @@
           "id": "jonny-karen",
           "nombreVisible": "Jonny",
           "descripcion": "Sesiones de secundaria sobre ecuaciones cuadráticas y cuadriláteros.",
-          "ruta": "/asesores/karen/jonny/",
+          "ruta": "/asesores/karen-mariana/jonny/",
           "personalizacion": {
             "simbolo": "J",
             "acento": "#a44548",
@@ -758,14 +758,14 @@
               "titulo": "Cuadriláteros",
               "descripcion": "Clasificación visual, propiedades, perímetros y áreas de los cuadriláteros principales.",
               "fecha": "2026-08-17",
-              "ruta": "/asesores/karen/jonny/cuadrilateros/"
+              "ruta": "/asesores/karen-mariana/jonny/cuadrilateros/"
             },
             {
               "id": "formula-general-jonny",
               "titulo": "Fórmula general",
               "descripcion": "Identificación de coeficientes y resolución paso a paso de ecuaciones cuadráticas.",
               "fecha": "2026-08-13",
-              "ruta": "/asesores/karen/jonny/formula-general/"
+              "ruta": "/asesores/karen-mariana/jonny/formula-general/"
             }
           ]
         }
@@ -835,14 +835,14 @@
             {
               "id": "espacios-topologicos-sofia",
               "titulo": "Espacios topológicos",
-              "descripcion": "Definición axiomática, primeros ejemplos y verificación de topologías sobre conjuntos finitos.",
+              "descripcion": "Definición axiomática, vocabulario, método de verificación, ejemplos y práctica con topologías finitas e infinitas.",
               "fecha": "2026-08-19",
               "ruta": "/asesores/rainer/sofia/espacios-topologicos/"
             },
             {
               "id": "interior-clausura-frontera-sofia",
               "titulo": "Interior, clausura y frontera",
-              "descripcion": "Construcciones asociadas a un subconjunto y relaciones básicas entre interior, clausura y frontera.",
+              "descripcion": "Interior, clausura, exterior y frontera mediante vecindades, propiedades, ejemplos en la recta y espacios finitos y práctica resuelta.",
               "fecha": "2026-08-16",
               "ruta": "/asesores/rainer/sofia/interior-clausura-frontera/"
             }
@@ -863,7 +863,7 @@
             {
               "id": "continuidad-topologica-mateo",
               "titulo": "Continuidad topológica",
-              "descripcion": "Continuidad mediante preimágenes de abiertos, ejemplos básicos y composición de aplicaciones continuas.",
+              "descripcion": "Continuidad mediante abiertos, cerrados y vecindades, método de verificación, ejemplos finitos y reales, composición y práctica resuelta.",
               "fecha": "2026-08-18",
               "ruta": "/asesores/rainer/mateo/continuidad-topologica/"
             }

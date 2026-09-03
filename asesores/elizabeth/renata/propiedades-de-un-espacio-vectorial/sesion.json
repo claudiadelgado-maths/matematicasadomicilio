@@ -1,1 +1,24 @@
-{"id":"espacio-vectorial-renata","slug":"propiedades-de-un-espacio-vectorial","tipo":"sesion","usuario":"renata-elizabeth","titulo":"1. Propiedades de un espacio vectorial","descripcion":"Axiomas de espacio vectorial y criterio de subespacio con ejemplos en R² y polinomios.","objetivo":"Reconocer las propiedades de un espacio vectorial y comprobar si un subconjunto es subespacio.","conocimientosPrevios":["vectores en R²","suma y multiplicación por escalar"],"fecha":"2026-08-20","estado":"publicado","ruta":"/asesores/elizabeth/renata/propiedades-de-un-espacio-vectorial/","componentes":{"explicacion":false,"demostraciones":false,"ejercicios":false,"juegos":false,"calculadoras":false}}
+{
+  "id": "espacio-vectorial-renata",
+  "slug": "propiedades-de-un-espacio-vectorial",
+  "tipo": "sesion",
+  "usuario": "renata-elizabeth",
+  "titulo": "1. Propiedades de un espacio vectorial",
+  "descripcion": "Axiomas y criterio de subespacio con fórmulas revelables, demostraciones, contraejemplos y práctica en vectores y polinomios.",
+  "objetivo": "Reconocer los axiomas de un espacio vectorial y demostrar o descartar subespacios mediante el cero y la cerradura.",
+  "conocimientosPrevios": [
+    "vectores en R² y R³",
+    "suma y multiplicación por escalar",
+    "operaciones básicas con polinomios"
+  ],
+  "fecha": "2026-09-03",
+  "estado": "publicado",
+  "ruta": "/asesores/elizabeth/renata/propiedades-de-un-espacio-vectorial/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

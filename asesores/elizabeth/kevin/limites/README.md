@@ -1,3 +1,3 @@
 # Límites
 
-Sesión 2 de Kevin. Explica el significado de aproximación, desarrolla el límite de `(x²-9)/(x-3)` y presenta dos límites resueltos.
+Sesión 2 de Kevin. Construye la idea de aproximación y presenta siete estrategias revelables, una ruta de decisión, cinco ejemplos desarrollados y seis ejercicios con respuesta. Incluye sustitución, factorización, racionalización, límites laterales, comportamiento al infinito y un límite notable.

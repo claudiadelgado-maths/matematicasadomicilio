@@ -248,12 +248,79 @@ for (const file of htmlFiles) {
   if (/<img\b(?![^>]*\balt=)[^>]*>/i.test(source)) {
     reportError(`${relative(file)}: hay una imagen sin atributo alt.`);
   }
+  if (/\bclass=["'][^"']*\b(?:whatsapp-float|back-to-top)\b/i.test(source)) {
+    reportError(
+      `${relative(file)}: los controles flotantes se generan desde recursos/js/navegacion.js; no los dupliques en el HTML.`,
+    );
+  }
 }
+
+const sharedStyle = path.join(root, "recursos", "css", "base.css");
+const globalSelectors = [
+  ".site-header",
+  ".header-inner",
+  ".brand",
+  ".brand img",
+  ".site-nav",
+  ".nav-list",
+  ".nav-list a",
+  '.nav-list a[aria-current="page"]',
+  ".menu-toggle",
+  ".menu-toggle-lines",
+  ".menu-toggle-lines::before",
+  ".menu-toggle-lines::after",
+  ".site-nav.is-open",
+  ".nav-list li:last-child a",
+  ".site-footer",
+  ".site-footer .brand img",
+  ".footer-grid",
+  ".footer-brand p",
+  ".footer-brand a",
+  ".footer-nav",
+  ".footer-nav a",
+  ".footer-nav a:hover",
+  ".footer-legal",
+  ".footer-legal p",
+  ".footer-copyright",
+  ".footer-legal-links",
+  ".footer-legal-links a",
+  ".footer-location",
+  ".back-to-top",
+  ".whatsapp-float",
+  ".back-to-top svg",
+  ".whatsapp-float img",
+];
+const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 for (const file of files.filter((item) => item.endsWith(".css"))) {
   const source = fs.readFileSync(file, "utf8");
   for (const [, cssReference] of source.matchAll(/url\(\s*["']?([^"')]+)["']?\s*\)/gi)) {
     validateLocalReference(file, cssReference, "recurso CSS");
+  }
+
+  if (file !== sharedStyle) {
+    for (const selector of globalSelectors) {
+      const selectorPattern = new RegExp(
+        `(?:^|[{},])\\s*${escapeRegExp(selector)}\\s*(?=[,{])`,
+        "m",
+      );
+      if (selectorPattern.test(source)) {
+        reportError(
+          `${relative(file)}: repite el selector global "${selector}"; debe vivir solo en recursos/css/base.css.`,
+        );
+      }
+    }
+    if (/@(?:-webkit-)?keyframes\s+nav-panel-enter\b/i.test(source)) {
+      reportError(
+        `${relative(file)}: repite la animación global "nav-panel-enter".`,
+      );
+    }
+  }
+
+  const firstImport = source.search(/@import\b/i);
+  const firstRule = source.search(/\{/);
+  if (firstImport >= 0 && firstRule >= 0 && firstImport > firstRule) {
+    reportError(`${relative(file)}: @import debe aparecer antes de cualquier regla CSS.`);
   }
 }
 

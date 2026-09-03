@@ -1,12 +1,139 @@
-<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Interior, clausura y frontera | Sofía | Matemáticas a Domicilio</title><meta name="description" content="Sesión universitaria sobre interior, clausura y frontera de un subconjunto."><link rel="icon" href="../../../../recursos/svg/favicon.svg" type="image/svg+xml"><script src="../../../../recursos/js/navegacion.js?v=20260828-floating2" defer></script>  <link rel="stylesheet" href="../../../../recursos/css/base.css?v=20260828-floating1">
-  <link rel="stylesheet" href="estilos.css?v=20260826-local1">
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Interior, clausura y frontera | Sofía | Matemáticas a Domicilio</title><meta name="description" content="Sesión universitaria sobre interior, clausura y frontera de un subconjunto."><link rel="icon" href="../../../../recursos/svg/favicon.svg" type="image/svg+xml"><script src="../../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>  <link rel="stylesheet" href="../../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="estilos.css?v=20260902-topology2">
 </head>
 <body><a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../" aria-current="page">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav></div></header>
-<main id="contenido" class="topology-site"><div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../">Salones</a></li><li><a href="../../">Rainer</a></li><li><a href="../">Sofía</a></li><li aria-current="page">Interior, clausura y frontera</li></ol></nav></div><header class="topology-hero"><div class="container"><p class="eyebrow">Topología · Sesión 2</p><h1>Interior, clausura y frontera</h1><p class="lead">Tres maneras de describir dónde se encuentra un conjunto dentro de un espacio topológico.</p></div></header>
+<main id="contenido" class="topology-site"><div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../">Salones</a></li><li><a href="../../">Rainer</a></li><li><a href="../">Sofía</a></li><li aria-current="page">Interior, clausura y frontera</li></ol></nav></div><header class="topology-hero"><div class="container"><p class="eyebrow">Topología · Sesión 2</p><h1>Interior, clausura y frontera</h1><p class="lead">Cuatro regiones para describir dónde se encuentra un conjunto dentro de un espacio topológico.</p></div></header>
 <article class="topology-article">
-  <section class="topology-section" aria-labelledby="concepto"><h2 id="concepto">Concepto</h2><p>Sea <var>A</var> un subconjunto de un espacio topológico <var>X</var>.</p><ul><li>El <strong>interior</strong> Int(<var>A</var>) es la unión de todos los abiertos contenidos en <var>A</var>.</li><li>La <strong>clausura</strong> Cl(<var>A</var>) es la intersección de todos los cerrados que contienen a <var>A</var>.</li><li>La <strong>frontera</strong> Fr(<var>A</var>) reúne los puntos cuya vecindad toca tanto a <var>A</var> como a su complemento.</li></ul><div class="math-block">Fr(<var>A</var>) = Cl(<var>A</var>) ∩ Cl(<var>X</var> ∖ <var>A</var>) = Cl(<var>A</var>) ∖ Int(<var>A</var>).</div></section>
-  <section class="topology-section" aria-labelledby="ejemplo"><h2 id="ejemplo">Ejemplo</h2><p>En ℝ con la topología usual, toma <var>A</var> = [0, 1) ∪ {2}.</p><ul><li>Int(<var>A</var>) = (0, 1).</li><li>Cl(<var>A</var>) = [0, 1] ∪ {2}.</li><li>Fr(<var>A</var>) = {0, 1, 2}.</li></ul><p>El punto 2 pertenece a la frontera: toda ventana abierta alrededor de 2 contiene al propio 2 y también puntos que no están en <var>A</var>.</p></section>
-  <section class="topology-section" aria-labelledby="demostracion"><h2 id="demostracion">Demostración</h2><p>La frontera de cualquier subconjunto es cerrada.</p><details class="proof-details"><summary>Ver demostración</summary><div class="proof-body"><p>Por definición, Fr(<var>A</var>) = Cl(<var>A</var>) ∩ Cl(<var>X</var> ∖ <var>A</var>). Ambas clausuras son conjuntos cerrados. Como la intersección finita de cerrados es cerrada, Fr(<var>A</var>) también es cerrada.</p></div></details></section>
-  <section class="topology-section" aria-labelledby="ejercicios"><h2 id="ejercicios">Ejercicios</h2><ol class="exercise-list"><li>Calcula interior, clausura y frontera de ℚ como subconjunto de ℝ con la topología usual.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>Int(ℚ) = ∅ porque ningún intervalo abierto está contenido en ℚ. Como todo intervalo contiene racionales, Cl(ℚ) = ℝ. Por tanto Fr(ℚ) = ℝ.</p></div></details></li><li>Demuestra la identidad Cl(<var>A</var>) = <var>A</var> ∪ Fr(<var>A</var>).<details class="proof-details"><summary>Ver una orientación</summary><div class="proof-body"><p>La inclusión de derecha a izquierda es inmediata. Para la otra, separa los puntos de Cl(<var>A</var>) que ya pertenecen a <var>A</var>. Si un punto restante no está en <var>A</var>, todas sus vecindades tocan a <var>A</var> y, al contener al propio punto, también tocan al complemento; por tanto está en la frontera.</p></div></details></li></ol></section>
+  <section class="topology-section" aria-labelledby="objetivos">
+    <h2 id="objetivos">Objetivos de la sesión</h2>
+    <p>Al terminar podrás describir con precisión cómo se ubica un subconjunto dentro de un espacio topológico, incluso cuando no haya una distancia para medir qué tan cerca están sus puntos.</p>
+    <ul class="topology-goals">
+      <li>Calcular el interior, la clausura, el exterior y la frontera de un conjunto.</li>
+      <li>Interpretar estas cuatro regiones mediante abiertos y vecindades.</li>
+      <li>Reconocer cuándo un conjunto es abierto, cerrado o simultáneamente abierto y cerrado.</li>
+      <li>Aplicar identidades que relacionan una región con el complemento de otra.</li>
+      <li>Justificar los resultados, no solo obtenerlos por intuición geométrica.</li>
+    </ul>
+  </section>
+
+  <section class="topology-section" aria-labelledby="cuatro-regiones">
+    <h2 id="cuatro-regiones">Cuatro regiones asociadas a un conjunto</h2>
+    <p>Sea <var>A</var> un subconjunto de un espacio topológico <var>X</var>. El interior conserva la parte de <var>A</var> que está protegida por abiertos; la clausura añade todos los puntos que no pueden separarse de <var>A</var>; el exterior es la zona protegida del complemento; y la frontera queda entre ambas zonas.</p>
+    <div class="concept-grid">
+      <article class="concept-card"><h3>Interior</h3><p><strong>Int(<var>A</var>)</strong> es la unión de todos los abiertos contenidos en <var>A</var>. Es el abierto más grande que cabe dentro de <var>A</var>.</p></article>
+      <article class="concept-card"><h3>Clausura</h3><p><strong>Cl(<var>A</var>)</strong> es la intersección de todos los cerrados que contienen a <var>A</var>. Es el cerrado más pequeño que contiene a <var>A</var>.</p></article>
+      <article class="concept-card"><h3>Exterior</h3><p><strong>Ext(<var>A</var>) = Int(<var>X</var> ∖ <var>A</var>)</strong>. Sus puntos poseen una vecindad abierta que no toca a <var>A</var>.</p></article>
+      <article class="concept-card"><h3>Frontera</h3><p><strong>Fr(<var>A</var>)</strong> reúne los puntos cuyas vecindades tocan tanto a <var>A</var> como a su complemento.</p></article>
+    </div>
+    <div class="math-block"><var>X</var> = Int(<var>A</var>) ∪ Fr(<var>A</var>) ∪ Ext(<var>A</var>), y estas tres regiones son disjuntas entre sí.</div>
+    <p>Un punto de la frontera puede pertenecer o no a <var>A</var>. Por ejemplo, en el intervalo [0, 1), el punto 0 pertenece al conjunto y el punto 1 no, pero ambos están en la frontera.</p>
+  </section>
+
+  <section class="topology-section" aria-labelledby="vecindades">
+    <h2 id="vecindades">Criterios mediante vecindades</h2>
+    <p>Estos criterios suelen ser la herramienta más directa para decidir a qué región pertenece un punto. Una <strong>vecindad abierta</strong> de <var>x</var> es cualquier abierto <var>U</var> que contiene a <var>x</var>.</p>
+    <ul class="property-list">
+      <li><var>x</var> ∈ Int(<var>A</var>) si existe una vecindad abierta <var>U</var> de <var>x</var> tal que <var>U</var> ⊆ <var>A</var>.</li>
+      <li><var>x</var> ∈ Cl(<var>A</var>) si toda vecindad abierta <var>U</var> de <var>x</var> cumple <var>U</var> ∩ <var>A</var> ≠ ∅.</li>
+      <li><var>x</var> ∈ Ext(<var>A</var>) si existe una vecindad abierta <var>U</var> de <var>x</var> tal que <var>U</var> ∩ <var>A</var> = ∅.</li>
+      <li><var>x</var> ∈ Fr(<var>A</var>) si toda vecindad abierta de <var>x</var> toca a <var>A</var> y también a <var>X</var> ∖ <var>A</var>.</li>
+    </ul>
+    <aside class="topology-callout"><strong>Idea clave:</strong> para demostrar que un punto no está en la clausura basta encontrar una sola vecindad que no toque al conjunto. Para demostrar que sí está, hay que considerar todas sus vecindades.</aside>
+  </section>
+
+  <section class="topology-section" aria-labelledby="propiedades">
+    <h2 id="propiedades">Propiedades que conviene dominar</h2>
+    <div class="topology-table-wrap" tabindex="0" aria-label="Tabla desplazable de propiedades del interior, la clausura y la frontera">
+      <table class="topology-table">
+        <thead><tr><th scope="col">Propiedad</th><th scope="col">Lectura útil</th></tr></thead>
+        <tbody>
+          <tr><td>Int(<var>A</var>) ⊆ <var>A</var> ⊆ Cl(<var>A</var>)</td><td>El interior quita puntos; la clausura puede añadirlos.</td></tr>
+          <tr><td><var>A</var> es abierto ⇔ Int(<var>A</var>) = <var>A</var></td><td>Todos sus puntos tienen una vecindad contenida en <var>A</var>.</td></tr>
+          <tr><td><var>A</var> es cerrado ⇔ Cl(<var>A</var>) = <var>A</var></td><td>El conjunto ya contiene todos sus puntos adherentes.</td></tr>
+          <tr><td>Int(Int(<var>A</var>)) = Int(<var>A</var>)</td><td>Tomar el interior dos veces no cambia el resultado.</td></tr>
+          <tr><td>Cl(Cl(<var>A</var>)) = Cl(<var>A</var>)</td><td>La clausura obtenida ya es cerrada.</td></tr>
+          <tr><td>Int(<var>A</var>) = <var>X</var> ∖ Cl(<var>X</var> ∖ <var>A</var>)</td><td>Interior y clausura se transforman uno en otro al complementar.</td></tr>
+          <tr><td>Fr(<var>A</var>) = Cl(<var>A</var>) ∖ Int(<var>A</var>)</td><td>La frontera es la parte de la clausura que no es interior.</td></tr>
+          <tr><td>Fr(<var>A</var>) = Fr(<var>X</var> ∖ <var>A</var>)</td><td>Un conjunto y su complemento comparten la misma frontera.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="topology-section" aria-labelledby="ejemplo-guiado">
+    <h2 id="ejemplo-guiado">Ejemplo guiado en la recta real</h2>
+    <div class="worked-example">
+      <p>En ℝ con la topología usual, considera <var>A</var> = [0, 1) ∪ {2}. Analicemos cada región por separado.</p>
+      <ol class="example-steps">
+        <li><strong>Interior.</strong> Los puntos entre 0 y 1 tienen un intervalo pequeño contenido en <var>A</var>. En cambio, cualquier intervalo alrededor de 0 sale por la izquierda, y alrededor de 2 aparecen números distintos de 2. Por tanto, Int(<var>A</var>) = (0, 1).</li>
+        <li><strong>Clausura.</strong> Hay que añadir el punto 1 porque todo intervalo alrededor de 1 toca a [0, 1). El punto 2 ya pertenece a <var>A</var> y se conserva. Así, Cl(<var>A</var>) = [0, 1] ∪ {2}.</li>
+        <li><strong>Exterior.</strong> El complemento es (−∞, 0) ∪ [1, 2) ∪ (2, ∞). Su interior es Ext(<var>A</var>) = (−∞, 0) ∪ (1, 2) ∪ (2, ∞).</li>
+        <li><strong>Frontera.</strong> Restamos el interior a la clausura: Fr(<var>A</var>) = {0, 1, 2}.</li>
+      </ol>
+    </div>
+    <p>El punto aislado 2 es fronterizo: toda ventana abierta alrededor de él contiene al propio 2, que está en <var>A</var>, y también puntos que están fuera de <var>A</var>.</p>
+  </section>
+
+  <section class="topology-section" aria-labelledby="comparacion">
+    <h2 id="comparacion">Ejemplos para comparar</h2>
+    <p>Todos los conjuntos de la tabla se consideran dentro de ℝ con la topología usual.</p>
+    <div class="topology-table-wrap" tabindex="0" aria-label="Tabla desplazable de ejemplos de interior, clausura y frontera">
+      <table class="topology-table">
+        <thead><tr><th scope="col"><var>A</var></th><th scope="col">Int(<var>A</var>)</th><th scope="col">Cl(<var>A</var>)</th><th scope="col">Fr(<var>A</var>)</th></tr></thead>
+        <tbody>
+          <tr><td>(0, 1)</td><td>(0, 1)</td><td>[0, 1]</td><td>{0, 1}</td></tr>
+          <tr><td>ℤ</td><td>∅</td><td>ℤ</td><td>ℤ</td></tr>
+          <tr><td>ℚ</td><td>∅</td><td>ℝ</td><td>ℝ</td></tr>
+          <tr><td>∅</td><td>∅</td><td>∅</td><td>∅</td></tr>
+          <tr><td>ℝ</td><td>ℝ</td><td>ℝ</td><td>∅</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>El caso de ℚ es especialmente importante: tanto los racionales como los irracionales aparecen en cualquier intervalo abierto. Por eso ningún punto es interior a ℚ y todos los reales son fronterizos.</p>
+  </section>
+
+  <section class="topology-section" aria-labelledby="ejemplo-finito">
+    <h2 id="ejemplo-finito">Ejemplo en un espacio finito</h2>
+    <p>Retomemos el espacio de la sesión anterior:</p>
+    <div class="math-block"><var>X</var> = {a, b, c}, τ = {∅, {a}, {a, b}, <var>X</var>}.</div>
+    <p>Sea <var>A</var> = {b}. Ningún abierto no vacío está contenido en {b}, así que Int(<var>A</var>) = ∅. Los cerrados son <var>X</var>, {b, c}, {c} y ∅; el cerrado más pequeño que contiene a {b} es {b, c}. Por ello:</p>
+    <div class="math-block">Int(<var>A</var>) = ∅, Cl(<var>A</var>) = {b, c}, Fr(<var>A</var>) = {b, c}.</div>
+    <p>Observa que <var>c</var> pertenece a la clausura sin pertenecer a <var>A</var>: la única vecindad abierta de <var>c</var> es <var>X</var>, y esta siempre toca a {b}.</p>
+  </section>
+
+  <section class="topology-section" aria-labelledby="demostraciones">
+    <h2 id="demostraciones">Demostraciones fundamentales</h2>
+    <p>Las fórmulas anteriores no dependen de dibujar intervalos; se deducen directamente de las definiciones.</p>
+    <details class="proof-details"><summary>¿Por qué la frontera siempre es cerrada?</summary><div class="proof-body"><p>Por definición, Fr(<var>A</var>) = Cl(<var>A</var>) ∩ Cl(<var>X</var> ∖ <var>A</var>). Ambas clausuras son conjuntos cerrados. Como la intersección finita de cerrados es cerrada, Fr(<var>A</var>) también es cerrada.</p></div></details>
+    <details class="proof-details"><summary>¿Por qué Int(<var>A</var>) = <var>X</var> ∖ Cl(<var>X</var> ∖ <var>A</var>)?</summary><div class="proof-body"><p>Un punto <var>x</var> no pertenece a Cl(<var>X</var> ∖ <var>A</var>) exactamente cuando existe una vecindad abierta <var>U</var> de <var>x</var> que no toca al complemento de <var>A</var>. La condición <var>U</var> ∩ (<var>X</var> ∖ <var>A</var>) = ∅ equivale a <var>U</var> ⊆ <var>A</var>. Esto significa precisamente que <var>x</var> pertenece a Int(<var>A</var>).</p></div></details>
+  </section>
+
+  <section class="topology-section" aria-labelledby="errores">
+    <h2 id="errores">Errores frecuentes</h2>
+    <ul class="common-mistakes">
+      <li><strong>Confundir clausura con frontera.</strong> La clausura también contiene al interior; la frontera no.</li>
+      <li><strong>Suponer que la frontera está fuera del conjunto.</strong> Puede contener puntos de <var>A</var>, puntos de su complemento o ambos.</li>
+      <li><strong>Trabajar sin especificar la topología.</strong> El mismo subconjunto puede tener distinto interior y clausura al cambiar los abiertos del espacio.</li>
+      <li><strong>Usar solo sucesiones.</strong> En ℝ funcionan muy bien, pero en un espacio topológico general el criterio seguro es el de vecindades.</li>
+    </ul>
+  </section>
+
+  <section class="topology-section" aria-labelledby="ejercicios">
+    <h2 id="ejercicios">Ejercicios</h2>
+    <ol class="exercise-list">
+      <li>En ℝ con la topología usual, calcula el interior, la clausura y la frontera de <var>A</var> = (−2, 3] ∪ {5}.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>El intervalo abierto más grande contenido en <var>A</var> es (−2, 3), y el punto 5 no es interior. Al cerrar el conjunto se añaden −2 y ningún otro punto: Cl(<var>A</var>) = [−2, 3] ∪ {5}. Por tanto, Fr(<var>A</var>) = {−2, 3, 5}.</p></div></details></li>
+      <li>Calcula las tres regiones de ℝ ∖ ℚ, el conjunto de los irracionales.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>Todo intervalo abierto contiene racionales e irracionales. Ningún intervalo queda contenido en ℝ ∖ ℚ, así que su interior es ∅. Como cada intervalo toca a los irracionales, su clausura es ℝ. En consecuencia, su frontera también es ℝ.</p></div></details></li>
+      <li>En <var>X</var> = {a, b, c} con τ = {∅, {a}, {a, b}, <var>X</var>}, calcula Int({b}), Cl({b}), Ext({b}) y Fr({b}).<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>Int({b}) = ∅ porque ningún abierto no vacío cabe en {b}. El cerrado más pequeño que contiene a {b} es {b, c}, así que Cl({b}) = {b, c}. Como <var>X</var> ∖ {b} = {a, c}, el mayor abierto contenido en ese complemento es {a}; por tanto Ext({b}) = {a}. Finalmente, Fr({b}) = {b, c}.</p></div></details></li>
+      <li>Demuestra que Int(<var>A</var>) = <var>X</var> ∖ Cl(<var>X</var> ∖ <var>A</var>) usando el criterio de vecindades.<details class="proof-details"><summary>Ver una orientación</summary><div class="proof-body"><p>Prueba la equivalencia punto a punto. La condición <var>x</var> ∉ Cl(<var>X</var> ∖ <var>A</var>) significa que existe una vecindad abierta de <var>x</var> disjunta del complemento. Esa vecindad está contenida en <var>A</var>, que es justamente la condición <var>x</var> ∈ Int(<var>A</var>).</p></div></details></li>
+      <li>Demuestra que Fr(<var>A</var>) = ∅ si y solo si <var>A</var> es abierto y cerrado a la vez.<details class="proof-details"><summary>Ver solución</summary><div class="proof-body"><p>Si Fr(<var>A</var>) = Cl(<var>A</var>) ∖ Int(<var>A</var>) es vacía, entonces Cl(<var>A</var>) ⊆ Int(<var>A</var>). Junto con Int(<var>A</var>) ⊆ <var>A</var> ⊆ Cl(<var>A</var>), se obtiene Int(<var>A</var>) = <var>A</var> = Cl(<var>A</var>), de modo que <var>A</var> es abierto y cerrado. Recíprocamente, si <var>A</var> es abierto y cerrado, Int(<var>A</var>) = Cl(<var>A</var>) = <var>A</var> y su frontera es vacía.</p></div></details></li>
+      <li>Demuestra que Int(<var>A</var> ∩ <var>B</var>) = Int(<var>A</var>) ∩ Int(<var>B</var>).<details class="proof-details"><summary>Ver una orientación</summary><div class="proof-body"><p>La intersección Int(<var>A</var>) ∩ Int(<var>B</var>) es abierta y está contenida en <var>A</var> ∩ <var>B</var>, así que queda dentro de Int(<var>A</var> ∩ <var>B</var>). Para la otra inclusión, Int(<var>A</var> ∩ <var>B</var>) es un abierto contenido tanto en <var>A</var> como en <var>B</var>; por la maximalidad de los interiores, está contenido en ambos.</p></div></details></li>
+    </ol>
+  </section>
+
+  <section class="topology-section" aria-labelledby="resumen">
+    <h2 id="resumen">Resumen</h2>
+    <p>El interior reúne los puntos protegidos dentro de <var>A</var>; el exterior, los protegidos fuera de <var>A</var>; la frontera, los que no pueden evitar ninguno de los dos lados; y la clausura combina interior y frontera. Los criterios por vecindades permiten usar estas ideas en cualquier espacio topológico.</p>
+    <nav class="session-navigation" aria-label="Navegación entre sesiones de Sofía"><a href="../espacios-topologicos/">← Sesión 1: Espacios topológicos</a><a href="../">Volver a las sesiones de Sofía</a></nav>
+  </section>
 </article></main>
 <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav></div></footer></body></html>
