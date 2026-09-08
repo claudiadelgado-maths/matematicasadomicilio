@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-electricidad-conversor",
+  "tipo": "calculadora",
+  "sesion": "raul-erik-fisica-parte-1",
+  "usuario": "raul-erik",
+  "titulo": "Conversor eléctrico",
+  "descripcion": "Electricidad 1: Conversor eléctrico. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/fisica-parte-1/calculadoras/conversor/",
+  "interactivo": true
+}

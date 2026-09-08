@@ -1,0 +1,22 @@
+{
+  "id": "raul-erik-matematicas-parte-1",
+  "slug": "matematicas-parte-1",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Matemáticas, parte 1",
+  "descripcion": "Presentación, monomios, polinomios, suma, resta y multiplicación de expresiones algebraicas.",
+  "objetivo": "Acordar el plan de trabajo, reconocer monomios y polinomios, sumar y restar términos semejantes y multiplicar polinomios con la propiedad distributiva.",
+  "conocimientosPrevios": [
+    "Lectura de números y reconocimiento de letras."
+  ],
+  "fecha": "2026-09-08",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-1/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

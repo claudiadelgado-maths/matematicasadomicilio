@@ -1,0 +1,54 @@
+@import url("../../recursos/sesion.css?v=20260907-3");
+.sum-page .sum-examples {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 2rem;margin:1.5rem 0 2rem;}
+.sum-page h3 {margin-top:1.8rem;}
+.sum-page p {max-width:950px;}
+.sum-page .sum-activity {margin-top:3rem;}
+.sum-page .sum-math,.sum-page .math-preview {font-size:clamp(1.15rem,2.5vw,1.8rem);margin:1.4rem 0;overflow-x:auto;padding:.7rem 0;}
+.sum-page .math-preview {border-left:3px solid #ad94c3;padding:.8rem 1rem;background:#ffffff66;}
+.sum-page .line-scroll {overflow-x:auto;margin-top:1rem;}
+.sum-page #number-line {display:block;width:100%;min-width:760px;max-width:none;font-size:16px;}
+.sum-page .line-point {cursor:grab;touch-action:none;}
+.sum-page .line-point:focus-visible circle {stroke:#111;stroke-width:4;}
+.sum-page .line-controls {display:grid;grid-template-columns:1fr 1fr;gap:2rem;}
+.sum-page .line-controls label {display:block;font-weight:700;}
+.sum-page .line-controls input {display:block;width:100%;padding:0;accent-color:currentColor;min-height:44px;border:0;background:transparent;}
+.sum-page .line-controls output {margin-left:1rem;}
+.sum-page .card-bank {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.5rem 0;min-height:50px;}
+.sum-page .monomial-card {background:#eee4f7;color:#50356f;border:2px solid #b6a4ca;border-radius:8px;min-height:68px;padding:.7rem .4rem;cursor:grab;touch-action:none;user-select:none;font-size:1.15rem;}
+.sum-page .monomial-card[aria-pressed=true] {border-color:#50356f;background:#dcccdf;outline:2px solid #50356f;outline-offset:2px;}
+.sum-page .pair-row {display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:1rem;align-items:center;margin:1rem 0;}
+.sum-page .drop-slot {min-height:75px;border:2px dashed #a28cab;border-radius:8px;background:#ffffff88;color:#50356f;cursor:pointer;padding:.8rem .3rem;font-size:1.1rem;}
+.sum-page .drop-slot.is-filled {border-style:solid;background:#eef1fa;}
+.sum-page .drop-slot.is-over {border-color:#398459;background:#dff3e6;}
+.sum-page .pair-plus {font-size:1.5rem;}
+.sum-page .pair-result {grid-column:1/-1;overflow-x:auto;}
+.sum-page [data-result=correct].pair-result,.sum-page [data-result=correct].coefficient-feedback {color:#185934;}
+.sum-page [data-result=incorrect].pair-result,.sum-page [data-result=incorrect].coefficient-feedback {color:#852c27;}
+.sum-drag-ghost {position:fixed;z-index:200;pointer-events:none;background:#fff;border:2px solid #64428b;border-radius:8px;padding:.8rem;font-size:1.3rem;}
+.sum-page .guided-sum {margin:2rem 0;}
+.sum-page .guided-sum > div {overflow-x:auto;padding:.5rem 0;font-size:clamp(1rem,2.3vw,1.6rem);}
+.sum-page .polynomial-stack {display:grid;grid-template-columns:30px minmax(0,1fr);gap:.8rem;margin:1.5rem 0;border-bottom:2px solid #b5a5c4;padding-bottom:1rem;font-size:clamp(1rem,2.3vw,1.6rem);}
+.sum-page .polynomial-stack > div {grid-column:2;overflow-x:auto;padding:.3rem 0;}
+.sum-page .polynomial-stack > span {grid-column:1;grid-row:2;align-self:center;}
+.sum-page .coefficient-groups {display:grid;gap:1rem;margin-top:1rem;}
+.sum-page .group-inputs {display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;}
+.sum-page .group-inputs input {width:85px;min-height:48px;}
+.sum-page .coefficient-feedback {font-size:.88rem;margin:.4rem 0;}
+.sum-page .coefficient-results {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1rem;}
+.sum-page .coefficient-results label {display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;}
+.sum-page .coefficient-results input {width:85px;}
+.sum-page .formula-options {display:grid;gap:.8rem;margin:1.5rem 0;}
+.sum-page .formula-options .answer-option {justify-content:flex-start;min-height:70px;font-size:clamp(.95rem,2vw,1.45rem);max-width:100%;overflow-x:auto;}
+.sum-page .formula-options .option-mark {flex-shrink:0;}
+.sum-page .button:disabled {opacity:.5;cursor:not-allowed;}
+@media(max-width:650px){
+ .sum-page .sum-examples {grid-template-columns:1fr;gap:.3rem;}
+ .sum-page .card-bank {grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;}
+ .sum-page .pair-row {gap:.5rem;}
+ .sum-page .monomial-card,.sum-page .drop-slot {font-size:.94rem;}
+ .sum-page .coefficient-results {grid-template-columns:1fr;}
+ .sum-page .group-inputs {gap:.3rem;}
+ .sum-page .group-inputs input {width:63px;padding:.5rem;}
+ .sum-page .line-controls {gap:1rem;}
+ .sum-page .sum-examples .katex {font-size:1em;}
+}

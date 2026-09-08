@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-multiplicacion",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-matematicas-parte-1",
+  "usuario": "raul-erik",
+  "titulo": "Multiplicación de polinomios",
+  "descripcion": "Distributiva y multiplicación de monomios y polinomios con cinco actividades dinámicas. Cierre de la sesión.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-1/ejercicios/multiplicacion/",
+  "interactivo": true
+}

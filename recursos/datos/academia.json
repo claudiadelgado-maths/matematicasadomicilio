@@ -502,6 +502,34 @@
       ],
       "alumnos": [
         {
+          "id": "raul-erik",
+          "nombreVisible": "Raúl",
+          "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
+          "ruta": "/asesores/erik/raul/",
+          "personalizacion": {
+            "simbolo": "R",
+            "acento": "#1f5fbd",
+            "fondo": "#eef4fb"
+          },
+          "ultimaActividad": "2026-09-08",
+          "sesiones": [
+            {
+              "id": "raul-erik-fisica-parte-1",
+              "titulo": "Electricidad 1",
+              "descripcion": "Introducción a magnitudes eléctricas, símbolos, unidades, prefijos del SI y conversiones para el contexto técnico de planta exterior.",
+              "fecha": "2026-09-08",
+              "ruta": "/asesores/erik/raul/fisica-parte-1/"
+            },
+            {
+              "id": "raul-erik-matematicas-parte-1",
+              "titulo": "Matemáticas, parte 1",
+              "descripcion": "Presentación, monomios, polinomios, suma, resta y multiplicación de expresiones algebraicas.",
+              "fecha": "2026-09-08",
+              "ruta": "/asesores/erik/raul/matematicas-parte-1/"
+            }
+          ]
+        },
+        {
           "id": "alejandrina",
           "nombreVisible": "Alejandrina",
           "descripcion": "Espacio de sesiones y recursos personalizados.",

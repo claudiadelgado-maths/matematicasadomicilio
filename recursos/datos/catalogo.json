@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 108,
+  "total": 127,
   "tipos": {
     "maestro": [
       {
@@ -587,6 +587,24 @@
         },
         "almacenamientoLocal": false,
         "archivoMetadatos": "asesores/erik/kenia/usuario.json"
+      },
+      {
+        "id": "raul-erik",
+        "slug": "raul",
+        "tipo": "usuario",
+        "titulo": "Espacio de Raúl",
+        "nombreVisible": "Raúl",
+        "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
+        "estado": "activo",
+        "ruta": "/asesores/erik/raul/",
+        "maestro": "erik-estrella",
+        "personalizacion": {
+          "simbolo": "R",
+          "acento": "#1f5fbd",
+          "fondo": "#eef4fb"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/erik/raul/usuario.json"
       },
       {
         "id": "esteba-karen",
@@ -1363,6 +1381,52 @@
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/sesion.json"
       },
       {
+        "id": "raul-erik-fisica-parte-1",
+        "slug": "fisica-parte-1",
+        "tipo": "sesion",
+        "usuario": "raul-erik",
+        "titulo": "Electricidad 1",
+        "descripcion": "Introducción a magnitudes eléctricas, símbolos, unidades, prefijos del SI y conversiones para el contexto técnico de planta exterior.",
+        "objetivo": "Reconocer voltaje, corriente, carga, tiempo, resistencia, potencia, frecuencia, capacitancia e inductancia; interpretar sus unidades y convertir prefijos con precisión.",
+        "conocimientosPrevios": [
+          "Lectura de enteros, decimales y potencias de diez."
+        ],
+        "fecha": "2026-09-08",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/sesion.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-1",
+        "slug": "matematicas-parte-1",
+        "tipo": "sesion",
+        "usuario": "raul-erik",
+        "titulo": "Matemáticas, parte 1",
+        "descripcion": "Presentación, monomios, polinomios, suma, resta y multiplicación de expresiones algebraicas.",
+        "objetivo": "Acordar el plan de trabajo, reconocer monomios y polinomios, sumar y restar términos semejantes y multiplicar polinomios con la propiedad distributiva.",
+        "conocimientosPrevios": [
+          "Lectura de números y reconocimiento de letras."
+        ],
+        "fecha": "2026-09-08",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-1/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/sesion.json"
+      },
+      {
         "id": "encontrar-exponente-esteba",
         "slug": "encontrar-el-exponente",
         "tipo": "sesion",
@@ -1706,6 +1770,18 @@
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/calculadoras/calculadora-de-despejes/calculadora.json"
       },
       {
+        "id": "raul-erik-electricidad-conversor",
+        "tipo": "calculadora",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Conversor eléctrico",
+        "descripcion": "Electricidad 1: Conversor eléctrico. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/calculadoras/conversor/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/calculadoras/conversor/calculadora.json"
+      },
+      {
         "id": "calculadora-de-signos",
         "tipo": "calculadora",
         "simbolo": "±",
@@ -1828,6 +1904,186 @@
         "ruta": "/asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-capacitancia",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Capacitancia",
+        "descripcion": "Electricidad 1: Capacitancia. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/capacitancia/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/capacitancia/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-carga",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Carga eléctrica",
+        "descripcion": "Electricidad 1: Carga eléctrica. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/carga/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/carga/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-corriente",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Corriente eléctrica",
+        "descripcion": "Electricidad 1: Corriente eléctrica. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/corriente/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/corriente/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-frecuencia",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Frecuencia",
+        "descripcion": "Electricidad 1: Frecuencia. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/frecuencia/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/frecuencia/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-inductancia",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Inductancia",
+        "descripcion": "Electricidad 1: Inductancia. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/inductancia/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/inductancia/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-potencia",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Potencia eléctrica",
+        "descripcion": "Electricidad 1: Potencia eléctrica. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/potencia/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/potencia/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-prefijos",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Prefijos del SI",
+        "descripcion": "Electricidad 1: Prefijos del SI. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/prefijos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/prefijos/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-resistencia",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Resistencia eléctrica",
+        "descripcion": "Electricidad 1: Resistencia eléctrica. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/resistencia/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/resistencia/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-tiempo",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Tiempo",
+        "descripcion": "Electricidad 1: Tiempo. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/tiempo/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/tiempo/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-voltaje",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-fisica-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Voltaje o tensión",
+        "descripcion": "Electricidad 1: Voltaje o tensión. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/voltaje/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/fisica-parte-1/ejercicios/voltaje/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-partes-de-monomios",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Monomios",
+        "descripcion": "Apoyo visual y práctica aleatoria para reconocer signo, coeficiente, literal y exponente.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-1/ejercicios/monomios/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/ejercicios/monomios/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-multiplicacion",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Multiplicación de polinomios",
+        "descripcion": "Distributiva y multiplicación de monomios y polinomios con cinco actividades dinámicas. Cierre de la sesión.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-1/ejercicios/multiplicacion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/ejercicios/multiplicacion/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-estructura-de-polinomios",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Polinomios",
+        "descripcion": "Explicación visual y preguntas dinámicas sobre grado, términos, término independiente y comparación de coeficientes con signo.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-1/ejercicios/polinomios/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/ejercicios/polinomios/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-resta",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Resta",
+        "descripcion": "Opuestos, memorama, revisión de cambios de signo y resta de trinomios.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-1/ejercicios/resta/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/ejercicios/resta/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-suma",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-1",
+        "usuario": "raul-erik",
+        "titulo": "Suma",
+        "descripcion": "Recta numérica, suma de enteros, parejas de monomios semejantes, trinomios y suma de polinomios.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-1/ejercicios/suma/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/ejercicios/suma/ejercicio.json"
       },
       {
         "id": "combinacion-de-signos",

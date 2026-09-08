@@ -1,0 +1,17 @@
+{
+  "id": "raul-erik",
+  "slug": "raul",
+  "tipo": "usuario",
+  "titulo": "Espacio de Raúl",
+  "nombreVisible": "Raúl",
+  "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
+  "estado": "activo",
+  "ruta": "/asesores/erik/raul/",
+  "maestro": "erik-estrella",
+  "personalizacion": {
+    "simbolo": "R",
+    "acento": "#1f5fbd",
+    "fondo": "#eef4fb"
+  },
+  "almacenamientoLocal": false
+}

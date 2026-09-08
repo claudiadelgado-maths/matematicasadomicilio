@@ -1,0 +1,22 @@
+{
+  "id": "raul-erik-fisica-parte-1",
+  "slug": "fisica-parte-1",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Electricidad 1",
+  "descripcion": "Introducción a magnitudes eléctricas, símbolos, unidades, prefijos del SI y conversiones para el contexto técnico de planta exterior.",
+  "objetivo": "Reconocer voltaje, corriente, carga, tiempo, resistencia, potencia, frecuencia, capacitancia e inductancia; interpretar sus unidades y convertir prefijos con precisión.",
+  "conocimientosPrevios": [
+    "Lectura de enteros, decimales y potencias de diez."
+  ],
+  "fecha": "2026-09-08",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/fisica-parte-1/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": true
+  }
+}

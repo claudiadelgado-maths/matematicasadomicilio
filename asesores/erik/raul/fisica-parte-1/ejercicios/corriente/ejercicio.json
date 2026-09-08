@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-electricidad-corriente",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-fisica-parte-1",
+  "usuario": "raul-erik",
+  "titulo": "Corriente eléctrica",
+  "descripcion": "Electricidad 1: Corriente eléctrica. Explicación, ejemplo cotidiano ilustrado y actividad interactiva.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/fisica-parte-1/ejercicios/corriente/",
+  "interactivo": true
+}

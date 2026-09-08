@@ -1,0 +1,43 @@
+@import url('../../recursos/sesion.css?v=20260907-3');
+.multiply-page .formula{font-size:1.18rem;overflow-x:auto;max-width:100%;padding:12px 2px;min-width:0;}
+.multiply-page .problem,.multiply-page .preview{padding:22px;background:#edf5ff;border-radius:18px;margin:22px 0;}
+.multiply-page .worked{border-left:3px solid #b1a0d6;padding:12px 24px;margin:24px 0;background:#ffffff80;border-radius:0 18px 18px 0;}
+.multiply-page .worked>p{font-weight:600;color:#614580;margin-bottom:0;}
+.multiply-page .comparison,.multiply-page .rule-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0;}
+.multiply-page .comparison>div,.multiply-page .rule-grid>div{min-width:0;padding:20px;border-radius:18px;background:#e8f4ff;}
+.multiply-page .comparison>div:nth-child(2),.multiply-page .rule-grid>div:nth-child(2n){background:#eee6fa;}
+.multiply-page .tree{margin:26px 0;}
+.multiply-page .tree-root{width:max-content;max-width:100%;margin:auto;background:#e6dbf6;padding:20px;border:2px solid #b5a0d2;border-radius:20px;}
+.multiply-page .tree-lines{display:block;width:100%;height:58px;overflow:visible;}
+.multiply-page .tree-lines path{fill:none;stroke:#c5b7da;stroke-width:2;vector-effect:non-scaling-stroke;}
+.multiply-page .tree[data-branch="0"] .tree-lines path:first-child,.multiply-page .tree[data-branch="1"] .tree-lines path:last-child{stroke:#684099;stroke-width:4;}
+.multiply-page .tree-branches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+.multiply-page .tree-branch{min-width:0;}
+.multiply-page .math-option{display:block;width:100%;min-width:0;min-height:80px;background:#fff;border:2px solid #d5cbe3;border-radius:16px;text-align:center;color:#32283d;cursor:pointer;padding:12px;}
+.multiply-page .math-option:hover{border-color:#a38ac3;background:#f9f5ff;}
+.multiply-page button[aria-pressed="true"]{border-color:#70459c;background:#eee1ff;box-shadow:0 0 0 2px #d7c1ef;}
+.multiply-page .tree-leaves{display:grid;grid-template-columns:1fr;gap:14px;margin:24px 0 0 18px;padding-left:18px;border-left:3px solid #8e6ab5;border-radius:20px 0 0 0;}
+.multiply-page .tree-leaves .math-option{position:relative;}
+.multiply-page .tree-leaves .math-option[aria-pressed="true"]::before{content:'';position:absolute;left:-21px;top:50%;width:18px;border-top:3px solid #70459c;}
+.multiply-page .mono-fields{display:flex;flex-wrap:wrap;gap:18px;}
+.multiply-page .mono-fields label{display:flex;flex-direction:column;gap:8px;flex:1 1 160px;max-width:250px;font-weight:600;}
+.multiply-page .mono-fields input{width:100%;min-height:52px;padding:10px 14px;border:2px solid #c4b5d6;border-radius:12px;background:white;color:#30243e;font-size:1.2rem;}
+.multiply-page .field-feedback{font-size:.9rem;font-weight:400;}
+.multiply-page .step-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.multiply-page .step-card{min-width:0;background:#fff;border:1px solid #dcd2e9;border-radius:18px;padding:18px;}
+.multiply-page .assign-actions{display:flex;flex-wrap:wrap;gap:10px;}
+.multiply-page .assign-actions button,.multiply-page .judgments button{background:#f9f6fe;border:2px solid #c3b0d8;color:#53316f;min-height:46px;padding:8px 16px;border-radius:10px;cursor:pointer;}
+.multiply-page .selection-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;padding:20px 0;}
+.multiply-page .selection-summary>div{min-width:0;background:#e7f4ff;border-radius:12px;padding:14px;}
+.multiply-page .review-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 20px;padding:20px;margin:16px 0;border:2px solid #ded3eb;border-radius:18px;background:#ffffffa0;}
+.multiply-page .review-row>div{min-width:0;}
+.multiply-page .judgments{display:flex;align-items:center;gap:10px;}
+.multiply-page .judgments button{font-size:1.3rem;min-width:48px;}
+.multiply-page .row-verdict{grid-column:1/-1;margin:0;font-weight:600;}
+.multiply-page .sequence-question{margin:28px 0;}
+.multiply-page .two-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.multiply-page [data-result="correct"]{border-color:#3d8b63!important;background:#e3f6e9!important;}
+.multiply-page [data-result="incorrect"]{border-color:#b14c4c!important;background:#ffeded!important;}
+.multiply-page button:focus-visible,.multiply-page input:focus-visible{outline:3px solid #2965a6;outline-offset:4px;}
+.multiply-page [hidden]{display:none!important;}
+@media(max-width:600px){.multiply-page .comparison,.multiply-page .rule-grid,.multiply-page .step-cards,.multiply-page .selection-summary,.multiply-page .two-options{grid-template-columns:1fr;}.multiply-page .tree-branches{gap:12px;}.multiply-page .tree-leaves{margin-left:3px;padding-left:7px;}.multiply-page .tree-leaves .math-option[aria-pressed="true"]::before{left:-10px;width:7px;}.multiply-page .math-option{padding:8px;}.multiply-page .formula{font-size:1rem;}.multiply-page .worked{padding:10px 14px;}.multiply-page .review-row{grid-template-columns:1fr;}.multiply-page .mono-fields label{max-width:none;}.multiply-page .problem{padding:16px;}}

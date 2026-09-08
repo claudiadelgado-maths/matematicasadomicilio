@@ -1,0 +1,11 @@
+import {capacitorRound,unitLabel} from './motor.mjs';
+import {$,math,quantity,feedback,result,renderStatic,formula} from './ui.mjs';
+import {draggable} from './arrastre.mjs';
+renderStatic();let ex,order;
+function move(index,to){if(to<0||to>=order.length)return;const [item]=order.splice(index,1);order.splice(to,0,item);feedback();$('solution').hidden=true;render();$('capacitors').children[to].querySelector('button').focus();}
+function render(){
+  $('capacitors').replaceChildren();order.forEach((item,index)=>{const card=document.createElement('div');card.className='capacitor';card.dataset.drop=index;const value=document.createElement('button');value.type='button';value.className='capacitor-value';const text=document.createElement('span');math(text,quantity(item.amount,unitLabel('capacitancia',item.from)));value.append(text);value.setAttribute('aria-label',`${item.amount} ${unitLabel('capacitancia',item.from)}. Posición ${index+1}. Usa los botones para mover.`);draggable(value,target=>move(index,Number(target.dataset.drop)));
+    const actions=document.createElement('div');actions.className='capacitor-actions';[-1,1].forEach(direction=>{const b=document.createElement('button');b.type='button';b.textContent=direction<0?'←':'→';b.setAttribute('aria-label',direction<0?'Mover antes':'Mover después');b.disabled=index+direction<0||index+direction>=order.length;b.addEventListener('click',()=>move(index,index+direction));actions.append(b);});card.append(value,actions);$('capacitors').append(card);});
+}
+function fresh(){ex=capacitorRound();order=[...ex.values];feedback();$('solution').hidden=true;$('target').textContent=ex.ascending?'Ordena de menor a mayor capacitancia.':'Ordena de mayor a menor capacitancia.';render();}
+$('check').addEventListener('click',()=>{const ok=order.every((item,i)=>i===0||(ex.ascending?item.nano>order[i-1].nano:item.nano<order[i-1].nano));result(ok,'Convierte a una unidad común y compara los valores.');$('solution').replaceChildren();order.forEach(item=>$('solution').append(formula(`${quantity(item.amount,unitLabel('capacitancia',item.from))}=${quantity(item.nano,'nF')}`)));$('solution').hidden=false;});$('new').addEventListener('click',fresh);fresh();

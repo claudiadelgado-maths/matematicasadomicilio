@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resta | Raúl | Matemáticas a Domicilio</title>
+  <meta name="description" content="Cambio de signos, memorama y resta de trinomios.">
+  <meta name="theme-color" content="#ffffff"><meta property="og:title" content="Resta | Raúl"><meta property="og:description" content="Cambio de signos, memorama y resta de trinomios."><meta property="og:type" content="website"><meta property="og:locale" content="es_MX">
+  <link rel="icon" href="../../../../../../recursos/svg/favicon.svg" type="image/svg+xml"><script src="../../../../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+  <link rel="stylesheet" href="../../../../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="estilos.css?v=20260908-1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" integrity="sha384-1vdNCNel6Tx/NQa8IR1mGOGKsbGreCkOPfbtPPnUURJ5Tu2PRVfQ/7KLZC+Pi1p1" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" integrity="sha384-ycJ6GAwiS15LoUPipwJOrWTvkUHl/YqELValBwI5I4awP1EeEQJYarj+w85ntcz7" crossorigin="anonymous"></script><script type="module" src="script.mjs?v=20260908-1"></script>
+</head>
+<body><a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../../index.html">Inicio</a></li><li><a href="../../../../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../../../index.html" aria-current="page">Salones</a></li><li><a href="../../../../../../contacto/index.html">Contacto</a></li></ul></nav></div></header>
+<main id="contenido" class="session-page subtract-page"><div class="container session-container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../../index.html">Salones</a></li><li><a href="../../../../index.html">Erik</a></li><li><a href="../../../index.html">Raúl</a></li><li><a href="../../index.html">Matemáticas, parte 1</a></li><li aria-current="page">Resta</li></ol></nav>
+<noscript><p>Activa JavaScript para realizar las actividades.</p></noscript>
+<header class="session-hero"><h1>Resta</h1></header>
+<section class="visual-lesson" aria-labelledby="opposite-title"><h2 id="opposite-title">El signo menos cambia el signo</h2>
+<p>Un menos delante de un número o un monomio lo convierte en su opuesto. La parte literal se conserva.</p>
+<div class="example-grid"><div data-tex="-(5)=-5">−(5) = −5</div><div data-tex="-(-5)=+5">−(−5) = +5</div><div data-tex="-(7x)=-7x">−(7x) = −7x</div><div data-tex="-(-7x)=+7x">−(−7x) = +7x</div></div>
+<h3>Encuentra el resultado</h3><p>Descubre dos tarjetas. Une cada expresión con su resultado al cambiar el signo.</p>
+<div id="memory" class="memory-grid" role="group" aria-label="Memorama de cambios de signo"></div>
+<div id="memory-equalities" class="example-grid" aria-label="Parejas resueltas" hidden></div>
+<p id="memory-feedback" class="exercise-feedback" role="status"></p><button type="button" class="secondary-button" id="new-memory">Nuevo memorama</button></section>
+<section class="session-section" aria-labelledby="signs-title"><h2 id="signs-title">Cambia todos los signos</h2>
+<p>El menos delante de un paréntesis cambia el signo de <strong>cada término</strong>. Después se quita el paréntesis.</p>
+<div class="math-box" data-tex="-(x-y+9)=-x+y-9">−(x − y + 9) = −x + y − 9</div>
+<div class="example-grid"><div data-tex="+x\rightarrow-x">+x → −x</div><div data-tex="-y\rightarrow+y">−y → +y</div><div data-tex="+9\rightarrow-9">+9 → −9</div></div>
+<h3>Revisa los cambios</h3><p>Marca ✓ si el término cambió de signo correctamente o ✕ si está mal.</p>
+<div class="math-box" id="review-original"></div><div id="review-terms" class="review-grid"></div>
+<div class="actions"><button type="button" class="button" id="submit-review">Entregar</button><button type="button" class="secondary-button" id="new-review">Nuevo ejercicio</button></div>
+<p id="review-feedback" class="exercise-feedback" role="status"></p><div id="review-solution" class="math-box" hidden></div></section>
+<section class="session-section" aria-labelledby="subtract-title"><h2 id="subtract-title">Resta de trinomios</h2>
+<p>Cambia los signos del segundo trinomio. Agrupa los términos semejantes y suma sus coeficientes.</p>
+<div class="worked-example"><div data-tex="(7x^{2}+6x+9)-(11x^{2}-4x+2)">(7x² + 6x + 9) − (11x² − 4x + 2)</div>
+<p><strong>Cambiar signos</strong></p><div data-tex="7x^{2}+6x+9-11x^{2}+4x-2">7x² + 6x + 9 − 11x² + 4x − 2</div>
+<p><strong>Agrupar</strong></p><div data-tex="(7-11)x^{2}+(6+4)x+(9-2)">(7 − 11)x² + (6 + 4)x + (9 − 2)</div>
+<p><strong>Simplificar</strong></p><div data-tex="-4x^{2}+10x+7">−4x² + 10x + 7</div></div>
+<h3>Resta los trinomios</h3><div id="subtract-original" class="math-box"></div>
+<div id="subtract-options" class="formula-options" role="group" aria-label="Resultados de la resta"></div>
+<p id="subtract-feedback" class="exercise-feedback" role="status"></p><div id="subtract-solution" class="worked-example" hidden></div>
+<button type="button" class="secondary-button" id="new-subtract">Nuevo ejercicio</button></section>
+<nav class="session-bottom" aria-label="Recorrido de la sesión"><a href="../suma/index.html">← Volver a Suma</a><a class="button" href="../multiplicacion/index.html">Siguiente →</a></nav>
+</div></main>
+<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../../index.html">Inicio</a></li><li><a href="../../../../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../../../index.html">Salones</a></li><li><a href="../../../../../../contacto/index.html">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p class="footer-copyright">© 2026 Matemáticas a Domicilio</p><p class="footer-legal-links"><a href="../../../../../../legal/aviso-de-privacidad/index.html">Aviso de Privacidad</a><span aria-hidden="true">·</span><a href="../../../../../../legal/terminos-y-condiciones/index.html">Términos y Condiciones</a></p><p class="footer-location">Mérida, Yucatán, México</p></div></footer></body></html>

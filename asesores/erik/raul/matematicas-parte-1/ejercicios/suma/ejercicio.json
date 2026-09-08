@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-suma",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-matematicas-parte-1",
+  "usuario": "raul-erik",
+  "titulo": "Suma",
+  "descripcion": "Recta numérica, suma de enteros, parejas de monomios semejantes, trinomios y suma de polinomios.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-1/ejercicios/suma/",
+  "interactivo": true
+}

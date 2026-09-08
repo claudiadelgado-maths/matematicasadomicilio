@@ -1,0 +1,26 @@
+@import url("../../recursos/sesion.css?v=20260907-3");
+.subtract-page .example-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin:24px 0;}
+.subtract-page .example-grid>div {background:#edf4ff;border-radius:18px;padding:22px;overflow:auto;}
+.subtract-page .example-grid>div:nth-child(2n) {background:#e3f5ff;}
+.subtract-page .memory-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:24px 0;}
+.subtract-page .memory-card {min-height:110px;border:2px solid #d8d1e7;border-radius:18px;background:white;color:#433258;font-size:1.4rem;cursor:pointer;overflow:auto;}
+.subtract-page .memory-card[data-pair="0"] {background:#dfedff;border-color:#759ed1;}
+.subtract-page .memory-card[data-pair="1"] {background:#dff6ff;border-color:#71acc7;}
+.subtract-page .memory-card[data-pair="2"] {background:#ece0fc;border-color:#a286c7;}
+.subtract-page .memory-card[data-pair="3"] {background:#fff0c4;border-color:#b99b43;}
+.subtract-page .memory-card[aria-disabled="true"]::after {content:' ✓';font-size:1rem;}
+.subtract-page .math-box,.subtract-page .worked-example {background:#ffffffb8;border:1px solid #dfd9eb;padding:24px;border-radius:20px;margin:24px 0;overflow-x:auto;font-size:1.2rem;}
+.subtract-page .worked-example>div {overflow-x:auto;padding:8px 0;}
+.subtract-page .review-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:24px 0;}
+.subtract-page .review-term {background:#f1ecfb;border:2px solid transparent;padding:20px 8px;border-radius:18px;text-align:center;min-width:0;}
+.subtract-page .review-term>div:not(.judgment) {overflow-x:auto;padding:8px 0;font-size:1.15rem;}
+.subtract-page .judgment {display:flex;gap:10px;justify-content:center;margin-top:16px;}
+.subtract-page .judgment button {min-width:48px;min-height:48px;border:1px solid #aa98c2;border-radius:12px;background:white;color:#563e73;font-size:1.4rem;cursor:pointer;}
+.subtract-page .judgment button[aria-pressed="true"] {background:#64428b;color:white;box-shadow:0 0 0 2px #c7b1df;}
+.subtract-page .review-term[data-result="correct"] {border-color:#31825b;background:#e4f5e9;}
+.subtract-page .review-term[data-result="incorrect"] {border-color:#ad3434;background:#ffeded;}
+.subtract-page .formula-options {display:grid;gap:14px;}
+.subtract-page .formula-options .answer-option {width:100%;min-height:80px;overflow-x:auto;}
+.subtract-page button:focus-visible {outline:3px solid #285fab;outline-offset:4px;}
+.subtract-page [hidden] {display:none!important;}
+@media(max-width:600px){.subtract-page .memory-grid,.subtract-page .review-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}.subtract-page .math-box,.subtract-page .worked-example{padding:16px;font-size:1rem;}.subtract-page .memory-card{font-size:1.1rem;min-height:96px;}}
