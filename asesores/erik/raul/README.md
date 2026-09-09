@@ -20,3 +20,7 @@ El usuario proporcionará las especificaciones y el contenido de un formato dife
 ## Comprobaciones
 
 Ejecutar `npm run catalogo` y `npm run validar`. Verificar que Raúl aparece en el salón de Erik, que Matemáticas, parte 1 aparece en su casillero, que Electricidad 1 aparece publicada y que las páginas permiten regresar al alumno. Revisar a 360, 768, 1024 y 1440 px, teclado, menú móvil, Escape, foco visible, consola y enlaces.
+
+## Repaso
+
+Nueva sesión publicada en `repaso/`: 25 páginas: nueve de fracciones, doce de sustitución, una de despejes sencillos y tres vistas finales de proporcionalidad directa, inversa y factorización numérica. Incluye representaciones, operaciones, sustitución de enteros, negativos, fracciones y decimales, potencias, fórmulas y retos dinámicos. Recursos independientes, fondo verde y navegación secuencial. Aparece automáticamente mediante `sesion.json`.

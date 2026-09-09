@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 127,
+  "total": 152,
   "tipos": {
     "maestro": [
       {
@@ -1427,6 +1427,29 @@
         "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/sesion.json"
       },
       {
+        "id": "raul-erik-repaso",
+        "slug": "repaso",
+        "tipo": "sesion",
+        "usuario": "raul-erik",
+        "titulo": "Repaso",
+        "descripcion": "Fracciones, sustitución, despejes sencillos, proporcionalidad directa e inversa y factorización numérica: repaso visual e interactivo.",
+        "objetivo": "Manipular fracciones, evaluar expresiones, despejar cantidades conservando igualdades, distinguir relaciones proporcionales y comprender los factores primos.",
+        "conocimientosPrevios": [
+          "Suma, resta, multiplicación y división de números enteros positivos."
+        ],
+        "fecha": "2026-09-09",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": true,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/raul/repaso/sesion.json"
+      },
+      {
         "id": "encontrar-exponente-esteba",
         "slug": "encontrar-el-exponente",
         "tipo": "sesion",
@@ -2086,6 +2109,282 @@
         "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/ejercicios/suma/ejercicio.json"
       },
       {
+        "id": "raul-erik-repaso-construir-sustitucion",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Conserva la estructura",
+        "descripcion": "Construye la sustitución. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/construir-sustitucion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/construir-sustitucion/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-decimales",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Sustituir decimales",
+        "descripcion": "Camino de sustitución. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/decimales/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/decimales/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-despejes-sencillos",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Despeje y manipulación de ecuaciones",
+        "descripcion": "Transformaciones equivalentes de igualdades: operaciones inversas, fracciones y factores con emojis y letras.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/despejes-sencillos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/despejes-sencillos/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-division",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "División de fracciones",
+        "descripcion": "Voltea y multiplica. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/division/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/division/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-equivalentes",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Fracciones equivalentes",
+        "descripcion": "Encuentra tu pareja. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/equivalentes/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/equivalentes/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-errores",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Detecta el error",
+        "descripcion": "Encuentra la primera línea incorrecta. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/errores/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/errores/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-exponentes",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Sustitución con potencias",
+        "descripcion": "Evalúa las potencias. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/exponentes/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/exponentes/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-formulas",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Sustitución en fórmulas",
+        "descripcion": "Laboratorio de fórmulas. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/formulas/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/formulas/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-multiplicacion",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Multiplicación de fracciones",
+        "descripcion": "Construye el producto. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/multiplicacion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/multiplicacion/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-negativos",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Valores negativos",
+        "descripcion": "¿Está bien sustituido?. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/negativos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/negativos/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-orden",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Orden de las operaciones",
+        "descripcion": "Ordena los pasos. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/orden/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/orden/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-directa",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Proporcionalidad directa",
+        "descripcion": "Proporcionalidad con ejemplos cotidianos, controles visuales y práctica dinámica.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/proporcionalidad-directa/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/proporcionalidad-directa/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-inversa",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Proporcionalidad inversa",
+        "descripcion": "Proporcionalidad con ejemplos cotidianos, controles visuales y práctica dinámica.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/proporcionalidad-inversa/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/proporcionalidad-inversa/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-resta",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Resta de fracciones",
+        "descripcion": "Quita las piezas. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/resta/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/resta/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-reto-sustitucion",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Reto de sustitución",
+        "descripcion": "Sustituye y resuelve. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/reto-sustitucion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/reto-sustitucion/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-reto",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Reto de fracciones",
+        "descripcion": "Todo mezclado. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/reto/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/reto/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-simplificacion",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Simplificación",
+        "descripcion": "La máquina simplificadora. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/simplificacion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/simplificacion/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-suma-distinto-denominador",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Suma con diferente denominador",
+        "descripcion": "Iguala las piezas. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/suma-distinto-denominador/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/suma-distinto-denominador/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-suma-mismo-denominador",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Suma con el mismo denominador",
+        "descripcion": "Junta las partes. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/suma-mismo-denominador/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/suma-mismo-denominador/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-sustitucion-fracciones",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Sustituir fracciones",
+        "descripcion": "Del valor al resultado. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/sustitucion-fracciones/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/sustitucion-fracciones/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-sustitucion",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Sustitución",
+        "descripcion": "El valor ocupa el lugar de la letra. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/sustitucion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/sustitucion/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-variable-repetida",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "La misma variable, varias veces",
+        "descripcion": "Encuentra todas las x. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/variable-repetida/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/variable-repetida/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-repaso-varias-variables",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Varias variables",
+        "descripcion": "Cada valor en su lugar. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/ejercicios/varias-variables/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/ejercicios/varias-variables/ejercicio.json"
+      },
+      {
         "id": "combinacion-de-signos",
         "tipo": "ejercicio",
         "tema": "ley-de-los-signos",
@@ -2365,6 +2664,20 @@
         "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/",
         "interactivo": true,
         "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/juego.json"
+      }
+    ],
+    "demostracion": [
+      {
+        "id": "raul-erik-repaso-factorizacion",
+        "tipo": "demostracion",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Factorización",
+        "descripcion": "Presentación de factorización numérica sin ejercicios de evaluación.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/demostraciones/factorizacion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/demostraciones/factorizacion/componente.json"
       }
     ],
     "examen": [

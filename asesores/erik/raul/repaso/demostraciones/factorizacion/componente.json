@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-repaso-factorizacion",
+  "tipo": "demostracion",
+  "sesion": "raul-erik-repaso",
+  "usuario": "raul-erik",
+  "titulo": "Factorización",
+  "descripcion": "Presentación de factorización numérica sin ejercicios de evaluación.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/repaso/demostraciones/factorizacion/",
+  "interactivo": true
+}

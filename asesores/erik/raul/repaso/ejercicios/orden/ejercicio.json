@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-repaso-orden",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-repaso",
+  "usuario": "raul-erik",
+  "titulo": "Orden de las operaciones",
+  "descripcion": "Ordena los pasos. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/repaso/ejercicios/orden/",
+  "interactivo": true
+}

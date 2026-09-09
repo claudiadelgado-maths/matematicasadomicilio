@@ -1,0 +1,22 @@
+{
+  "id": "raul-erik-repaso",
+  "slug": "repaso",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Repaso",
+  "descripcion": "Fracciones, sustitución, despejes sencillos, proporcionalidad directa e inversa y factorización numérica: repaso visual e interactivo.",
+  "objetivo": "Manipular fracciones, evaluar expresiones, despejar cantidades conservando igualdades, distinguir relaciones proporcionales y comprender los factores primos.",
+  "conocimientosPrevios": [
+    "Suma, resta, multiplicación y división de números enteros positivos."
+  ],
+  "fecha": "2026-09-09",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/repaso/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": true,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-repaso-multiplicacion",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-repaso",
+  "usuario": "raul-erik",
+  "titulo": "Multiplicación de fracciones",
+  "descripcion": "Construye el producto. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/repaso/ejercicios/multiplicacion/",
+  "interactivo": true
+}

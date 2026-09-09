@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-repaso-resta",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-repaso",
+  "usuario": "raul-erik",
+  "titulo": "Resta de fracciones",
+  "descripcion": "Quita las piezas. Explicación, ejemplo visual y ejercicios dinámicos de fracciones.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/repaso/ejercicios/resta/",
+  "interactivo": true
+}

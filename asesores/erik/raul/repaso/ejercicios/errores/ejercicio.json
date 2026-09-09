@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-repaso-errores",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-repaso",
+  "usuario": "raul-erik",
+  "titulo": "Detecta el error",
+  "descripcion": "Encuentra la primera línea incorrecta. Sustitución y evaluación de expresiones con ejercicios dinámicos.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/repaso/ejercicios/errores/",
+  "interactivo": true
+}
