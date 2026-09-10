@@ -1,0 +1,23 @@
+{
+  "id": "raul-erik-matematicas-parte-2",
+  "slug": "matematicas-parte-2",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Matemáticas Parte 2",
+  "descripcion": "Factorización algebraica: factor común, agrupación, cuadrados, trinomios, cubos y retos interactivos.",
+  "objetivo": "Reconocer estructuras algebraicas, construir factorizaciones y comprobarlas mediante multiplicación.",
+  "conocimientosPrevios": [
+    "Operaciones con monomios y polinomios.",
+    "Leyes de los signos y potencias enteras."
+  ],
+  "fecha": "2026-09-10",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-2/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

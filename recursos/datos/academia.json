@@ -511,8 +511,22 @@
             "acento": "#1f5fbd",
             "fondo": "#eef4fb"
           },
-          "ultimaActividad": "2026-09-09",
+          "ultimaActividad": "2026-09-10",
           "sesiones": [
+            {
+              "id": "raul-erik-electricidad-parte-2",
+              "titulo": "Electricidad Parte 2",
+              "descripcion": "Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule: siete laboratorios, veinte comparaciones guiadas y reto conceptual y numérico.",
+              "fecha": "2026-09-10",
+              "ruta": "/asesores/erik/raul/electricidad-parte-2/"
+            },
+            {
+              "id": "raul-erik-matematicas-parte-2",
+              "titulo": "Matemáticas Parte 2",
+              "descripcion": "Factorización algebraica: factor común, agrupación, cuadrados, trinomios, cubos y retos interactivos.",
+              "fecha": "2026-09-10",
+              "ruta": "/asesores/erik/raul/matematicas-parte-2/"
+            },
             {
               "id": "raul-erik-repaso",
               "titulo": "Repaso",

@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-electricidad-parte-2-corriente",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-electricidad-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Corriente eléctrica",
+  "descripcion": "¿Cuánta carga atraviesa una sección por segundo? Laboratorio con predicciones y comparaciones antes/después.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/corriente/",
+  "interactivo": true
+}

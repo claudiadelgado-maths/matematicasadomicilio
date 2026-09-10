@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-electricidad-parte-2-voltaje",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-electricidad-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Voltaje",
+  "descripcion": "Diferencia de energía por unidad de carga. Laboratorio con predicciones y comparaciones antes/después.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/voltaje/",
+  "interactivo": true
+}

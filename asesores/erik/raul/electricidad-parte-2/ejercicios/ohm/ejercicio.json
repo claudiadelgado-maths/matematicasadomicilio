@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-electricidad-parte-2-ohm",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-electricidad-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Ley de Ohm",
+  "descripcion": "Voltaje, corriente y resistencia: una sola relación. Laboratorio con predicciones y comparaciones antes/después.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/ohm/",
+  "interactivo": true
+}

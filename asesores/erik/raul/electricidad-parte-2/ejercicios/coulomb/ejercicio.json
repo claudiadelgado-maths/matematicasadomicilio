@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-electricidad-parte-2-coulomb",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-electricidad-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Ley de Coulomb",
+  "descripcion": "¿Cómo interactúan dos cargas eléctricas? Laboratorio con predicciones y comparaciones antes/después.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/coulomb/",
+  "interactivo": true
+}

@@ -1,0 +1,60 @@
+import {materials,num,quantity,coulomb,wire,relation} from './motor.mjs';
+import {formula,math,render} from './ui.mjs';
+import {exploration,energyReading} from './exploracion.mjs';
+import {measurement} from './comparaciones.mjs';
+const svg=(label,body)=>`<svg viewBox="0 0 800 300" role="img" aria-label="${label}" class="lab-diagram"><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#337799"/></marker></defs>${body}</svg>`;
+const line=(x1,y1,x2,y2)=>`<path d="M${x1} ${y1}L${x2} ${y2}" fill="none" stroke="#337799" stroke-width="4" marker-end="url(#arrow)"/>`;
+const control=(id,label,min,max,step,value,unit)=>`<label>${label}<input type="range" id="${id}" min="${min}" max="${max}" step="${step}" value="${value}"><output for="${id}" id="${id}-value">${value} ${unit}</output></label>`;
+function particles(path,I){if(!I)return '';return Array.from({length:8},(_,i)=>`<circle r="7" fill="#338bba"><animateMotion dur="${8/I}s" begin="-${i/I}s" repeatCount="indefinite" path="${path}"/></circle>`).join('');}
+function circuit(V,R,I){return svg('Fuente de corriente directa y resistor en un circuito cerrado',`<path d="M180 128V65H670V255H180V177" fill="none" stroke="#4986a6" stroke-width="5"/><path d="M146 128H214M158 177H202" stroke="#234e78" stroke-width="6"/><rect x="380" y="48" width="105" height="34" fill="#e0ebf5" stroke="#41638b" stroke-width="3"/><text x="100" y="119">+</text><text x="100" y="191">−</text><text x="48" y="153">${V} V</text><text x="405" y="31">${R} Ω</text><text x="330" y="285">Corriente convencional: sentido horario</text>${line(285,110,350,110)}${particles('M180 65H670V255H180V65',I)}`);}
+// Preserve SVG nodes so geometric transitions and running particles survive control changes.
+function draw(container,markup){
+ const template=document.createElement('template');template.innerHTML=markup;
+ const next=template.content.firstElementChild,current=container.firstElementChild;
+ if(!current){container.append(next);return;}
+ function sync(old,fresh){
+  if(old.nodeType!==fresh.nodeType||old.nodeName!==fresh.nodeName){old.replaceWith(fresh.cloneNode(true));return;}
+  if(old.nodeType===Node.TEXT_NODE){if(old.textContent!==fresh.textContent)old.textContent=fresh.textContent;return;}
+  for(const a of [...old.attributes])if(!fresh.hasAttribute(a.name))old.removeAttribute(a.name);
+  for(const a of fresh.attributes)if(old.getAttribute(a.name)!==a.value)old.setAttribute(a.name,a.value);
+  const a=[...old.childNodes],b=[...fresh.childNodes];
+  for(let i=0;i<Math.max(a.length,b.length);i++){if(!b[i])a[i].remove();else if(!a[i])old.append(b[i].cloneNode(true));else sync(a[i],b[i]);}
+ }
+ sync(current,next);
+}
+export function laboratory(root,topic){let paused=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ let controls='';
+ if(topic==='coulomb')controls=`<label>Signo q₁<select id="sign1"><option value="-1">−</option><option value="1">+</option></select></label>${control('q1','Magnitud q₁',1,20,1,16,'μC')}<label>Signo q₂<select id="sign2"><option value="1">+</option><option value="-1">−</option></select></label>${control('q2','Magnitud q₂',1,20,1,18,'μC')}${control('distance','Separación r',20,200,10,60,'mm')}`;
+ if(topic==='corriente')controls=control('charge','Carga total q',1,24,1,12,'C')+control('time','Tiempo t',1,12,1,4,'s');
+ if(topic==='voltaje')controls='<label>Diferencia de potencial<select id="voltage"><option value="3">3 V</option><option value="6">6 V</option><option value="12" selected>12 V</option></select></label>';
+ if(topic==='resistencia')controls=`<label>Material<select id="material">${materials.filter(([m])=>['Cobre','Aluminio','Hierro','Nicromo'].includes(m)).map(([m,r])=>`<option value="${r}">${m}</option>`).join('')}</select></label>${control('length','Longitud L',5,100,5,10,'m')}${control('diameter','Diámetro d',.5,4,.5,1,'mm')}`;
+ if(topic==='ohm'||topic==='potencia')controls=control('voltage','Voltaje V',1,24,1,12,'V')+control('resistance','Resistencia R',1,24,1,6,'Ω');
+ if(topic==='joule')controls=control('current','Corriente I',0,5,.5,1,'A')+control('resistance','Resistencia R',1,20,1,5,'Ω');
+ root.innerHTML=`<div class="lab-controls">${controls}</div><div class="visual"></div><div class="live-reading" aria-live="polite"></div>${['corriente','ohm','potencia','joule'].includes(topic)?'<button type="button" class="pause">Pausar animación</button>':''}<div class="lab-steps"></div>`;
+ const v=id=>Number(root.querySelector('#'+id).value);
+ let updateEnergy=()=>{};
+ function update(){root.querySelectorAll('input[type="range"]').forEach(el=>{const output=root.querySelector('#'+el.id+'-value'),unit=output.textContent.trim().split(' ').at(-1);output.textContent=el.value+' '+unit;});let visual='',reading='',steps='';
+  if(topic==='coulomb'){
+   const a=v('q1')*v('sign1')*1e-6,b=v('q2')*v('sign2')*1e-6,r=v('distance')*.001,F=coulomb(a,b,r),attract=a*b<0,sep=340+v('distance')*.9,x1=400-sep/2,x2=400+sep/2,len=Math.min(105,18+Math.log10(1+F)*27),dir=attract?1:-1;
+   visual=svg(`${relation(a,b)} entre dos cargas. Fuerzas iguales y opuestas.`,`<circle cx="${x1}" cy="135" r="35" fill="#d8e9fa" stroke="#4176ad" stroke-width="3"/><circle cx="${x2}" cy="135" r="35" fill="#e2def6" stroke="#7960a3" stroke-width="3"/><text x="${x1}" y="145" text-anchor="middle" font-size="32">${a<0?'−':'+'}</text><text x="${x2}" y="145" text-anchor="middle" font-size="32">${b<0?'−':'+'}</text>${line(x1+dir*42,135,x1+dir*(42+len),135)}${line(x2-dir*42,135,x2-dir*(42+len),135)}<text x="${x1}" y="65" text-anchor="middle">q₁ = ${v('q1')*v('sign1')} μC</text><text x="${x2}" y="65" text-anchor="middle">q₂ = ${v('q2')*v('sign2')} μC</text><path d="M${x1} 215H${x2}" stroke="#7191aa" stroke-dasharray="5 5"/><text x="400" y="248" text-anchor="middle">r = ${v('distance')} mm</text>`);
+   reading=`<strong>${relation(a,b)}</strong>${formula(`F\\approx${quantity(F,'N')}`)}`;steps=`<p>Conversiones antes de sustituir:</p>${formula(`q_1=${quantity(v('q1')*v('sign1'),'μC')}=${quantity(a,'C')}`)}${formula(`q_2=${quantity(v('q2')*v('sign2'),'μC')}=${quantity(b,'C')}`)}${formula(`r=${quantity(v('distance'),'mm')}=${quantity(r,'m')}`)}${formula(`F=9\\times10^{9}\\frac{|(${num(a)})(${num(b)})|}{(${num(r)})^{2}}\\approx${quantity(F,'N')}`)}<p>Las flechas muestran dirección y tamaño cualitativo, no una escala de fuerza. Con las mismas cargas, duplicar r divide F entre cuatro.</p>`;
+  }else if(topic==='corriente'){
+   const q=v('charge'),t=v('time'),I=q/t;visual=svg('Marcadores de carga positiva atraviesan una sección de medición de izquierda a derecha.',`<rect x="50" y="105" width="700" height="65" rx="32" fill="#d9ebf9"/><path d="M400 65V215" stroke="#8369a7" stroke-width="3" stroke-dasharray="7 5"/><text x="400" y="45" text-anchor="middle">Sección de medición</text>${particles('M55 137H745',I)}${line(290,238,480,238)}<text x="400" y="280" text-anchor="middle">Corriente convencional</text>`);reading=formula(`I=\\frac{${q}\\,C}{${t}\\,s}=${quantity(I,'A')}`);steps='<p>Cada marcador representa simbólicamente 1 C de carga positiva; no es un electrón individual. Más corriente implica más marcadores que cruzan la sección por segundo. En un metal, el movimiento neto de electrones tiene el sentido contrario.</p>';
+  }else if(topic==='voltaje'){
+   const V=v('voltage'),height=V*12;visual=svg('Diferencia de energía potencial para una carga positiva de un coulomb.',`<path d="M160 250H320M470 ${250-height}H650" stroke="#477ea8" stroke-width="5"/><circle cx="240" cy="228" r="18" fill="#bed6f2"/><text x="240" y="234" text-anchor="middle">+</text><circle cx="560" cy="${228-height}" r="18" fill="#d7c8ed"/><text x="560" y="${234-height}" text-anchor="middle">+</text>${line(400,245,400,255-height)}<text x="200" y="280">A: referencia</text><text x="485" y="${210-height}">B: ${V} J/C</text><text x="420" y="230">1 C</text>`);reading=formula(`V=${V}\\,V\\quad\\Rightarrow\\quad E=(1\\,C)(${V}\\,V)=${V}\\,J`);steps='<p>Para llevar una carga positiva de 1 C desde el punto de menor potencial al de mayor potencial, su energía potencial aumenta en la cantidad indicada. La separación vertical representa energía, no altura física ni distancia entre terminales.</p>';
+  }else if(topic==='resistencia'){
+   const rho=v('material'),L=v('length'),d=v('diameter')*.001,{area,R}=wire(rho,L,d),length=220+L*3.4,width=12+v('diameter')*15;
+   visual=svg('Conductor uniforme: longitud y sección circular modifican su resistencia.',`<rect x="70" y="${155-width/2}" width="${length}" height="${width}" fill="#bdcfe1" stroke="#3c6b8e" stroke-width="3"/><ellipse cx="${70+length}" cy="155" rx="18" ry="${width/2}" fill="#e5f1fb" stroke="#3c6b8e" stroke-width="3"/><text x="${70+length/2}" y="245" text-anchor="middle">L = ${L} m</text><text x="75" y="65">Diámetro = ${v('diameter')} mm</text>`);reading=formula(`R\\approx${quantity(R,'Ω')}`);steps=formula(`\\rho=${quantity(rho,'ρ')}`)+formula(`d=${quantity(v('diameter'),'mm')}=${quantity(d,'m')}`)+formula(`r=\\frac{d}{2}=${quantity(d/2,'m')}`)+formula(`A=\\pi r^{2}\\approx${quantity(area,'m2')}`)+formula(`R=\\frac{(${num(rho)})(${L})}{${num(area)}}\\approx${quantity(R,'Ω')}`)+'<p>Mantén dos controles fijos y cambia sólo el tercero para observar cada relación. Materiales y geometría se comparan a la misma temperatura de referencia.</p>';
+  }else if(topic==='ohm'||topic==='potencia'){
+   const V=v('voltage'),R=v('resistance'),I=V/R,P=V*I;visual=circuit(V,R,I);reading=formula(`I=\\frac{${V}}{${R}}=${quantity(I,'A')}`)+(topic==='potencia'?formula(`P=VI=(${V})(${num(I)})=${quantity(P,'W')}`):'');steps=topic==='potencia'?`<p>En este resistor se transforman aproximadamente ${Number(P.toPrecision(4))} J de energía eléctrica por segundo. Los controles V y R determinan la corriente; no son tres variables independientes.</p>`:'<p>Resistor óhmico y fuente de CD ideales. A resistencia fija, el voltaje y la corriente cambian en la misma proporción. Los marcadores representan el sentido convencional.</p>';
+  }else if(topic==='joule'){
+   const I=v('current'),R=v('resistance'),P=I*I*R,hue=210-Math.min(195,Math.log10(1+P)*80);visual=svg('Disipación resistiva representada cualitativamente por color y movimiento.',`<rect x="140" y="80" width="520" height="140" rx="15" fill="hsl(${hue} 72% 80%)" stroke="#467295" stroke-width="3"/>${Array.from({length:21},(_,i)=>`<circle class="ion ${P?'vibrating':''}" cx="${180+(i%7)*70}" cy="${110+Math.floor(i/7)*42}" r="8" fill="#486881" style="animation-delay:-${i*.07}s;--shake:${Math.min(3,P/30)}px"/>`).join('')}<text x="400" y="265" text-anchor="middle">Energía transferida al material</text>`);reading=formula(`P=I^{2}R=(${I})^{2}(${R})=${P}\\,W`);steps='<p>El color ilustra cualitativamente la disipación; no expresa una temperatura. Con R fija, duplicar I cuadruplica P. Los puntos representan la estructura del material, no cargas que se consumen.</p>';
+  }
+  draw(root.querySelector('.visual'),visual);root.querySelector('.live-reading').innerHTML=reading;root.querySelector('.lab-steps').innerHTML=steps;applyPause();render(root);updateEnergy();
+ }
+ function applyPause(){const s=root.querySelector('svg');if(s&&paused)s.pauseAnimations();else if(s)s.unpauseAnimations();root.classList.toggle('paused',paused);const b=root.querySelector('.pause');if(b)b.textContent=paused?'Reanudar animación':'Pausar animación';}
+ root.querySelectorAll('input,select').forEach(el=>el.oninput=update);if(root.querySelector('.pause'))root.querySelector('.pause').onclick=()=>{paused=!paused;applyPause();};update();
+ const setValues=state=>{Object.entries(state).forEach(([id,value])=>root.querySelector('#'+id).value=value);update();};
+ exploration(root,topic,setValues);
+ if(['potencia','joule'].includes(topic)){const energy=document.createElement('div');energy.className='energy-explorer';root.querySelector('.live-reading').after(energy);updateEnergy=energyReading(energy,()=>measurement(topic,Object.fromEntries([...root.querySelectorAll('.lab-controls input,.lab-controls select')].map(el=>[el.id,Number(el.value)]))).value);}
+}

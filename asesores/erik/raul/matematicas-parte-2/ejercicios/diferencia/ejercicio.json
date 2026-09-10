@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-matematicas-parte-2-diferencia",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-matematicas-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Diferencia de cuadrados",
+  "descripcion": "Una resta de dos cuadrados se convierte en dos binomios conjugados. Al multiplicar, los productos cruzados se cancelan.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/diferencia/",
+  "interactivo": true
+}

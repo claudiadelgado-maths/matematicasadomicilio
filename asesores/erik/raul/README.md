@@ -24,3 +24,11 @@ Ejecutar `npm run catalogo` y `npm run validar`. Verificar que Raúl aparece en 
 ## Repaso
 
 Nueva sesión publicada en `repaso/`: 25 páginas: nueve de fracciones, doce de sustitución, una de despejes sencillos y tres vistas finales de proporcionalidad directa, inversa y factorización numérica. Incluye representaciones, operaciones, sustitución de enteros, negativos, fracciones y decimales, potencias, fórmulas y retos dinámicos. Recursos independientes, fondo verde y navegación secuencial. Aparece automáticamente mediante `sesion.json`.
+
+## Matemáticas Parte 2
+
+Nueva sesión publicada en `matematicas-parte-2/`: inicio y ocho apartados de factorización algebraica. Incluye factor común con barrido y expansión, agrupación de cuatro o seis términos, cuadrados, trinomios, cubos y reto mixto con solución detallada. Generadores en dos niveles y recursos independientes. Se incorpora al listado automático del alumno.
+
+## Electricidad Parte 2
+
+Nueva sesión publicada en `electricidad-parte-2/`: diez páginas que conectan cargas y Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule, con mapa de conexiones y reto conceptual/numérico. Siete laboratorios y 36 preguntas conceptuales con explicaciones. Recursos aislados y lienzo azul abierto.

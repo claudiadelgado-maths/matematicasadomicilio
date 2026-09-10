@@ -1,0 +1,23 @@
+{
+  "id": "raul-erik-electricidad-parte-2",
+  "slug": "electricidad-parte-2",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Electricidad Parte 2",
+  "descripcion": "Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule: siete laboratorios, veinte comparaciones guiadas y reto conceptual y numérico.",
+  "objetivo": "Relacionar los fenómenos eléctricos, interpretar magnitudes y resolver problemas con conversiones, despejes y significado físico.",
+  "conocimientosPrevios": [
+    "Magnitudes y prefijos de Electricidad 1.",
+    "Operaciones y despejes sencillos."
+  ],
+  "fecha": "2026-09-10",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/electricidad-parte-2/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

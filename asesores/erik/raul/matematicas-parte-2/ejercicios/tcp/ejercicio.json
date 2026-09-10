@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-matematicas-parte-2-tcp",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-matematicas-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Trinomio cuadrado perfecto",
+  "descripcion": "Dos términos son cuadrados y el central es el doble producto de sus raíces. Las tres condiciones deben cumplirse; no basta con que haya tres términos.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/tcp/",
+  "interactivo": true
+}

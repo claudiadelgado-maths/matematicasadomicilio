@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 152,
+  "total": 171,
   "tipos": {
     "maestro": [
       {
@@ -1381,6 +1381,30 @@
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/sesion.json"
       },
       {
+        "id": "raul-erik-electricidad-parte-2",
+        "slug": "electricidad-parte-2",
+        "tipo": "sesion",
+        "usuario": "raul-erik",
+        "titulo": "Electricidad Parte 2",
+        "descripcion": "Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule: siete laboratorios, veinte comparaciones guiadas y reto conceptual y numérico.",
+        "objetivo": "Relacionar los fenómenos eléctricos, interpretar magnitudes y resolver problemas con conversiones, despejes y significado físico.",
+        "conocimientosPrevios": [
+          "Magnitudes y prefijos de Electricidad 1.",
+          "Operaciones y despejes sencillos."
+        ],
+        "fecha": "2026-09-10",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/sesion.json"
+      },
+      {
         "id": "raul-erik-fisica-parte-1",
         "slug": "fisica-parte-1",
         "tipo": "sesion",
@@ -1425,6 +1449,30 @@
           "calculadoras": false
         },
         "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/sesion.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-2",
+        "slug": "matematicas-parte-2",
+        "tipo": "sesion",
+        "usuario": "raul-erik",
+        "titulo": "Matemáticas Parte 2",
+        "descripcion": "Factorización algebraica: factor común, agrupación, cuadrados, trinomios, cubos y retos interactivos.",
+        "objetivo": "Reconocer estructuras algebraicas, construir factorizaciones y comprobarlas mediante multiplicación.",
+        "conocimientosPrevios": [
+          "Operaciones con monomios y polinomios.",
+          "Leyes de los signos y potencias enteras."
+        ],
+        "fecha": "2026-09-10",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-2/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/sesion.json"
       },
       {
         "id": "raul-erik-repaso",
@@ -1929,6 +1977,114 @@
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/ejercicio.json"
       },
       {
+        "id": "raul-erik-electricidad-parte-2-conexiones",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-electricidad-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Todo está conectado",
+        "descripcion": "Mapa, fórmulas y ejemplo desplegable que conecta corriente, carga, potencia y energía.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/conexiones/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/ejercicios/conexiones/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-parte-2-corriente",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-electricidad-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Corriente eléctrica",
+        "descripcion": "¿Cuánta carga atraviesa una sección por segundo? Laboratorio con predicciones y comparaciones antes/después.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/corriente/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/ejercicios/corriente/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-parte-2-coulomb",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-electricidad-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Ley de Coulomb",
+        "descripcion": "¿Cómo interactúan dos cargas eléctricas? Laboratorio con predicciones y comparaciones antes/después.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/coulomb/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/ejercicios/coulomb/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-parte-2-joule",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-electricidad-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Efecto Joule",
+        "descripcion": "De la energía eléctrica a la energía interna del material. Laboratorio con predicciones y comparaciones antes/después.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/joule/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/ejercicios/joule/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-parte-2-ohm",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-electricidad-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Ley de Ohm",
+        "descripcion": "Voltaje, corriente y resistencia: una sola relación. Laboratorio con predicciones y comparaciones antes/después.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/ohm/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/ejercicios/ohm/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-parte-2-potencia",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-electricidad-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Potencia eléctrica",
+        "descripcion": "¿Qué tan rápido se transforma la energía? Laboratorio con predicciones y comparaciones antes/después.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/potencia/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/ejercicios/potencia/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-parte-2-resistencia",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-electricidad-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Resistividad y resistencia",
+        "descripcion": "Material, longitud y sección transversal. Laboratorio con predicciones y comparaciones antes/después.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/resistencia/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/ejercicios/resistencia/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-parte-2-reto",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-electricidad-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Reto de Electricidad",
+        "descripcion": "Comprender primero. Calcular después.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/reto/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/ejercicios/reto/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-electricidad-parte-2-voltaje",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-electricidad-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Voltaje",
+        "descripcion": "Diferencia de energía por unidad de carga. Laboratorio con predicciones y comparaciones antes/después.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/voltaje/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/ejercicios/voltaje/ejercicio.json"
+      },
+      {
         "id": "raul-erik-electricidad-capacitancia",
         "tipo": "ejercicio",
         "sesion": "raul-erik-fisica-parte-1",
@@ -2107,6 +2263,102 @@
         "ruta": "/asesores/erik/raul/matematicas-parte-1/ejercicios/suma/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/raul/matematicas-parte-1/ejercicios/suma/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-2-agrupacion",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Agrupación y factor común",
+        "descripcion": "Factor común total en un paso y agrupación sobre la expresión completa con colores y procedimiento persistente.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/agrupacion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/ejercicios/agrupacion/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-2-completar",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Completar un cuadrado",
+        "descripcion": "Ordenar cuatro pasos de completar un cuadrado mediante adición y sustracción, con solución completa.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/completar/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/ejercicios/completar/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-2-cubos",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Suma y diferencia de cubos",
+        "descripcion": "Reconoce las raíces cúbicas. El primer binomio conserva el signo; el término central del segundo factor lleva el signo contrario y el último es positivo.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/cubos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/ejercicios/cubos/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-2-diferencia",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Diferencia de cuadrados",
+        "descripcion": "Una resta de dos cuadrados se convierte en dos binomios conjugados. Al multiplicar, los productos cruzados se cancelan.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/diferencia/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/ejercicios/diferencia/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-2-general",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Trinomio ax² + bx + c",
+        "descripcion": "Factores en columnas verticales con productos cruzados y resultado calculados automáticamente.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/general/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/ejercicios/general/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-2-monico",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Trinomio x² + bx + c",
+        "descripcion": "Busca dos números cuya suma sea b y cuyo producto sea c. El término central surge de sumar los dos productos cruzados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/monico/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/ejercicios/monico/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-2-reto",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Reto de factorización",
+        "descripcion": "Ahora tú decides qué estás viendo. Observa factores comunes, cuadrados, trinomios o cubos. Elige un producto y comprueba tu razonamiento en la solución.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/reto/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/ejercicios/reto/ejercicio.json"
+      },
+      {
+        "id": "raul-erik-matematicas-parte-2-tcp",
+        "tipo": "ejercicio",
+        "sesion": "raul-erik-matematicas-parte-2",
+        "usuario": "raul-erik",
+        "titulo": "Trinomio cuadrado perfecto",
+        "descripcion": "Dos términos son cuadrados y el central es el doble producto de sus raíces. Las tres condiciones deben cumplirse; no basta con que haya tres términos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/tcp/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/ejercicios/tcp/ejercicio.json"
       },
       {
         "id": "raul-erik-repaso-construir-sustitucion",

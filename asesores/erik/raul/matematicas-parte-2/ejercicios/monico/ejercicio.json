@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-matematicas-parte-2-monico",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-matematicas-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Trinomio x² + bx + c",
+  "descripcion": "Busca dos números cuya suma sea b y cuyo producto sea c. El término central surge de sumar los dos productos cruzados.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/monico/",
+  "interactivo": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-matematicas-parte-2-general",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-matematicas-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Trinomio ax² + bx + c",
+  "descripcion": "Factores en columnas verticales con productos cruzados y resultado calculados automáticamente.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/general/",
+  "interactivo": true
+}

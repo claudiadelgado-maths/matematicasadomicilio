@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-matematicas-parte-2-completar",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-matematicas-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Completar un cuadrado",
+  "descripcion": "Ordenar cuatro pasos de completar un cuadrado mediante adición y sustracción, con solución completa.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/completar/",
+  "interactivo": true
+}

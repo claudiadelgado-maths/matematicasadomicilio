@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-electricidad-parte-2-joule",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-electricidad-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Efecto Joule",
+  "descripcion": "De la energía eléctrica a la energía interna del material. Laboratorio con predicciones y comparaciones antes/después.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/electricidad-parte-2/ejercicios/joule/",
+  "interactivo": true
+}

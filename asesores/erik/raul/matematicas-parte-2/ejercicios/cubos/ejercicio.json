@@ -1,0 +1,11 @@
+{
+  "id": "raul-erik-matematicas-parte-2-cubos",
+  "tipo": "ejercicio",
+  "sesion": "raul-erik-matematicas-parte-2",
+  "usuario": "raul-erik",
+  "titulo": "Suma y diferencia de cubos",
+  "descripcion": "Reconoce las raíces cúbicas. El primer binomio conserva el signo; el término central del segundo factor lleva el signo contrario y el último es positivo.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/cubos/",
+  "interactivo": true
+}
