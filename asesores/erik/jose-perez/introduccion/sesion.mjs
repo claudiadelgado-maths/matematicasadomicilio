@@ -1,0 +1,45 @@
+import {topics, makePractice, numberValue} from './contenido.mjs';
+import {mountGraph} from './graficas.mjs';
+const root=document.querySelector('#lesson');
+const picker=document.querySelector('#topic-picker');
+const key='mad:erik-jose-perez:introduccion:v1';
+const labels={clear:'Lo puedo explicar',guided:'Lo entiendo con ayuda',revisit:'Quiero retomarlo'};
+let marks={},storageAvailable=true;
+try{const stored=JSON.parse(localStorage.getItem(key)||'{}');for(const t of topics){if(Object.hasOwn(labels,stored?.[t.id]))marks[t.id]=stored[t.id];}}catch{storageAvailable=false;}
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const math=s=>`<div class="math" data-math="${esc(s)}">${esc(s)}</div>`;
+function renderMath(host){host.querySelectorAll('[data-math]').forEach(el=>{if(window.katex){window.katex.render(el.dataset.math,el,{throwOnError:false,displayMode:true,strict:'warn'});}});}
+let group;
+topics.forEach(t=>{if(!group||group.label!==t.group){group=document.createElement('optgroup');group.label=t.group;picker.append(group)}const o=document.createElement('option');o.value=t.id;o.textContent=t.title;group.append(o)});
+picker.addEventListener('change',()=>go(picker.value));
+function go(id){if(location.hash===`#${id}`)show();else location.hash=id;}
+window.addEventListener('hashchange',()=>{if(topics.some(t=>`#${t.id}`===location.hash)||!location.hash)show(true)});
+function button(text,action,cls=''){const b=document.createElement('button');b.type='button';b.textContent=text;b.className=cls;b.addEventListener('click',action);return b;}
+function save(){try{localStorage.setItem(key,JSON.stringify(marks));}catch{storageAvailable=false;}document.querySelector('#save-note').textContent=storageAvailable?'Tus marcas se guardan solo en este navegador. Puedes cambiarlas o borrarlas al final.':'No se pudo guardar en este navegador. Las marcas se conservarán solo mientras esta página permanezca abierta.';}
+function show(focus=false){
+  const id=location.hash.slice(1),index=Math.max(0,topics.findIndex(t=>t.id===id)),t=topics[index];picker.value=t.id;
+  document.title=`${t.title} | Introducción · José Pérez`;
+  root.innerHTML=`<header class="chapter"><span class="topic-group">${esc(t.group)}</span><h1 tabindex="-1">${esc(t.title)}</h1><p class="lead">${esc(t.idea)}</p></header><section class="card"><h2>La idea esencial</h2>${math(t.formula)}<ul class="concept-notes">${t.notes.map(n=>`<li>${n.includes('\\')?math(n):esc(n)}</li>`).join('')}</ul><div class="life"><strong>Una conexión con la realidad</strong>${esc(t.life)}</div></section>${t.graph?'<section class="card" id="graph"></section>':''}${t.examples.length?'<section class="card" id="example"><h2>Un ejemplo, paso a paso</h2><div class="example-tabs" aria-label="Ejemplos"></div><div id="example-steps"></div><div class="actions" id="step-actions"></div></section>':''}${t.quiz?'<section class="card" id="practice"><h2>Hagamos una pausa</h2><p>No hay nota. Explica tu idea en voz alta o usa las opciones para empezar.</p><h3 id="quiz-prompt"></h3><div class="quiz-options"></div><div class="feedback" id="quiz-feedback" role="status"></div></section>':''}<section class="card reflection"><h2>${t.id==='cierre'?'Tu mapa para la siguiente sesión':'¿Cómo te sientes con esta idea?'}</h2>${t.id==='cierre'?'<p>Las marcas son tu percepción del tema, no una calificación automática.</p><div id="summary"></div>':'<div class="rating"></div>'}<p class="muted" id="save-note"></p></section><p class="bridge">${esc(t.bridge)}</p><nav class="bottom" aria-label="Continuar el recorrido"></nav>`;
+  if(t.graph)mountGraph(root.querySelector('#graph'),t.graph,renderMath);
+  if(t.examples.length){
+    const tabs=root.querySelector('.example-tabs'),steps=root.querySelector('#example-steps'),actions=root.querySelector('#step-actions');let selected=0,count=1;
+    function example(){tabs.querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',i===selected));steps.innerHTML=t.examples[selected].steps.slice(0,count).map(([text,tex])=>`<div class="step"><p>${esc(text)}</p>${math(tex)}</div>`).join('');actions.replaceChildren();if(count<t.examples[selected].steps.length){actions.append(button('Ver siguiente paso',()=>{count++;example()},'primary'),button('Ver el procedimiento completo',()=>{count=t.examples[selected].steps.length;example()}));}else actions.append(button('Volver al primer paso',()=>{count=1;example()}));renderMath(steps);}
+    t.examples.forEach((e,i)=>tabs.append(button(e.title,()=>{selected=i;count=1;example()})));example();
+  }
+  if(t.quiz){const quiz=t.quiz;root.querySelector('#quiz-prompt').textContent=quiz.prompt;const options=root.querySelector('.quiz-options'),feedback=root.querySelector('#quiz-feedback');quiz.options.forEach((option,i)=>options.append(button(option,()=>{options.querySelectorAll('button').forEach((b,j)=>b.setAttribute('aria-pressed',j===i));feedback.classList.toggle('success',i===quiz.correct);feedback.textContent=(i===quiz.correct?'Sí. ':'Revisémoslo: ')+quiz.why;})));
+    if(t.practice){const practice=document.createElement('div');practice.className='try';root.querySelector('#practice').append(practice);let seed=0;
+      function newProblem(){const p=makePractice(t.practice,seed);practice.innerHTML=`<h3>Prueba con números</h3>${math(p.tex)}<form><label>Tu resultado<input name="answer" autocomplete="off" aria-describedby="number-help"></label><p class="muted" id="number-help">Acepta enteros, decimales con punto o coma y fracciones como 3/2.</p><div class="actions"><button class="primary" type="submit">Comprobar</button></div></form><div class="feedback" role="status"></div><div class="actions" id="practice-actions"></div>`;const fb=practice.querySelector('.feedback');practice.querySelector('form').addEventListener('submit',ev=>{ev.preventDefault();const n=numberValue(practice.querySelector('input').value);if(!Number.isFinite(n)){fb.textContent='Escribe un número válido o una fracción con denominador distinto de cero.';fb.classList.remove('success');return;}const correct=Math.abs(n-p.answer)<1e-7;fb.classList.toggle('success',correct);fb.textContent=correct?'Coincide. Explica cómo lo obtuviste.':'Todavía no coincide. '+p.hint;});practice.querySelector('#practice-actions').append(button('Pista',()=>{fb.classList.remove('success');fb.textContent=p.hint}),button('Ver solución',()=>{fb.classList.remove('success');fb.innerHTML=math(p.explain);renderMath(fb)}),button('Otro caso ↻',()=>{seed++;newProblem()}));renderMath(practice);}
+      newProblem();
+    }
+  }
+  const rating=root.querySelector('.rating');if(rating){Object.entries(labels).forEach(([value,label])=>{const b=button(label,()=>{marks[t.id]=value;save();rating.querySelectorAll('button').forEach(el=>el.setAttribute('aria-pressed',el===b))});b.setAttribute('aria-pressed',marks[t.id]===value);rating.append(b)});}
+  if(t.id==='cierre')summary();
+  const nav=root.querySelector('.bottom');if(index>0)nav.append(button('← Anterior',()=>go(topics[index-1].id)));if(index<topics.length-1)nav.append(button('Continuar →',()=>go(topics[index+1].id),'primary'));else{const a=document.createElement('a');a.href='../index.html';a.textContent='Regresar a sesiones de José Pérez →';a.className='button primary';nav.append(a)}
+  renderMath(root);save();
+  if(focus){root.querySelector('h1').focus({preventScroll:true});root.scrollIntoView({behavior:'instant',block:'start'});}
+}
+function summary(){const host=root.querySelector('#summary');const studied=topics.filter(t=>t.id!=='cierre');const revisit=studied.filter(t=>marks[t.id]==='revisit');const guided=studied.filter(t=>marks[t.id]==='guided');host.innerHTML=`<p><strong>${Object.keys(marks).length} de ${studied.length} temas con una marca.</strong> Puedes dejar temas sin revisar.</p><p>${revisit.length?`Podemos empezar por: ${esc(revisit.slice(0,3).map(t=>t.title).join(', '))}.`:guided.length?`Conviene practicar con acompañamiento: ${esc(guided.slice(0,3).map(t=>t.title).join(', '))}.`:'Elige junto con Erik un tema y explica un ejemplo para decidir el siguiente paso.'}</p><ul class="summary-list"></ul><div class="actions" id="summary-actions"></div><div class="reset-confirm" hidden><p>¿Borrar las marcas de esta sesión en este navegador?</p></div><p class="print-note">Resumen local de Introducción · José Pérez. Las marcas no son una calificación.</p>`;
+  studied.forEach(t=>{const li=document.createElement('li'),s=document.createElement('span');s.textContent=labels[marks[t.id]]||'Sin revisar';li.append(button(t.title,()=>go(t.id)),s);host.querySelector('ul').append(li)});
+  host.querySelector('#summary-actions').append(button('Imprimir resumen',()=>window.print()),button('Borrar mis marcas',()=>host.querySelector('.reset-confirm').hidden=false));const confirm=host.querySelector('.reset-confirm');confirm.append(button('Sí, borrar marcas',()=>{marks={};save();summary()}),button('Conservar',()=>confirm.hidden=true));
+}
+show();

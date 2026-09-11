@@ -1,0 +1,12 @@
+{
+  "id": "alejandrina-medios-sumas-juego-sumas",
+  "tipo": "juego",
+  "sesion": "alejandrina-medios-y-sumas",
+  "usuario": "alejandrina",
+  "titulo": "Elige y suma",
+  "descripcion": "Decide qué necesitas. Después calcula.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/medios-y-sumas/juegos/elige-y-suma/",
+  "interactivo": true
+}
+

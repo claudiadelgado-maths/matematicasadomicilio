@@ -1,0 +1,12 @@
+{
+  "id": "alejandrina-medios-sumas-juego-medios",
+  "tipo": "juego",
+  "sesion": "alejandrina-medios-y-sumas",
+  "usuario": "alejandrina",
+  "titulo": "Puentes aritméticos",
+  "descripcion": "Construye caminos con saltos iguales.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/medios-y-sumas/juegos/puentes-aritmeticos/",
+  "interactivo": true
+}
+

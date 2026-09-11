@@ -1,4 +1,4 @@
-/* Estilos propios de asesores/erik/alejandrina/index.html. */
+/* Estilos propios del índice de José Pérez, basados en la plantilla de alumno. */
 
 /* Reglas particulares extraídas del antiguo sistema visual. */
 .eyebrow {
@@ -261,9 +261,5 @@ h1 { font-size: clamp(2.35rem, 13vw, 3.7rem); }
 .student-session-date { grid-column: 1 / -1; }
 }
 
-/* Estilos que ya pertenecían a esta página. */
-/* El listado de sesiones utiliza el componente académico compartido.
-   El acento de Alejandrina se administra en usuario.json. */
-.user-site{background:linear-gradient(#f5eff9e8,#f5eff9e8),url("recursos/jardin.svg") center top/600px 180px repeat;}
-.alejandrina-hero{padding-block:30px 15px;}
-.user-site .user-module-section{background:transparent;padding-top:35px;}
+.user-site .learning-page-hero{background:linear-gradient(120deg,#153e50,#246f80);color:white;border-bottom:5px solid #d9ae70}.user-site .learning-page-hero h1,.user-site .learning-page-hero .lead{color:white}.user-site .user-module-section{background:#edf5f7}.user-site .student-session-link{border-radius:16px}.user-site .learning-page-hero h1{font-size:clamp(3rem,7vw,5.5rem)}
+

@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 171,
+  "total": 181,
   "tipos": {
     "maestro": [
       {
@@ -529,7 +529,7 @@
         "personalizacion": {
           "simbolo": "A",
           "acento": "#15784e",
-          "fondo": "#edf8f2"
+          "fondo": "#302044"
         },
         "almacenamientoLocal": false,
         "archivoMetadatos": "asesores/erik/alejandrina/usuario.json"
@@ -551,6 +551,24 @@
         },
         "almacenamientoLocal": false,
         "archivoMetadatos": "asesores/erik/andres/usuario.json"
+      },
+      {
+        "id": "erik-jose-perez",
+        "slug": "jose-perez",
+        "tipo": "usuario",
+        "titulo": "Espacio de José Pérez",
+        "nombreVisible": "José Pérez",
+        "descripcion": "Sesiones de matemáticas para construir bases y conectar ideas de ingeniería.",
+        "estado": "activo",
+        "ruta": "/asesores/erik/jose-perez/",
+        "maestro": "erik-estrella",
+        "personalizacion": {
+          "simbolo": "JP",
+          "acento": "#176c80",
+          "fondo": "#eaf5f8"
+        },
+        "almacenamientoLocal": true,
+        "archivoMetadatos": "asesores/erik/jose-perez/usuario.json"
       },
       {
         "id": "jose",
@@ -1281,6 +1299,29 @@
         "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/sesion.json"
       },
       {
+        "id": "alejandrina-medios-y-sumas",
+        "slug": "medios-y-sumas",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Medios y sumas aritméticas",
+        "descripcion": "Medios aritméticos y sumas: ejemplos breves, práctica paso a paso y dos juegos independientes.",
+        "objetivo": "Insertar medios con saltos iguales y distinguir un término de una suma, incluso cuando faltan datos o se pide solo un tramo.",
+        "conocimientosPrevios": [
+          "Progresión aritmética, diferencia común y término general."
+        ],
+        "fecha": "2026-09-10",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/sesion.json"
+      },
+      {
         "id": "multiplicacion-de-binomios",
         "slug": "multiplicacion-de-binomios",
         "tipo": "sesion",
@@ -1354,6 +1395,28 @@
           "calculadoras": true
         },
         "archivoMetadatos": "asesores/erik/andres/porcentajes/sesion.json"
+      },
+      {
+        "id": "erik-jose-perez-introduccion",
+        "slug": "introduccion",
+        "tipo": "sesion",
+        "usuario": "erik-jose-perez",
+        "titulo": "Introducción",
+        "descripcion": "Un recorrido guiado de las bases al cálculo: ejemplos, gráficas y preguntas para decidir qué retomar.",
+        "objetivo": "Reconocer y conectar los fundamentos aritméticos, algebraicos, geométricos y de cálculo, identificando los temas que requieren acompañamiento.",
+        "conocimientosPrevios": [],
+        "fecha": "2026-09-10",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/jose-perez/introduccion/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "almacenamientoLocal": true,
+        "archivoMetadatos": "asesores/erik/jose-perez/introduccion/sesion.json"
       },
       {
         "id": "despejes-lineales-kenia",
@@ -1927,6 +1990,66 @@
         "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/ejercicios/relaciona-las-medidas/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/ejercicios/relaciona-las-medidas/ejercicio.json"
+      },
+      {
+        "id": "alejandrina-medios-sumas-datos",
+        "tipo": "ejercicio",
+        "sesion": "alejandrina-medios-y-sumas",
+        "usuario": "alejandrina",
+        "titulo": "Encuentra el dato que falta",
+        "descripcion": "Si todavía no tienes los extremos o la cantidad, empieza por ahí.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/ejercicios/datos-faltantes/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/ejercicios/datos-faltantes/ejercicio.json"
+      },
+      {
+        "id": "alejandrina-medios-sumas-aplicaciones",
+        "tipo": "ejercicio",
+        "sesion": "alejandrina-medios-y-sumas",
+        "usuario": "alejandrina",
+        "titulo": "¿Una cantidad o el total?",
+        "descripcion": "Lee la pregunta antes de elegir una fórmula.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/ejercicios/en-la-vida-diaria/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/ejercicios/en-la-vida-diaria/ejercicio.json"
+      },
+      {
+        "id": "alejandrina-medios-sumas-tramos",
+        "tipo": "ejercicio",
+        "sesion": "alejandrina-medios-y-sumas",
+        "usuario": "alejandrina",
+        "titulo": "Suma solo una parte",
+        "descripcion": "Sumas de un tramo con posiciones y valores, extremos editables y llenado automático de términos intermedios.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/ejercicios/sumar-un-tramo/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/ejercicios/sumar-un-tramo/ejercicio.json"
+      },
+      {
+        "id": "alejandrina-medios-sumas-suma",
+        "tipo": "ejercicio",
+        "sesion": "alejandrina-medios-y-sumas",
+        "usuario": "alejandrina",
+        "titulo": "Ahora vamos a sumar",
+        "descripcion": "Un término es una cantidad. Una suma reúne varias.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/ejercicios/sumas/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/ejercicios/sumas/ejercicio.json"
+      },
+      {
+        "id": "alejandrina-medios-sumas-varios",
+        "tipo": "ejercicio",
+        "sesion": "alejandrina-medios-y-sumas",
+        "usuario": "alejandrina",
+        "titulo": "Varios medios, saltos iguales",
+        "descripcion": "Medios aritméticos con pasos en paralelo, casillas dentro de la sucesión y recorrido de saltos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/ejercicios/varios-medios/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/ejercicios/varios-medios/ejercicio.json"
       },
       {
         "id": "practica-de-binomios",
@@ -2824,6 +2947,30 @@
         "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/juego.json"
+      },
+      {
+        "id": "alejandrina-medios-sumas-juego-sumas",
+        "tipo": "juego",
+        "sesion": "alejandrina-medios-y-sumas",
+        "usuario": "alejandrina",
+        "titulo": "Elige y suma",
+        "descripcion": "Decide qué necesitas. Después calcula.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/juegos/elige-y-suma/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/juegos/elige-y-suma/juego.json"
+      },
+      {
+        "id": "alejandrina-medios-sumas-juego-medios",
+        "tipo": "juego",
+        "sesion": "alejandrina-medios-y-sumas",
+        "usuario": "alejandrina",
+        "titulo": "Puentes aritméticos",
+        "descripcion": "Construye caminos con saltos iguales.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/juegos/puentes-aritmeticos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/juegos/puentes-aritmeticos/juego.json"
       },
       {
         "id": "fabrica-de-trinomios",

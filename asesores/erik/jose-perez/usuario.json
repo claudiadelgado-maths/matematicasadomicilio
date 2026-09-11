@@ -1,0 +1,13 @@
+{
+  "id": "erik-jose-perez",
+  "slug": "jose-perez",
+  "tipo": "usuario",
+  "titulo": "Espacio de José Pérez",
+  "nombreVisible": "José Pérez",
+  "descripcion": "Sesiones de matemáticas para construir bases y conectar ideas de ingeniería.",
+  "estado": "activo",
+  "ruta": "/asesores/erik/jose-perez/",
+  "maestro": "erik-estrella",
+  "personalizacion": {"simbolo": "JP", "acento": "#176c80", "fondo": "#eaf5f8"},
+  "almacenamientoLocal": true
+}

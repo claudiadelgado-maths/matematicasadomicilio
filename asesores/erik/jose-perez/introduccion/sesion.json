@@ -1,0 +1,15 @@
+{
+  "id": "erik-jose-perez-introduccion",
+  "slug": "introduccion",
+  "tipo": "sesion",
+  "usuario": "erik-jose-perez",
+  "titulo": "Introducción",
+  "descripcion": "Un recorrido guiado de las bases al cálculo: ejemplos, gráficas y preguntas para decidir qué retomar.",
+  "objetivo": "Reconocer y conectar los fundamentos aritméticos, algebraicos, geométricos y de cálculo, identificando los temas que requieren acompañamiento.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-09-10",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/jose-perez/introduccion/",
+  "componentes": {"explicacion": false, "demostraciones": false, "ejercicios": false, "juegos": false, "calculadoras": false},
+  "almacenamientoLocal": true
+}

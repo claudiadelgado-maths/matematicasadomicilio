@@ -1,0 +1,23 @@
+{
+  "id": "alejandrina-medios-y-sumas",
+  "slug": "medios-y-sumas",
+  "tipo": "sesion",
+  "usuario": "alejandrina",
+  "titulo": "Medios y sumas aritméticas",
+  "descripcion": "Medios aritméticos y sumas: ejemplos breves, práctica paso a paso y dos juegos independientes.",
+  "objetivo": "Insertar medios con saltos iguales y distinguir un término de una suma, incluso cuando faltan datos o se pide solo un tramo.",
+  "conocimientosPrevios": [
+    "Progresión aritmética, diferencia común y término general."
+  ],
+  "fecha": "2026-09-10",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/medios-y-sumas/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": false
+  }
+}
+

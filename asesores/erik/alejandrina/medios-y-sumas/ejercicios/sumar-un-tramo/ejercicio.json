@@ -1,0 +1,11 @@
+{
+  "id": "alejandrina-medios-sumas-tramos",
+  "tipo": "ejercicio",
+  "sesion": "alejandrina-medios-y-sumas",
+  "usuario": "alejandrina",
+  "titulo": "Suma solo una parte",
+  "descripcion": "Sumas de un tramo con posiciones y valores, extremos editables y llenado automático de términos intermedios.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/medios-y-sumas/ejercicios/sumar-un-tramo/",
+  "interactivo": true
+}

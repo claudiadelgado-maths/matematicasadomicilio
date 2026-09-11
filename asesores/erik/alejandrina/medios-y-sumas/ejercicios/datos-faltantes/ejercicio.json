@@ -1,0 +1,12 @@
+{
+  "id": "alejandrina-medios-sumas-datos",
+  "tipo": "ejercicio",
+  "sesion": "alejandrina-medios-y-sumas",
+  "usuario": "alejandrina",
+  "titulo": "Encuentra el dato que falta",
+  "descripcion": "Si todavía no tienes los extremos o la cantidad, empieza por ahí.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/medios-y-sumas/ejercicios/datos-faltantes/",
+  "interactivo": true
+}
+

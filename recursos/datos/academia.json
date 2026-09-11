@@ -502,6 +502,90 @@
       ],
       "alumnos": [
         {
+          "id": "alejandrina",
+          "nombreVisible": "Alejandrina",
+          "descripcion": "Espacio de sesiones y recursos personalizados.",
+          "ruta": "/asesores/erik/alejandrina/",
+          "personalizacion": {
+            "simbolo": "A",
+            "acento": "#15784e",
+            "fondo": "#302044"
+          },
+          "ultimaActividad": "2026-09-10",
+          "sesiones": [
+            {
+              "id": "alejandrina-medios-y-sumas",
+              "titulo": "Medios y sumas aritméticas",
+              "descripcion": "Medios aritméticos y sumas: ejemplos breves, práctica paso a paso y dos juegos independientes.",
+              "fecha": "2026-09-10",
+              "ruta": "/asesores/erik/alejandrina/medios-y-sumas/"
+            },
+            {
+              "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
+              "titulo": "Fórmulas de sucesiones aritméticas",
+              "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
+              "fecha": "2026-08-28",
+              "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/"
+            },
+            {
+              "id": "sucesiones-aritmeticas-sesion-1",
+              "titulo": "Elementos de una sucesión aritmética",
+              "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
+              "fecha": "2026-08-25",
+              "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/"
+            },
+            {
+              "id": "multiplicacion-de-binomios",
+              "titulo": "Multiplicación de binomios",
+              "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
+              "fecha": "2026-08-21",
+              "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/"
+            },
+            {
+              "id": "diagramas-de-arboles",
+              "titulo": "Diagramas de árboles",
+              "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
+              "fecha": "2026-07-29",
+              "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/"
+            },
+            {
+              "id": "medidas-de-posicion",
+              "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
+              "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
+              "fecha": "2026-07-29",
+              "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/"
+            },
+            {
+              "id": "datos-no-agrupados",
+              "titulo": "Datos no agrupados",
+              "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
+              "fecha": "2026-07-24",
+              "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/"
+            }
+          ]
+        },
+        {
+          "id": "erik-jose-perez",
+          "nombreVisible": "José Pérez",
+          "descripcion": "Sesiones de matemáticas para construir bases y conectar ideas de ingeniería.",
+          "ruta": "/asesores/erik/jose-perez/",
+          "personalizacion": {
+            "simbolo": "JP",
+            "acento": "#176c80",
+            "fondo": "#eaf5f8"
+          },
+          "ultimaActividad": "2026-09-10",
+          "sesiones": [
+            {
+              "id": "erik-jose-perez-introduccion",
+              "titulo": "Introducción",
+              "descripcion": "Un recorrido guiado de las bases al cálculo: ejemplos, gráficas y preguntas para decidir qué retomar.",
+              "fecha": "2026-09-10",
+              "ruta": "/asesores/erik/jose-perez/introduccion/"
+            }
+          ]
+        },
+        {
           "id": "raul-erik",
           "nombreVisible": "Raúl",
           "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
@@ -547,62 +631,6 @@
               "descripcion": "Presentación, monomios, polinomios, suma, resta y multiplicación de expresiones algebraicas.",
               "fecha": "2026-09-08",
               "ruta": "/asesores/erik/raul/matematicas-parte-1/"
-            }
-          ]
-        },
-        {
-          "id": "alejandrina",
-          "nombreVisible": "Alejandrina",
-          "descripcion": "Espacio de sesiones y recursos personalizados.",
-          "ruta": "/asesores/erik/alejandrina/",
-          "personalizacion": {
-            "simbolo": "A",
-            "acento": "#15784e",
-            "fondo": "#edf8f2"
-          },
-          "ultimaActividad": "2026-08-28",
-          "sesiones": [
-            {
-              "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
-              "titulo": "Fórmulas de sucesiones aritméticas",
-              "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
-              "fecha": "2026-08-28",
-              "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/"
-            },
-            {
-              "id": "sucesiones-aritmeticas-sesion-1",
-              "titulo": "Elementos de una sucesión aritmética",
-              "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
-              "fecha": "2026-08-25",
-              "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/"
-            },
-            {
-              "id": "multiplicacion-de-binomios",
-              "titulo": "Multiplicación de binomios",
-              "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
-              "fecha": "2026-08-21",
-              "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/"
-            },
-            {
-              "id": "diagramas-de-arboles",
-              "titulo": "Diagramas de árboles",
-              "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
-              "fecha": "2026-07-29",
-              "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/"
-            },
-            {
-              "id": "medidas-de-posicion",
-              "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
-              "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
-              "fecha": "2026-07-29",
-              "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/"
-            },
-            {
-              "id": "datos-no-agrupados",
-              "titulo": "Datos no agrupados",
-              "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
-              "fecha": "2026-07-24",
-              "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/"
             }
           ]
         },

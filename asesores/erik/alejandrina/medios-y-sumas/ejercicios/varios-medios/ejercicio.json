@@ -1,0 +1,11 @@
+{
+  "id": "alejandrina-medios-sumas-varios",
+  "tipo": "ejercicio",
+  "sesion": "alejandrina-medios-y-sumas",
+  "usuario": "alejandrina",
+  "titulo": "Varios medios, saltos iguales",
+  "descripcion": "Medios aritméticos con pasos en paralelo, casillas dentro de la sucesión y recorrido de saltos.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/medios-y-sumas/ejercicios/varios-medios/",
+  "interactivo": true
+}
