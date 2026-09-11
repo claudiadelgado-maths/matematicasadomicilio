@@ -13,3 +13,8 @@
 No quedan apartados de contenido pendientes. Los cambios están en los archivos locales; no se realizó commit ni publicación remota.
 
 Al continuar, revisar este archivo y el README del módulo. No modificar el organizador de `../jose/` ni sesiones ajenas.
+
+## 11 de septiembre: presentación inicial
+
+Se añadió una copia local adaptada de la presentación de Raúl, con lectura, historia matemática y plan. Siguiente abre `recorrido/index.html`, donde permanece el contenido anterior. Metadatos y documentación sincronizados.
+Verificación de la presentación: frase generada con datos de prueba y limpieza; cinco fichas añadidas con teclado y retirada; conversación marcada; Siguiente, regreso y enlace final; menú con Escape; 360/768/1024/1440 px sin desbordamiento y consola sin errores.

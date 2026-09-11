@@ -1402,10 +1402,10 @@
         "tipo": "sesion",
         "usuario": "erik-jose-perez",
         "titulo": "Introducción",
-        "descripcion": "Un recorrido guiado de las bases al cálculo: ejemplos, gráficas y preguntas para decidir qué retomar.",
-        "objetivo": "Reconocer y conectar los fundamentos aritméticos, algebraicos, geométricos y de cálculo, identificando los temas que requieren acompañamiento.",
+        "descripcion": "Presentación, historia matemática y plan de estudio; después, un recorrido guiado de las bases al cálculo.",
+        "objetivo": "Conocer la experiencia y los objetivos de José Pérez, acordar un plan de estudio y reconocer los fundamentos matemáticos que requieren acompañamiento.",
         "conocimientosPrevios": [],
-        "fecha": "2026-09-10",
+        "fecha": "2026-09-11",
         "estado": "publicado",
         "ruta": "/asesores/erik/jose-perez/introduccion/",
         "componentes": {

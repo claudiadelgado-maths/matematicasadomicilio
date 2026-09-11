@@ -502,6 +502,27 @@
       ],
       "alumnos": [
         {
+          "id": "erik-jose-perez",
+          "nombreVisible": "José Pérez",
+          "descripcion": "Sesiones de matemáticas para construir bases y conectar ideas de ingeniería.",
+          "ruta": "/asesores/erik/jose-perez/",
+          "personalizacion": {
+            "simbolo": "JP",
+            "acento": "#176c80",
+            "fondo": "#eaf5f8"
+          },
+          "ultimaActividad": "2026-09-11",
+          "sesiones": [
+            {
+              "id": "erik-jose-perez-introduccion",
+              "titulo": "Introducción",
+              "descripcion": "Presentación, historia matemática y plan de estudio; después, un recorrido guiado de las bases al cálculo.",
+              "fecha": "2026-09-11",
+              "ruta": "/asesores/erik/jose-perez/introduccion/"
+            }
+          ]
+        },
+        {
           "id": "alejandrina",
           "nombreVisible": "Alejandrina",
           "descripcion": "Espacio de sesiones y recursos personalizados.",
@@ -561,27 +582,6 @@
               "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
               "fecha": "2026-07-24",
               "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/"
-            }
-          ]
-        },
-        {
-          "id": "erik-jose-perez",
-          "nombreVisible": "José Pérez",
-          "descripcion": "Sesiones de matemáticas para construir bases y conectar ideas de ingeniería.",
-          "ruta": "/asesores/erik/jose-perez/",
-          "personalizacion": {
-            "simbolo": "JP",
-            "acento": "#176c80",
-            "fondo": "#eaf5f8"
-          },
-          "ultimaActividad": "2026-09-10",
-          "sesiones": [
-            {
-              "id": "erik-jose-perez-introduccion",
-              "titulo": "Introducción",
-              "descripcion": "Un recorrido guiado de las bases al cálculo: ejemplos, gráficas y preguntas para decidir qué retomar.",
-              "fecha": "2026-09-10",
-              "ruta": "/asesores/erik/jose-perez/introduccion/"
             }
           ]
         },

@@ -34,7 +34,7 @@ function show(focus=false){
   }
   const rating=root.querySelector('.rating');if(rating){Object.entries(labels).forEach(([value,label])=>{const b=button(label,()=>{marks[t.id]=value;save();rating.querySelectorAll('button').forEach(el=>el.setAttribute('aria-pressed',el===b))});b.setAttribute('aria-pressed',marks[t.id]===value);rating.append(b)});}
   if(t.id==='cierre')summary();
-  const nav=root.querySelector('.bottom');if(index>0)nav.append(button('← Anterior',()=>go(topics[index-1].id)));if(index<topics.length-1)nav.append(button('Continuar →',()=>go(topics[index+1].id),'primary'));else{const a=document.createElement('a');a.href='../index.html';a.textContent='Regresar a sesiones de José Pérez →';a.className='button primary';nav.append(a)}
+  const nav=root.querySelector('.bottom');if(index===0){const a=document.createElement('a');a.href='../index.html';a.textContent='← Presentación';nav.append(a)}if(index>0)nav.append(button('← Anterior',()=>go(topics[index-1].id)));if(index<topics.length-1)nav.append(button('Continuar →',()=>go(topics[index+1].id),'primary'));else{const a=document.createElement('a');a.href='../../index.html';a.textContent='Regresar a sesiones de José Pérez →';a.className='button primary';nav.append(a)}
   renderMath(root);save();
   if(focus){root.querySelector('h1').focus({preventScroll:true});root.scrollIntoView({behavior:'instant',block:'start'});}
 }
