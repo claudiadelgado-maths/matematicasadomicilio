@@ -1,0 +1,10 @@
+@import url('../estilos.css');
+.science-lab{background:radial-gradient(ellipse at top right,#e6ddfa,transparent 55%),radial-gradient(ellipse at bottom left,#dcefe0,transparent 55%),#f0f6f2}
+.coef{color:#225d9a}.var-x{color:#7846a2}.var-y{color:#24794b}.var-z{color:#a45020}
+.toolbox{background:linear-gradient(145deg,#e5edf6,#eae4f5)}
+.expression-board{background-image:radial-gradient(#b7a2ca40 1px,transparent 1px)}
+.variable-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;border:1px solid #cabddd;border-radius:14px;padding:12px 16px}
+.variable-fields legend{font-size:.9rem}.variable-fields label{margin:4px 0}
+.lab-continue{display:block;width:fit-content;padding:17px 24px;border-radius:13px;background:#176e78;color:white;text-decoration:none;font-weight:700;margin:24px 0;box-shadow:0 7px 20px #176e7820}
+.lab-continue:hover{background:#11545c}.board-note p+p{margin-top:10px}
+.science-lab .number{overflow-y:hidden}

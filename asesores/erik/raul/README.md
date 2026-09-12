@@ -32,3 +32,11 @@ Nueva sesión publicada en `matematicas-parte-2/`: inicio y ocho apartados de fa
 ## Electricidad Parte 2
 
 Nueva sesión publicada en `electricidad-parte-2/`: diez páginas que conectan cargas y Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule, con mapa de conexiones y reto conceptual/numérico. Siete laboratorios y 36 preguntas conceptuales con explicaciones. Recursos aislados y lienzo azul abierto.
+
+## Repaso Parte 2
+
+Sesión en `repaso-parte-2/`: tres páginas secuenciales. Comienza con el laboratorio de notación científica. Conserva pizarra y herramientas laterales e incorpora Creador libre y Resolver con problemas controlados. Incluye potencias pendientes sobre factores y grupos, valor absoluto, selección independiente de potencias de diez, traslados por recíproco exacto, pasos educativos, comprobación matemática, historial y deshacer. La antigua regla de traslado queda reemplazada por equivalencias exactas. Continúa con un laboratorio de expresiones algebraicas multivariables y termina con práctica rápida de aritmética en tres niveles, formulario, soluciones y contadores. Las nuevas áreas mantienen documentación y pruebas independientes.
+
+## Examen Matemáticas
+
+Nueva sesión en examen-matematicas/: examen de preguntas dinámicas mezcladas, modo normal y modo con ayuda por sustitución. Cubre sistemas, divisiones exactas y con residuo y fracciones algebraicas mediante 42 estructuras internas. Incluye validación simbólica, dominio, cuatro respuestas únicas e historial de pruebas. Recursos y documentación independientes; registro automático mediante sesion.json.

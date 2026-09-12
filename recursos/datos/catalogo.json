@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 181,
+  "total": 183,
   "tipos": {
     "maestro": [
       {
@@ -1468,6 +1468,29 @@
         "archivoMetadatos": "asesores/erik/raul/electricidad-parte-2/sesion.json"
       },
       {
+        "id": "raul-erik-examen-matematicas",
+        "slug": "examen-matematicas",
+        "tipo": "sesion",
+        "usuario": "raul-erik",
+        "titulo": "Examen Matemáticas",
+        "descripcion": "Preguntas dinámicas mezcladas, con ayuda por sustitución disponible desde el inicio y recordatorio visual de la división.",
+        "objetivo": "Resolver preguntas de opción múltiple e investigar equivalencias algebraicas mediante sustituciones válidas.",
+        "conocimientosPrevios": [
+          "Sistemas de dos ecuaciones, operaciones con polinomios y fracciones algebraicas."
+        ],
+        "fecha": "2026-09-12",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/examen-matematicas/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/raul/examen-matematicas/sesion.json"
+      },
+      {
         "id": "raul-erik-fisica-parte-1",
         "slug": "fisica-parte-1",
         "tipo": "sesion",
@@ -1536,6 +1559,29 @@
           "calculadoras": false
         },
         "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/sesion.json"
+      },
+      {
+        "id": "raul-erik-repaso-parte-2",
+        "slug": "repaso-parte-2",
+        "tipo": "sesion",
+        "usuario": "raul-erik",
+        "titulo": "Repaso Parte 2",
+        "descripcion": "Laboratorios de notación científica y expresiones algebraicas, más práctica rápida de aritmética, fracciones, potencias y sustitución.",
+        "objetivo": "Manipular productos, cocientes y potencias de manera exacta y adquirir agilidad para sustituir valores y operar expresiones y fórmulas.",
+        "conocimientosPrevios": [
+          "Multiplicación, división y potencias enteras."
+        ],
+        "fecha": "2026-09-11",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso-parte-2/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/raul/repaso-parte-2/sesion.json"
       },
       {
         "id": "raul-erik-repaso",

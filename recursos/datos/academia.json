@@ -502,6 +502,69 @@
       ],
       "alumnos": [
         {
+          "id": "raul-erik",
+          "nombreVisible": "Raúl",
+          "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
+          "ruta": "/asesores/erik/raul/",
+          "personalizacion": {
+            "simbolo": "R",
+            "acento": "#1f5fbd",
+            "fondo": "#eef4fb"
+          },
+          "ultimaActividad": "2026-09-12",
+          "sesiones": [
+            {
+              "id": "raul-erik-examen-matematicas",
+              "titulo": "Examen Matemáticas",
+              "descripcion": "Preguntas dinámicas mezcladas, con ayuda por sustitución disponible desde el inicio y recordatorio visual de la división.",
+              "fecha": "2026-09-12",
+              "ruta": "/asesores/erik/raul/examen-matematicas/"
+            },
+            {
+              "id": "raul-erik-repaso-parte-2",
+              "titulo": "Repaso Parte 2",
+              "descripcion": "Laboratorios de notación científica y expresiones algebraicas, más práctica rápida de aritmética, fracciones, potencias y sustitución.",
+              "fecha": "2026-09-11",
+              "ruta": "/asesores/erik/raul/repaso-parte-2/"
+            },
+            {
+              "id": "raul-erik-electricidad-parte-2",
+              "titulo": "Electricidad Parte 2",
+              "descripcion": "Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule: siete laboratorios, veinte comparaciones guiadas y reto conceptual y numérico.",
+              "fecha": "2026-09-10",
+              "ruta": "/asesores/erik/raul/electricidad-parte-2/"
+            },
+            {
+              "id": "raul-erik-matematicas-parte-2",
+              "titulo": "Matemáticas Parte 2",
+              "descripcion": "Factorización algebraica: factor común, agrupación, cuadrados, trinomios, cubos y retos interactivos.",
+              "fecha": "2026-09-10",
+              "ruta": "/asesores/erik/raul/matematicas-parte-2/"
+            },
+            {
+              "id": "raul-erik-repaso",
+              "titulo": "Repaso",
+              "descripcion": "Fracciones, sustitución, despejes sencillos, proporcionalidad directa e inversa y factorización numérica: repaso visual e interactivo.",
+              "fecha": "2026-09-09",
+              "ruta": "/asesores/erik/raul/repaso/"
+            },
+            {
+              "id": "raul-erik-fisica-parte-1",
+              "titulo": "Electricidad 1",
+              "descripcion": "Introducción a magnitudes eléctricas, símbolos, unidades, prefijos del SI y conversiones para el contexto técnico de planta exterior.",
+              "fecha": "2026-09-08",
+              "ruta": "/asesores/erik/raul/fisica-parte-1/"
+            },
+            {
+              "id": "raul-erik-matematicas-parte-1",
+              "titulo": "Matemáticas, parte 1",
+              "descripcion": "Presentación, monomios, polinomios, suma, resta y multiplicación de expresiones algebraicas.",
+              "fecha": "2026-09-08",
+              "ruta": "/asesores/erik/raul/matematicas-parte-1/"
+            }
+          ]
+        },
+        {
           "id": "erik-jose-perez",
           "nombreVisible": "José Pérez",
           "descripcion": "Sesiones de matemáticas para construir bases y conectar ideas de ingeniería.",
@@ -582,55 +645,6 @@
               "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
               "fecha": "2026-07-24",
               "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/"
-            }
-          ]
-        },
-        {
-          "id": "raul-erik",
-          "nombreVisible": "Raúl",
-          "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
-          "ruta": "/asesores/erik/raul/",
-          "personalizacion": {
-            "simbolo": "R",
-            "acento": "#1f5fbd",
-            "fondo": "#eef4fb"
-          },
-          "ultimaActividad": "2026-09-10",
-          "sesiones": [
-            {
-              "id": "raul-erik-electricidad-parte-2",
-              "titulo": "Electricidad Parte 2",
-              "descripcion": "Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule: siete laboratorios, veinte comparaciones guiadas y reto conceptual y numérico.",
-              "fecha": "2026-09-10",
-              "ruta": "/asesores/erik/raul/electricidad-parte-2/"
-            },
-            {
-              "id": "raul-erik-matematicas-parte-2",
-              "titulo": "Matemáticas Parte 2",
-              "descripcion": "Factorización algebraica: factor común, agrupación, cuadrados, trinomios, cubos y retos interactivos.",
-              "fecha": "2026-09-10",
-              "ruta": "/asesores/erik/raul/matematicas-parte-2/"
-            },
-            {
-              "id": "raul-erik-repaso",
-              "titulo": "Repaso",
-              "descripcion": "Fracciones, sustitución, despejes sencillos, proporcionalidad directa e inversa y factorización numérica: repaso visual e interactivo.",
-              "fecha": "2026-09-09",
-              "ruta": "/asesores/erik/raul/repaso/"
-            },
-            {
-              "id": "raul-erik-fisica-parte-1",
-              "titulo": "Electricidad 1",
-              "descripcion": "Introducción a magnitudes eléctricas, símbolos, unidades, prefijos del SI y conversiones para el contexto técnico de planta exterior.",
-              "fecha": "2026-09-08",
-              "ruta": "/asesores/erik/raul/fisica-parte-1/"
-            },
-            {
-              "id": "raul-erik-matematicas-parte-1",
-              "titulo": "Matemáticas, parte 1",
-              "descripcion": "Presentación, monomios, polinomios, suma, resta y multiplicación de expresiones algebraicas.",
-              "fecha": "2026-09-08",
-              "ruta": "/asesores/erik/raul/matematicas-parte-1/"
             }
           ]
         },

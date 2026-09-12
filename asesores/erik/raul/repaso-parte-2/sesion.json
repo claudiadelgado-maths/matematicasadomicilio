@@ -1,0 +1,22 @@
+{
+  "id": "raul-erik-repaso-parte-2",
+  "slug": "repaso-parte-2",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Repaso Parte 2",
+  "descripcion": "Laboratorios de notación científica y expresiones algebraicas, más práctica rápida de aritmética, fracciones, potencias y sustitución.",
+  "objetivo": "Manipular productos, cocientes y potencias de manera exacta y adquirir agilidad para sustituir valores y operar expresiones y fórmulas.",
+  "conocimientosPrevios": [
+    "Multiplicación, división y potencias enteras."
+  ],
+  "fecha": "2026-09-11",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/repaso-parte-2/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

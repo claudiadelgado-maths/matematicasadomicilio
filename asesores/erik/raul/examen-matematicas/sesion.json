@@ -1,0 +1,22 @@
+{
+  "id": "raul-erik-examen-matematicas",
+  "slug": "examen-matematicas",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Examen Matemáticas",
+  "descripcion": "Preguntas dinámicas mezcladas, con ayuda por sustitución disponible desde el inicio y recordatorio visual de la división.",
+  "objetivo": "Resolver preguntas de opción múltiple e investigar equivalencias algebraicas mediante sustituciones válidas.",
+  "conocimientosPrevios": [
+    "Sistemas de dos ecuaciones, operaciones con polinomios y fracciones algebraicas."
+  ],
+  "fecha": "2026-09-12",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/examen-matematicas/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}
