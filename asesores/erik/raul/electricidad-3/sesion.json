@@ -1,0 +1,22 @@
+{
+  "id": "raul-erik-electricidad-3",
+  "slug": "electricidad-3",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Electricidad 3",
+  "descripcion": "Explicaciones paso a paso de Joule, Kirchhoff, batería real y capacitores, con ejemplos numéricos resueltos, diagramas y veinte preguntas conceptuales.",
+  "objetivo": "Interpretar fenómenos, fórmulas, variables y relaciones eléctricas mediante diagramas y comparaciones, sin cálculos largos.",
+  "conocimientosPrevios": [
+    "Ideas básicas de corriente, voltaje y resistencia de Electricidad 1 y 2."
+  ],
+  "fecha": "2026-09-13",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/electricidad-3/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

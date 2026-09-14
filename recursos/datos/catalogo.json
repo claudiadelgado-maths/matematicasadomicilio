@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 183,
+  "total": 184,
   "tipos": {
     "maestro": [
       {
@@ -1442,6 +1442,29 @@
           "calculadoras": true
         },
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/sesion.json"
+      },
+      {
+        "id": "raul-erik-electricidad-3",
+        "slug": "electricidad-3",
+        "tipo": "sesion",
+        "usuario": "raul-erik",
+        "titulo": "Electricidad 3",
+        "descripcion": "Explicaciones paso a paso de Joule, Kirchhoff, batería real y capacitores, con ejemplos numéricos resueltos, diagramas y veinte preguntas conceptuales.",
+        "objetivo": "Interpretar fenómenos, fórmulas, variables y relaciones eléctricas mediante diagramas y comparaciones, sin cálculos largos.",
+        "conocimientosPrevios": [
+          "Ideas básicas de corriente, voltaje y resistencia de Electricidad 1 y 2."
+        ],
+        "fecha": "2026-09-13",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/electricidad-3/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/raul/electricidad-3/sesion.json"
       },
       {
         "id": "raul-erik-electricidad-parte-2",

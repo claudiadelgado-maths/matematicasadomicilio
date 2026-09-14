@@ -511,8 +511,15 @@
             "acento": "#1f5fbd",
             "fondo": "#eef4fb"
           },
-          "ultimaActividad": "2026-09-12",
+          "ultimaActividad": "2026-09-13",
           "sesiones": [
+            {
+              "id": "raul-erik-electricidad-3",
+              "titulo": "Electricidad 3",
+              "descripcion": "Explicaciones paso a paso de Joule, Kirchhoff, batería real y capacitores, con ejemplos numéricos resueltos, diagramas y veinte preguntas conceptuales.",
+              "fecha": "2026-09-13",
+              "ruta": "/asesores/erik/raul/electricidad-3/"
+            },
             {
               "id": "raul-erik-examen-matematicas",
               "titulo": "Examen Matemáticas",

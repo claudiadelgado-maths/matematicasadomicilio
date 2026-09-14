@@ -40,3 +40,7 @@ Sesión en `repaso-parte-2/`: tres páginas secuenciales. Comienza con el labora
 ## Examen Matemáticas
 
 Nueva sesión en examen-matematicas/: examen de preguntas dinámicas mezcladas, modo normal y modo con ayuda por sustitución. Cubre sistemas, divisiones exactas y con residuo y fracciones algebraicas mediante 42 estructuras internas. Incluye validación simbólica, dominio, cuatro respuestas únicas e historial de pruebas. Recursos y documentación independientes; registro automático mediante sesion.json.
+
+## Electricidad 3
+
+Sesión conceptual en `electricidad-3/`: nueve páginas secuenciales sobre Joule, las dos leyes de Kirchhoff, batería real, capacitores, capacitancia, placas paralelas y dieléctricos, con repaso final. Incluye nueve exploraciones visuales y veinte preguntas de opción múltiple con retroalimentación inmediata. No requiere cálculos largos. Recursos propios, fórmulas KaTeX y retorno al alumno al terminar.
