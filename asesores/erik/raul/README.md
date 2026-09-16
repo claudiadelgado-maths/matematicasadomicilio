@@ -23,7 +23,7 @@ Ejecutar `npm run catalogo` y `npm run validar`. Verificar que Raúl aparece en 
 
 ## Repaso
 
-Nueva sesión publicada en `repaso/`: 25 páginas: nueve de fracciones, doce de sustitución, una de despejes sencillos y tres vistas finales de proporcionalidad directa, inversa y factorización numérica. Incluye representaciones, operaciones, sustitución de enteros, negativos, fracciones y decimales, potencias, fórmulas y retos dinámicos. Recursos independientes, fondo verde y navegación secuencial. Aparece automáticamente mediante `sesion.json`.
+Nueva sesión publicada en `repaso/`: 25 páginas: nueve de fracciones, doce de sustitución, una de despejes sencillos y tres vistas finales de proporcionalidad directa, inversa factorización fracciones algebraicas, cuadráticas, sistemas problemas verbales y división de polinomios y residuos numérica. Incluye representaciones, operaciones, sustitución de enteros, negativos, fracciones y decimales, potencias, fórmulas y retos dinámicos. Recursos independientes, fondo verde y navegación secuencial. Aparece automáticamente mediante `sesion.json`.
 
 ## Matemáticas Parte 2
 
@@ -39,8 +39,12 @@ Sesión en `repaso-parte-2/`: tres páginas secuenciales. Comienza con el labora
 
 ## Examen Matemáticas
 
-Nueva sesión en examen-matematicas/: examen de preguntas dinámicas mezcladas, modo normal y modo con ayuda por sustitución. Cubre sistemas, divisiones exactas y con residuo y fracciones algebraicas mediante 42 estructuras internas. Incluye validación simbólica, dominio, cuatro respuestas únicas e historial de pruebas. Recursos y documentación independientes; registro automático mediante sesion.json.
+Nueva sesión en examen-matematicas/: examen de preguntas dinámicas mezcladas, modo normal y modo con ayuda por sustitución. Cubre sistemas, divisiones exactas y con residuo fracciones algebraicas, cuadráticas, sistemas problemas verbales y división de polinomios y residuos mediante 42 estructuras internas. Incluye validación simbólica, dominio, cuatro respuestas únicas e historial de pruebas. Recursos y documentación independientes; registro automático mediante sesion.json.
 
 ## Electricidad 3
 
 Sesión conceptual en `electricidad-3/`: nueve páginas secuenciales sobre Joule, las dos leyes de Kirchhoff, batería real, capacitores, capacitancia, placas paralelas y dieléctricos, con repaso final. Incluye nueve exploraciones visuales y veinte preguntas de opción múltiple con retroalimentación inmediata. No requiere cálculos largos. Recursos propios, fórmulas KaTeX y retorno al alumno al terminar.
+
+## Práctica de Matemáticas
+
+Sesión en practica-de-matematicas/: cuarenta y seis niveles de examen dinámico con sumas, restas, signos, fracciones, sustitución algebraica despejes de primer grado factorización fracciones algebraicas, cuadráticas, sistemas problemas verbales y división de polinomios y residuos. Cada nivel tiene su cantidad de problemas y tiempo propios, cuatro opciones únicas, reinicio obligatorio tras error o tiempo agotado y navegación libre. Los niveles 7 y 9 tienen dos pasos por problema. Generadores, controlador de partida y presentación independientes para añadir niveles. Incluye pruebas automatizadas de generación y reglas del juego.

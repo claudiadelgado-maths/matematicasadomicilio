@@ -1,0 +1,14 @@
+{
+  "id": "raul-erik-practica-de-matematicas",
+  "slug": "practica-de-matematicas",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Práctica de Matemáticas",
+  "descripcion": "Cuarenta y seis niveles de juego con operaciones, fracciones y sustitución, despejes, factorización y fracciones algebraicas, cuadráticas, sistemas, problemas verbales y división de polinomios y residuos dinámicos, cuatro respuestas, progreso y tiempo limitado. Reinicio con problemas nuevos al fallar. Cantidad y tiempo editables por nivel.",
+  "objetivo": "Practicar operaciones, simplificación de signos fracciones y sustitución algebraica con precisión y agilidad, incluyendo reacomodo y resultado en dos pasos.",
+  "conocimientosPrevios": ["Operaciones con enteros, signos y fracciones."],
+  "fecha": "2026-09-16",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/practica-de-matematicas/",
+  "componentes": {"explicacion": false, "demostraciones": false, "ejercicios": false, "juegos": false, "calculadoras": false}
+}

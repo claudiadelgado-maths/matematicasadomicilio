@@ -511,8 +511,15 @@
             "acento": "#1f5fbd",
             "fondo": "#eef4fb"
           },
-          "ultimaActividad": "2026-09-13",
+          "ultimaActividad": "2026-09-16",
           "sesiones": [
+            {
+              "id": "raul-erik-practica-de-matematicas",
+              "titulo": "Práctica de Matemáticas",
+              "descripcion": "Cuarenta y seis niveles de juego con operaciones, fracciones y sustitución, despejes, factorización y fracciones algebraicas, cuadráticas, sistemas, problemas verbales y división de polinomios y residuos dinámicos, cuatro respuestas, progreso y tiempo limitado. Reinicio con problemas nuevos al fallar. Cantidad y tiempo editables por nivel.",
+              "fecha": "2026-09-16",
+              "ruta": "/asesores/erik/raul/practica-de-matematicas/"
+            },
             {
               "id": "raul-erik-electricidad-3",
               "titulo": "Electricidad 3",
