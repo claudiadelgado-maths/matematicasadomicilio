@@ -48,3 +48,11 @@ Sesión conceptual en `electricidad-3/`: nueve páginas secuenciales sobre Joule
 ## Práctica de Matemáticas
 
 Sesión en practica-de-matematicas/: cuarenta y seis niveles de examen dinámico con sumas, restas, signos, fracciones, sustitución algebraica despejes de primer grado factorización fracciones algebraicas, cuadráticas, sistemas problemas verbales y división de polinomios y residuos. Cada nivel tiene su cantidad de problemas y tiempo propios, cuatro opciones únicas, reinicio obligatorio tras error o tiempo agotado y navegación libre. Los niveles 7 y 9 tienen dos pasos por problema. Generadores, controlador de partida y presentación independientes para añadir niveles. Incluye pruebas automatizadas de generación y reglas del juego.
+
+## Examen de Física
+
+Sesión en `examen-de-fisica/`: guía de capacitancia, placas paralelas, tablas de materiales y conexiones en serie/paralelo. Incluye ejemplos numéricos resueltos y resumen de fórmulas; no es una evaluación.
+
+## Identidad visual
+
+Casillero y cabecera roja con nombre blanco marfil y adornos históricos SVG (templo clásico, rosa de los vientos y libro). Recursos en recursos/identidad.css e historia-*.svg. Compartidos únicamente por el salón de Erik y este índice; selector de casillero raul-erik. Fondo crema con patrón histórico. Tarjetas de sesiones y sus acentos originales conservados. Revisar ambos consumidores al editar la identidad.

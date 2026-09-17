@@ -511,8 +511,15 @@
             "acento": "#1f5fbd",
             "fondo": "#eef4fb"
           },
-          "ultimaActividad": "2026-09-16",
+          "ultimaActividad": "2026-09-17",
           "sesiones": [
+            {
+              "id": "raul-erik-examen-de-fisica",
+              "titulo": "Examen de Física",
+              "descripcion": "Guía de capacitancia, corriente alterna, magnetismo y leyes del electromagnetismo, con fórmulas y explicaciones. Incluye dos exámenes teóricos de 18 preguntas cada uno: magnetismo y corriente alterna, con respuestas explicadas.",
+              "fecha": "2026-09-17",
+              "ruta": "/asesores/erik/raul/examen-de-fisica/"
+            },
             {
               "id": "raul-erik-practica-de-matematicas",
               "titulo": "Práctica de Matemáticas",

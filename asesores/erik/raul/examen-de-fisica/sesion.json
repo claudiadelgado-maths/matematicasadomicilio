@@ -1,0 +1,22 @@
+{
+  "id": "raul-erik-examen-de-fisica",
+  "slug": "examen-de-fisica",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Examen de Física",
+  "descripcion": "Guía de capacitancia, corriente alterna, magnetismo y leyes del electromagnetismo, con fórmulas y explicaciones. Incluye dos exámenes teóricos de 18 preguntas cada uno: magnetismo y corriente alterna, con respuestas explicadas.",
+  "fecha": "2026-09-17",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/examen-de-fisica/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  },
+  "objetivo": "Comprender la capacitancia y la corriente alterna; calcular carga, voltaje, reactancias, impedancia, corriente y potencia en los ejemplos de la guía. Comprender y calcular flujo y fuerza magnéticos, campos de conductores y bobinas, y permeabilidad relativa. Interpretar las leyes de Gauss, Ampère-Maxwell, Faraday, Lenz y Lorentz de forma conceptual.",
+  "conocimientosPrevios": [
+    "Operaciones básicas y conversión de unidades."
+  ]
+}

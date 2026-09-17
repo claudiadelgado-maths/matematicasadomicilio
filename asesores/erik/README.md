@@ -13,3 +13,5 @@ Los alumnos de Erik viven en subcarpetas de este salón y se relacionan mediante
 Para actualizar contenido, modifica `maestro.json`, ejecuta `npm run catalogo` y después `npm run validar`.
 
 El casillero de Alejandrina utiliza su identidad floral desde `alejandrina/recursos/identidad.css`, compartida con la cabecera de su espacio. El selector es exclusivo de su ID. Al modificar ese recurso, revisar ambas páginas y comprobar que los otros casilleros mantienen su estilo.
+
+El casillero de Raúl utiliza raul/recursos/identidad.css: rojo fuego, texto marfil y motivos históricos, compartidos con su cabecera personal. Selector exclusivo raul-erik; comprobar salón e índice del alumno al modificarlo.
