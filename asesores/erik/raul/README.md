@@ -53,6 +53,10 @@ Sesión en practica-de-matematicas/: cuarenta y seis niveles de examen dinámico
 
 Sesión en `examen-de-fisica/`: guía de capacitancia, placas paralelas, tablas de materiales y conexiones en serie/paralelo. Incluye ejemplos numéricos resueltos y resumen de fórmulas; no es una evaluación.
 
+## Repaso en física
+
+`repaso-en-fisica/`: sesión vanilla visible, en preparación y sin contenido educativo. Su carpeta completa se entrega al profesor y se reemplaza conservando su ubicación; el contrato está en su README.
+
 ## Identidad visual
 
 Casillero y cabecera roja con nombre blanco marfil y adornos históricos SVG (templo clásico, rosa de los vientos y libro). Recursos en recursos/identidad.css e historia-*.svg. Compartidos únicamente por el salón de Erik y este índice; selector de casillero raul-erik. Fondo crema con patrón histórico. Tarjetas de sesiones y sus acentos originales conservados. Revisar ambos consumidores al editar la identidad.

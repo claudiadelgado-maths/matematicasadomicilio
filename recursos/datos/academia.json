@@ -502,6 +502,132 @@
       ],
       "alumnos": [
         {
+          "id": "kenia-erik",
+          "nombreVisible": "Kenia",
+          "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
+          "ruta": "/asesores/erik/kenia/",
+          "personalizacion": {
+            "simbolo": "K",
+            "acento": "#7a3f82",
+            "fondo": "#f7eef8"
+          },
+          "ultimaActividad": "2026-09-23",
+          "sesiones": [
+            {
+              "id": "funciones-trigonometricas-kenia-erik",
+              "titulo": "Funciones trigonométricas",
+              "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
+              "fecha": "2026-09-23",
+              "ruta": "/asesores/erik/kenia/funciones-trigonometricas/"
+            },
+            {
+              "id": "despejes-lineales-kenia",
+              "titulo": "Despejes lineales",
+              "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
+              "fecha": "2026-09-22",
+              "ruta": "/asesores/erik/kenia/despejes-lineales/"
+            }
+          ]
+        },
+        {
+          "id": "alejandrina",
+          "nombreVisible": "Alejandrina",
+          "descripcion": "Espacio de sesiones y recursos personalizados.",
+          "ruta": "/asesores/erik/alejandrina/",
+          "personalizacion": {
+            "simbolo": "A",
+            "acento": "#15784e",
+            "fondo": "#302044"
+          },
+          "ultimaActividad": "2026-09-22",
+          "sesiones": [
+            {
+              "id": "series-geometricas-alejandrina",
+              "titulo": "Series geométricas",
+              "descripcion": "Sesión en preparación.",
+              "fecha": "2026-09-22",
+              "ruta": "/asesores/erik/alejandrina/series-geometricas/"
+            },
+            {
+              "id": "alejandrina-medios-y-sumas",
+              "titulo": "Medios y sumas aritméticas",
+              "descripcion": "Medios aritméticos y sumas: ejemplos breves, práctica paso a paso y dos juegos independientes.",
+              "fecha": "2026-09-10",
+              "ruta": "/asesores/erik/alejandrina/medios-y-sumas/"
+            },
+            {
+              "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
+              "titulo": "Fórmulas de sucesiones aritméticas",
+              "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
+              "fecha": "2026-08-28",
+              "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/"
+            },
+            {
+              "id": "sucesiones-aritmeticas-sesion-1",
+              "titulo": "Elementos de una sucesión aritmética",
+              "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
+              "fecha": "2026-08-25",
+              "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/"
+            },
+            {
+              "id": "multiplicacion-de-binomios",
+              "titulo": "Multiplicación de binomios",
+              "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
+              "fecha": "2026-08-21",
+              "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/"
+            },
+            {
+              "id": "diagramas-de-arboles",
+              "titulo": "Diagramas de árboles",
+              "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
+              "fecha": "2026-07-29",
+              "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/"
+            },
+            {
+              "id": "medidas-de-posicion",
+              "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
+              "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
+              "fecha": "2026-07-29",
+              "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/"
+            },
+            {
+              "id": "datos-no-agrupados",
+              "titulo": "Datos no agrupados",
+              "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
+              "fecha": "2026-07-24",
+              "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/"
+            }
+          ]
+        },
+        {
+          "id": "andres",
+          "nombreVisible": "Andrés",
+          "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+          "ruta": "/asesores/erik/andres/",
+          "personalizacion": {
+            "simbolo": "A",
+            "acento": "#b84d18",
+            "fondo": "#fff3ec"
+          },
+          "ultimaActividad": "2026-09-22",
+          "sesiones": [
+            {
+              "id": "teorema-de-tales-andres",
+              "titulo": "Teorema de Tales",
+              "descripcion": "Sesión interactiva sobre proporcionalidad en configuraciones con rectas paralelas.",
+              "fecha": "2026-09-22",
+              "ruta": "/asesores/erik/andres/teorema-de-tales/"
+            },
+            {
+              "id": "porcentajes-andres",
+              "titulo": "Porcentajes",
+              "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
+              "fecha": "2026-08-10",
+              "ruta": "/asesores/erik/andres/porcentajes/"
+            }
+          ]
+        },
+        {
           "id": "raul-erik",
           "nombreVisible": "Raúl",
           "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
@@ -511,8 +637,15 @@
             "acento": "#1f5fbd",
             "fondo": "#eef4fb"
           },
-          "ultimaActividad": "2026-09-17",
+          "ultimaActividad": "2026-09-22",
           "sesiones": [
+            {
+              "id": "repaso-en-fisica-raul-erik",
+              "titulo": "Repaso en física",
+              "descripcion": "Sesión de repaso organizada por actividades. Incluye prefijos del SI, conversiones, operaciones en notación científica, Ley de Coulomb, electricidad básica, Ley de Ohm, potencia eléctrica, efecto Joule, leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia. Incluye práctica personalizada de errores, variantes numéricas y un laboratorio interactivo de circuitos.",
+              "fecha": "2026-09-22",
+              "ruta": "/asesores/erik/raul/repaso-en-fisica/"
+            },
             {
               "id": "raul-erik-examen-de-fisica",
               "titulo": "Examen de Física",
@@ -603,111 +736,6 @@
               "descripcion": "Presentación, historia matemática y plan de estudio; después, un recorrido guiado de las bases al cálculo.",
               "fecha": "2026-09-11",
               "ruta": "/asesores/erik/jose-perez/introduccion/"
-            }
-          ]
-        },
-        {
-          "id": "alejandrina",
-          "nombreVisible": "Alejandrina",
-          "descripcion": "Espacio de sesiones y recursos personalizados.",
-          "ruta": "/asesores/erik/alejandrina/",
-          "personalizacion": {
-            "simbolo": "A",
-            "acento": "#15784e",
-            "fondo": "#302044"
-          },
-          "ultimaActividad": "2026-09-10",
-          "sesiones": [
-            {
-              "id": "alejandrina-medios-y-sumas",
-              "titulo": "Medios y sumas aritméticas",
-              "descripcion": "Medios aritméticos y sumas: ejemplos breves, práctica paso a paso y dos juegos independientes.",
-              "fecha": "2026-09-10",
-              "ruta": "/asesores/erik/alejandrina/medios-y-sumas/"
-            },
-            {
-              "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
-              "titulo": "Fórmulas de sucesiones aritméticas",
-              "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
-              "fecha": "2026-08-28",
-              "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/"
-            },
-            {
-              "id": "sucesiones-aritmeticas-sesion-1",
-              "titulo": "Elementos de una sucesión aritmética",
-              "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
-              "fecha": "2026-08-25",
-              "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/"
-            },
-            {
-              "id": "multiplicacion-de-binomios",
-              "titulo": "Multiplicación de binomios",
-              "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
-              "fecha": "2026-08-21",
-              "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/"
-            },
-            {
-              "id": "diagramas-de-arboles",
-              "titulo": "Diagramas de árboles",
-              "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
-              "fecha": "2026-07-29",
-              "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/"
-            },
-            {
-              "id": "medidas-de-posicion",
-              "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
-              "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
-              "fecha": "2026-07-29",
-              "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/"
-            },
-            {
-              "id": "datos-no-agrupados",
-              "titulo": "Datos no agrupados",
-              "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
-              "fecha": "2026-07-24",
-              "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/"
-            }
-          ]
-        },
-        {
-          "id": "kenia-erik",
-          "nombreVisible": "Kenia",
-          "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
-          "ruta": "/asesores/erik/kenia/",
-          "personalizacion": {
-            "simbolo": "K",
-            "acento": "#7a3f82",
-            "fondo": "#f7eef8"
-          },
-          "ultimaActividad": "2026-08-19",
-          "sesiones": [
-            {
-              "id": "despejes-lineales-kenia",
-              "titulo": "Despejes lineales",
-              "descripcion": "Sesión de álgebra para aislar x mediante operaciones equivalentes en ambos lados de una ecuación lineal.",
-              "fecha": "2026-08-19",
-              "ruta": "/asesores/erik/kenia/despejes-lineales/"
-            }
-          ]
-        },
-        {
-          "id": "andres",
-          "nombreVisible": "Andrés",
-          "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
-          "ruta": "/asesores/erik/andres/",
-          "personalizacion": {
-            "simbolo": "A",
-            "acento": "#b84d18",
-            "fondo": "#fff3ec"
-          },
-          "ultimaActividad": "2026-08-10",
-          "sesiones": [
-            {
-              "id": "porcentajes-andres",
-              "titulo": "Porcentajes",
-              "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
-              "fecha": "2026-08-10",
-              "ruta": "/asesores/erik/andres/porcentajes/"
             }
           ]
         },

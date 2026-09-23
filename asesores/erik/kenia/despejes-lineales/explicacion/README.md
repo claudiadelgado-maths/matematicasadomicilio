@@ -1,15 +1,19 @@
-# Conservar el equilibrio
+# Despejes, paso a paso
 
-Explicación de la sesión **Despejes lineales** de Kenia.
+Nueve páginas con una idea central, una actividad breve y navegación inferior: anterior, inicio y continuar. La última enlaza a la práctica existente.
 
-- Utiliza KaTeX para presentar ecuaciones y fracciones con notación matemática estable.
-- Explica qué representa una ecuación, cómo identificar `A`, `B` y `C`, y qué significa despejar.
-- Deriva el procedimiento general para `Ax + B = C` mediante operaciones aplicadas a ambos lados.
-- Desarrolla ejemplos completos con enteros, coeficientes negativos y fracciones.
-- Verifica cada resultado sustituyendo el valor obtenido en la ecuación original.
-- Distingue los casos especiales cuando `A = 0` y reúne errores frecuentes y una lista final de comprobación.
-- No utiliza la idea informal de “pasar” o “mover” términos.
+- 1. `index.html`: La igualdad es un equilibrio.
+- 2. `deshacer-suma/`: Deshaz una suma.
+- 3. `deshacer-resta/`: Deshaz una resta.
+- 4. `deshacer-multiplicacion/`: Reparte en partes iguales.
+- 5. `dos-operaciones/`: Deshaz la última operación primero.
+- 6. `coeficiente-negativo/`: El signo también cuenta.
+- 7. `fracciones/`: Deshaz una multiplicación por una fracción.
+- 8. `comprobar/`: Comprueba en la ecuación original.
+- 9. `casos-especiales/`: ¿Y si desaparece la incógnita?.
 
-La hoja `estilos.css` pertenece únicamente a esta explicación y evita que las expresiones matemáticas se partan o desborden en pantallas pequeñas.
+Cada entrada conserva su estilos.css. recorrido.css y recorrido.js se comparten dentro de esta explicación; la portada también los usa. KaTeX 0.18.1 se conserva desde el CDN existente; si no carga, queda el texto LaTeX legible. No hay almacenamiento, registro de notas ni bloqueo del botón continuar.
 
-Ruta pública: `/erik/kenia/despejes-lineales/explicacion/`.
+Los ejemplos son HTML estático: sin JavaScript se ven todos los pasos. Con JavaScript se revelan uno a uno, con reinicio y avisos accesibles. Las preguntas permiten reintentar y explican el error. La balanza usa x + 3 = 7 y la comprobación usa 2x + 3 = 11.
+
+Conservar la misma operación en ambos lados, los signos y la condición de divisor distinto de cero. Pruebas: explorar x=0,4,8; revelar y reiniciar cada ejemplo; contestar bien y mal; comprobar 3 y 4; abrir todos los enlaces; revisar teclado, consola y 360–1440 px.

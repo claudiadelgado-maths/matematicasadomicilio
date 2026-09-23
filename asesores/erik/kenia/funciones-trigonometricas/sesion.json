@@ -1,0 +1,24 @@
+{
+  "id": "funciones-trigonometricas-kenia-erik",
+  "slug": "funciones-trigonometricas",
+  "tipo": "sesion",
+  "usuario": "kenia-erik",
+  "titulo": "Funciones trigonométricas",
+  "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
+  "objetivo": "Identificar catetos e hipotenusa, distinguir lados respecto de un ángulo agudo y construir las seis razones trigonométricas.",
+  "conocimientosPrevios": [
+    "fracciones",
+    "ángulo recto",
+    "división"
+  ],
+  "fecha": "2026-09-23",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenia/funciones-trigonometricas/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": false
+  }
+}

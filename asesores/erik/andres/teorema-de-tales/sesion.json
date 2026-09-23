@@ -1,0 +1,24 @@
+{
+  "id": "teorema-de-tales-andres",
+  "slug": "teorema-de-tales",
+  "tipo": "sesion",
+  "usuario": "andres",
+  "titulo": "Teorema de Tales",
+  "descripcion": "Sesión interactiva sobre proporcionalidad en configuraciones con rectas paralelas.",
+  "objetivo": "Identificar segmentos correspondientes y aplicar el Teorema de Tales para calcular longitudes desconocidas.",
+  "conocimientosPrevios": [
+    "Razones y proporciones",
+    "Despeje de ecuaciones sencillas",
+    "Rectas paralelas"
+  ],
+  "fecha": "2026-09-22",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/andres/teorema-de-tales/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

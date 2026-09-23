@@ -39,6 +39,10 @@ El alumno aparecerá en el salón correcto. Todos los casilleros usan las mismas
 
 ## Agregar o actualizar una sesión
 
+Para una **sesión vanilla visible**, usa `npm run crear-sesion -- "Asesor" "Alumno" "Título"`. Crea la carpeta con su contrato de entrega y genera los índices automáticamente. Consulta [Crear una sesión](creacion-de-sesiones.md). Una vez creada, sustituir su carpeta en la misma ruta no requiere registro adicional ni edición manual de archivos externos. Regenera catálogo y valida cuando incorpores una versión; si solo cambia el contenido, la página ya sirve los archivos nuevos directamente.
+
+Para el flujo manual de contenido inicialmente oculto:
+
 1. Copia `/plantillas/alumno/nueva-sesion/` a `/asesores/[asesor]/[alumno]/[slug]/`, o sustituye una sesión existente conservando su ruta.
 2. Completa `sesion.json` con un ID globalmente único, un `slug` para la URL, el ID del alumno, objetivo y componentes reales.
 3. Nosotros asignamos `fecha` en formato `AAAA-MM-DD` al incorporar o actualizar la sesión.

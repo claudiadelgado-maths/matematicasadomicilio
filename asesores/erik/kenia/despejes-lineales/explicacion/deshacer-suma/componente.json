@@ -1,0 +1,10 @@
+{
+  "id": "explicacion-despejes-kenia-deshacer-suma",
+  "tipo": "explicacion",
+  "sesion": "despejes-lineales-kenia",
+  "usuario": "kenia-erik",
+  "titulo": "Deshaz una suma",
+  "descripcion": "Para quitar un +3, resta 3 a los dos lados.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/deshacer-suma/"
+}

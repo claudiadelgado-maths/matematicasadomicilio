@@ -1,0 +1,82 @@
+/* Diseño exclusivo del recorrido; también se utiliza en su portada. */
+.despeje-course { --accent:#713a7a; --ink:#302334; --wash:#f4edf5; background:#fcfaf7; color:var(--ink); padding-bottom:3rem; }
+.despeje-course .course-wrap { width:min(1080px,calc(100% - 2.5rem)); margin:auto; }
+.despeje-course .course-breadcrumb { display:flex; flex-wrap:wrap; gap:.65rem; padding:1.4rem 0; font-size:.85rem; }
+.despeje-course .mini { color:var(--accent); font-size:.73rem; letter-spacing:.13em; font-weight:800; text-transform:uppercase; }
+.despeje-course .course-title { padding:1.4rem 0 .7rem; }
+.despeje-course h1 { margin:.6rem 0 1rem; max-width:900px; color:var(--ink); font-size:clamp(2rem,4.7vw,3.7rem); line-height:1.1; letter-spacing:-.045em; overflow-wrap:break-word; }
+.despeje-course h2 { font-size:clamp(1.5rem,3vw,2rem); line-height:1.2; margin:0 0 .65rem; }
+.despeje-course .subtitle { max-width:650px; margin:.5rem 0 1rem; font-size:1.14rem; color:#625369; }
+.despeje-course .one-idea { max-width:780px; margin:.5rem 0 1.6rem; }
+.despeje-course .course-intro { display:grid; grid-template-columns:1.3fr 1fr; align-items:center; gap:3rem; padding:2.3rem 0 3rem; }
+.despeje-course .course-intro h1 { font-size:clamp(2.5rem,5.6vw,4.5rem); }
+.despeje-course .intro-equation { padding:2rem 1rem; border:1px solid #d9c4de; border-radius:18px; background:var(--wash); text-align:center; transform:rotate(-2deg); }
+.despeje-course .intro-equation .math { display:block; font-size:clamp(1.3rem,2.5vw,1.8rem); }
+.despeje-course .intro-arrow { display:block; font-size:2rem; color:var(--accent); }
+.despeje-course .intro-equation p { margin:1rem 0 0; font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; }
+.despeje-course .course-button,.despeje-course button { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:.75rem 1rem; border:1px solid var(--accent); border-radius:8px; background:var(--accent); color:white; font:inherit; font-weight:700; text-decoration:none; cursor:pointer; }
+.despeje-course button:hover,.despeje-course .course-button:hover { background:#51265a; }
+.despeje-course :focus-visible { outline:3px solid #13609c; outline-offset:4px; }
+.despeje-course .course-menu { display:grid; grid-template-columns:1fr 1fr; gap:0 2rem; list-style:none; padding:0; margin:1.5rem 0 0; }
+.despeje-course .course-menu a { display:flex; gap:1rem; align-items:center; min-height:96px; padding:1rem .4rem; border-top:1px solid #ddd2df; text-decoration:none; font-weight:700; }
+.despeje-course .course-menu a:hover { background:var(--wash); }
+.despeje-course .course-menu small { display:block; margin-top:.25rem; font-weight:400; font-size:.82rem; color:#67576b; }
+.despeje-course .step-number { color:var(--accent); font-size:1.4rem; font-weight:400; }
+.despeje-course .course-menu a>span:last-child { margin-left:auto; }
+.despeje-course .resource-section { margin-top:3rem; padding-top:1.8rem; border-top:2px solid var(--ink); }
+.despeje-course .resource-links { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.despeje-course .resource-links a { padding:1.2rem; border:1px solid #ddd2df; border-radius:10px; text-decoration:none; background:white; }
+.despeje-course .resource-links span { display:block; font-size:.85rem; }
+.despeje-course .step-map { display:flex; gap:.45rem; padding:.3rem 0; flex-wrap:wrap; }
+.despeje-course .step-map a { display:grid; place-items:center; width:44px; height:44px; border:1px solid #d5c6da; border-radius:50%; text-decoration:none; font-size:.75rem; }
+.despeje-course .step-map a[aria-current] { background:var(--accent); color:white; border-color:var(--accent); }
+.despeje-course .lesson-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:1.6rem; align-items:start; }
+.despeje-course .experiment { min-width:0; border:1px solid #d8c6de; border-radius:16px; background:white; padding:clamp(1rem,3vw,1.8rem); }
+.despeje-course .experiment>.math { display:block; font-size:1.7rem; text-align:center; }
+.despeje-course .equation-steps { margin:0; padding:0; list-style:none; }
+.despeje-course .equation-steps li { border-bottom:1px solid #e7dce9; padding:.4rem 0 1rem; }
+.despeje-course .equation-steps p { color:#625369; font-size:.87rem; margin:.4rem 0 .7rem; }
+.despeje-course .equation-steps .math { display:block; text-align:center; font-size:clamp(1.1rem,2.2vw,1.65rem); }
+.despeje-course .math { overflow-wrap:normal; }
+.despeje-course .experiment .math { max-width:100%; overflow-x:auto; padding:.3rem 0; }
+.despeje-course .walk-actions { display:flex; flex-wrap:wrap; gap:.7rem; margin-top:1rem; }
+.despeje-course button.quiet { background:transparent; color:var(--accent); font-size:.82rem; }
+.despeje-course button:disabled { opacity:.6; cursor:default; }
+.despeje-course .try-panel { padding:.8rem 0; min-width:0; }
+.despeje-course .check { border:0; margin:0; padding:0; min-width:0; }
+.despeje-course legend { font-size:1.12rem; font-weight:750; margin-bottom:1rem; }
+.despeje-course .choices { display:grid; gap:.65rem; }
+.despeje-course .choices button { justify-content:flex-start; background:white; color:var(--ink); border:1px solid #d8c6de; text-align:left; font-size:.95rem; }
+.despeje-course .choices button[aria-pressed=true] { border:2px solid var(--accent); background:var(--wash); }
+.despeje-course .choices .katex { font-size:1em; }
+.despeje-course .feedback { min-height:1.7rem; color:#625369; font-size:.9rem; margin:.9rem 0 0; }
+.despeje-course .feedback[data-result=correct] { color:#17613f; }
+.despeje-course .feedback[data-result=incorrect] { color:#922936; }
+.despeje-course .takeaway { padding:1rem; margin-top:1.3rem; border-left:3px solid var(--accent); background:var(--wash); font-size:.9rem; }
+.despeje-course .lesson-nav { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; border-top:1px solid #d8c6de; margin-top:2rem; padding-top:1.4rem; }
+.despeje-course .lesson-nav>a { min-height:44px; display:inline-flex; align-items:center; font-size:.87rem; }
+.despeje-course .balance { position:relative; height:145px; margin:1rem auto; max-width:360px; }
+.despeje-course .beam { position:absolute; top:30px; width:86%; left:7%; height:5px; border-radius:5px; background:var(--accent); transform:rotate(var(--tilt,-12deg)); transition:transform .25s; }
+.despeje-course .stand { position:absolute; height:90px; width:5px; background:var(--accent); left:50%; top:30px; }
+.despeje-course .stand::after { content:''; position:absolute; bottom:0; width:90px; left:-42px; height:5px; background:var(--accent); }
+.despeje-course .pan { position:absolute; top:48px; display:grid; text-align:center; width:38%; background:var(--wash); border:1px solid #dbc6e1; border-radius:0 0 18px 18px; padding:.35rem; }
+.despeje-course .pan.left { left:0; transform:translateY(var(--left-offset,-15px)); }
+.despeje-course .pan.right { right:0; transform:translateY(var(--right-offset,15px)); }
+.despeje-course .pan span { font-size:.72rem; }
+.despeje-course .pan strong { font-size:1.5rem; }
+.despeje-course .slider-label { display:block; font-weight:700; }
+.despeje-course input[type=range] { width:100%; min-height:44px; accent-color:var(--accent); }
+.despeje-course form { display:flex; flex-wrap:wrap; gap:.7rem; margin:1.3rem 0; align-items:center; }
+.despeje-course input[type=number] { width:100px; min-height:46px; border:1px solid var(--accent); border-radius:6px; padding:.5rem; font:inherit; }
+.despeje-course .case+.case { border-top:1px solid #d8c6de; padding-top:1rem; }
+.despeje-course .case>.math { display:block; text-align:center; font-size:1.6rem; }
+.despeje-course [hidden] { display:none !important; /* HTML hidden también vence a flex/grid locales. */ }
+@media(max-width:720px) {
+  .despeje-course .course-intro,.despeje-course .lesson-grid,.despeje-course .course-menu,.despeje-course .resource-links { grid-template-columns:1fr; }
+  .despeje-course .course-intro { gap:1.5rem; }
+  .despeje-course .intro-equation { max-width:480px; transform:none; }
+  .despeje-course .step-map { gap:.25rem; }
+  .despeje-course .step-map a { width:44px; height:44px; }
+  .despeje-course .lesson-nav .course-button { width:100%; }
+}
+@media(prefers-reduced-motion:reduce) { .despeje-course .beam { transition:none; } }

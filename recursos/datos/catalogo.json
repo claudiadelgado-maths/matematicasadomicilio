@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 186,
+  "total": 210,
   "tipos": {
     "maestro": [
       {
@@ -1347,6 +1347,27 @@
         "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/sesion.json"
       },
       {
+        "id": "series-geometricas-alejandrina",
+        "slug": "series-geometricas",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Series geométricas",
+        "descripcion": "Sesión en preparación.",
+        "objetivo": "Pendiente de desarrollar por el profesor.",
+        "conocimientosPrevios": [],
+        "fecha": "2026-09-22",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/sesion.json"
+      },
+      {
         "id": "sucesiones-aritmeticas-sesion-1",
         "slug": "sucesiones-aritmeticas",
         "tipo": "sesion",
@@ -1397,6 +1418,31 @@
         "archivoMetadatos": "asesores/erik/andres/porcentajes/sesion.json"
       },
       {
+        "id": "teorema-de-tales-andres",
+        "slug": "teorema-de-tales",
+        "tipo": "sesion",
+        "usuario": "andres",
+        "titulo": "Teorema de Tales",
+        "descripcion": "Sesión interactiva sobre proporcionalidad en configuraciones con rectas paralelas.",
+        "objetivo": "Identificar segmentos correspondientes y aplicar el Teorema de Tales para calcular longitudes desconocidas.",
+        "conocimientosPrevios": [
+          "Razones y proporciones",
+          "Despeje de ecuaciones sencillas",
+          "Rectas paralelas"
+        ],
+        "fecha": "2026-09-22",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/andres/teorema-de-tales/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/andres/teorema-de-tales/sesion.json"
+      },
+      {
         "id": "erik-jose-perez-introduccion",
         "slug": "introduccion",
         "tipo": "sesion",
@@ -1424,14 +1470,14 @@
         "tipo": "sesion",
         "usuario": "kenia-erik",
         "titulo": "Despejes lineales",
-        "descripcion": "Sesión de álgebra para aislar x mediante operaciones equivalentes en ambos lados de una ecuación lineal.",
+        "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
         "objetivo": "Resolver ecuaciones de la forma Ax + B = C justificando cada operación y extendiendo el procedimiento a coeficientes racionales sencillos.",
         "conocimientosPrevios": [
           "operaciones con enteros",
           "igualdad",
           "fracciones básicas"
         ],
-        "fecha": "2026-08-19",
+        "fecha": "2026-09-22",
         "estado": "publicado",
         "ruta": "/asesores/erik/kenia/despejes-lineales/",
         "componentes": {
@@ -1442,6 +1488,31 @@
           "calculadoras": true
         },
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/sesion.json"
+      },
+      {
+        "id": "funciones-trigonometricas-kenia-erik",
+        "slug": "funciones-trigonometricas",
+        "tipo": "sesion",
+        "usuario": "kenia-erik",
+        "titulo": "Funciones trigonométricas",
+        "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
+        "objetivo": "Identificar catetos e hipotenusa, distinguir lados respecto de un ángulo agudo y construir las seis razones trigonométricas.",
+        "conocimientosPrevios": [
+          "fracciones",
+          "ángulo recto",
+          "división"
+        ],
+        "fecha": "2026-09-23",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/sesion.json"
       },
       {
         "id": "raul-erik-electricidad-3",
@@ -1628,6 +1699,34 @@
           "calculadoras": false
         },
         "archivoMetadatos": "asesores/erik/raul/practica-de-matematicas/sesion.json"
+      },
+      {
+        "id": "repaso-en-fisica-raul-erik",
+        "slug": "repaso-en-fisica",
+        "tipo": "sesion",
+        "usuario": "raul-erik",
+        "titulo": "Repaso en física",
+        "descripcion": "Sesión de repaso organizada por actividades. Incluye prefijos del SI, conversiones, operaciones en notación científica, Ley de Coulomb, electricidad básica, Ley de Ohm, potencia eléctrica, efecto Joule, leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia. Incluye práctica personalizada de errores, variantes numéricas y un laboratorio interactivo de circuitos.",
+        "objetivo": "Repasar contenidos ya vistos mediante actividades breves: prefijos del SI, conversiones, operaciones en notación científica, Ley de Coulomb, corriente, voltaje, resistencia, resistividad, Ley de Ohm, potencia eléctrica, efecto Joule, leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia. Reforzar errores y relacionar las fórmulas con cambios observables en circuitos ideales.",
+        "conocimientosPrevios": [
+          "Prefijos del Sistema Internacional vistos previamente",
+          "Notación científica, conversiones y leyes de exponentes vistas previamente",
+          "Conceptos básicos de carga eléctrica y Ley de Coulomb vistos previamente",
+          "Conceptos introductorios de corriente, voltaje, resistencia y resistividad vistos previamente",
+          "Ley de Ohm, potencia eléctrica y efecto Joule vistos previamente",
+          "Leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia vistas previamente"
+        ],
+        "fecha": "2026-09-22",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso-en-fisica/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/raul/repaso-en-fisica/sesion.json"
       },
       {
         "id": "raul-erik-repaso-parte-2",
@@ -2215,6 +2314,28 @@
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/ejercicio.json"
       },
       {
+        "id": "trigonometria-kenia-identifica-lados",
+        "tipo": "ejercicio",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Reconoce los tres lados",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/ejercicios/identifica-lados/",
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/ejercicios/identifica-lados/ejercicio.json"
+      },
+      {
+        "id": "trigonometria-kenia-integrador",
+        "tipo": "ejercicio",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Construye las seis razones",
+        "descripcion": "Construir las seis razones en doce casillas; entrega correcta solo con doce aciertos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/ejercicios/integrador/",
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/ejercicios/integrador/ejercicio.json"
+      },
+      {
         "id": "raul-erik-electricidad-parte-2-conexiones",
         "tipo": "ejercicio",
         "sesion": "raul-erik-electricidad-parte-2",
@@ -2597,6 +2718,17 @@
         "ruta": "/asesores/erik/raul/matematicas-parte-2/ejercicios/tcp/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/raul/matematicas-parte-2/ejercicios/tcp/ejercicio.json"
+      },
+      {
+        "id": "actividad-8-practica-personalizada-raul-erik",
+        "tipo": "ejercicio",
+        "sesion": "repaso-en-fisica-raul-erik",
+        "usuario": "raul-erik",
+        "titulo": "Práctica personalizada",
+        "descripcion": "Repaso de errores y ejercicios numéricos nuevos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso-en-fisica/actividad-8-practica-personalizada/",
+        "archivoMetadatos": "asesores/erik/raul/repaso-en-fisica/actividad-8-practica-personalizada/componente.json"
       },
       {
         "id": "raul-erik-repaso-construir-sustitucion",
@@ -2987,11 +3119,176 @@
         "tipo": "explicacion",
         "sesion": "despejes-lineales-kenia",
         "usuario": "kenia-erik",
-        "titulo": "Conservar el equilibrio",
-        "descripcion": "Explicación detallada y visual para resolver Ax + B = C mediante operaciones equivalentes, con enteros, signos, fracciones, comprobaciones y casos especiales.",
+        "titulo": "La igualdad es un equilibrio",
+        "descripcion": "Primer paso de un recorrido de nueve páginas: explora una igualdad con una balanza interactiva.",
         "estado": "publicado",
         "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/",
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/componente.json"
+      },
+      {
+        "id": "explicacion-despejes-kenia-casos-especiales",
+        "tipo": "explicacion",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "¿Y si desaparece la incógnita?",
+        "descripcion": "Cuando A = 0, no dividas entre cero.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/casos-especiales/",
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/casos-especiales/componente.json"
+      },
+      {
+        "id": "explicacion-despejes-kenia-coeficiente-negativo",
+        "tipo": "explicacion",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "El signo también cuenta",
+        "descripcion": "Divide entre el coeficiente completo, incluido su signo.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/coeficiente-negativo/",
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/coeficiente-negativo/componente.json"
+      },
+      {
+        "id": "explicacion-despejes-kenia-comprobar",
+        "tipo": "explicacion",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Comprueba en la ecuación original",
+        "descripcion": "Sustituye el resultado y compara ambos lados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/comprobar/",
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/comprobar/componente.json"
+      },
+      {
+        "id": "explicacion-despejes-kenia-deshacer-multiplicacion",
+        "tipo": "explicacion",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Reparte en partes iguales",
+        "descripcion": "Si tres veces x vale 12, cada x vale 4.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/deshacer-multiplicacion/",
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/deshacer-multiplicacion/componente.json"
+      },
+      {
+        "id": "explicacion-despejes-kenia-deshacer-resta",
+        "tipo": "explicacion",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Deshaz una resta",
+        "descripcion": "Para quitar un −4, suma 4 a los dos lados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/deshacer-resta/",
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/deshacer-resta/componente.json"
+      },
+      {
+        "id": "explicacion-despejes-kenia-deshacer-suma",
+        "tipo": "explicacion",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Deshaz una suma",
+        "descripcion": "Para quitar un +3, resta 3 a los dos lados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/deshacer-suma/",
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/deshacer-suma/componente.json"
+      },
+      {
+        "id": "explicacion-despejes-kenia-dos-operaciones",
+        "tipo": "explicacion",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Deshaz la última operación primero",
+        "descripcion": "Primero quita la suma; después, la multiplicación.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/dos-operaciones/",
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/dos-operaciones/componente.json"
+      },
+      {
+        "id": "explicacion-despejes-kenia-fracciones",
+        "tipo": "explicacion",
+        "sesion": "despejes-lineales-kenia",
+        "usuario": "kenia-erik",
+        "titulo": "Deshaz una multiplicación por una fracción",
+        "descripcion": "Multiplica por su recíproco para obtener 1.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/fracciones/",
+        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/fracciones/componente.json"
+      },
+      {
+        "id": "trigonometria-kenia-angulo-de-referencia",
+        "tipo": "explicacion",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "El ángulo es tu referencia",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/angulo-de-referencia/",
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/angulo-de-referencia/componente.json"
+      },
+      {
+        "id": "trigonometria-kenia-cosecante",
+        "tipo": "explicacion",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Cosecante",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/cosecante/",
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/cosecante/componente.json"
+      },
+      {
+        "id": "trigonometria-kenia-coseno",
+        "tipo": "explicacion",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Coseno",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/coseno/",
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/coseno/componente.json"
+      },
+      {
+        "id": "trigonometria-kenia-cotangente",
+        "tipo": "explicacion",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Cotangente",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/cotangente/",
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/cotangente/componente.json"
+      },
+      {
+        "id": "trigonometria-kenia-secante",
+        "tipo": "explicacion",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Secante",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/secante/",
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/secante/componente.json"
+      },
+      {
+        "id": "trigonometria-kenia-seno",
+        "tipo": "explicacion",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Seno",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/seno/",
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/seno/componente.json"
+      },
+      {
+        "id": "trigonometria-kenia-tangente",
+        "tipo": "explicacion",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Tangente",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/tangente/",
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/tangente/componente.json"
       },
       {
         "id": "explicacion-ley-de-los-signos",
@@ -3136,6 +3433,18 @@
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/juegos/brigada-del-despeje/juego.json"
       },
       {
+        "id": "consultorio-trigonometrico-kenia-erik",
+        "tipo": "juego",
+        "sesion": "funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Consultorio Trigonométrico",
+        "descripcion": "Ayuda a 18 personajes: seis casos por nivel, con emojis, números y resultados decimales. Desbloqueo progresivo.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/juegos/consultorio-trigonometrico/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/juegos/consultorio-trigonometrico/juego.json"
+      },
+      {
         "id": "guardia-de-los-signos",
         "tipo": "juego",
         "tema": "ley-de-los-signos",
@@ -3181,6 +3490,17 @@
       }
     ],
     "demostracion": [
+      {
+        "id": "actividad-9-laboratorio-circuitos-raul-erik",
+        "tipo": "demostracion",
+        "sesion": "repaso-en-fisica-raul-erik",
+        "usuario": "raul-erik",
+        "titulo": "Laboratorio de circuitos",
+        "descripcion": "Exploración de circuitos ideales con controles y predicciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso-en-fisica/actividad-9-laboratorio-circuitos/",
+        "archivoMetadatos": "asesores/erik/raul/repaso-en-fisica/actividad-9-laboratorio-circuitos/componente.json"
+      },
       {
         "id": "raul-erik-repaso-factorizacion",
         "tipo": "demostracion",

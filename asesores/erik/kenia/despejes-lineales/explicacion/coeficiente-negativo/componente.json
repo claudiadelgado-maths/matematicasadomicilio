@@ -1,0 +1,10 @@
+{
+  "id": "explicacion-despejes-kenia-coeficiente-negativo",
+  "tipo": "explicacion",
+  "sesion": "despejes-lineales-kenia",
+  "usuario": "kenia-erik",
+  "titulo": "El signo también cuenta",
+  "descripcion": "Divide entre el coeficiente completo, incluido su signo.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/coeficiente-negativo/"
+}

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actividad 2 · Conversiones | Repaso en física</title>
+  <meta name="description" content="Actividad de repaso para convertir entre notación científica, forma decimal y prefijos del SI.">
+  <link rel="icon" href="../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../../../recursos/css/base.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="../../../../../recursos/js/navegacion.js" defer></script>
+  <script src="../latex.js" defer></script>
+  <script src="../recursos/repaso.js" defer></script>
+  <script src="actividad.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu>
+        <ul class="nav-list">
+          <li><a href="../../../../../">Inicio</a></li>
+          <li><a href="../../../../../nosotros/">Nosotros</a></li>
+          <li><a href="../../../../../biblioteca/">Biblioteca</a></li>
+          <li><a href="../../../../../asesores/" aria-current="page">Salones</a></li>
+          <li><a href="../../../../../contacto/">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="activity-shell">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Migas de pan">
+        <ol>
+          <li><a href="../../../../../asesores/">Salones</a></li>
+          <li><a href="../../../">Erik</a></li>
+          <li><a href="../../">Raúl</a></li>
+          <li><a href="../">Repaso en física</a></li>
+          <li aria-current="page">Actividad 2</li>
+        </ol>
+      </nav>
+
+      <section class="activity-panel" aria-labelledby="actividad-titulo">
+        <div class="activity-toolbar">
+          <a class="toolbar-button" href="../"><span aria-hidden="true">←</span> Menú</a>
+          <button class="toolbar-button" type="button" data-open-guide>Ver guía</button>
+        </div>
+
+        <header class="activity-header">
+          <div>
+            <p class="eyebrow">Actividad 2 · Conversiones</p>
+            <h1 id="actividad-titulo">Cambia de forma</h1>
+            <p class="intro">Convierte entre notación científica y forma decimal. Algunas preguntas también usan los nombres de los prefijos del SI.</p>
+          </div>
+          <div class="progress-copy" aria-live="polite">
+            <span data-progress-label>1 / 24</span>
+          </div>
+        </header>
+
+        <div class="progress-track" aria-hidden="true"><span data-progress-bar></span></div>
+
+        <section class="quiz-card" data-quiz-card aria-live="polite">
+          <div class="question-heading">
+            <p class="question-type" data-question-type>Convierte a decimal</p>
+            <span class="question-tag" data-question-tag>Notación científica → decimal</span>
+          </div>
+
+          <div class="conversion-source">
+            <span class="source-label" data-source-label>Convierte</span>
+            <strong class="source-value" data-source-value>\(7 \times 10^{6}\)</strong>
+          </div>
+
+          <p class="question-prompt" data-question-prompt>¿Cuál es el valor equivalente?</p>
+          <div class="answer-grid" data-answers></div>
+          <div class="feedback" data-feedback hidden></div>
+          <div class="manual-next" data-manual-next hidden>
+            <button class="primary-button" type="button" data-next-question>Siguiente</button>
+          </div>
+        </section>
+
+        <section class="result-card" data-result hidden aria-live="polite">
+          <p><a href="../actividad-8-practica-personalizada/?modo=errores" data-review-link hidden>Practicar errores pendientes</a></p>
+          <p class="eyebrow">Actividad terminada</p>
+          <h2>Conversiones repasadas.</h2>
+          <p class="result-score" data-result-score></p>
+          <div class="result-actions">
+            <button class="primary-button" type="button" data-restart>Repetir actividad</button>
+            <a class="secondary-button" href="../">Volver al menú</a>
+            <a class="secondary-button" href="../actividad-3-operaciones-notacion-cientifica/">Siguiente actividad <span aria-hidden="true">→</span></a>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <dialog class="guide-dialog" data-guide-dialog aria-labelledby="guia-titulo">
+    <div class="dialog-inner">
+      <div class="dialog-heading">
+        <div>
+          <p class="eyebrow">Consulta rápida</p>
+          <h2 id="guia-titulo">Guía de conversiones</h2>
+          <p>Úsala si necesitas recordar hacia dónde se mueve el punto decimal.</p>
+        </div>
+        <button class="dialog-close" type="button" aria-label="Cerrar guía" data-close-guide>×</button>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card">
+          <span>Exponente positivo</span>
+          <strong>\(7 \times 10^{6}=7{,}000{,}000\)</strong>
+          <p>Mueve el punto hacia la derecha.</p>
+        </article>
+        <article class="guide-card">
+          <span>Exponente negativo</span>
+          <strong>\(7 \times 10^{-6}=0.000007\)</strong>
+          <p>Mueve el punto hacia la izquierda.</p>
+        </article>
+      </div>
+
+      <div class="prefix-strip" aria-label="Prefijos usados en esta actividad">
+        <span>mega \(10^{6}\)</span>
+        <span>kilo \(10^{3}\)</span>
+        <span>hecto \(10^{2}\)</span>
+        <span>deca \(10^{1}\)</span>
+        <span>deci \(10^{-1}\)</span>
+        <span>centi \(10^{-2}\)</span>
+        <span>mili \(10^{-3}\)</span>
+        <span>micro \(10^{-6}\)</span>
+        <span>nano \(10^{-9}\)</span>
+      </div>
+      <p class="guide-note">Las conversiones numéricas directas usan exponentes \(-6\le n\le 6\). Nano aparece en las preguntas de prefijos porque su factor es \(10^{-9}\).</p>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../../asesores/">Salones</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav>
+    </div>
+  </footer>
+</body>
+</html>

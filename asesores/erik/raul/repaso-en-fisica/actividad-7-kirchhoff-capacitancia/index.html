@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actividad 7 · Kirchhoff, FEM y capacitancia | Repaso en física</title>
+  <meta name="description" content="Repaso de leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia con ejercicios sencillos.">
+  <link rel="icon" href="../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../../../recursos/css/base.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="../../../../../recursos/js/navegacion.js" defer></script>
+  <script src="../latex.js" defer></script>
+  <script src="../recursos/repaso.js" defer></script>
+  <script src="actividad.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu>
+        <ul class="nav-list">
+          <li><a href="../../../../../">Inicio</a></li>
+          <li><a href="../../../../../nosotros/">Nosotros</a></li>
+          <li><a href="../../../../../biblioteca/">Biblioteca</a></li>
+          <li><a href="../../../../../asesores/" aria-current="page">Salones</a></li>
+          <li><a href="../../../../../contacto/">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="activity-shell">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Migas de pan">
+        <ol>
+          <li><a href="../../../../../asesores/">Salones</a></li>
+          <li><a href="../../../">Erik</a></li>
+          <li><a href="../../">Raúl</a></li>
+          <li><a href="../">Repaso en física</a></li>
+          <li aria-current="page">Actividad 7</li>
+        </ol>
+      </nav>
+
+      <section class="activity-panel" aria-labelledby="actividad-titulo">
+        <div class="activity-toolbar">
+          <a class="toolbar-button" href="../"><span aria-hidden="true">←</span> Menú</a>
+          <button class="toolbar-button" type="button" data-open-guide>Guía completa</button>
+        </div>
+
+        <header class="activity-header">
+          <div>
+            <p class="eyebrow">Actividad 7 · Circuitos y capacitores</p>
+            <h1 id="actividad-titulo">Kirchhoff, FEM y capacitancia</h1>
+            <p class="intro">Cuatro bloques de repaso: leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia.</p>
+          </div>
+          <div class="overall-progress" aria-label="Progreso total de la actividad">
+            <strong data-overall-count>0 / 4</strong>
+            <span>bloques completados</span>
+          </div>
+        </header>
+
+        <nav class="level-nav" aria-label="Bloques de la actividad" data-level-nav></nav>
+
+        <section class="concept-card" aria-labelledby="nivel-titulo">
+          <div class="concept-heading">
+            <div>
+              <p class="level-kicker" data-level-kicker>Bloque 1</p>
+              <h2 id="nivel-titulo" data-level-title>Leyes de Kirchhoff</h2>
+              <p data-level-description></p>
+            </div>
+            <span class="memory-badge">Tu avance se guarda</span>
+          </div>
+          <div class="formula-strip" data-formula-strip></div>
+          <p class="concept-note" data-concept-note></p>
+        </section>
+
+        <div class="progress-row">
+          <p class="progress-copy" data-progress-label></p>
+          <div class="progress-track" aria-hidden="true"><span data-progress-bar></span></div>
+        </div>
+
+        <section class="exercise-card" data-exercise-card aria-live="polite">
+          <div class="exercise-heading">
+            <div>
+              <p class="eyebrow">Ejercicio</p>
+              <h3 data-exercise-title></h3>
+            </div>
+            <span class="exercise-tag" data-exercise-tag></span>
+          </div>
+          <p class="exercise-prompt" data-exercise-prompt></p>
+          <div class="given-data" data-given-data></div>
+          <div data-exercise-content></div>
+          <div class="feedback" data-feedback hidden></div>
+          <div class="manual-next" data-manual-next hidden>
+            <button class="primary-button" type="button" data-next>Siguiente</button>
+          </div>
+        </section>
+
+        <section class="level-result" data-level-result hidden aria-live="polite">
+          <p><a href="../actividad-8-practica-personalizada/?modo=errores" data-review-link hidden>Practicar errores pendientes</a></p>
+          <p class="eyebrow">Bloque completado</p>
+          <h3 data-level-result-title></h3>
+          <p data-level-result-copy></p>
+          <div class="result-actions">
+            <button class="primary-button" type="button" data-next-level>Siguiente bloque</button>
+            <button class="secondary-button" type="button" data-repeat-level>Repetir este bloque</button>
+            <a class="secondary-button" href="../">Volver al menú</a>
+          </div>
+        </section>
+
+        <section class="history-card" aria-labelledby="historial-titulo">
+          <div class="history-heading">
+            <div>
+              <p class="eyebrow">Tus respuestas</p>
+              <h2 id="historial-titulo">Historial del bloque</h2>
+            </div>
+            <button class="text-button" type="button" data-reset-activity>Reiniciar actividad</button>
+          </div>
+          <ol class="history-list" data-history-list>
+            <li class="history-empty" data-history-empty>Todavía no has respondido ejercicios en este bloque.</li>
+          </ol>
+        </section>
+
+        <section class="activity-result" data-activity-result hidden aria-live="polite">
+          <p><a href="../actividad-8-practica-personalizada/?modo=errores" data-review-link hidden>Practicar errores pendientes</a></p>
+          <p class="eyebrow">Actividad terminada</p>
+          <h2>Kirchhoff, FEM y capacitancia completados.</h2>
+          <p data-activity-result-copy></p>
+          <div class="result-actions">
+            <button class="primary-button" type="button" data-restart-activity>Repetir actividad</button>
+            <a class="secondary-button" href="../">Volver al menú</a>
+            <a href="../actividad-8-practica-personalizada/">Siguiente actividad · Práctica personalizada →</a>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <dialog class="guide-dialog" data-guide-dialog aria-labelledby="guia-titulo">
+    <div class="dialog-inner">
+      <div class="dialog-heading">
+        <div>
+          <p class="eyebrow">Consulta rápida</p>
+          <h2 id="guia-titulo">Guía de la Actividad 7</h2>
+          <p>Consulta definiciones, fórmulas y tablas sin perder tu avance.</p>
+        </div>
+        <button class="dialog-close" type="button" aria-label="Cerrar guía" data-close-guide>×</button>
+      </div>
+
+      <div class="guide-section">
+        <h3>Leyes de Kirchhoff</h3>
+        <div class="guide-formulas">
+          <strong>1.ª ley: \(\sum I_{\mathrm{entra}}=\sum I_{\mathrm{sale}}\)</strong>
+          <strong>2.ª ley: \(\sum V=0\) en una malla</strong>
+          <strong>Serie: \(R_T=R_1+R_2+\cdots\)</strong>
+          <strong>Paralelo: \(\dfrac{1}{R_T}=\dfrac{1}{R_1}+\dfrac{1}{R_2}+\cdots\)</strong>
+        </div>
+      </div>
+
+      <div class="guide-section">
+        <h3>Fuerza electromotriz y resistencia interna</h3>
+        <p>La fuerza electromotriz (FEM) es la energía que una fuente suministra por unidad de carga; se expresa en volts. Una batería real puede modelarse con una resistencia interna \(r\), que en un circuito simple se suma a la resistencia externa.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>Capacitancia</h3>
+        <div class="guide-formulas">
+          <strong>\(C=\dfrac{Q}{V}\)</strong>
+          <strong>\(C=\dfrac{\varepsilon A}{d}\)</strong>
+          <strong>Paralelo: \(C_T=C_1+C_2+\cdots\)</strong>
+          <strong>Serie: \(\dfrac{1}{C_T}=\dfrac{1}{C_1}+\dfrac{1}{C_2}+\cdots\)</strong>
+        </div>
+        <p>La capacitancia se mide en farads \(\mathrm{F}\). En placas paralelas, \(\varepsilon\) es la permitividad eléctrica del medio, \(A\) el área de las placas y \(d\) la separación.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>Constante dieléctrica \(K\)</h3>
+        <div class="reference-table-wrap">
+          <table class="reference-table">
+            <thead><tr><th>Material</th><th>\(K\)</th></tr></thead>
+            <tbody>
+              <tr><td>Aceite de un transformador</td><td>\(4.0\)</td></tr>
+              <tr><td>Aire seco a 1 atm</td><td>\(1.006\)</td></tr>
+              <tr><td>Baquelita</td><td>\(7.0\)</td></tr>
+              <tr><td>Mica</td><td>\(5.0\)</td></tr>
+              <tr><td>Papel parafinado</td><td>\(2.0\)</td></tr>
+              <tr><td>Plástico</td><td>\(3.0\)</td></tr>
+              <tr><td>Plásticos de nitrocelulosa</td><td>\(9.0\)</td></tr>
+              <tr><td>Teflón</td><td>\(2.0\)</td></tr>
+              <tr><td>Vidrio</td><td>\(7.5\)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="guide-section">
+        <h3>Permitividad relativa de algunos medios</h3>
+        <div class="reference-table-wrap">
+          <table class="reference-table">
+            <thead><tr><th>Medio aislador</th><th>\(\varepsilon_r\)</th></tr></thead>
+            <tbody>
+              <tr><td>Vacío</td><td>\(1.0000\)</td></tr>
+              <tr><td>Aire</td><td>\(1.0005\)</td></tr>
+              <tr><td>Gasolina</td><td>\(2.35\)</td></tr>
+              <tr><td>Aceite</td><td>\(2.8\)</td></tr>
+              <tr><td>Vidrio</td><td>\(4.7\)</td></tr>
+              <tr><td>Mica</td><td>\(5.6\)</td></tr>
+              <tr><td>Glicerina</td><td>\(45\)</td></tr>
+              <tr><td>Agua</td><td>\(80.5\)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../../asesores/">Salones</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav>
+    </div>
+  </footer>
+</body>
+</html>

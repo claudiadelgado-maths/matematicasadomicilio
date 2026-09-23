@@ -6,6 +6,8 @@
   "scripts": {
     "catalogo": "node herramientas/generar-catalogo.mjs",
     "validar": "node herramientas/validar-proyecto.mjs",
-    "verificar": "npm run catalogo && npm run validar"
+    "verificar": "npm run catalogo && npm run validar",
+    "crear-sesion": "node herramientas/crear-sesion.mjs",
+    "test:crear-sesion": "node --test herramientas/crear-sesion.test.mjs"
   }
 }

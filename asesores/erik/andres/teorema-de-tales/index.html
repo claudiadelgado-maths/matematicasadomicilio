@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teorema de Tales | Matemáticas a Domicilio</title>
+  <meta name="description" content="Sesión interactiva sobre el Teorema de Tales: explicación visual, ejemplo y juego de proporciones.">
+  <link rel="icon" href="../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="../../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+  <script src="sesion.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../asesores/" aria-current="page">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav></div></header>
+
+  <main id="contenido" class="learning-site module-site">
+    <div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../asesores/">Salones</a></li><li><a href="../../">Erik</a></li><li><a href="../">Andrés</a></li><li aria-current="page">Teorema de Tales</li></ol></nav></div>
+
+    <header class="learning-page-hero tales-hero">
+      <div class="container hero-layout">
+        <div>
+          <p class="eyebrow">Sesión interactiva · Geometría</p>
+          <h1>Teorema de Tales</h1>
+          <p class="lead">Descubre por qué las rectas paralelas producen segmentos proporcionales y úsalo para encontrar longitudes desconocidas.</p>
+          <div class="session-chips" aria-label="Características de la sesión">
+            <span>✦ Visual</span><span>↔ Interactiva</span><span>≈ 10–15 min</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button" href="#explicacion">Empezar explicación</a>
+            <a class="button button-secondary" href="#juego">Ir al juego</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 420 320" role="img">
+            <path d="M70 270 L205 42 L350 270 Z" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round"/>
+            <path class="hero-parallel hero-parallel-one" d="M112 198 H308" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+            <path class="hero-parallel hero-parallel-two" d="M145 142 H272" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="70" cy="270" r="9"/><circle cx="205" cy="42" r="9"/><circle cx="350" cy="270" r="9"/>
+            <circle cx="112" cy="198" r="7"/><circle cx="308" cy="198" r="7"/><circle cx="145" cy="142" r="7"/><circle cx="272" cy="142" r="7"/>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <section class="lesson-nav" aria-label="Contenido de la sesión">
+      <div class="container lesson-nav-grid">
+        <a href="#explicacion"><span>01</span><strong>Entiende la idea</strong><small>Paralelas y proporción</small></a>
+        <a href="#ejemplo"><span>02</span><strong>Mira un ejemplo</strong><small>Resolvemos x juntos</small></a>
+        <a href="#juego"><span>03</span><strong>Juega</strong><small>3 retos visuales</small></a>
+      </div>
+    </section>
+
+    <section class="section" id="explicacion">
+      <div class="container lesson-grid">
+        <div class="lesson-copy">
+          <p class="eyebrow">01 · Explicación</p>
+          <h2>La idea es comparar, no memorizar</h2>
+          <p>Cuando varias rectas <strong>paralelas</strong> cortan dos líneas que se encuentran, los segmentos que aparecen mantienen la misma proporción.</p>
+          <div class="formula-card" aria-label="Proporción fundamental"><span>AB</span><span class="fraction-line"></span><span>BC</span><b>=</b><span>DE</span><span class="fraction-line"></span><span>EF</span></div>
+          <p>Si conocemos tres de esas longitudes, podemos calcular la cuarta. La clave es comparar segmentos que ocupan la <strong>misma posición</strong> en cada lado.</p>
+          <aside class="aha-card"><span aria-hidden="true">✦</span><div><strong>Idea clave</strong><p>Tales no crea la proporción: <em>las paralelas la garantizan</em>. Tú solo tienes que reconocer qué segmentos se corresponden.</p></div></aside>
+          <div class="concept-points">
+            <div><span>1</span><p><strong>Busca las paralelas.</strong> Son la pista de que podemos usar Tales.</p></div>
+            <div><span>2</span><p><strong>Empareja segmentos.</strong> Arriba con arriba, abajo con abajo.</p></div>
+            <div><span>3</span><p><strong>Forma la proporción.</strong> Después despeja la incógnita.</p></div>
+          </div>
+        </div>
+        <figure class="diagram-card">
+          <svg viewBox="0 0 520 430" role="img" aria-labelledby="diag-title diag-desc">
+            <title id="diag-title">Dos rayos cortados por tres rectas paralelas</title>
+            <desc id="diag-desc">Los puntos A, B y C están en un lado; D, E y F en el otro. Las líneas AD, BE y CF son paralelas.</desc>
+            <path d="M255 45 L75 375 M255 45 L445 375" class="ray"/>
+            <path d="M203 140 L310 140 M157 225 L359 225 M105 320 L414 320" class="parallel"/>
+            <g class="point"><circle cx="203" cy="140" r="8"/><circle cx="310" cy="140" r="8"/><circle cx="157" cy="225" r="8"/><circle cx="359" cy="225" r="8"/><circle cx="105" cy="320" r="8"/><circle cx="414" cy="320" r="8"/></g>
+            <g class="label"><text x="181" y="132">A</text><text x="319" y="132">D</text><text x="135" y="217">B</text><text x="369" y="217">E</text><text x="82" y="313">C</text><text x="424" y="313">F</text></g>
+          </svg>
+          <figcaption>AD, BE y CF son paralelas. Por eso, los segmentos de ambos lados son proporcionales.</figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <div class="tales-lab" data-reveal>
+          <div class="lab-copy">
+            <p class="eyebrow">Pruébalo tú</p>
+            <h3>Mueve la paralela</h3>
+            <p>Desliza la recta azul. Cambian las longitudes, pero la figura pequeña y la grande conservan la misma escala.</p>
+            <label for="parallel-slider">Posición de la paralela <strong id="scale-readout">50%</strong></label>
+            <input id="parallel-slider" type="range" min="24" max="78" value="50" step="1">
+            <div class="lab-stat"><span>Escala desde el vértice</span><strong id="ratio-readout">0.50</strong></div>
+          </div>
+          <div class="lab-visual">
+            <svg id="lab-svg" viewBox="0 0 520 390" role="img" aria-label="Triángulo con una recta paralela móvil">
+              <path d="M260 35 L70 355 M260 35 L450 355" class="ray"/>
+              <path d="M70 355 H450" class="lab-base"/>
+              <path id="movable-parallel" d="M165 195 H355" class="parallel movable-parallel"/>
+              <circle cx="260" cy="35" r="8" class="lab-dot"/>
+              <circle id="lab-left" cx="165" cy="195" r="7" class="lab-dot"/>
+              <circle id="lab-right" cx="355" cy="195" r="7" class="lab-dot"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section example-section" id="ejemplo">
+      <div class="container">
+        <div class="learning-section-heading"><p class="eyebrow">02 · Ejemplo guiado</p><h2>Encuentra la longitud desconocida</h2><p>Observa el dibujo, construye la proporción y despeja.</p></div>
+        <div class="example-grid">
+          <div class="example-visual">
+            <svg viewBox="0 0 560 360" role="img" aria-label="Triángulo con una recta paralela a su base y longitudes 4, 6, 8 y x">
+              <path d="M85 315 L280 45 L485 315 Z" class="ray"/>
+              <path d="M172 195 L390 195" class="parallel"/>
+              <text x="180" y="130">4</text><text x="115" y="265">6</text><text x="365" y="130">8</text><text x="430" y="265">x</text>
+              <text class="parallel-mark" x="258" y="187">∥</text><text class="parallel-mark" x="270" y="308">∥</text>
+            </svg>
+          </div>
+          <div class="steps-card">
+            <div class="step-progress"><span id="step-progress-bar"></span></div>
+            <ol class="solution-steps" id="guided-steps">
+              <li class="is-visible" data-step="1"><span>1</span><div><strong>Empareja</strong><p>4 corresponde con 8 y 6 corresponde con x.</p></div></li>
+              <li data-step="2"><span>2</span><div><strong>Escribe la proporción</strong><p class="math-line">4 / 6 = 8 / x</p></div></li>
+              <li data-step="3"><span>3</span><div><strong>Multiplica cruzado</strong><p class="math-line">4x = 48</p></div></li>
+              <li data-step="4"><span>4</span><div><strong>Despeja</strong><p class="math-line result">x = 12</p></div></li>
+            </ol>
+            <button class="button guide-button" type="button" id="next-step">Ver siguiente paso <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section game-section" id="juego">
+      <div class="container game-shell">
+        <div class="game-intro">
+          <p class="eyebrow">03 · Juego</p>
+          <h2>Laboratorio de Tales</h2>
+          <p>Resuelve tres retos. Cada respuesta correcta enciende una estrella.</p>
+          <div class="score" aria-live="polite"><span id="score-stars">☆ ☆ ☆</span><small id="score-text">0 de 3 retos</small><div class="game-progress" aria-hidden="true"><i id="game-progress-bar"></i></div></div>
+        </div>
+
+        <div class="challenge" data-challenge="0">
+          <div class="challenge-head"><span>Reto 1</span><strong>Completa la proporción</strong></div>
+          <div class="challenge-body">
+            <div class="mini-diagram"><svg viewBox="0 0 430 260" aria-hidden="true"><path d="M60 220 L210 35 L365 220" class="ray"/><path d="M125 140 H300" class="parallel"/><text x="126" y="105">3</text><text x="83" y="190">5</text><text x="285" y="105">6</text><text x="330" y="190">?</text></svg></div>
+            <div class="question"><p>Si 3 corresponde a 6 y 5 corresponde a <em>x</em>, ¿cuánto vale <em>x</em>?</p><div class="answers"><button type="button" data-answer="8">8</button><button type="button" data-answer="10" data-correct>10</button><button type="button" data-answer="12">12</button></div><p class="feedback" aria-live="polite"></p></div>
+          </div>
+        </div>
+
+        <div class="challenge" data-challenge="1" hidden>
+          <div class="challenge-head"><span>Reto 2</span><strong>Detecta la pareja correcta</strong></div>
+          <div class="challenge-body">
+            <div class="mini-diagram"><svg viewBox="0 0 430 260" aria-hidden="true"><path d="M55 215 L205 35 M205 35 L375 215" class="ray"/><path d="M115 143 H306" class="parallel"/><text x="118" y="108">A</text><text x="78" y="190">B</text><text x="286" y="108">C</text><text x="335" y="190">D</text></svg></div>
+            <div class="question"><p>¿Qué segmentos ocupan la misma posición y deben compararse?</p><div class="answers stacked"><button type="button" data-answer="AB-CD" data-correct>AB con CD</button><button type="button" data-answer="AB-AC">AB con AC</button><button type="button" data-answer="AC-BD">AC con BD</button></div><p class="feedback" aria-live="polite"></p></div>
+          </div>
+        </div>
+
+        <div class="challenge" data-challenge="2" hidden>
+          <div class="challenge-head"><span>Reto 3</span><strong>Último cálculo</strong></div>
+          <div class="challenge-body">
+            <div class="mini-diagram"><svg viewBox="0 0 430 260" aria-hidden="true"><path d="M55 215 L205 35 L375 215" class="ray"/><path d="M115 143 H306" class="parallel"/><text x="116" y="108">2</text><text x="78" y="190">7</text><text x="286" y="108">4</text><text x="335" y="190">x</text></svg></div>
+            <div class="question"><p>Usa <strong>2 / 7 = 4 / x</strong>. ¿Cuál es el valor de <em>x</em>?</p><div class="answers"><button type="button" data-answer="9">9</button><button type="button" data-answer="12">12</button><button type="button" data-answer="14" data-correct>14</button></div><p class="feedback" aria-live="polite"></p></div>
+          </div>
+        </div>
+
+        <div class="game-complete" hidden>
+          <div class="celebration" id="celebration" aria-hidden="true"></div>
+          <div class="completion-mark" aria-hidden="true">✓</div>
+          <h3>¡Laboratorio completado!</h3>
+          <p>Ya identificaste correspondencias y resolviste proporciones con el Teorema de Tales.</p>
+          <button class="button" type="button" id="restart-game">Jugar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recap-section">
+      <div class="container recap-card"><p class="eyebrow">Para recordar</p><h2>Paralelas → segmentos proporcionales</h2><p>Antes de calcular, identifica qué segmentos corresponden entre sí. Esa organización hace que la proporción sea mucho más sencilla.</p><a class="button button-secondary" href="#contenido">Volver al inicio</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../asesores/">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav></div></footer>
+</body>
+</html>

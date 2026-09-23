@@ -1,0 +1,20 @@
+{
+  "id": "series-geometricas-alejandrina",
+  "slug": "series-geometricas",
+  "tipo": "sesion",
+  "usuario": "alejandrina",
+  "titulo": "Series geométricas",
+  "descripcion": "Sesión en preparación.",
+  "objetivo": "Pendiente de desarrollar por el profesor.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-09-22",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/series-geometricas/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

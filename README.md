@@ -94,6 +94,14 @@ Después visita `http://localhost:8000/`. Las rutas funcionan porque `asesores/`
 
 ## Comprobaciones
 
+Para crear una sesión mínima visible y lista para entregar al profesor:
+
+```powershell
+npm run crear-sesion -- "Erik" "Andres" "Título de la nueva sesión"
+```
+
+El comando crea la carpeta, genera los índices y valida el proyecto. No sobrescribe carpetas existentes. El flujo de entrega y reemplazo está en [Crear una sesión](documentacion/creacion-de-sesiones.md).
+
 No hay dependencias de producción. Con Node.js disponible:
 
 ```powershell

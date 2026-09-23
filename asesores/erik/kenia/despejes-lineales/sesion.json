@@ -4,11 +4,21 @@
   "tipo": "sesion",
   "usuario": "kenia-erik",
   "titulo": "Despejes lineales",
-  "descripcion": "Sesión de álgebra para aislar x mediante operaciones equivalentes en ambos lados de una ecuación lineal.",
+  "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
   "objetivo": "Resolver ecuaciones de la forma Ax + B = C justificando cada operación y extendiendo el procedimiento a coeficientes racionales sencillos.",
-  "conocimientosPrevios": ["operaciones con enteros", "igualdad", "fracciones básicas"],
-  "fecha": "2026-08-19",
+  "conocimientosPrevios": [
+    "operaciones con enteros",
+    "igualdad",
+    "fracciones básicas"
+  ],
+  "fecha": "2026-09-22",
   "estado": "publicado",
   "ruta": "/asesores/erik/kenia/despejes-lineales/",
-  "componentes": { "explicacion": true, "demostraciones": false, "ejercicios": true, "juegos": true, "calculadoras": true }
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
 }

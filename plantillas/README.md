@@ -4,7 +4,7 @@ Estas carpetas son puntos de partida y permanecen fuera de la interfaz porque su
 
 - `maestro/`: copiar a `/asesores/[id-del-asesor]/`.
 - `alumno/`: copiar a `/asesores/[asesor]/[id-del-alumno]/`.
-- `alumno/nueva-sesion/`: plantilla de sesión colocada a la misma profundidad que una sesión real; puede copiarse de forma independiente a `/asesores/[asesor]/[alumno]/[slug]/`.
+- `alumno/nueva-sesion/`: base para `/asesores/[asesor]/[alumno]/[slug]/`. La sesión real está un nivel más profundo: usa `npm run crear-sesion -- "Asesor" "Alumno" "Título"` para adaptar rutas, identidad e instrucciones automáticamente. Una copia manual requiere ajustar los enlaces relativos y las migas de pan.
 - `sesion/README.md`: acceso rápido a las instrucciones de la plantilla de sesión.
 
 Después de copiar una plantilla, sustituye todos los identificadores, rutas y textos provisionales antes de activar o publicar. Los IDs deben ser únicos en todo el repositorio.

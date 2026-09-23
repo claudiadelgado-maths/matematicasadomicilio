@@ -1,0 +1,27 @@
+{
+  "id": "repaso-en-fisica-raul-erik",
+  "slug": "repaso-en-fisica",
+  "tipo": "sesion",
+  "usuario": "raul-erik",
+  "titulo": "Repaso en física",
+  "descripcion": "Sesión de repaso organizada por actividades. Incluye prefijos del SI, conversiones, operaciones en notación científica, Ley de Coulomb, electricidad básica, Ley de Ohm, potencia eléctrica, efecto Joule, leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia. Incluye práctica personalizada de errores, variantes numéricas y un laboratorio interactivo de circuitos.",
+  "objetivo": "Repasar contenidos ya vistos mediante actividades breves: prefijos del SI, conversiones, operaciones en notación científica, Ley de Coulomb, corriente, voltaje, resistencia, resistividad, Ley de Ohm, potencia eléctrica, efecto Joule, leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia. Reforzar errores y relacionar las fórmulas con cambios observables en circuitos ideales.",
+  "conocimientosPrevios": [
+    "Prefijos del Sistema Internacional vistos previamente",
+    "Notación científica, conversiones y leyes de exponentes vistas previamente",
+    "Conceptos básicos de carga eléctrica y Ley de Coulomb vistos previamente",
+    "Conceptos introductorios de corriente, voltaje, resistencia y resistividad vistos previamente",
+    "Ley de Ohm, potencia eléctrica y efecto Joule vistos previamente",
+    "Leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia vistas previamente"
+  ],
+  "fecha": "2026-09-22",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/raul/repaso-en-fisica/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

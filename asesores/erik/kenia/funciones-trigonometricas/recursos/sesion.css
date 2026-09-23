@@ -1,0 +1,78 @@
+.trig-session { --ink:#252f38; --accent:#245f68; --pale:#e7f1ef; --line:#cbdcd7; background:#faf9f5; color:var(--ink); padding:0 0 3rem; }
+.trig-session .trig-wrap { width:min(1080px,calc(100% - 2.5rem)); margin:auto; }
+.trig-session .crumbs { display:flex; flex-wrap:wrap; gap:.65rem; padding:1.3rem 0; font-size:.85rem; }
+.trig-session .eyebrow { color:var(--accent); font-size:.73rem; letter-spacing:.12em; text-transform:uppercase; font-weight:800; }
+.trig-session h1 { margin:.5rem 0 1rem; max-width:860px; font-size:clamp(2rem,4.7vw,3.7rem); letter-spacing:-.045em; line-height:1.12; }
+.trig-session h2 { font-size:clamp(1.3rem,2.4vw,1.75rem); line-height:1.25; }
+.trig-session .intro { display:grid; grid-template-columns:1.1fr 1fr; align-items:center; gap:2rem; padding:1.5rem 0 2rem; }
+.trig-session .lead { max-width:690px; font-size:1.1rem; color:#53626b; }
+.trig-session .notice { border-left:3px solid var(--accent); padding:.8rem 1rem; background:var(--pale); font-size:.95rem; }
+.trig-session .diagram { position:relative; width:100%; aspect-ratio:500/360; min-width:0; }
+.trig-session .diagram svg { width:100%; height:auto; display:block; }
+.trig-session .triangle-fill { fill:#e6efec; }
+.trig-session .triangle-edge { stroke:#355966; stroke-width:4; stroke-linecap:round; }
+.trig-session .edge-CO { stroke:#a84c25; }
+.trig-session .edge-CA { stroke:#355f9b; }
+.trig-session .edge-H { stroke:#245f68; }
+.trig-session .right-marker { fill:none; stroke:#252f38; stroke-width:2; }
+.trig-session .angle-arc { fill:none; stroke:#8b4b94; stroke-width:3; }
+.trig-session .theta { fill:#773781; font-size:24px; font-style:italic; }
+.trig-session .vertex-label { fill:#53626b; font-size:14px; }
+.trig-session .side-label { fill:#252f38; font-size:19px; font-weight:700; }
+.trig-session .math { max-width:100%; }
+.trig-session .formula { display:block; padding:1rem; margin:1.2rem 0; background:var(--pale); border-radius:12px; text-align:center; font-size:clamp(1.15rem,2.4vw,1.6rem); overflow-x:auto; }
+.trig-session .panel { padding:clamp(1rem,2.6vw,1.8rem); border:1px solid var(--line); border-radius:15px; background:white; min-width:0; }
+.trig-session .activity-grid { display:grid; grid-template-columns:1.35fr 1fr; align-items:start; gap:1.4rem; margin:1.6rem 0; }
+.trig-session .btn,.trig-session button { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:.7rem 1rem; border:1px solid var(--accent); border-radius:8px; background:var(--accent); color:white; font:inherit; font-weight:700; cursor:pointer; text-decoration:none; }
+.trig-session .btn:hover,.trig-session button:hover { background:#18434b; }
+.trig-session .secondary { background:transparent; color:var(--accent); }
+.trig-session .secondary:hover { background:var(--pale); }
+.trig-session .actions { display:flex; flex-wrap:wrap; gap:.7rem; margin:1rem 0; }
+.trig-session :focus-visible { outline:3px solid #74318c; outline-offset:4px; }
+.trig-session .feedback { min-height:1.6rem; font-size:.94rem; margin:1rem 0; }
+.trig-session [data-result=ok] { color:#17643e; }
+.trig-session [data-result=error] { color:#9d2f33; }
+.trig-session .badge { display:inline-block; padding:.25rem .65rem; border-radius:40px; font-size:.8rem; font-weight:800; background:var(--pale); }
+.trig-session .token-bank { display:flex; flex-wrap:wrap; gap:.7rem; margin:1rem 0; }
+.trig-session .token-bank button { background:#fff8e9; color:#684c18; border:2px solid #c4a361; touch-action:none; user-select:none; }
+.trig-session .token-bank button[aria-pressed=true] { background:#fae7b7; outline:3px solid #74318c; outline-offset:3px; }
+.trig-session .token-bank .placed { border-style:dashed; background:#f2f4ef; }
+.trig-session .selection { color:#52626a; font-size:.84rem; }
+.trig-session .side-slot { position:absolute; transform:translate(-50%,-50%); width:112px; padding:.3rem; min-height:44px; font-size:.85rem; background:white; color:var(--ink); border:2px dashed #799c99; }
+.trig-session .side-slot:hover,.trig-session .fraction-slot:hover { color:var(--ink); background:var(--pale); }
+.trig-session [aria-invalid=true] { border:2px solid #b42b38; background:#fff1f2; }
+.trig-session .answer-fraction { display:grid; width:110px; gap:.4rem; margin:.8rem 0; }
+.trig-session .answer-fraction input { width:100%; min-height:46px; text-align:center; font:inherit; border:1px solid #7b979b; border-radius:6px; padding:.4rem; background:white; }
+.trig-session .fraction-bar { height:2px; width:100%; background:var(--ink); }
+.trig-session .answer-row { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; }
+.trig-session .answer-label { font-size:1.2rem; }
+.trig-session .visually-hidden { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }
+.trig-session .course-nav { display:flex; flex-wrap:wrap; gap:1rem; justify-content:space-between; align-items:center; padding-top:1.4rem; margin-top:2rem; border-top:1px solid var(--line); }
+.trig-session .course-nav a { min-height:44px; display:inline-flex; align-items:center; font-size:.9rem; }
+.trig-session .lesson-menu { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; list-style:none; margin:1rem 0; padding:0; }
+.trig-session .lesson-menu a { display:block; height:100%; padding:1rem; border:1px solid var(--line); border-radius:8px; text-decoration:none; background:white; }
+.trig-session .lesson-menu a:hover { background:var(--pale); }
+.trig-session .lesson-menu small { display:block; color:#5b6b70; }
+.trig-session .legend { display:grid; gap:.7rem; padding:0; list-style:none; }
+.trig-session .legend li { padding:.6rem .8rem; border-left:3px solid var(--accent); background:var(--pale); }
+.trig-session .final-layout { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr); gap:2rem; align-items:start; margin-top:1.5rem; }
+.trig-session .six-functions { display:flex; flex-direction:column; gap:.65rem; }
+.trig-session .function-row { display:grid; grid-template-columns:1fr 108px; gap:.7rem 1rem; align-items:center; background:white; padding:.9rem 1.1rem; border:1px solid var(--line); border-radius:10px; }
+.trig-session .function-row h2 { margin:0; font-size:1rem; }
+.trig-session .final-fraction { display:grid; gap:.35rem; }
+.trig-session .fraction-slot { width:100%; min-height:44px; padding:.2rem; background:#f5f8f6; color:var(--ink); border:1px dashed #799c99; }
+.trig-session .row-feedback { grid-column:1/-1; font-size:.8rem; margin:0; color:#635657; }
+.trig-session .row-feedback:empty { display:none; }
+.trig-session .success { margin-top:1.5rem; padding:1.5rem; border:2px solid #378463; border-radius:12px; background:#e8f5ed; }
+.trig-session [hidden] { display:none !important; /* Mantiene hidden frente a las reglas grid/flex. */ }
+.trig-drag-ghost { position:fixed; z-index:1000; pointer-events:none; transform:translate(-50%,-120%); background:#fae7b7; color:#513b18; padding:.7rem 1rem; border:2px solid #927039; border-radius:8px; font-weight:800; }
+@media(max-width:760px){
+  .trig-session .intro,.trig-session .activity-grid,.trig-session .final-layout { grid-template-columns:1fr; }
+  .trig-session .final-bank { grid-row:1; }
+  .trig-session .lesson-menu { grid-template-columns:1fr 1fr; }
+  .trig-session .course-nav .btn { width:100%; }
+  .trig-session .side-slot { width:86px; font-size:.72rem; }
+  .trig-session .identify-panel { padding:.4rem; }
+  .trig-session h1 { font-size:clamp(1.8rem,8vw,2.8rem); }
+}
+@media(max-width:380px){.trig-session .lesson-menu{grid-template-columns:1fr}.trig-session .trig-wrap{width:calc(100% - 1.5rem)}}

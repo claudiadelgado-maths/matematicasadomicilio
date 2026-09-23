@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratorio de circuitos | Repaso en física</title>
+  <meta name="description" content="Actividad para simplificar multiplicaciones, divisiones y expresiones combinadas en notación científica.">
+  <link rel="icon" href="../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../../../recursos/css/base.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="../../../../../recursos/js/navegacion.js" defer></script>
+  <script src="../latex.js" defer></script>
+  <script src="../recursos/repaso.js" defer></script>
+  <script type="module" src="actividad.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu>
+        <ul class="nav-list">
+          <li><a href="../../../../../">Inicio</a></li>
+          <li><a href="../../../../../nosotros/">Nosotros</a></li>
+          <li><a href="../../../../../biblioteca/">Biblioteca</a></li>
+          <li><a href="../../../../../asesores/" aria-current="page">Salones</a></li>
+          <li><a href="../../../../../contacto/">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="workshop"><div class="workshop-wrap"><nav><a href="../">← Menú del repaso</a></nav><header><p class="eyebrow">ACTIVIDAD 9 · EXPLORA</p><h1>Laboratorio de circuitos</h1><p>Cambia un valor y observa cómo responde el circuito.</p></header><label for="circuit">Circuito</label><select id="circuit"><option value="ohm">Ley de Ohm</option><option value="serie">Resistencias en serie</option><option value="paralelo">Resistencias en paralelo</option><option value="cap-serie">Capacitores en serie</option><option value="cap-paralelo">Capacitores en paralelo</option></select>
+<div class="lab-grid"><section class="panel controls" aria-label="Controles del circuito"><label for="voltage">Voltaje de la fuente</label><output id="v-value" for="voltage"></output><input type="range" id="voltage" min="1" max="24" value="12" step="1"><label for="part-a" id="a-label">Resistencia 1</label><output id="a-value" for="part-a"></output><input type="range" id="part-a" min="1" max="20" value="4" step="1"><div id="second-part"><label for="part-b" id="b-label">Resistencia 2</label><output id="b-value" for="part-b"></output><input type="range" id="part-b" min="1" max="20" value="6" step="1"></div><button id="reset" type="button">Restablecer valores</button></section>
+<section class="panel"><div id="diagram"></div><div id="readings" class="readings" aria-live="polite"></div><p id="law"></p><p id="observation"></p></section></div>
+<section class="panel challenge"><h2>Predice y comprueba</h2><p id="challenge"></p><div id="predictions" class="mode-bar"><button type="button" data-predict="double">Se duplica</button><button type="button" data-predict="half">Se reduce a la mitad</button><button type="button" data-predict="same">No cambia</button></div><p id="prediction-feedback" role="status"></p></section>
+<nav class="bottom"><a href="../actividad-8-practica-personalizada/">← Práctica personalizada</a><a href="../">Menú del repaso</a></nav></div></main><footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../">Inicio</a></li><li><a href="../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../../asesores/">Salones</a></li><li><a href="../../../../../contacto/">Contacto</a></li></ul></nav>
+    </div>
+  </footer>
+</body>
+</html>
