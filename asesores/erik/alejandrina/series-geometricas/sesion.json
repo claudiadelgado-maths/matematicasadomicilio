@@ -4,17 +4,22 @@
   "tipo": "sesion",
   "usuario": "alejandrina",
   "titulo": "Series geométricas",
-  "descripcion": "Sesión en preparación.",
-  "objetivo": "Pendiente de desarrollar por el profesor.",
-  "conocimientosPrevios": [],
+  "descripcion": "Sucesiones, raíces, sumas y medios geométricos con prácticas guiadas, exploradores y una misión aleatoria de 24 retos.",
+  "objetivo": "Identificar los elementos de una sucesión geométrica, deducir y despejar su fórmula, sumar términos e insertar medios geométricos.",
+  "conocimientosPrevios": [
+    "Operaciones con fracciones",
+    "Potencias y raíces",
+    "Despejes básicos",
+    "Sucesiones aritméticas"
+  ],
   "fecha": "2026-09-22",
   "estado": "publicado",
   "ruta": "/asesores/erik/alejandrina/series-geometricas/",
   "componentes": {
-    "explicacion": false,
+    "explicacion": true,
     "demostraciones": false,
     "ejercicios": false,
-    "juegos": false,
+    "juegos": true,
     "calculadoras": false
   }
 }

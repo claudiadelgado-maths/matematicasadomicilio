@@ -1,0 +1,11 @@
+{
+  "id": "series-geometricas-alejandrina-la-formula",
+  "tipo": "explicacion",
+  "sesion": "series-geometricas-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "Una fórmula para todos los términos",
+  "descripcion": "Construye la fórmula completando a₁ y r, con vista en LaTeX en vivo.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/la-formula/",
+  "interactivo": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": "series-geometricas-alejandrina-mision",
+  "tipo": "juego",
+  "sesion": "series-geometricas-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "Misión constelación",
+  "descripcion": "24 retos aleatorios de sucesiones y series geométricas, con avance guardado y repaso de errores.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/series-geometricas/juegos/mision-constelacion/",
+  "interactivo": true
+}

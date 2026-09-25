@@ -8,7 +8,7 @@ Alejandrina pertenece al maestro `erik-estrella`. El índice carga automáticame
 
 ## Contenido actual
 
-- `series-geometricas/`: sesión vanilla visible, en preparación y sin contenido educativo. Su carpeta completa se entrega al profesor y se reemplaza conservando su ubicación; el contrato está en su README.
+- `series-geometricas/`: menú, trece páginas progresivas con LaTeX y prácticas generativas guiadas, exploradores de potencias y sumas, y Misión constelación de 24 retos aleatorios con reanudación y repaso de errores.
 
 - `datos-no-agrupados/`: explicación, ejercicio, calculadora y juego de estadística descriptiva.
 - `diagramas-de-arboles/`: teoría, ejercicios, calculadora y juego publicados.

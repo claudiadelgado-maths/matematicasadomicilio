@@ -1,0 +1,11 @@
+{
+  "id": "series-geometricas-alejandrina-hallar-un-termino",
+  "tipo": "explicacion",
+  "sesion": "series-geometricas-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "Encuentra un término",
+  "descripcion": "Completa a₁, r y n y calcula el término con sustitución visible en LaTeX.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/hallar-un-termino/",
+  "interactivo": true
+}

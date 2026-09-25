@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 210,
+  "total": 224,
   "tipos": {
     "maestro": [
       {
@@ -1352,17 +1352,22 @@
         "tipo": "sesion",
         "usuario": "alejandrina",
         "titulo": "Series geométricas",
-        "descripcion": "Sesión en preparación.",
-        "objetivo": "Pendiente de desarrollar por el profesor.",
-        "conocimientosPrevios": [],
+        "descripcion": "Sucesiones, raíces, sumas y medios geométricos con prácticas guiadas, exploradores y una misión aleatoria de 24 retos.",
+        "objetivo": "Identificar los elementos de una sucesión geométrica, deducir y despejar su fórmula, sumar términos e insertar medios geométricos.",
+        "conocimientosPrevios": [
+          "Operaciones con fracciones",
+          "Potencias y raíces",
+          "Despejes básicos",
+          "Sucesiones aritméticas"
+        ],
         "fecha": "2026-09-22",
         "estado": "publicado",
         "ruta": "/asesores/erik/alejandrina/series-geometricas/",
         "componentes": {
-          "explicacion": false,
+          "explicacion": true,
           "demostraciones": false,
           "ejercicios": false,
-          "juegos": false,
+          "juegos": true,
           "calculadoras": false
         },
         "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/sesion.json"
@@ -3093,6 +3098,162 @@
         "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/explicacion/componente.json"
       },
       {
+        "id": "series-geometricas-alejandrina-conectar-procedimientos",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Une las piezas",
+        "descripcion": "Elige el orden: razón, primer término y después lo que te piden.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/conectar-procedimientos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/conectar-procedimientos/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-dos-terminos",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Dos pistas reconstruyen la sucesión",
+        "descripcion": "La distancia entre posiciones te dice cuántos factores hay.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/dos-terminos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/dos-terminos/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-el-patron",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Un mismo factor, una nueva sucesión",
+        "descripcion": "Observa qué se repite de un término al siguiente.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/el-patron/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/el-patron/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-encontrar-la-posicion",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "¿En qué posición está?",
+        "descripcion": "El exponente cuenta saltos. La posición cuenta términos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/encontrar-la-posicion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/encontrar-la-posicion/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-encontrar-la-razon",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Encuentra la razón",
+        "descripcion": "Primero descubre la potencia; después, el factor.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/encontrar-la-razon/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/encontrar-la-razon/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-hallar-un-termino",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Encuentra un término",
+        "descripcion": "Completa a₁, r y n y calcula el término con sustitución visible en LaTeX.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/hallar-un-termino/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/hallar-un-termino/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-la-formula",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Una fórmula para todos los términos",
+        "descripcion": "Construye la fórmula completando a₁ y r, con vista en LaTeX en vivo.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/la-formula/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/la-formula/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-los-elementos",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Cada símbolo tiene un trabajo",
+        "descripcion": "Distingue una posición de la cantidad que ocupa ese lugar.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/los-elementos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/los-elementos/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-medios-geometricos",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Completa los espacios entre dos extremos",
+        "descripcion": "Los números intermedios deben conservar la misma razón.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/medios-geometricos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/medios-geometricos/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-primer-termino",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Regresa al comienzo",
+        "descripcion": "Para deshacer una multiplicación, divide.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/primer-termino/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/primer-termino/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-problemas-aplicados",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "¿Una cantidad o el total?",
+        "descripcion": "La pregunta decide qué fórmula necesitas.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/problemas-aplicados/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/problemas-aplicados/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-raices",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Deshacer una potencia",
+        "descripcion": "La raíz responde: ¿qué número elevado a esta potencia da ese valor?",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/raices/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/raices/componente.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-sumar-terminos",
+        "tipo": "explicacion",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Ahora reunimos todos los términos",
+        "descripcion": "Un término es una cantidad. Una serie es una suma.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/explicacion/sumar-terminos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/explicacion/sumar-terminos/componente.json"
+      },
+      {
         "id": "explicacion-sucesiones-aritmeticas-sesion-1",
         "tipo": "explicacion",
         "sesion": "sucesiones-aritmeticas-sesion-1",
@@ -3395,6 +3556,18 @@
         "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/juego.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-mision",
+        "tipo": "juego",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Misión constelación",
+        "descripcion": "24 retos aleatorios de sucesiones y series geométricas, con avance guardado y repaso de errores.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/juegos/mision-constelacion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/juegos/mision-constelacion/juego.json"
       },
       {
         "id": "ruta-de-las-sucesiones",

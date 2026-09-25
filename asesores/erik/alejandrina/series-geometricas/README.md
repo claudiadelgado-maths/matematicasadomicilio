@@ -1,34 +1,42 @@
 # Series geométricas
 
-Sesión independiente de Alejandrina, del asesor Erik.
-Estado actual: vanilla visible, sin contenido educativo ni componentes. La fecha editorial inicial es 2026-09-22.
-Lee este README y sesion.json antes de trabajar, también si eres una IA.
+Sesión de Alejandrina con Erik. Menú y trece páginas progresivas, ejemplos con LaTeX, prácticas generativas guiadas y misión final de 24 retos. Fecha editorial original: 2026-09-22.
 
-## Trabaja solamente en esta carpeta
+## Estructura
 
-- index.html es la entrada pública: desarrolla el contenido dentro de main, sustituyendo el aviso «Sesión en preparación».
-- estilos.css contiene el diseño local y puede ampliarse libremente.
-- Añade JavaScript, imágenes y recursos propios aquí cuando hagan falta; usa recursos/ para archivos exclusivos. No crees archivos ni secciones opcionales vacías.
-- Puedes crear componentes en subcarpetas con index.html, estilos.css, README.md y sus metadatos según las convenciones del proyecto. Enlázalos desde esta sesión.
-- Actualiza descripcion, objetivo, conocimientosPrevios y componentes en sesion.json para describir lo que realmente existe; sincroniza este README. Conserva titulo coherente con la página.
+- `index.html`: menú, marcas de temas practicados, enlace a sesiones y misión.
+- `explicacion/`: patrón, elementos, fórmula, término, primer término, raíces, razón, posición, dos términos, sumas, aplicaciones, medios y combinación. Ejemplos desplegables, variantes y campos vacíos. Continuar y Menú siempre disponibles.
+- `juegos/mision-constelacion/`: dos problemas por cada una de doce familias, opciones y datos aleatorios, recorrido guardado y repaso. Sin reloj ni penalización que impida corregir.
+- `recursos/modelo.mjs`: generadores puros semillados, validación numérica y misiones. `modelo.test.mjs` comprueba resultados y estado.
+- `recursos/practica.mjs`: resolución guiada, operaciones correctas visibles, recorrido de potencias y cancelación de sumas.
+- `recursos/mision-estado.mjs`: estado validado, reanudación y repaso. `ui.mjs`: presentación y almacenamiento. `sesion.css`: diseño exclusivo.
 
-## Contrato que debes conservar
+Las prácticas se integran en explicaciones; no existe una carpeta independiente de ejercicios. Por eso componentes.ejercicios sigue en false. No anunciar componentes vacíos.
 
-- No renombres la carpeta series-geometricas, index.html, estilos.css, sesion.json ni README.md.
-- No cambies estos campos de sesion.json: id = series-geometricas-alejandrina; slug = series-geometricas; tipo = sesion; usuario = alejandrina; ruta = /asesores/erik/alejandrina/series-geometricas/.
-- Conserva estado = publicado para que siga apareciendo en el alumno. Aquí publicado significa visible, aunque el contenido esté en preparación. No vuelvas a registrar la sesión.
-- La fecha editorial la administra quien incorpora la versión; conserva 2026-09-22 hasta que esa persona decida actualizarla en este JSON.
-- Conserva encabezado, logotipo, menú, pie, enlace de salto y main con id contenido; las migas enlazan al alumno (../) y al asesor (../../).
-- Conserva las referencias relativas a ../../../../recursos/css/base.css, ../../../../recursos/js/navegacion.js y ../../../../recursos/svg/. El script global genera los controles flotantes: no los dupliques.
-- No hay exports, props ni componentes de framework obligatorios. No requiere JavaScript propio ni imports de otros alumnos.
-- No edites archivos fuera de esta carpeta. La carpeta utiliza recursos de la plataforma: por sí sola no es una copia autónoma del sitio.
+## Matemáticas y estado
 
-## Entrega y sustitución
+Se aceptan fracciones y decimales con punto o coma. Los campos vacíos no se evalúan como cero. Raíces: impar negativa, dos raíces reales y ausencia de raíz real. Reconstrucción y medios especifican razón positiva. Posiciones: pertenencia sin redondear y caso r = 1. Sumatorias finitas.
 
-Devuelve la carpeta completa series-geometricas, sin una carpeta adicional anidada. El responsable sustituye la carpeta en /asesores/erik/alejandrina/series-geometricas/ conservando nombre y ubicación.
-Los cambios de HTML, CSS y recursos se sirven directamente al recargar por HTTP. Si hay caché, recarga sin caché; al publicar, sube los archivos actualizados.
-Para reflejar también cambios de metadatos en las listas, el responsable ejecuta desde la raíz npm run catalogo y npm run validar. Estos comandos actualizan derivados automáticamente; no se edita ningún registro externo manualmente.
+Claves `alejandrina-geometria-v2-*` para prácticas y marcas; `alejandrina-geometria-mision-v2` para misión. Se guardan semillas, variantes, respuestas, borrador y avance. Al restaurar se regeneran los problemas y validan los pasos: un cursor almacenado no permite saltar preguntas. Si localStorage falla, la actividad continúa en memoria e informa que no puede guardar. Nueva misión pide confirmar dentro de la página.
 
-## Verificación de entrega
+## Contrato y dependencias
 
-Abre la URL /asesores/erik/alejandrina/series-geometricas/ desde el servidor de la plataforma. Revisa móvil, escritorio, teclado, menú con Escape, consola, enlaces al alumno y al asesor y ausencia de desbordamiento horizontal. Comprueba que los componentes declarados existen y que no se anuncian componentes vacíos.
+Conservar id `series-geometricas-alejandrina`, slug `series-geometricas`, tipo `sesion`, usuario `alejandrina`, ruta `/asesores/erik/alejandrina/series-geometricas/`, estado publicado y fecha editorial. No renombrar carpeta ni entradas. Sincronizar metadatos y READMEs de cada módulo.
+
+Sin framework ni recursos de otros alumnos. Recursos globales permitidos: base.css, navegacion.js y SVG de identidad. Conservar navegación, logotipo, pie, salto al contenido y controles flotantes. URLs relativas con directorio/index.html. KaTeX 0.18.1 mediante CDN con SRI; respaldo legible en explicación estática y expresión fuente en prácticas si falta el CDN.
+
+## Entrega y comprobación
+
+Entregar la carpeta completa series-geometricas conservando ubicación. Depende de la base compartida: no es un sitio autónomo. Modificar solo esta sesión y documentación/índices dependientes necesarios.
+
+Desde la raíz: `node --test asesores/erik/alejandrina/series-geometricas/recursos/modelo.test.mjs`, `npm run catalogo` y `npm run validar`. Probar blanco/error/acierto, fracciones, variantes, otro ejercicio, recarga, misión completa, repaso y reinicio. Revisar móvil, escritorio, teclado, enlaces, consola y LaTeX. Alcance en ETAPAS.md.
+
+## Cierre final
+
+Menú con mapa desplegable de seis fórmulas, resumen de temas practicados, estado de misión y enlace para retomar la última página. La variante Disminuir alterna razones entre 0 y 1. Se rechazan fracciones con operandos numéricos no finitos. Se conserva la compatibilidad de las partidas existentes.
+
+Actualización de variedad: prácticas con razones enteras 2–6 y fraccionarias 1/4, 1/2, 3/4, 3/2 y 5/2 según el tema. Otro ejercicio evita repetir la razón cuando la variante admite alternativas. Fórmula y término usan constructor de casillas, vista LaTeX en vivo y comprobación de los datos; Calcular muestra el término obtenido. Los borradores de estas prácticas se guardan por separado de la misión existente. Recursos: constructor.mjs y generatePractice/nextPractice de modelo.mjs.
+
+Presentación fraccionaria: las cantidades no enteras se renderizan mediante LaTeX con fracciones reducidas; la entrada del alumno sigue aceptando decimales y fracciones. Recorre los saltos permite editar numerador y denominador de a₁ y r, conserva el deslizador y usa aritmética racional exacta (fracciones.mjs y explorador.mjs). Denominador cero y campos incompletos muestran un mensaje sin conservar una sucesión desactualizada.
+
+El explorador inicia con campos simples a₁ y r. Usar fracciones cambia a numerador/denominador, con el símbolo y el signo igual a la izquierda; volver a campos simples conserva los valores y la posición. Las sucesiones se separan con comas y el enunciado del constructor se renderiza con KaTeX al crearlo.
