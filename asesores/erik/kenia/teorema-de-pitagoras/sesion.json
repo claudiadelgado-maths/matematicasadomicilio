@@ -1,0 +1,24 @@
+{
+  "id": "teorema-de-pitagoras-kenia-erik",
+  "slug": "teorema-de-pitagoras",
+  "tipo": "sesion",
+  "usuario": "kenia-erik",
+  "titulo": "Teorema de Pitágoras",
+  "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
+  "objetivo": "Reconocer la hipotenusa, sustituir los datos y calcular un cateto o la hipotenusa mediante cuadrados y raíces.",
+  "conocimientosPrevios": [
+    "cuadrados",
+    "raíz cuadrada",
+    "sumas y restas"
+  ],
+  "fecha": "2026-09-28",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": false
+  }
+}

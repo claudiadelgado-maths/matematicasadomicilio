@@ -1,0 +1,6 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {versions,triples,correct,steps,practice,chooseVersion} from './modelo.mjs';
+test('12 valid contextual missions with both kinds of missing side in each version',()=>{assert.equal(versions.length,3);for(const v of versions){assert.equal(v.levels.length,4);assert.ok(v.levels.some(q=>q.missing==='c'));assert.ok(v.levels.some(q=>q.missing!=='c'));for(const q of v.levels){assert.equal(q.a*q.a+q.b*q.b,q.c*q.c);assert.ok(q[q.missing]>0);assert.equal(steps(q).length,3);assert.ok(correct(String(q[q.missing]),q[q.missing]));}}});
+test('numeric answers accept equivalents and reject malformed or invalid values',()=>{for(const s of ['5','5.0','5,00','10/2'])assert.ok(correct(s,5));for(const s of ['','5abc','1/0','0/0','-5','25','Infinity','5/'])assert.ok(!correct(s,5));});
+test('practice and selection reach every triple and version',()=>{for(let j=0;j<triples.length;j++)for(let i=0;i<4;i++){const q=practice(i,()=>j/triples.length);assert.equal(q.a,triples[j][0]);assert.equal(q.a*q.a+q.b*q.b,q.c*q.c);}for(let prev=-1;prev<3;prev++){const choices=new Set(Array.from({length:30},(_,i)=>chooseVersion(prev,()=>i/30)));assert.equal(choices.size,prev===-1?3:2);assert.ok(!choices.has(prev));}});

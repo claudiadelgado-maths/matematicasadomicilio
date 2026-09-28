@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 224,
+  "total": 232,
   "tipos": {
     "maestro": [
       {
@@ -1470,6 +1470,31 @@
         "archivoMetadatos": "asesores/erik/jose-perez/introduccion/sesion.json"
       },
       {
+        "id": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
+        "slug": "aplicaciones-de-las-funciones-trigonometricas",
+        "tipo": "sesion",
+        "usuario": "kenia-erik",
+        "titulo": "Aplicaciones de las funciones trigonométricas",
+        "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
+        "objetivo": "Elegir una razón trigonométrica, despejar un lado o usar la función inversa para hallar los ángulos de un triángulo rectángulo.",
+        "conocimientosPrevios": [
+          "triángulo rectángulo",
+          "seno, coseno y tangente",
+          "despejes sencillos"
+        ],
+        "fecha": "2026-09-28",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/sesion.json"
+      },
+      {
         "id": "despejes-lineales-kenia",
         "slug": "despejes-lineales",
         "tipo": "sesion",
@@ -1518,6 +1543,31 @@
           "calculadoras": false
         },
         "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/sesion.json"
+      },
+      {
+        "id": "teorema-de-pitagoras-kenia-erik",
+        "slug": "teorema-de-pitagoras",
+        "tipo": "sesion",
+        "usuario": "kenia-erik",
+        "titulo": "Teorema de Pitágoras",
+        "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
+        "objetivo": "Reconocer la hipotenusa, sustituir los datos y calcular un cateto o la hipotenusa mediante cuadrados y raíces.",
+        "conocimientosPrevios": [
+          "cuadrados",
+          "raíz cuadrada",
+          "sumas y restas"
+        ],
+        "fecha": "2026-09-28",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/kenia/teorema-de-pitagoras/sesion.json"
       },
       {
         "id": "raul-erik-electricidad-3",
@@ -2307,6 +2357,17 @@
         "archivoMetadatos": "asesores/erik/andres/porcentajes/ejercicios/practica-de-porcentajes/ejercicio.json"
       },
       {
+        "id": "aplicaciones-trig-kenia-practice",
+        "tipo": "ejercicio",
+        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Practica: lados y ángulos",
+        "descripcion": "Cuatro ejercicios variables por ronda para calcular lados y ángulos; acepta decimales y fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/ejercicios/lados-y-angulos/",
+        "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/ejercicios/lados-y-angulos/ejercicio.json"
+      },
+      {
         "id": "practica-despejes-kenia",
         "tipo": "ejercicio",
         "sesion": "despejes-lineales-kenia",
@@ -2339,6 +2400,17 @@
         "estado": "publicado",
         "ruta": "/asesores/erik/kenia/funciones-trigonometricas/ejercicios/integrador/",
         "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/ejercicios/integrador/ejercicio.json"
+      },
+      {
+        "id": "pitagoras-kenia-practice",
+        "tipo": "ejercicio",
+        "sesion": "teorema-de-pitagoras-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Encuentra el lado faltante",
+        "descripcion": "Cuatro ejercicios por ronda, con ternas válidas y retroalimentación.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/ejercicios/lado-faltante/",
+        "archivoMetadatos": "asesores/erik/kenia/teorema-de-pitagoras/ejercicios/lado-faltante/ejercicio.json"
       },
       {
         "id": "raul-erik-electricidad-parte-2-conexiones",
@@ -3276,6 +3348,17 @@
         "archivoMetadatos": "asesores/erik/andres/porcentajes/explicacion/componente.json"
       },
       {
+        "id": "aplicaciones-trig-kenia-lesson",
+        "tipo": "explicacion",
+        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Cuatro ejemplos para empezar",
+        "descripcion": "Cuatro ejemplos guiados: cateto opuesto, cateto adyacente, hipotenusa y tres ángulos. Razones e inversas en grados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/explicacion/",
+        "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/explicacion/componente.json"
+      },
+      {
         "id": "explicacion-despejes-kenia",
         "tipo": "explicacion",
         "sesion": "despejes-lineales-kenia",
@@ -3452,6 +3535,17 @@
         "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/tangente/componente.json"
       },
       {
+        "id": "pitagoras-kenia-lesson",
+        "tipo": "explicacion",
+        "sesion": "teorema-de-pitagoras-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Descubre la fórmula",
+        "descripcion": "Explicación breve y sustitución paso a paso para hallar hipotenusa o cateto.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/explicacion/",
+        "archivoMetadatos": "asesores/erik/kenia/teorema-de-pitagoras/explicacion/componente.json"
+      },
+      {
         "id": "explicacion-ley-de-los-signos",
         "tipo": "explicacion",
         "tema": "ley-de-los-signos",
@@ -3594,6 +3688,17 @@
         "archivoMetadatos": "asesores/erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/juego.json"
       },
       {
+        "id": "aplicaciones-trig-kenia-game",
+        "tipo": "juego",
+        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Misiones trigonométricas",
+        "descripcion": "Nueve problemas en tres aventuras de tres niveles, con ilustraciones detalladas para cada contexto, lados identificados y ángulos destacados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/",
+        "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/juego.json"
+      },
+      {
         "id": "brigada-despeje-kenia",
         "tipo": "juego",
         "sesion": "despejes-lineales-kenia",
@@ -3616,6 +3721,17 @@
         "ruta": "/asesores/erik/kenia/funciones-trigonometricas/juegos/consultorio-trigonometrico/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/juegos/consultorio-trigonometrico/juego.json"
+      },
+      {
+        "id": "pitagoras-kenia-game",
+        "tipo": "juego",
+        "sesion": "teorema-de-pitagoras-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Misiones de Pitágoras",
+        "descripcion": "Tres versiones de cuatro situaciones reales con ilustraciones vectoriales detalladas y medidas destacadas; una versión aleatoria por partida.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/juegos/misiones-pitagoricas/",
+        "archivoMetadatos": "asesores/erik/kenia/teorema-de-pitagoras/juegos/misiones-pitagoricas/juego.json"
       },
       {
         "id": "guardia-de-los-signos",

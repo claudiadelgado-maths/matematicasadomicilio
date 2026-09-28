@@ -1,0 +1,9 @@
+# Aplicaciones de las funciones trigonométricas · Kenia · Erik
+
+Sesión completa: repaso breve y cuatro ejemplos paso a paso (cateto opuesto con seno, adyacente con tangente, hipotenusa con coseno, ángulos con tangente inversa). Incluye referencia a las tres razones y sus inversas en grados; para hallar ángulos se necesitan dos lados, o un ángulo agudo conocido. Cuatro ejercicios variables por ronda y nueve situaciones de juego distribuidas en tres versiones de tres niveles.
+
+Al entrar se elige una versión aleatoria; jugar otra aventura elige una de las otras dos. Sin tiempo, penalizaciones ni guardado. Continuar se desbloquea solo al acertar; los problemas de tres ángulos exigen las tres respuestas. Decimales con punto o coma y fracciones aceptados; redondeo a dos decimales, sin redondear resultados intermedios. Entradas vacías, no finitas y fuera del dominio se rechazan.
+
+Recursos locales: modelo.mjs contiene ejercicios, nueve misiones y procedimientos; app.mjs la interfaz; figuras.mjs contiene ilustraciones propias derivadas de Pitágoras, detalladas para los contextos trigonométricos: apoyo de escalera en la ventana, mirador, cables y anclajes, jardín y terreno en vista superior, rampas y mástil. Cada lado muestra su función respecto de θ; la incógnita, los sectores angulares y α se destacan en morado. El guion indica una medida no proporcionada. No se altera la sesión original. Dibujos esquemáticos no a escala. No se revelan respuestas desconocidas en las ilustraciones. sesion.css conserva la apariencia de esa familia. KaTeX 0.18.1 por CDN para LaTeX. Cada componente tiene HTML, CSS, README y JSON.
+
+Pruebas: node --test asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/recursos/modelo.test.mjs; npm run catalogo; npm run validar. Comprobar las tres aventuras, grados, despejes, teclado, móvil, consola y navegación. Sustituir la carpeta completa conservando ubicación e identidad.

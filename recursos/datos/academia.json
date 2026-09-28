@@ -511,8 +511,22 @@
             "acento": "#7a3f82",
             "fondo": "#f7eef8"
           },
-          "ultimaActividad": "2026-09-23",
+          "ultimaActividad": "2026-09-28",
           "sesiones": [
+            {
+              "id": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
+              "titulo": "Aplicaciones de las funciones trigonométricas",
+              "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
+              "fecha": "2026-09-28",
+              "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/"
+            },
+            {
+              "id": "teorema-de-pitagoras-kenia-erik",
+              "titulo": "Teorema de Pitágoras",
+              "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
+              "fecha": "2026-09-28",
+              "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/"
+            },
             {
               "id": "funciones-trigonometricas-kenia-erik",
               "titulo": "Funciones trigonométricas",
