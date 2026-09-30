@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 239,
+  "total": 245,
   "tipos": {
     "maestro": [
       {
@@ -1250,6 +1250,27 @@
         "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/sesion.json"
       },
       {
+        "id": "examen-series-alejandrina",
+        "slug": "examen-series",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Examen series",
+        "descripcion": "Práctica de sucesiones y series aritméticas y geométricas: identificar la sucesión.",
+        "objetivo": "Practicar identificación, parámetros, términos, posiciones, sumas y medios de sucesiones aritméticas y geométricas con validación exacta y dificultad progresiva.",
+        "conocimientosPrevios": [],
+        "fecha": "2026-09-30",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/examen-series/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/alejandrina/examen-series/sesion.json"
+      },
+      {
         "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
         "slug": "formulas-de-sucesiones",
         "tipo": "sesion",
@@ -1500,8 +1521,8 @@
         "tipo": "sesion",
         "usuario": "kenia-erik",
         "titulo": "Biología parte 1",
-        "descripcion": "Explora la célula animal con un esquema ilustrado, tarjetas de nombres y corrección inmediata de once estructuras.",
-        "objetivo": "Identificar las principales estructuras de una célula animal siguiendo indicadores visuales y corregir las respuestas con retroalimentación inmediata.",
+        "descripcion": "Repaso para secundaria de célula animal y biomoléculas: guías visuales, once estructuras, siete grupos de sustancias, rondas breves o completas, clasificación y práctica de errores con explicaciones.",
+        "objetivo": "Relacionar estructuras y sustancias celulares con sus funciones, distinguir conceptos que suelen confundirse y reforzar los errores mediante guías, preguntas y clasificación.",
         "conocimientosPrevios": [],
         "fecha": "2026-09-29",
         "estado": "publicado",
@@ -1546,8 +1567,8 @@
         "tipo": "sesion",
         "usuario": "kenia-erik",
         "titulo": "Extra mate parte 1",
-        "descripcion": "Repaso visual de geometría: ángulos con semirrectas móviles, laboratorio circular de 0 a 360 grados y práctica ilimitada de clasificación.",
-        "objetivo": "Comprender el ángulo como giro entre dos semirrectas con vértice común, distinguir los siete tipos e identificarlos para un examen.",
+        "descripcion": "Repaso visual de geometría: ángulos, paralelas y transversal, triángulos, cuadriláteros y taller de trapecios. Laboratorios interactivos y juegos de clasificación, propiedades, medidas y ecuaciones lineales.",
+        "objetivo": "Clasificar ángulos, triángulos y cuadriláteros; reconocer relaciones entre paralelas; aplicar sumas de 180° y 360°, propiedades de ángulos exteriores y trapecios; resolver medidas y ecuaciones lineales.",
         "conocimientosPrevios": [],
         "fecha": "2026-09-29",
         "estado": "publicado",
@@ -1556,7 +1577,7 @@
           "explicacion": true,
           "demostraciones": false,
           "ejercicios": true,
-          "juegos": false,
+          "juegos": true,
           "calculadoras": false
         },
         "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/sesion.json"
@@ -2305,6 +2326,17 @@
         "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/ejercicios/construye-el-arbol/ejercicio.json"
       },
       {
+        "id": "examen-series-identificar-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "examen-series-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Identificar la sucesión",
+        "descripcion": "Aritmética o geométrica. Enteros, negativos y fracciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/identificar/",
+        "archivoMetadatos": "asesores/erik/alejandrina/examen-series/ejercicios/identificar/ejercicio.json"
+      },
+      {
         "id": "practica-formulas-sucesiones-aritmeticas",
         "tipo": "ejercicio",
         "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
@@ -2436,12 +2468,23 @@
         "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/ejercicios/lados-y-angulos/ejercicio.json"
       },
       {
+        "id": "biomoleculas-biologia-kenia-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-1-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Principales biomoléculas de la célula",
+        "descripcion": "Guía de siete grupos de sustancias orgánicas e inorgánicas, laboratorio con 21 pasos, 49 preguntas de funciones en rondas de 7 o 14 y 56 tarjetas de clasificación. Incluye revisión de errores, repaso de tarjetas difíciles y resultados separados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/biologia-parte-1/ejercicios/biomoleculas/",
+        "archivoMetadatos": "asesores/erik/kenia/biologia-parte-1/ejercicios/biomoleculas/ejercicio.json"
+      },
+      {
         "id": "partes-celula-animal-biologia-kenia-erik",
         "tipo": "ejercicio",
         "sesion": "biologia-parte-1-kenia-erik",
         "usuario": "kenia-erik",
         "titulo": "Partes de la célula animal",
-        "descripcion": "Actividad 1: relacionar once nombres con una célula ilustrada mediante un banco vertical, líneas resaltables, arrastre, toques o teclado y corrección inmediata en verde o rojo con una señal de error temporal.",
+        "descripcion": "Dibujo interactivo de once estructuras, guía de funciones y vocabulario, ruta de proteínas y dos cuestionarios con 99 preguntas originales. Rondas de 11 o 22, explicación de errores y práctica dirigida que conserva el resultado inicial.",
         "estado": "publicado",
         "ruta": "/asesores/erik/kenia/biologia-parte-1/ejercicios/partes-de-la-celula-animal/",
         "archivoMetadatos": "asesores/erik/kenia/biologia-parte-1/ejercicios/partes-de-la-celula-animal/ejercicio.json"
@@ -3821,6 +3864,39 @@
         "ruta": "/asesores/erik/kenia/despejes-lineales/juegos/brigada-del-despeje/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/juegos/brigada-del-despeje/juego.json"
+      },
+      {
+        "id": "extra-mate-kenia-cuadrilateros",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-1-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Cuadriláteros y trapecios",
+        "descripcion": "Actividad 4: clasificación interactiva de cuadriláteros y suma de 360°, con taller de trapecios isósceles, rectángulos y escalenos. Dos recorridos de 16 retos sobre figuras, propiedades, pistas, partes y medidas, con reintentos y progreso.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/juegos/cuadrilateros/",
+        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/juegos/cuadrilateros/juego.json"
+      },
+      {
+        "id": "extra-mate-kenia-paralelas-transversal",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-1-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Paralelas y transversal",
+        "descripcion": "Actividad 2: laboratorio de ocho ángulos y cuatro juegos de 20 retos cada uno. Medidas manuales como apoyo, expresiones completas y comprobación de x e y por separado; al acertar todas las variables se completan los ángulos pendientes y se permite avanzar. Incluye feedback, nuevas series y reintentos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/juegos/paralelas-y-transversal/",
+        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/juegos/paralelas-y-transversal/juego.json"
+      },
+      {
+        "id": "extra-mate-kenia-triangulos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-1-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Laboratorio de triángulos",
+        "descripcion": "Actividad 3: tipos de triángulos, animación de los 180° interiores y exploración de ángulos exteriores. Tres etapas de 12 retos en rondas de cuatro, con sí/no, medidas y ecuaciones lineales, pistas, reintentos y series nuevas.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/juegos/triangulos/",
+        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/juegos/triangulos/juego.json"
       },
       {
         "id": "consultorio-trigonometrico-kenia-erik",

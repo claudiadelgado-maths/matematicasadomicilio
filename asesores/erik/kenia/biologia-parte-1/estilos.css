@@ -35,3 +35,8 @@
   .biology-site .activity-arrow { display: none; }
   .biology-site .hero-cell figcaption { flex-wrap: wrap; gap: 0.2rem; }
 }
+
+.biology-site .study-plan .study-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.biology-site .study-plan .study-flow li { background: white; border: 1px solid var(--bio-border); }
+.biology-site .session-activities { padding-bottom: 1rem; }
+@media (max-width: 650px) { .biology-site .study-plan .study-flow { grid-template-columns: 1fr; } }

@@ -1,0 +1,128 @@
+.geometry-site .parallel-section { margin-bottom: 2.5rem; scroll-margin-top: 1.5rem; }
+.geometry-site .section-title { font-size: clamp(1.5rem,3vw,2rem); margin-bottom: .6rem; }
+.geometry-site .section-intro { max-width: 750px; color: var(--geo-muted); }
+.geometry-site .parallel-panel { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: clamp(1rem,3vw,2.5rem); padding: clamp(1rem,3vw,2rem); border: 1px solid var(--geo-border); border-radius: 22px; background: white; align-items: start; }
+.geometry-site .parallel-figure { min-width: 0; margin: 0; }
+.geometry-site .parallel-stage { position: relative; width: 100%; max-width: 500px; margin: auto; aspect-ratio: 1; }
+.geometry-site .parallel-svg { display: block; width: 100%; height: 100%; pointer-events: none; }
+.geometry-site .interior-band { fill: #f2f4fb; }
+.geometry-site .parallel-line { stroke: #344658; stroke-width: 4; stroke-linecap: round; }
+.geometry-site .transversal-line { stroke: #267b80; stroke-width: 4; stroke-linecap: round; }
+.geometry-site .parallel-symbol { fill: none; stroke: #344658; stroke-width: 3; }
+.geometry-site .diagram-text { fill: #566275; font: 650 17px var(--font-sans); }
+.geometry-site .region-sector { fill: #e5e8f1; stroke: white; stroke-width: 1.5; transition: fill .2s; }
+.geometry-site .region-sector.is-given { fill: #fbeacf; }
+.geometry-site .region-sector.is-a { fill: #d8d6ff; stroke: #5556a4; stroke-width: 2.5; }
+.geometry-site .region-sector.is-b { fill: #ffe2bc; stroke: #a65f0b; stroke-width: 2.5; }
+.geometry-site .region-sector.is-correct { fill: #ceeade; stroke: #1b7650; }
+.geometry-site .angle-token { position: absolute; display: flex; align-items: center; justify-content: center; flex-direction: column; width: 56px; min-height: 46px; transform: translate(-50%,-50%); border: 1px solid #d3d9e7; border-radius: 11px; background: white; color: var(--geo-ink); font: 800 17px/1.2 var(--font-sans); padding: 3px; cursor: pointer; touch-action: manipulation; }
+.geometry-site .angle-token .angle-id { font-size: 12px; font-weight: 650; }
+.geometry-site .angle-token.is-given { border: 2px solid #a65f0b; background: #fff4e4; }
+.geometry-site .angle-token.is-a { border: 2px solid #5556a4; background: #eeedff; }
+.geometry-site .angle-token.is-b { border: 2px solid #a65f0b; background: #fff0d9; }
+.geometry-site .angle-token.is-correct { border-color: #1b7650; background: #e9f7ef; }
+.geometry-site .angle-token.is-wrong { border: 2px solid #af3447; background: #fff0f2; }
+.geometry-site .angle-token:disabled { cursor: default; opacity: 1; color: #344658; }
+.geometry-site .angle-entry { position: absolute; display: flex; flex-direction: column; justify-content: center; width: 56px; min-height: 54px; padding: 3px; transform: translate(-50%,-50%); border: 1px solid #a6afbf; border-radius: 10px; background: white; text-align: center; cursor: text; }
+.geometry-site .angle-entry .angle-id { font-size: 11px; line-height: 13px; color: #566275; font-weight: 650; }
+.geometry-site .angle-expression { color: #414386; font: 800 12px/14px var(--font-sans); white-space: nowrap; }
+.geometry-site .angle-entry.has-expression { height: 64px; min-height: 64px; padding: 2px; border-color: #5556a4; }
+.geometry-site .angle-entry.has-expression .angle-id, .geometry-site .angle-entry.has-expression .angle-expression { line-height: 12px; }
+.geometry-site .angle-entry.has-expression .angle-input-row { min-height: 28px; }
+.geometry-site .angle-entry.has-expression .angle-measure-input { height: 28px; }
+.geometry-site .angle-input-row { display: flex; align-items: center; min-height: 32px; }
+.geometry-site .angle-measure-input { display: block; width: 100%; min-width: 0; height: 32px; padding: 0; border: 0; border-radius: 3px; background: transparent; color: var(--geo-ink); font: 800 17px/1.2 var(--font-sans); text-align: center; }
+.geometry-site .angle-unit { color: #566275; font-size: 14px; }
+.geometry-site .angle-entry:focus-within { outline: 3px solid #5556a4; outline-offset: 2px; }
+.geometry-site .angle-measure-input:focus-visible { outline: none; }
+.geometry-site .angle-entry.is-a { border: 2px solid #5556a4; background: #f2f1ff; }
+.geometry-site .angle-entry.is-correct { border: 2px solid #1b7650; background: #e9f7ef; }
+.geometry-site .angle-entry.is-wrong { border: 2px solid #af3447; background: #fff0f2; }
+.geometry-site .entry-status { position: absolute; right: -8px; top: -9px; padding: 1px; border-radius: 50%; background: white; font-size: 14px; line-height: 18px; }
+.geometry-site .region-sector.is-wrong { fill: #f6dbe1; stroke: #af3447; }
+.geometry-site .diagram-legend { font-size: .8rem; gap: .6rem; }
+.geometry-site .parallel-caption { margin: .3rem 0 0; text-align: center; color: var(--geo-muted); font-size: .82rem; }
+.geometry-site .pair-tag { display: inline-flex; padding: .3rem .7rem; border-radius: 7px; background: #eeedff; color: #414386; font-weight: 750; }
+.geometry-site .pair-tag.second { background: #fff0d9; color: #8c5007; }
+.geometry-site .pair-readout { margin-top: 1.2rem; padding: 1.25rem; border-radius: 14px; background: #f4f5fb; min-height: 210px; }
+.geometry-site .pair-readout h3 { margin: .8rem 0; font-size: 1.5rem; }
+.geometry-site .pair-equation { font-size: 1.3rem; font-weight: 800; margin: .6rem 0; }
+.geometry-site .small-note { font-size: .82rem; color: var(--geo-muted); line-height: 1.5; }
+.geometry-site .explore-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
+.geometry-site .measure-toggle { display: flex; align-items: center; gap: .6rem; min-height: 44px; font-size: .87rem; }
+.geometry-site .measure-toggle input { width: 20px; height: 20px; accent-color: var(--geo-accent); }
+.geometry-site .relation-guide { margin-top: 1rem; border: 1px solid var(--geo-border); border-radius: 12px; background: white; }
+.geometry-site .relation-guide summary { cursor: pointer; min-height: 48px; padding: .8rem 1rem; font-weight: 750; }
+.geometry-site .guide-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .7rem; padding: 0 1rem 1rem; }
+.geometry-site .guide-item { padding: .9rem; background: #f5f6fa; border-radius: 10px; }
+.geometry-site .guide-item p { margin: .4rem 0 0; font-size: .85rem; color: var(--geo-muted); }
+.geometry-site .game-menu { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: .8rem; margin-block: 1.25rem; }
+.geometry-site .game-choice { display: flex; flex-direction: column; align-items: start; gap: .6rem; padding: 1.1rem; min-height: 150px; text-align: left; border: 1px solid var(--geo-border); border-radius: 14px; background: white; color: var(--geo-ink); cursor: pointer; font: inherit; touch-action: manipulation; }
+.geometry-site .game-choice strong { font-size: 1rem; }
+.geometry-site .game-choice small { font-size: .78rem; color: var(--geo-muted); }
+.geometry-site .game-choice[aria-pressed="true"] { border: 2px solid var(--geo-accent); background: #f0effd; padding: calc(1.1rem - 1px); }
+.geometry-site .game-level { border-radius: 6px; padding: .2rem .45rem; font-size: .73rem; background: #e9ecf5; color: #5556a4; font-weight: 750; }
+.geometry-site .game-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; align-items: center; margin-bottom: 1rem; }
+.geometry-site .progress-copy { margin: 0 0 .5rem; font-size: .85rem; font-weight: 700; }
+.geometry-site .round-progress { display: flex; gap: .4rem; }
+.geometry-site .round-progress span { width: 30px; height: 7px; border-radius: 6px; background: #e0e4ee; }
+.geometry-site .round-progress span.done { background: #267b80; }
+.geometry-site .round-progress span.current { background: var(--geo-accent); }
+.geometry-site .challenge-copy h3 { margin: 0 0 .65rem; font-size: clamp(1.35rem,2.6vw,1.8rem); }
+.geometry-site .challenge-copy > p { margin-top: 0; color: var(--geo-muted); }
+.geometry-site .challenge-copy { min-width: 0; }
+.geometry-site .relation-options { display: grid; gap: .65rem; margin-block: 1rem; }
+.geometry-site .relation-option { width: 100%; text-align: left; justify-content: start; }
+.geometry-site .relation-option.is-correct { color: #165d40; border-color: #1b7650; background: #e9f7ef; }
+.geometry-site .relation-option.is-wrong { color: #92283b; border-color: #af3447; background: #fff0f2; }
+.geometry-site .feedback { padding: .85rem 1rem; border-radius: 10px; background: #f3f4f9; margin-block: 1rem; font-size: .9rem; line-height: 1.5; }
+.geometry-site .feedback[data-kind="correct"] { background: #e9f7ef; border-left: 3px solid #1b7650; }
+.geometry-site .feedback[data-kind="wrong"] { background: #fff0f2; border-left: 3px solid #af3447; }
+.geometry-site .fill-count { margin: .7rem 0; font-size: .83rem; color: var(--geo-muted); }
+.geometry-site .given-list { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.geometry-site .given-chip { padding: .45rem .65rem; border: 1px solid #cbc9e8; border-radius: 8px; font-weight: 750; font-size: .85rem; background: #f4f3ff; }
+.geometry-site .given-chip.numeric { border-color: #e2bc8a; background: #fff4e4; }
+.geometry-site .variable-card { border: 1px solid var(--geo-border); border-radius: 12px; padding: 1rem; margin-bottom: .9rem; }
+.geometry-site .variable-card h4 { margin: 0 0 .6rem; font-size: 1rem; }
+.geometry-site .variable-form { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin-top: .85rem; }
+.geometry-site .variable-form label { font-weight: 750; }
+.geometry-site .variable-form input { width: 90px; min-height: 48px; border: 1px solid #a6afbf; border-radius: 8px; padding: .5rem; font: inherit; background: white; }
+.geometry-site .variable-card.is-correct { border-color: #1b7650; background: #f4fbf7; }
+.geometry-site .variable-card.is-wrong { border-color: #af3447; background: #fff7f8; }
+.geometry-site .variable-card.is-wrong input { border-color: #af3447; background: #fff0f2; }
+.geometry-site .variable-card.is-correct input { border-color: #1b7650; background: #e9f7ef; }
+.geometry-site .variable-result { margin: .75rem 0 0; line-height: 1.5; font-size: .86rem; }
+.geometry-site .hint-box { margin: 1rem 0; border: 1px dashed #aaaec9; border-radius: 10px; padding: .5rem .8rem; font-size: .85rem; }
+.geometry-site .hint-box summary { cursor: pointer; min-height: 36px; align-content: center; font-weight: 700; }
+.geometry-site .hint-box p { margin: .5rem 0; }
+.geometry-site .challenge-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; }
+.geometry-site .round-celebration { position: relative; overflow: hidden; padding: clamp(1.5rem,4vw,3rem); border: 1px solid #d2d3ed; border-radius: 22px; background: #f0effd; text-align: center; }
+.geometry-site .round-celebration h3 { font-size: clamp(1.8rem,4vw,2.7rem); margin: .8rem 0; }
+.geometry-site .round-celebration .celebration-mark { display: inline-grid; place-items: center; width: 70px; height: 70px; border: 2px solid #5556a4; border-radius: 50%; color: #5556a4; font-size: 2rem; animation: round-pop .45s ease-out; }
+.geometry-site .round-celebration .challenge-actions { justify-content: center; margin-top: 1.4rem; }
+.geometry-site .round-celebration p { max-width: 620px; margin: .75rem auto; }
+.geometry-site .game-note { margin-top: 1rem; font-size: .82rem; color: var(--geo-muted); }
+/* Los estados de juego prevalecen sobre display:grid/inline-flex de las tarjetas. */
+.geometry-site [hidden] { display: none !important; }
+@keyframes round-pop { from { transform: scale(.6) rotate(-20deg); } to { transform: scale(1) rotate(0); } }
+@media (max-width: 1000px) { .geometry-site .game-menu { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 760px) {
+  .geometry-site .parallel-panel { grid-template-columns: 1fr; }
+  .geometry-site .parallel-stage { max-width: 450px; }
+  .geometry-site .pair-readout { min-height: 0; }
+  .geometry-site .game-choice { min-height: 138px; }
+}
+@media (max-width: 480px) {
+  .geometry-site .parallel-panel { padding: .75rem; gap: 1rem; }
+  .geometry-site .angle-token { width: 52px; min-height: 44px; font-size: 15px; border-radius: 9px; }
+  .geometry-site .angle-token .angle-id { font-size: 11px; }
+  .geometry-site .angle-entry { width: 52px; }
+  .geometry-site .angle-measure-input { font-size: 16px; }
+  .geometry-site .game-choice { padding: .8rem; }
+  .geometry-site .game-choice[aria-pressed="true"] { padding: calc(.8rem - 1px); }
+  .geometry-site .game-choice strong { font-size: .9rem; }
+  .geometry-site .guide-grid { grid-template-columns: 1fr; }
+  .geometry-site .given-chip { font-size: .8rem; }
+  .geometry-site .variable-card { padding: .8rem; }
+}
+@media (prefers-reduced-motion: reduce) { .geometry-site .round-celebration .celebration-mark { animation: none; } }

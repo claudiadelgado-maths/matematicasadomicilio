@@ -1,0 +1,10 @@
+{
+  "id": "examen-series-terminos-posiciones-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "examen-series-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "Hallar aₙ y n",
+  "descripcion": "Practica términos y posiciones en dos secciones independientes.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/terminos-posiciones/"
+}

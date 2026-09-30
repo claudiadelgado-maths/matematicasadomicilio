@@ -1,0 +1,97 @@
+/* Cuestionarios de organelos y biomoléculas; compartidos dentro de Biología. */
+.biology-site .cell-quiz { --quiz-accent: var(--bio-teal); --quiz-tint: #edf6f0; margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--bio-border); }
+.biology-site .reasoning-quiz { --quiz-accent: #555492; --quiz-tint: #f1f0fa; }
+.biology-site .quiz-heading { display: flex; align-items: start; gap: 1.1rem; max-width: 920px; margin-bottom: 1.5rem; }
+.biology-site .quiz-number { display: grid; flex: 0 0 auto; width: 60px; height: 60px; place-items: center; border-radius: 17px; background: var(--quiz-tint); color: var(--quiz-accent); font-size: 1.4rem; font-weight: 850; }
+.biology-site .quiz-heading .eyebrow { color: var(--quiz-accent); }
+.biology-site .quiz-heading h2 { margin: 0; font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+.biology-site .quiz-heading p:not(.eyebrow) { margin: .7rem 0 0; color: var(--bio-muted); line-height: 1.65; }
+.biology-site .quiz-panel { max-width: 940px; margin-inline: auto; padding: clamp(1rem, 3vw, 2.25rem); border: 1px solid var(--bio-border); border-radius: 22px; background: white; }
+.biology-site .quiz-status { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; color: var(--quiz-accent); font-size: .84rem; font-weight: 750; }
+.biology-site .quiz-meter { width: 100%; height: 7px; margin: .8rem 0 1.4rem; accent-color: var(--quiz-accent); }
+.biology-site .quiz-meter::-webkit-progress-value { background: var(--quiz-accent); }
+.biology-site .quiz-question-card { padding: clamp(1rem, 2.4vw, 1.65rem); border-radius: 14px; background: var(--quiz-tint); }
+.biology-site .quiz-kind { display: inline-flex; margin-bottom: .85rem; color: var(--quiz-accent); font-size: .74rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+.biology-site .quiz-prompt { margin: 0; font-size: clamp(1.15rem, 2.1vw, 1.5rem); line-height: 1.5; letter-spacing: -.015em; scroll-margin-block: 115px; }
+.biology-site .quiz-prompt strong { text-decoration: underline; text-underline-offset: .16em; }
+.biology-site .quiz-instruction { margin: 1.1rem 0 .8rem; color: var(--bio-muted); font-size: .83rem; }
+.biology-site .quiz-choices { display: grid; grid-template-columns: 1fr; gap: .75rem; }
+.biology-site .quiz-choice { display: grid; grid-template-columns: 29px minmax(0, 1fr) 24px; align-items: center; gap: .7rem; width: 100%; min-height: 72px; padding: .85rem 1rem; border: 1.5px solid #bdcfc4; border-radius: 12px; background: white; color: var(--bio-ink); font-size: .94rem; font-weight: 650; line-height: 1.5; text-align: left; cursor: pointer; touch-action: manipulation; }
+.biology-site .quiz-choice:not(:disabled):hover { border-color: var(--quiz-accent); background: var(--quiz-tint); }
+.biology-site .choice-letter { display: grid; width: 29px; height: 29px; place-items: center; border-radius: 8px; background: #edf3ef; color: #52645b; font-size: .8rem; }
+.biology-site .choice-text { overflow-wrap: anywhere; }
+.biology-site .choice-mark { font-size: 1.1rem; text-align: center; }
+.biology-site .quiz-choice:disabled { cursor: default; opacity: 1; }
+.biology-site .quiz-choice.is-correct { border-color: #27814c; background: #e9f8ee; color: #195b34; }
+.biology-site .quiz-choice.is-incorrect { border-color: #c2474d; background: #fff0f0; color: #9b2930; }
+.biology-site .quiz-choice.is-correct .choice-letter { background: #d0ebd9; color: #195b34; }
+.biology-site .quiz-choice.is-incorrect .choice-letter { background: #f7d9db; color: #9b2930; }
+.biology-site .quiz-choice.is-muted { color: #58685e; background: #f5f7f5; border-color: #d9e2dc; }
+.biology-site .quiz-feedback { margin-top: 1rem; }
+.biology-site .quiz-feedback:empty { display: none; }
+.biology-site .quiz-feedback.has-feedback { padding: 1rem 1.15rem; border-left: 4px solid #27814c; border-radius: 0 10px 10px 0; background: #eff8f2; }
+.biology-site .quiz-feedback.is-incorrect { border-left-color: #c2474d; background: #fff4f2; }
+.biology-site .quiz-feedback h4 { margin: 0 0 .35rem; font-size: 1rem; line-height: 1.5; }
+.biology-site .quiz-feedback p { margin: 0; line-height: 1.65; font-size: .94rem; }
+.biology-site .quiz-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .8rem; margin-top: 1.25rem; }
+.biology-site .quiz-controls p { margin: 0; color: var(--bio-muted); font-size: .8rem; }
+.biology-site .cell-quiz .bio-button { touch-action: manipulation; }
+.biology-site .cell-quiz .bio-button.primary { border-color: var(--quiz-accent); background: var(--quiz-accent); }
+.biology-site .cell-quiz .bio-button.primary:disabled { border-color: #d5ded9; background: #edf1ee; color: #69756e; }
+.biology-site .quiz-navigation { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .8rem; margin: 1.1rem 0 0; }
+.biology-site .quiz-navigation > a:not(.bio-button) { display: inline-flex; min-height: 44px; align-items: center; color: var(--bio-teal); font-size: .88rem; }
+.biology-site .quiz-summary h3 { margin-bottom: .5rem; font-size: clamp(1.7rem, 3vw, 2.3rem); scroll-margin-top: 115px; }
+.biology-site .quiz-final-score { margin: .75rem 0; color: var(--quiz-accent); font-size: clamp(2.8rem, 6vw, 4.5rem); font-weight: 850; letter-spacing: -.045em; line-height: 1.1; }
+.biology-site .quiz-final-score span { display: block; margin-top: .5rem; color: var(--bio-muted); font-size: .9rem; font-weight: 500; letter-spacing: normal; }
+.biology-site .quiz-review { margin: 1.5rem 0; padding: 1.1rem; border-radius: 12px; background: var(--quiz-tint); }
+.biology-site .quiz-review h4 { margin: 0 0 .5rem; font-size: 1.05rem; }
+.biology-site .quiz-review p { margin: 0; color: var(--bio-muted); font-size: .88rem; }
+.biology-site .quiz-review ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem 1rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.biology-site .quiz-review li { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .25rem .6rem; padding: .6rem 0; border-bottom: 1px solid var(--bio-border); font-size: .86rem; }
+.biology-site .quiz-review li span { color: var(--bio-muted); white-space: nowrap; }
+.biology-site .quiz-perfect { margin: 1.3rem 0; padding: 1rem; border-radius: 10px; background: #e9f8ee; color: #195b34; }
+.biology-site .quiz-summary .bio-button { margin-top: .75rem; }
+.biology-site .quiz-retry-note { margin: .65rem 0 0; color: var(--bio-muted); font-size: .82rem; }
+.biology-site .quiz-feedback.has-feedback { animation: quiz-feedback-in 180ms ease-out; }
+@keyframes quiz-feedback-in { from { opacity: .5; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 650px) {
+  .biology-site .quiz-heading { gap: .8rem; }
+  .biology-site .quiz-number { width: 44px; height: 44px; border-radius: 12px; font-size: 1.1rem; }
+  .biology-site .quiz-heading .eyebrow { font-size: .66rem; letter-spacing: .07em; }
+  .biology-site .quiz-heading h2 { font-size: 1.75rem; }
+  .biology-site .quiz-heading p:not(.eyebrow) { font-size: .9rem; }
+  .biology-site .quiz-choices, .biology-site .quiz-review ul { grid-template-columns: 1fr; }
+  .biology-site .quiz-choice { padding: .8rem; font-size: .9rem; gap: .55rem; }
+  .biology-site .quiz-controls { align-items: stretch; flex-direction: column; }
+  .biology-site .quiz-controls .bio-button { width: 100%; }
+  .biology-site .cell-quiz { margin-top: 2.5rem; padding-top: 2rem; }
+}
+@media (prefers-reduced-motion: reduce) { .biology-site .quiz-feedback.has-feedback { animation: none; } }
+
+.biology-site .quiz-setup h3 { margin: .3rem 0 .7rem; font-size: 1.7rem; }
+.biology-site .quiz-setup > p:not(.eyebrow) { color: var(--bio-muted); line-height: 1.6; }
+.biology-site .quiz-lengths { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin-block: 1.2rem; }
+.biology-site .quiz-length { display: grid; gap: .45rem; min-height: 135px; padding: 1.2rem; border: 1.5px solid var(--bio-border); border-radius: 14px; background: var(--quiz-tint); color: var(--bio-ink); text-align: left; font: inherit; cursor: pointer; }
+.biology-site .quiz-length:hover { border-color: var(--quiz-accent); }
+.biology-site .quiz-length strong { color: var(--quiz-accent); font-size: 1.1rem; }
+.biology-site .quiz-length span { font-size: 1.35rem; font-weight: 750; }
+.biology-site .quiz-length small { font-size: .8rem; color: var(--bio-muted); line-height: 1.5; }
+.biology-site .quiz-study-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--bio-teal); font-size: .88rem; }
+.biology-site .quiz-context { padding: .8rem; border-radius: 8px; background: var(--quiz-tint); font-size: .85rem; line-height: 1.6; }
+.biology-site .quiz-feedback .quiz-correction { margin-bottom: .6rem; font-weight: 700; }
+.biology-site .quiz-summary-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
+.biology-site .quiz-review li > p { flex-basis: 100%; margin-top: .4rem; font-size: .83rem; line-height: 1.6; }
+.biology-site .quiz-mistakes { margin-top: 1.2rem; padding: 1rem; border: 1px solid var(--bio-border); border-radius: 12px; }
+.biology-site .quiz-mistakes summary { min-height: 44px; display: list-item; align-content: center; color: var(--bio-teal); font-weight: 750; cursor: pointer; }
+.biology-site .quiz-mistakes ol { margin: 1rem 0 0; padding-left: 1.25rem; }
+.biology-site .quiz-mistakes li + li { margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--bio-border); }
+.biology-site .quiz-mistakes h4 { margin: 0 0 .5rem; font-size: 1rem; line-height: 1.6; }
+.biology-site .quiz-mistakes p { margin: .4rem 0; line-height: 1.6; font-size: .9rem; }
+.biology-site .mistake-chosen { color: #9b2930; }
+.biology-site .mistake-correct { color: #195b34; font-weight: 700; }
+.biology-site .quiz-length:focus-visible, .biology-site .quiz-mistakes summary:focus-visible { outline: 3px solid #146b85; outline-offset: 3px; }
+@media (max-width: 550px) {
+  .biology-site .quiz-lengths { grid-template-columns: 1fr; }
+  .biology-site .quiz-length { min-height: 115px; }
+  .biology-site .quiz-summary-actions { display: grid; }
+}

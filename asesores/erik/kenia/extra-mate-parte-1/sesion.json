@@ -4,8 +4,8 @@
   "tipo": "sesion",
   "usuario": "kenia-erik",
   "titulo": "Extra mate parte 1",
-  "descripcion": "Repaso visual de geometría: ángulos con semirrectas móviles, laboratorio circular de 0 a 360 grados y práctica ilimitada de clasificación.",
-  "objetivo": "Comprender el ángulo como giro entre dos semirrectas con vértice común, distinguir los siete tipos e identificarlos para un examen.",
+  "descripcion": "Repaso visual de geometría: ángulos, paralelas y transversal, triángulos, cuadriláteros y taller de trapecios. Laboratorios interactivos y juegos de clasificación, propiedades, medidas y ecuaciones lineales.",
+  "objetivo": "Clasificar ángulos, triángulos y cuadriláteros; reconocer relaciones entre paralelas; aplicar sumas de 180° y 360°, propiedades de ángulos exteriores y trapecios; resolver medidas y ecuaciones lineales.",
   "conocimientosPrevios": [],
   "fecha": "2026-09-29",
   "estado": "publicado",
@@ -14,7 +14,7 @@
     "explicacion": true,
     "demostraciones": false,
     "ejercicios": true,
-    "juegos": false,
+    "juegos": true,
     "calculadoras": false
   }
 }

@@ -8,6 +8,6 @@ La figura usa color neutral para no proporcionar la clasificación por el color.
 
 Archivos locales: index.html, estilos.css, script.mjs, ejercicio.json y este README. Consume ../../recursos/modelo.mjs, ../../recursos/angulos.mjs y ../../recursos/geometria.css. Mantiene navegación, marca, pie, salto y recursos globales a seis niveles. No utiliza almacenamiento ni servicios externos.
 
-Regreso al laboratorio: ../../explicacion/tipos-de-angulos/; inicio: ../../. Siguiente tema está deshabilitado hasta que exista otro tema real.
+Regreso al laboratorio: ../../explicacion/tipos-de-angulos/; inicio: ../../. Siguiente enlaza a la actividad 2: ../../juegos/paralelas-y-transversal/.
 
 Pruebas: múltiples bloques para verificar los siete tipos/casos especiales, error y reintento, acierto al primer intento, doble activación, salto, reinicio, distinción 0/360 sin mostrar el nombre de la respuesta en el SVG, teclado/tacto, foco tras Nuevo ejercicio, cuatro tamaños de pantalla, consola y enlaces. Ejecutar las pruebas de modelo y los comandos catálogo/validación indicados en ../../README.md.

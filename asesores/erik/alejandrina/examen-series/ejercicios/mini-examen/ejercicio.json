@@ -1,0 +1,10 @@
+{
+  "id": "examen-series-mini-examen-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "examen-series-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "Mini examen de ejercicios",
+  "descripcion": "31 ejercicios fijos en orden aleatorio. Resuelve sin fórmulas de apoyo.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/mini-examen/"
+}

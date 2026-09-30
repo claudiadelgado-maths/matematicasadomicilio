@@ -1,0 +1,10 @@
+{
+  "id": "examen-series-identificar-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "examen-series-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "Identificar la sucesión",
+  "descripcion": "Aritmética o geométrica. Enteros, negativos y fracciones.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/identificar/"
+}

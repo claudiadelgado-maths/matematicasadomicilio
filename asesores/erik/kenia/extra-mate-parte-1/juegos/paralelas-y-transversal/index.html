@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paralelas y transversal | Extra mate parte 1 | Matemáticas a Domicilio</title>
+  <meta name="description" content="Explora ocho ángulos entre paralelas y una transversal. Juega con relaciones, medidas y ecuaciones independientes para x e y.">
+  <link rel="icon" href="../../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="../../recursos/geometria.css?v=20260929-angulos1">
+  <link rel="stylesheet" href="estilos.css?v=20260930-paralelas2">
+  <script src="../../../../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+  <script src="script.mjs?v=20260930-paralelas3" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../../">Inicio</a></li><li><a href="../../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../../../asesores/" aria-current="page">Salones</a></li><li><a href="../../../../../../contacto/">Contacto</a></li></ul></nav></div></header>
+  <main id="contenido" class="geometry-site" tabindex="-1"><div class="container">
+    <nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../../../">Salones</a></li><li><a href="../../../../">Erik</a></li><li><a href="../../../">Kenia</a></li><li><a href="../../">Extra mate parte 1</a></li><li aria-current="page">Paralelas y transversal</li></ol></nav>
+
+<header class="page-heading"><p class="eyebrow">Actividad 02 · Extra mate parte 1</p><h1>Ocho ángulos, muchas conexiones</h1><p>Dos rectas paralelas y una transversal. Explora sus parejas y usa lo que descubras para resolver cuatro juegos, paso a paso.</p></header>
+<noscript><p class="no-script">Activa JavaScript para explorar los ángulos y jugar.</p></noscript>
+<section class="parallel-section" id="explorar" aria-labelledby="explorar-titulo">
+  <p class="eyebrow">Primero, experimenta</p><h2 class="section-title" id="explorar-titulo">¿Cómo se relacionan?</h2><p class="section-intro">Toca dos ángulos. El primero se marca como A y el segundo como B. La franja suave es el interior entre las paralelas; lo demás es exterior.</p>
+  <div class="parallel-panel">
+    <figure class="parallel-figure"><div class="parallel-stage" id="explore-diagram"></div><figcaption class="parallel-caption">r ∥ s · t es la transversal. Los números identifican posiciones, no grados.</figcaption></figure>
+    <div class="explore-controls">
+      <div class="pair-readout" id="pair-readout" role="status" aria-live="polite" aria-atomic="true"></div>
+      <label class="range-label" for="inclinacion">Inclina la transversal: <output id="inclinacion-valor">60°</output></label>
+      <input class="angle-range" type="range" min="40" max="140" value="60" step="1" id="inclinacion"><div class="range-ticks"><span>40°</span><span>90°</span><span>140°</span></div>
+      <p class="small-note">La inclinación indica cuánto mide ∠1. Las paralelas permanecen paralelas.</p>
+      <label class="measure-toggle"><input type="checkbox" id="show-measures" checked> Mostrar las ocho medidas</label>
+      <div class="explore-actions"><button class="geo-button" type="button" id="clear-pair">Elegir otra pareja</button><button class="geo-button" type="button" id="random-pair">Sorpréndeme ↻</button><a class="geo-button primary" href="#juegos">Ir a los juegos →</a></div>
+    </div>
+  </div>
+  <details class="relation-guide"><summary>Mi mapa de relaciones · iguales o suman 180°</summary><div class="guide-grid" id="relation-guide"></div><p class="small-note" style="padding:0 1rem 1rem">Colaterales también se llaman conjugados o del mismo lado. Estas reglas de correspondientes, alternos y colaterales se cumplen porque r y s son paralelas.</p></details>
+</section>
+<section class="parallel-section" id="juegos" aria-labelledby="juegos-titulo">
+  <p class="eyebrow">Tu recorrido de práctica</p><h2 class="section-title" id="juegos-titulo">De observar a resolver</h2><p class="section-intro">Cada juego tiene 4 rondas de 5 retos. Los números cambian de posición: observa las regiones. Puedes reintentar, cambiar de juego y volver al mismo reto, o crear otra serie al terminar.</p>
+  <div class="game-menu" aria-label="Elige un juego">
+    <button class="game-choice" type="button" data-game="1" aria-pressed="true" aria-controls="game-stage"><span class="game-level">1 · Observar</span><strong>Identifica la relación</strong><small>Reconoce la pareja resaltada.</small><small data-game-progress="1">0 de 20 retos</small></button>
+    <button class="game-choice" type="button" data-game="2" aria-pressed="false" aria-controls="game-stage"><span class="game-level">2 · Deducir</span><strong>Completa los ángulos</strong><small>Una medida te abre todas las puertas.</small><small data-game-progress="2">0 de 20 retos</small></button>
+    <button class="game-choice" type="button" data-game="3" aria-pressed="false" aria-controls="game-stage" id="algebra"><span class="game-level">3 · Despejar</span><strong>Encuentra x</strong><small>Comprueba x y el dibujo se completa.</small><small data-game-progress="3">0 de 20 retos</small></button>
+    <button class="game-choice" type="button" data-game="4" aria-pressed="false" aria-controls="game-stage"><span class="game-level">4 · Conectar</span><strong>Reto con x e y</strong><small>Dos ecuaciones independientes.</small><small data-game-progress="4">0 de 20 retos</small></button>
+  </div>
+  <div id="game-stage">
+    <div class="game-toolbar"><div><p class="progress-copy" id="progress-copy"></p><div class="round-progress" id="round-progress" aria-hidden="true"></div></div><button class="geo-button" id="restart-game" type="button">Nueva serie ↻</button></div>
+    <div class="parallel-panel" id="challenge-panel">
+      <figure class="parallel-figure"><div id="diagram-tools"></div><div class="parallel-stage" id="game-diagram"></div><figcaption class="parallel-caption" id="game-caption"></figcaption><div id="diagram-feedback"></div></figure>
+      <div class="challenge-copy"><p class="eyebrow" id="challenge-label"></p><h3 id="challenge-title" tabindex="-1"></h3><p id="challenge-instruction"></p><div class="given-list" id="given-list"></div><div id="question-controls"></div><div class="feedback" id="game-feedback" role="status" aria-live="polite" aria-atomic="true"></div><div class="challenge-actions"><button class="geo-button primary" id="next-question" type="button" disabled>Siguiente reto →</button><button class="geo-button" id="retry-question" type="button">Reintentar este reto</button></div></div>
+    </div>
+    <section class="round-celebration" id="round-celebration" hidden aria-labelledby="celebration-title"><span class="celebration-mark" aria-hidden="true">✓</span><p class="eyebrow" id="celebration-label"></p><h3 id="celebration-title" tabindex="-1"></h3><p id="celebration-copy"></p><div class="challenge-actions"><button class="geo-button primary" id="continue-round" type="button">Siguiente ronda →</button><button class="geo-button" id="replay-game" type="button">Intentar de nuevo ↻</button><button class="geo-button" id="next-game" type="button" hidden>Siguiente juego →</button></div></section>
+    <p class="game-note">En los retos de álgebra puedes usar los ángulos como apoyo: comprobar x correctamente —o ambos valores, x e y— completa el dibujo. Los aciertos al primer intento cuentan retos sin errores confirmados. Puedes corregir sin límite; aquí importa comprender, no la velocidad.</p>
+  </div>
+</section>
+<nav class="page-navigation" aria-label="Navegación de la actividad"><a class="geo-button" href="../../ejercicios/clasifica-angulos/">← Actividad 1: tipos de ángulos</a><a class="geo-button" href="../../">Volver a Extra mate parte 1</a><a class="geo-button primary" href="../triangulos/index.html">Continuar: triángulos →</a></nav>
+  </div></main>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../../">Inicio</a></li><li><a href="../../../../../../nosotros/">Nosotros</a></li><li><a href="../../../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../../../../asesores/">Salones</a></li><li><a href="../../../../../../contacto/">Contacto</a></li></ul></nav></div></footer>
+</body>
+</html>

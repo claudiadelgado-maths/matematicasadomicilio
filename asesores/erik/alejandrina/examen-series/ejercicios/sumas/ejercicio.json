@@ -1,0 +1,10 @@
+{
+  "id": "examen-series-sumas-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "examen-series-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "Sumas de series",
+  "descripcion": "Cinco casos: datos directos, sucesiones, términos, despejes y sumas entre posiciones.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/sumas/"
+}

@@ -1,0 +1,110 @@
+.biomolecule-lab { padding-bottom: 3.5rem; }
+.biomolecule-lab .molecule-intro { padding-block: 2.5rem 1.4rem; }
+.biomolecule-lab h1 { font-size: clamp(2.1rem, 4.5vw, 3.9rem); max-width: 980px; }
+.biomolecule-lab h1 span { color: var(--bio-teal); }
+.biomolecule-lab .molecule-intro > p:not(.eyebrow) { max-width: 700px; margin: 1.1rem 0 0; color: var(--bio-muted); font-size: 1.05rem; }
+.biomolecule-lab .molecule-journey { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2.5rem; }
+.biomolecule-lab .molecule-journey a { display: inline-flex; min-height: 44px; align-items: center; gap: .6rem; padding: .6rem 1rem; border: 1px solid var(--bio-border); border-radius: 10px; background: white; color: var(--bio-teal); font-size: .87rem; font-weight: 750; text-decoration: none; }
+.biomolecule-lab .molecule-journey span { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: #e4f0e9; }
+.biomolecule-lab .molecule-explorer, .biomolecule-lab .cell-quiz { scroll-margin-top: 100px; }
+.biomolecule-lab .explorer-heading { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; }
+.biomolecule-lab .explorer-heading h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.1rem); }
+.biomolecule-lab .explorer-heading p:not(.eyebrow) { margin: .6rem 0 0; color: var(--bio-muted); font-size: .9rem; }
+.biomolecule-lab .explorer-heading .discovery-count { padding: .55rem .8rem; border-radius: 20px; background: #e4f0e9; color: var(--bio-teal); font-size: .82rem; font-weight: 750; }
+.biomolecule-lab .explorer-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, 1fr); gap: 1.25rem; align-items: start; }
+.biomolecule-lab .molecule-figure { min-width: 0; margin: 0; padding: 1rem; border: 1px solid var(--bio-border); border-radius: 22px; background: white; }
+.biomolecule-lab .molecule-cell { position: relative; aspect-ratio: 620 / 460; }
+.biomolecule-lab .cell-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; }
+.biomolecule-lab .molecule-hotspot { position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: .3rem; width: 100px; min-height: 86px; padding: .4rem; border: 1.5px solid transparent; border-radius: 15px; color: var(--molecule-color); background: transparent; cursor: pointer; touch-action: manipulation; }
+.biomolecule-lab .molecule-hotspot:hover { background: white; border-color: var(--molecule-color); }
+.biomolecule-lab .molecule-hotspot.is-selected { border-color: var(--molecule-color); background: white; }
+.biomolecule-lab .molecule-hotspot .molecule-icon { width: 46px; height: 46px; }
+.biomolecule-lab .hotspot-label { font-size: .74rem; font-weight: 800; line-height: 1.15; }
+.biomolecule-lab .hotspot-visited { position: absolute; top: .1rem; right: .15rem; display: none; width: 19px; height: 19px; place-items: center; border-radius: 50%; background: #196451; color: white; font-size: .7rem; }
+.biomolecule-lab .molecule-hotspot.is-visited .hotspot-visited { display: grid; }
+.biomolecule-lab .molecule-figure figcaption { margin: .7rem .25rem .15rem; color: var(--bio-muted); font-size: .75rem; line-height: 1.6; }
+.biomolecule-lab .molecule-details { min-width: 0; padding: 1.5rem; border: 1px solid var(--bio-border); border-radius: 22px; background: white; }
+.biomolecule-lab .welcome-mark { display: grid; place-items: center; width: 68px; height: 68px; margin-bottom: 1.4rem; border-radius: 20px; background: #edf6f0; color: var(--bio-teal); font-size: 2rem; }
+.biomolecule-lab .molecule-details h3 { margin: .6rem 0 .7rem; font-size: clamp(1.45rem, 2.4vw, 1.9rem); line-height: 1.2; scroll-margin-top: 110px; }
+.biomolecule-lab .molecule-details [data-welcome] > p:not(.eyebrow) { color: var(--bio-muted); line-height: 1.7; }
+.biomolecule-lab .detail-memory { display: inline-block; margin: 0; padding: .4rem .65rem; border-radius: 8px; background: var(--molecule-tint); color: var(--molecule-color); font-size: .75rem; font-weight: 750; }
+.biomolecule-lab .detail-lead { margin: 0; color: var(--bio-muted); font-size: .94rem; line-height: 1.6; }
+.biomolecule-lab .detail-facts { display: grid; gap: .5rem; margin: 1rem 0; padding-left: 1.15rem; font-size: .9rem; line-height: 1.5; }
+.biomolecule-lab .detail-facts li::marker { color: var(--molecule-color); }
+.biomolecule-lab .molecule-demo { padding: .8rem; border-radius: 14px; background: var(--molecule-tint); }
+.biomolecule-lab .demo-visual { height: 88px; color: var(--molecule-color); }
+.biomolecule-lab .demo-visual svg { width: 100%; height: 100%; }
+.biomolecule-lab .molecule-demo p { margin: .5rem 0 .8rem; color: var(--bio-ink); font-size: .84rem; line-height: 1.5; }
+.biomolecule-lab .molecule-demo .bio-button { width: 100%; min-height: 44px; padding: .55rem .65rem; border-color: var(--molecule-color); color: var(--molecule-color); font-size: .8rem; }
+.biomolecule-lab .detail-note { margin: .85rem 0; color: var(--bio-muted); font-size: .73rem; line-height: 1.6; }
+.biomolecule-lab .explore-next { display: inline-flex; gap: .6rem; align-items: center; min-height: 44px; padding: .25rem 0; border: 0; background: transparent; color: var(--bio-teal); font-weight: 750; font-size: .86rem; cursor: pointer; }
+.biomolecule-lab .explorer-continue { margin-top: 1.2rem; }
+.biomolecule-lab .demo-visual.is-animated { animation: molecule-demo-reveal 260ms ease-out; }
+.biomolecule-lab .demo-particle { transform-box: fill-box; transform-origin: center; animation: molecule-drift 2.4s ease-in-out infinite alternate; }
+.biomolecule-lab .demo-particle:nth-child(even) { animation-delay: -.8s; }
+.biomolecule-lab .sorting-lab { --quiz-accent: #6252a0; --quiz-tint: #f1edff; }
+.biomolecule-lab .sorting-panel { max-width: 1020px; margin-inline: auto; padding: clamp(1rem, 3vw, 2rem); border: 1px solid var(--bio-border); border-radius: 22px; background: white; }
+.biomolecule-lab .sorting-instruction { margin: -.3rem 0 1rem; color: var(--bio-muted); font-size: .8rem; }
+.biomolecule-lab .sort-card { max-width: 620px; margin: 0 auto 1.4rem; padding: 1.2rem; border: 2px solid #b8acd8; border-radius: 16px; background: #f5f1ff; color: #3c3460; cursor: grab; touch-action: none; }
+.biomolecule-lab .sort-card:active { cursor: grabbing; }
+.biomolecule-lab .card-tag { display: flex; justify-content: space-between; align-items: center; gap: 1rem; color: #6252a0; font-size: .7rem; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; }
+.biomolecule-lab .card-tag > span { font-size: 1.4rem; }
+.biomolecule-lab .sort-card h3 { margin: .65rem 0 .6rem; font-size: clamp(1.25rem, 2.5vw, 1.7rem); line-height: 1.4; letter-spacing: -.02em; scroll-margin-top: 115px; }
+.biomolecule-lab .card-hint { font-size: .78rem; color: #6252a0; }
+.biomolecule-lab .sort-card.is-dragging { opacity: .4; }
+.biomolecule-lab .sort-card.is-solved { background: #eff8f2; border-color: #27814c; color: #195b34; cursor: default; }
+.biomolecule-lab .sort-bins { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .7rem; }
+.biomolecule-lab .sort-bin { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .35rem; min-width: 0; min-height: 125px; padding: .9rem .5rem; border: 1.5px solid var(--bio-border); border-radius: 14px; background: white; color: var(--molecule-color); line-height: 1.2; cursor: pointer; touch-action: manipulation; }
+.biomolecule-lab .sort-bin .molecule-icon { width: 38px; height: 38px; }
+.biomolecule-lab .sort-bin strong { font-size: .83rem; }
+.biomolecule-lab .bin-count { color: var(--bio-muted); font-size: .72rem; }
+.biomolecule-lab .bin-count:empty { display: none; }
+.biomolecule-lab .sort-bin:hover { border-color: var(--molecule-color); background: var(--molecule-tint); }
+.biomolecule-lab .sort-bin.is-drop-target { outline: 3px solid var(--molecule-color); outline-offset: 2px; background: var(--molecule-tint); }
+.biomolecule-lab .sort-bin.is-correct { border-color: #27814c; background: #e9f8ee; }
+.biomolecule-lab .sort-bin.is-incorrect { border-color: #c2474d; background: #fff0f0; }
+.biomolecule-lab .bin-result { min-height: 1.1em; font-size: .8rem; font-weight: 750; }
+.biomolecule-lab .sort-bin:not(.is-correct):not(.is-incorrect) .bin-result { display: none; }
+.biomolecule-lab .sort-bin:disabled { opacity: 1; cursor: default; }
+.biomolecule-lab .sorting-feedback { margin-top: 1rem; padding: 1rem; border-left: 4px solid #b8acd8; border-radius: 0 10px 10px 0; background: #f5f1ff; font-size: .9rem; line-height: 1.65; }
+.biomolecule-lab .sorting-feedback.is-correct { border-left-color: #27814c; background: #eff8f2; }
+.biomolecule-lab .sorting-feedback.is-incorrect { border-left-color: #c2474d; background: #fff4f2; }
+.biomolecule-lab .sorting-controls { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: space-between; margin-top: 1rem; }
+.biomolecule-lab .molecule-footer-navigation { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 3rem; padding-top: 1.3rem; border-top: 1px solid var(--bio-border); }
+.biomolecule-lab .molecule-footer-navigation a { display: inline-flex; align-items: center; min-height: 44px; color: var(--bio-teal); font-size: .9rem; }
+.biomolecule-lab button:focus-visible, .biomolecule-lab .sort-card:focus-visible { outline: 3px solid #146b85; outline-offset: 3px; }
+.biomolecule-lab .no-script { padding: 1rem; background: #fff0da; }
+.biomolecule-drag-ghost { position: fixed; z-index: 500; max-width: 270px; padding: .8rem 1rem; border: 2px solid #6252a0; border-radius: 12px; background: #f5f1ff; color: #3c3460; font: 700 .9rem/1.4 var(--font-sans); pointer-events: none; transform: translate(-50%, -120%); }
+@keyframes molecule-demo-reveal { from { opacity: .5; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes molecule-drift { to { transform: translate(5px, -5px); } }
+@media (max-width: 950px) {
+  .biomolecule-lab .explorer-layout { grid-template-columns: 1fr; }
+  .biomolecule-lab .molecule-figure { max-width: 700px; width: 100%; margin-inline: auto; }
+  .biomolecule-lab .molecule-details { max-width: 700px; width: 100%; margin-inline: auto; }
+}
+@media (max-width: 600px) {
+  .biomolecule-lab .molecule-intro { padding-top: 1.75rem; }
+  .biomolecule-lab .molecule-intro > p:not(.eyebrow) { font-size: .94rem; }
+  .biomolecule-lab .molecule-journey { display: grid; grid-template-columns: 1fr; gap: .45rem; margin-bottom: 2rem; }
+  .biomolecule-lab .molecule-figure { padding: .5rem; }
+  .biomolecule-lab .molecule-cell { aspect-ratio: auto; height: 355px; }
+  .biomolecule-lab .molecule-hotspot { left: var(--mobile-x); top: var(--mobile-y); width: 80px; min-height: 80px; padding: .25rem; }
+  .biomolecule-lab .molecule-hotspot .molecule-icon { width: 40px; height: 40px; }
+  .biomolecule-lab .hotspot-label { font-size: .72rem; }
+  .biomolecule-lab .molecule-details { padding: 1.15rem; }
+  .biomolecule-lab .sort-bins { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; }
+  .biomolecule-lab .sort-bin { min-height: 110px; padding: .7rem .4rem; }
+  .biomolecule-lab .sort-bin:last-child { grid-column: 1 / -1; }
+  .biomolecule-lab .sorting-controls { flex-direction: column-reverse; }
+  .biomolecule-lab .sorting-controls .bio-button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .biomolecule-lab .demo-particle, .biomolecule-lab .demo-visual.is-animated { animation: none; }
+}
+
+.biomolecule-lab .demo-toolbar { display: flex; justify-content: space-between; gap: .6rem; margin-bottom: .7rem; font-size: .75rem; color: var(--molecule-color); }
+.biomolecule-lab .demo-stages { display: grid; grid-template-columns: repeat(3, 1fr); gap: .35rem; margin-bottom: .6rem; }
+.biomolecule-lab .demo-stages button { min-height: 44px; padding: .4rem .2rem; border: 1px solid var(--molecule-color); border-radius: 7px; background: white; color: var(--molecule-color); font: 650 .7rem/1.4 var(--font-sans); cursor: pointer; }
+.biomolecule-lab .demo-stages button[aria-pressed="true"] { color: white; background: var(--molecule-color); }
+.biomolecule-lab .molecule-demo .demo-labels { font-weight: 750; color: var(--molecule-color); text-align: center; font-size: .75rem; }
+.biomolecule-lab [data-sort-errors] { margin-right: .6rem; }

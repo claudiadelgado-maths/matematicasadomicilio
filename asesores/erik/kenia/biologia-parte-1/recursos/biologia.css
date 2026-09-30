@@ -7,7 +7,8 @@
   background: #fafcf9;
   color: var(--bio-ink);
 }
-.biology-site [hidden] { display: none; }
+/* Utilidad: los componentes opcionales deben permanecer ocultos aunque sean botones flex/grid. */
+.biology-site [hidden] { display: none !important; }
 .biology-site h1, .biology-site h2, .biology-site h3 { margin-top: 0; line-height: 1.12; letter-spacing: -0.035em; overflow-wrap: break-word; }
 .biology-site h1 { margin-bottom: 0; font-weight: 850; }
 .biology-site .eyebrow { margin: 0 0 0.8rem; color: var(--bio-teal); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }

@@ -502,69 +502,6 @@
       ],
       "alumnos": [
         {
-          "id": "kenia-erik",
-          "nombreVisible": "Kenia",
-          "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
-          "ruta": "/asesores/erik/kenia/",
-          "personalizacion": {
-            "simbolo": "K",
-            "acento": "#7a3f82",
-            "fondo": "#f7eef8"
-          },
-          "ultimaActividad": "2026-09-29",
-          "sesiones": [
-            {
-              "id": "biologia-parte-1-kenia-erik",
-              "titulo": "Biología parte 1",
-              "descripcion": "Explora la célula animal con un esquema ilustrado, tarjetas de nombres y corrección inmediata de once estructuras.",
-              "fecha": "2026-09-29",
-              "ruta": "/asesores/erik/kenia/biologia-parte-1/"
-            },
-            {
-              "id": "extra-mate-parte-1-kenia-erik",
-              "titulo": "Extra mate parte 1",
-              "descripcion": "Repaso visual de geometría: ángulos con semirrectas móviles, laboratorio circular de 0 a 360 grados y práctica ilimitada de clasificación.",
-              "fecha": "2026-09-29",
-              "ruta": "/asesores/erik/kenia/extra-mate-parte-1/"
-            },
-            {
-              "id": "laboratorio-de-despejes-lineales-kenia-erik",
-              "titulo": "Laboratorio de despejes lineales",
-              "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
-              "fecha": "2026-09-29",
-              "ruta": "/asesores/erik/kenia/laboratorio-de-despejes-lineales/"
-            },
-            {
-              "id": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
-              "titulo": "Aplicaciones de las funciones trigonométricas",
-              "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
-              "fecha": "2026-09-28",
-              "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/"
-            },
-            {
-              "id": "teorema-de-pitagoras-kenia-erik",
-              "titulo": "Teorema de Pitágoras",
-              "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
-              "fecha": "2026-09-28",
-              "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/"
-            },
-            {
-              "id": "funciones-trigonometricas-kenia-erik",
-              "titulo": "Funciones trigonométricas",
-              "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
-              "fecha": "2026-09-23",
-              "ruta": "/asesores/erik/kenia/funciones-trigonometricas/"
-            },
-            {
-              "id": "despejes-lineales-kenia",
-              "titulo": "Despejes lineales",
-              "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
-              "fecha": "2026-09-22",
-              "ruta": "/asesores/erik/kenia/despejes-lineales/"
-            }
-          ]
-        },
-        {
           "id": "alejandrina",
           "nombreVisible": "Alejandrina",
           "descripcion": "Espacio de sesiones y recursos personalizados.",
@@ -574,8 +511,15 @@
             "acento": "#15784e",
             "fondo": "#302044"
           },
-          "ultimaActividad": "2026-09-22",
+          "ultimaActividad": "2026-09-30",
           "sesiones": [
+            {
+              "id": "examen-series-alejandrina",
+              "titulo": "Examen series",
+              "descripcion": "Práctica de sucesiones y series aritméticas y geométricas: identificar la sucesión.",
+              "fecha": "2026-09-30",
+              "ruta": "/asesores/erik/alejandrina/examen-series/"
+            },
             {
               "id": "series-geometricas-alejandrina",
               "titulo": "Series geométricas",
@@ -631,6 +575,69 @@
               "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
               "fecha": "2026-07-24",
               "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/"
+            }
+          ]
+        },
+        {
+          "id": "kenia-erik",
+          "nombreVisible": "Kenia",
+          "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
+          "ruta": "/asesores/erik/kenia/",
+          "personalizacion": {
+            "simbolo": "K",
+            "acento": "#7a3f82",
+            "fondo": "#f7eef8"
+          },
+          "ultimaActividad": "2026-09-29",
+          "sesiones": [
+            {
+              "id": "biologia-parte-1-kenia-erik",
+              "titulo": "Biología parte 1",
+              "descripcion": "Repaso para secundaria de célula animal y biomoléculas: guías visuales, once estructuras, siete grupos de sustancias, rondas breves o completas, clasificación y práctica de errores con explicaciones.",
+              "fecha": "2026-09-29",
+              "ruta": "/asesores/erik/kenia/biologia-parte-1/"
+            },
+            {
+              "id": "extra-mate-parte-1-kenia-erik",
+              "titulo": "Extra mate parte 1",
+              "descripcion": "Repaso visual de geometría: ángulos, paralelas y transversal, triángulos, cuadriláteros y taller de trapecios. Laboratorios interactivos y juegos de clasificación, propiedades, medidas y ecuaciones lineales.",
+              "fecha": "2026-09-29",
+              "ruta": "/asesores/erik/kenia/extra-mate-parte-1/"
+            },
+            {
+              "id": "laboratorio-de-despejes-lineales-kenia-erik",
+              "titulo": "Laboratorio de despejes lineales",
+              "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
+              "fecha": "2026-09-29",
+              "ruta": "/asesores/erik/kenia/laboratorio-de-despejes-lineales/"
+            },
+            {
+              "id": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
+              "titulo": "Aplicaciones de las funciones trigonométricas",
+              "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
+              "fecha": "2026-09-28",
+              "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/"
+            },
+            {
+              "id": "teorema-de-pitagoras-kenia-erik",
+              "titulo": "Teorema de Pitágoras",
+              "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
+              "fecha": "2026-09-28",
+              "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/"
+            },
+            {
+              "id": "funciones-trigonometricas-kenia-erik",
+              "titulo": "Funciones trigonométricas",
+              "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
+              "fecha": "2026-09-23",
+              "ruta": "/asesores/erik/kenia/funciones-trigonometricas/"
+            },
+            {
+              "id": "despejes-lineales-kenia",
+              "titulo": "Despejes lineales",
+              "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
+              "fecha": "2026-09-22",
+              "ruta": "/asesores/erik/kenia/despejes-lineales/"
             }
           ]
         },

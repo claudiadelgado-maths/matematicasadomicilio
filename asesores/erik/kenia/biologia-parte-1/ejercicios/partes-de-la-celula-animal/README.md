@@ -1,12 +1,15 @@
-# Actividad 1 · Partes de la célula animal
+# Célula animal · Actividades 1, 2 y 3
 
 Ejercicio exclusivo de Biología parte 1, Kenia → Erik. Entrada pública: `/asesores/erik/kenia/biologia-parte-1/ejercicios/partes-de-la-celula-animal/`.
+
+Las tres actividades y la guía de funciones #guia-celula conviven en este index.html. La actividad visual original está arriba; las nuevas actividades de funciones y razonamiento se encuentran debajo, en #actividad-2 y #actividad-3. No crear páginas duplicadas para esos accesos.
 
 ## Archivos y recursos
 
 - `index.html`, `estilos.css`, `script.js` y `ejercicio.json` forman este módulo.
+- `cuestionarios.css` conserva el recorrido local; `cuestionarios.mjs` configura los dos bancos de organelos. `banco-preguntas.mjs` contiene 55 pistas y 44 preguntas de razonamiento originales. `modelo-cuestionarios.mjs` genera rondas y calcula el puntaje; `modelo-cuestionarios.test.mjs` verifica su contrato.
 - `../../recursos/celula-animal.svg` es el dibujo vectorial compartido con el inicio de esta sesión. Revisar ambos consumidores al cambiarlo.
-- `../../recursos/biologia.css` contiene la identidad de esta familia.
+- `../../recursos/biologia.css` contiene la identidad de esta familia. `../../recursos/cuestionarios.css`, `cuestionarios.mjs` y `modelo-repaso.mjs` comparten estilos, controlador y generación con biomoléculas; revisar ambas páginas si cambian. `modelo-cuestionarios.mjs` adapta ese modelo a las once estructuras para sus pruebas.
 - Se conservan la base, navegación, marca, pie y controles flotantes globales con rutas relativas a seis niveles.
 
 ## Correspondencias y dibujo
@@ -49,8 +52,50 @@ Las casillas siguen el orden vertical de las estructuras. Sus líneas no se cruz
 
 ## Navegación y ampliación
 
-«Volver al inicio» apunta a `../../`. «Siguiente actividad» sigue deshabilitado porque no existe la actividad 2. Cuando exista, sustituirlo por un enlace relativo a su carpeta y quitar la nota de indisponibilidad.
+«Volver al inicio» apunta a `../../`. La actividad 1 continúa a #actividad-2; la 2 continúa a #actividad-3. El recorrido superior y el menú de Biología enlazan a las tres secciones. Al finalizar la actividad 3, Continuar enlaza a `../biomoleculas/`. Los anclajes son accesibles por teclado y ninguna actividad exige terminar otra primero.
+
+## Actividad 2 · ¿Qué estructura es?
+
+55 descripciones originales (cinco por estructura) expresan funciones, situaciones y relaciones con palabras diferentes. Cada banco tiene el nombre correcto y tres distractores candidatos; la interfaz elige dos distractores para mostrar tres opciones. Se utilizan membrana plasmática, citoplasma, núcleo, nucléolo, retículo endoplasmático, ribosomas, aparato de Golgi, mitocondria, citoesqueleto, centriolo y peroxisoma.
+
+## Actividad 3 · Piensa y responde
+
+44 preguntas originales (cuatro por estructura) con un banco de alternativas explícitas, del que cada pregunta muestra tres opciones y una respuesta válida. Evalúan funciones, situaciones, consecuencias de fallas, comparación, razonamiento, excepciones, rutas y relación entre forma y función. La negación NO o INCORRECTA se destaca visualmente. Los distractores distinguen especialmente núcleo/nucléolo/ribosomas, retículo/Golgi, mitocondria/peroxisoma y centriolo/citoesqueleto/centrosoma.
+
+## Rondas, retroalimentación y accesibilidad
+
+- Cada cuestionario tiene su estado y banco independientes. Antes de empezar se eligen 11 preguntas (una por estructura) o 22 (dos distintas por estructura), sin repeticiones dentro de la ronda. Cada bloque de once incluye todas las estructuras, con orden mezclado y sin la misma estructura en dos preguntas consecutivas.
+- Se agotan las variantes de cada estructura antes de reciclarlas. Las primeras rondas usan variantes nuevas mientras quede banco disponible para cada estructura. El banco y el orden de sus respuestas no se modifican al generar.
+- Una pregunta visible a la vez. Las tres opciones se mezclan con Fisher–Yates y ninguna posición fija indica la correcta.
+- Se registra una sola respuesta por pregunta. Tras contestar, las opciones quedan deshabilitadas; la correcta se marca verde/✅ y la selección errónea rojo/❌. La explicación y la respuesta correcta quedan disponibles hasta pulsar Siguiente, sin desaparición automática ni límite de tiempo.
+- Siguiente permanece deshabilitado mientras no se haya respondido. La pregunta final lleva al puntaje de la ronda elegida, porcentaje y lista de estructuras que requieren repaso con una frase recordatoria. Esa lista se oculta cuando no hay errores.
+- Otra ronda crea nuevas variantes de la longitud elegida y enfoca la primera pregunta. Cambiar de ronda vuelve al selector de longitud. No altera la otra actividad ni el tablero visual.
+- Botones nativos permiten Tab, Enter y Espacio. La retroalimentación tiene aria-live; responder por teclado enfoca Siguiente, avanzar enfoca la nueva pregunta y terminar enfoca el resultado. El texto acompaña los colores y los símbolos.
+- Tres opciones en una columna, con texto completo y áreas táctiles amplias. No se fijan alturas al texto. Se respeta movimiento reducido.
+- Sin almacenamiento, envíos, servicios externos, temporizadores de examen ni dependencias de producción.
+
+## Criterios científicos
+
+El citoplasma incluye citosol y estructuras fuera del núcleo. El núcleo conserva la mayor parte del ADN, no absolutamente todo. El nucléolo prepara subunidades ribosómicas; los ribosomas ensamblan proteínas. El retículo rugoso procesa inicialmente muchas proteínas y el liso participa en síntesis de lípidos; el Golgi modifica y clasifica productos. La mitocondria convierte energía química en ATP. El centriolo es parte del centrosoma, no toda la red del citoesqueleto ni un requisito absoluto para dividirse. El peroxisoma maneja oxidaciones y peróxido.
+
+Referencias consultadas para verificar estas distinciones: [células eucariotas](https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells), [sistema de endomembranas](https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins) y [citoesqueleto](https://openstax.org/books/biology-2e/pages/4-5-the-cytoskeleton), OpenStax Biology 2e. No se copian sus ejercicios ni ilustraciones.
 
 ## Comprobaciones
 
 Ejecutar desde la raíz `npm run catalogo` y `npm run validar`. Revisar Inicio → Actividad 1 → Inicio, once correspondencias y 11 / 11, arrastre real de ratón y táctil, selección por toque, movimiento y reemplazo, reintentos, comprobación vacía y reinicio con nueva mezcla. Verificar error inmediato, desaparición de la tachita sin borrar el rojo, corrección antes del vencimiento y reinicio durante una animación. Probar 360, 768, 1024 y 1440 px, nombres largos, teclado, menú móvil con Escape, consola, enlaces y ausencia de desplazamiento horizontal.
+
+Ejecutar `node --test asesores/erik/kenia/biologia-parte-1/ejercicios/partes-de-la-celula-animal/modelo-cuestionarios.test.mjs`. Verificar integridad de las 99 preguntas, 200 rondas por banco, cobertura, posiciones aleatorias, nuevas variantes, puntajes 0/22 y 22/22, bloqueo de respuesta repetida y estados independientes. En navegador, completar ambas rondas con errores y aciertos, ver y reiniciar resultados, probar teclado, toque, tamaño móvil, anclajes y movimiento reducido, y confirmar que la actividad visual conserva sus once correspondencias.
+
+## Revisión del repaso de examen
+
+Las 99 preguntas existentes ya cubrían todos los conceptos solicitados: membrana e intercambio selectivo, ADN nuclear, subunidades del nucléolo, ATP mitocondrial, citoplasma, síntesis de proteínas, procesamiento y distribución en Golgi y retículo, soporte/transporte del citoesqueleto y oxidación/detoxificación peroxisomal. No se añadieron preguntas duplicadas. Dos variantes de centriolo aclaran ahora el papel del centrosoma en la organización del huso mitótico. Cada pregunta muestra la correcta y dos distractores mezclados; el banco conserva distractores adicionales para variar los intentos.
+
+## Apoyos para preparar el examen
+
+- `STRUCTURES` conserva nombres, función breve, pista de memoria y distinción para las once estructuras. `cuestionarios.mjs` utiliza esos datos para una guía seleccionable, con Anterior/Siguiente y acceso desde la portada y el recorrido.
+- `#guia-celula` incluye la ruta de una proteína de secreción y un glosario (ADN, ARN, ATP, enzima, vesícula, huso mitótico). El texto diferencia lisosoma/peroxisoma y aclara que el dibujo no incluye todos los componentes.
+- `../../recursos/estudio.css` comparte la presentación de ayudas con biomoléculas y el inicio; revisar los tres consumidores.
+- El resultado incluye «Entiende tus errores»: enunciado, respuesta elegida, correcta y explicación. «Practicar mis errores» crea un estado nuevo solo con preguntas falladas y mezcla sus opciones. El resultado inicial se mantiene visible y no se sustituye por el porcentaje del repaso. Si quedan errores, se puede repetir ese subconjunto.
+- Los resultados perfectos ocultan las listas y acciones opcionales. El tablero original y el otro cuestionario permanecen independientes.
+- La utilidad `[hidden]` de biologia.css prevalece sobre los estilos de botones, para evitar acciones vacías.
+- Ejecutar también `node --test asesores/erik/kenia/biologia-parte-1/recursos/modelo-repaso.test.mjs` y revisar la guía, las rondas de 11/22 y el repaso dirigido en navegador.

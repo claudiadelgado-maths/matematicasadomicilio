@@ -1,0 +1,7 @@
+/* Recorrido local de las tres actividades de organelos. */
+.cell-activity .cell-journey { display: flex; flex-wrap: wrap; gap: .55rem; padding-top: 1.5rem; }
+.cell-activity .cell-journey a { display: inline-flex; min-height: 44px; align-items: center; gap: .5rem; padding: .45rem .8rem; border: 1px solid var(--bio-border); border-radius: 9px; background: white; color: var(--bio-teal); font-size: .82rem; font-weight: 700; text-decoration: none; }
+.cell-activity .cell-journey span { display: grid; width: 24px; height: 24px; place-items: center; border-radius: 50%; background: #e4f0e9; }
+.cell-activity .cell-journey a:hover { background: #e9f3ec; }
+.cell-activity #actividad-1, .cell-activity .cell-quiz { scroll-margin-top: 100px; }
+@media (max-width: 650px) { .cell-activity .cell-journey { display: grid; grid-template-columns: 1fr; } }

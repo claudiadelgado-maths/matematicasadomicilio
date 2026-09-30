@@ -1,0 +1,10 @@
+{
+  "id": "examen-series-primer-termino-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "examen-series-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "Hallar el primer término",
+  "descripcion": "Encuentra a₁ desde una sucesión, un término o dos términos.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/primer-termino/"
+}
