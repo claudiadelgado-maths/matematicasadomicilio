@@ -511,8 +511,29 @@
             "acento": "#7a3f82",
             "fondo": "#f7eef8"
           },
-          "ultimaActividad": "2026-09-28",
+          "ultimaActividad": "2026-09-29",
           "sesiones": [
+            {
+              "id": "biologia-parte-1-kenia-erik",
+              "titulo": "Biología parte 1",
+              "descripcion": "Explora la célula animal con un esquema ilustrado, tarjetas de nombres y corrección inmediata de once estructuras.",
+              "fecha": "2026-09-29",
+              "ruta": "/asesores/erik/kenia/biologia-parte-1/"
+            },
+            {
+              "id": "extra-mate-parte-1-kenia-erik",
+              "titulo": "Extra mate parte 1",
+              "descripcion": "Repaso visual de geometría: ángulos con semirrectas móviles, laboratorio circular de 0 a 360 grados y práctica ilimitada de clasificación.",
+              "fecha": "2026-09-29",
+              "ruta": "/asesores/erik/kenia/extra-mate-parte-1/"
+            },
+            {
+              "id": "laboratorio-de-despejes-lineales-kenia-erik",
+              "titulo": "Laboratorio de despejes lineales",
+              "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
+              "fecha": "2026-09-29",
+              "ruta": "/asesores/erik/kenia/laboratorio-de-despejes-lineales/"
+            },
             {
               "id": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
               "titulo": "Aplicaciones de las funciones trigonométricas",

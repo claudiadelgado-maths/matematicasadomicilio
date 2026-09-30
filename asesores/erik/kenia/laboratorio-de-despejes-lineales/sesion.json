@@ -1,0 +1,25 @@
+{
+  "id": "laboratorio-de-despejes-lineales-kenia-erik",
+  "slug": "laboratorio-de-despejes-lineales",
+  "tipo": "sesion",
+  "usuario": "kenia-erik",
+  "titulo": "Laboratorio de despejes lineales",
+  "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
+  "objetivo": "Aislar x moviendo constantes, numeradores y denominadores mediante operaciones inversas, y combinar cuentas exactas hasta obtener una solución entera.",
+  "conocimientosPrevios": [
+    "operaciones con enteros",
+    "fracciones",
+    "operaciones inversas"
+  ],
+  "fecha": "2026-09-29",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenia/laboratorio-de-despejes-lineales/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  },
+  "interactivo": true
+}

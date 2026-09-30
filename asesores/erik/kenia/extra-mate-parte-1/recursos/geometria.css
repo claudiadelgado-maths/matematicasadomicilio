@@ -1,0 +1,116 @@
+/* Identidad y componentes exclusivos del recorrido de geometría de esta sesión. */
+.geometry-site {
+  --geo-accent: #5556a4;
+  --geo-ink: #293548;
+  --geo-muted: #566275;
+  --geo-border: #d9dfea;
+  --angle-color: #267b80;
+  padding-bottom: 3rem;
+  background: #fafbfd;
+  color: var(--geo-ink);
+}
+.geometry-site [hidden] { display: none; }
+.geometry-site h1, .geometry-site h2, .geometry-site h3 { margin-top: 0; line-height: 1.13; letter-spacing: -0.035em; overflow-wrap: break-word; }
+.geometry-site h1 { margin: 0; font-size: clamp(2.2rem, 4.6vw, 3.7rem); font-weight: 850; }
+.geometry-site .eyebrow { margin: 0 0 0.8rem; color: var(--geo-accent); font-size: 0.74rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.geometry-site .breadcrumbs { padding-top: 1.25rem; color: var(--geo-muted); font-size: 0.8rem; }
+.geometry-site .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 0.35rem 0.55rem; margin: 0; padding: 0; list-style: none; }
+.geometry-site .breadcrumbs li { display: inline-flex; align-items: center; gap: 0.55rem; }
+.geometry-site .breadcrumbs li:not(:last-child)::after { content: "/"; color: #97a0af; }
+.geometry-site .breadcrumbs a { text-decoration: none; }
+.geometry-site .breadcrumbs a:hover { text-decoration: underline; }
+.geometry-site .geo-button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 0.8rem; padding: 0.7rem 1.2rem; border: 1px solid var(--geo-border); border-radius: 11px; background: white; color: var(--geo-ink); font: 750 0.92rem/1.4 var(--font-sans); text-decoration: none; cursor: pointer; }
+.geometry-site .geo-button.primary { border-color: var(--geo-accent); background: var(--geo-accent); color: white; }
+.geometry-site .geo-button:hover { border-color: var(--geo-accent); background: #eeeefa; }
+.geometry-site .geo-button.primary:hover { background: #414386; }
+.geometry-site .geo-button:disabled { background: #edf0f5; color: #6b7585; cursor: not-allowed; }
+.geometry-site .geo-button, .geometry-site .type-card, .geometry-site .answer-option { touch-action: manipulation; }
+.geometry-site :focus-visible { outline-color: var(--geo-accent); }
+.geometry-site .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.geometry-site .page-heading { padding-block: 2rem 1.5rem; }
+.geometry-site .page-heading > p:last-child { max-width: 770px; margin: 1rem 0 0; color: var(--geo-muted); }
+.geometry-site .step-nav { display: flex; gap: 1rem; margin: 1.5rem 0 2rem; }
+.geometry-site .step-link { display: flex; flex: 1; min-height: 52px; align-items: center; gap: 0.65rem; padding: 0.55rem 0.75rem; border-bottom: 2px solid var(--geo-border); color: var(--geo-muted); font-size: 0.86rem; font-weight: 700; text-decoration: none; }
+.geometry-site .step-index { display: grid; flex: 0 0 auto; width: 28px; height: 28px; place-items: center; border-radius: 50%; background: #e9ecf4; font-size: 0.78rem; }
+.geometry-site .step-link[aria-current="step"] { border-color: var(--geo-accent); color: var(--geo-accent); }
+.geometry-site .step-link[aria-current="step"] .step-index { background: var(--geo-accent); color: white; }
+.geometry-site .step-link:hover { background: #f0f1f8; }
+.geometry-site .lab-panel { display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: clamp(1rem, 4vw, 3.5rem); padding: clamp(1rem, 3vw, 2.25rem); border: 1px solid var(--geo-border); border-radius: 22px; background: white; }
+.geometry-site .angle-figure { min-width: 0; margin: 0; }
+.geometry-site .angle-drawing { width: 100%; max-width: 530px; margin-inline: auto; }
+.geometry-site .angle-diagram { width: 100%; height: auto; overflow: visible; user-select: none; }
+.geometry-site .angle-grid { fill: none; stroke: #e8ebf1; stroke-width: 1; }
+.geometry-site .coordinate-axes { fill: none; stroke: #9da8b9; stroke-width: 1.5; }
+.geometry-site .coordinate-label { fill: #526076; font-size: 13px; font-weight: 600; }
+.geometry-site .circle-guide { fill: none; stroke: #bdc7d6; stroke-width: 1.5; stroke-dasharray: 4 5; }
+.geometry-site .angle-sector { fill: var(--angle-color); opacity: 0.16; }
+.geometry-site .initial-ray { fill: none; stroke: #334659; stroke-width: 5; stroke-linecap: round; }
+.geometry-site .moving-ray { fill: none; stroke: var(--angle-color); stroke-width: 5; stroke-linecap: round; }
+.geometry-site .angle-arc { fill: none; stroke: var(--angle-color); stroke-width: 3; }
+.geometry-site .inner-arc { fill: none; stroke: var(--angle-color); stroke-width: 2; }
+.geometry-site .right-angle-mark { fill: none; stroke: var(--angle-color); stroke-width: 3; }
+.geometry-site .angle-vertex { fill: #d65e73; stroke: white; stroke-width: 2; }
+.geometry-site .angle-stage { position: relative; }
+/* El control HTML sobre el SVG reserva para arrastrar solo el área del punto. */
+.geometry-site .angle-handle { position: absolute; z-index: 1; width: 15%; height: 15%; min-width: 44px; min-height: 44px; transform: translate(-50%, -50%); cursor: grab; touch-action: none; user-select: none; }
+.geometry-site .handle-ring { fill: white; stroke: var(--angle-color); stroke-width: 4; }
+.geometry-site .handle-center { fill: var(--angle-color); }
+.geometry-site .angle-handle:focus-visible { outline: none; }
+.geometry-site .angle-stage:focus-within .handle-ring { stroke: #1e2547; stroke-width: 7; }
+.geometry-site .is-manipulating .angle-handle { cursor: grabbing; }
+.geometry-site .is-manipulating .handle-ring { fill: #edf0ff; }
+.geometry-site .figure-hint { margin: 0.5rem 0 0; color: var(--geo-muted); font-size: 0.8rem; text-align: center; }
+.geometry-site .diagram-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.2rem; margin-top: 0.7rem; font-size: 0.75rem; color: var(--geo-muted); }
+.geometry-site .diagram-legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.geometry-site .legend-mark { display: inline-block; width: 17px; height: 3px; border-radius: 4px; background: #334659; }
+.geometry-site .legend-mark.mobile { background: var(--angle-color); }
+.geometry-site .legend-mark.vertex { width: 8px; height: 8px; border-radius: 50%; background: #d65e73; }
+.geometry-site .angle-value { display: block; color: var(--angle-color); font-size: clamp(3.5rem, 7vw, 5.8rem); font-weight: 850; line-height: 1.1; letter-spacing: -0.06em; }
+.geometry-site .angle-type { margin: 0.6rem 0 0; color: var(--angle-color); font-size: clamp(1.45rem, 3vw, 2rem); }
+.geometry-site .angle-rule { margin: 0.65rem 0 1.3rem; color: var(--geo-muted); }
+.geometry-site .turn-label { margin: 0.9rem 0 1rem; color: var(--geo-muted); font-size: 0.9rem; }
+.geometry-site .range-label { display: block; margin-top: 1.25rem; font-size: 0.85rem; font-weight: 750; }
+.geometry-site .angle-range { display: block; width: 100%; min-height: 44px; margin: 0; accent-color: var(--angle-color); cursor: pointer; }
+.geometry-site .range-ticks { display: flex; justify-content: space-between; color: var(--geo-muted); font-size: 0.75rem; }
+.geometry-site .explorer-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1.4rem; }
+.geometry-site .turn-note { min-height: 4.5em; margin: 1rem 0 0; padding: 0.9rem 1rem; border-left: 3px solid var(--angle-color); border-radius: 0 9px 9px 0; background: #f2f4f9; color: var(--geo-muted); font-size: 0.85rem; }
+.geometry-site .type-section { margin-top: 2rem; }
+.geometry-site .type-section h2 { margin-bottom: 0.5rem; font-size: 1.6rem; }
+.geometry-site .type-section > p { margin: 0 0 1.25rem; color: var(--geo-muted); font-size: 0.95rem; }
+.geometry-site .type-cards { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.7rem; }
+.geometry-site .type-card { display: flex; min-height: 180px; flex-direction: column; align-items: center; justify-content: start; gap: 0.45rem; padding: 0.75rem 0.45rem; border: 1.5px solid var(--geo-border); border-radius: 14px; background: white; color: var(--geo-ink); font-size: 0.84rem; line-height: 1.3; text-align: center; cursor: pointer; }
+.geometry-site .type-picture { display: block; width: 80px; height: 80px; pointer-events: none; }
+.geometry-site .type-card strong { min-height: 2.6em; }
+.geometry-site .type-range { color: var(--geo-muted); font-size: 0.73rem; }
+.geometry-site .type-card.is-current { border-color: var(--type-color); outline: 2px solid var(--type-color); background: #f5f6fb; }
+.geometry-site .type-card:hover { border-color: var(--type-color); }
+.geometry-site .comparison-note { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: 1.5rem 0 0; padding: 1.25rem; border-radius: 14px; background: #eeeffb; }
+.geometry-site .comparison-note p { margin: 0; color: var(--geo-muted); font-size: 0.9rem; }
+.geometry-site .comparison-note strong { color: var(--geo-ink); }
+.geometry-site .page-navigation { display: flex; align-items: start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+.geometry-site .navigation-home { min-height: 44px; display: inline-flex; align-items: center; color: var(--geo-muted); font-size: 0.85rem; }
+.geometry-site .no-script { padding: 1rem; border-left: 3px solid #ae7326; background: #fff3df; }
+@media (max-width: 1000px) {
+  .geometry-site .type-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .geometry-site .lab-panel { grid-template-columns: 1fr; }
+  .geometry-site .lab-controls { width: 100%; }
+  .geometry-site .angle-drawing { max-width: 460px; }
+  .geometry-site .comparison-note { display: block; }
+  .geometry-site .comparison-note .geo-button { margin-top: 1rem; }
+}
+@media (max-width: 480px) {
+  .geometry-site .container { width: calc(100% - 1.5rem); }
+  .geometry-site .breadcrumbs { font-size: 0.73rem; }
+  .geometry-site .page-heading { padding-top: 1.5rem; }
+  .geometry-site .step-nav { gap: 0.25rem; margin-bottom: 1.5rem; }
+  .geometry-site .step-link { flex-direction: column; gap: 0.4rem; padding: 0.5rem 0.2rem; font-size: 0.73rem; text-align: center; }
+  .geometry-site .type-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .geometry-site .type-card { min-height: 165px; font-size: 0.88rem; }
+  .geometry-site .page-navigation { flex-direction: column; }
+  .geometry-site .page-navigation > .geo-button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .geometry-site *, .geometry-site *::before, .geometry-site *::after { animation-duration: 0s; transition-duration: 0s; scroll-behavior: auto; }
+}

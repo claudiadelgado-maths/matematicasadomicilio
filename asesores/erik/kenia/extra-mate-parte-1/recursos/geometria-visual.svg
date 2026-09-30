@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Explora los ángulos</title><desc id="descripcion">Un ángulo de sesenta grados sobre un círculo con ejes perpendiculares y un punto sobre la circunferencia.</desc>
+  <defs><pattern id="cuadricula" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#dfe3ed" stroke-width="1"/></pattern><marker id="flecha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
+  <rect x="40" y="40" width="400" height="400" fill="url(#cuadricula)"/>
+  <path d="M40 240H440M240 40V440" fill="none" stroke="#9faabd" stroke-width="2"/>
+  <circle cx="240" cy="240" r="156" fill="none" stroke="#afbcd0" stroke-width="2" stroke-dasharray="4 5"/>
+  <path d="M240 240L396 240A156 156 0 0 0 318 104.9Z" fill="#aaa4d5" opacity="0.35"/>
+  <path d="M240 240H428" fill="none" stroke="#334659" stroke-width="5" stroke-linecap="round" marker-end="url(#flecha)"/>
+  <path d="M240 240L334 77.2" fill="none" stroke="#6860ac" stroke-width="5" stroke-linecap="round" marker-end="url(#flecha)"/>
+  <path d="M396 240A156 156 0 0 0 318 104.9M293 240A53 53 0 0 0 266.5 194.1" fill="none" stroke="#6860ac" stroke-width="3"/>
+  <circle cx="240" cy="240" r="6" fill="#d65e73" stroke="white" stroke-width="2"/>
+  <circle cx="318" cy="104.9" r="19" fill="white" stroke="#6860ac" stroke-width="4"/><circle cx="318" cy="104.9" r="7" fill="#6860ac"/>
+</svg>

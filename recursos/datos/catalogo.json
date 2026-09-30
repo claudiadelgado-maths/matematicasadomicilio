@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 232,
+  "total": 239,
   "tipos": {
     "maestro": [
       {
@@ -1495,6 +1495,27 @@
         "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/sesion.json"
       },
       {
+        "id": "biologia-parte-1-kenia-erik",
+        "slug": "biologia-parte-1",
+        "tipo": "sesion",
+        "usuario": "kenia-erik",
+        "titulo": "Biología parte 1",
+        "descripcion": "Explora la célula animal con un esquema ilustrado, tarjetas de nombres y corrección inmediata de once estructuras.",
+        "objetivo": "Identificar las principales estructuras de una célula animal siguiendo indicadores visuales y corregir las respuestas con retroalimentación inmediata.",
+        "conocimientosPrevios": [],
+        "fecha": "2026-09-29",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/biologia-parte-1/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/kenia/biologia-parte-1/sesion.json"
+      },
+      {
         "id": "despejes-lineales-kenia",
         "slug": "despejes-lineales",
         "tipo": "sesion",
@@ -1520,6 +1541,27 @@
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/sesion.json"
       },
       {
+        "id": "extra-mate-parte-1-kenia-erik",
+        "slug": "extra-mate-parte-1",
+        "tipo": "sesion",
+        "usuario": "kenia-erik",
+        "titulo": "Extra mate parte 1",
+        "descripcion": "Repaso visual de geometría: ángulos con semirrectas móviles, laboratorio circular de 0 a 360 grados y práctica ilimitada de clasificación.",
+        "objetivo": "Comprender el ángulo como giro entre dos semirrectas con vértice común, distinguir los siete tipos e identificarlos para un examen.",
+        "conocimientosPrevios": [],
+        "fecha": "2026-09-29",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/",
+        "componentes": {
+          "explicacion": true,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/sesion.json"
+      },
+      {
         "id": "funciones-trigonometricas-kenia-erik",
         "slug": "funciones-trigonometricas",
         "tipo": "sesion",
@@ -1543,6 +1585,32 @@
           "calculadoras": false
         },
         "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/sesion.json"
+      },
+      {
+        "id": "laboratorio-de-despejes-lineales-kenia-erik",
+        "slug": "laboratorio-de-despejes-lineales",
+        "tipo": "sesion",
+        "usuario": "kenia-erik",
+        "titulo": "Laboratorio de despejes lineales",
+        "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
+        "objetivo": "Aislar x moviendo constantes, numeradores y denominadores mediante operaciones inversas, y combinar cuentas exactas hasta obtener una solución entera.",
+        "conocimientosPrevios": [
+          "operaciones con enteros",
+          "fracciones",
+          "operaciones inversas"
+        ],
+        "fecha": "2026-09-29",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/laboratorio-de-despejes-lineales/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/kenia/laboratorio-de-despejes-lineales/sesion.json"
       },
       {
         "id": "teorema-de-pitagoras-kenia-erik",
@@ -2368,6 +2436,17 @@
         "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/ejercicios/lados-y-angulos/ejercicio.json"
       },
       {
+        "id": "partes-celula-animal-biologia-kenia-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-1-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Partes de la célula animal",
+        "descripcion": "Actividad 1: relacionar once nombres con una célula ilustrada mediante un banco vertical, líneas resaltables, arrastre, toques o teclado y corrección inmediata en verde o rojo con una señal de error temporal.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/biologia-parte-1/ejercicios/partes-de-la-celula-animal/",
+        "archivoMetadatos": "asesores/erik/kenia/biologia-parte-1/ejercicios/partes-de-la-celula-animal/ejercicio.json"
+      },
+      {
         "id": "practica-despejes-kenia",
         "tipo": "ejercicio",
         "sesion": "despejes-lineales-kenia",
@@ -2378,6 +2457,17 @@
         "ruta": "/asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/ejercicio.json"
+      },
+      {
+        "id": "extra-mate-kenia-clasifica-angulos",
+        "tipo": "ejercicio",
+        "sesion": "extra-mate-parte-1-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Clasifica ángulos",
+        "descripcion": "Práctica ilimitada equilibrada de siete tipos, incluidos los casos 0, 90, 180 y 360 grados, con reintentos y retroalimentación.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/ejercicios/clasifica-angulos/",
+        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/ejercicios/clasifica-angulos/ejercicio.json"
       },
       {
         "id": "trigonometria-kenia-identifica-lados",
@@ -3456,6 +3546,28 @@
         "estado": "publicado",
         "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/fracciones/",
         "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/fracciones/componente.json"
+      },
+      {
+        "id": "extra-mate-kenia-que-es-un-angulo",
+        "tipo": "explicacion",
+        "sesion": "extra-mate-parte-1-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Qué es un ángulo",
+        "descripcion": "Dos semirrectas con vértice común, punto arrastrable, deslizador, teclado y medida en tiempo real.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/explicacion/",
+        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/explicacion/componente.json"
+      },
+      {
+        "id": "extra-mate-kenia-tipos-angulos",
+        "tipo": "explicacion",
+        "sesion": "extra-mate-parte-1-kenia-erik",
+        "usuario": "kenia-erik",
+        "titulo": "Laboratorio de tipos de ángulos",
+        "descripcion": "Círculo con ejes, sector y giro acumulado de 0 a 360 grados, siete ejemplos y vuelta animada.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/explicacion/tipos-de-angulos/",
+        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/explicacion/tipos-de-angulos/componente.json"
       },
       {
         "id": "trigonometria-kenia-angulo-de-referencia",

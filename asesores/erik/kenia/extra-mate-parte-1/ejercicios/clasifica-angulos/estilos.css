@@ -1,0 +1,34 @@
+.geometry-site .practice-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.2rem; }
+.geometry-site .question-index { margin: 0; padding: 0.45rem 0.8rem; border-radius: 30px; background: #eeeffa; color: var(--geo-accent); font-size: 0.86rem; font-weight: 800; }
+.geometry-site .practice-stats { display: flex; flex-wrap: wrap; gap: 1rem; color: var(--geo-muted); font-size: 0.82rem; }
+.geometry-site .practice-stats strong { color: var(--geo-ink); }
+.geometry-site .practice-panel { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.25rem,4vw,3.5rem); align-items: center; padding: clamp(1rem,3vw,2rem); border: 1px solid var(--geo-border); border-radius: 22px; background: white; }
+.geometry-site .question-label { margin: 0; color: var(--geo-muted); font-size: 0.8rem; }
+.geometry-site .question-measure { margin: 0.1rem 0; color: var(--geo-accent); font-size: clamp(3rem,6vw,4.8rem); font-weight: 850; line-height: 1.1; letter-spacing: -0.05em; }
+.geometry-site .question-turn { margin: 0.6rem 0 1.2rem; color: var(--geo-muted); font-size: 0.85rem; }
+.geometry-site .question-controls h2 { margin-bottom: 1rem; font-size: 1.35rem; }
+.geometry-site .answer-options { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0.65rem; }
+.geometry-site .answer-option { display: flex; min-height: 59px; align-items: center; justify-content: space-between; gap: 0.6rem; padding: 0.75rem; border: 1.5px solid var(--geo-border); border-radius: 11px; background: #fafbfd; color: var(--geo-ink); font-size: 0.91rem; font-weight: 750; line-height: 1.3; text-align: left; cursor: pointer; }
+.geometry-site .answer-option:hover:not(:disabled) { border-color: var(--geo-accent); background: #eeeffa; }
+.geometry-site .answer-option.is-wrong { border-color: #b53c4c; background: #fff0f2; color: #9e293b; }
+.geometry-site .answer-option.is-correct { border-color: #2a7b4b; background: #eaf6ed; color: #1c6339; }
+.geometry-site .answer-option:disabled { cursor: default; }
+.geometry-site .answer-option:disabled:not(.is-correct):not(.is-wrong) { opacity: 0.65; }
+.geometry-site .practice-feedback { min-height: 6.5em; margin: 1rem 0; padding: 1rem; border-radius: 12px; background: #f0f2f7; }
+.geometry-site .practice-feedback p { margin: 0.25rem 0 0; font-size: 0.85rem; color: var(--geo-muted); }
+.geometry-site .practice-feedback[data-state="correct"] { background: #eaf6ed; color: #1c6339; }
+.geometry-site .practice-feedback[data-state="wrong"] { background: #fff0f2; color: #9e293b; }
+.geometry-site .answer-option.is-pulsing { animation: angle-answer-pulse 0.32s ease; }
+.geometry-site .new-question { width: 100%; }
+.geometry-site .unlimited-note { margin: 0.7rem 0 0; color: var(--geo-muted); font-size: 0.77rem; text-align: center; }
+.geometry-site .future-topic { display: grid; gap: 0.5rem; text-align: right; }
+.geometry-site .future-topic small { max-width: 250px; color: var(--geo-muted); font-size: 0.75rem; }
+@keyframes angle-answer-pulse { 50% { transform: translateY(-3px); } }
+@media (prefers-reduced-motion: reduce) { .geometry-site .answer-option.is-pulsing { animation: none; } }
+@media (max-width:900px) { .geometry-site .practice-panel { grid-template-columns: 1fr; } }
+@media (max-width:480px) {
+  .geometry-site .practice-toolbar { align-items: start; }
+  .geometry-site .practice-stats { width: 100%; }
+  .geometry-site .answer-option { font-size: 0.85rem; }
+  .geometry-site .future-topic { width: 100%; text-align: left; }
+}

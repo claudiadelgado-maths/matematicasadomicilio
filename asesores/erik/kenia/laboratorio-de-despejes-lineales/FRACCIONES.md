@@ -1,0 +1,11 @@
+# Reglas algebraicas del laboratorio
+
+El modelo tiene nodos num (racional reducido con n y d positivo), x, sum (términos ordenados) y ratio (factores del numerador y denominador). Cada bloque conserva su id al cruzar; las combinaciones generan una identidad nueva. La suma vacía representa 0 y el producto vacío representa 1. Estos neutros estructurales no son bloques trasladables.
+
+Una constante sumada cruza restando; una constante restada cruza sumando. Esto funciona desde ambos miembros. Un factor numérico no nulo del numerador completo cruza dividiendo y un factor del denominador completo cruza multiplicando. Las operaciones son reversibles antes de combinar; después de combinar, el nuevo número es la pieza manipulable y Deshacer conserva el acceso al estado anterior.
+
+No se extrae un factor que solo afecta a un sumando. Los neutros aditivos 0 y multiplicativos +1 se retiran automáticamente al incorporar otros términos/factores; no se evalúan otras cuentas pendientes. Para 3x+5=17, seleccionar 3 y dividir se rechaza; tras pasar 5, 3 sí puede dividir todo el miembro opuesto, incluso si 17-5 está pendiente. Los paréntesis conservan ese alcance. Nunca se divide por cero. Se permite trasladar el factor x si la solución original es no nula; se conserva y muestra la restricción x ≠ 0 hasta reiniciar o deshacer ese movimiento. Seleccionar x para una operación aditiva traslada todo su término, con el signo inverso.
+
+Combinar acepta pares numéricos de una suma, de un producto o de un cociente, incluidos pares dentro de paréntesis. Opera con numeradores y denominadores enteros, reduce el resultado y retira unidades multiplicativas después de esa combinación explícita. No mezcla cantidades pertenecientes a ramas incompatibles. Las cantidades fuera del rango entero seguro se rechazan. Cambiar orden conserva los signos y el significado de los términos.
+
+Las tarjetas conservan el signo del factor que representan, también en el denominador. El visor LaTeX normaliza los denominadores positivos y muestra el signo correspondiente delante de la fracción, sin evaluar la cuenta. LaTeX y bloques parten del mismo árbol. Historial, reinicio y nuevas ecuaciones vuelven a renderizarlo completo.

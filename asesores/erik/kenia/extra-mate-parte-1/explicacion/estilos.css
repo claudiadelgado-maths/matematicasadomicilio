@@ -1,0 +1,6 @@
+.geometry-site .definition-copy { margin: 0.8rem 0 1rem; color: var(--geo-muted); }
+.geometry-site .lab-controls h2 { margin: 0.8rem 0 0; font-size: 1.5rem; }
+.geometry-site .control-note { margin: 0.65rem 0 0; color: var(--geo-muted); font-size: 0.8rem; }
+.geometry-site .definition-note { max-width: 850px; margin-top: 1.5rem; padding: 1.3rem 1.5rem; border-left: 3px solid var(--geo-accent); background: #eeeffa; }
+.geometry-site .definition-note h2 { margin: 0 0 0.5rem; font-size: 1.3rem; }
+.geometry-site .definition-note p { margin: 0; color: var(--geo-muted); }

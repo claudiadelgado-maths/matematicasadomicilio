@@ -1,0 +1,36 @@
+.geometry-site .geometry-hero { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem,4vw,4rem); align-items: center; padding-block: clamp(2.5rem,6vw,5.5rem); }
+.geometry-site .geometry-hero h1 { font-size: clamp(3.1rem,6vw,5.6rem); }
+.geometry-site .geometry-hero h1 span { display: block; color: var(--geo-accent); }
+.geometry-site .hero-intro { max-width: 480px; margin: 1.5rem 0 0.8rem; font-size: clamp(1.25rem,2vw,1.65rem); line-height: 1.45; }
+.geometry-site .hero-description { max-width: 440px; margin: 0 0 1.7rem; color: var(--geo-muted); }
+.geometry-site .hero-caption { margin: 0.7rem 0 0; color: var(--geo-muted); font-size: 0.85rem; }
+.geometry-site .hero-art { position: relative; margin: 0; padding: 1.5rem; border: 1px solid #dddff0; border-radius: 28px; background: #f0f0fb; }
+.geometry-site .hero-art img { width: 100%; height: auto; }
+.geometry-site .visual-label { color: var(--geo-accent); font-size: 0.78rem; font-weight: 750; }
+.geometry-site .visual-badge { position: absolute; right: 1.5rem; bottom: 1.5rem; display: grid; padding: 0.8rem 1.2rem; border: 1px solid #d0d2e6; border-radius: 14px; background: white; }
+.geometry-site .visual-badge strong { color: var(--geo-accent); font-size: 2rem; line-height: 1.1; }
+.geometry-site .visual-badge span { color: var(--geo-muted); font-size: 0.8rem; }
+.geometry-site .session-topics { padding-block: 1rem 2rem; }
+.geometry-site .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 1.5rem; margin-bottom: 1.5rem; }
+.geometry-site .section-heading h2 { margin-bottom: 0; font-size: clamp(1.7rem,3vw,2.3rem); }
+.geometry-site .section-heading > p { max-width: 250px; margin: 0; color: var(--geo-muted); font-size: 0.9rem; }
+.geometry-site .topic-card { border: 1px solid var(--geo-border); border-radius: 18px; background: white; }
+.geometry-site .topic-intro { display: flex; align-items: center; gap: 1.5rem; padding: clamp(1.2rem,3vw,2rem); }
+.geometry-site .topic-number { display: grid; flex: 0 0 auto; width: 58px; height: 58px; place-items: center; border-radius: 16px; background: #eeeffa; color: var(--geo-accent); font-size: 1.3rem; font-weight: 800; }
+.geometry-site .topic-intro .eyebrow { margin-bottom: 0.4rem; }
+.geometry-site .topic-intro h3 { margin-bottom: 0.4rem; font-size: 1.8rem; }
+.geometry-site .topic-intro p:last-child { margin: 0; color: var(--geo-muted); }
+.geometry-site .topic-links { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 0.6rem; padding: 0.9rem; border-top: 1px solid var(--geo-border); }
+.geometry-site .topic-links a { display: flex; min-height: 52px; align-items: center; justify-content: space-between; gap: 0.7rem; padding: 0.5rem 0.8rem; border-radius: 9px; color: var(--geo-accent); font-size: 0.9rem; font-weight: 750; text-decoration: none; }
+.geometry-site .topic-links a:hover { background: #eeeffa; }
+@media (max-width:760px) {
+  .geometry-site .geometry-hero { grid-template-columns: 1fr; }
+  .geometry-site .hero-art { max-width: 520px; }
+  .geometry-site .section-heading { display: block; }
+  .geometry-site .section-heading > p { max-width: none; margin-top: 0.8rem; }
+  .geometry-site .topic-links { grid-template-columns: 1fr; }
+}
+@media (max-width:480px) {
+  .geometry-site .topic-intro { gap: 0.8rem; }
+  .geometry-site .topic-number { width: 44px; height: 44px; border-radius: 12px; }
+}

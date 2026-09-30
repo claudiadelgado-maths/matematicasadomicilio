@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120">
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#c1aebd" opacity=".22"/></pattern>
+    <g id="flower"><g fill="currentColor"><ellipse cy="-29" rx="17" ry="27"/><ellipse cy="-29" rx="17" ry="27" transform="rotate(60)"/><ellipse cy="-29" rx="17" ry="27" transform="rotate(120)"/><ellipse cy="-29" rx="17" ry="27" transform="rotate(180)"/><ellipse cy="-29" rx="17" ry="27" transform="rotate(240)"/><ellipse cy="-29" rx="17" ry="27" transform="rotate(300)"/></g><circle r="17" fill="#f5d893"/><circle cx="-5" cy="-5" r="4" fill="#fff9e7" opacity=".8"/></g>
+    <g id="spark" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M0-13Q0 0 12 0Q0 0 0 13Q0 0-12 0Q0 0 0-13Z"/></g>
+    <g id="sprig" fill="none" stroke="#a8c5b5" stroke-width="3" stroke-linecap="round"><path d="M0 85Q12 35 0-22"/><path d="M6 51Q-30 46-24 22Q3 23 6 51M6 26Q35 16 27-5Q4 3 6 26M2 1Q-22-5-21-24Q1-23 2 1" fill="#c7decc"/></g>
+  </defs>
+  <rect width="1440" height="1120" fill="#fffaf5"/>
+  <path d="M1030 0H1440V315Q1320 340 1250 226T1030 0Z" fill="#f2e5f4" opacity=".65"/>
+  <path d="M0 655Q92 639 141 733T72 967L0 1000Z" fill="#e2efea" opacity=".7"/>
+  <path d="M1270 938Q1360 891 1440 925V1120H1200Q1188 1028 1270 938Z" fill="#fae6d8" opacity=".7"/>
+  <rect width="1440" height="1120" fill="url(#paper)"/>
+  <g opacity=".7">
+    <use href="#flower" transform="translate(1340 134) rotate(15) scale(1.1)" color="#d6b5e5"/>
+    <use href="#flower" transform="translate(1260 215) rotate(-12) scale(.55)" color="#f1bdca"/>
+    <use href="#sprig" transform="translate(1386 255) rotate(25)"/>
+    <use href="#flower" transform="translate(18 748) rotate(-20) scale(1.1)" color="#efc1cf"/>
+    <use href="#flower" transform="translate(83 833) rotate(20) scale(.6)" color="#d2c5ed"/>
+    <use href="#sprig" transform="translate(43 892) rotate(-35)"/>
+    <use href="#flower" transform="translate(1392 1020) scale(.8)" color="#edbdc8"/>
+    <use href="#flower" transform="translate(1298 1088) rotate(20) scale(.5)" color="#d5c5ec"/>
+    <use href="#spark" transform="translate(1200 100)" color="#bd9ed3"/>
+    <use href="#spark" transform="translate(1390 403) scale(.7)" color="#dcb875"/>
+    <use href="#spark" transform="translate(106 612) scale(.7)" color="#bf9fce"/>
+    <use href="#spark" transform="translate(1250 960)" color="#cda884"/>
+    <path d="M1268 320c-26-24-38 11 0 27 38-16 26-51 0-27Z" fill="#e8bed0"/>
+    <path d="M42 105c-17-16-26 8 0 19 26-11 17-35 0-19Z" fill="#d8c4e8"/>
+    <path d="M1347 674q12-18 24 0t24 0" fill="none" stroke="#b6d0c1" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1175" cy="245" r="4" fill="#e8c490"/><circle cx="101" cy="946" r="5" fill="#c8b0da"/>
+  </g>
+</svg>

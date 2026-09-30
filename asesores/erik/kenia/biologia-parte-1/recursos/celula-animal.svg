@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 820" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Célula animal</title>
+  <desc id="descripcion">Célula de membrana turquesa y citoplasma azul claro. Se distinguen el núcleo rosado, nucléolo amarillo, retículo verde, ribosomas violetas, Golgi naranja, mitocondrias coral, filamentos dorados, centriolos azules y un peroxisoma verde.</desc>
+  <defs>
+    <linearGradient id="citoplasma" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7f6f3"/><stop offset="1" stop-color="#8ad3df"/></linearGradient>
+    <radialGradient id="nucleo" cx="35%" cy="28%" r="75%"><stop stop-color="#ff9bcb"/><stop offset="1" stop-color="#e34e99"/></radialGradient>
+    <linearGradient id="reticulo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ddf283"/><stop offset="1" stop-color="#99cc51"/></linearGradient>
+    <path id="borde" d="M290 35C426 16 576 76 617 208C648 309 598 365 625 450C661 566 615 720 500 778C401 829 250 788 169 724C75 651 44 531 58 410C69 295 50 214 114 127C158 66 226 37 290 35Z"/>
+  </defs>
+  <!-- Doble contorno para distinguir la membrana del citoplasma. -->
+  <use href="#borde" fill="url(#citoplasma)" stroke="#349aaf" stroke-width="10"/>
+  <use href="#borde" fill="none" stroke="#9ae1e5" stroke-width="4"/>
+  <path d="M111 231C117 163 151 120 206 92M126 659Q145 688 176 711" fill="none" stroke="#ecfffc" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <!-- Filamentos del citoesqueleto; el grupo inferior izquierdo recibe el indicador. -->
+  <g fill="none" stroke-linecap="round">
+    <g stroke="#cf8b30" stroke-width="8"><path d="M116 583L148 663M137 581L169 661M364 93L388 149M388 89L412 145M553 335L583 397M536 343L566 405"/></g>
+    <g stroke="#ffdd88" stroke-width="3"><path d="M116 583L148 663M137 581L169 661M364 93L388 149M388 89L412 145M553 335L583 397M536 343L566 405"/></g>
+  </g>
+  <!-- Retículo continuo, plegado alrededor de la parte izquierda del núcleo. -->
+  <g fill="url(#reticulo)" stroke="#70a63d" stroke-width="4" stroke-linejoin="round">
+    <path d="M280 175Q238 187 206 225Q175 263 173 310Q169 344 185 367Q194 381 203 365Q210 351 208 327Q208 276 232 249Q250 227 275 216Q288 212 291 222Q292 231 278 236Q246 248 233 281Q219 318 229 351Q236 375 251 382Q270 390 283 378Q293 367 279 363Q258 358 251 333Q240 297 269 266L285 254Q294 248 300 256Q306 265 292 277Q265 301 275 328Q282 347 304 352Q314 355 310 365Q300 392 270 403Q243 410 219 396Q190 381 178 350Q165 316 178 275Q192 229 222 203Q247 183 280 175Z"/>
+    <path d="M277 382Q318 391 350 367Q361 359 366 368Q370 378 355 388Q317 414 280 402Q264 396 277 382Z"/>
+  </g>
+  <!-- Envoltura nuclear y nucléolo separados por sus colores. -->
+  <ellipse cx="377" cy="270" rx="111" ry="93" fill="#f5b0d0" stroke="#b94c8b" stroke-width="5" transform="rotate(9 377 270)"/>
+  <ellipse cx="377" cy="270" rx="101" ry="83" fill="url(#nucleo)" stroke="#f17db4" stroke-width="3" transform="rotate(9 377 270)"/>
+  <g fill="none" stroke="#c95295" stroke-width="4" stroke-linecap="round" opacity=".7"><path d="M317 260Q333 241 353 254T378 244M325 298Q341 320 367 301M370 219Q392 210 410 224"/></g>
+  <circle cx="420" cy="288" r="31" fill="#fff7a3" stroke="#d7be3f" stroke-width="5"/>
+  <path d="M406 276Q419 265 432 277" fill="none" stroke="#fffddd" stroke-width="6" stroke-linecap="round"/>
+  <!-- Ribosomas libres y adheridos: puntos definidos sin textura que los confunda. -->
+  <g fill="#9860a8" stroke="#754388" stroke-width="1.5">
+    <circle cx="142" cy="423" r="5"/><circle cx="161" cy="413" r="5"/><circle cx="166" cy="436" r="5"/><circle cx="131" cy="445" r="4"/><circle cx="185" cy="425" r="4"/>
+    <circle cx="208" cy="219" r="4"/><circle cx="194" cy="242" r="4"/><circle cx="178" cy="272" r="4"/><circle cx="174" cy="298" r="4"/>
+    <circle cx="185" cy="355" r="4"/><circle cx="220" cy="387" r="4"/><circle cx="251" cy="405" r="4"/><circle cx="303" cy="409" r="4"/><circle cx="333" cy="400" r="4"/>
+    <circle cx="479" cy="375" r="4"/><circle cx="521" cy="433" r="4"/><circle cx="382" cy="600" r="4"/><circle cx="396" cy="618" r="4"/>
+  </g>
+  <!-- Golgi: sacos aplanados y vesículas. -->
+  <g fill="#ffce61" stroke="#de8a29" stroke-width="4" stroke-linejoin="round">
+    <path d="M389 418Q433 440 475 417Q484 413 484 423Q479 445 436 449Q400 446 383 431Q376 420 389 418Z"/>
+    <path d="M370 448Q430 479 493 447Q505 441 504 453Q494 479 438 483Q393 480 367 463Q356 451 370 448Z"/>
+    <path d="M363 479Q430 510 504 477Q516 473 511 486Q496 511 435 516Q389 511 364 495Q352 484 363 479Z"/>
+    <path d="M389 523Q433 541 476 520Q486 515 483 527Q469 549 431 548Q404 545 385 536Q376 529 389 523Z"/>
+  </g>
+  <g fill="#ffe297" stroke="#de8a29" stroke-width="3"><circle cx="522" cy="461" r="8"/><circle cx="512" cy="528" r="10"/><circle cx="352" cy="438" r="7"/></g>
+  <!-- Mitocondrias: doble contorno y crestas amarillas dentro del cuerpo coral. -->
+  <g transform="rotate(-28 238 548)">
+    <ellipse cx="238" cy="548" rx="69" ry="37" fill="#ef91a6" stroke="#c46486" stroke-width="5"/>
+    <ellipse cx="238" cy="548" rx="60" ry="29" fill="#ffe18b" stroke="#efb85a" stroke-width="3"/>
+    <path d="M190 548Q200 523 207 543L214 560Q220 574 226 550L233 532Q241 517 247 542L253 560Q259 574 266 549Q274 525 286 546" fill="none" stroke="#e99148" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(32 498 145)">
+    <ellipse cx="498" cy="145" rx="51" ry="28" fill="#ef91a6" stroke="#c46486" stroke-width="4"/>
+    <ellipse cx="498" cy="145" rx="43" ry="21" fill="#ffe18b"/>
+    <path d="M465 147L476 133Q481 127 486 148Q491 167 497 145Q503 123 509 146Q515 165 529 142" fill="none" stroke="#e99148" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- Centriolos perpendiculares; se señala uno de los cilindros. -->
+  <g stroke="#35789c" stroke-width="3" stroke-linejoin="round">
+    <g transform="rotate(-18 450 682)">
+      <path d="M413 665H483V699H413Z" fill="#66b0d3"/>
+      <path d="M419 671H481M419 679H481M419 688H481M419 695H481" fill="none"/>
+      <ellipse cx="413" cy="682" rx="9" ry="17" fill="#b8e4ee"/><ellipse cx="413" cy="682" rx="4" ry="9" fill="#4e94b4"/>
+    </g>
+    <g transform="rotate(67 492 647)">
+      <path d="M461 632H521V662H461Z" fill="#66b0d3"/>
+      <path d="M469 637H519M469 644H519M469 652H519M469 658H519" fill="none"/>
+      <ellipse cx="461" cy="647" rx="8" ry="15" fill="#b8e4ee"/>
+    </g>
+  </g>
+  <!-- Peroxisoma granular, distinto del nucléolo. -->
+  <circle cx="268" cy="736" r="29" fill="#e2ed9e" stroke="#87a443" stroke-width="4"/>
+  <circle cx="268" cy="736" r="23" fill="#f4f6c0"/>
+  <g fill="#96b150"><circle cx="259" cy="726" r="3"/><circle cx="280" cy="730" r="3"/><circle cx="267" cy="738" r="4"/><circle cx="253" cy="743" r="3"/><circle cx="278" cy="748" r="3"/></g>
+</svg>

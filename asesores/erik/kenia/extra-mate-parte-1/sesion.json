@@ -1,0 +1,20 @@
+{
+  "id": "extra-mate-parte-1-kenia-erik",
+  "slug": "extra-mate-parte-1",
+  "tipo": "sesion",
+  "usuario": "kenia-erik",
+  "titulo": "Extra mate parte 1",
+  "descripcion": "Repaso visual de geometría: ángulos con semirrectas móviles, laboratorio circular de 0 a 360 grados y práctica ilimitada de clasificación.",
+  "objetivo": "Comprender el ángulo como giro entre dos semirrectas con vértice común, distinguir los siete tipos e identificarlos para un examen.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-09-29",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenia/extra-mate-parte-1/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

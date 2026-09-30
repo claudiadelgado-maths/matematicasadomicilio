@@ -1,0 +1,30 @@
+/* Identidad local compartida solo por las páginas de esta sesión. */
+.biology-site {
+  --bio-teal: #196451;
+  --bio-ink: #243c35;
+  --bio-muted: #52645b;
+  --bio-border: #d2e0d8;
+  background: #fafcf9;
+  color: var(--bio-ink);
+}
+.biology-site [hidden] { display: none; }
+.biology-site h1, .biology-site h2, .biology-site h3 { margin-top: 0; line-height: 1.12; letter-spacing: -0.035em; overflow-wrap: break-word; }
+.biology-site h1 { margin-bottom: 0; font-weight: 850; }
+.biology-site .eyebrow { margin: 0 0 0.8rem; color: var(--bio-teal); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.biology-site .breadcrumbs { padding-top: 1.25rem; color: var(--bio-muted); font-size: 0.82rem; }
+.biology-site .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 0.35rem 0.55rem; margin: 0; padding: 0; list-style: none; }
+.biology-site .breadcrumbs li { display: inline-flex; align-items: center; gap: 0.55rem; }
+.biology-site .breadcrumbs li:not(:last-child)::after { content: "/"; color: #94a39b; }
+.biology-site .breadcrumbs a { text-decoration: none; }
+.biology-site .breadcrumbs a:hover { text-decoration: underline; }
+.biology-site .bio-button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 1rem; padding: 0.7rem 1.25rem; border: 1px solid var(--bio-border); border-radius: 10px; background: white; color: var(--bio-ink); font-size: 0.92rem; font-weight: 750; text-decoration: none; cursor: pointer; }
+.biology-site .bio-button.primary { border-color: var(--bio-teal); background: var(--bio-teal); color: white; }
+.biology-site .bio-button:hover { border-color: var(--bio-teal); background: #e9f3ec; }
+.biology-site .bio-button.primary:hover { background: #104c3d; }
+.biology-site .bio-button:disabled { border-color: #d5ded9; background: #edf1ee; color: #69756e; cursor: not-allowed; }
+.biology-site :focus-visible { outline-color: #196451; }
+.biology-site .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 480px) {
+  .biology-site .container { width: calc(100% - 1.5rem); }
+  .biology-site .breadcrumbs { font-size: 0.75rem; }
+}

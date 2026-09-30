@@ -1,0 +1,5 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {create,transition,blocks,solved,check,evaluate,normalize} from './motor.mjs';
+test('integer and fractional regressions: both orders including negative/unit coefficients and zero',()=>{for(let a=-30;a<=30;a++){if(!a)continue;for(let d=1;d<=20;d++)for(let x=-20;x<=20;x++){if(a*x%d)continue;for(const order of [['a','den'],['den','a']]){let s=create(a,5,x,d);const apply=(ids,action)=>{const r=transition(s,ids,action);assert.ok(r.ok,r.message);s=r.state;assert.ok(Math.abs(evaluate(s.left,x)-evaluate(s.right,x))<1e-8);};apply(['b'],'restar');if(blocks(s).some(b=>b.id==='c'))apply(['c','b'],'combinar');for(const id of order){if(blocks(s).some(b=>b.id===id)){apply([id],id==='a'?'dividir':'multiplicar');const num=blocks(s).find(b=>b.side==='right'&&b.type==='num'&&b.id!==id);if(num&&blocks(s).some(b=>b.id===id))apply([num.id,id],'combinar');}}assert.ok(solved(s));assert.ok(check(s,String(x)));}}}});
+test('denominator normalization',()=>{assert.deepEqual(normalize(6,-4),{a:-3,d:2});assert.deepEqual(normalize(-6,-4),{a:3,d:2});assert.throws(()=>normalize(2,0));});

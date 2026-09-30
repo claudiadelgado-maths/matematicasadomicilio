@@ -1,0 +1,20 @@
+{
+  "id": "biologia-parte-1-kenia-erik",
+  "slug": "biologia-parte-1",
+  "tipo": "sesion",
+  "usuario": "kenia-erik",
+  "titulo": "Biología parte 1",
+  "descripcion": "Explora la célula animal con un esquema ilustrado, tarjetas de nombres y corrección inmediata de once estructuras.",
+  "objetivo": "Identificar las principales estructuras de una célula animal siguiendo indicadores visuales y corregir las respuestas con retroalimentación inmediata.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-09-29",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenia/biologia-parte-1/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}
