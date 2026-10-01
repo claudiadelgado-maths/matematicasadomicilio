@@ -1,4 +1,4 @@
-import {parse} from './fracciones.mjs';
+import {parse} from './fracciones.mjs?v=20260930-series2';
 // Banco editorial fijo: no utilizar generadores ni cambiar sus datos al repetir.
 export function fija(id,tipo,enunciado,datos,respuestas,secuencia){
   const q={id,tipo,enunciado,datos,formulas:[],pasos:respuestas.map(([label,value],i)=>Object.freeze({id:`respuesta${i}`,label,respuesta:Object.freeze(parse(value))}))};

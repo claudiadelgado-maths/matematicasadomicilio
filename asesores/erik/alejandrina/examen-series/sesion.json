@@ -4,7 +4,7 @@
   "tipo": "sesion",
   "usuario": "alejandrina",
   "titulo": "Examen series",
-  "descripcion": "Práctica de sucesiones y series aritméticas y geométricas: identificar la sucesión, hallar d o r, hallar el primer término, hallar aₙ y n, sumas de series, mini examen de ejercicios.",
+  "descripcion": "Práctica progresiva de sucesiones y series aritméticas y geométricas, con 8 actividades, mini exámenes fijos y medios con casillas editables.",
   "objetivo": "Practicar identificación, parámetros, términos, posiciones, sumas y medios de sucesiones aritméticas y geométricas con validación exacta y dificultad progresiva.",
   "conocimientosPrevios": [],
   "fecha": "2026-09-30",

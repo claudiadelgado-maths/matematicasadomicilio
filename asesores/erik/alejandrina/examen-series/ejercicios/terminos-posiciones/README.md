@@ -6,7 +6,7 @@ Practica términos y posiciones en dos secciones independientes.
 
 Secciones independientes, en orden: Hallar un término; Hallar la posición. Selector Ambas / Solo aritméticas / Solo geométricas.
 
-Reutiliza exclusivamente los recursos de esta sesión: \recursos\actividades.mjs, modelo.mjs, fracciones.mjs, practica.mjs y sesion.css. Generadores progresivos y validación exacta, salvo los mini exámenes, que utilizan bancos fijos. Sin teoría adicional. La notación se renderiza con KaTeX 0.18.1 (CDN con SRI y fuente LaTeX de respaldo). Datos y avance en memoria; no se recopilan datos personales.
+Reutiliza exclusivamente los recursos de esta sesión: recursos/actividades.mjs, modelo.mjs, fracciones.mjs, practica.mjs, banco-ejercicios.mjs, banco-problemas.mjs y sesion.css. Generadores progresivos y validación exacta, salvo los mini exámenes, que utilizan bancos fijos. Sin teoría adicional. La notación se renderiza con KaTeX 0.18.1 (CDN con SRI y fuente LaTeX de respaldo). Datos y avance en memoria; no se recopilan datos personales.
 
 Conservar index.html, estilos.css, ejercicio.json, esta ruta y su identidad. La navegación enlaza a actividades existentes y al menú. La especificación completa está en ../../ENCARGO.md, el estado de implementación en ../../ETAPAS.md y las reglas de arquitectura en ../../README.md.
 

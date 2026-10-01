@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 245,
+  "total": 252,
   "tipos": {
     "maestro": [
       {
@@ -1255,7 +1255,7 @@
         "tipo": "sesion",
         "usuario": "alejandrina",
         "titulo": "Examen series",
-        "descripcion": "Práctica de sucesiones y series aritméticas y geométricas: identificar la sucesión.",
+        "descripcion": "Práctica progresiva de sucesiones y series aritméticas y geométricas, con 8 actividades, mini exámenes fijos y medios con casillas editables.",
         "objetivo": "Practicar identificación, parámetros, términos, posiciones, sumas y medios de sucesiones aritméticas y geométricas con validación exacta y dificultad progresiva.",
         "conocimientosPrevios": [],
         "fecha": "2026-09-30",
@@ -2326,6 +2326,17 @@
         "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/ejercicios/construye-el-arbol/ejercicio.json"
       },
       {
+        "id": "examen-series-diferencia-razon-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "examen-series-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Hallar d o r",
+        "descripcion": "Cuatro formas de encontrar la diferencia o la razón.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/diferencia-razon/",
+        "archivoMetadatos": "asesores/erik/alejandrina/examen-series/ejercicios/diferencia-razon/ejercicio.json"
+      },
+      {
         "id": "examen-series-identificar-alejandrina",
         "tipo": "ejercicio",
         "sesion": "examen-series-alejandrina",
@@ -2335,6 +2346,72 @@
         "estado": "publicado",
         "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/identificar/",
         "archivoMetadatos": "asesores/erik/alejandrina/examen-series/ejercicios/identificar/ejercicio.json"
+      },
+      {
+        "id": "examen-series-medios-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "examen-series-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Medios aritméticos y geométricos",
+        "descripcion": "Completa las casillas entre dos extremos. Primero practica los medios aritméticos; después, los geométricos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/medios/",
+        "archivoMetadatos": "asesores/erik/alejandrina/examen-series/ejercicios/medios/ejercicio.json"
+      },
+      {
+        "id": "examen-series-mini-examen-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "examen-series-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Mini examen de ejercicios",
+        "descripcion": "31 ejercicios fijos en orden aleatorio. Resuelve sin fórmulas de apoyo.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/mini-examen/",
+        "archivoMetadatos": "asesores/erik/alejandrina/examen-series/ejercicios/mini-examen/ejercicio.json"
+      },
+      {
+        "id": "examen-series-primer-termino-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "examen-series-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Hallar el primer término",
+        "descripcion": "Encuentra a₁ desde una sucesión, un término o dos términos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/primer-termino/",
+        "archivoMetadatos": "asesores/erik/alejandrina/examen-series/ejercicios/primer-termino/ejercicio.json"
+      },
+      {
+        "id": "examen-series-problemas-aplicados-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "examen-series-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Mini examen de problemas",
+        "descripcion": "20 problemas fijos de situaciones cotidianas. Elige el procedimiento y resuelve.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/problemas-aplicados/",
+        "archivoMetadatos": "asesores/erik/alejandrina/examen-series/ejercicios/problemas-aplicados/ejercicio.json"
+      },
+      {
+        "id": "examen-series-sumas-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "examen-series-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Sumas de series",
+        "descripcion": "Cinco casos: datos directos, sucesiones, términos, despejes y sumas entre posiciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/sumas/",
+        "archivoMetadatos": "asesores/erik/alejandrina/examen-series/ejercicios/sumas/ejercicio.json"
+      },
+      {
+        "id": "examen-series-terminos-posiciones-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "examen-series-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Hallar aₙ y n",
+        "descripcion": "Practica términos y posiciones en dos secciones independientes.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/terminos-posiciones/",
+        "archivoMetadatos": "asesores/erik/alejandrina/examen-series/ejercicios/terminos-posiciones/ejercicio.json"
       },
       {
         "id": "practica-formulas-sucesiones-aritmeticas",

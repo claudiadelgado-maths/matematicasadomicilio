@@ -1,4 +1,4 @@
-import {R,add,mul,pow,tex,neg,sub,div} from './fracciones.mjs';
+import {R,add,mul,pow,tex,neg,sub,div} from './fracciones.mjs?v=20260930-series2';
 export const pick=(a,r)=>a[Math.floor(r()*a.length)];
 export function barajar(list,r=Math.random){const a=[...list];for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 export const termino=(tipo,a,p,n)=>tipo==='aritmetica'?add(a,mul(R(n-1),p)):mul(a,pow(p,n-1));
@@ -10,18 +10,23 @@ export function datos(tipo,indice,r=Math.random){
   return {tipo,a,p,n:pick(level===0?[3,4,5]:level===1?[4,5,6]:[5,6,7],r),nivel:level};
 }
 export function generar(actividad,caso,filtro,indice,r=Math.random){
-  const tipo=filtro==='ambas'?pick(['aritmetica','geometrica'],r):filtro,base=datos(tipo,indice,r);
+  const tipo=actividad==='medios'?(caso==='aritmeticos'?'aritmetica':'geometrica'):filtro==='ambas'?pick(['aritmetica','geometrica'],r):filtro,base=datos(tipo,indice,r);
   if(actividad==='identificar')return {...base,enunciado:'¿Qué tipo de sucesión es?',secuencia:Array.from({length:4},(_,i)=>termino(tipo,base.a,base.p,i+1)),opciones:[{id:'aritmetica',texto:'Aritmética'},{id:'geometrica',texto:'Geométrica'}],respuesta:tipo,formulas:[],pasos:[]};
   if(actividad==='diferencia-razon')return parametro(base,caso,r);
   if(actividad==='primer-termino')return primero(base,caso,r);
   if(actividad==='terminos-posiciones')return terminoPosicion(base,caso);
   if(actividad==='sumas')return sumas(base,caso,indice,r);
+  if(actividad==='medios')return medios(base,r);
   throw new RangeError('Actividad todavía no implementada');
 }
 export const paso=(id,respuesta,label=id)=>({id,label,respuesta});
 export const dato=(name,value)=>`${name}=${typeof value==='number'?value:tex(value)}`;
 export const lista=b=>Array.from({length:4},(_,i)=>termino(b.tipo,b.a,b.p,i+1));
-export function indices(b,r){const m=pick(b.nivel===0?[2,3]:[2,3,4],r),gap=pick(b.nivel===0?[2,3]:b.nivel===1?[2,3,4]:[3,4,5],r);return {m,j:m+gap};}
+export function indices(b,r){
+  // Potencias altas de 2/3 y 3/2 producen fracciones poco prácticas a mano.
+  const compactos=b.tipo==='geometrica'&&b.p.d>1n&&(b.p.d===3n||b.p.n===3n||b.p.n===-3n);
+  const m=pick(b.nivel===0||compactos?[2,3]:[2,3,4],r),gap=pick(b.nivel===0||compactos?[2,3]:b.nivel===1?[2,3,4]:[3,4,5],r);return {m,j:m+gap};
+}
 export function condicion(b,gap){return b.tipo==='geometrica'&&gap%2===0?`Halla r ${b.p.n<0n?'negativa':'positiva'}.`:`Halla ${b.tipo==='aritmetica'?'d':'r'}.`;}
 export function formulaParametro(b,m,j){
   const ar=b.tipo==='aritmetica',den=m===1?'n-1':'n-m',low=m===1?'a_1':'a_m';
@@ -98,4 +103,8 @@ function sumas(base,caso,indice,r){
     q.formulas.push('\\text{Suma de }a_m\\text{ a }a_n=S_n-S_{m-1}');
     q.pasos=[paso('sn',total,'S_n'),paso('previa',before,'S_{m-1}'),paso('intervalo',sub(total,before),'S_n-S_{m-1}')];
   }return q;
+}
+function medios(b,r){
+  const k=pick(b.nivel===0?[2,3]:[2,3,4],r),ar=b.tipo==='aritmetica',ambiguo=!ar&&(k+1)%2===0;
+  return {...b,n:k+2,enunciado:`Inserta ${k} medios ${ar?'aritméticos':'geométricos'} entre los extremos.${ambiguo?` Usa r ${b.p.n<0n?'negativa':'positiva'}.`:''}`,datos:[dato('k',k)],formulas:[ar?'d=\\frac{b-a}{k+1}':`r=${ambiguo&&b.p.n<0n?'-':''}\\sqrt[k+1]{\\frac{b}{a}}`],medios:{inicio:b.a,fin:termino(b.tipo,b.a,b.p,k+2),k},pasos:Array.from({length:k},(_,i)=>paso(`medio${i+1}`,termino(b.tipo,b.a,b.p,i+2),`a_{${i+2}}`))};
 }

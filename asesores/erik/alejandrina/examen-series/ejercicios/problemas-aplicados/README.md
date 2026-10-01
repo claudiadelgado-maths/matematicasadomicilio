@@ -1,10 +1,10 @@
-# Sumas de series
+# Mini examen de problemas
 
-Actividad 5 de Examen series, Alejandrina → Erik.
+Actividad 7 de Examen series, Alejandrina → Erik.
 
-Cinco casos: datos directos, sucesiones, términos, despejes y sumas entre posiciones.
+20 problemas fijos de situaciones cotidianas. Elige el procedimiento y resuelve.
 
-Secciones independientes, en orden: El primero, el último y la cantidad; De la sucesión a la suma; Dos términos para calcular la suma; Despejar a partir de la suma; Sumar entre dos posiciones. Selector Ambas / Solo aritméticas / Solo geométricas.
+Secciones independientes, en orden: Tu ronda de problemas. Selector Ambas / Solo aritméticas / Solo geométricas.
 
 Reutiliza exclusivamente los recursos de esta sesión: recursos/actividades.mjs, modelo.mjs, fracciones.mjs, practica.mjs, banco-ejercicios.mjs, banco-problemas.mjs y sesion.css. Generadores progresivos y validación exacta, salvo los mini exámenes, que utilizan bancos fijos. Sin teoría adicional. La notación se renderiza con KaTeX 0.18.1 (CDN con SRI y fuente LaTeX de respaldo). Datos y avance en memoria; no se recopilan datos personales.
 

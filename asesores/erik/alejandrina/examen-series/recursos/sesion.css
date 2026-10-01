@@ -47,6 +47,16 @@
 .series-exam input { width:145px; max-width:100%; min-height:46px; border:1px solid #a69eb3; border-radius:8px; padding:.55rem .7rem; font:inherit; background:white; color:var(--ink); }
 .series-exam input:disabled { background:#eeedf2; opacity:.65; }
 .series-exam .step-feedback { margin:0; flex:1 1 180px; min-height:1.3rem; }
+.series-exam .means-track { display:flex; flex-wrap:wrap; align-items:start; justify-content:center; gap:1rem; padding:1.5rem .5rem; border-radius:14px; background:#f7f4fa; }
+.series-exam .means-cell { display:grid; width:140px; max-width:100%; min-width:0; gap:.6rem; border:0; padding:.6rem; text-align:center; }
+.series-exam .means-cell label { justify-content:center; font-size:.85rem; }
+.series-exam .means-cell input { width:100%; min-width:0; text-align:center; }
+.series-exam .means-cell .button { display:none; }
+.series-exam .means-cell .step-feedback { font-size:.75rem; line-height:1.4; min-height:2.2rem; }
+.series-exam .mean-end { display:grid; align-content:start; justify-items:center; gap:1rem; min-width:95px; max-width:100%; padding:.6rem; color:var(--accent); }
+.series-exam .mean-end > span:first-child { font-size:.75rem; font-weight:800; }
+.series-exam .mean-end > [data-math] { font-size:1.3rem; padding:.55rem; }
+.series-exam .exam-result { background:#f1eaf7; border-radius:14px; padding:clamp(1rem,3vw,2rem); }
 /* Utilidad local: no mostrar componentes opcionales ocultos. */
 .series-exam [hidden] { display:none !important; }
 @media(max-width:650px){.series-exam .activity-grid { grid-template-columns:1fr; }.series-exam .sequence { padding:1rem; font-size:1.1rem; }.series-exam .page-nav .button { flex:1; }.series-exam .answer-options .button { flex:1; }}

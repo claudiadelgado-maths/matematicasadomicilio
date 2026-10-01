@@ -1,0 +1,10 @@
+{
+  "id": "examen-series-medios-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "examen-series-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "Medios aritméticos y geométricos",
+  "descripcion": "Completa las casillas entre dos extremos. Primero practica los medios aritméticos; después, los geométricos.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/alejandrina/examen-series/ejercicios/medios/"
+}

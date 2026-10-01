@@ -8,6 +8,8 @@ Alejandrina pertenece al maestro `erik-estrella`. El índice carga automáticame
 
 ## Contenido actual
 
+- `examen-series/`: ocho actividades de práctica aritmética y geométrica, generadores progresivos, 31 ejercicios y 20 problemas fijos en dos mini exámenes, medios con casillas editables y validación exacta de fracciones. Sin teoría adicional. Registro de implementación por etapas en `examen-series/ETAPAS.md`.
+
 - `series-geometricas/`: menú, trece páginas progresivas con LaTeX y prácticas generativas guiadas, exploradores de potencias y sumas, y Misión constelación de 24 retos aleatorios con reanudación y repaso de errores.
 
 - `datos-no-agrupados/`: explicación, ejercicio, calculadora y juego de estadística descriptiva.

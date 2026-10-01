@@ -516,7 +516,7 @@
             {
               "id": "examen-series-alejandrina",
               "titulo": "Examen series",
-              "descripcion": "Práctica de sucesiones y series aritméticas y geométricas: identificar la sucesión.",
+              "descripcion": "Práctica progresiva de sucesiones y series aritméticas y geométricas, con 8 actividades, mini exámenes fijos y medios con casillas editables.",
               "fecha": "2026-09-30",
               "ruta": "/asesores/erik/alejandrina/examen-series/"
             },
