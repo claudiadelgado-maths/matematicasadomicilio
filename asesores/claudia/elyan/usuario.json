@@ -1,0 +1,17 @@
+{
+  "id": "elyan-claudia",
+  "slug": "elyan",
+  "tipo": "usuario",
+  "titulo": "El casillero de Elyan",
+  "nombreVisible": "Elyan",
+  "descripcion": "Un laboratorio de sumas para explorar, saltar y descubrir. 3.º de Primaria.",
+  "estado": "activo",
+  "ruta": "/asesores/claudia/elyan/",
+  "maestro": "claudia",
+  "personalizacion": {
+    "simbolo": "🐰",
+    "acento": "#6f3dc4",
+    "fondo": "#f4efff"
+  },
+  "almacenamientoLocal": false
+}

@@ -12,3 +12,4 @@ Perfil público de Claudia y punto de entrada a los casilleros de sus alumnos.
 - La portada publica una sesión de 60 minutos por 120 €.
 - El botón de contacto prepara un mensaje dirigido a Claudia.
 - El casillero de Luca aparece únicamente dentro de este salón.
+- El casillero de Elyan (3.º de Primaria) aparece en el mismo salón y enlaza a su primera sesión, «✨ Sumas Molonas».

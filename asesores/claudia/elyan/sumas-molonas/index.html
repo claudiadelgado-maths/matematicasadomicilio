@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sumas Molonas | Elyan | Matemáticas a Domicilio</title>
+  <meta name="description" content="Seis juegos con saltitos, billetes y sumas para descubrir el valor de cada cifra.">
+  <meta name="theme-color" content="#eee5fa">
+  <link rel="icon" href="../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+
+
+
+  <link rel="stylesheet" href="../../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="estilos.css?v=20261001-3">
+  <script src="../../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+  <script type="module" src="script.mjs?v=20261001-3"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../" aria-current="page">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav></div></header>
+
+  <main id="contenido" class="sumas">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Migas de pan"><a href="../../../">Salones</a><span>/</span><a href="../../">Claudia</a><span>/</span><a href="../">Elyan</a><span>/</span><span>Sumas Molonas</span></nav>
+      <header class="lab-hero"><div><p class="eyebrow">EL LABORATORIO DE ELYAN · SESIÓN 1</p><h1>Sumas <em>Molonas</em><span aria-hidden="true">✨</span></h1><p>Pequeños saltos. ¡Grandes descubrimientos!</p></div><div class="hero-art" aria-hidden="true">🐰<span>＋</span><i>★</i></div></header>
+      <section id="game-menu" aria-labelledby="menu-title">
+        <div class="menu-welcome"><div><p class="eyebrow">TU PRÓXIMO DESCUBRIMIENTO</p><h2 id="menu-title">¿Dónde jugamos hoy?</h2><p>Elige un lugar. ¡La aventura la marcas tú!</p></div><span class="menu-mascot" aria-hidden="true">🧑‍🚀</span></div>
+        <div class="game-grid">
+          <button type="button" class="game-card meadow" data-open="saltitos"><span class="game-icon" aria-hidden="true">🐰</span><span class="game-number">01 · EL JARDÍN DE LOS SALTOS</span><strong>Saltitos</strong><span>Sumar es avanzar. ¿Dónde aterrizarás?</span><small>¡A saltar! →</small></button>
+          <button type="button" class="game-card mint" data-open="forma"><span class="game-icon" aria-hidden="true">💸</span><span class="game-number">02 · EL TALLER DE NÚMEROS</span><strong>Forma el número</strong><span>Tres billetes, un número por descubrir.</span><small>¡A construir! →</small></button>
+          <button type="button" class="game-card rose" data-open="elige"><span class="game-icon" aria-hidden="true">🎁</span><span class="game-number">03 · LA TIENDA DE REGALOS</span><strong>Elige los billetes</strong><span>Prepara el regalo con el valor exacto.</span><small>¡A elegir! →</small></button>
+          <button type="button" class="game-card butter" data-open="cambio"><span class="game-icon" aria-hidden="true">🔄</span><span class="game-number">04 · LA MÁQUINA DE CAMBIOS</span><strong>Cambio de billetes</strong><span>Cambia los billetes. ¡El valor se queda!</span><small>¡A transformar! →</small></button>
+          <button type="button" class="game-card lilac" data-open="sumas"><span class="game-icon" aria-hidden="true">➕</span><span class="game-number">05 · LA ESTACIÓN DE SUMAS</span><strong>Sumas verticales</strong><span>Cada cifra en su sitio, paso a paso.</span><small>¡A sumar! →</small></button>
+          <button type="button" class="game-card sky" data-open="calculadora"><span class="game-icon" aria-hidden="true">🧮</span><span class="game-number">06 · EL OBSERVATORIO</span><strong>Paso a paso</strong><span>Inventa una suma y mira cómo se resuelve.</span><small>¡A descubrir! →</small></button>
+        </div>
+      </section>
+      <nav id="game-navigation" class="game-navigation" aria-label="Navegación de actividades" hidden><button type="button" class="soft" id="back-menu">← Menú de juegos</button><span id="current-game"></span><span id="session-stars" class="reward" aria-label="Descubrimientos completados">⭐ 0</span></nav>
+      <div id="voice-controls" class="voice-controls" hidden><div class="voice-actions"><button id="sound" class="soft" type="button" aria-pressed="true">🔊 Voz activada</button><button id="repeat-prompt" class="soft" type="button">🔁 Escuchar reto</button></div><details class="voice-settings"><summary>🤖 Voz del robot</summary><label>Voz <select id="voice-choice"><option value="auto">Automática · preferir masculina</option></select></label><p id="voice-info">Buscando una voz española…</p></details></div>
+      <noscript><p>Activa JavaScript para jugar con la recta y las sumas.</p></noscript>
+      <div id="line-home" data-game="saltitos" hidden>
+        <section id="number-lab" class="lab-card" aria-labelledby="line-title">
+          <div class="card-heading"><div><p class="eyebrow">SUMAR ES AVANZAR</p><h2 id="line-title">¡Vamos a dar saltitos!</h2></div></div>
+          <div id="explore-options" class="toolbar"><label>Modo <select id="line-mode"><option value="explore">Explorar</option><option value="challenge">Reto</option></select></label><button id="new-challenge" class="soft" type="button" hidden>Otro reto ↻</button></div>
+          <p id="line-equation" class="mission-number">3 + 4 = ?</p><p id="line-prompt">Elige tu animal y toca un número del 0 al 9.</p>
+          <div class="animals" role="group" aria-label="Elige un animal"><button type="button" data-animal="🐰" aria-label="Conejo" aria-pressed="true">🐰</button><button type="button" data-animal="🐥" aria-label="Pollito" aria-pressed="false">🐥</button><button type="button" data-animal="🐸" aria-label="Rana" aria-pressed="false">🐸</button><button type="button" data-animal="🐱" aria-label="Gato" aria-pressed="false">🐱</button></div>
+          <p class="line-hint">La recta llega hasta 18. <span>Desliza para verla entera ↔</span></p>
+          <div class="line-window" id="line-window" tabindex="0" role="region" aria-label="Recta numérica del 0 al 18, desplazable"><div id="track" class="track"><div class="garden-decor" aria-hidden="true"><span>☁</span><span>✧</span><span>☁</span><span>🌼</span></div><div id="animal" class="jumper" aria-hidden="true">🐰</div><div id="destination" class="jumper destination" aria-hidden="true" hidden>🐰</div><div id="hop-spark" class="hop-spark" aria-hidden="true">✦</div><div id="ticks" class="ticks"></div></div></div>
+          <div class="launch"><label>Inicio <select id="start" aria-label="Número inicial"></select></label><span class="plus" aria-hidden="true">＋</span><label>Saltitos <select id="jumps"></select></label><button id="go" class="primary" type="button">🚀 ¡VAMOS!</button><button id="line-reset" class="soft" type="button">Reiniciar</button></div>
+          <p id="line-status" class="feedback" role="status">Prepara tus saltitos.</p>
+          
+        </section>
+      </div>
+      <section id="vertical-lab" data-game="sumas" class="lab-card" aria-labelledby="vertical-title" hidden>
+        <div class="card-heading"><div><p class="eyebrow">CADA CIFRA EN SU SITIO</p><h2 id="vertical-title">Sumas de dos cifras</h2></div><span class="reward" id="reward" aria-label="Sumas completadas">⭐ 0</span></div>
+        <div class="toolbar"><label>Cifras <select id="sum-size"><option value="2">Dos cifras</option><option value="3">Tres cifras</option></select></label><label>Para practicar <select id="difficulty"><option value="none">Sin llevadas</option><option value="one">Una llevada</option><option value="many">Varias llevadas</option><option value="thousand">Llegamos a millares</option></select></label><button class="soft" id="new-sum" type="button">Nueva suma ↻</button><button class="soft" id="reset-sum" type="button">Reiniciar</button></div>
+        <div class="column-work"><div class="board-wrap"><p class="board-guide">Llevadas arriba · Resultado abajo</p><div id="board" class="board" role="group" aria-label="Suma por columnas"></div></div><div class="coach"><span class="coach-animal" aria-hidden="true">✦</span><p class="eyebrow" id="column-label">EMPEZAMOS POR LAS UNIDADES</p><h3 id="column-prompt"></h3><p id="column-instruction"></p><p id="column-status" class="feedback" role="status"></p><div id="exchange" class="exchange" hidden></div></div></div>
+      </section>
+      <section id="forma-lab" data-game="forma" class="lab-card bill-world" aria-labelledby="forma-title" hidden>
+        <div class="card-heading"><div><p class="eyebrow">EL TALLER DE NÚMEROS</p><h2 id="forma-title">💸 Forma el número</h2></div><button type="button" class="soft" id="forma-new">Otros billetes ↻</button></div>
+        <div class="place-legend" data-legend></div>
+        <p>Toca cada billete para guardarlo en su bolsillo.</p>
+        <div id="forma-bank" class="bill-bank" aria-label="Tus tres billetes"></div>
+        <div id="forma-pockets" class="pockets" aria-label="Bolsillos de centenas, decenas y unidades"></div>
+        <form id="forma-form" class="delivery"><label for="forma-answer">¿Qué número has formado?</label><div><input id="forma-answer" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" autocomplete="off" aria-describedby="forma-status"><button class="primary" type="submit">✨ ¡Lo tengo!</button></div></form>
+        <p id="forma-status" class="feedback" role="status">Tres billetes te están esperando.</p><div id="forma-proof" class="exchange" hidden></div>
+      </section>
+      <section id="elige-lab" data-game="elige" class="lab-card bill-world" aria-labelledby="elige-title" hidden>
+        <div class="card-heading"><div><p class="eyebrow">LA TIENDA DE REGALOS</p><h2 id="elige-title">🎁 Elige los billetes</h2></div><button type="button" class="soft" id="elige-new">Otro regalo ↻</button></div>
+        <div class="place-legend" data-legend></div>
+        <p class="target-caption">Prepara un regalo que valga…</p><p id="elige-target" class="mission-number gift-number"></p>
+        <p>Toca cada bolsillo y elige su billete.</p><div id="elige-pockets" class="pockets"></div>
+        <button id="elige-deliver" class="primary" type="button">🎁 ENTREGAR</button><p id="elige-status" class="feedback" role="status">Un billete de cada color. ¡Vamos allá!</p><div id="elige-proof" class="exchange" hidden></div>
+      </section>
+      <section id="cambio-lab" data-game="cambio" class="lab-card bill-world" aria-labelledby="cambio-title" hidden>
+        <div class="card-heading"><div><p class="eyebrow">LA MÁQUINA DE CAMBIOS</p><h2 id="cambio-title">🔄 Cambio de billetes</h2></div><button type="button" class="soft" id="cambio-new">Otro cambio ↻</button></div>
+        <div class="place-legend" data-legend></div>
+        <div class="toolbar"><label>Cambiamos <select id="cambio-order"><option value="0">Unidades</option><option value="1">Decenas</option><option value="2">Centenas</option><option value="3">Millares</option></select></label></div>
+        <p>Dos billetes entran… ¿cuáles salen con el mismo valor?</p><div class="change-machine"><div id="cambio-bank" class="bill-bank"></div><span class="machine-arrow" aria-hidden="true">↓ ✨ ↓</span><div id="cambio-pockets" class="pockets"></div></div>
+        <button id="cambio-deliver" class="primary" type="button">🔄 ¡CAMBIAR!</button><p id="cambio-status" class="feedback" role="status">Mismo valor, nuevos billetes.</p><div id="cambio-proof" class="exchange" hidden></div>
+      </section>
+      <section id="calculator-lab" data-game="calculadora" class="lab-card" aria-labelledby="calculator-title" hidden>
+        <div class="card-heading"><div><p class="eyebrow">EL OBSERVATORIO</p><h2 id="calculator-title">🧮 Paso a paso</h2></div></div>
+        <form id="calculator-form" class="calculator-entry"><label>Primer número<input id="calc-a" inputmode="numeric" pattern="[1-9][0-9]{1,2}" maxlength="3" value="68" autocomplete="off"></label><span aria-hidden="true">＋</span><label>Segundo número<input id="calc-b" inputmode="numeric" pattern="[1-9][0-9]{1,2}" maxlength="3" value="57" autocomplete="off"></label><button type="submit" class="soft">Preparar suma ↻</button></form>
+        <p id="calc-error" class="feedback" role="status">Escribe dos números del 10 al 999.</p>
+        <div class="column-work"><div class="board-wrap"><p class="board-guide">Llevadas arriba · Resultado abajo</p><div id="calc-board" class="board" role="group" aria-label="Resolución por columnas"></div></div><div class="coach"><p class="eyebrow" id="calc-column">EMPEZAMOS POR LAS UNIDADES</p><h3 id="calc-expression">68 + 57 = ?</h3><button id="calc-next" class="primary" type="button">SIGUIENTE PASO →</button><button id="calc-all" class="soft" type="button">RESOLVER TODO ✨</button><ol id="calc-steps" class="calculation-steps" aria-live="polite"></ol></div></div>
+      </section>
+      <dialog id="bill-picker" aria-labelledby="picker-title"><div class="card-heading"><h2 id="picker-title">Elige un billete</h2><button id="picker-close" class="soft" type="button">Cerrar ✕</button></div><div id="picker-options" class="picker-options"></div></dialog>
+      <p class="lab-footnote">Un salto más, una idea nueva. A tu ritmo, con Claudia. 🌱</p>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../">Inicio</a></li><li><a href="../../../../nosotros/">Nosotros</a></li><li><a href="../../../../biblioteca/">Biblioteca</a></li><li><a href="../../../">Salones</a></li><li><a href="../../../../contacto/">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p class="footer-copyright">© 2026 Matemáticas a Domicilio</p><p class="footer-legal-links"><a href="../../../../legal/aviso-de-privacidad/">Aviso de Privacidad</a><span aria-hidden="true">·</span><a href="../../../../legal/terminos-y-condiciones/">Términos y Condiciones</a></p><p class="footer-location">Málaga, Andalucía, España</p></div></footer>
+
+</body>
+</html>
+

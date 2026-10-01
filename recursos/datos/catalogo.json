@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 252,
+  "total": 254,
   "tipos": {
     "maestro": [
       {
@@ -373,6 +373,24 @@
     ],
     "usuario": [
       {
+        "id": "elyan-claudia",
+        "slug": "elyan",
+        "tipo": "usuario",
+        "titulo": "El casillero de Elyan",
+        "nombreVisible": "Elyan",
+        "descripcion": "Un laboratorio de sumas para explorar, saltar y descubrir. 3.º de Primaria.",
+        "estado": "activo",
+        "ruta": "/asesores/claudia/elyan/",
+        "maestro": "claudia",
+        "personalizacion": {
+          "simbolo": "🐰",
+          "acento": "#6f3dc4",
+          "fondo": "#f4efff"
+        },
+        "almacenamientoLocal": false,
+        "archivoMetadatos": "asesores/claudia/elyan/usuario.json"
+      },
+      {
         "id": "luca-claudia",
         "slug": "luca",
         "tipo": "usuario",
@@ -734,6 +752,30 @@
       }
     ],
     "sesion": [
+      {
+        "id": "sumas-molonas-elyan",
+        "slug": "sumas-molonas",
+        "tipo": "sesion",
+        "usuario": "elyan-claudia",
+        "titulo": "✨ Sumas Molonas",
+        "descripcion": "🐰 Seis juegos para saltar, construir números con billetes y descubrir las llevadas, con voz opcional.",
+        "objetivo": "Relacionar avanzar en la recta, componer números y reagrupar unidades, decenas y centenas con las llevadas de la suma; explorar su resolución por columnas.",
+        "conocimientosPrevios": [
+          "Reconocer los números del 0 al 18",
+          "Distinguir unidades, decenas y centenas"
+        ],
+        "fecha": "2026-10-01",
+        "estado": "publicado",
+        "ruta": "/asesores/claudia/elyan/sumas-molonas/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/claudia/elyan/sumas-molonas/sesion.json"
+      },
       {
         "id": "consigue-el-cambio-luca",
         "slug": "consigue-el-cambio",

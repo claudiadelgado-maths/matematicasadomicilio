@@ -51,6 +51,27 @@
       ],
       "alumnos": [
         {
+          "id": "elyan-claudia",
+          "nombreVisible": "Elyan",
+          "descripcion": "Un laboratorio de sumas para explorar, saltar y descubrir. 3.º de Primaria.",
+          "ruta": "/asesores/claudia/elyan/",
+          "personalizacion": {
+            "simbolo": "🐰",
+            "acento": "#6f3dc4",
+            "fondo": "#f4efff"
+          },
+          "ultimaActividad": "2026-10-01",
+          "sesiones": [
+            {
+              "id": "sumas-molonas-elyan",
+              "titulo": "✨ Sumas Molonas",
+              "descripcion": "🐰 Seis juegos para saltar, construir números con billetes y descubrir las llevadas, con voz opcional.",
+              "fecha": "2026-10-01",
+              "ruta": "/asesores/claudia/elyan/sumas-molonas/"
+            }
+          ]
+        },
+        {
           "id": "luca-claudia",
           "nombreVisible": "Luca",
           "descripcion": "Tres aventuras cortas para comprar, medir y jugar con las horas.",

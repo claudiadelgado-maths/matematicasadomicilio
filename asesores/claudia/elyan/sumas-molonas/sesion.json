@@ -1,0 +1,23 @@
+{
+  "id": "sumas-molonas-elyan",
+  "slug": "sumas-molonas",
+  "tipo": "sesion",
+  "usuario": "elyan-claudia",
+  "titulo": "✨ Sumas Molonas",
+  "descripcion": "🐰 Seis juegos para saltar, construir números con billetes y descubrir las llevadas, con voz opcional.",
+  "objetivo": "Relacionar avanzar en la recta, componer números y reagrupar unidades, decenas y centenas con las llevadas de la suma; explorar su resolución por columnas.",
+  "conocimientosPrevios": [
+    "Reconocer los números del 0 al 18",
+    "Distinguir unidades, decenas y centenas"
+  ],
+  "fecha": "2026-10-01",
+  "estado": "publicado",
+  "ruta": "/asesores/claudia/elyan/sumas-molonas/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}
