@@ -1,0 +1,10 @@
+{
+  "id": "explicacion-despejes-kenisa-comprobar",
+  "tipo": "explicacion",
+  "sesion": "despejes-lineales-kenisa",
+  "usuario": "kenisa-erik",
+  "titulo": "Comprueba en la ecuación original",
+  "descripcion": "Sustituye el resultado y compara ambos lados.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/comprobar/"
+}

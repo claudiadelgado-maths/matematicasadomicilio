@@ -1,0 +1,27 @@
+.rectangle-site .drawing { background:#f5f8fc; border-radius:16px; }
+.rectangle-site svg text { font:22px var(--font-sans); fill:var(--ink); paint-order:stroke; stroke:#f5f8fc; stroke-width:4px; stroke-linejoin:round; }
+.rectangle-site .formula { color:var(--teal); font-size:clamp(1.2rem,3vw,1.65rem); font-weight:800; }
+.rectangle-site input[type="range"] { display:block; width:100%; min-height:48px; accent-color:var(--teal); }
+.rectangle-site .toolbar { display:flex; flex-wrap:wrap; align-items:end; gap:1rem; justify-content:space-between; margin:1rem 0; }
+.rectangle-site .toolbar label { font-weight:700; }
+.rectangle-site select { display:block; width:100%; min-height:48px; border:1px solid #8b9db3; border-radius:10px; background:white; font:inherit; padding:.5rem; margin-top:.5rem; }
+.rectangle-site .stats { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.7rem; font-size:.85rem; }
+.rectangle-site progress { display:block; width:100%; height:10px; margin:1rem 0 2rem; accent-color:var(--teal); }
+.rectangle-site .answer-row { display:flex; flex-wrap:wrap; gap:.7rem; align-items:center; margin:.7rem 0 1rem; }
+.rectangle-site .answer-box { display:flex; align-items:center; padding:.4rem; border:1px solid #8b9db3; border-radius:10px; background:white; }
+.rectangle-site .answer-box input { width:110px; min-height:44px; padding:.5rem; font:inherit; border:0; background:transparent; }
+.rectangle-site .radical-sign { font-size:2rem; line-height:1; }
+.rectangle-site .answer-box.radical input { border-top:2px solid currentColor; border-radius:0; }
+.rectangle-site .answer-box.correct { background:#e7f7ee; border-color:#228753; }
+.rectangle-site .answer-box.wrong { background:#fff0f3; border-color:#b52e49; }
+.rectangle-site [aria-pressed="true"] { outline:2px solid var(--purple); outline-offset:-2px; background:#f0ebfa; }
+.rectangle-site summary { cursor:pointer; min-height:44px; padding:.6rem 0; }
+.rectangle-site .feedback { min-height:4rem; padding:1rem 0; line-height:1.6; }
+.rectangle-site .feedback[data-kind="correcta"] { color:#17623e; }
+.rectangle-site .feedback[data-kind="error"] { color:#a52b46; }
+.rectangle-site .error-mark { font-size:1.4rem; font-weight:900; margin-right:.4rem; }
+.rectangle-site .steps li { padding:.5rem; margin:.5rem 0; background:#edf7f3; border-radius:8px; }
+.rectangle-site .perimeter { stroke-dasharray:1; stroke-dashoffset:1; animation:draw-contour 1.5s ease forwards; }
+@keyframes draw-contour { to { stroke-dashoffset:0; } }
+@media(prefers-reduced-motion:reduce){.rectangle-site .perimeter { animation:none; stroke-dashoffset:0; }}
+@media(max-width:480px){.rectangle-site .toolbar label { width:100%; }}

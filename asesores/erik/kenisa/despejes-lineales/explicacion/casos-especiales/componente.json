@@ -1,0 +1,10 @@
+{
+  "id": "explicacion-despejes-kenisa-casos-especiales",
+  "tipo": "explicacion",
+  "sesion": "despejes-lineales-kenisa",
+  "usuario": "kenisa-erik",
+  "titulo": "¿Y si desaparece la incógnita?",
+  "descripcion": "Cuando A = 0, no dividas entre cero.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/casos-especiales/"
+}

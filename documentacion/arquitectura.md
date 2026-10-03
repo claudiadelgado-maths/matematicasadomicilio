@@ -96,7 +96,7 @@ asesores/
 │   │   └── sucesiones-aritmeticas/
 │   ├── andres/
 │   │   └── porcentajes/
-│   └── kenia/
+│   └── kenisa/
 │       └── despejes-lineales/
 ├── claudia/
 │   └── luca/

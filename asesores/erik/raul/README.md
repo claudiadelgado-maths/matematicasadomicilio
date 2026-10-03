@@ -1,6 +1,6 @@
 # Espacio de Raúl
 
-Casillero activo del salón de Erik (`erik-estrella`), junto a Alejandrina y Kenia. ID único: `raul-erik`. Ruta: `/asesores/erik/raul/index.html`. Es independiente del alumno Raúl del salón de Karen Mariana.
+Casillero activo del salón de Erik (`erik-estrella`), junto a Alejandrina y KENISA. ID único: `raul-erik`. Ruta: `/asesores/erik/raul/index.html`. Es independiente del alumno Raúl del salón de Karen Mariana.
 
 ## Guía para continuar
 

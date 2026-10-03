@@ -1,0 +1,61 @@
+.word-site .drawing { background:#f5f8fc; border-radius:16px; }
+.word-site svg text { font:22px var(--font-sans); fill:var(--ink); paint-order:stroke; stroke:#f5f8fc; stroke-width:4px; stroke-linejoin:round; }
+.word-site .formula { color:var(--teal); font-size:clamp(1.2rem,3vw,1.65rem); font-weight:800; }
+.word-site .toolbar { display:flex; flex-wrap:wrap; align-items:end; gap:1rem; justify-content:space-between; margin:1rem 0; }
+.word-site .toolbar label { font-weight:700; }
+.word-site select { display:block; width:100%; min-height:48px; border:1px solid #8b9db3; border-radius:10px; background:white; font:inherit; padding:.5rem; margin-top:.5rem; }
+.word-site .stats { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.7rem; font-size:.85rem; }
+.word-site progress { display:block; width:100%; height:10px; margin:1rem 0 2rem; accent-color:var(--teal); }
+.word-site .answer-row { display:flex; flex-wrap:wrap; gap:.7rem; align-items:center; margin:.7rem 0 1rem; }
+.word-site .answer-box { display:flex; align-items:center; padding:.4rem; border:1px solid #8b9db3; border-radius:10px; background:white; }
+.word-site .answer-box input { width:110px; min-height:44px; padding:.5rem; font:inherit; border:0; background:transparent; }
+.word-site .answer-box.correct { background:#e7f7ee; border-color:#228753; }
+.word-site .answer-box.wrong { background:#fff0f3; border-color:#b52e49; }
+.word-site [aria-pressed="true"] { outline:2px solid var(--purple); outline-offset:-2px; background:#f0ebfa; }
+.word-site summary { cursor:pointer; min-height:44px; padding:.6rem 0; }
+.word-site .feedback { min-height:4rem; padding:1rem 0; line-height:1.6; }
+.word-site .feedback[data-kind="correcta"] { color:#17623e; }
+.word-site .feedback[data-kind="error"] { color:#a52b46; }
+.word-site .error-mark { font-size:1.4rem; font-weight:900; margin-right:.4rem; }
+@media(max-width:480px){.word-site .toolbar label { width:100%; }}
+
+.word-site .two-columns { grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); }
+.word-site .drawing svg { display:block; max-width:none; }
+.word-site svg text { font-size:20px; }
+.word-site .figure-note { font-size:.85rem; color:#526477; text-align:center; }
+.word-site output { color:var(--teal); }
+.word-site .formula-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin:1rem 0; }
+.word-site .formula-card { padding:1.2rem; background:#edf7f3; border-radius:14px; overflow-wrap:anywhere; }
+.word-site .formula-card:nth-child(2) { background:#fff3e3; }
+.word-site .formula-card h3 { margin-top:0; }
+.word-site .discovery { padding:1rem; border-left:4px solid var(--purple); background:#f4f0fa; border-radius:8px; }
+.word-site .toolbar label { flex:1 1 240px; min-width:0; }
+.word-site .toolbar select { max-width:100%; }
+.word-site .exercise-case { font-size:.85rem; color:var(--purple); font-weight:700; }
+.word-site .solution { padding:1rem; background:#edf7f3; border-radius:12px; margin:1rem 0; }
+.word-site .solution ol { padding-left:1.3rem; }
+.word-site .solution li { margin:.6rem 0; }
+@media(max-width:760px){.word-site .two-columns,.word-site .formula-grid{grid-template-columns:minmax(0,1fr);}}
+
+
+.word-site .statement { font-size:1.08rem; }
+.word-site .example-step,.word-site .relation-key { background:#f4f0fa; border-radius:12px; padding:1rem; }
+.word-site .example-step { min-height:190px; }
+.word-site .hint-area { margin-top:1rem; }
+.word-site #hints:empty { display:none; }
+.word-site #hints { padding-left:1.4rem; }
+.word-site #hints li { margin:.65rem 0; }
+.word-site .toolbar .actions { margin:0; }
+.word-site .relation-highlight text { fill:#663c97; font-weight:800; }
+.word-site .formula-grid svg { max-height:205px; }
+.word-site .formula-grid svg text { font-size:32px; }
+.word-site .formula-card { background:#f5f8fc; }
+.word-site .formula-card:nth-child(2n) { background:#f5f8fc; }
+.word-site .formula-card .formula { font-size:1.15rem; }
+.word-site .formula-card p { margin:.6rem 0; }
+.word-site.formula-dialog { width:min(920px,calc(100% - 24px)); max-height:90dvh; margin:auto; padding:1.25rem; border:1px solid #d4ddeb; border-radius:20px; overflow-y:auto; }
+.word-site.formula-dialog::backdrop { background:rgba(26,42,63,.6); }
+.word-site .dialog-heading { display:flex; align-items:center; justify-content:space-between; gap:1rem; position:sticky; top:-1.25rem; background:#f7f9fc; padding:.5rem 0; z-index:1; }
+.word-site .dialog-heading h2 { font-size:1.4rem; margin:0; }
+.word-site .dialog-heading button { flex-shrink:0; }
+@media(max-width:480px){.word-site #exercise-host svg text,.word-site #example-drawing svg text{font-size:28px;}.word-site .formula-grid svg text{font-size:32px;}}

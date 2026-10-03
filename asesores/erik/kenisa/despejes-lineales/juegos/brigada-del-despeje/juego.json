@@ -1,0 +1,11 @@
+{
+  "id": "brigada-despeje-kenisa",
+  "tipo": "juego",
+  "sesion": "despejes-lineales-kenisa",
+  "usuario": "kenisa-erik",
+  "titulo": "Brigada del despeje",
+  "descripcion": "Juego de opción múltiple con veinte personajes y ecuaciones lineales sencillas cuyas soluciones son enteros entre 2 y 9.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/despejes-lineales/juegos/brigada-del-despeje/",
+  "interactivo": true
+}

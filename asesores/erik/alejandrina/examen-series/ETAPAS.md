@@ -27,7 +27,7 @@ Verificación final:
 - Navegación: 18 destinos locales correctos; casillero de Alejandrina → menú → las ocho actividades mediante Continuar → menú. Teclado y cierre del menú móvil con Escape comprobados. Sin errores de consola ni de LaTeX.
 - `npm run catalogo`: 252 módulos públicos y 7 asesores activos. `npm run validar`: 285 HTML, 255 metadatos y cero avisos. `git diff --check` correcto.
 
-El README del casillero y los metadatos están sincronizados con las ocho actividades. Los cambios son locales al casillero de Alejandrina y los índices generados; no se modificaron los módulos de Kenia.
+El README del casillero y los metadatos están sincronizados con las ocho actividades. Los cambios son locales al casillero de Alejandrina y los índices generados; no se modificaron los módulos de KENISA.
 
 ### Última revisión solicitada por el usuario
 

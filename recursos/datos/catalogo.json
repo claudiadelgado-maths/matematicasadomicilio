@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 254,
+  "total": 261,
   "tipos": {
     "maestro": [
       {
@@ -607,22 +607,22 @@
         "archivoMetadatos": "asesores/erik/jose/usuario.json"
       },
       {
-        "id": "kenia-erik",
-        "slug": "kenia",
+        "id": "kenisa-erik",
+        "slug": "kenisa",
         "tipo": "usuario",
-        "titulo": "Espacio de Kenia",
-        "nombreVisible": "Kenia",
+        "titulo": "Espacio de KENISA",
+        "nombreVisible": "KENISA",
         "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
         "estado": "activo",
-        "ruta": "/asesores/erik/kenia/",
+        "ruta": "/asesores/erik/kenisa/",
         "maestro": "erik-estrella",
         "personalizacion": {
           "simbolo": "K",
-          "acento": "#7a3f82",
-          "fondo": "#f7eef8"
+          "acento": "#205c3e",
+          "fondo": "#ffacd2"
         },
         "almacenamientoLocal": false,
-        "archivoMetadatos": "asesores/erik/kenia/usuario.json"
+        "archivoMetadatos": "asesores/erik/kenisa/usuario.json"
       },
       {
         "id": "raul-erik",
@@ -1533,10 +1533,10 @@
         "archivoMetadatos": "asesores/erik/jose-perez/introduccion/sesion.json"
       },
       {
-        "id": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
+        "id": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
         "slug": "aplicaciones-de-las-funciones-trigonometricas",
         "tipo": "sesion",
-        "usuario": "kenia-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Aplicaciones de las funciones trigonométricas",
         "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
         "objetivo": "Elegir una razón trigonométrica, despejar un lado o usar la función inversa para hallar los ángulos de un triángulo rectángulo.",
@@ -1547,7 +1547,7 @@
         ],
         "fecha": "2026-09-28",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/",
+        "ruta": "/asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/",
         "componentes": {
           "explicacion": true,
           "demostraciones": false,
@@ -1555,20 +1555,20 @@
           "juegos": true,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/sesion.json"
+        "archivoMetadatos": "asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/sesion.json"
       },
       {
-        "id": "biologia-parte-1-kenia-erik",
+        "id": "biologia-parte-1-kenisa-erik",
         "slug": "biologia-parte-1",
         "tipo": "sesion",
-        "usuario": "kenia-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Biología parte 1",
-        "descripcion": "Repaso para secundaria de célula animal y biomoléculas: guías visuales, once estructuras, siete grupos de sustancias, rondas breves o completas, clasificación y práctica de errores con explicaciones.",
-        "objetivo": "Relacionar estructuras y sustancias celulares con sus funciones, distinguir conceptos que suelen confundirse y reforzar los errores mediante guías, preguntas y clasificación.",
+        "descripcion": "Tres actividades para repasar Biología: célula animal con dos cuestionarios internos, biomoléculas y ocho niveles de organización. Guías ilustradas, clasificación, construcción del orden y evaluación con repaso de errores.",
+        "objetivo": "Relacionar estructuras y sustancias con sus funciones, distinguir ocho niveles de organización del átomo al organismo y reforzar lo aprendido mediante actividades visuales y preguntas con explicación.",
         "conocimientosPrevios": [],
         "fecha": "2026-09-29",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/biologia-parte-1/",
+        "ruta": "/asesores/erik/kenisa/biologia-parte-1/",
         "componentes": {
           "explicacion": false,
           "demostraciones": false,
@@ -1576,13 +1576,13 @@
           "juegos": false,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/erik/kenia/biologia-parte-1/sesion.json"
+        "archivoMetadatos": "asesores/erik/kenisa/biologia-parte-1/sesion.json"
       },
       {
-        "id": "despejes-lineales-kenia",
+        "id": "despejes-lineales-kenisa",
         "slug": "despejes-lineales",
         "tipo": "sesion",
-        "usuario": "kenia-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Despejes lineales",
         "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
         "objetivo": "Resolver ecuaciones de la forma Ax + B = C justificando cada operación y extendiendo el procedimiento a coeficientes racionales sencillos.",
@@ -1593,7 +1593,7 @@
         ],
         "fecha": "2026-09-22",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/",
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/",
         "componentes": {
           "explicacion": true,
           "demostraciones": false,
@@ -1601,20 +1601,20 @@
           "juegos": true,
           "calculadoras": true
         },
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/sesion.json"
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/sesion.json"
       },
       {
-        "id": "extra-mate-parte-1-kenia-erik",
+        "id": "extra-mate-parte-1-kenisa-erik",
         "slug": "extra-mate-parte-1",
         "tipo": "sesion",
-        "usuario": "kenia-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Extra mate parte 1",
-        "descripcion": "Repaso visual de geometría: ángulos, paralelas y transversal, triángulos, cuadriláteros y taller de trapecios. Laboratorios interactivos y juegos de clasificación, propiedades, medidas y ecuaciones lineales.",
-        "objetivo": "Clasificar ángulos, triángulos y cuadriláteros; reconocer relaciones entre paralelas; aplicar sumas de 180° y 360°, propiedades de ángulos exteriores y trapecios; resolver medidas y ecuaciones lineales.",
+        "descripcion": "Repaso visual de geometría: ángulos, paralelas, triángulos, cuadriláteros, trapecios y círculos. Laboratorios y juegos con medidas, propiedades, perímetro, área y conversiones de grados y radianes.",
+        "objetivo": "Clasificar figuras y sus elementos; usar relaciones angulares, sumas y ecuaciones; calcular perímetros y áreas de círculos e interpretar y convertir grados y radianes.",
         "conocimientosPrevios": [],
         "fecha": "2026-09-29",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/",
         "componentes": {
           "explicacion": true,
           "demostraciones": false,
@@ -1622,13 +1622,34 @@
           "juegos": true,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/sesion.json"
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/sesion.json"
       },
       {
-        "id": "funciones-trigonometricas-kenia-erik",
+        "id": "extra-mate-parte-2-kenisa-erik",
+        "slug": "extra-mate-parte-2",
+        "tipo": "sesion",
+        "usuario": "kenisa-erik",
+        "titulo": "Extra mate parte 2",
+        "descripcion": "Área y perímetro de triángulos, cuadrados, rectángulos y trapecios. Laboratorios visuales, diagonales y problemas planteados sencillos con ejercicios ilimitados.",
+        "objetivo": "Aplicar fórmulas de área y perímetro, usar Pitágoras y plantear relaciones sencillas con incógnitas para resolver problemas geométricos con resultados enteros.",
+        "conocimientosPrevios": [],
+        "fecha": "2026-10-02",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": true,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/sesion.json"
+      },
+      {
+        "id": "funciones-trigonometricas-kenisa-erik",
         "slug": "funciones-trigonometricas",
         "tipo": "sesion",
-        "usuario": "kenia-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Funciones trigonométricas",
         "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
         "objetivo": "Identificar catetos e hipotenusa, distinguir lados respecto de un ángulo agudo y construir las seis razones trigonométricas.",
@@ -1639,7 +1660,7 @@
         ],
         "fecha": "2026-09-23",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/",
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/",
         "componentes": {
           "explicacion": true,
           "demostraciones": false,
@@ -1647,13 +1668,13 @@
           "juegos": true,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/sesion.json"
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/sesion.json"
       },
       {
-        "id": "laboratorio-de-despejes-lineales-kenia-erik",
+        "id": "laboratorio-de-despejes-lineales-kenisa-erik",
         "slug": "laboratorio-de-despejes-lineales",
         "tipo": "sesion",
-        "usuario": "kenia-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Laboratorio de despejes lineales",
         "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
         "objetivo": "Aislar x moviendo constantes, numeradores y denominadores mediante operaciones inversas, y combinar cuentas exactas hasta obtener una solución entera.",
@@ -1664,7 +1685,7 @@
         ],
         "fecha": "2026-09-29",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/laboratorio-de-despejes-lineales/",
+        "ruta": "/asesores/erik/kenisa/laboratorio-de-despejes-lineales/",
         "componentes": {
           "explicacion": false,
           "demostraciones": false,
@@ -1673,13 +1694,13 @@
           "calculadoras": false
         },
         "interactivo": true,
-        "archivoMetadatos": "asesores/erik/kenia/laboratorio-de-despejes-lineales/sesion.json"
+        "archivoMetadatos": "asesores/erik/kenisa/laboratorio-de-despejes-lineales/sesion.json"
       },
       {
-        "id": "teorema-de-pitagoras-kenia-erik",
+        "id": "teorema-de-pitagoras-kenisa-erik",
         "slug": "teorema-de-pitagoras",
         "tipo": "sesion",
-        "usuario": "kenia-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Teorema de Pitágoras",
         "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
         "objetivo": "Reconocer la hipotenusa, sustituir los datos y calcular un cateto o la hipotenusa mediante cuadrados y raíces.",
@@ -1690,7 +1711,7 @@
         ],
         "fecha": "2026-09-28",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/",
+        "ruta": "/asesores/erik/kenisa/teorema-de-pitagoras/",
         "componentes": {
           "explicacion": true,
           "demostraciones": false,
@@ -1698,7 +1719,7 @@
           "juegos": true,
           "calculadoras": false
         },
-        "archivoMetadatos": "asesores/erik/kenia/teorema-de-pitagoras/sesion.json"
+        "archivoMetadatos": "asesores/erik/kenisa/teorema-de-pitagoras/sesion.json"
       },
       {
         "id": "raul-erik-electricidad-3",
@@ -2292,16 +2313,16 @@
         "archivoMetadatos": "asesores/erik/andres/porcentajes/calculadoras/relaciones-porcentuales/calculadora.json"
       },
       {
-        "id": "calculadora-despejes-kenia",
+        "id": "calculadora-despejes-kenisa",
         "tipo": "calculadora",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "Calculadora exacta de despejes",
         "descripcion": "Dos modos para resolver Ax + B = C: entradas enteras o coeficientes fraccionarios apilados, con solución exacta, comprobación y procedimiento paso a paso.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/calculadoras/calculadora-de-despejes/",
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/calculadoras/calculadora-de-despejes/",
         "interactivo": true,
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/calculadoras/calculadora-de-despejes/calculadora.json"
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/calculadoras/calculadora-de-despejes/calculadora.json"
       },
       {
         "id": "raul-erik-electricidad-conversor",
@@ -2576,93 +2597,104 @@
         "archivoMetadatos": "asesores/erik/andres/porcentajes/ejercicios/practica-de-porcentajes/ejercicio.json"
       },
       {
-        "id": "aplicaciones-trig-kenia-practice",
+        "id": "aplicaciones-trig-kenisa-practice",
         "tipo": "ejercicio",
-        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Practica: lados y ángulos",
         "descripcion": "Cuatro ejercicios variables por ronda para calcular lados y ángulos; acepta decimales y fracciones.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/ejercicios/lados-y-angulos/",
-        "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/ejercicios/lados-y-angulos/ejercicio.json"
+        "ruta": "/asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/ejercicios/lados-y-angulos/",
+        "archivoMetadatos": "asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/ejercicios/lados-y-angulos/ejercicio.json"
       },
       {
-        "id": "biomoleculas-biologia-kenia-erik",
+        "id": "biomoleculas-biologia-kenisa-erik",
         "tipo": "ejercicio",
-        "sesion": "biologia-parte-1-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "biologia-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Principales biomoléculas de la célula",
-        "descripcion": "Guía de siete grupos de sustancias orgánicas e inorgánicas, laboratorio con 21 pasos, 49 preguntas de funciones en rondas de 7 o 14 y 56 tarjetas de clasificación. Incluye revisión de errores, repaso de tarjetas difíciles y resultados separados.",
+        "descripcion": "Actividad principal 02. Guía de siete grupos de sustancias orgánicas e inorgánicas, laboratorio con 21 pasos, 49 preguntas de funciones en rondas de 7 o 14 y 56 tarjetas de clasificación. Incluye revisión de errores, repaso de tarjetas difíciles y resultados separados.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/biologia-parte-1/ejercicios/biomoleculas/",
-        "archivoMetadatos": "asesores/erik/kenia/biologia-parte-1/ejercicios/biomoleculas/ejercicio.json"
+        "ruta": "/asesores/erik/kenisa/biologia-parte-1/ejercicios/biomoleculas/",
+        "archivoMetadatos": "asesores/erik/kenisa/biologia-parte-1/ejercicios/biomoleculas/ejercicio.json"
       },
       {
-        "id": "partes-celula-animal-biologia-kenia-erik",
+        "id": "niveles-organizacion-biologia-kenisa-erik",
         "tipo": "ejercicio",
-        "sesion": "biologia-parte-1-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "biologia-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Niveles de organización biológica",
+        "descripcion": "Actividad 03: ocho niveles ilustrados, conexiones entre niveles, comparación persona/bacteria, juego para construir el orden y 24 preguntas en rondas de 8 o 16 con explicaciones y repaso de errores.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/biologia-parte-1/ejercicios/niveles-de-organizacion/",
+        "archivoMetadatos": "asesores/erik/kenisa/biologia-parte-1/ejercicios/niveles-de-organizacion/ejercicio.json"
+      },
+      {
+        "id": "partes-celula-animal-biologia-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Partes de la célula animal",
-        "descripcion": "Dibujo interactivo de once estructuras, guía de funciones y vocabulario, ruta de proteínas y dos cuestionarios con 99 preguntas originales. Rondas de 11 o 22, explicación de errores y práctica dirigida que conserva el resultado inicial.",
+        "descripcion": "Actividad principal 01 con tres ejercicios internos. Dibujo interactivo de once estructuras, guía de funciones y vocabulario, ruta de proteínas y dos cuestionarios con 99 preguntas originales. Rondas de 11 o 22, explicación de errores y práctica dirigida que conserva el resultado inicial.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/biologia-parte-1/ejercicios/partes-de-la-celula-animal/",
-        "archivoMetadatos": "asesores/erik/kenia/biologia-parte-1/ejercicios/partes-de-la-celula-animal/ejercicio.json"
+        "ruta": "/asesores/erik/kenisa/biologia-parte-1/ejercicios/partes-de-la-celula-animal/",
+        "archivoMetadatos": "asesores/erik/kenisa/biologia-parte-1/ejercicios/partes-de-la-celula-animal/ejercicio.json"
       },
       {
-        "id": "practica-despejes-kenia",
+        "id": "practica-despejes-kenisa",
         "tipo": "ejercicio",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "Práctica de despejes",
         "descripcion": "Series dinámicas de cuatro retos simultáneos para practicar despejes con enteros, signos y respuestas fraccionarias mediante entradas apiladas.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/",
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/ejercicios/practica-de-despejes/",
         "interactivo": true,
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/ejercicios/practica-de-despejes/ejercicio.json"
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/ejercicios/practica-de-despejes/ejercicio.json"
       },
       {
-        "id": "extra-mate-kenia-clasifica-angulos",
+        "id": "extra-mate-kenisa-clasifica-angulos",
         "tipo": "ejercicio",
-        "sesion": "extra-mate-parte-1-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Clasifica ángulos",
         "descripcion": "Práctica ilimitada equilibrada de siete tipos, incluidos los casos 0, 90, 180 y 360 grados, con reintentos y retroalimentación.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/ejercicios/clasifica-angulos/",
-        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/ejercicios/clasifica-angulos/ejercicio.json"
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/ejercicios/clasifica-angulos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/ejercicios/clasifica-angulos/ejercicio.json"
       },
       {
-        "id": "trigonometria-kenia-identifica-lados",
+        "id": "trigonometria-kenisa-identifica-lados",
         "tipo": "ejercicio",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Reconoce los tres lados",
-        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de KENISA.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/ejercicios/identifica-lados/",
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/ejercicios/identifica-lados/ejercicio.json"
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/ejercicios/identifica-lados/",
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/ejercicios/identifica-lados/ejercicio.json"
       },
       {
-        "id": "trigonometria-kenia-integrador",
+        "id": "trigonometria-kenisa-integrador",
         "tipo": "ejercicio",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Construye las seis razones",
         "descripcion": "Construir las seis razones en doce casillas; entrega correcta solo con doce aciertos.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/ejercicios/integrador/",
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/ejercicios/integrador/ejercicio.json"
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/ejercicios/integrador/",
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/ejercicios/integrador/ejercicio.json"
       },
       {
-        "id": "pitagoras-kenia-practice",
+        "id": "pitagoras-kenisa-practice",
         "tipo": "ejercicio",
-        "sesion": "teorema-de-pitagoras-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "teorema-de-pitagoras-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Encuentra el lado faltante",
         "descripcion": "Cuatro ejercicios por ronda, con ternas válidas y retroalimentación.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/ejercicios/lado-faltante/",
-        "archivoMetadatos": "asesores/erik/kenia/teorema-de-pitagoras/ejercicios/lado-faltante/ejercicio.json"
+        "ruta": "/asesores/erik/kenisa/teorema-de-pitagoras/ejercicios/lado-faltante/",
+        "archivoMetadatos": "asesores/erik/kenisa/teorema-de-pitagoras/ejercicios/lado-faltante/ejercicio.json"
       },
       {
         "id": "raul-erik-electricidad-parte-2-conexiones",
@@ -3600,224 +3632,224 @@
         "archivoMetadatos": "asesores/erik/andres/porcentajes/explicacion/componente.json"
       },
       {
-        "id": "aplicaciones-trig-kenia-lesson",
+        "id": "aplicaciones-trig-kenisa-lesson",
         "tipo": "explicacion",
-        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Cuatro ejemplos para empezar",
         "descripcion": "Cuatro ejemplos guiados: cateto opuesto, cateto adyacente, hipotenusa y tres ángulos. Razones e inversas en grados.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/explicacion/",
-        "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/explicacion/componente.json"
+        "ruta": "/asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/explicacion/",
+        "archivoMetadatos": "asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/explicacion/componente.json"
       },
       {
-        "id": "explicacion-despejes-kenia",
+        "id": "explicacion-despejes-kenisa",
         "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "La igualdad es un equilibrio",
         "descripcion": "Primer paso de un recorrido de nueve páginas: explora una igualdad con una balanza interactiva.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/",
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/componente.json"
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/",
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/explicacion/componente.json"
       },
       {
-        "id": "explicacion-despejes-kenia-casos-especiales",
+        "id": "explicacion-despejes-kenisa-casos-especiales",
         "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "¿Y si desaparece la incógnita?",
         "descripcion": "Cuando A = 0, no dividas entre cero.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/casos-especiales/",
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/casos-especiales/componente.json"
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/casos-especiales/",
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/explicacion/casos-especiales/componente.json"
       },
       {
-        "id": "explicacion-despejes-kenia-coeficiente-negativo",
+        "id": "explicacion-despejes-kenisa-coeficiente-negativo",
         "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "El signo también cuenta",
         "descripcion": "Divide entre el coeficiente completo, incluido su signo.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/coeficiente-negativo/",
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/coeficiente-negativo/componente.json"
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/coeficiente-negativo/",
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/explicacion/coeficiente-negativo/componente.json"
       },
       {
-        "id": "explicacion-despejes-kenia-comprobar",
+        "id": "explicacion-despejes-kenisa-comprobar",
         "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "Comprueba en la ecuación original",
         "descripcion": "Sustituye el resultado y compara ambos lados.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/comprobar/",
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/comprobar/componente.json"
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/comprobar/",
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/explicacion/comprobar/componente.json"
       },
       {
-        "id": "explicacion-despejes-kenia-deshacer-multiplicacion",
+        "id": "explicacion-despejes-kenisa-deshacer-multiplicacion",
         "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "Reparte en partes iguales",
         "descripcion": "Si tres veces x vale 12, cada x vale 4.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/deshacer-multiplicacion/",
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/deshacer-multiplicacion/componente.json"
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/deshacer-multiplicacion/",
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/explicacion/deshacer-multiplicacion/componente.json"
       },
       {
-        "id": "explicacion-despejes-kenia-deshacer-resta",
+        "id": "explicacion-despejes-kenisa-deshacer-resta",
         "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "Deshaz una resta",
         "descripcion": "Para quitar un −4, suma 4 a los dos lados.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/deshacer-resta/",
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/deshacer-resta/componente.json"
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/deshacer-resta/",
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/explicacion/deshacer-resta/componente.json"
       },
       {
-        "id": "explicacion-despejes-kenia-deshacer-suma",
+        "id": "explicacion-despejes-kenisa-deshacer-suma",
         "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "Deshaz una suma",
         "descripcion": "Para quitar un +3, resta 3 a los dos lados.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/deshacer-suma/",
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/deshacer-suma/componente.json"
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/deshacer-suma/",
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/explicacion/deshacer-suma/componente.json"
       },
       {
-        "id": "explicacion-despejes-kenia-dos-operaciones",
+        "id": "explicacion-despejes-kenisa-dos-operaciones",
         "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "Deshaz la última operación primero",
         "descripcion": "Primero quita la suma; después, la multiplicación.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/dos-operaciones/",
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/dos-operaciones/componente.json"
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/dos-operaciones/",
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/explicacion/dos-operaciones/componente.json"
       },
       {
-        "id": "explicacion-despejes-kenia-fracciones",
+        "id": "explicacion-despejes-kenisa-fracciones",
         "tipo": "explicacion",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "Deshaz una multiplicación por una fracción",
         "descripcion": "Multiplica por su recíproco para obtener 1.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/explicacion/fracciones/",
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/explicacion/fracciones/componente.json"
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/fracciones/",
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/explicacion/fracciones/componente.json"
       },
       {
-        "id": "extra-mate-kenia-que-es-un-angulo",
+        "id": "extra-mate-kenisa-que-es-un-angulo",
         "tipo": "explicacion",
-        "sesion": "extra-mate-parte-1-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Qué es un ángulo",
         "descripcion": "Dos semirrectas con vértice común, punto arrastrable, deslizador, teclado y medida en tiempo real.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/explicacion/",
-        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/explicacion/componente.json"
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/explicacion/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/explicacion/componente.json"
       },
       {
-        "id": "extra-mate-kenia-tipos-angulos",
+        "id": "extra-mate-kenisa-tipos-angulos",
         "tipo": "explicacion",
-        "sesion": "extra-mate-parte-1-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Laboratorio de tipos de ángulos",
         "descripcion": "Círculo con ejes, sector y giro acumulado de 0 a 360 grados, siete ejemplos y vuelta animada.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/explicacion/tipos-de-angulos/",
-        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/explicacion/tipos-de-angulos/componente.json"
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/explicacion/tipos-de-angulos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/explicacion/tipos-de-angulos/componente.json"
       },
       {
-        "id": "trigonometria-kenia-angulo-de-referencia",
+        "id": "trigonometria-kenisa-angulo-de-referencia",
         "tipo": "explicacion",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "El ángulo es tu referencia",
-        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de KENISA.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/angulo-de-referencia/",
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/angulo-de-referencia/componente.json"
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/explicacion/angulo-de-referencia/",
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/explicacion/angulo-de-referencia/componente.json"
       },
       {
-        "id": "trigonometria-kenia-cosecante",
+        "id": "trigonometria-kenisa-cosecante",
         "tipo": "explicacion",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Cosecante",
-        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de KENISA.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/cosecante/",
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/cosecante/componente.json"
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/explicacion/cosecante/",
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/explicacion/cosecante/componente.json"
       },
       {
-        "id": "trigonometria-kenia-coseno",
+        "id": "trigonometria-kenisa-coseno",
         "tipo": "explicacion",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Coseno",
-        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de KENISA.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/coseno/",
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/coseno/componente.json"
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/explicacion/coseno/",
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/explicacion/coseno/componente.json"
       },
       {
-        "id": "trigonometria-kenia-cotangente",
+        "id": "trigonometria-kenisa-cotangente",
         "tipo": "explicacion",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Cotangente",
-        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de KENISA.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/cotangente/",
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/cotangente/componente.json"
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/explicacion/cotangente/",
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/explicacion/cotangente/componente.json"
       },
       {
-        "id": "trigonometria-kenia-secante",
+        "id": "trigonometria-kenisa-secante",
         "tipo": "explicacion",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Secante",
-        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de KENISA.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/secante/",
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/secante/componente.json"
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/explicacion/secante/",
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/explicacion/secante/componente.json"
       },
       {
-        "id": "trigonometria-kenia-seno",
+        "id": "trigonometria-kenisa-seno",
         "tipo": "explicacion",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Seno",
-        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de KENISA.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/seno/",
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/seno/componente.json"
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/explicacion/seno/",
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/explicacion/seno/componente.json"
       },
       {
-        "id": "trigonometria-kenia-tangente",
+        "id": "trigonometria-kenisa-tangente",
         "tipo": "explicacion",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Tangente",
-        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de Kenia.",
+        "descripcion": "Actividad progresiva de la sesión de funciones trigonométricas de KENISA.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/explicacion/tangente/",
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/explicacion/tangente/componente.json"
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/explicacion/tangente/",
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/explicacion/tangente/componente.json"
       },
       {
-        "id": "pitagoras-kenia-lesson",
+        "id": "pitagoras-kenisa-lesson",
         "tipo": "explicacion",
-        "sesion": "teorema-de-pitagoras-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "teorema-de-pitagoras-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Descubre la fórmula",
         "descripcion": "Explicación breve y sustitución paso a paso para hallar hipotenusa o cateto.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/explicacion/",
-        "archivoMetadatos": "asesores/erik/kenia/teorema-de-pitagoras/explicacion/componente.json"
+        "ruta": "/asesores/erik/kenisa/teorema-de-pitagoras/explicacion/",
+        "archivoMetadatos": "asesores/erik/kenisa/teorema-de-pitagoras/explicacion/componente.json"
       },
       {
         "id": "explicacion-ley-de-los-signos",
@@ -3962,83 +3994,138 @@
         "archivoMetadatos": "asesores/erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/juego.json"
       },
       {
-        "id": "aplicaciones-trig-kenia-game",
+        "id": "aplicaciones-trig-kenisa-game",
         "tipo": "juego",
-        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Misiones trigonométricas",
         "descripcion": "Nueve problemas en tres aventuras de tres niveles, con ilustraciones detalladas para cada contexto, lados identificados y ángulos destacados.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/",
-        "archivoMetadatos": "asesores/erik/kenia/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/juego.json"
+        "ruta": "/asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/",
+        "archivoMetadatos": "asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/juego.json"
       },
       {
-        "id": "brigada-despeje-kenia",
+        "id": "brigada-despeje-kenisa",
         "tipo": "juego",
-        "sesion": "despejes-lineales-kenia",
-        "usuario": "kenia-erik",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
         "titulo": "Brigada del despeje",
         "descripcion": "Juego de opción múltiple con veinte personajes y ecuaciones lineales sencillas cuyas soluciones son enteros entre 2 y 9.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/despejes-lineales/juegos/brigada-del-despeje/",
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/juegos/brigada-del-despeje/",
         "interactivo": true,
-        "archivoMetadatos": "asesores/erik/kenia/despejes-lineales/juegos/brigada-del-despeje/juego.json"
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/juegos/brigada-del-despeje/juego.json"
       },
       {
-        "id": "extra-mate-kenia-cuadrilateros",
+        "id": "extra-mate-kenisa-circulos",
         "tipo": "juego",
-        "sesion": "extra-mate-parte-1-kenia-erik",
-        "usuario": "kenia-erik",
-        "titulo": "Cuadriláteros y trapecios",
-        "descripcion": "Actividad 4: clasificación interactiva de cuadriláteros y suma de 360°, con taller de trapecios isósceles, rectángulos y escalenos. Dos recorridos de 16 retos sobre figuras, propiedades, pistas, partes y medidas, con reintentos y progreso.",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Círculos: una vuelta de descubrimientos",
+        "descripcion": "Actividad 5: siete elementos, medidas exactas con π y conversiones ilustradas. Prácticas directas con filtros; simplificador vertical para grados a radianes y respuesta entera directa para radianes a grados.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/juegos/cuadrilateros/",
-        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/juegos/cuadrilateros/juego.json"
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/circulos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/circulos/juego.json"
       },
       {
-        "id": "extra-mate-kenia-paralelas-transversal",
+        "id": "extra-mate-kenisa-cuadrilateros",
         "tipo": "juego",
-        "sesion": "extra-mate-parte-1-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Cuadriláteros y trapecios",
+        "descripcion": "Actividad 4: propiedades de cuadriláteros y taller de trapecios. Prácticas visibles desde la carga, preguntas nuevas sin límite, pistas, reintentos y progreso por aciertos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/cuadrilateros/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/cuadrilateros/juego.json"
+      },
+      {
+        "id": "extra-mate-kenisa-paralelas-transversal",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Paralelas y transversal",
         "descripcion": "Actividad 2: laboratorio de ocho ángulos y cuatro juegos de 20 retos cada uno. Medidas manuales como apoyo, expresiones completas y comprobación de x e y por separado; al acertar todas las variables se completan los ángulos pendientes y se permite avanzar. Incluye feedback, nuevas series y reintentos.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/juegos/paralelas-y-transversal/",
-        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/juegos/paralelas-y-transversal/juego.json"
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/paralelas-y-transversal/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/paralelas-y-transversal/juego.json"
       },
       {
-        "id": "extra-mate-kenia-triangulos",
+        "id": "extra-mate-kenisa-triangulos",
         "tipo": "juego",
-        "sesion": "extra-mate-parte-1-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Laboratorio de triángulos",
-        "descripcion": "Actividad 3: tipos de triángulos, animación de los 180° interiores y exploración de ángulos exteriores. Tres etapas de 12 retos en rondas de cuatro, con sí/no, medidas y ecuaciones lineales, pistas, reintentos y series nuevas.",
+        "descripcion": "Actividad 3: tipos, interiores y exteriores. Práctica visible desde el inicio, ejercicios ilimitados y selector libre de medidas, múltiplos de x y expresiones lineales; pistas y reintentos.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/extra-mate-parte-1/juegos/triangulos/",
-        "archivoMetadatos": "asesores/erik/kenia/extra-mate-parte-1/juegos/triangulos/juego.json"
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/triangulos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/triangulos/juego.json"
       },
       {
-        "id": "consultorio-trigonometrico-kenia-erik",
+        "id": "extra-mate-2-kenisa-cuadrados-rectangulos",
         "tipo": "juego",
-        "sesion": "funciones-trigonometricas-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "extra-mate-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Cuadrados y rectángulos: área, perímetro y diagonales",
+        "descripcion": "Laboratorio de fórmulas con lados ajustables, dos prácticas abiertas con filtros y ejercicios ilimitados. Diagonales por Pitágoras y respuestas exactas con entero o raíz equivalente.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/cuadrados-rectangulos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/cuadrados-rectangulos/juego.json"
+      },
+      {
+        "id": "extra-mate-2-kenisa-problemas-geometria",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Problemas de geometría",
+        "descripcion": "Dieciocho plantillas sencillas de rectángulos, cuadrados, triángulos y trapecios. Dibujos con incógnitas, ejemplo guiado, fórmulas ilustradas, pistas progresivas y problemas ilimitados con respuestas enteras.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/problemas-geometria/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/problemas-geometria/juego.json"
+      },
+      {
+        "id": "extra-mate-2-kenisa-trapecios-medidas",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Trapecios: área y perímetro",
+        "descripcion": "Laboratorio con bases, altura y desplazamiento ajustables. Once casos de área y perímetro, dos variantes de base faltante, Pitágoras con enteros, pistas y ejercicios aleatorios ilimitados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/trapecios-medidas/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/trapecios-medidas/juego.json"
+      },
+      {
+        "id": "extra-mate-2-kenisa-triangulos-medidas",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Triángulos: área y perímetro",
+        "descripcion": "Cinco casos ilustrados: tres lados, base y altura, equilátero, isósceles y rectángulo. Ejemplos por pasos, contorno animado, duplicación para el área, Pitágoras entero y retos aleatorios sin límite.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/triangulos-medidas/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/triangulos-medidas/juego.json"
+      },
+      {
+        "id": "consultorio-trigonometrico-kenisa-erik",
+        "tipo": "juego",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Consultorio Trigonométrico",
         "descripcion": "Ayuda a 18 personajes: seis casos por nivel, con emojis, números y resultados decimales. Desbloqueo progresivo.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/funciones-trigonometricas/juegos/consultorio-trigonometrico/",
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/juegos/consultorio-trigonometrico/",
         "interactivo": true,
-        "archivoMetadatos": "asesores/erik/kenia/funciones-trigonometricas/juegos/consultorio-trigonometrico/juego.json"
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/juegos/consultorio-trigonometrico/juego.json"
       },
       {
-        "id": "pitagoras-kenia-game",
+        "id": "pitagoras-kenisa-game",
         "tipo": "juego",
-        "sesion": "teorema-de-pitagoras-kenia-erik",
-        "usuario": "kenia-erik",
+        "sesion": "teorema-de-pitagoras-kenisa-erik",
+        "usuario": "kenisa-erik",
         "titulo": "Misiones de Pitágoras",
         "descripcion": "Tres versiones de cuatro situaciones reales con ilustraciones vectoriales detalladas y medidas destacadas; una versión aleatoria por partida.",
         "estado": "publicado",
-        "ruta": "/asesores/erik/kenia/teorema-de-pitagoras/juegos/misiones-pitagoricas/",
-        "archivoMetadatos": "asesores/erik/kenia/teorema-de-pitagoras/juegos/misiones-pitagoricas/juego.json"
+        "ruta": "/asesores/erik/kenisa/teorema-de-pitagoras/juegos/misiones-pitagoricas/",
+        "archivoMetadatos": "asesores/erik/kenisa/teorema-de-pitagoras/juegos/misiones-pitagoricas/juego.json"
       },
       {
         "id": "guardia-de-los-signos",

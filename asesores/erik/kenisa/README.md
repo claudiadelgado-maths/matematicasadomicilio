@@ -1,0 +1,38 @@
+# Espacio de KENISA
+
+## Identidad del casillero
+
+Nombre público: **KENISA**, siempre en mayúsculas. La carpeta y el slug usan `kenisa`, conforme a las URLs minúsculas del sitio; el ID es `kenisa-erik` y la entrada es `/asesores/erik/kenisa/index.html`. Todas las sesiones y componentes usan esta identidad en sus metadatos, rutas, migas de pan y textos.
+
+`recursos/identidad.css` comparte la apariencia únicamente entre la tarjeta del salón de Erik y la cabecera de este índice. Usa rosa princesa (`#ffacd2`), nombre grande en verde lima suave (`#a9c962`), letras Fredoka redondeadas y espaciadas con acabado de sticker kawaii: borde vainilla (`#fff5d8`) proporcional al tamaño de letra y delineado exterior muy fino en verde (`#527445`). El nombre permanece centrado y los motivos hippies son vectoriales: flores, símbolos de paz, corazones, destellos y ondas. `hippie-izquierda.svg` y `hippie-derecha.svg` decoran ambos banners; `hippie-patron.svg` forma el fondo suave del índice. Los SVG son decorativos, sin texto esencial ni dependencias añadidas. El banner contiene únicamente KENISA, sin frases adicionales. La fuente se sirve localmente desde `recursos/fredoka.ttf`, con licencia SIL Open Font License en `recursos/fredoka-OFL.txt` (fuente: google/fonts, familia Fredoka); no hace peticiones a servicios de tipografía. El acento de sesiones y foco permanece verde bosque (`#205c3e`).
+
+El selector de la tarjeta es exclusivo de `kenisa-erik`. Revisar ambos consumidores al editar la identidad: escritorio y móvil a 360, 768, 1024 y 1440 px, nombre legible, ausencia de desbordamiento, foco de teclado, menú y Escape, consola, navegación de regreso y enlaces a todas las sesiones. Respetar movimiento reducido. Ejecutar `npm run catalogo` y `npm run validar` después de cambios en metadatos; no editar los índices generados a mano.
+
+## Sesiones
+
+**Laboratorio de despejes lineales** (`laboratorio-de-despejes-lineales/`): actividad manipulativa de ecuaciones (a/d)x + b = c con coeficientes simplificados, bloques animados, transformaciones reversibles de constantes y factores, reordenación y combinación opcional, visor LaTeX, deshacer y reiniciar. Genera ejercicios ilimitados con solución entera; el signo igual permanece fijo. Referencia visual: Transforma la ecuación, de Raúl → Repaso, sin modificar esa sesión.
+
+**Aplicaciones de las funciones trigonométricas** (`aplicaciones-de-las-funciones-trigonometricas/`): primera versión con cuatro ejemplos de despejes e inversas, cuatro ejercicios variables por ronda y tres aventuras de tres problemas (nueve en total). Reutiliza copias locales de las ilustraciones de Pitágoras con ángulos marcados; trabaja seno, coseno, tangente y los tres ángulos de un triángulo rectángulo.
+
+La sesión **Teorema de Pitágoras** (`teorema-de-pitagoras/`) incluye menú, explicación breve en tres pasos con sustitución en LaTeX, cuatro ejercicios numéricos por ronda y Misiones de Pitágoras: tres aventuras aleatorias de cuatro niveles cada una (12 situaciones). Trabaja catetos e hipotenusa con árboles, escaleras, terrenos, cuerdas y rampas; dibujos SVG sencillos y reintentos sin penalización.
+
+Casillero de KENISA dentro del salón de Erik. Utiliza el ID global `kenisa-erik` y la ruta pública `/asesores/erik/kenisa/`.
+
+Su primera sesión publicada es **Despejes lineales**: explicación en nueve páginas breves con balanza interactiva, ejemplos por pasos, preguntas y botones anterior/inicio/continuar. Conserva los ejercicios dinámicos, la calculadora exacta de fracciones y el juego.
+
+`funciones-trigonometricas/`: sesión completa en diez páginas: introducción al triángulo rectángulo, tres niveles de tarjetas para reconocer lados, ángulo de referencia intercambiable, explicación y práctica de cada una de las seis razones e integrador de doce casillas. Usa LaTeX, acepta fracciones equivalentes y exige doce aciertos para completar la entrega final. Su carpeta completa se puede reemplazar conservando ubicación e identidad; el contrato está en su README.
+
+
+**Biología parte 1** (biologia-parte-1/): repaso introductorio de preparatoria con dibujo de once estructuras, guía de funciones y vocabulario, 99 preguntas de organelos, laboratorio de siete grupos de sustancias con 21 pasos, 49 preguntas de biomoléculas y 56 tarjetas de clasificación. Permite rondas breves o completas, revisar explicaciones y practicar errores o tarjetas difíciles sin alterar el resultado inicial. El inicio incluye un plan y una lista de autoevaluación. El menú tiene tres actividades: Célula animal (con sus dos cuestionarios internos), Biomoléculas y Niveles de organización biológica. Esta última añade ocho paradas ilustradas, construcción del orden y 24 preguntas en rondas de 8 o 16.
+
+**Extra mate parte 1** (extra-mate-parte-1/): menú de repaso de geometría y primer tema, Ángulos, en tres pasos: definición con semirrecta móvil, laboratorio circular de los siete tipos y práctica ilimitada con casos especiales frecuentes, reintentos y contadores. Distingue 0° de 360°. La actividad 2 agrega paralelas y transversal: explorador de ocho ángulos, sus 28 parejas y cuatro juegos (relaciones, medidas, x, x e y) con cuatro rondas de cinco retos por juego y series nuevas sin límite. x e y se resuelven mediante ecuaciones independientes. Admite ratón, tacto, teclado y movimiento reducido.
+
+La actividad 3 de **Extra mate parte 1** añade el laboratorio de **Triángulos**, enlazado con Continuar desde Paralelas: clasificación por lados y ángulos, animación de los 180° interiores y relaciones del exterior. Incluye práctica ilimitada y directa, con niveles seleccionables en las etapas 02 y 03, de sí/no a medidas y expresiones lineales, con pistas, corrección y progreso independiente.
+
+La actividad 4 de **Extra mate parte 1** continúa desde Triángulos a **Cuadriláteros y trapecios**: clasificación, suma de 360°, lados y ángulos seleccionables, altura y diagonales. Dos recorridos de 16 retos combinan reconocimiento, sí/no, pistas, identificación de partes y medidas por propiedades. Usa trapecio con exactamente un par de lados paralelos y trapezoide sin pares.
+
+La actividad 5 continúa a **Círculos**: siete elementos interactivos, perímetro y área con ejemplos y dos niveles de problemas, círculo unitario manipulable y conversiones entre grados y radianes mediante regla de tres. Tiene tres estaciones y ejercicios aleatorios sin límite, insignias, pistas y reintentos. Medidas conserva π: nivel 1 con opciones y nivel 2 con teclado y atajo P. La exploración de la vuelta incluye sus conversiones, un simplificador de fracciones y respuesta entera directa para radianes a grados.
+
+**Extra mate parte 2** (extra-mate-parte-2/): nueva sesión con la actividad Triángulos: área y perímetro. Incluye cinco casos ilustrados, contorno animado, dos copias para justificar bh/2, Pitágoras con resultados enteros y ejercicios ilimitados por caso o mezclados.
+
+Extra mate parte 2 también incluye Cuadrados y rectángulos: fórmulas, diagonales por Pitágoras y botón de raíz que acepta resultados equivalentes. La tercera actividad es Trapecios: área y perímetro, con laboratorio ajustable, once casos y operaciones enteras. La cuarta actividad es Problemas de geometría: 18 plantillas sencillas con incógnitas, enteros, pistas y fórmulas ilustradas. Su portada visual enlaza a las cuatro actividades; la sesión es independiente de la parte 1.

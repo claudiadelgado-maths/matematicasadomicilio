@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Kenisa Fredoka";
+  src: url("fredoka.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+/* Identidad de KENISA. Consumidores: salón de Erik e índice del casillero. */
+.student-locker[data-student-id="kenisa-erik"],
+.kenisa-banner {
+  --kenisa-green: #205c3e;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid #d96094;
+  border-radius: 20px;
+  background-color: #ffacd2;
+  background-image: url("hippie-izquierda.svg"), url("hippie-derecha.svg"),
+    radial-gradient(ellipse at center, #ffe2ef 0%, #ffb9da 57%, #f991c1 100%);
+  background-position: left center, right center, center;
+  background-size: auto 112%, auto 112%, cover;
+  background-repeat: no-repeat;
+  color: var(--kenisa-green);
+  box-shadow: 0 8px 24px #b8497c18;
+}
+
+.student-locker[data-student-id="kenisa-erik"]::after,
+.kenisa-banner::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 9px;
+  border: 1px solid #fff7dc;
+  border-radius: 13px;
+  pointer-events: none;
+}
+
+.student-locker[data-student-id="kenisa-erik"] {
+  display: flex;
+  justify-content: center;
+  min-height: 108px;
+  padding: 18px 90px;
+}
+
+.student-locker[data-student-id="kenisa-erik"] .student-locker-symbol,
+.student-locker[data-student-id="kenisa-erik"] .student-locker-arrow {
+  display: none;
+}
+
+.student-locker[data-student-id="kenisa-erik"] .student-locker-copy > strong,
+.kenisa-banner h1 {
+  position: relative;
+  margin: 0;
+  color: #a9c962;
+  font-family: "Kenisa Fredoka", "Arial Rounded MT Bold", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  text-indent: .09em;
+  white-space: nowrap;
+  line-height: 1.1;
+  -webkit-text-stroke: .075em #fff5d8;
+  paint-order: stroke fill;
+  text-shadow: none;
+  filter: drop-shadow(.5px 0 0 #527445) drop-shadow(-.5px 0 0 #527445)
+    drop-shadow(0 .5px 0 #527445) drop-shadow(0 -.5px 0 #527445);
+}
+
+.student-locker[data-student-id="kenisa-erik"] .student-locker-copy > strong {
+  font-size: clamp(1.8rem, 3.6vw, 3rem);
+}
+
+.student-locker[data-student-id="kenisa-erik"]:hover {
+  box-shadow: 0 10px 26px #b8497c30;
+}
+
+.student-locker[data-student-id="kenisa-erik"]:focus-visible {
+  outline: 3px solid var(--kenisa-green);
+  outline-offset: 4px;
+}
+
+.kenisa-banner {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: clamp(280px, 31vw, 365px);
+  padding: 40px 19%;
+}
+
+.kenisa-banner::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 13% 20%;
+  border: 1px solid #da709766;
+  border-radius: 50%;
+  background: #ffd6e78c;
+  transform: rotate(-5deg);
+  pointer-events: none;
+}
+
+.kenisa-banner h1 {
+  max-width: 100%;
+  font-size: clamp(3.2rem, 8.8vw, 8rem);
+}
+
+
+.kenisa-space {
+  background: #fff2f7 url("hippie-patron.svg") repeat;
+  background-size: 240px 200px;
+}
+
+.kenisa-space .kenisa-hero { padding-block: 28px 12px; }
+.kenisa-space .user-module-section { padding-top: 34px; background: transparent; }
+.kenisa-space .learning-section-heading { margin-bottom: 28px; }
+.kenisa-space .learning-section-heading h2 { color: #205c3e; }
+.kenisa-space .learning-section-heading p { color: #455c4d; }
+.kenisa-space .student-session-link { border-color: #e7c3d2; border-left-color: #205c3e; border-radius: 12px; }
+.kenisa-space .student-session-link:focus-visible { outline: 3px solid #205c3e; outline-offset: 4px; }
+
+@media (max-width: 640px) {
+  .kenisa-banner {
+    min-height: 310px;
+    padding: 68px 16px;
+    background-position: left top, right bottom, center;
+    background-size: auto 65%, auto 65%, cover;
+  }
+  .kenisa-banner::before { inset: 21% 8%; background: #ffd6e7e8; }
+  .kenisa-banner h1 { font-size: clamp(2.8rem, 13vw, 4.8rem); }
+  .kenisa-space .kenisa-hero { padding-top: 20px; }
+}
+
+@media (max-width: 400px) {
+  .student-locker[data-student-id="kenisa-erik"] { padding-inline: 62px; background-size: auto 100%, auto 100%, cover; }
+  .student-locker[data-student-id="kenisa-erik"] .student-locker-copy > strong { font-size: 1.8rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .student-locker[data-student-id="kenisa-erik"],
+  .kenisa-space .student-session-link { transition: none; }
+  .student-locker[data-student-id="kenisa-erik"]:hover,
+  .kenisa-space .student-session-link:hover { transform: none; }
+}

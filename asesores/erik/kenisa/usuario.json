@@ -1,0 +1,17 @@
+{
+  "id": "kenisa-erik",
+  "slug": "kenisa",
+  "tipo": "usuario",
+  "titulo": "Espacio de KENISA",
+  "nombreVisible": "KENISA",
+  "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
+  "estado": "activo",
+  "ruta": "/asesores/erik/kenisa/",
+  "maestro": "erik-estrella",
+  "personalizacion": {
+    "simbolo": "K",
+    "acento": "#205c3e",
+    "fondo": "#ffacd2"
+  },
+  "almacenamientoLocal": false
+}

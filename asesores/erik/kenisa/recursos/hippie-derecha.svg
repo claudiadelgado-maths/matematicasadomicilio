@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 340" fill="none" aria-hidden="true">
+  <defs>
+    <g id="flor">
+      <path d="M0-24C-33-72-65-25-29-10C-79 2-48 53-16 28C-16 81 39 67 25 29C70 54 85 0 44-8C88-42 38-72 20-34C18-47 1-46 0-24Z" fill="#ec6a9d" stroke="#236344" stroke-width="3"/>
+      <circle cx="8" cy="4" r="19" fill="#fff4c2" stroke="#236344" stroke-width="3"/>
+      <circle cx="8" cy="4" r="8" fill="#f7bc48"/>
+    </g>
+  </defs>
+  <path d="M293-37C127 56 325 115 197 187S224 302 122 370" stroke="#ee689f" stroke-width="62"/>
+  <path d="M293-37C127 56 325 115 197 187S224 302 122 370" stroke="#fff2c5" stroke-width="40"/>
+  <path d="M293-37C127 56 325 115 197 187S224 302 122 370" stroke="#91bd70" stroke-width="20"/>
+  <g transform="translate(170 84) rotate(15)" stroke="#236344" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="38" fill="#fff4c2" stroke="#fff9e9" stroke-width="12"/>
+    <circle r="34"/>
+    <path d="M0-33V33M0 0-24 24M0 0 24 24"/>
+  </g>
+  <path d="M160 292Q99 261 105 195M128 266Q99 272 86 248Q113 237 128 266M108 232Q129 227 131 204Q103 208 108 232" fill="#447d51" stroke="#236344" stroke-width="3"/>
+  <use href="#flor" transform="translate(98 178) rotate(-12) scale(.72)"/>
+  <use href="#flor" transform="translate(199 264) rotate(16) scale(1.04)"/>
+  <path d="M70 74C55 48 33 64 46 82L67 106L92 86C110 69 86 50 70 74Z" fill="#fff7ce" stroke="#236344" stroke-width="2.5"/>
+  <path d="m228 155 5 13 14 5-14 4-5 14-5-14-13-4 13-5Z" fill="#fff7ce" stroke="#236344" stroke-width="2"/>
+  <path d="m43 245 4 10 11 4-11 4-4 10-4-10-10-4 10-4Z" fill="#fff7ce" stroke="#236344" stroke-width="2"/>
+  <g fill="#236344"><circle cx="119" cy="30" r="3"/><circle cx="43" cy="151" r="3"/><circle cx="80" cy="299" r="3"/></g>
+  <path d="M241 28q14-12 20-2M49 315q14-13 24-1" stroke="#ed6093" stroke-width="5" stroke-linecap="round"/>
+</svg>

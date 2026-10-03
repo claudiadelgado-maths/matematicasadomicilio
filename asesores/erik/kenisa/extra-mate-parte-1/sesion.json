@@ -1,0 +1,20 @@
+{
+  "id": "extra-mate-parte-1-kenisa-erik",
+  "slug": "extra-mate-parte-1",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Extra mate parte 1",
+  "descripcion": "Repaso visual de geometría: ángulos, paralelas, triángulos, cuadriláteros, trapecios y círculos. Laboratorios y juegos con medidas, propiedades, perímetro, área y conversiones de grados y radianes.",
+  "objetivo": "Clasificar figuras y sus elementos; usar relaciones angulares, sumas y ecuaciones; calcular perímetros y áreas de círculos e interpretar y convertir grados y radianes.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-09-29",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": false
+  }
+}

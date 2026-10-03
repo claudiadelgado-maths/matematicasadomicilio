@@ -1,0 +1,20 @@
+{
+  "id": "extra-mate-parte-2-kenisa-erik",
+  "slug": "extra-mate-parte-2",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Extra mate parte 2",
+  "descripcion": "Área y perímetro de triángulos, cuadrados, rectángulos y trapecios. Laboratorios visuales, diagonales y problemas planteados sencillos con ejercicios ilimitados.",
+  "objetivo": "Aplicar fórmulas de área y perímetro, usar Pitágoras y plantear relaciones sencillas con incógnitas para resolver problemas geométricos con resultados enteros.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-10-02",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": true,
+    "calculadoras": false
+  }
+}

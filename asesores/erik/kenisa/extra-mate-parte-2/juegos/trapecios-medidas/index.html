@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trapecios: área y perímetro | Extra mate parte 2</title>
+  <meta name="description" content="Explora bases, altura y lados de trapecios. Once casos de área y perímetro, ejercicios con enteros y Pitágoras, sin niveles bloqueados.">
+  <link rel="icon" href="../../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="../../estilos.css?v=20261002-trapecios1">
+  <link rel="stylesheet" href="estilos.css?v=20261002-trapecios1">
+  <script src="../../../../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+  <script src="script.mjs?v=20261002-trapecios1" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../../index.html">Inicio</a></li><li><a href="../../../../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../../../../asesores/index.html" aria-current="page">Salones</a></li><li><a href="../../../../../../contacto/index.html">Contacto</a></li></ul></nav></div></header>
+  <main id="contenido" class="measure-site trapezoid-site" tabindex="-1"><div class="container">
+<header class="hero"><h1>Trapecios: <span>área y perímetro</span></h1><p>Mueve, observa y descubre qué medida necesitas para resolver cada reto.</p></header>
+<section class="panel" id="explora" aria-labelledby="explora-title">
+<h2 id="explora-title">Un trapecio que cambia contigo</h2>
+<p>Sus bases son paralelas. La base mayor es <strong>B</strong> y la menor es <strong>b</strong>. Los laterales son <strong>L₁</strong> y <strong>L₂</strong>. La altura <strong>h</strong> las une perpendicularmente: fíjate en la línea punteada y el ángulo recto.</p>
+<div class="two-columns"><div><div class="drawing" id="lab-drawing"></div><p class="figure-note">Todas las medidas están en cm. Las rayitas iguales señalan lados iguales.</p><p class="shape-tag" id="lab-type"></p></div><div class="controls">
+<label for="base-major">Base mayor B <output id="base-major-value"></output></label><input id="base-major" type="range" min="8" max="40" step="2" value="24">
+<label for="base-minor">Base menor b <output id="base-minor-value"></output></label><input id="base-minor" type="range" min="2" max="22" step="2" value="12">
+<label for="height">Altura h <output id="height-value"></output></label><input id="height" type="range" min="2" max="24" step="2" value="8">
+<label for="shift">Desliza la base superior <output id="shift-value"></output></label><input id="shift" type="range" min="0" max="12" step="1" value="6">
+<div class="actions"><button class="lab-button" type="button" data-align="center">Centrar: isósceles</button><button class="lab-button" type="button" data-align="left">Alinear a la izquierda</button><button class="lab-button" type="button" data-align="right">Alinear a la derecha</button></div>
+</div></div>
+<div class="formula-grid" aria-live="polite" aria-atomic="true"><div class="formula-card"><h3>Área: la superficie</h3><p class="formula">A = (B + b) × h ÷ 2</p><p id="lab-area"></p></div><div class="formula-card"><h3>Perímetro: la orilla</h3><p class="formula">P = B + b + L₁ + L₂</p><p id="lab-perimeter"></p></div></div>
+<p class="discovery"><strong>Pruébalo:</strong> mueve solo la base superior. El área se mantiene porque B, b y h no cambian. Los lados laterales pueden cambiar de longitud y, con ellos, el perímetro.</p>
+<p class="small">En este laboratorio, √ indica una longitud exacta. En los ejercicios, todas las cuentas necesarias dan números enteros.</p>
+<details><summary>¿Cómo encuentro una altura o un lado?</summary><div class="formula-grid"><div><h3>Si falta la altura</h3><p>En el triángulo rectángulo de un extremo, el lado inclinado L es la hipotenusa.</p><p class="formula">h² = L² − x²</p><p>Con L = 5 y x = 3: h = √(25 − 9) = 4.</p></div><div><h3>Si falta el lado inclinado</h3><p>Conoces los dos catetos: la altura y el segmento horizontal.</p><p class="formula">L² = h² + x²</p><p>Con h = 4 y x = 3: L = √(16 + 9) = 5.</p></div></div></details>
+</section>
+<section class="panel" id="practica" aria-labelledby="practica-title"><h2 id="practica-title">¿Cuánto ocupa? ¿Cuánto mide su orilla?</h2><p>Elige cualquier caso. Encuentra el dato que falta y calcula el área o el perímetro.</p><div id="exercise-host"></div></section>
+<nav class="actions" aria-label="Navegación de la sesión"><a class="lab-button" href="../cuadrados-rectangulos/index.html">← Cuadrados y rectángulos</a><a class="lab-button" href="../../index.html">Menú de Extra mate parte 2</a><a class="lab-button primary" href="../problemas-geometria/index.html">Continuar a problemas →</a></nav>
+</div></main>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../../index.html">Inicio</a></li><li><a href="../../../../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../../../../asesores/index.html">Salones</a></li><li><a href="../../../../../../contacto/index.html">Contacto</a></li></ul></nav></div></footer>
+</body></html>

@@ -1,0 +1,24 @@
+{
+  "id": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
+  "slug": "aplicaciones-de-las-funciones-trigonometricas",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Aplicaciones de las funciones trigonométricas",
+  "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
+  "objetivo": "Elegir una razón trigonométrica, despejar un lado o usar la función inversa para hallar los ángulos de un triángulo rectángulo.",
+  "conocimientosPrevios": [
+    "triángulo rectángulo",
+    "seno, coseno y tangente",
+    "despejes sencillos"
+  ],
+  "fecha": "2026-09-28",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": false
+  }
+}

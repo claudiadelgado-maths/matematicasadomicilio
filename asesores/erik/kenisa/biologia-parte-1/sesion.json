@@ -1,0 +1,20 @@
+{
+  "id": "biologia-parte-1-kenisa-erik",
+  "slug": "biologia-parte-1",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Biología parte 1",
+  "descripcion": "Tres actividades para repasar Biología: célula animal con dos cuestionarios internos, biomoléculas y ocho niveles de organización. Guías ilustradas, clasificación, construcción del orden y evaluación con repaso de errores.",
+  "objetivo": "Relacionar estructuras y sustancias con sus funciones, distinguir ocho niveles de organización del átomo al organismo y reforzar lo aprendido mediante actividades visuales y preguntas con explicación.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-09-29",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/biologia-parte-1/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

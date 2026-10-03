@@ -1,0 +1,32 @@
+.measure-site .formula-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.measure-site .formula-grid .panel { margin:0; }
+.measure-site .formula { font-size:clamp(1.25rem,3vw,1.8rem); font-weight:800; color:var(--teal); }
+.measure-site .case-tabs { display:flex; flex-wrap:wrap; gap:.6rem; margin:1rem 0 2rem; }
+.measure-site [aria-pressed="true"] { outline:2px solid var(--purple); outline-offset:-2px; background:#f0ebfa; }
+.measure-site .drawing { background:#f6f9fc; border-radius:16px; overflow:hidden; }
+.measure-site svg text { font-family:var(--font-sans); fill:var(--ink); font-size:19px; paint-order:stroke; stroke:#f6f9fc; stroke-width:5px; stroke-linejoin:round; }
+.measure-site .reminder { background:#f1ecfa; border-left:4px solid var(--purple); padding:1rem; border-radius:0 12px 12px 0; }
+.measure-site .steps { padding-left:1.5rem; }
+.measure-site .steps li { padding:.6rem; margin:.5rem 0; background:#edf7f3; border-radius:8px; line-height:1.7; }
+.measure-site .practice-toolbar,.measure-site .progress-line { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; }
+.measure-site select { display:block; width:100%; max-width:100%; border:1px solid #8c9cb0; background:white; border-radius:10px; min-height:48px; font:inherit; padding:.6rem; margin:.5rem 0; }
+.measure-site .progress-line { font-size:.85rem; margin-top:1rem; }
+.measure-site progress { display:block; width:100%; accent-color:var(--teal); height:10px; margin:1rem 0 2rem; }
+.measure-site .case-tag { font-size:.85rem; font-weight:750; color:var(--purple); }
+.measure-site #answer-form label { display:block; font-weight:700; margin:.8rem 0; }
+.measure-site .answer-row { display:flex; flex-wrap:wrap; align-items:center; gap:.7rem; }
+.measure-site #answer { width:140px; min-height:48px; border:1px solid #8c9cb0; border-radius:10px; padding:.7rem; font:inherit; }
+.measure-site #answer.correct { border-color:#228753; background:#e7f7ee; }
+.measure-site #answer.wrong { border-color:#b52e49; background:#fff0f3; }
+.measure-site details { margin-top:1.2rem; }
+.measure-site summary { min-height:44px; padding:.6rem 0; cursor:pointer; }
+.measure-site #feedback { min-height:4rem; padding:.7rem 0; line-height:1.6; }
+.measure-site #feedback[data-kind="correcta"] { color:#17623e; }
+.measure-site #feedback[data-kind="error"] { color:#a52b46; }
+.measure-site .error-mark { font-weight:900; font-size:1.4rem; margin-right:.4rem; }
+.measure-site .trace { stroke-dasharray:1; stroke-dashoffset:1; animation:trace 1.7s ease forwards; }
+.measure-site .copy-triangle { animation:appear .9s ease both; }
+@keyframes trace { to { stroke-dashoffset:0; } }
+@keyframes appear { from { opacity:0; transform:translateY(-20px); } to { opacity:1; transform:translateY(0); } }
+@media(prefers-reduced-motion:reduce){.measure-site .trace { animation:none; stroke-dashoffset:0; }.measure-site .copy-triangle { animation:none; }}
+@media(max-width:480px){.measure-site .formula-grid { grid-template-columns:1fr; }.measure-site .practice-toolbar > label { width:100%; }}

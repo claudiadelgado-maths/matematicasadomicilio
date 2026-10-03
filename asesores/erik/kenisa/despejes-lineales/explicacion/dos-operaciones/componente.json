@@ -1,0 +1,10 @@
+{
+  "id": "explicacion-despejes-kenisa-dos-operaciones",
+  "tipo": "explicacion",
+  "sesion": "despejes-lineales-kenisa",
+  "usuario": "kenisa-erik",
+  "titulo": "Deshaz la última operación primero",
+  "descripcion": "Primero quita la suma; después, la multiplicación.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/despejes-lineales/explicacion/dos-operaciones/"
+}
