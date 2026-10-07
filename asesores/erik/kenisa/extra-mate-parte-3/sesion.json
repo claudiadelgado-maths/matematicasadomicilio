@@ -1,0 +1,20 @@
+{
+  "id": "extra-mate-parte-3-kenisa-erik",
+  "slug": "extra-mate-parte-3",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Extra mate parte 3",
+  "descripcion": "Explora nombres, partes y fórmulas de los polígonos regulares: batalla arcade, reconocimiento visual y retos para calcular o descubrir datos.",
+  "objetivo": "Relacionar nombres y lados hasta 20, reconocer nueve partes en polígonos regulares de 3 a 9 lados y aplicar fórmulas de perímetro, área, diagonales y ángulos con despejes sencillos. Pitágoras solo como referencia visual.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-10-07",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": true,
+    "calculadoras": false
+  }
+}

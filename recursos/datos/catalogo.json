@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 261,
+  "total": 265,
   "tipos": {
     "maestro": [
       {
@@ -1644,6 +1644,27 @@
           "calculadoras": false
         },
         "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/sesion.json"
+      },
+      {
+        "id": "extra-mate-parte-3-kenisa-erik",
+        "slug": "extra-mate-parte-3",
+        "tipo": "sesion",
+        "usuario": "kenisa-erik",
+        "titulo": "Extra mate parte 3",
+        "descripcion": "Explora nombres, partes y fórmulas de los polígonos regulares: batalla arcade, reconocimiento visual y retos para calcular o descubrir datos.",
+        "objetivo": "Relacionar nombres y lados hasta 20, reconocer nueve partes en polígonos regulares de 3 a 9 lados y aplicar fórmulas de perímetro, área, diagonales y ángulos con despejes sencillos. Pitágoras solo como referencia visual.",
+        "conocimientosPrevios": [],
+        "fecha": "2026-10-07",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": true,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/sesion.json"
       },
       {
         "id": "funciones-trigonometricas-kenisa-erik",
@@ -4103,6 +4124,39 @@
         "estado": "publicado",
         "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/triangulos-medidas/",
         "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/triangulos-medidas/juego.json"
+      },
+      {
+        "id": "extra-mate-3-kenisa-formulas-poligonos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Fórmulas del polígono",
+        "descripcion": "Catálogo visual animado de fórmulas para polígonos regulares de 3–9 lados. Retos ilimitados de perímetro, área, diagonales y ángulos, reconocimiento visual de N y despejes de apotema, lado y perímetro. Pitágoras solo en la exploración, nunca en los ejercicios.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/formulas-poligonos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/juegos/formulas-poligonos/juego.json"
+      },
+      {
+        "id": "extra-mate-3-kenisa-mision-poligonos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Misión polígonos",
+        "descripcion": "Galería con conteo de colores y batalla arcade con niveles del 3 al 20: cada jefe N-ágono requiere un polígono de N lados. Cuatro defensas por columna, proyectiles geométricos, errores recuperables, teclado y tacto, victoria estable y tableros nuevos. Cada victoria muestra solo Continuar y Repetir; al superar el jefe 20 permite continuar a El mapa del polígono.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/mision-poligonos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/juegos/mision-poligonos/juego.json"
+      },
+      {
+        "id": "extra-mate-3-kenisa-partes-poligonos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "El mapa del polígono",
+        "descripcion": "Explora nueve partes en polígonos regulares de 3 a 9 lados. Después encuentra la figura o la palabra correcta en retos aleatorios con cuatro opciones, reintentos y progreso. Sin fórmulas ni cálculos. Incluye Continuar hacia Fórmulas del polígono.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/partes-poligonos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/juegos/partes-poligonos/juego.json"
       },
       {
         "id": "consultorio-trigonometrico-kenisa-erik",

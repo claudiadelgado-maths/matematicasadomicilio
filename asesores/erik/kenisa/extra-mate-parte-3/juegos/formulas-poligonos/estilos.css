@@ -1,0 +1,94 @@
+.formulas-site .hero{max-width:none;padding-block:1.8rem 1rem}
+.formulas-site .hero h1 span{color:var(--purple)}
+.formulas-site .hero p{font-size:1.1rem;color:#526477;max-width:740px}
+.formulas-site .view-switch{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin:1rem 0 1.5rem}
+.formulas-site .view-switch a{display:flex;gap:.7rem;align-items:center;min-height:64px;padding:1rem;border:1px solid #d9d2e9;border-radius:15px;background:white;color:#526477;text-decoration:none;font-weight:750}
+.formulas-site .view-switch a span{display:grid;place-items:center;width:32px;height:32px;flex-shrink:0;border-radius:10px;background:#eeebf7;color:#7353b1;font-size:.82rem}
+.formulas-site .view-switch a[aria-current="step"]{background:#ede7fa;border-color:#9177c5;color:#50377e;box-shadow:0 3px 0 #d6c9ef}
+.formulas-site .section-top,.formulas-site .practice-top{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.formulas-site .section-top h2{margin:0;font-size:1.55rem}
+.formulas-site .section-top p{margin:.4rem 0;color:#526477}
+.formulas-site .figure-picker{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.55rem;margin:1.2rem 0 1.5rem}
+.formulas-site .figure-picker button{display:grid;justify-items:center;gap:.2rem;border:1px solid #d8d9e8;border-radius:13px;background:#fafbff;color:#43566d;font:700 .78rem var(--font-sans);padding:.6rem .2rem;cursor:pointer}
+.formulas-site .figure-picker svg{width:32px;height:32px}
+.formulas-site .figure-picker small{font-size:.7rem;font-weight:500}
+.formulas-site .figure-picker [aria-pressed="true"]{background:#e6f6f2;border:2px solid #418c80;box-shadow:0 3px 0 #c8e8e2}
+.formulas-site .explore-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:1.5rem;align-items:start}
+.formulas-site .formula-picker{display:grid;gap:.55rem}
+.formulas-site .formula-picker button{display:flex;align-items:center;gap:.75rem;min-height:55px;padding:.7rem;border:1px solid #dcd6e8;border-radius:13px;background:white;color:#43566d;text-align:left;font:700 .87rem var(--font-sans);cursor:pointer}
+.formulas-site .formula-picker button span{display:grid;place-items:center;width:32px;height:32px;flex-shrink:0;background:#f2eef9;border-radius:10px;color:#7353b1;font:italic 1.2rem Georgia,serif}
+.formulas-site .formula-picker [aria-pressed="true"]{background:#f1ebfb;border:2px solid #9479c4;box-shadow:0 3px 0 #e4d9f5;color:#62418f}
+.formulas-site .tiny-label{font-size:.82rem;font-weight:750;color:#627289;margin:0 0 .7rem}
+.formulas-site .formula-stage{border:1px solid #e0d7ef;border-radius:20px;background:linear-gradient(130deg,#f6f2fd,#effaf6);overflow:hidden;min-width:0}
+.formulas-site .formula-stage figure{margin:0;padding:.7rem .7rem 0}
+.formulas-site #explore-art svg{max-width:430px}
+.formulas-site .figure-caption{display:flex;justify-content:space-between;gap:.7rem;padding:.3rem .9rem;font-size:.78rem;color:#627289}
+.formulas-site .formula-card{background:#fff;padding:1.4rem 1.5rem;border-top:1px solid #e5deef;text-align:center}
+.formulas-site .formula-card h3{margin:0;font-size:1.45rem;color:#62418f}
+.formulas-site .formula-card p{font-size:.95rem;line-height:1.6;margin:.6rem auto;max-width:600px}
+.formulas-site .formula-math{font-size:1.75rem;line-height:1.6;color:#62418f;margin:1rem 0;overflow-x:auto;padding:.3rem .1rem;max-width:100%}
+.formulas-site .formula-math.small{font-size:1rem}
+.formulas-site .wide .formula-math{font-size:1.25rem}
+.formulas-site .wide .formula-math.small{font-size:1rem}
+.formulas-site .katex-display{margin:.25em 0}
+.formulas-site .formula-card .formula-legend{font-size:.8rem;color:#637389}
+.formulas-site .explore-result{margin:1rem auto 0;padding:.8rem 1rem;background:#eaf6f1;border:1px solid #c1dfd2;border-radius:12px;color:#266b56;text-align:center;font-size:.88rem;font-weight:700}
+.formulas-site details{margin-top:1.2rem;border:1px solid #dde3ed;border-radius:12px;background:#f7f9fd;padding:.7rem 1rem}
+.formulas-site summary{cursor:pointer;font-size:.88rem;font-weight:700;min-height:30px;line-height:1.8;color:#526477}
+.formulas-site .symbol-key{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin:.75rem 0 .25rem}
+.formulas-site .symbol-key div{font-size:.82rem;padding:.45rem;background:white;border-radius:8px;color:#526477}
+.formulas-site .symbol-key b{font:italic 1.1rem Georgia,serif;color:#7353b1;margin-right:.5rem}
+.formulas-site .practice-top label{display:grid;gap:.45rem;color:#526477;font-size:.8rem;font-weight:700;max-width:100%;min-width:0}
+.formulas-site select{font:600 .92rem var(--font-sans);border:1px solid #bbc4d9;border-radius:11px;background:#fafbff;color:#43566d;min-height:46px;padding:.6rem;max-width:100%;width:335px}
+.formulas-site .question-heading{margin:1.5rem 0 1.2rem}
+.formulas-site .question-number{font-size:.8rem;color:#7353b1;margin:0 0 .5rem;font-weight:700}
+.formulas-site .question-heading h2{margin:0;font-size:clamp(1.4rem,3vw,2rem);color:#62418f}
+.formulas-site .practice-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:1.5rem;align-items:start}
+.formulas-site .reference-art{border:1px solid #e1daef;border-radius:18px;background:linear-gradient(140deg,#f4f0fc,#eefaf6);margin:0;padding:.5rem;text-align:center}
+.formulas-site .reference-art svg{max-width:430px}
+.formulas-site .reference-art figcaption{font-size:.82rem;color:#64748b;padding:.2rem .6rem .7rem}
+.formulas-site .exercise-data{display:flex;gap:.6rem;flex-wrap:wrap}
+.formulas-site .data-chip{display:grid;gap:.35rem;padding:.65rem 1rem;border:1px solid #d6dcea;border-radius:12px;background:#f7f8fd;min-width:100px}
+.formulas-site .data-chip>span{font-size:.78rem;color:#65758b}
+.formulas-site .data-chip strong{font-size:1.1rem;color:#445475}
+.formulas-site .data-chip small{font-size:.8rem;font-weight:600}
+.formulas-site .data-note{font-size:.8rem;line-height:1.5;color:#627389;margin:.9rem 0 1.25rem}
+.formulas-site .answer-form{border:1px solid #d7dded;border-radius:15px;padding:1rem;background:#fafbff}
+.formulas-site .answer-form label{display:block;font-size:.87rem;font-weight:700;margin-bottom:.65rem;color:#43566d}
+.formulas-site .answer-entry{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
+.formulas-site .answer-entry input{width:115px;min-width:0;min-height:50px;border:1px solid #aab8d0;border-radius:10px;background:white;padding:.6rem;font:600 1.2rem var(--font-sans);color:#253b50}
+.formulas-site .answer-entry>span{font-size:.85rem;color:#526477}
+.formulas-site .answer-form[data-state="correct"]{background:#eaf7f0;border-color:#83bda0}
+.formulas-site .answer-form[data-state="incorrect"]{background:#fcf0fb;border-color:#d6afcf}
+.formulas-site .rounding{font-size:.76rem;color:#64748b;line-height:1.5;margin:.75rem 0 0}
+.formulas-site .hint-button{background:transparent;border:0;color:#7353b1;text-decoration:underline;text-underline-offset:3px;min-height:44px;font:700 .85rem var(--font-sans);cursor:pointer;padding:.6rem 0}
+.formulas-site .hint-box,.formulas-site .solution{background:#f5f1fd;border:1px solid #dfd4ee;border-radius:12px;padding:1rem;margin:.3rem 0 .8rem;font-size:.88rem;color:#526477}
+.formulas-site .hint-box p{margin:0;line-height:1.6}
+.formulas-site .hint-box .formula-math{font-size:1.05rem;margin-bottom:0}
+.formulas-site .answer-feedback{display:flex;align-items:center;gap:.6rem;min-height:70px;margin:1rem 0 .75rem;padding:1rem 1.1rem;border:1px solid #dce3ed;border-radius:14px;background:#f4f7fb;line-height:1.6;font-size:.92rem;color:#526477}
+.formulas-site .answer-feedback[data-kind="correct"]{background:#eaf7f0;border-color:#9dceb2;color:#246b51}
+.formulas-site .answer-feedback[data-kind="incorrect"]{background:#fcf0fb;border-color:#dcbddd;color:#755084}
+.formulas-site .error-mark{font-size:1.5rem;color:#b263ad;font-weight:800}
+.formulas-site .solution{background:#eff8f3;border-color:#cee2d7}
+.formulas-site .solution h3{font-size:.95rem;margin:0 0 .5rem;color:#266b56}
+.formulas-site .solution ol{margin:.4rem 0 0;padding-left:1.3rem;line-height:1.8}
+.formulas-site .practice-bottom{display:flex;align-items:center;justify-content:space-between;gap:.8rem;flex-wrap:wrap}
+.formulas-site .practice-bottom p{font-size:.8rem;color:#64748b;margin:0}
+.formulas-site .review-link{display:inline-flex;align-items:center;min-height:44px;font-size:.85rem;color:#7353b1;font-weight:700;text-underline-offset:3px}
+.formulas-site .shape-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}
+.formulas-site .shape-option{position:relative;display:grid;justify-items:center;gap:.2rem;min-width:0;padding:.6rem .4rem;border:2px solid #dce0ec;border-radius:15px;background:white;color:#435570;cursor:pointer;font:700 .88rem var(--font-sans)}
+.formulas-site .shape-option svg{width:100%;max-width:108px;height:92px}
+.formulas-site .shape-option small{font-size:.75rem;font-weight:500}
+.formulas-site .shape-option.correct{border-color:#369773;background:#e8f6ef;color:#21634c}
+.formulas-site .shape-option.incorrect{border-color:#c795c9;background:#fbecf9;color:#785183}
+.formulas-site .shape-option:disabled{cursor:default;opacity:1}
+.formulas-site .option-result{position:absolute;top:.4rem;right:.5rem;font-size:1.2rem}
+.formulas-site .mystery-mark{position:relative;margin:2rem auto 1rem;width:140px;height:140px;border:2px dashed #b4a2d1;border-radius:35px;color:#8465b8;font:6.5rem/1.3 Georgia,serif;transform:rotate(-8deg);background:#f6f2fd}
+.formulas-site .mystery-mark span{position:absolute;right:-28px;top:-20px;font-size:3rem;color:#29958f}
+.formulas-site .mystery-copy{font-size:.95rem;color:#66768d;line-height:1.6;margin:.75rem 0 1.5rem}
+.formulas-site .svg-label{paint-order:stroke;stroke:#f7f9fc;stroke-width:4;stroke-linejoin:round}
+.formulas-site .reveal{animation:formula-reveal .35s both;animation-delay:var(--delay)}
+@keyframes formula-reveal{from{opacity:0}to{opacity:1}}
+@media(max-width:900px){.formulas-site .explore-layout{grid-template-columns:210px minmax(0,1fr);gap:1rem}.formulas-site .figure-picker{gap:.3rem}.formulas-site .figure-picker button{font-size:.69rem}.formulas-site .practice-layout{gap:1rem}.formulas-site .formula-card{padding:1.1rem}.formulas-site .wide .formula-math{font-size:1rem}.formulas-site .wide .formula-math.small{font-size:.85rem}}
+@media(max-width:680px){.formulas-site .hero{padding-top:1rem}.formulas-site .hero p{font-size:1rem}.formulas-site .view-switch{gap:.35rem}.formulas-site .view-switch a{flex-direction:column;gap:.35rem;justify-content:center;text-align:center;font-size:.83rem;padding:.7rem .2rem}.formulas-site .view-switch a span{width:25px;height:25px;font-size:.7rem}.formulas-site .figure-picker{grid-template-columns:repeat(4,minmax(0,1fr));gap:.4rem}.formulas-site .explore-layout,.formulas-site .practice-layout{grid-template-columns:1fr}.formulas-site .formula-picker{grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem}.formulas-site .formula-picker button{font-size:.73rem;padding:.45rem;min-height:53px;gap:.4rem}.formulas-site .formula-picker button span{width:25px;height:25px;font-size:1rem}.formulas-site #explore-art svg{max-width:350px}.formulas-site .formula-card h3{font-size:1.25rem}.formulas-site .formula-card p{font-size:.87rem}.formulas-site .formula-math{font-size:1.5rem}.formulas-site .formula-card{padding:1rem .6rem}.formulas-site .formula-stage figure{padding:.3rem}.formulas-site .figure-caption{font-size:.7rem}.formulas-site .symbol-key{grid-template-columns:repeat(2,minmax(0,1fr))}.formulas-site .practice-top{align-items:flex-end}.formulas-site select{font-size:.8rem;width:100%}.formulas-site .practice-top label{width:100%}.formulas-site .reference-art svg{max-width:320px}.formulas-site .data-note{margin-bottom:1rem}.formulas-site .answer-feedback{font-size:.84rem;padding:.8rem;min-height:90px}.formulas-site .mystery-mark{margin:1rem auto .5rem;width:80px;height:80px;font-size:4rem;border-radius:23px}.formulas-site .mystery-copy{font-size:.82rem;margin:.5rem 0}.formulas-site .mystery-mark span{font-size:2rem;right:-23px;top:-10px}.formulas-site .shape-option svg{max-width:95px;height:80px}.formulas-site .hint-box .formula-math{font-size:.85rem}.formulas-site .section-top h2{font-size:1.35rem}}
+@media(prefers-reduced-motion:reduce){.formulas-site *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

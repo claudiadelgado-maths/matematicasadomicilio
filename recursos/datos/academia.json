@@ -532,8 +532,15 @@
             "acento": "#205c3e",
             "fondo": "#ffacd2"
           },
-          "ultimaActividad": "2026-10-02",
+          "ultimaActividad": "2026-10-07",
           "sesiones": [
+            {
+              "id": "extra-mate-parte-3-kenisa-erik",
+              "titulo": "Extra mate parte 3",
+              "descripcion": "Explora nombres, partes y fórmulas de los polígonos regulares: batalla arcade, reconocimiento visual y retos para calcular o descubrir datos.",
+              "fecha": "2026-10-07",
+              "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/"
+            },
             {
               "id": "extra-mate-parte-2-kenisa-erik",
               "titulo": "Extra mate parte 2",

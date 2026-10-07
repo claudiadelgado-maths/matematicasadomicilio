@@ -1,0 +1,10 @@
+{
+  "id": "extra-mate-3-kenisa-mision-poligonos",
+  "tipo": "juego",
+  "sesion": "extra-mate-parte-3-kenisa-erik",
+  "usuario": "kenisa-erik",
+  "titulo": "Misión polígonos",
+  "descripcion": "Galería con conteo de colores y batalla arcade con niveles del 3 al 20: cada jefe N-ágono requiere un polígono de N lados. Cuatro defensas por columna, proyectiles geométricos, errores recuperables, teclado y tacto, victoria estable y tableros nuevos. Cada victoria muestra solo Continuar y Repetir; al superar el jefe 20 permite continuar a El mapa del polígono.",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/mision-poligonos/"
+}
