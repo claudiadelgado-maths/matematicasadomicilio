@@ -1,0 +1,24 @@
+{
+  "id": "extra-mate-parte-4-kenisa-erik",
+  "slug": "extra-mate-parte-4",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Extra mate parte 4",
+  "descripcion": "Semejanza y congruencia de triángulos con animaciones y prácticas, más un mini examen de 14 temas de geometría y ecuaciones de Extra mate.",
+  "objetivo": "Distinguir semejanza y congruencia, encontrar medidas y repasar los temas de Extra mate mediante práctica individual y una evaluación visual de 28 preguntas.",
+  "conocimientosPrevios": [
+    "Ángulos interiores de un triángulo",
+    "Fracciones y proporcionalidad",
+    "Ecuaciones lineales sencillas"
+  ],
+  "fecha": "2026-10-09",
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/extra-mate-parte-4/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": true,
+    "calculadoras": false
+  }
+}

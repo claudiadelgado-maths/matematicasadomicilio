@@ -1,0 +1,198 @@
+@import url("../../recursos/bosque.css?v=20261008-2");
+
+body.juego-abierto { overflow:hidden; padding:0; }
+body.juego-abierto::after,body.juego-abierto > .site-header,body.juego-abierto > .site-footer,body.juego-abierto > .entrada-juego,body.juego-abierto > .whatsapp-float,body.juego-abierto > .back-to-top,body.juego-abierto > .skip-link { display:none; }
+.bosque.entrada-juego #jugar { font-size:1.5rem; min-width:230px; margin-top:12px; background:#ffd961; color:#382d15; border-color:#ae7d19; box-shadow:0 6px 0 #a36f15; }
+.bosque.game-app { --tinta:#193c31; position:fixed; inset:0; width:100%; height:100vh; height:100dvh; z-index:1000; min-height:0; padding:max(10px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left)); display:grid; grid-template-rows:auto minmax(0,1fr) auto; gap:12px; overflow:hidden; background:linear-gradient(#104e4485,#143c3970),url('../../recursos/bosque.png') center/cover; color:var(--tinta); isolation:isolate; }
+.bosque.game-app:fullscreen { height:100%; }
+.bosque.game-app[hidden] { display:none; }
+.bosque.game-app button { touch-action:manipulation; }
+.bosque.game-app :focus-visible { outline:3px solid #086bb2; outline-offset:3px; }
+.bosque.game-app .arena-hud { display:grid; grid-template-columns:minmax(190px,310px) minmax(150px,1fr) auto; gap:20px; align-items:center; width:100%; max-width:1320px; margin:auto; padding:10px 14px; border:2px solid #f2dca0; border-radius:22px; background:#153e36f5; box-shadow:0 5px 0 #092e2bcc; color:white; }
+.bosque.game-app .rango-hud { display:flex; gap:10px; padding:4px 10px 4px 4px; text-align:left; color:#fff4d6; background:#ffffff0c; border:0; border-radius:15px; min-width:0; justify-content:start; }
+.bosque.game-app .rango-hud:hover { background:#ffffff1f; }
+.bosque.game-app .rango-hud .avatar { display:grid; place-items:center; flex:none; width:52px; height:52px; border:3px solid #ffdc74; border-radius:17px; background:#ffefc0; font-size:2rem; box-shadow:0 3px 0 #9f7223; }
+.bosque.game-app .rango-hud small { display:block; font-size:.57rem; letter-spacing:.12em; color:#c9e1c4; }
+.bosque.game-app .rango-hud strong { display:block; font-size:.9rem; line-height:1.2; }
+.bosque.game-app .ver-rangos { display:block; font-size:.62rem; margin-top:4px; color:#ffdb70; }
+.bosque.game-app .hud-progreso { min-width:0; }
+.bosque.game-app .hud-progreso progress { height:14px; border:2px solid #071f23; background:#071f23; margin:0 0 5px; }
+.bosque.game-app .hud-progreso progress::-webkit-progress-bar { background:#071f23; }
+.bosque.game-app .hud-progreso progress::-webkit-progress-value { background:linear-gradient(#f9e374,#e4b139); }
+.bosque.game-app .hud-progreso small { display:block; font-size:.65rem; line-height:1.35; }
+.bosque.game-app #siguiente-rango { color:#ffdf88; font-weight:750; }
+.bosque.game-app .hud-acciones { display:flex; align-items:center; gap:8px; }
+.bosque.game-app .estrellas-total { padding:8px 14px; border:1px solid #ccbd72; border-radius:13px; color:#ffe59b; background:#082c27; font-weight:850; white-space:nowrap; }
+.bosque.game-app .icon-button,.bosque.game-app .popup-x { padding:0; width:44px; height:44px; min-height:44px; flex:none; background:#fdf5d7; border:2px solid #a9b891; box-shadow:0 3px 0 #617752; border-radius:12px; font-size:1.3rem; }
+.bosque.game-app .cerrar-juego { background:#f8c5a9; border-color:#ca8063; box-shadow:0 3px 0 #895741; }
+.bosque.game-app .arena-play { display:grid; grid-template-columns:minmax(0,820px) 210px; align-items:center; align-content:safe center; justify-content:center; gap:25px; min-height:0; overflow:auto; padding:8px 4px; scrollbar-width:thin; }
+.bosque.game-app .arena-tablero { min-width:0; width:100%; grid-column:1; grid-row:1; padding:7px; background:#97632e; border:3px solid #f6d589; box-shadow:0 7px 0 #482d19,0 15px 35px #06282173,inset 0 0 0 3px #704622; border-radius:22px; }
+.bosque.game-app .arena-cliente { grid-column:2; grid-row:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; }
+.bosque.game-app .nivel-chip { position:static; margin:0; padding:8px 20px; background:#ffd766; border:2px solid #8e682d; box-shadow:0 4px 0 #72501f; border-radius:13px; font-size:1rem; font-weight:950; color:#3d3019; }
+.bosque.game-app .cliente-avatar { display:grid; place-items:center; width:114px; height:114px; border-radius:50%; border:4px solid #ffe6a0; background:#fff8dbe8; box-shadow:0 7px 0 #6b8b499e; font-size:5.2rem; }
+.bosque.game-app .bocadillo { position:relative; padding:18px 14px; border:2px solid #d4e5b5; border-radius:18px; background:#ffffeef2; box-shadow:0 4px 0 #78965f; }
+.bosque.game-app .bocadillo::before { content:''; position:absolute; top:-10px; left:calc(50% - 8px); width:16px; height:16px; transform:rotate(45deg); background:#ffffee; border-top:2px solid #d4e5b5; border-left:2px solid #d4e5b5; }
+.bosque.game-app .bocadillo .eyebrow { font-size:.57rem; letter-spacing:.09em; margin:0 0 8px; }
+.bosque.game-app .bocadillo h2 { font-size:1.05rem; line-height:1.25; margin:0 0 8px; }
+.bosque.game-app .bocadillo p:last-child { font-size:.85rem; line-height:1.4; margin:0; }
+.bosque.game-app #operacion { color:#fff4d9; font-size:.72rem; margin:0; padding:7px 12px; border-radius:10px; background:#123b2ed9; }
+.bosque.game-app .tabla-franjas { border:1px solid #77592e; border-radius:13px; background:#fffced; }
+.bosque.game-app .tabla-franjas .titulo-recurso { padding:6px 4px; }
+.bosque.game-app .titulo-recurso > span { font-size:1.7rem; line-height:1; }
+.bosque.game-app .titulo-recurso strong { font-size:.9rem; margin:3px 0; letter-spacing:.03em; }
+.bosque.game-app .titulo-recurso small { font-size:.62rem; line-height:1; }
+.bosque.game-app .tabla-franjas .titulo-franja { font-size:1rem; padding:3px 4px; letter-spacing:.11em; }
+.bosque.game-app .tabla-franjas td { padding:5px 6px; }
+.bosque.game-app .tabla-franjas .cantidad { font-size:2rem; line-height:1.08; }
+.bosque.game-app .tabla-franjas .tachados { min-height:18px; height:18px; font-size:.8rem; line-height:1; }
+.bosque.game-app .tabla-franjas .objetos { font-size:1.04rem; grid-template-columns:repeat(5,minmax(0,1fr)); max-width:150px; gap:1px; line-height:1.16; margin:5px auto 0; }
+.bosque.game-app .tabla-franjas .vacio { font-size:.68rem; line-height:1.4; }
+.bosque.game-app .tabla-franjas .respuesta .objetos { min-height:80px; }
+.bosque.game-app .contador button { width:44px; height:44px; min-height:44px; border:2px solid #aaa4b9; background:#fffdf6; box-shadow:0 3px 0 #a59db3; font-size:1.55rem; }
+.bosque.game-app .contador output { font-size:1.8rem; min-width:40px; }
+.bosque.game-app .marca { min-height:16px; font-size:.65rem; line-height:1; margin-top:3px; }
+.bosque.game-app .arena-dock { display:flex; align-items:center; gap:12px; width:min(1070px,100%); margin:auto; padding:9px 12px; border-radius:19px; border:2px solid #bbd09c; background:#153e36f5; box-shadow:0 4px 0 #092e2b; }
+.bosque.game-app .dock-button { flex:0 1 92px; min-height:52px; padding:5px 13px; flex-direction:column; gap:0; font-size:.7rem; color:#fff9df; background:#27594c; border:1px solid #8cab7d; box-shadow:0 3px 0 #0b2a24; }
+.bosque.game-app .dock-button span { font-size:1.45rem; line-height:1.15; }
+.bosque.game-app .dock-button:hover { background:#386f59; }
+.bosque.game-app .entregar { background:linear-gradient(#ffe893,#ffd256); color:#463110; border:2px solid #ffeeb1; border-bottom-color:#ac782a; box-shadow:0 5px 0 #9c6821; border-radius:15px; font-size:1.15rem; font-weight:950; letter-spacing:.02em; min-height:52px; padding:10px 28px; text-shadow:0 1px #fff6c4; }
+.bosque.game-app .entregar:hover { background:linear-gradient(#fff2b8,#ffdf79); }
+.bosque.game-app .arena-dock .entregar { flex:1; }
+.bosque.game-app #estado { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); padding:0; margin:0; min-height:0; }
+.bosque.game-app .pantalla-aviso { position:absolute; bottom:95px; left:50%; transform:translateX(-50%); width:min(430px,90%); padding:10px 18px; background:#fff6d8; color:#234433; border-radius:13px; font-size:.8rem; text-align:center; z-index:20; box-shadow:0 4px 20px #0004; }
+.bosque.game-app .game-popup { position:fixed; width:min(610px,calc(100% - 28px)); max-height:calc(100dvh - 28px); margin:auto; padding:25px; border:5px solid #e8c97f; border-radius:27px; background:linear-gradient(#fffce8,#f1f2d9); box-shadow:0 8px 0 #775628,0 20px 70px #061e26a6; color:#193c31; overscroll-behavior:contain; }
+.bosque.game-app .game-popup[open] { animation:premio-entrada .25s ease-out; }
+.bosque.game-app .game-popup::backdrop { background:#092a30c4; backdrop-filter:blur(5px); }
+.bosque.game-app .popup-heading { display:flex; align-items:start; justify-content:space-between; gap:12px; margin-bottom:20px; }
+.bosque.game-app .popup-heading h2 { font-size:1.65rem; margin:0; line-height:1.15; }
+.bosque.game-app .popup-heading .eyebrow { font-size:.65rem; margin-bottom:6px; }
+.bosque.game-app .popup-x { font-size:1rem; border-color:#a8b699; background:#eff4df; box-shadow:0 3px 0 #8b9d7c; }
+.bosque.game-app .popup-mensaje { font-size:1rem; line-height:1.6; }
+.bosque.game-app .premio { width:min(480px,calc(100% - 28px)); text-align:center; padding:32px 28px; overflow:auto; }
+.bosque.game-app .premio .popup-x { position:absolute; top:12px; right:12px; }
+.bosque.game-app .premio-etiqueta { color:#587151; font-size:.7rem; font-weight:900; letter-spacing:.13em; margin:18px 0 0; }
+.bosque.game-app .premio-estrellas { display:flex; align-items:center; justify-content:center; gap:8px; height:105px; color:#f7b916; font-size:4.3rem; line-height:1; filter:drop-shadow(0 4px 0 #a87417); }
+.bosque.game-app .premio-estrellas span { animation:estrella-premio .5s ease-out both; }
+.bosque.game-app .premio-estrellas span:nth-child(2) { font-size:5.5rem; animation-delay:.12s; }
+.bosque.game-app .premio-estrellas span:nth-child(3) { animation-delay:.24s; }
+.bosque.game-app .premio h2 { font-size:2.2rem; line-height:1.1; margin:8px 0 12px; }
+.bosque.game-app .premio p:not(.premio-etiqueta) { font-size:.9rem; }
+.bosque.game-app .premio-avance { text-align:left; background:#e3eed1; border:1px solid #b8cea0; border-radius:14px; padding:13px; margin:18px 0; }
+.bosque.game-app .premio-avance label { font-size:.65rem; letter-spacing:.08em; }
+.bosque.game-app .premio-avance strong { font-size:.82rem; }
+.bosque.game-app .premio-rango { display:flex; gap:14px; align-items:center; text-align:left; padding:14px; border:2px solid #e2bd61; background:#fff0ba; border-radius:16px; margin:0 0 20px; }
+.bosque.game-app .premio-rango > span { flex:none; width:72px; height:72px; }
+.bosque.game-app .premio-rango small,.bosque.game-app .premio-rango strong { display:block; }
+.bosque.game-app .premio-rango small { font-size:.64rem; color:#856425; letter-spacing:.09em; }
+.bosque.game-app .premio .entregar { width:100%; }
+.bosque.game-app .niveles { grid-template-columns:repeat(5,minmax(0,1fr)); gap:10px; }
+.bosque.game-app .niveles button { min-height:70px; border:2px solid #adbfa0; background:#f6f8eb; border-radius:15px; box-shadow:0 3px 0 #899877; }
+.bosque.game-app .niveles button strong { font-size:1.25rem; }
+.bosque.game-app .niveles button small { font-size:.58rem; letter-spacing:.03em; }
+.bosque.game-app .niveles button.hecho { background:#e2efcc; }
+.bosque.game-app .niveles button.hecho small { color:#a7780c; font-size:.8rem; }
+.bosque.game-app .niveles button:disabled { background:#dce2d7; opacity:.65; box-shadow:none; }
+.bosque.game-app .niveles button.elegido { border-color:#52803c; background:#fff0ae; }
+.bosque.game-app .coleccion-rangos { display:grid; grid-template-columns:1fr 1fr; gap:12px; list-style:none; padding:0; margin:0; }
+.bosque.game-app .coleccion-rangos li { display:flex; align-items:center; gap:12px; padding:14px 12px; border:2px solid #bccdaa; border-radius:17px; background:#eaf1d9; }
+.bosque.game-app .coleccion-rangos .rango-retrato { display:grid; place-items:center; flex:none; width:62px; height:62px; background:#fff6cf; border-radius:14px; }
+.bosque.game-app .coleccion-rangos small { display:block; font-size:.57rem; color:#5b7054; }
+.bosque.game-app .coleccion-rangos strong { display:block; font-size:.88rem; line-height:1.25; }
+.bosque.game-app .coleccion-rangos div > span { display:block; font-size:.6rem; margin-top:5px; line-height:1.4; }
+.bosque.game-app .coleccion-rangos .rango-bloqueado { background:#e1e4db; border-color:#c7ccc0; color:#626b5f; }
+.bosque.game-app .rango-bloqueado .rango-retrato { filter:grayscale(1); opacity:.55; background:#d4d9cd; }
+.bosque.game-app .coleccion-rangos li[aria-current] { border-color:#c99a33; background:#ffedb1; box-shadow:0 3px 0 #bd912f; }
+.bosque.game-app .magia-inventario { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:10px 0 20px; }
+.bosque.game-app .magia-inventario div { display:flex; flex-direction:column; align-items:center; border-radius:15px; padding:10px; background:#e5efd4; border:1px solid #bacda4; }
+.bosque.game-app .magia-inventario div:nth-child(2) { background:#fff0c0; }
+.bosque.game-app .magia-inventario div:nth-child(3) { background:#ffddcb; }
+.bosque.game-app .magia-inventario span { font-size:1.8rem; }
+.bosque.game-app .magia-inventario strong { font-size:2.1rem; line-height:1.2; }
+.bosque.game-app .magia-inventario small { font-size:.72rem; }
+.bosque.game-app .magia-botones,.bosque.game-app .ajustes-popup { gap:12px; }
+.bosque.game-app .magia-botones button,.bosque.game-app .ajustes-popup > button { width:100%; margin-bottom:10px; min-height:50px; background:#fff8df; border:2px solid #cbbb8f; }
+.bosque.game-app #magia .entregar { width:100%; }
+.bosque.game-app #magia-estado { min-height:70px; font-size:.85rem; }
+.bosque.game-app .ayuda-popup { text-align:center; max-width:460px; }
+.bosque.game-app .ayuda-mascota { display:block; font-size:4rem; }
+.bosque.game-app .ayuda-popup .entregar { width:100%; font-size:1rem; }
+@keyframes premio-entrada { from { opacity:0; transform:scale(.92) translateY(12px); } to { opacity:1; transform:none; } }
+@keyframes estrella-premio { from { opacity:0; transform:scale(.25) rotate(-20deg); } 65% { transform:scale(1.2) rotate(8deg); } to { opacity:1; transform:none; } }
+@media (max-width:1100px) {
+  .bosque.game-app .arena-play { grid-template-columns:minmax(0,720px) 175px; gap:16px; }
+  .bosque.game-app .arena-hud { grid-template-columns:minmax(170px,250px) minmax(130px,1fr) auto; gap:12px; }
+  .bosque.game-app .cliente-avatar { width:88px; height:88px; font-size:4rem; }
+}
+@media (orientation:portrait), (max-width:700px) {
+  .bosque.game-app { gap:8px; }
+  .bosque.game-app .arena-play { grid-template-columns:minmax(0,700px); grid-template-rows:auto auto; align-content:safe center; gap:10px; }
+  .bosque.game-app .arena-cliente { grid-row:1; grid-column:1; display:grid; grid-template-columns:auto auto 1fr; gap:10px; text-align:left; width:100%; }
+  .bosque.game-app .nivel-chip { padding:8px 10px; white-space:nowrap; font-size:.75rem; }
+  .bosque.game-app .cliente-avatar { width:48px; height:48px; font-size:2.1rem; border-width:2px; box-shadow:none; }
+  .bosque.game-app .bocadillo { padding:7px 10px; border-radius:12px; box-shadow:none; }
+  .bosque.game-app .bocadillo::before { display:none; }
+  .bosque.game-app .bocadillo h2 { font-size:.85rem; margin:0 0 2px; }
+  .bosque.game-app .bocadillo .eyebrow { display:none; }
+  .bosque.game-app .bocadillo p:last-child { font-size:.7rem; }
+  .bosque.game-app #operacion { grid-column:1/-1; justify-self:center; padding:3px 12px; font-size:.65rem; }
+  .bosque.game-app .arena-tablero { grid-column:1; grid-row:2; }
+}
+@media (max-width:600px) {
+  .bosque.game-app { padding:max(6px,env(safe-area-inset-top)) 6px max(6px,env(safe-area-inset-bottom)); gap:7px; }
+  .bosque.game-app .arena-hud { grid-template-columns:1fr auto; gap:6px 8px; padding:6px 8px; border-radius:16px; }
+  .bosque.game-app .rango-hud { padding:0; gap:6px; }
+  .bosque.game-app .rango-hud .avatar { width:39px; height:42px; border-radius:12px; font-size:1.6rem; }
+  .bosque.game-app .rango-hud strong { font-size:.72rem; }
+  .bosque.game-app .rango-hud small { font-size:.48rem; }
+  .bosque.game-app .ver-rangos { display:none; }
+  .bosque.game-app .hud-acciones { gap:5px; }
+  .bosque.game-app .estrellas-total { padding:7px; font-size:.76rem; }
+  .bosque.game-app .icon-button { width:44px; height:44px; font-size:1.1rem; }
+  .bosque.game-app .hud-progreso { grid-column:1/-1; grid-row:2; }
+  .bosque.game-app .hud-progreso progress { height:10px; margin-bottom:3px; }
+  .bosque.game-app #poder-texto { display:none; }
+  .bosque.game-app #siguiente-rango { font-size:.6rem; }
+  .bosque.game-app .arena-play { padding:2px; align-content:start; }
+  .bosque.game-app .arena-tablero { padding:3px; border-width:2px; border-radius:16px; }
+  .bosque.game-app .arena-cliente { gap:6px; }
+  .bosque.game-app .nivel-chip { padding:6px; font-size:.62rem; }
+  .bosque.game-app .cliente-avatar { display:none; }
+  .bosque.game-app .bocadillo { grid-column:2/-1; padding:5px 8px; }
+  .bosque.game-app .bocadillo h2 { font-size:.76rem; }
+  .bosque.game-app .bocadillo p:last-child { font-size:.62rem; }
+  .bosque.game-app .tabla-franjas .titulo-recurso { padding:5px 1px; }
+  .bosque.game-app .titulo-recurso > span { font-size:1.25rem; }
+  .bosque.game-app .titulo-recurso strong { font-size:.7rem; margin:2px 0; letter-spacing:0; }
+  .bosque.game-app .titulo-recurso small { font-size:.52rem; }
+  .bosque.game-app .tabla-franjas .titulo-franja { font-size:.87rem; padding:3px; }
+  .bosque.game-app .tabla-franjas td { padding:4px 2px; }
+  .bosque.game-app .tabla-franjas .cantidad { font-size:1.65rem; }
+  .bosque.game-app .tabla-franjas .objetos { grid-template-columns:repeat(4,minmax(0,1fr)); max-width:100px; font-size:.91rem; gap:0; line-height:1.1; margin-top:3px; }
+  .bosque.game-app .tabla-franjas .respuesta .objetos { min-height:81px; }
+  .bosque.game-app .contador { gap:0; flex-wrap:wrap; }
+  .bosque.game-app .contador output { order:-1; flex:1 0 100%; font-size:1.65rem; line-height:1.1; margin:0 0 4px; }
+  .bosque.game-app .contador button { margin:0 1px; width:44px; height:44px; font-size:1.4rem; }
+  .bosque.game-app .marca { font-size:.56rem; min-height:12px; }
+  .bosque.game-app .arena-dock { padding:7px; border-radius:15px; gap:6px; flex-wrap:wrap; }
+  .bosque.game-app .arena-dock .entregar { order:-1; flex:1 0 100%; min-height:44px; padding:7px 10px; font-size:1rem; }
+  .bosque.game-app .dock-button { flex:1; min-height:44px; padding:3px 7px; font-size:.6rem; }
+  .bosque.game-app .dock-button span { font-size:1.1rem; }
+  .bosque.game-app .game-popup { padding:20px 16px; border-width:4px; }
+  .bosque.game-app .popup-heading h2 { font-size:1.35rem; }
+  .bosque.game-app .coleccion-rangos { grid-template-columns:1fr; }
+  .bosque.game-app .niveles { gap:7px; }
+  .bosque.game-app .niveles button { min-height:60px; }
+  .bosque.game-app .premio h2 { font-size:1.9rem; }
+  .bosque.game-app .premio-estrellas { height:95px; font-size:3.6rem; }
+  .bosque.game-app .premio-estrellas span:nth-child(2) { font-size:4.5rem; }
+  .bosque.game-app .pantalla-aviso { bottom:125px; }
+}
+@media (orientation:landscape) and (max-height:650px) {
+  .bosque.game-app .arena-hud { padding:5px 9px; border-radius:14px; }
+  .bosque.game-app .rango-hud .avatar { width:40px; height:40px; font-size:1.7rem; }
+  .bosque.game-app .arena-play { align-content:start; }
+  .bosque.game-app .arena-cliente { position:sticky; top:0; align-self:start; }
+  .bosque.game-app .arena-dock { padding:5px 9px; }
+  .bosque.game-app .dock-button { min-height:44px; }
+  .bosque.game-app .arena-dock .entregar { min-height:44px; }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "bosque-elyan-tres-cifras",
+  "tipo": "ejercicio",
+  "sesion": "bosque-restas-elyan",
+  "usuario": "elyan-claudia",
+  "titulo": "Restas de tres cifras",
+  "descripcion": "Restas verticales por dificultad con préstamos manuales, teclado y pistas.",
+  "estado": "publicado",
+  "ruta": "/asesores/claudia/elyan/bosque-de-las-restas/ejercicios/tres-cifras/",
+  "interactivo": true
+}

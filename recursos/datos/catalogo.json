@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 265,
+  "total": 273,
   "tipos": {
     "maestro": [
       {
@@ -378,7 +378,7 @@
         "tipo": "usuario",
         "titulo": "El casillero de Elyan",
         "nombreVisible": "Elyan",
-        "descripcion": "Un laboratorio de sumas para explorar, saltar y descubrir. 3.º de Primaria.",
+        "descripcion": "Sumas molonas y una aventura de restas para explorar, jugar y descubrir. 3.º de Primaria.",
         "estado": "activo",
         "ruta": "/asesores/claudia/elyan/",
         "maestro": "claudia",
@@ -752,6 +752,30 @@
       }
     ],
     "sesion": [
+      {
+        "id": "bosque-restas-elyan",
+        "slug": "bosque-de-las-restas",
+        "tipo": "sesion",
+        "usuario": "elyan-claudia",
+        "titulo": "🍃 El bosque de las restas",
+        "descripcion": "De Pollito aprendiz a Super Dinosaurio Rex Mega pro: 55 misiones, 11 rangos con iconos propios, premios de tres estrellas y una ventana de juego para vertical y horizontal. Incluye restas de tres cifras.",
+        "objetivo": "Comprender la resta y los préstamos como intercambios de igual valor entre centenas, decenas y unidades, sin resultados negativos.",
+        "conocimientosPrevios": [
+          "Restas sencillas",
+          "Distinguir unidades, decenas y centenas"
+        ],
+        "fecha": "2026-10-07",
+        "estado": "publicado",
+        "ruta": "/asesores/claudia/elyan/bosque-de-las-restas/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
+        },
+        "archivoMetadatos": "asesores/claudia/elyan/bosque-de-las-restas/sesion.json"
+      },
       {
         "id": "sumas-molonas-elyan",
         "slug": "sumas-molonas",
@@ -1667,6 +1691,31 @@
         "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/sesion.json"
       },
       {
+        "id": "extra-mate-parte-4-kenisa-erik",
+        "slug": "extra-mate-parte-4",
+        "tipo": "sesion",
+        "usuario": "kenisa-erik",
+        "titulo": "Extra mate parte 4",
+        "descripcion": "Semejanza y congruencia de triángulos con animaciones y prácticas, más un mini examen de 14 temas de geometría y ecuaciones de Extra mate.",
+        "objetivo": "Distinguir semejanza y congruencia, encontrar medidas y repasar los temas de Extra mate mediante práctica individual y una evaluación visual de 28 preguntas.",
+        "conocimientosPrevios": [
+          "Ángulos interiores de un triángulo",
+          "Fracciones y proporcionalidad",
+          "Ecuaciones lineales sencillas"
+        ],
+        "fecha": "2026-10-09",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-4/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": true,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-4/sesion.json"
+      },
+      {
         "id": "funciones-trigonometricas-kenisa-erik",
         "slug": "funciones-trigonometricas",
         "tipo": "sesion",
@@ -2250,6 +2299,19 @@
     ],
     "calculadora": [
       {
+        "id": "bosque-elyan-paso-a-paso",
+        "tipo": "calculadora",
+        "sesion": "bosque-restas-elyan",
+        "usuario": "elyan-claudia",
+        "titulo": "Restas paso a paso",
+        "descripcion": "Resolución explicada de restas del 0 al 999, con préstamos y ceros intermedios.",
+        "estado": "publicado",
+        "ruta": "/asesores/claudia/elyan/bosque-de-las-restas/calculadoras/paso-a-paso/",
+        "interactivo": true,
+        "simbolo": "−",
+        "archivoMetadatos": "asesores/claudia/elyan/bosque-de-las-restas/calculadoras/paso-a-paso/calculadora.json"
+      },
+      {
         "id": "estadistica-descriptiva",
         "tipo": "calculadora",
         "sesion": "datos-no-agrupados",
@@ -2385,6 +2447,18 @@
       }
     ],
     "ejercicio": [
+      {
+        "id": "bosque-elyan-tres-cifras",
+        "tipo": "ejercicio",
+        "sesion": "bosque-restas-elyan",
+        "usuario": "elyan-claudia",
+        "titulo": "Restas de tres cifras",
+        "descripcion": "Restas verticales por dificultad con préstamos manuales, teclado y pistas.",
+        "estado": "publicado",
+        "ruta": "/asesores/claudia/elyan/bosque-de-las-restas/ejercicios/tres-cifras/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/claudia/elyan/bosque-de-las-restas/ejercicios/tres-cifras/ejercicio.json"
+      },
       {
         "id": "organiza-y-analiza",
         "tipo": "ejercicio",
@@ -3418,6 +3492,384 @@
         "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/ejercicios/operaciones-basicas/ejercicio.json"
       }
     ],
+    "juego": [
+      {
+        "id": "bosque-elyan-aventura",
+        "tipo": "juego",
+        "sesion": "bosque-restas-elyan",
+        "usuario": "elyan-claudia",
+        "titulo": "La gran aventura del bosque",
+        "descripcion": "Aventura inmersiva para vertical y horizontal: 55 misiones, 11 rangos con retratos y accesorios únicos y tres estrellas por victoria. Frutas por franjas: tienes, entregas y te quedan.",
+        "estado": "publicado",
+        "ruta": "/asesores/claudia/elyan/bosque-de-las-restas/juegos/aventura/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/claudia/elyan/bosque-de-las-restas/juegos/aventura/juego.json"
+      },
+      {
+        "id": "entrevista-musical",
+        "tipo": "juego",
+        "sesion": "datos-no-agrupados",
+        "usuario": "alejandrina",
+        "titulo": "La entrevista musical",
+        "descripcion": "Juego contextual de moda, mediana y promedio.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/juegos/entrevista-musical/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/datos-no-agrupados/juegos/entrevista-musical/juego.json"
+      },
+      {
+        "id": "elige-el-camino",
+        "tipo": "juego",
+        "sesion": "diagramas-de-arboles",
+        "usuario": "alejandrina",
+        "titulo": "El laberinto infinito",
+        "descripcion": "Juego para leer un diagrama de árbol como mapa y recorrer las puertas que conducen hasta una hoja marcada como salida.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/juego.json"
+      },
+      {
+        "id": "trivia-formulas-sucesiones-aritmeticas",
+        "tipo": "juego",
+        "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
+        "usuario": "alejandrina",
+        "titulo": "Trivia de las fórmulas perdidas",
+        "descripcion": "Trivia aleatoria de doce preguntas con la fórmula base siempre visible para repasar cómo encontrar a₁, d, n y aₙ.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/juegos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/formulas-de-sucesiones/juegos/juego.json"
+      },
+      {
+        "id": "recorrido-de-posiciones",
+        "tipo": "juego",
+        "sesion": "medidas-de-posicion",
+        "usuario": "alejandrina",
+        "titulo": "El taller del corte exacto",
+        "descripcion": "Juego para interpretar cuartiles, deciles, percentiles y mediana, y cortar una cinta en su posición porcentual exacta.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/juego.json"
+      },
+      {
+        "id": "alejandrina-medios-sumas-juego-sumas",
+        "tipo": "juego",
+        "sesion": "alejandrina-medios-y-sumas",
+        "usuario": "alejandrina",
+        "titulo": "Elige y suma",
+        "descripcion": "Decide qué necesitas. Después calcula.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/juegos/elige-y-suma/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/juegos/elige-y-suma/juego.json"
+      },
+      {
+        "id": "alejandrina-medios-sumas-juego-medios",
+        "tipo": "juego",
+        "sesion": "alejandrina-medios-y-sumas",
+        "usuario": "alejandrina",
+        "titulo": "Puentes aritméticos",
+        "descripcion": "Construye caminos con saltos iguales.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/juegos/puentes-aritmeticos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/juegos/puentes-aritmeticos/juego.json"
+      },
+      {
+        "id": "fabrica-de-trinomios",
+        "tipo": "juego",
+        "sesion": "multiplicacion-de-binomios",
+        "usuario": "alejandrina",
+        "titulo": "La fábrica de trinomios",
+        "descripcion": "Juego narrativo de opción múltiple para ayudar a una trabajadora a construir, en cuatro etapas y con enteros sencillos, todo el procedimiento del producto de binomios.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/juego.json"
+      },
+      {
+        "id": "series-geometricas-alejandrina-mision",
+        "tipo": "juego",
+        "sesion": "series-geometricas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "Misión constelación",
+        "descripcion": "24 retos aleatorios de sucesiones y series geométricas, con avance guardado y repaso de errores.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/series-geometricas/juegos/mision-constelacion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/juegos/mision-constelacion/juego.json"
+      },
+      {
+        "id": "ruta-de-las-sucesiones",
+        "tipo": "juego",
+        "sesion": "sucesiones-aritmeticas-sesion-1",
+        "usuario": "alejandrina",
+        "titulo": "Ruta de las sucesiones",
+        "descripcion": "Juego de quince preguntas en tres niveles, resueltas con botones, para completar patrones, identificar elementos y utilizar la fórmula general.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/juegos/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/alejandrina/sucesiones-aritmeticas/juegos/juego.json"
+      },
+      {
+        "id": "ticket-bajo-la-lupa-andres",
+        "tipo": "juego",
+        "sesion": "porcentajes-andres",
+        "usuario": "andres",
+        "titulo": "Ticket bajo la lupa",
+        "descripcion": "Juego de auditoría mediante clics para revisar descuentos, tasas ficticias variables de IVA y totales, y localizar un único dato alterado.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/juego.json"
+      },
+      {
+        "id": "aplicaciones-trig-kenisa-game",
+        "tipo": "juego",
+        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Misiones trigonométricas",
+        "descripcion": "Nueve problemas en tres aventuras de tres niveles, con ilustraciones detalladas para cada contexto, lados identificados y ángulos destacados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/",
+        "archivoMetadatos": "asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/juego.json"
+      },
+      {
+        "id": "brigada-despeje-kenisa",
+        "tipo": "juego",
+        "sesion": "despejes-lineales-kenisa",
+        "usuario": "kenisa-erik",
+        "titulo": "Brigada del despeje",
+        "descripcion": "Juego de opción múltiple con veinte personajes y ecuaciones lineales sencillas cuyas soluciones son enteros entre 2 y 9.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/despejes-lineales/juegos/brigada-del-despeje/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/juegos/brigada-del-despeje/juego.json"
+      },
+      {
+        "id": "extra-mate-kenisa-circulos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Círculos: una vuelta de descubrimientos",
+        "descripcion": "Actividad 5: siete elementos, medidas exactas con π y conversiones ilustradas. Prácticas directas con filtros; simplificador vertical para grados a radianes y respuesta entera directa para radianes a grados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/circulos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/circulos/juego.json"
+      },
+      {
+        "id": "extra-mate-kenisa-cuadrilateros",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Cuadriláteros y trapecios",
+        "descripcion": "Actividad 4: propiedades de cuadriláteros y taller de trapecios. Prácticas visibles desde la carga, preguntas nuevas sin límite, pistas, reintentos y progreso por aciertos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/cuadrilateros/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/cuadrilateros/juego.json"
+      },
+      {
+        "id": "extra-mate-kenisa-paralelas-transversal",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Paralelas y transversal",
+        "descripcion": "Actividad 2: laboratorio de ocho ángulos y cuatro juegos de 20 retos cada uno. Medidas manuales como apoyo, expresiones completas y comprobación de x e y por separado; al acertar todas las variables se completan los ángulos pendientes y se permite avanzar. Incluye feedback, nuevas series y reintentos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/paralelas-y-transversal/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/paralelas-y-transversal/juego.json"
+      },
+      {
+        "id": "extra-mate-kenisa-triangulos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-1-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Laboratorio de triángulos",
+        "descripcion": "Actividad 3: tipos, interiores y exteriores. Práctica visible desde el inicio, ejercicios ilimitados y selector libre de medidas, múltiplos de x y expresiones lineales; pistas y reintentos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/triangulos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/triangulos/juego.json"
+      },
+      {
+        "id": "extra-mate-2-kenisa-cuadrados-rectangulos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Cuadrados y rectángulos: área, perímetro y diagonales",
+        "descripcion": "Laboratorio de fórmulas con lados ajustables, dos prácticas abiertas con filtros y ejercicios ilimitados. Diagonales por Pitágoras y respuestas exactas con entero o raíz equivalente.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/cuadrados-rectangulos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/cuadrados-rectangulos/juego.json"
+      },
+      {
+        "id": "extra-mate-2-kenisa-problemas-geometria",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Problemas de geometría",
+        "descripcion": "Dieciocho plantillas sencillas de rectángulos, cuadrados, triángulos y trapecios. Dibujos con incógnitas, ejemplo guiado, fórmulas ilustradas, pistas progresivas y problemas ilimitados con respuestas enteras.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/problemas-geometria/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/problemas-geometria/juego.json"
+      },
+      {
+        "id": "extra-mate-2-kenisa-trapecios-medidas",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Trapecios: área y perímetro",
+        "descripcion": "Laboratorio con bases, altura y desplazamiento ajustables. Once casos de área y perímetro, dos variantes de base faltante, Pitágoras con enteros, pistas y ejercicios aleatorios ilimitados.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/trapecios-medidas/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/trapecios-medidas/juego.json"
+      },
+      {
+        "id": "extra-mate-2-kenisa-triangulos-medidas",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Triángulos: área y perímetro",
+        "descripcion": "Cinco casos ilustrados: tres lados, base y altura, equilátero, isósceles y rectángulo. Ejemplos por pasos, contorno animado, duplicación para el área, Pitágoras entero y retos aleatorios sin límite.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/triangulos-medidas/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/triangulos-medidas/juego.json"
+      },
+      {
+        "id": "extra-mate-3-kenisa-formulas-poligonos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Fórmulas del polígono",
+        "descripcion": "Catálogo visual animado de fórmulas para polígonos regulares de 3–9 lados. Retos ilimitados de perímetro, área, diagonales y ángulos, reconocimiento visual de N y despejes de apotema, lado y perímetro. Pitágoras solo en la exploración, nunca en los ejercicios.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/formulas-poligonos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/juegos/formulas-poligonos/juego.json"
+      },
+      {
+        "id": "extra-mate-3-kenisa-mision-poligonos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Misión polígonos",
+        "descripcion": "Galería con conteo de colores y batalla arcade con niveles del 3 al 20: cada jefe N-ágono requiere un polígono de N lados. Cuatro defensas por columna, proyectiles geométricos, errores recuperables, teclado y tacto, victoria estable y tableros nuevos. Cada victoria muestra solo Continuar y Repetir; al superar el jefe 20 permite continuar a El mapa del polígono.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/mision-poligonos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/juegos/mision-poligonos/juego.json"
+      },
+      {
+        "id": "extra-mate-3-kenisa-partes-poligonos",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "El mapa del polígono",
+        "descripcion": "Explora nueve partes en polígonos regulares de 3 a 9 lados. Después encuentra la figura o la palabra correcta en retos aleatorios con cuatro opciones, reintentos y progreso. Sin fórmulas ni cálculos. Incluye Continuar hacia Fórmulas del polígono.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/partes-poligonos/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/juegos/partes-poligonos/juego.json"
+      },
+      {
+        "id": "extra-mate-4-kenisa-mini-examen",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-4-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Mini examen",
+        "descripcion": "Repaso de 14 temas de Extra mate partes 1–4. Práctica libre con cuatro opciones, variantes sin repetición por ciclo y examen de 28 preguntas (dos por tema), respuesta definitiva, calificación de 1 a 100 y revisión.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-4/juegos/mini-examen/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-4/juegos/mini-examen/juego.json"
+      },
+      {
+        "id": "extra-mate-4-kenisa-triangulos-congruentes",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-4-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Congruencia de triángulos",
+        "descripcion": "Clona, desplaza, gira, refleja y superpone triángulos. Explora LLL, LAL y ALA y practica con ejercicios ilimitados de criterios, lados, ángulos y ecuaciones lineales, sin desbloqueos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-4/juegos/triangulos-congruentes/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-4/juegos/triangulos-congruentes/juego.json"
+      },
+      {
+        "id": "extra-mate-4-kenisa-triangulos-semejantes",
+        "tipo": "juego",
+        "sesion": "extra-mate-parte-4-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Triángulos semejantes",
+        "descripcion": "Animación de ABC y AXY, explorador de AA, LAL y LLL y retos ilimitados para decidir, encontrar lados o ángulos y resolver x. Casos y orientaciones seleccionables, fracciones equivalentes y reintentos.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/extra-mate-parte-4/juegos/triangulos-semejantes/",
+        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-4/juegos/triangulos-semejantes/juego.json"
+      },
+      {
+        "id": "consultorio-trigonometrico-kenisa-erik",
+        "tipo": "juego",
+        "sesion": "funciones-trigonometricas-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Consultorio Trigonométrico",
+        "descripcion": "Ayuda a 18 personajes: seis casos por nivel, con emojis, números y resultados decimales. Desbloqueo progresivo.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/juegos/consultorio-trigonometrico/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/juegos/consultorio-trigonometrico/juego.json"
+      },
+      {
+        "id": "pitagoras-kenisa-game",
+        "tipo": "juego",
+        "sesion": "teorema-de-pitagoras-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Misiones de Pitágoras",
+        "descripcion": "Tres versiones de cuatro situaciones reales con ilustraciones vectoriales detalladas y medidas destacadas; una versión aleatoria por partida.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/teorema-de-pitagoras/juegos/misiones-pitagoricas/",
+        "archivoMetadatos": "asesores/erik/kenisa/teorema-de-pitagoras/juegos/misiones-pitagoricas/juego.json"
+      },
+      {
+        "id": "guardia-de-los-signos",
+        "tipo": "juego",
+        "tema": "ley-de-los-signos",
+        "titulo": "El guardia de los signos",
+        "descripcion": "Decide si una igualdad de multiplicación o división de signos permite pasar.",
+        "nivel": [
+          "secundaria"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/ley-de-los-signos/juegos/guardia-de-los-signos/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/ley-de-los-signos/juegos/guardia-de-los-signos/juego.json"
+      },
+      {
+        "id": "cuanto-pastel-queda",
+        "tipo": "juego",
+        "tema": "operaciones-con-fracciones",
+        "titulo": "¿Cuánto pastel queda?",
+        "descripcion": "Identifica la fracción coloreada de un pastel y responde con cualquier fracción equivalente.",
+        "nivel": [
+          "primaria",
+          "secundaria"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/cuanto-pastel-queda/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/juegos/cuanto-pastel-queda/juego.json"
+      },
+      {
+        "id": "dame-pastel",
+        "tipo": "juego",
+        "tema": "operaciones-con-fracciones",
+        "titulo": "Dame pastel",
+        "descripcion": "Construye una fracción propia o igual a uno seleccionando sectores SVG accesibles.",
+        "nivel": [
+          "primaria",
+          "secundaria"
+        ],
+        "estado": "publicado",
+        "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/",
+        "interactivo": true,
+        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/juego.json"
+      }
+    ],
     "explicacion": [
       {
         "id": "explicacion-datos-no-agrupados",
@@ -3891,339 +4343,6 @@
         "estado": "publicado",
         "ruta": "/biblioteca/temas/operaciones-con-fracciones/explicacion/",
         "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/explicacion/componente.json"
-      }
-    ],
-    "juego": [
-      {
-        "id": "entrevista-musical",
-        "tipo": "juego",
-        "sesion": "datos-no-agrupados",
-        "usuario": "alejandrina",
-        "titulo": "La entrevista musical",
-        "descripcion": "Juego contextual de moda, mediana y promedio.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/juegos/entrevista-musical/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/alejandrina/datos-no-agrupados/juegos/entrevista-musical/juego.json"
-      },
-      {
-        "id": "elige-el-camino",
-        "tipo": "juego",
-        "sesion": "diagramas-de-arboles",
-        "usuario": "alejandrina",
-        "titulo": "El laberinto infinito",
-        "descripcion": "Juego para leer un diagrama de árbol como mapa y recorrer las puertas que conducen hasta una hoja marcada como salida.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/alejandrina/diagramas-de-arboles/juegos/elige-el-camino/juego.json"
-      },
-      {
-        "id": "trivia-formulas-sucesiones-aritmeticas",
-        "tipo": "juego",
-        "sesion": "formulas-de-sucesiones-aritmeticas-sesion-2",
-        "usuario": "alejandrina",
-        "titulo": "Trivia de las fórmulas perdidas",
-        "descripcion": "Trivia aleatoria de doce preguntas con la fórmula base siempre visible para repasar cómo encontrar a₁, d, n y aₙ.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/juegos/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/alejandrina/formulas-de-sucesiones/juegos/juego.json"
-      },
-      {
-        "id": "recorrido-de-posiciones",
-        "tipo": "juego",
-        "sesion": "medidas-de-posicion",
-        "usuario": "alejandrina",
-        "titulo": "El taller del corte exacto",
-        "descripcion": "Juego para interpretar cuartiles, deciles, percentiles y mediana, y cortar una cinta en su posición porcentual exacta.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/alejandrina/medidas-de-posicion/juegos/recorrido-de-posiciones/juego.json"
-      },
-      {
-        "id": "alejandrina-medios-sumas-juego-sumas",
-        "tipo": "juego",
-        "sesion": "alejandrina-medios-y-sumas",
-        "usuario": "alejandrina",
-        "titulo": "Elige y suma",
-        "descripcion": "Decide qué necesitas. Después calcula.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/juegos/elige-y-suma/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/juegos/elige-y-suma/juego.json"
-      },
-      {
-        "id": "alejandrina-medios-sumas-juego-medios",
-        "tipo": "juego",
-        "sesion": "alejandrina-medios-y-sumas",
-        "usuario": "alejandrina",
-        "titulo": "Puentes aritméticos",
-        "descripcion": "Construye caminos con saltos iguales.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/alejandrina/medios-y-sumas/juegos/puentes-aritmeticos/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/alejandrina/medios-y-sumas/juegos/puentes-aritmeticos/juego.json"
-      },
-      {
-        "id": "fabrica-de-trinomios",
-        "tipo": "juego",
-        "sesion": "multiplicacion-de-binomios",
-        "usuario": "alejandrina",
-        "titulo": "La fábrica de trinomios",
-        "descripcion": "Juego narrativo de opción múltiple para ayudar a una trabajadora a construir, en cuatro etapas y con enteros sencillos, todo el procedimiento del producto de binomios.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/alejandrina/multiplicacion-de-binomios/juegos/fabrica-de-trinomios/juego.json"
-      },
-      {
-        "id": "series-geometricas-alejandrina-mision",
-        "tipo": "juego",
-        "sesion": "series-geometricas-alejandrina",
-        "usuario": "alejandrina",
-        "titulo": "Misión constelación",
-        "descripcion": "24 retos aleatorios de sucesiones y series geométricas, con avance guardado y repaso de errores.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/alejandrina/series-geometricas/juegos/mision-constelacion/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/alejandrina/series-geometricas/juegos/mision-constelacion/juego.json"
-      },
-      {
-        "id": "ruta-de-las-sucesiones",
-        "tipo": "juego",
-        "sesion": "sucesiones-aritmeticas-sesion-1",
-        "usuario": "alejandrina",
-        "titulo": "Ruta de las sucesiones",
-        "descripcion": "Juego de quince preguntas en tres niveles, resueltas con botones, para completar patrones, identificar elementos y utilizar la fórmula general.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/juegos/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/alejandrina/sucesiones-aritmeticas/juegos/juego.json"
-      },
-      {
-        "id": "ticket-bajo-la-lupa-andres",
-        "tipo": "juego",
-        "sesion": "porcentajes-andres",
-        "usuario": "andres",
-        "titulo": "Ticket bajo la lupa",
-        "descripcion": "Juego de auditoría mediante clics para revisar descuentos, tasas ficticias variables de IVA y totales, y localizar un único dato alterado.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/andres/porcentajes/juegos/ticket-bajo-la-lupa/juego.json"
-      },
-      {
-        "id": "aplicaciones-trig-kenisa-game",
-        "tipo": "juego",
-        "sesion": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Misiones trigonométricas",
-        "descripcion": "Nueve problemas en tres aventuras de tres niveles, con ilustraciones detalladas para cada contexto, lados identificados y ángulos destacados.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/",
-        "archivoMetadatos": "asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/juegos/misiones-trigonometricas/juego.json"
-      },
-      {
-        "id": "brigada-despeje-kenisa",
-        "tipo": "juego",
-        "sesion": "despejes-lineales-kenisa",
-        "usuario": "kenisa-erik",
-        "titulo": "Brigada del despeje",
-        "descripcion": "Juego de opción múltiple con veinte personajes y ecuaciones lineales sencillas cuyas soluciones son enteros entre 2 y 9.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/despejes-lineales/juegos/brigada-del-despeje/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/juegos/brigada-del-despeje/juego.json"
-      },
-      {
-        "id": "extra-mate-kenisa-circulos",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-1-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Círculos: una vuelta de descubrimientos",
-        "descripcion": "Actividad 5: siete elementos, medidas exactas con π y conversiones ilustradas. Prácticas directas con filtros; simplificador vertical para grados a radianes y respuesta entera directa para radianes a grados.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/circulos/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/circulos/juego.json"
-      },
-      {
-        "id": "extra-mate-kenisa-cuadrilateros",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-1-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Cuadriláteros y trapecios",
-        "descripcion": "Actividad 4: propiedades de cuadriláteros y taller de trapecios. Prácticas visibles desde la carga, preguntas nuevas sin límite, pistas, reintentos y progreso por aciertos.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/cuadrilateros/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/cuadrilateros/juego.json"
-      },
-      {
-        "id": "extra-mate-kenisa-paralelas-transversal",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-1-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Paralelas y transversal",
-        "descripcion": "Actividad 2: laboratorio de ocho ángulos y cuatro juegos de 20 retos cada uno. Medidas manuales como apoyo, expresiones completas y comprobación de x e y por separado; al acertar todas las variables se completan los ángulos pendientes y se permite avanzar. Incluye feedback, nuevas series y reintentos.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/paralelas-y-transversal/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/paralelas-y-transversal/juego.json"
-      },
-      {
-        "id": "extra-mate-kenisa-triangulos",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-1-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Laboratorio de triángulos",
-        "descripcion": "Actividad 3: tipos, interiores y exteriores. Práctica visible desde el inicio, ejercicios ilimitados y selector libre de medidas, múltiplos de x y expresiones lineales; pistas y reintentos.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/juegos/triangulos/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-1/juegos/triangulos/juego.json"
-      },
-      {
-        "id": "extra-mate-2-kenisa-cuadrados-rectangulos",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-2-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Cuadrados y rectángulos: área, perímetro y diagonales",
-        "descripcion": "Laboratorio de fórmulas con lados ajustables, dos prácticas abiertas con filtros y ejercicios ilimitados. Diagonales por Pitágoras y respuestas exactas con entero o raíz equivalente.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/cuadrados-rectangulos/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/cuadrados-rectangulos/juego.json"
-      },
-      {
-        "id": "extra-mate-2-kenisa-problemas-geometria",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-2-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Problemas de geometría",
-        "descripcion": "Dieciocho plantillas sencillas de rectángulos, cuadrados, triángulos y trapecios. Dibujos con incógnitas, ejemplo guiado, fórmulas ilustradas, pistas progresivas y problemas ilimitados con respuestas enteras.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/problemas-geometria/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/problemas-geometria/juego.json"
-      },
-      {
-        "id": "extra-mate-2-kenisa-trapecios-medidas",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-2-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Trapecios: área y perímetro",
-        "descripcion": "Laboratorio con bases, altura y desplazamiento ajustables. Once casos de área y perímetro, dos variantes de base faltante, Pitágoras con enteros, pistas y ejercicios aleatorios ilimitados.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/trapecios-medidas/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/trapecios-medidas/juego.json"
-      },
-      {
-        "id": "extra-mate-2-kenisa-triangulos-medidas",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-2-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Triángulos: área y perímetro",
-        "descripcion": "Cinco casos ilustrados: tres lados, base y altura, equilátero, isósceles y rectángulo. Ejemplos por pasos, contorno animado, duplicación para el área, Pitágoras entero y retos aleatorios sin límite.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/juegos/triangulos-medidas/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-2/juegos/triangulos-medidas/juego.json"
-      },
-      {
-        "id": "extra-mate-3-kenisa-formulas-poligonos",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-3-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Fórmulas del polígono",
-        "descripcion": "Catálogo visual animado de fórmulas para polígonos regulares de 3–9 lados. Retos ilimitados de perímetro, área, diagonales y ángulos, reconocimiento visual de N y despejes de apotema, lado y perímetro. Pitágoras solo en la exploración, nunca en los ejercicios.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/formulas-poligonos/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/juegos/formulas-poligonos/juego.json"
-      },
-      {
-        "id": "extra-mate-3-kenisa-mision-poligonos",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-3-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Misión polígonos",
-        "descripcion": "Galería con conteo de colores y batalla arcade con niveles del 3 al 20: cada jefe N-ágono requiere un polígono de N lados. Cuatro defensas por columna, proyectiles geométricos, errores recuperables, teclado y tacto, victoria estable y tableros nuevos. Cada victoria muestra solo Continuar y Repetir; al superar el jefe 20 permite continuar a El mapa del polígono.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/mision-poligonos/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/juegos/mision-poligonos/juego.json"
-      },
-      {
-        "id": "extra-mate-3-kenisa-partes-poligonos",
-        "tipo": "juego",
-        "sesion": "extra-mate-parte-3-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "El mapa del polígono",
-        "descripcion": "Explora nueve partes en polígonos regulares de 3 a 9 lados. Después encuentra la figura o la palabra correcta en retos aleatorios con cuatro opciones, reintentos y progreso. Sin fórmulas ni cálculos. Incluye Continuar hacia Fórmulas del polígono.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/juegos/partes-poligonos/",
-        "archivoMetadatos": "asesores/erik/kenisa/extra-mate-parte-3/juegos/partes-poligonos/juego.json"
-      },
-      {
-        "id": "consultorio-trigonometrico-kenisa-erik",
-        "tipo": "juego",
-        "sesion": "funciones-trigonometricas-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Consultorio Trigonométrico",
-        "descripcion": "Ayuda a 18 personajes: seis casos por nivel, con emojis, números y resultados decimales. Desbloqueo progresivo.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/juegos/consultorio-trigonometrico/",
-        "interactivo": true,
-        "archivoMetadatos": "asesores/erik/kenisa/funciones-trigonometricas/juegos/consultorio-trigonometrico/juego.json"
-      },
-      {
-        "id": "pitagoras-kenisa-game",
-        "tipo": "juego",
-        "sesion": "teorema-de-pitagoras-kenisa-erik",
-        "usuario": "kenisa-erik",
-        "titulo": "Misiones de Pitágoras",
-        "descripcion": "Tres versiones de cuatro situaciones reales con ilustraciones vectoriales detalladas y medidas destacadas; una versión aleatoria por partida.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/kenisa/teorema-de-pitagoras/juegos/misiones-pitagoricas/",
-        "archivoMetadatos": "asesores/erik/kenisa/teorema-de-pitagoras/juegos/misiones-pitagoricas/juego.json"
-      },
-      {
-        "id": "guardia-de-los-signos",
-        "tipo": "juego",
-        "tema": "ley-de-los-signos",
-        "titulo": "El guardia de los signos",
-        "descripcion": "Decide si una igualdad de multiplicación o división de signos permite pasar.",
-        "nivel": [
-          "secundaria"
-        ],
-        "estado": "publicado",
-        "ruta": "/biblioteca/temas/ley-de-los-signos/juegos/guardia-de-los-signos/",
-        "interactivo": true,
-        "archivoMetadatos": "biblioteca/temas/ley-de-los-signos/juegos/guardia-de-los-signos/juego.json"
-      },
-      {
-        "id": "cuanto-pastel-queda",
-        "tipo": "juego",
-        "tema": "operaciones-con-fracciones",
-        "titulo": "¿Cuánto pastel queda?",
-        "descripcion": "Identifica la fracción coloreada de un pastel y responde con cualquier fracción equivalente.",
-        "nivel": [
-          "primaria",
-          "secundaria"
-        ],
-        "estado": "publicado",
-        "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/cuanto-pastel-queda/",
-        "interactivo": true,
-        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/juegos/cuanto-pastel-queda/juego.json"
-      },
-      {
-        "id": "dame-pastel",
-        "tipo": "juego",
-        "tema": "operaciones-con-fracciones",
-        "titulo": "Dame pastel",
-        "descripcion": "Construye una fracción propia o igual a uno seleccionando sectores SVG accesibles.",
-        "nivel": [
-          "primaria",
-          "secundaria"
-        ],
-        "estado": "publicado",
-        "ruta": "/biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/",
-        "interactivo": true,
-        "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/juegos/dame-pastel/juego.json"
       }
     ],
     "demostracion": [

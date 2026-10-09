@@ -1,0 +1,12 @@
+{
+  "id": "bosque-elyan-paso-a-paso",
+  "tipo": "calculadora",
+  "sesion": "bosque-restas-elyan",
+  "usuario": "elyan-claudia",
+  "titulo": "Restas paso a paso",
+  "descripcion": "Resolución explicada de restas del 0 al 999, con préstamos y ceros intermedios.",
+  "estado": "publicado",
+  "ruta": "/asesores/claudia/elyan/bosque-de-las-restas/calculadoras/paso-a-paso/",
+  "interactivo": true,
+  "simbolo": "−"
+}

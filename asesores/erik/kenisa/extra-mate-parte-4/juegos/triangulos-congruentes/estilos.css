@@ -1,0 +1,13 @@
+@import url("../../recursos/laboratorio-triangulos.css?v=20261009-2");
+.congruence-site{background:radial-gradient(ellipse at 95% 2%,#eee5fb,transparent 28%),#f7f9fc;}
+.congruence-site .hero h1 span{color:#7860a6;}
+.clone-stage{margin:1.3rem 0 1rem;border:1px solid #e7e4f1;border-radius:20px;background:#fcfbff;overflow:hidden;}
+.triangle-lab .clone-stage svg{max-width:920px;}
+.clone-stage text{text-anchor:middle;font-family:var(--font-sans);paint-order:stroke;stroke:#fcfbff;stroke-width:4px;stroke-linejoin:round;}
+.clone-vertex{font-size:18px;font-weight:800;}.clone-length{font-size:17px;font-weight:750;}.clone-caption{font-size:16px;font-weight:750;fill:#526477;}.clone-placeholder{font-size:16px;fill:#547669;}.clone-match{font-size:26px;font-weight:800;fill:#19847d;}
+.clone-controls{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-top:1.3rem;}
+.clone-controls button[aria-pressed=true]{background:#eee6fb;border-color:#7860a6;color:#60478b;box-shadow:inset 0 0 0 1px #7860a6;}
+.clone-status{min-height:3.5rem;padding:.8rem 1rem;margin:.7rem 0 1.3rem;border-radius:12px;background:#eef8f3;color:#226753;}
+.congruence-equality{font-size:1.05rem;color:#17786c;font-weight:750;letter-spacing:.025em;}
+.congruence-reminder{padding:1rem 1.2rem;margin-top:1rem;border-left:4px solid #ad80bb;border-radius:12px;background:#f7f0fa;color:#665177;line-height:1.7;}
+@media(max-width:600px){.clone-controls{grid-template-columns:1fr 1fr;}.clone-controls .lab-button{font-size:.82rem;padding:.65rem .4rem;}.clone-status{min-height:7.5rem;}.clone-vertex{font-size:20px;}.clone-length{font-size:19px;}}

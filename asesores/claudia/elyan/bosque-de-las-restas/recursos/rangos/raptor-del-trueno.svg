@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-labelledby="title">
+<title id="title">Raptor del trueno: cresta de rayo</title>
+<circle cx="64" cy="66" r="59" fill="#ddecff"/>
+<ellipse cx="64" cy="118" rx="40" ry="6" fill="#24453f" opacity=".12"/>
+<g stroke="#24453f" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M36 96Q18 106 11 84Q9 110 37 114L99 114Q103 103 89 94L91 80Q120 76 117 58Q115 41 90 40Q80 19 56 26Q29 32 34 62L42 90Z" fill="#75b6dd" /><path d="M56 89Q59 71 79 80L89 95 95 113 47 113Z" fill="#d0eaff" stroke="none"/><path d="M36 44 24 41 32 54 23 60 35 66 27 78 41 80" fill="#af97e1" /><ellipse cx="67" cy="48" rx="5" ry="7" fill="#24453f" /><ellipse cx="68" cy="46" rx="1.5" ry="2" fill="white" stroke="none"/><ellipse cx="102" cy="55" rx="2.3" ry="2.3" fill="#24453f" stroke="none"/><path d="M74 69Q96 80 113 66" fill="none" /><path d="M85 74 89 82 95 76" fill="#fffbea" /><path d="M59 94Q66 82 74 91L81 94" fill="none" /><path d="M48 107 48 115M81 108 82 115" fill="none" /><ellipse cx="82" cy="60" rx="7" ry="4" fill="#f09c80" stroke="none"/><path d="M55 4 79 4 68 23 83 22 53 48 61 27 48 28Z" fill="#ffe465" /><path d="M45 79 84 80 77 94 51 95Z" fill="#5b82bb" /><path d="M65 87 75 87 69 97 76 96 59 112 63 99 56 99Z" fill="#ffe56b" /></g>
+</svg>

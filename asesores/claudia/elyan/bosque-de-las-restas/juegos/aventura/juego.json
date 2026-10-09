@@ -1,0 +1,11 @@
+{
+  "id": "bosque-elyan-aventura",
+  "tipo": "juego",
+  "sesion": "bosque-restas-elyan",
+  "usuario": "elyan-claudia",
+  "titulo": "La gran aventura del bosque",
+  "descripcion": "Aventura inmersiva para vertical y horizontal: 55 misiones, 11 rangos con retratos y accesorios únicos y tres estrellas por victoria. Frutas por franjas: tienes, entregas y te quedan.",
+  "estado": "publicado",
+  "ruta": "/asesores/claudia/elyan/bosque-de-las-restas/juegos/aventura/",
+  "interactivo": true
+}

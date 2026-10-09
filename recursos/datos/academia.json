@@ -53,15 +53,22 @@
         {
           "id": "elyan-claudia",
           "nombreVisible": "Elyan",
-          "descripcion": "Un laboratorio de sumas para explorar, saltar y descubrir. 3.º de Primaria.",
+          "descripcion": "Sumas molonas y una aventura de restas para explorar, jugar y descubrir. 3.º de Primaria.",
           "ruta": "/asesores/claudia/elyan/",
           "personalizacion": {
             "simbolo": "🐰",
             "acento": "#6f3dc4",
             "fondo": "#f4efff"
           },
-          "ultimaActividad": "2026-10-01",
+          "ultimaActividad": "2026-10-07",
           "sesiones": [
+            {
+              "id": "bosque-restas-elyan",
+              "titulo": "🍃 El bosque de las restas",
+              "descripcion": "De Pollito aprendiz a Super Dinosaurio Rex Mega pro: 55 misiones, 11 rangos con iconos propios, premios de tres estrellas y una ventana de juego para vertical y horizontal. Incluye restas de tres cifras.",
+              "fecha": "2026-10-07",
+              "ruta": "/asesores/claudia/elyan/bosque-de-las-restas/"
+            },
             {
               "id": "sumas-molonas-elyan",
               "titulo": "✨ Sumas Molonas",
@@ -532,8 +539,15 @@
             "acento": "#205c3e",
             "fondo": "#ffacd2"
           },
-          "ultimaActividad": "2026-10-07",
+          "ultimaActividad": "2026-10-09",
           "sesiones": [
+            {
+              "id": "extra-mate-parte-4-kenisa-erik",
+              "titulo": "Extra mate parte 4",
+              "descripcion": "Semejanza y congruencia de triángulos con animaciones y prácticas, más un mini examen de 14 temas de geometría y ecuaciones de Extra mate.",
+              "fecha": "2026-10-09",
+              "ruta": "/asesores/erik/kenisa/extra-mate-parte-4/"
+            },
             {
               "id": "extra-mate-parte-3-kenisa-erik",
               "titulo": "Extra mate parte 3",

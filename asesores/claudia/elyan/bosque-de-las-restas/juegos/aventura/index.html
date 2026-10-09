@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>La gran aventura | Elyan | Matemáticas a Domicilio</title>
+  <meta name="description" content="55 misiones de restas: del mercado del bosque a Super Dinosaurio Rex Mega pro.">
+  <meta name="theme-color" content="#176747">
+  <link rel="icon" href="../../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="estilos.css?v=20261008-2">
+  <script src="../../../../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+  <script type="module" src="script.mjs?v=20261008-2"></script>
+</head>
+<body class="sesion-bosque">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../../index.html">Inicio</a></li><li><a href="../../../../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../../../index.html" aria-current="page">Salones</a></li><li><a href="../../../../../../contacto/index.html">Contacto</a></li></ul></nav></div></header>
+  <main id="contenido" class="bosque aventura entrada-juego"><div class="container">
+<nav class="breadcrumbs" aria-label="Migas de pan"><a href="../../../index.html">Elyan</a><span>/</span><a href="../../index.html">El bosque</a><span>/</span><span>La gran aventura</span></nav>
+<section class="hero"><div class="hero-contenido"><span class="etiqueta">55 NIVELES · 11 RANGOS</span><h1>Tu aventura<br><em>empieza aquí.</em></h1><p>Un pequeño pollito.<br>Una leyenda por despertar.</p><button type="button" id="jugar" class="principal">▶ ¡JUGAR!</button></div><span class="hero-sello">¡Cada victoria vale ⭐⭐⭐!</span></section>
+<p class="nota">Juega en vertical o en horizontal. Tu aventura se guarda en este navegador.</p><p><a class="boton" href="../../index.html">← Volver al bosque</a></p>
+<noscript><p>Activa JavaScript para entrar al juego.</p></noscript>
+</div></main>
+<div id="juego-app" class="bosque game-app" role="dialog" aria-modal="true" aria-label="El bosque de las restas, juego" tabindex="-1" hidden>
+  <header class="arena-hud">
+    <button type="button" id="abrir-rangos" class="rango-hud" aria-label="Ver mis rangos"><span id="avatar" class="avatar" aria-hidden="true"><img class="icono-rango" src="../../recursos/rangos/pollito-aprendiz.svg" width="128" height="128" alt=""></span><span><small>TU RANGO</small><strong id="rango">Pollito aprendiz</strong><span class="ver-rangos">Ver evolución ▸</span></span></button>
+    <div class="hud-progreso"><label class="sr-only" for="poder">Poder de la aventura</label><progress id="poder" value="0" max="55"></progress><small id="poder-texto">0 de 55 misiones</small><small id="siguiente-rango"></small></div>
+    <div class="hud-acciones"><span id="total-estrellas" class="estrellas-total" aria-label="Estrellas conseguidas">⭐ 0</span><button type="button" id="pantalla" class="icon-button" aria-label="Pantalla completa" title="Pantalla completa">⛶</button><button type="button" id="cerrar-juego" class="icon-button cerrar-juego" aria-label="Cerrar juego" title="Cerrar juego">✕</button></div>
+  </header>
+  <div class="arena-play">
+    <aside class="arena-cliente"><span id="nivel" class="nivel-chip">NIVEL 1 / 55</span><span id="cliente-avatar" class="cliente-avatar" aria-hidden="true">🐰</span><div class="bocadillo"><p id="mundo-nombre" class="eyebrow">EL MERCADO</p><h2 id="mision-titulo">Lola, la conejita</h2><p id="consigna">¡Preparo un picnic para mis amigos!</p></div><p id="operacion" hidden></p></aside>
+    <section class="arena-tablero" aria-label="El puesto de frutas"><div id="tablero"></div></section>
+  </div>
+  <footer class="arena-dock"><button type="button" id="abrir-mapa" class="dock-button"><span aria-hidden="true">🗺️</span>Mapa</button><button type="button" id="pista" class="dock-button"><span aria-hidden="true">💡</span>Pista</button><button type="button" id="abrir-magia" class="dock-button" hidden><span aria-hidden="true">✨</span>Cambiar</button><button type="button" id="comprobar" class="entregar">✓ ¡ENTREGAR!</button><button type="button" id="ver-premio" class="entregar" hidden>⭐ CONTINUAR</button><button type="button" id="abrir-ajustes" class="dock-button" aria-label="Abrir opciones"><span aria-hidden="true">⚙</span>Opciones</button></footer>
+  <p id="estado" class="feedback" role="status"></p><p id="pantalla-aviso" class="pantalla-aviso" role="status" hidden></p>
+
+  <dialog id="victoria" class="game-popup premio" aria-labelledby="victoria-titulo">
+    <button type="button" class="popup-x" data-cerrar="victoria" aria-label="Cerrar premio">✕</button>
+    <p class="premio-etiqueta" id="premio-nivel">¡NIVEL SUPERADO!</p>
+    <div class="premio-estrellas" role="img" aria-label="3 de 3 estrellas"><span>★</span><span>★</span><span>★</span></div>
+    <h2 id="victoria-titulo">¡Pedido entregado!</h2><p id="victoria-texto"></p>
+    <div class="premio-avance"><label for="premio-poder">TU AVENTURA CRECE</label><progress id="premio-poder" value="0" max="55"></progress><strong id="premio-avance"></strong></div>
+    <div id="premio-rango" class="premio-rango" hidden><span id="nuevo-avatar" aria-hidden="true"><img class="icono-rango" src="../../recursos/rangos/pollito-valiente.svg" width="128" height="128" alt=""></span><div><small>¡NUEVO RANGO!</small><strong id="nuevo-rango"></strong></div></div>
+    <button type="button" id="siguiente" class="entregar">CONTINUAR →</button>
+  </dialog>
+  <dialog id="mapa" class="game-popup" aria-labelledby="mapa-titulo"><div class="popup-heading"><div><p class="eyebrow">TU GRAN AVENTURA</p><h2 id="mapa-titulo">Mapa de niveles</h2></div><button type="button" class="popup-x" data-cerrar="mapa" aria-label="Cerrar mapa">✕</button></div><div id="niveles"></div></dialog>
+  <dialog id="rangos" class="game-popup" aria-labelledby="rangos-titulo"><div class="popup-heading"><div><p class="eyebrow">DE POLLITO A LEYENDA</p><h2 id="rangos-titulo">Tu evolución</h2></div><button type="button" class="popup-x" data-cerrar="rangos" aria-label="Cerrar rangos">✕</button></div><ol id="lista-rangos" class="coleccion-rangos"></ol></dialog>
+  <dialog id="magia" class="game-popup" aria-labelledby="magia-titulo"><div class="popup-heading"><div><p class="eyebrow">MISMO VALOR, NUEVA FORMA</p><h2 id="magia-titulo">✨ Intercambio mágico</h2></div><button type="button" class="popup-x" data-cerrar="magia" aria-label="Cerrar intercambios">✕</button></div><div id="magia-inventario" class="magia-inventario"></div><div class="magia-botones"><button type="button" id="cambio-2">🍃 1 hoja → 10 plátanos</button><button type="button" id="cambio-1">🍌 1 plátano → 10 manzanas</button><button type="button" id="deshacer" disabled>↶ Deshacer cambio</button></div><p id="valor-total" class="valor-total"></p><p id="magia-estado" class="popup-mensaje" role="status"></p><button type="button" class="entregar" data-cerrar="magia">¡LISTO! →</button></dialog>
+  <dialog id="ayuda" class="game-popup ayuda-popup" aria-labelledby="ayuda-titulo"><div class="popup-heading"><h2 id="ayuda-titulo">💡 Una pista</h2><button type="button" class="popup-x" data-cerrar="ayuda" aria-label="Cerrar pista">✕</button></div><span class="ayuda-mascota" aria-hidden="true">🦉</span><p id="ayuda-texto" class="popup-mensaje"></p><button type="button" class="entregar" data-cerrar="ayuda">¡VOY A PROBAR! →</button></dialog>
+  <dialog id="ajustes" class="game-popup ajustes-popup" aria-labelledby="ajustes-titulo"><div class="popup-heading"><h2 id="ajustes-titulo">Tu partida</h2><button type="button" class="popup-x" data-cerrar="ajustes" aria-label="Cerrar opciones">✕</button></div><button type="button" id="sonido" aria-pressed="false">♪ Activar sonido</button><button type="button" id="reiniciar">↻ Reiniciar este nivel</button><button type="button" id="otros-numeros">🎲 Jugar con otros números</button><p class="nota" id="guardado"></p></dialog>
+</div>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../../index.html">Inicio</a></li><li><a href="../../../../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../../../index.html">Salones</a></li><li><a href="../../../../../../contacto/index.html">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p class="footer-copyright">© 2026 Matemáticas a Domicilio</p><p class="footer-legal-links"><a href="../../../../../../legal/aviso-de-privacidad/index.html">Aviso de Privacidad</a><span aria-hidden="true">·</span><a href="../../../../../../legal/terminos-y-condiciones/index.html">Términos y Condiciones</a></p><p class="footer-location">Málaga, Andalucía, España</p></div></footer>
+</body>
+</html>
