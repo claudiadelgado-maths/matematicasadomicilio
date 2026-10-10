@@ -1,0 +1,128 @@
+.geometry-site { --ink:#293f52; --muted:#566a7d; --purple:#73559c; --teal:#237b68; --line:#d8dfea; color:var(--ink); background:#f8f9fc; padding:1.5rem 0 4rem; }
+.geometry-site [hidden] { display:none!important; }
+.geometry-site h1 { font-size:clamp(2.3rem,5.2vw,4.5rem); line-height:1.16; letter-spacing:-.045em; margin:.7rem 0 1.3rem; }
+.geometry-site h2 { font-size:clamp(1.5rem,2.8vw,2.2rem); line-height:1.3; margin:0 0 .75rem; }
+.geometry-site h3 { font-size:1.4rem; margin:0 0 .6rem; }
+.geometry-site p { line-height:1.75; }
+.geometry-site :is(button,a,input,summary):focus-visible { outline:3px solid var(--purple); outline-offset:4px; }
+.geometry-site .geo-button { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:.8rem 1.2rem; gap:.6rem; border:1px solid #b7c2d2; border-radius:12px; background:white; color:var(--ink); font:750 .95rem var(--font-sans); text-decoration:none; cursor:pointer; }
+.geometry-site .geo-button:hover { background:#f1edf8; border-color:var(--purple); }
+.geometry-site .geo-button.primary { color:white; background:var(--teal); border-color:var(--teal); }
+.geometry-site .geo-button.primary:hover { background:#1d6858; }
+.geometry-site .geo-button:disabled { opacity:.6; cursor:default; }
+.geometry-site .session-hero { display:grid; grid-template-columns:1.2fr 1fr; align-items:center; gap:clamp(2rem,4vw,4rem); padding:clamp(1.5rem,5vw,4.5rem) 0; }
+.geometry-site .session-hero h1 span { display:block; color:var(--purple); font-size:.52em; letter-spacing:.12em; margin-bottom:.25rem; }
+.geometry-site .hero-intro { font-size:clamp(1.2rem,2vw,1.55rem); line-height:1.45; }
+.geometry-site .session-hero p:not(.hero-intro) { max-width:480px; color:var(--muted); margin-bottom:1.6rem; }
+.geometry-site .hero-art { margin:0; padding:1rem; background:#f0eef7; border:1px solid #dfdbea; border-radius:28px; }
+.geometry-site .hero-art svg { width:100%; height:auto; }
+.geometry-site .material-card { display:grid; grid-template-columns:64px 1fr auto; align-items:center; gap:1.5rem; padding:clamp(1.2rem,3vw,2rem); border:1px solid #cde0d8; border-radius:20px; background:#f0f8f4; margin:1rem 0 3rem; }
+.geometry-site .material-card h2 { font-size:1.5rem; margin-bottom:.35rem; }
+.geometry-site .material-card p { margin:.3rem 0; }
+.geometry-site .material-card small { color:var(--muted); font-size:.8rem; overflow-wrap:anywhere; }
+.geometry-site .material-icon { display:grid; place-items:center; border:1px solid #a1cabc; border-radius:13px; width:64px; height:76px; background:white; font-size:1rem; letter-spacing:.05em; font-weight:800; color:var(--teal); }
+.geometry-site .section-heading { margin-bottom:1.5rem; }
+.geometry-site .section-heading p { margin:0; color:var(--muted); }
+.geometry-site .version-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
+.geometry-site .version-card { display:grid; grid-template-columns:62px minmax(0,1fr); gap:1.2rem; padding:clamp(1.2rem,3vw,2rem); border:1px solid var(--line); border-radius:20px; background:white; }
+.geometry-site .version-card p { margin:0; color:var(--muted); font-size:.9rem; }
+.geometry-site .version-card .geo-button { grid-column:1/-1; justify-self:stretch; }
+.geometry-site .version-badge { display:grid; place-items:center; width:60px; height:64px; font-size:2rem; font-weight:800; border-radius:16px; background:#eee7f8; color:var(--purple); }
+.geometry-site .version-b .version-badge { background:#e2f3ec; color:#247a65; }
+.geometry-site .version-c .version-badge { background:#e8effa; color:#486e9d; }
+.geometry-site .version-d .version-badge { background:#f8e9f3; color:#9b5683; }
+.geometry-site .home-note { max-width:790px; margin:1.8rem 0; color:var(--muted); }
+.geometry-site .bottom-nav { display:flex; flex-wrap:wrap; gap:1rem 2rem; border-top:1px solid var(--line); padding-top:1.4rem; margin-top:2rem; }
+.geometry-site .bottom-nav a,.geometry-site .back-link { color:var(--purple); font-size:.92rem; font-weight:750; min-height:44px; display:inline-flex; align-items:center; }
+.geometry-site .exam-container { width:min(880px,calc(100% - 2rem)); margin-inline:auto; }
+.geometry-site .exam-hero { padding:1.2rem 0 1rem; }
+.geometry-site .exam-hero h1 span { color:var(--purple); }
+.geometry-site .exam-hero p { margin:0 0 1.5rem; color:var(--muted); }
+.geometry-site .exam-tools { position:sticky; top:0; z-index:10; display:flex; align-items:center; justify-content:space-between; gap:1rem; background:#f8f9fc; padding:1rem 0; border-bottom:1px solid var(--line); }
+.geometry-site .exam-tools>div { min-width:0; flex:1; max-width:370px; }
+.geometry-site .exam-tools p { margin:0 0 .3rem; font-weight:750; font-size:.88rem; }
+.geometry-site .exam-tools a { display:inline-flex; align-items:center; min-height:44px; color:var(--purple); font-size:.88rem; font-weight:750; }
+.geometry-site progress { appearance:none; display:block; width:100%; height:7px; border:0; border-radius:6px; overflow:hidden; background:#e0e4ee; accent-color:var(--teal); }
+.geometry-site progress::-webkit-progress-bar { background:#e0e4ee; }
+.geometry-site progress::-webkit-progress-value { background:var(--teal); border-radius:6px; }
+.geometry-site .question-map { margin:.8rem 0 1.5rem; font-size:.9rem; }
+.geometry-site .question-map summary { display:list-item; width:fit-content; min-height:44px; padding:.6rem 0; color:var(--muted); cursor:pointer; }
+.geometry-site .question-map ol { display:flex; flex-wrap:wrap; gap:.5rem; padding:0; margin:.7rem 0; list-style:none; }
+.geometry-site .question-map a,.geometry-site .error-link { display:grid; place-items:center; min-width:44px; min-height:44px; border:1px solid #c8ccdb; background:white; border-radius:9px; text-decoration:none; font-weight:750; }
+.geometry-site .question-map .respondida { background:#eee7f8; border-color:#b5a4ce; color:var(--purple); }
+.geometry-site .question-map [data-estado="correcta"] { background:#e6f5ec; border-color:#98cbb0; color:#256b4c; }
+.geometry-site .question-map :is([data-estado="incorrecta"],[data-estado="sin-responder"]),.geometry-site .error-link { background:#faedf5; border-color:#d5a5c3; color:#894e76; }
+.geometry-site .pregunta { min-width:0; padding:clamp(1rem,3vw,2rem); margin:0 0 1.3rem; border:1px solid var(--line); border-radius:18px; background:white; scroll-margin-top:100px; }
+.geometry-site .pregunta legend { float:left; display:flex; align-items:start; gap:.9rem; width:100%; padding:0; font-size:1.06rem; line-height:1.75; font-weight:700; }
+.geometry-site .question-number { flex:0 0 32px; display:grid; place-items:center; height:32px; margin-top:2px; border-radius:9px; background:#eee7f8; color:var(--purple); font-size:.87rem; }
+.geometry-site .opciones { clear:both; display:grid; grid-template-columns:1fr 1fr; gap:.75rem; padding-top:1.2rem; }
+.geometry-site .opcion { display:grid; grid-template-columns:20px 20px minmax(0,1fr) 16px; align-items:center; gap:.55rem; min-height:65px; border:1px solid #d3d9e5; padding:.8rem; border-radius:11px; font-size:.96rem; line-height:1.5; cursor:pointer; overflow-wrap:anywhere; }
+.geometry-site .opcion input { margin:0; width:18px; height:18px; accent-color:var(--purple); }
+.geometry-site .option-letter { font-weight:750; color:var(--muted); }
+.geometry-site .opcion:has(input:checked) { border-color:var(--purple); background:#f1ecf9; box-shadow:inset 0 0 0 1px var(--purple); }
+.geometry-site .pregunta:not(:disabled) .opcion:hover { border-color:var(--purple); background:#f6f3fb; }
+.geometry-site .pregunta:disabled .opcion { cursor:default; }
+.geometry-site .pregunta .opcion-correcta { border-color:#478c66; background:#eaf7ef; box-shadow:inset 0 0 0 1px #478c66; color:#256b4c; }
+.geometry-site .opcion-correcta::after { content:'✓'; font-weight:800; }
+.geometry-site .pregunta .opcion-incorrecta { border-color:#bd7fa6; background:#faedf5; box-shadow:none; color:#894e76; }
+.geometry-site .opcion-incorrecta::after { content:'×'; font-size:1.15rem; font-weight:800; }
+.geometry-site .question-status { font-size:.87rem; font-weight:750; color:#894e76; margin:1rem 0 0; }
+.geometry-site .pregunta[data-estado="correcta"] .question-status { color:#256b4c; }
+.geometry-site .solution { padding:.8rem 1rem; border-radius:10px; border-left:4px solid #478c66; background:#eaf7ef; color:#256b4c; margin:1rem 0 0; font-weight:650; }
+.geometry-site .submit-panel { padding:clamp(1.3rem,3vw,2rem); border:1px solid #c9d8d4; border-radius:18px; background:#f0f8f4; margin-top:2rem; scroll-margin-top:100px; }
+.geometry-site .submit-panel h2 { font-size:1.6rem; }
+.geometry-site .small { font-size:.86rem; color:var(--muted); max-width:640px; }
+.geometry-site .submit-panel .geo-button { margin-top:.5rem; }
+.geometry-site .result-panel { margin-top:2rem; padding:clamp(1.2rem,3vw,2.4rem); background:white; border:1px solid #bcb0d1; border-radius:20px; scroll-margin-top:100px; }
+.geometry-site .result-heading { display:flex; align-items:center; justify-content:space-between; gap:1.2rem; }
+.geometry-site .eyebrow { color:var(--purple); text-transform:uppercase; letter-spacing:.1em; font-size:.75rem; font-weight:800; margin:0 0 .5rem; }
+.geometry-site .result-heading p:last-child { margin:.4rem 0 0; }
+.geometry-site .score { display:flex; align-items:baseline; gap:.3rem; white-space:nowrap; color:var(--purple); }
+.geometry-site .score strong { font-size:clamp(3.5rem,7vw,5.5rem); line-height:1.1; }
+.geometry-site .score span { color:var(--muted); font-size:1.25rem; }
+.geometry-site .result-counts { display:grid; grid-template-columns:repeat(3,1fr); gap:.6rem; margin:1.5rem 0 2rem; }
+.geometry-site .result-counts>div { display:flex; flex-direction:column-reverse; align-items:center; border-radius:12px; background:#f3f1f8; padding:.8rem; text-align:center; }
+.geometry-site .result-counts dt { font-size:.8rem; color:var(--muted); }
+.geometry-site .result-counts dd { margin:0; font-size:1.8rem; font-weight:750; color:var(--purple); }
+.geometry-site .result-panel h3 { font-size:1.2rem; }
+.geometry-site .result-panel>p { margin:.4rem 0 1rem; color:var(--muted); }
+.geometry-site .error-list { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0; }
+.geometry-site .result-actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.5rem; }
+.geometry-site .visit-note { color:var(--muted); font-size:.8rem; margin:1.7rem 0; }
+.geometry-site .noscript-note { padding:1rem; background:#f9f3db; border-radius:12px; }
+.geometry-site .sr-only { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+@media(max-width:800px) {
+  .geometry-site .material-card { grid-template-columns:54px 1fr; gap:1rem; }
+  .geometry-site .material-icon { width:54px; height:66px; }
+  .geometry-site .material-card .geo-button { grid-column:1/-1; }
+  .geometry-site .version-grid { gap:1rem; }
+}
+@media(max-width:660px) {
+  .geometry-site .session-hero { grid-template-columns:1fr; gap:1.5rem; }
+  .geometry-site .hero-art { max-width:380px; justify-self:center; }
+  .geometry-site .version-grid { grid-template-columns:1fr; }
+  .geometry-site .opciones { grid-template-columns:1fr; }
+  .geometry-site .pregunta legend { font-size:1rem; gap:.65rem; }
+  .geometry-site .opcion { min-height:58px; }
+  .geometry-site .result-heading { display:block; }
+  .geometry-site .score { margin-top:1rem; }
+}
+@media(max-width:420px) {
+  .geometry-site .exam-tools { gap:.65rem; }
+  .geometry-site .exam-tools>div { max-width:175px; }
+  .geometry-site .exam-tools p,.geometry-site .exam-tools a { font-size:.76rem; }
+  .geometry-site .question-number { flex-basis:27px; height:29px; }
+  .geometry-site .result-counts>div { padding:.65rem .35rem; }
+  .geometry-site .result-counts dt { font-size:.7rem; }
+  .geometry-site .result-actions .geo-button { width:100%; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+}
+
+.geometry-site .result-actions { margin:1.2rem 0 2rem; }
+
+.geometry-site .version-practice { grid-column:1/-1; border-color:#b4cfc4; background:#f2f9f6; }
+.geometry-site .version-practice h3 { font-size:clamp(1.05rem,2vw,1.4rem); line-height:1.5; }
+.geometry-site .version-practice .version-badge { color:var(--teal); background:#dcefe6; }
+.geometry-site .version-practice .practice-card-description { grid-column:1/-1; }

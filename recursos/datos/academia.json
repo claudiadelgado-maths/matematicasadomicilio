@@ -539,8 +539,15 @@
             "acento": "#205c3e",
             "fondo": "#ffacd2"
           },
-          "ultimaActividad": "2026-10-09",
+          "ultimaActividad": "2026-10-10",
           "sesiones": [
+            {
+              "id": "examen-geometria-kenisa-erik",
+              "titulo": "EXAMEN GEOMETRÍA",
+              "descripcion": "Material de estudio, series A–D con calificación y práctica de planteamiento de ecuaciones y despejes: 768 preguntas, una a la vez, sin nota final.",
+              "fecha": "2026-10-10",
+              "ruta": "/asesores/erik/kenisa/examen-geometria/"
+            },
             {
               "id": "extra-mate-parte-4-kenisa-erik",
               "titulo": "Extra mate parte 4",

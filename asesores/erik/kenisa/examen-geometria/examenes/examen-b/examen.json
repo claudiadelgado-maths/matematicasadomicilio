@@ -1,0 +1,18 @@
+{
+  "id": "kenisa-examen-geometria-b",
+  "tipo": "examen",
+  "sesion": "examen-geometria-kenisa-erik",
+  "usuario": "kenisa-erik",
+  "titulo": "Examen B",
+  "descripcion": "16 preguntas fijas de opción múltiple proporcionadas por el autor, en una sola página, con entrega, calificación y revisión.",
+  "area": "Geometría",
+  "nivel": [
+    "secundaria"
+  ],
+  "formato": "web",
+  "duracionMinutos": null,
+  "interactivo": true,
+  "preguntas": 16,
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/examen-geometria/examenes/examen-b/"
+}

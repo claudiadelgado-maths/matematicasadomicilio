@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 273,
+  "total": 279,
   "tipos": {
     "maestro": [
       {
@@ -1626,6 +1626,28 @@
           "calculadoras": true
         },
         "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/sesion.json"
+      },
+      {
+        "id": "examen-geometria-kenisa-erik",
+        "slug": "examen-geometria",
+        "tipo": "sesion",
+        "usuario": "kenisa-erik",
+        "titulo": "EXAMEN GEOMETRÍA",
+        "descripcion": "Material de estudio, series A–D con calificación y práctica de planteamiento de ecuaciones y despejes: 768 preguntas, una a la vez, sin nota final.",
+        "objetivo": "Repasar geometría con los cuatro exámenes del autor y preparar el planteamiento de ecuaciones y despejes mediante práctica intensiva variada.",
+        "conocimientosPrevios": [
+          "Ángulos y polígonos",
+          "Áreas y perímetros",
+          "Semejanza de triángulos"
+        ],
+        "fecha": "2026-10-10",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/examen-geometria/",
+        "materialEstudio": "../MaterialEamenGeometria.pdf",
+        "componentes": {
+          "examenes": true
+        },
+        "archivoMetadatos": "asesores/erik/kenisa/examen-geometria/sesion.json"
       },
       {
         "id": "extra-mate-parte-1-kenisa-erik",
@@ -4345,32 +4367,104 @@
         "archivoMetadatos": "biblioteca/temas/operaciones-con-fracciones/explicacion/componente.json"
       }
     ],
-    "demostracion": [
+    "examen": [
       {
-        "id": "actividad-9-laboratorio-circuitos-raul-erik",
-        "tipo": "demostracion",
-        "sesion": "repaso-en-fisica-raul-erik",
-        "usuario": "raul-erik",
-        "titulo": "Laboratorio de circuitos",
-        "descripcion": "Exploración de circuitos ideales con controles y predicciones.",
+        "id": "kenisa-examen-geometria-a",
+        "tipo": "examen",
+        "sesion": "examen-geometria-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Examen A",
+        "descripcion": "16 preguntas fijas de opción múltiple proporcionadas por el autor, en una sola página, con entrega, calificación y revisión.",
+        "area": "Geometría",
+        "nivel": [
+          "secundaria"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
+        "interactivo": true,
+        "preguntas": 16,
         "estado": "publicado",
-        "ruta": "/asesores/erik/raul/repaso-en-fisica/actividad-9-laboratorio-circuitos/",
-        "archivoMetadatos": "asesores/erik/raul/repaso-en-fisica/actividad-9-laboratorio-circuitos/componente.json"
+        "ruta": "/asesores/erik/kenisa/examen-geometria/examenes/examen-a/",
+        "archivoMetadatos": "asesores/erik/kenisa/examen-geometria/examenes/examen-a/examen.json"
       },
       {
-        "id": "raul-erik-repaso-factorizacion",
-        "tipo": "demostracion",
-        "sesion": "raul-erik-repaso",
-        "usuario": "raul-erik",
-        "titulo": "Factorización",
-        "descripcion": "Presentación de factorización numérica sin ejercicios de evaluación.",
-        "estado": "publicado",
-        "ruta": "/asesores/erik/raul/repaso/demostraciones/factorizacion/",
+        "id": "kenisa-examen-geometria-b",
+        "tipo": "examen",
+        "sesion": "examen-geometria-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Examen B",
+        "descripcion": "16 preguntas fijas de opción múltiple proporcionadas por el autor, en una sola página, con entrega, calificación y revisión.",
+        "area": "Geometría",
+        "nivel": [
+          "secundaria"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
         "interactivo": true,
-        "archivoMetadatos": "asesores/erik/raul/repaso/demostraciones/factorizacion/componente.json"
-      }
-    ],
-    "examen": [
+        "preguntas": 16,
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/examen-geometria/examenes/examen-b/",
+        "archivoMetadatos": "asesores/erik/kenisa/examen-geometria/examenes/examen-b/examen.json"
+      },
+      {
+        "id": "kenisa-examen-geometria-c",
+        "tipo": "examen",
+        "sesion": "examen-geometria-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Examen C",
+        "descripcion": "16 preguntas fijas de opción múltiple proporcionadas por el autor, en una sola página, con entrega, calificación y revisión.",
+        "area": "Geometría",
+        "nivel": [
+          "secundaria"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
+        "interactivo": true,
+        "preguntas": 16,
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/examen-geometria/examenes/examen-c/",
+        "archivoMetadatos": "asesores/erik/kenisa/examen-geometria/examenes/examen-c/examen.json"
+      },
+      {
+        "id": "kenisa-examen-geometria-d",
+        "tipo": "examen",
+        "sesion": "examen-geometria-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Examen D",
+        "descripcion": "32 preguntas fijas de opción múltiple proporcionadas por el autor, en una sola página, con entrega, calificación y revisión.",
+        "area": "Geometría",
+        "nivel": [
+          "secundaria"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
+        "interactivo": true,
+        "preguntas": 32,
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/examen-geometria/examenes/examen-d/",
+        "archivoMetadatos": "asesores/erik/kenisa/examen-geometria/examenes/examen-d/examen.json"
+      },
+      {
+        "id": "kenisa-examen-geometria-planteamiento-despejes",
+        "tipo": "examen",
+        "sesion": "examen-geometria-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "EXAMEN DE PLANTEAMIENTO DE ECUACIONES Y DESPEJES",
+        "descripcion": "Práctica intensiva sin calificación: 768 preguntas de 64 planteamientos, una a la vez, cuatro opciones, feedback y procedimiento. Sin dibujos y sin repetir preguntas en la ronda.",
+        "area": "Geometría",
+        "nivel": [
+          "secundaria"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
+        "interactivo": true,
+        "preguntas": 768,
+        "planteamientos": 64,
+        "calificacionFinal": false,
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/examen-geometria/examenes/planteamiento-de-ecuaciones-y-despejes/",
+        "archivoMetadatos": "asesores/erik/kenisa/examen-geometria/examenes/planteamiento-de-ecuaciones-y-despejes/examen.json"
+      },
       {
         "id": "evaluacion-bachillerato",
         "tipo": "examen",
@@ -4405,6 +4499,31 @@
         "ruta": "/biblioteca/examenes/simulador-admision-universidad/",
         "archivo": "recursos/simulador.pdf",
         "archivoMetadatos": "biblioteca/examenes/simulador-admision-universidad/examen.json"
+      }
+    ],
+    "demostracion": [
+      {
+        "id": "actividad-9-laboratorio-circuitos-raul-erik",
+        "tipo": "demostracion",
+        "sesion": "repaso-en-fisica-raul-erik",
+        "usuario": "raul-erik",
+        "titulo": "Laboratorio de circuitos",
+        "descripcion": "Exploración de circuitos ideales con controles y predicciones.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso-en-fisica/actividad-9-laboratorio-circuitos/",
+        "archivoMetadatos": "asesores/erik/raul/repaso-en-fisica/actividad-9-laboratorio-circuitos/componente.json"
+      },
+      {
+        "id": "raul-erik-repaso-factorizacion",
+        "tipo": "demostracion",
+        "sesion": "raul-erik-repaso",
+        "usuario": "raul-erik",
+        "titulo": "Factorización",
+        "descripcion": "Presentación de factorización numérica sin ejercicios de evaluación.",
+        "estado": "publicado",
+        "ruta": "/asesores/erik/raul/repaso/demostraciones/factorizacion/",
+        "interactivo": true,
+        "archivoMetadatos": "asesores/erik/raul/repaso/demostraciones/factorizacion/componente.json"
       }
     ],
     "tema": [

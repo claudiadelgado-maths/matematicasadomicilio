@@ -1,0 +1,20 @@
+{
+  "id": "kenisa-examen-geometria-planteamiento-despejes",
+  "tipo": "examen",
+  "sesion": "examen-geometria-kenisa-erik",
+  "usuario": "kenisa-erik",
+  "titulo": "EXAMEN DE PLANTEAMIENTO DE ECUACIONES Y DESPEJES",
+  "descripcion": "Práctica intensiva sin calificación: 768 preguntas de 64 planteamientos, una a la vez, cuatro opciones, feedback y procedimiento. Sin dibujos y sin repetir preguntas en la ronda.",
+  "area": "Geometría",
+  "nivel": [
+    "secundaria"
+  ],
+  "formato": "web",
+  "duracionMinutos": null,
+  "interactivo": true,
+  "preguntas": 768,
+  "planteamientos": 64,
+  "calificacionFinal": false,
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/examen-geometria/examenes/planteamiento-de-ecuaciones-y-despejes/"
+}
