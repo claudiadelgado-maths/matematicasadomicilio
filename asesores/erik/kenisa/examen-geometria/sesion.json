@@ -4,8 +4,8 @@
   "tipo": "sesion",
   "usuario": "kenisa-erik",
   "titulo": "EXAMEN GEOMETRÍA",
-  "descripcion": "Material de estudio, series A–D con calificación y práctica de planteamiento de ecuaciones y despejes: 768 preguntas, una a la vez, sin nota final.",
-  "objetivo": "Repasar geometría con los cuatro exámenes del autor y preparar el planteamiento de ecuaciones y despejes mediante práctica intensiva variada.",
+  "descripcion": "Material de estudio, series A–D, práctica de ecuaciones y despejes y LABORATORIO con seis estaciones interactivas de fórmulas.",
+  "objetivo": "Repasar geometría, plantear ecuaciones y comprender fórmulas mediante práctica interactiva y los exámenes del autor.",
   "conocimientosPrevios": [
     "Ángulos y polígonos",
     "Áreas y perímetros",
@@ -16,6 +16,7 @@
   "ruta": "/asesores/erik/kenisa/examen-geometria/",
   "materialEstudio": "../MaterialEamenGeometria.pdf",
   "componentes": {
-    "examenes": true
+    "examenes": true,
+    "ejercicios": true
   }
 }

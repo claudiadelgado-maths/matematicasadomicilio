@@ -1,6 +1,6 @@
 # EXAMEN GEOMETRÍA
 
-Sesión de KENISA / Erik, publicada con fecha editorial 2026-10-10. Ruta: /asesores/erik/kenisa/examen-geometria/. Contiene portada, material de estudio del autor y cuatro exámenes fijos, más una quinta actividad de práctica intensiva. No añade ni modifica preguntas de Extra mate.
+Sesión de KENISA / Erik, publicada con fecha editorial 2026-10-10. Ruta: /asesores/erik/kenisa/examen-geometria/. Contiene portada, material de estudio del autor y cuatro exámenes fijos, más una quinta actividad de práctica intensiva y un LABORATORIO con seis estaciones de fórmulas. No añade ni modifica preguntas de Extra mate.
 
 ## Contenido y fidelidad
 
@@ -33,7 +33,7 @@ No hay registro de identidad ni envío de respuestas. Estado solo en memoria; re
 ## Archivos y consumidores
 
 - index.html y estilos.css: portada y estilos de toda esta familia local.
-- sesion.json: sesión examen-geometria-kenisa-erik, usuario kenisa-erik y componente examenes disponible.
+- sesion.json: sesión examen-geometria-kenisa-erik, usuario kenisa-erik y componentes examenes y ejercicios disponibles.
 - examenes/examen-a/, examen-b/, examen-c/, examen-d/: entradas propias, estilos.css que importa el de la sesión, README y examen.json. Los reactivos también están presentes en el HTML para lectura sin JavaScript; en ese caso se informa que es necesario activarlo para responder.
 - recursos/examenes.mjs: banco de preguntas y claves del autor.
 - recursos/modelo.mjs: selección, entrega, calificación y consulta de claves, sin DOM.
@@ -42,7 +42,7 @@ No hay registro de identidad ni envío de respuestas. Estado solo en memoria; re
 - recursos/contenido.test.mjs: comprobación independiente de las 48 respuestas de cálculo del autor.
 - recursos/REVISION.md: revisión matemática y funcional de los cinco exámenes.
 
-No hay dependencias nuevas. Solo se usan los recursos globales de identidad, base.css y navegacion.js. No se importan archivos de Extra mate u otras sesiones. Al modificar el CSS local revisar portada, las cuatro versiones y la práctica intensiva; al modificar la interacción o el banco revisar los cuatro exámenes. Sin componentes opcionales vacíos.
+No hay dependencias nuevas. Solo se usan los recursos globales de identidad, base.css y navegacion.js. No se importan archivos de Extra mate u otras sesiones. Al modificar el CSS local revisar portada, las cuatro versiones, la práctica intensiva y el laboratorio; al modificar la interacción o el banco revisar los cuatro exámenes. Sin componentes opcionales vacíos.
 
 ## Verificación
 
@@ -51,3 +51,7 @@ Desde la raíz: node --test asesores/erik/kenisa/examen-geometria/recursos/*.tes
 Ejecutar también examenes/planteamiento-de-ecuaciones-y-despejes/banco.test.mjs con node --test.
 
 Comprobar 360, 768, 1024 y 1440 px, las cuatro versiones, radios con teclado/tacto, cambio de respuesta sin corrección previa, entrega completa y con omisiones, bloqueo posterior, nota 0/100 y 100/100, respuestas ocultas hasta pedirlas, reintento sin restos y mapa de preguntas. Revisar foco, menú/Escape, consola, enlaces, PDF descargado y entrada desde el casillero. Mantener rutas relativas con directorio e index.html.
+
+## LABORATORIO
+
+Entrada en ejercicios/laboratorio/index.html, desde una tarjeta propia de la portada. Seis estaciones sin desbloqueos: memorización (27 consignas), construcción (14), despejes (534), lados con x (240), problemas algebraicos (324) y círculos con π (160). Total 1299 consignas, sin nota final. Editor de fracciones verticales y exponentes, equivalencia simbólica, reintentos y procedimientos. Leer su README y ejecutar laboratorio.test.mjs. El laboratorio consume 300 preguntas del banco del quinto examen de forma independiente; los otros exámenes conservan sus datos e interacción.

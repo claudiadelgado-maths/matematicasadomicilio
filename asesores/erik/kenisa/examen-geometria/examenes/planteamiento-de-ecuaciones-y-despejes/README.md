@@ -51,3 +51,7 @@ Desde la raíz del repositorio:
 Las pruebas recorren todas las variantes: ecuación con solución única, objetivo solicitado, cuatro opciones distintas y exactamente una válida; también comprueban de forma independiente las propiedades geométricas. El modelo recorre las 768 preguntas, agota todos los filtros y comienza otra ronda sin calificación.
 
 Revisar en navegador 360, 768, 1024 y 1440 px; respuestas correctas e incorrectas, bloqueo, procedimiento, foco, filtros, ausencia de repeticiones, agotamiento y nueva ronda. Comprobar la portada y A–D por el estilo compartido, menú móvil/Escape, consola, enlaces y descarga del PDF.
+
+## Consumidor adicional del banco
+
+El LABORATORIO de esta sesión (../../ejercicios/laboratorio/) reutiliza 300 preguntas de 25 familias de banco.mjs para su estación de problemas algebraicos. No comparte estado ni interfaz. Si se modifica banco.mjs, ejecutar banco.test.mjs y ../../ejercicios/laboratorio/laboratorio.test.mjs.

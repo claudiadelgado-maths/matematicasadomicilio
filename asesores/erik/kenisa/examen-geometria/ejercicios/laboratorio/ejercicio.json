@@ -1,0 +1,18 @@
+{
+  "id": "laboratorio-formulas-geometria-kenisa",
+  "tipo": "ejercicio",
+  "sesion": "examen-geometria-kenisa-erik",
+  "usuario": "kenisa-erik",
+  "titulo": "LABORATORIO",
+  "descripcion": "Seis estaciones de fórmulas: reconocimiento, editor de fracciones y exponentes, despejes, lados algebraicos, áreas y perímetros, círculos con π. Perímetro como La suma de todos sus lados y ángulo interior como 180 − ángulo exterior, con sus botones. 1299 consignas, reintentos y procedimientos, sin nota.",
+  "area": "Geometría",
+  "nivel": [
+    "secundaria"
+  ],
+  "interactivo": true,
+  "actividades": 6,
+  "formulas": 14,
+  "consignas": 1299,
+  "estado": "publicado",
+  "ruta": "/asesores/erik/kenisa/examen-geometria/ejercicios/laboratorio/"
+}

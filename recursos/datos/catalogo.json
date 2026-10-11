@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 279,
+  "total": 280,
   "tipos": {
     "maestro": [
       {
@@ -1633,8 +1633,8 @@
         "tipo": "sesion",
         "usuario": "kenisa-erik",
         "titulo": "EXAMEN GEOMETRÍA",
-        "descripcion": "Material de estudio, series A–D con calificación y práctica de planteamiento de ecuaciones y despejes: 768 preguntas, una a la vez, sin nota final.",
-        "objetivo": "Repasar geometría con los cuatro exámenes del autor y preparar el planteamiento de ecuaciones y despejes mediante práctica intensiva variada.",
+        "descripcion": "Material de estudio, series A–D, práctica de ecuaciones y despejes y LABORATORIO con seis estaciones interactivas de fórmulas.",
+        "objetivo": "Repasar geometría, plantear ecuaciones y comprender fórmulas mediante práctica interactiva y los exámenes del autor.",
         "conocimientosPrevios": [
           "Ángulos y polígonos",
           "Áreas y perímetros",
@@ -1645,7 +1645,8 @@
         "ruta": "/asesores/erik/kenisa/examen-geometria/",
         "materialEstudio": "../MaterialEamenGeometria.pdf",
         "componentes": {
-          "examenes": true
+          "examenes": true,
+          "ejercicios": true
         },
         "archivoMetadatos": "asesores/erik/kenisa/examen-geometria/sesion.json"
       },
@@ -2768,6 +2769,25 @@
         "ruta": "/asesores/erik/kenisa/despejes-lineales/ejercicios/practica-de-despejes/",
         "interactivo": true,
         "archivoMetadatos": "asesores/erik/kenisa/despejes-lineales/ejercicios/practica-de-despejes/ejercicio.json"
+      },
+      {
+        "id": "laboratorio-formulas-geometria-kenisa",
+        "tipo": "ejercicio",
+        "sesion": "examen-geometria-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "LABORATORIO",
+        "descripcion": "Seis estaciones de fórmulas: reconocimiento, editor de fracciones y exponentes, despejes, lados algebraicos, áreas y perímetros, círculos con π. Perímetro como La suma de todos sus lados y ángulo interior como 180 − ángulo exterior, con sus botones. 1299 consignas, reintentos y procedimientos, sin nota.",
+        "area": "Geometría",
+        "nivel": [
+          "secundaria"
+        ],
+        "interactivo": true,
+        "actividades": 6,
+        "formulas": 14,
+        "consignas": 1299,
+        "estado": "publicado",
+        "ruta": "/asesores/erik/kenisa/examen-geometria/ejercicios/laboratorio/",
+        "archivoMetadatos": "asesores/erik/kenisa/examen-geometria/ejercicios/laboratorio/ejercicio.json"
       },
       {
         "id": "extra-mate-kenisa-clasifica-angulos",
