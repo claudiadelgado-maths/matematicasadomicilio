@@ -1,0 +1,16 @@
+{
+  "id": "ulises",
+  "slug": "ulises",
+  "tipo": "usuario",
+  "titulo": "El casillero de Ulises",
+  "nombreVisible": "Ulises",
+  "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
+  "estado": "activo",
+  "ruta": "/Casilleros/ulises/",
+  "personalizacion": {
+    "simbolo": "U",
+    "acento": "#a45c18",
+    "fondo": "#fff2da"
+  },
+  "almacenamientoLocal": false
+}

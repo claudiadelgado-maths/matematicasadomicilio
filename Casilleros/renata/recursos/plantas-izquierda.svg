@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 360" fill="none">
+  <defs>
+    <g id="hoja"><path d="M0 0C-34-2-54-30-46-56C-16-54 4-29 0 0Z" fill="currentColor"/><path d="M0 0-34-43" stroke="#d3dfa9" stroke-width="1.2"/></g>
+    <g id="monstera"><path d="M0 73C-49 65-85 25-76-24C-70-72-24-87 0-46C24-87 70-72 76-24C85 25 49 65 0 73Z" fill="#2d6748"/><path d="M0 62V-45" stroke="#a0bb78" stroke-width="3"/><path d="M-8 17-44-13M-8 40-47 15M8 17 44-13M8 40 47 15" stroke="#a0bb78" stroke-width="2"/><g fill="#e3ead4"><ellipse cx="-25" cy="-33" rx="7" ry="18" transform="rotate(-28 -25 -33)"/><ellipse cx="25" cy="-33" rx="7" ry="18" transform="rotate(28 25 -33)"/><path d="M-72-9-37 16-76 4ZM-60 35-28 44-52 48ZM72-9 37 16 76 4ZM60 35 28 44 52 48Z"/></g></g>
+  </defs>
+  <path d="M2 5Q73 141 41 360M17 354Q182 295 173 111M40 221Q124 124 97 18" stroke="#709163" stroke-width="3"/>
+  <g color="#91aa72"><use href="#hoja" transform="translate(24 63) rotate(136) scale(.8)"/><use href="#hoja" transform="translate(46 128) rotate(88)"/><use href="#hoja" transform="translate(47 190) rotate(152) scale(.8)"/><use href="#hoja" transform="translate(43 260) rotate(110)"/></g>
+  <g color="#4f8055"><use href="#hoja" transform="translate(93 177) rotate(5) scale(.8)"/><use href="#hoja" transform="translate(104 110) rotate(90) scale(.75)"/><use href="#hoja" transform="translate(100 68) rotate(10) scale(.7)"/></g>
+  <g color="#b0bb7c"><use href="#hoja" transform="translate(107 305) rotate(92) scale(.8)"/><use href="#hoja" transform="translate(147 266) rotate(10) scale(.7)"/><use href="#hoja" transform="translate(168 211) rotate(105) scale(.65)"/></g>
+  <use href="#monstera" transform="translate(91 281) rotate(-27) scale(.83)"/>
+  <path d="M223 68Q199 113 213 158" stroke="#809563" stroke-width="2"/>
+  <g fill="#acbc90"><ellipse cx="226" cy="76" rx="12" ry="7" transform="rotate(-35 226 76)"/><ellipse cx="207" cy="99" rx="12" ry="7" transform="rotate(34 207 99)"/><ellipse cx="219" cy="120" rx="12" ry="7" transform="rotate(-35 219 120)"/><ellipse cx="207" cy="143" rx="11" ry="6" transform="rotate(34 207 143)"/></g>
+  <g fill="#b49a55"><circle cx="172" cy="53" r="4"/><circle cx="181" cy="47" r="3"/><circle cx="183" cy="60" r="3"/><circle cx="244" cy="285" r="2.5"/></g>
+</svg>

@@ -1,0 +1,63 @@
+/* México: identidad compartida por la portada y el índice de Elyan. */
+.student-locker[data-student-id="elyan-claudia"],
+.elyan-banner {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  place-items: center;
+  min-height: clamp(210px, 27vw, 320px);
+  padding: 38px 23%;
+  overflow: hidden;
+  border: 1px solid #c5a264;
+  border-radius: 18px;
+  background: url("mexico-izquierda.svg") left center / auto 100% no-repeat,
+    url("mexico-derecha.svg") right center / auto 100% no-repeat,
+    radial-gradient(ellipse at center, #fffaf0, #fff1d6 75%);
+  color: #087254;
+  box-shadow: 0 7px 22px #5b493015;
+}
+
+.student-locker[data-student-id="elyan-claudia"]::after,
+.elyan-banner::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 11px;
+  border: 1px solid #bd984e66;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.student-locker[data-student-id="elyan-claudia"] .student-locker-symbol,
+.student-locker[data-student-id="elyan-claudia"] .student-locker-arrow { display: none; }
+
+.student-locker[data-student-id="elyan-claudia"] .student-locker-copy > strong,
+.elyan-banner h1 {
+  margin: 0;
+  max-width: 100%;
+  color: #087254;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 8.5vw, 6.4rem);
+  font-weight: 800;
+  letter-spacing: .075em;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-text-stroke: .025em #fff4db;
+  paint-order: stroke fill;
+  text-shadow: 3px 3px 0 #cf574746;
+}
+
+.elyan-hero { padding-block: 28px 16px; }
+.student-locker[data-student-id="elyan-claudia"]:focus-visible { outline-color: #087254; }
+.student-locker[data-student-id="elyan-claudia"]:hover { box-shadow: 0 10px 26px #70592c28; }
+
+@media (max-width: 640px) {
+  .student-locker[data-student-id="elyan-claudia"],
+  .elyan-banner { padding: 48px 16px; background-position: left top, right bottom, center; background-size: auto 55%, auto 55%, cover; }
+  .student-locker[data-student-id="elyan-claudia"] .student-locker-copy > strong,
+  .elyan-banner h1 { font-size: clamp(2.6rem, 12vw, 4.6rem); }
+}

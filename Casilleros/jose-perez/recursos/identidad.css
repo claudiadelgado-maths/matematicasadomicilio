@@ -1,0 +1,60 @@
+/* Guitarra y música: portada e índice de José Pérez. */
+.student-locker[data-student-id="erik-jose-perez"],
+.jose-perez-banner {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  place-items: center;
+  min-height: clamp(210px, 27vw, 320px);
+  padding: 38px 23%;
+  overflow: hidden;
+  border: 1px solid #b69360;
+  border-radius: 17px;
+  background: url("musica-izquierda.svg") left center / auto 100% no-repeat,
+    url("musica-derecha.svg") right center / auto 100% no-repeat,
+    radial-gradient(ellipse at center, #304a4e, #172f36 85%);
+  color: #f8e6c6;
+  box-shadow: 0 8px 24px #28352e1c;
+}
+
+.student-locker[data-student-id="erik-jose-perez"]::after,
+.jose-perez-banner::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 12px;
+  border: 1px solid #e9c99255;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.student-locker[data-student-id="erik-jose-perez"] .student-locker-symbol,
+.student-locker[data-student-id="erik-jose-perez"] .student-locker-arrow { display: none; }
+
+.student-locker[data-student-id="erik-jose-perez"] .student-locker-copy > strong,
+.jose-perez-banner h1 {
+  margin: 0;
+  max-width: 100%;
+  color: #f8e6c6;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 7.3vw, 5.7rem);
+  font-weight: 400;
+  letter-spacing: .01em;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  text-shadow: 0 3px 12px #071e25;
+}
+
+.jose-perez-hero { padding-block: 28px 16px; }
+.student-locker[data-student-id="erik-jose-perez"]:focus-visible { outline-color: #976d38; }
+.student-locker[data-student-id="erik-jose-perez"]:hover { box-shadow: 0 10px 26px #28352e33; }
+
+@media (max-width: 640px) {
+  .student-locker[data-student-id="erik-jose-perez"],
+  .jose-perez-banner { padding: 48px 16px; background-position: left top, right bottom, center; background-size: auto 55%, auto 55%, cover; }
+  .student-locker[data-student-id="erik-jose-perez"] .student-locker-copy > strong,
+  .jose-perez-banner h1 { font-size: clamp(2.1rem, 10vw, 4rem); }
+}

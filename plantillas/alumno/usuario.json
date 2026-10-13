@@ -7,7 +7,6 @@
   "descripcion": "Espacio de sesiones y recursos personalizados.",
   "estado": "plantilla",
   "ruta": "/plantillas/alumno/",
-  "maestro": "plantilla-maestro",
   "personalizacion": {
     "simbolo": "A",
     "acento": "#1f5fbd",

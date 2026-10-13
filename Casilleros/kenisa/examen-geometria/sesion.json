@@ -1,0 +1,22 @@
+{
+  "id": "examen-geometria-kenisa-erik",
+  "slug": "examen-geometria",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "EXAMEN GEOMETRÍA",
+  "descripcion": "Material de estudio, series A–D, práctica de ecuaciones y despejes y LABORATORIO con seis estaciones interactivas de fórmulas.",
+  "objetivo": "Repasar geometría, plantear ecuaciones y comprender fórmulas mediante práctica interactiva y los exámenes del autor.",
+  "conocimientosPrevios": [
+    "Ángulos y polígonos",
+    "Áreas y perímetros",
+    "Semejanza de triángulos"
+  ],
+  "fecha": "2026-10-10",
+  "estado": "publicado",
+  "ruta": "/Casilleros/kenisa/examen-geometria/",
+  "materialEstudio": "../MaterialEamenGeometria.pdf",
+  "componentes": {
+    "examenes": true,
+    "ejercicios": true
+  }
+}

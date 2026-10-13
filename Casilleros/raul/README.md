@@ -1,0 +1,64 @@
+# Espacio de Raúl
+
+Casillero activo e independiente, accesible desde la portada. ID único: `raul-erik`. Ruta: `/Casilleros/raul/index.html`. Es independiente del casillero de Ulises.
+
+## Guía para continuar
+
+El sitio es estático, sin framework ni base de datos. Lee el README raíz y las guías de arquitectura, gestión académica y creación de sesiones de `documentacion/` antes de intervenir. Los metadatos de cada carpeta son la fuente de verdad; `npm run catalogo` genera los índices y `npm run validar` comprueba su coherencia. No edites los índices generados a mano.
+
+`usuario.json` registra al alumno. `index.html` usa `../recursos/js/alumno.js` para mostrar automáticamente las sesiones publicadas. Reutiliza CSS, navegación, marca y controles flotantes globales mediante rutas relativas; el diseño propio está en `estilos.css`. No guarda datos en almacenamiento local.
+
+## Sesiones iniciales
+
+1. Matemáticas, parte 1: `matematicas-parte-1/`, inicio publicado. Presentación, conversaciones y plan en una página vertical; después, apoyo visual y práctica de monomios, polinomios y suma.
+2. Electricidad 1: `fisica-parte-1/`, publicada; conserva la ruta histórica.
+
+Ambas tienen README y `sesion.json`. Matemáticas usa su propio `matematicas-parte-1/recursos/sesion.css` para sus cuatro páginas. Electricidad tiene doce páginas y diseño propio en `fisica-parte-1/recursos/electricidad.css`. Cada página tiene `estilos.css`. Ambas sesiones aparecen en el listado automático.
+
+El usuario proporcionará las especificaciones y el contenido de un formato diferente al habitual. No inventar temario, nivel, ejercicios, objetivos ni imponer la estructura de otras sesiones. Mantener la identidad y navegación del sitio. Completar cada sesión según esas indicaciones y sincronizar HTML, README y JSON antes de publicarla.
+
+## Comprobaciones
+
+Ejecutar `npm run catalogo` y `npm run validar`. Verificar que Raúl aparece en la portada, que Matemáticas, parte 1 aparece en su casillero, que Electricidad 1 aparece publicada y que las páginas permiten regresar al alumno. Revisar a 360, 768, 1024 y 1440 px, teclado, menú móvil, Escape, foco visible, consola y enlaces.
+
+## Repaso
+
+Nueva sesión publicada en `repaso/`: 25 páginas: nueve de fracciones, doce de sustitución, una de despejes sencillos y tres vistas finales de proporcionalidad directa, inversa factorización fracciones algebraicas, cuadráticas, sistemas problemas verbales y división de polinomios y residuos numérica. Incluye representaciones, operaciones, sustitución de enteros, negativos, fracciones y decimales, potencias, fórmulas y retos dinámicos. Recursos independientes, fondo verde y navegación secuencial. Aparece automáticamente mediante `sesion.json`.
+
+## Matemáticas Parte 2
+
+Nueva sesión publicada en `matematicas-parte-2/`: inicio y ocho apartados de factorización algebraica. Incluye factor común con barrido y expansión, agrupación de cuatro o seis términos, cuadrados, trinomios, cubos y reto mixto con solución detallada. Generadores en dos niveles y recursos independientes. Se incorpora al listado automático del alumno.
+
+## Electricidad Parte 2
+
+Nueva sesión publicada en `electricidad-parte-2/`: diez páginas que conectan cargas y Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule, con mapa de conexiones y reto conceptual/numérico. Siete laboratorios y 36 preguntas conceptuales con explicaciones. Recursos aislados y lienzo azul abierto.
+
+## Repaso Parte 2
+
+Sesión en `repaso-parte-2/`: tres páginas secuenciales. Comienza con el laboratorio de notación científica. Conserva pizarra y herramientas laterales e incorpora Creador libre y Resolver con problemas controlados. Incluye potencias pendientes sobre factores y grupos, valor absoluto, selección independiente de potencias de diez, traslados por recíproco exacto, pasos educativos, comprobación matemática, historial y deshacer. La antigua regla de traslado queda reemplazada por equivalencias exactas. Continúa con un laboratorio de expresiones algebraicas multivariables y termina con práctica rápida de aritmética en tres niveles, formulario, soluciones y contadores. Las nuevas áreas mantienen documentación y pruebas independientes.
+
+## Examen Matemáticas
+
+Nueva sesión en examen-matematicas/: examen de preguntas dinámicas mezcladas, modo normal y modo con ayuda por sustitución. Cubre sistemas, divisiones exactas y con residuo fracciones algebraicas, cuadráticas, sistemas problemas verbales y división de polinomios y residuos mediante 42 estructuras internas. Incluye validación simbólica, dominio, cuatro respuestas únicas e historial de pruebas. Recursos y documentación independientes; registro automático mediante sesion.json.
+
+## Electricidad 3
+
+Sesión conceptual en `electricidad-3/`: nueve páginas secuenciales sobre Joule, las dos leyes de Kirchhoff, batería real, capacitores, capacitancia, placas paralelas y dieléctricos, con repaso final. Incluye nueve exploraciones visuales y veinte preguntas de opción múltiple con retroalimentación inmediata. No requiere cálculos largos. Recursos propios, fórmulas KaTeX y retorno al alumno al terminar.
+
+## Práctica de Matemáticas
+
+Sesión en practica-de-matematicas/: cuarenta y seis niveles de examen dinámico con sumas, restas, signos, fracciones, sustitución algebraica despejes de primer grado factorización fracciones algebraicas, cuadráticas, sistemas problemas verbales y división de polinomios y residuos. Cada nivel tiene su cantidad de problemas y tiempo propios, cuatro opciones únicas, reinicio obligatorio tras error o tiempo agotado y navegación libre. Los niveles 7 y 9 tienen dos pasos por problema. Generadores, controlador de partida y presentación independientes para añadir niveles. Incluye pruebas automatizadas de generación y reglas del juego.
+
+## Examen de Física
+
+Sesión en `examen-de-fisica/`: guía de capacitancia, placas paralelas, tablas de materiales y conexiones en serie/paralelo. Incluye ejemplos numéricos resueltos y resumen de fórmulas; no es una evaluación.
+
+## Repaso en física
+
+`repaso-en-fisica/`: sesión publicada con nueve actividades: prefijos del SI, conversiones, notación científica, Coulomb, electricidad básica, Ohm/potencia/Joule, Kirchhoff/FEM/capacitancia, práctica personalizada y laboratorio de circuitos. Cada actividad conserva sus recursos e interacciones; el contrato está en el README de la sesión.
+
+## Identidad visual
+
+Casillero y cabecera roja con nombre blanco marfil y adornos históricos SVG (templo clásico, rosa de los vientos y libro). Recursos en recursos/identidad.css e historia-*.svg. Compartidos únicamente por la portada y este índice; selector de casillero raul-erik. Fondo crema con patrón histórico. Tarjetas de sesiones y sus acentos originales conservados. Revisar ambos consumidores al editar la identidad.
+
+La portada reutiliza el banner completo del índice y sus ajustes para móvil, centrado y a escala del 75 % en ancho y alto. La reducción conserva sus proporciones, texto y adornos; se aplica desde los estilos de la portada y no altera el banner interior.

@@ -1,66 +1,30 @@
-# Gestión de asesores, alumnos y sesiones
+# Gestión de casilleros y sesiones
 
 ## Fuente de verdad
 
-No existe un JSON central que deba editarse manualmente. La información vive junto a cada módulo:
+- `/Casilleros/[estudiante]/usuario.json`: ID, slug, nombre, estado, ruta y personalización del banner.
+- `/Casilleros/[estudiante]/[sesion]/sesion.json`: usuario propietario, fecha editorial, estado, ruta y contenido real.
 
-- `/asesores/[asesor]/maestro.json`: identidad, ubicación, modalidad, disponibilidad, precios, presentación y metodología.
-- `/asesores/[asesor]/[alumno]/usuario.json`: asesor propietario, identidad operativa y personalización del casillero.
-- `/asesores/[asesor]/[alumno]/[sesion]/sesion.json`: alumno propietario, fecha editorial, estado, ruta y contrato de contenido.
+`npm run catalogo` genera los derivados versionados `recursos/datos/catalogo.json` y `recursos/datos/academia.json`. No los edites a mano. La lista `alumnos` de `academia.json` reúne todos los casilleros y sus sesiones.
 
-`npm run catalogo` genera dos derivados versionados:
+## Agregar un casillero
 
-- `recursos/datos/catalogo.json`: módulos publicables del proyecto;
-- `recursos/datos/academia.json`: relación maestro → alumnos → sesiones utilizada por la interfaz.
+1. Usa `/plantillas/alumno/` como punto de partida para `/Casilleros/[slug]/`.
+2. Completa `usuario.json`: ID y slug únicos, nombre visible, ruta, estado y personalización.
+3. Actualiza `data-alumno-id`, título y textos de `index.html`; conserva los recursos locales existentes al trasladar un estudiante.
+4. Retira `nueva-sesion/` de la nueva carpeta si todavía no habrá una sesión.
+5. Usa `estado: activo`, genera el catálogo y valida.
 
-Nunca edites los archivos generados directamente.
+La portada lo incorpora automáticamente. Sus colores y símbolo proceden de `personalizacion`. Los banners con identidad exclusiva reutilizan su CSS local, enlazado desde la portada y su índice. No dupliques sus imágenes ni estilos.
 
-La interfaz usa **asesor**, **salón** y **casillero**. Los nombres técnicos `maestro.json`, `maestro` y `alumno` se conservan para mantener compatibles las rutas y herramientas existentes.
+## Sesiones independientes
 
-## Agregar un asesor
+Cada sesión puede seguir su propia estructura, diseño y reglas. El comando `npm run crear-sesion -- "Estudiante" "Título" [AAAA-MM-DD]` crea solo la entrada y los metadatos mínimos. Consulta [Crear una sesión](creacion-de-sesiones.md).
 
-1. Copia `/plantillas/maestro/` a `/asesores/[slug-del-asesor]/`.
-2. Sustituye los campos provisionales de `maestro.json`, conservando un ID técnico estable y un `slug` público; configura `modalidad.tipo` y, para grupos, `modalidad.maximoAlumnos`; guarda su imagen en `recursos/` o reutiliza una existente.
-3. Actualiza `data-maestro-id`, título y metadatos de `index.html`.
-4. Usa `estado: "activo"` cuando la información esté completa.
-5. Ejecuta catálogo y validación.
+Para incorporar una sesión ya desarrollada, conserva íntegra su carpeta, enlaza el ID del casillero en `usuario`, ajusta la ruta y documenta sus dependencias reales. Sus componentes opcionales describen lo que existe. No hay que editar listas manuales ni el índice del alumno.
 
-No hay que editar la portada ni `/asesores/index.html`.
+## Visibilidad y actividad
 
-## Agregar un alumno
+Casilleros: `activo` o `inactivo`; plantillas: `plantilla`. Sesiones: `publicado`, `borrador`, `archivado` o `plantilla`. Solo los casilleros activos y las sesiones publicadas aparecen en la interfaz.
 
-1. Copia `/plantillas/alumno/` a `/asesores/[asesor]/[id-estable-del-alumno]/`.
-2. Completa `usuario.json`, especialmente `id`, `slug`, `ruta`, `maestro`, `estado` y `personalizacion`.
-3. Actualiza el ID y los textos del `index.html`.
-4. Elimina `nueva-sesion/` de la copia si todavía no habrá una sesión real.
-5. Ejecuta catálogo y validación.
-
-El alumno aparecerá en el salón correcto. Todos los casilleros usan las mismas dimensiones; color, fondo y símbolo proceden de `personalizacion`.
-
-## Agregar o actualizar una sesión
-
-Para una **sesión vanilla visible**, usa `npm run crear-sesion -- "Asesor" "Alumno" "Título"`. Crea la carpeta con su contrato de entrega y genera los índices automáticamente. Consulta [Crear una sesión](creacion-de-sesiones.md). Una vez creada, sustituir su carpeta en la misma ruta no requiere registro adicional ni edición manual de archivos externos. Regenera catálogo y valida cuando incorpores una versión; si solo cambia el contenido, la página ya sirve los archivos nuevos directamente.
-
-Para el flujo manual de contenido inicialmente oculto:
-
-1. Copia `/plantillas/alumno/nueva-sesion/` a `/asesores/[asesor]/[alumno]/[slug]/`, o sustituye una sesión existente conservando su ruta.
-2. Completa `sesion.json` con un ID globalmente único, un `slug` para la URL, el ID del alumno, objetivo y componentes reales.
-3. Nosotros asignamos `fecha` en formato `AAAA-MM-DD` al incorporar o actualizar la sesión.
-4. Conserva `borrador` hasta que esté lista y cambia a `publicado` para anunciarla.
-5. Ejecuta catálogo y validación.
-
-No hay que editar `usuario.json`, el índice del alumno ni `/asesores/index.html`. La fecha más reciente de sus sesiones publicadas determina la posición del alumno dentro del salón.
-
-## Estados y visibilidad
-
-| Entidad | Visible | No visible |
-|---|---|---|
-| Maestro | `activo` | `inactivo`, `plantilla` |
-| Alumno | `activo` | `inactivo`, `plantilla` |
-| Sesión | `publicado` | `borrador`, `archivado`, `plantilla` |
-
-La exclusión evita tarjetas y registros en las interfaces públicas. Como el sitio se despliega de forma estática, una carpeta versionada no debe contener información privada aunque no esté enlazada.
-
-## Actividad reciente
-
-El generador toma la fecha más reciente entre las sesiones publicadas de cada alumno. Ordena primero por esa fecha de forma descendente y, en caso de empate o ausencia de sesiones, por nombre. La regla es determinista y no depende de la fecha del sistema de archivos.
+La fecha editorial `AAAA-MM-DD` se asigna al incorporar o actualizar una sesión. La fecha más reciente de las sesiones publicadas ordena los casilleros en la portada. Los empates se resuelven por nombre e ID; los casilleros sin sesiones aparecen al final. El buscador conserva este orden y la paginación muestra como máximo 7 resultados.

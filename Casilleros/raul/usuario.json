@@ -1,0 +1,16 @@
+{
+  "id": "raul-erik",
+  "slug": "raul",
+  "tipo": "usuario",
+  "titulo": "Espacio de Raúl",
+  "nombreVisible": "Raúl",
+  "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
+  "estado": "activo",
+  "ruta": "/Casilleros/raul/",
+  "personalizacion": {
+    "simbolo": "R",
+    "acento": "#1f5fbd",
+    "fondo": "#eef4fb"
+  },
+  "almacenamientoLocal": false
+}

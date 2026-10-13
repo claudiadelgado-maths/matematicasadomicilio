@@ -1,0 +1,16 @@
+{
+  "id": "jimena-elizabeth",
+  "slug": "jimena",
+  "tipo": "usuario",
+  "titulo": "El casillero de Jimena",
+  "nombreVisible": "Jimena",
+  "descripcion": "Sesiones universitarias de cálculo paramétrico e integrales de curva.",
+  "estado": "activo",
+  "ruta": "/Casilleros/jimena/",
+  "personalizacion": {
+    "simbolo": "J",
+    "acento": "#6b5878",
+    "fondo": "#f0ebf3"
+  },
+  "almacenamientoLocal": false
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360" fill="none">
+  <defs><clipPath id="balon"><circle r="73"/></clipPath></defs>
+  <path d="M18 30H255M18 30V330H257M30 119H78V243H30" stroke="#e5f2d8" stroke-width="2" opacity=".35"/>
+  <path d="m55 66 28-15m-4 31 28-15m-4 31 28-15" stroke="#d6e879" stroke-width="6"/>
+  <path d="M269 162C231 109 166 112 141 147" stroke="#cfdf7c" stroke-width="2" stroke-dasharray="7 7"/>
+  <path d="m257 142 13 22-25-8" stroke="#cfdf7c" stroke-width="2"/>
+  <ellipse cx="141" cy="311" rx="91" ry="13" fill="#062f28" opacity=".5"/>
+  <g transform="translate(130 235) rotate(-18)">
+    <circle r="77" fill="#f5f4de" stroke="#a6c49c" stroke-width="2"/>
+    <g clip-path="url(#balon)" stroke="#173c33" stroke-width="2.5" stroke-linejoin="round">
+      <path d="m0-31 30 22-11 35h-38L-30-9Z" fill="#163e34"/>
+      <path d="m-14-78 14 22 15-22M71-32l-29 6 8 30 29 2M45 65 27 43 3 62l9 22M-57 56-32 40-48 14-77 23M-70-43l33 3 7-30" fill="#163e34"/>
+      <path d="M0-56v25M42-26 30-9M27 43 19 26M-32 40-19 26M-37-40-30-9M15-78l27 52M50 4 45 65M3 62-57 56M-48 14-70-43M-30-70-14-78"/>
+    </g>
+    <path d="M-48-35Q-25-63 6-61" stroke="white" stroke-width="6" stroke-linecap="round" opacity=".6"/>
+  </g>
+  <path d="m232 64 5 13 14 1-11 9 3 14-11-8-12 8 4-14-11-9 14-1Z" fill="#d6e879"/>
+  <g fill="#d6e879"><circle cx="244" cy="283" r="3"/><circle cx="43" cy="169" r="3"/></g>
+</svg>

@@ -5,7 +5,7 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 ## Principios de la arquitectura
 
 - **Módulos aislados:** cada tema, ejercicio, juego, calculadora, examen, usuario y sesión vive en una carpeta identificable.
-- **Fuente directa:** todos los asesores viven en `asesores/`; cada alumno es una subcarpeta directa de su asesor y cada sesión una subcarpeta directa de su alumno.
+- **Fuente directa:** cada estudiante vive directamente en `Casilleros/[estudiante]/`; sus sesiones son subcarpetas de su casillero. La portada reúne todos los banners.
 - **URLs físicas:** la URL pública termina en `/` y corresponde directamente a una carpeta versionada con `index.html`.
 - **Recursos locales:** cada página conserva junto a su `index.html` su propio `estilos.css`; la lógica y los estilos repetidos dentro de una misma familia se comparten desde el ancestro común más cercano.
 - **Base global mínima:** solo la identidad, la estructura común, la navegación y los SVG de marca permanecen compartidos.
@@ -34,21 +34,18 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 │   │       └── calculadoras/[calculadora]/
 │   ├── calculadoras/
 │   └── examenes/[examen]/
-├── asesores/
-│   ├── index.html
-│   ├── recursos/js/
-│   └── [asesor]/
-│       ├── maestro.json
+├── Casilleros/
+│   ├── recursos/            código compartido por sus consumidores reales
+│   └── [estudiante]/
+│       ├── usuario.json
 │       ├── index.html
 │       ├── estilos.css
-│       ├── recursos/
-│       └── [alumno]/
-│           ├── usuario.json
+│       ├── README.md
+│       └── [sesion]/
+│           ├── sesion.json
 │           ├── index.html
 │           ├── estilos.css
-│           └── [sesion]/
-│               ├── index.html
-│               └── estilos.css
+│           └── recursos propios y componentes disponibles
 ├── plantillas/
 ├── recursos/
 │   ├── css/base.css
@@ -60,6 +57,8 @@ Sitio estático de Matemáticas a Domicilio: información del servicio, bibliote
 ```
 
 El árbol detallado y las responsabilidades están en [documentacion/arquitectura.md](documentacion/arquitectura.md).
+
+La portada conserva el hero original y el pie negro. Debajo del hero, sobre fondo crema, muestra un buscador por nombre y los banners de todos los casilleros activos, sin encabezados, en páginas de 7. El orden es por sesión publicada más reciente, con desempate por nombre. La información institucional permanece en [Nosotros](nosotros/README.md).
 
 ## Trabajar en una sola carpeta
 
@@ -79,7 +78,9 @@ Una IA que reciba únicamente esa carpeta debe leer primero su `README.md` y su 
 - `/recursos/svg/` para la identidad general;
 - un recurso compartido de su propia familia, cuando el `README.md` del módulo lo documente.
 
-El diseño particular de una página, un asesor, un alumno o una sesión no se agrega a los archivos globales. Permanece en su carpeta o en un recurso compartido por su familia cuando la implementación es exactamente la misma; no se copia en cada descendiente.
+El diseño particular de una página, un alumno o una sesión no se agrega a los archivos globales. Permanece en su carpeta o en un recurso compartido por su familia cuando la implementación es exactamente la misma; no se copia en cada descendiente.
+
+Cada sesión es un mundo independiente: conserva su diseño, reglas, interacciones y recursos. Las plantillas solo aportan navegación y metadatos mínimos; no establecen un formato educativo común.
 
 ## Desarrollo local
 
@@ -90,14 +91,14 @@ npm run catalogo
 python -m http.server 8000
 ```
 
-Después visita `http://localhost:8000/`. Las rutas funcionan porque `asesores/`, cada asesor, cada alumno y cada sesión existen físicamente en la rama. Abrir los archivos directamente con `file://` no representa correctamente la navegación de GitHub Pages.
+Después visita `http://localhost:8000/`. Las rutas funcionan porque `Casilleros/`, cada alumno y cada sesión existen físicamente en la rama. Abrir los archivos directamente con `file://` no representa correctamente la navegación de GitHub Pages.
 
 ## Comprobaciones
 
 Para crear una sesión mínima visible y lista para entregar al profesor:
 
 ```powershell
-npm run crear-sesion -- "Erik" "Andres" "Título de la nueva sesión"
+npm run crear-sesion -- "Andres" "Título de la nueva sesión"
 ```
 
 El comando crea la carpeta, genera los índices y valida el proyecto. No sobrescribe carpetas existentes. El flujo de entrega y reemplazo está en [Crear una sesión](documentacion/creacion-de-sesiones.md).
@@ -150,14 +151,13 @@ GitHub Pages publica directamente los archivos de `main`. No existe fase de cons
 - [Crear un juego](documentacion/creacion-de-juegos.md)
 - [Crear una calculadora](documentacion/creacion-de-calculadoras.md)
 - [Crear un examen](documentacion/creacion-de-examenes.md)
-- [Crear un asesor](documentacion/creacion-de-asesores.md)
 - [Crear un usuario](documentacion/creacion-de-usuarios.md)
 - [Crear una sesión](documentacion/creacion-de-sesiones.md)
-- [Gestión de asesores, alumnos y sesiones](documentacion/gestion-academica.md)
+- [Gestión de casilleros y sesiones](documentacion/gestion-academica.md)
 - [Publicación y validación](documentacion/publicacion.md)
 
 ## Datos globales sensibles al cambio
 
-El número de WhatsApp visible es `999 129 34 97` y el enlace usa `529991293497`. El correo es `contacto@matematicasadomicilio.com`. Los precios, duración, modalidad, máximo de alumnos, ubicación y disponibilidad de cada asesor se administran técnicamente en su `maestro.json` y se muestran en Salones y en el perfil del asesor; no deben duplicarse manualmente en la portada.
+El número de WhatsApp visible es `999 129 34 97` y el enlace usa `529991293497`. El correo es `contacto@matematicasadomicilio.com`.
 
 El proyecto no debe presentar testimonios, credenciales, resultados, clientes, redes sociales ni servicios que no hayan sido confirmados.

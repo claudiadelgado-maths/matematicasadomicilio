@@ -1,0 +1,16 @@
+{
+  "id": "pedro-cortes",
+  "slug": "pedro",
+  "tipo": "usuario",
+  "titulo": "El casillero de Pedro",
+  "nombreVisible": "Pedro",
+  "descripcion": "Sesiones universitarias de teoría y aplicación del color.",
+  "estado": "activo",
+  "ruta": "/Casilleros/pedro/",
+  "personalizacion": {
+    "simbolo": "P",
+    "acento": "#b21f78",
+    "fondo": "#faeaf3"
+  },
+  "almacenamientoLocal": false
+}

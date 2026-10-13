@@ -1,0 +1,16 @@
+{
+  "id": "alejandrina",
+  "slug": "alejandrina",
+  "tipo": "usuario",
+  "titulo": "Espacio de Alejandrina",
+  "nombreVisible": "Alejandrina",
+  "descripcion": "Espacio de sesiones y recursos personalizados.",
+  "estado": "activo",
+  "ruta": "/Casilleros/alejandrina/",
+  "personalizacion": {
+    "simbolo": "A",
+    "acento": "#15784e",
+    "fondo": "#302044"
+  },
+  "almacenamientoLocal": false
+}

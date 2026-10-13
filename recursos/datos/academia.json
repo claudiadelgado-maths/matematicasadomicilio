@@ -1,1113 +1,768 @@
 {
-  "esquema": 1,
-  "generadoDesde": "maestro.json, usuario.json y sesion.json",
-  "maestros": [
+  "esquema": 2,
+  "generadoDesde": "usuario.json y sesion.json",
+  "alumnos": [
     {
-      "id": "claudia",
-      "nombreVisible": "Claudia",
-      "rol": "Asesora",
-      "titulo": "Claudia",
-      "descripcion": "Asesora multidisciplinar para alumnos curiosos que quieren explorar, crear y aprender más allá de los contenidos habituales de la escuela.",
-      "sobre": [
-        "Claudia reúne experiencia en matemáticas, programación, marketing, publicidad, educación, moda, turismo y administración para conectar ideas de distintas áreas.",
-        "Acompaña especialmente a alumnos de alto rendimiento que desean ampliar sus conocimientos, desarrollar nuevas habilidades y convertir su curiosidad en proyectos propios."
-      ],
-      "metodologia": [
-        "Parte de una pregunta interesante y ayuda al alumno a descubrir qué necesita aprender para responderla.",
-        "Propone retos, recursos y pistas que favorecen la autonomía sin dejar al estudiante solo durante el proceso.",
-        "Relaciona diferentes disciplinas para que cada aprendizaje tenga un propósito visible y pueda utilizarse en situaciones nuevas.",
-        "Celebra la curiosidad, la experimentación y la capacidad de explicar con palabras propias lo que se ha descubierto."
-      ],
-      "estado": "activo",
-      "ruta": "/asesores/claudia/",
-      "imagen": "/asesores/claudia/recursos/claudia.jpg",
-      "imagenAlt": "Claudia, asesora de Matemáticas a Domicilio",
-      "banner": {
-        "colorInicial": "#6f3dc4",
-        "colorFinal": "#ef6f91"
+      "id": "andres",
+      "nombreVisible": "Andrés",
+      "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+      "ruta": "/Casilleros/andres/",
+      "personalizacion": {
+        "simbolo": "A",
+        "acento": "#195c40",
+        "fondo": "#113f31"
       },
-      "ubicacion": {
-        "pais": "España",
-        "region": "Andalucía",
-        "ciudad": "Málaga"
-      },
-      "modalidad": {
-        "tipo": "individual"
-      },
-      "disponibilidad": {
-        "aceptaNuevosAlumnos": true,
-        "etiquetaDisponible": "Aceptando nuevos alumnos",
-        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-      },
-      "precios": [
+      "ultimaActividad": "2026-10-13",
+      "sesiones": [
         {
-          "id": "sesion-online-60",
-          "titulo": "Sesión",
-          "duracionMinutos": 60,
-          "importe": 120,
-          "moneda": "EUR",
-          "nota": "Incluye orientación individual y materiales preparados para la sesión."
-        }
-      ],
-      "alumnos": [
-        {
-          "id": "elyan-claudia",
-          "nombreVisible": "Elyan",
-          "descripcion": "Sumas molonas y una aventura de restas para explorar, jugar y descubrir. 3.º de Primaria.",
-          "ruta": "/asesores/claudia/elyan/",
-          "personalizacion": {
-            "simbolo": "🐰",
-            "acento": "#6f3dc4",
-            "fondo": "#f4efff"
-          },
-          "ultimaActividad": "2026-10-07",
-          "sesiones": [
-            {
-              "id": "bosque-restas-elyan",
-              "titulo": "🍃 El bosque de las restas",
-              "descripcion": "De Pollito aprendiz a Super Dinosaurio Rex Mega pro: 55 misiones, 11 rangos con iconos propios, premios de tres estrellas y una ventana de juego para vertical y horizontal. Incluye restas de tres cifras.",
-              "fecha": "2026-10-07",
-              "ruta": "/asesores/claudia/elyan/bosque-de-las-restas/"
-            },
-            {
-              "id": "sumas-molonas-elyan",
-              "titulo": "✨ Sumas Molonas",
-              "descripcion": "🐰 Seis juegos para saltar, construir números con billetes y descubrir las llevadas, con voz opcional.",
-              "fecha": "2026-10-01",
-              "ruta": "/asesores/claudia/elyan/sumas-molonas/"
-            }
-          ]
+          "id": "interes-simple-y-compuesto-andres",
+          "titulo": "Interés simple y compuesto",
+          "descripcion": "Comparación sencilla de interés simple y compuesto, tabla anual y dos ejercicios con respuesta.",
+          "fecha": "2026-10-13",
+          "ruta": "/Casilleros/andres/interes-simple-y-compuesto/"
         },
         {
-          "id": "luca-claudia",
-          "nombreVisible": "Luca",
-          "descripcion": "Tres aventuras cortas para comprar, medir y jugar con las horas.",
-          "ruta": "/asesores/claudia/luca/",
-          "personalizacion": {
-            "simbolo": "🚀",
-            "acento": "#6f3dc4",
-            "fondo": "#f4efff"
-          },
-          "ultimaActividad": "2026-08-19",
-          "sesiones": [
-            {
-              "id": "consigue-el-cambio-luca",
-              "titulo": "Consigue el cambio",
-              "descripcion": "Una pequeña tienda para descubrir cuánto dinero regresa después de pagar.",
-              "fecha": "2026-08-19",
-              "ruta": "/asesores/claudia/luca/consigue-el-cambio/"
-            },
-            {
-              "id": "cuanto-mide-cuanto-pesa-luca",
-              "titulo": "¿Cuánto mide? ¿Cuánto pesa?",
-              "descripcion": "Un laboratorio de animales para explorar qué descubrimos con una báscula y con una regla.",
-              "fecha": "2026-08-17",
-              "ruta": "/asesores/claudia/luca/cuanto-mide-cuanto-pesa/"
-            },
-            {
-              "id": "las-horas-luca",
-              "titulo": "Las horas",
-              "descripcion": "Un reloj grande para mover la manecilla y resolver pequeños retos con horas exactas.",
-              "fecha": "2026-08-15",
-              "ruta": "/asesores/claudia/luca/las-horas/"
-            }
-          ]
+          "id": "teorema-de-tales-andres",
+          "titulo": "Teorema de Tales",
+          "descripcion": "Sesión interactiva sobre proporcionalidad en configuraciones con rectas paralelas.",
+          "fecha": "2026-09-22",
+          "ruta": "/Casilleros/andres/teorema-de-tales/"
+        },
+        {
+          "id": "porcentajes-andres",
+          "titulo": "Porcentajes",
+          "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
+          "fecha": "2026-08-10",
+          "ruta": "/Casilleros/andres/porcentajes/"
         }
       ]
     },
     {
-      "id": "cortes",
-      "nombreVisible": "Cortés",
-      "rol": "Asesor",
-      "titulo": "Cortés",
-      "descripcion": "Dibujante y diseñador gráfico que acompaña materias de diseño y dibujo mediante explicaciones visuales, práctica compartida y referencias de la cultura pop.",
-      "sobre": [
-        "Cortés es un dibujante y diseñador gráfico que disfruta la cultura pop y procura que sus sesiones sean creativas, cercanas y agradables.",
-        "Se enfoca en materias relacionadas con diseño y dibujo, desde fundamentos del color hasta herramientas geométricas útiles para construir imágenes."
-      ],
-      "metodologia": [
-        "Dibuja junto con el alumno para que cada concepto aparezca dentro de una decisión visual concreta.",
-        "Explica mientras construye: muestra el trazo, la selección de color o la relación geométrica y verbaliza por qué funciona.",
-        "Utiliza referencias de diseño y cultura pop para reconocer los conceptos en imágenes familiares.",
-        "Alterna observación y práctica para que el alumno pruebe inmediatamente cada idea y reciba retroalimentación."
-      ],
-      "estado": "activo",
-      "ruta": "/asesores/cortes/",
-      "imagen": "/asesores/cortes/recursos/cortes.jpg",
-      "imagenAlt": "Personaje colorido con gafas pixeladas, imagen del salón de Cortés",
-      "imagenAjuste": "cover",
-      "banner": {
-        "colorInicial": "#17152c",
-        "colorFinal": "#8b1e69"
+      "id": "renata-elizabeth",
+      "nombreVisible": "Renata",
+      "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
+      "ruta": "/Casilleros/renata/",
+      "personalizacion": {
+        "simbolo": "R",
+        "acento": "#315e46",
+        "fondo": "#e8eedb"
       },
-      "ubicacion": {
-        "pais": "México",
-        "region": "Quintana Roo",
-        "ciudad": "Cancún"
-      },
-      "modalidad": {
-        "tipo": "individual"
-      },
-      "disponibilidad": {
-        "aceptaNuevosAlumnos": true,
-        "etiquetaDisponible": "Acepta nuevos alumnos",
-        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-      },
-      "precios": [
+      "ultimaActividad": "2026-10-13",
+      "sesiones": [
         {
-          "id": "sesion-individual-45",
-          "titulo": "Sesión",
-          "duracionMinutos": 45,
-          "importe": 350,
-          "moneda": "MXN",
-          "nota": "Sesión individual de diseño o dibujo con explicación visual y práctica guiada."
-        }
-      ],
-      "alumnos": [
-        {
-          "id": "pamela-cortes",
-          "nombreVisible": "Pamela",
-          "descripcion": "Sesiones de secundaria con geometría visual y práctica interactiva.",
-          "ruta": "/asesores/cortes/pamela/",
-          "personalizacion": {
-            "simbolo": "P",
-            "acento": "#087f8c",
-            "fondo": "#e5f5f5"
-          },
-          "ultimaActividad": "2026-08-20",
-          "sesiones": [
-            {
-              "id": "teorema-pitagoras-pamela",
-              "titulo": "Teorema de Pitágoras",
-              "descripcion": "Relación entre los lados de un triángulo rectángulo y práctica dinámica con respuestas enteras o raíces exactas.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/cortes/pamela/teorema-de-pitagoras/"
-            }
-          ]
+          "id": "determinantes-2x2-renata-elizabeth",
+          "titulo": "Determinantes 2 × 2",
+          "descripcion": "Regla ad − bc, un ejemplo resuelto y tres ejercicios con respuesta.",
+          "fecha": "2026-10-13",
+          "ruta": "/Casilleros/renata/determinantes-2x2/"
         },
         {
-          "id": "pedro-cortes",
-          "nombreVisible": "Pedro",
-          "descripcion": "Sesiones universitarias de teoría y aplicación del color.",
-          "ruta": "/asesores/cortes/pedro/",
-          "personalizacion": {
-            "simbolo": "P",
-            "acento": "#b21f78",
-            "fondo": "#faeaf3"
-          },
-          "ultimaActividad": "2026-08-20",
-          "sesiones": [
-            {
-              "id": "color-modelos-pedro",
-              "titulo": "1. El color y los modelos del color",
-              "descripcion": "Percepción del color y diferencias de uso entre los modelos RGB, CMYK y HSL.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/cortes/pedro/color-y-modelos-del-color/"
-            },
-            {
-              "id": "propiedades-circulo-cromatico-pedro",
-              "titulo": "2. Propiedades del color y círculo cromático",
-              "descripcion": "Matiz, saturación, luminosidad y organización relacional del círculo cromático.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/cortes/pedro/propiedades-del-color-y-circulo-cromatico/"
-            },
-            {
-              "id": "armonia-temperaturas-pedro",
-              "titulo": "3. Armonía del color y temperaturas",
-              "descripcion": "Construcción de paletas análogas, complementarias y triádicas; lectura expresiva de colores cálidos y fríos.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/cortes/pedro/armonia-del-color-y-temperaturas/"
-            },
-            {
-              "id": "contraste-contexto-pedro",
-              "titulo": "4. Contraste y contexto",
-              "descripcion": "Contraste de valor, saturación, temperatura y extensión; influencia del entorno en la percepción del color.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/cortes/pedro/contraste-y-contexto/"
-            }
-          ]
+          "id": "espacio-vectorial-renata",
+          "titulo": "1. Propiedades de un espacio vectorial",
+          "descripcion": "Axiomas y criterio de subespacio con fórmulas revelables, demostraciones, contraejemplos y práctica en vectores y polinomios.",
+          "fecha": "2026-09-03",
+          "ruta": "/Casilleros/renata/propiedades-de-un-espacio-vectorial/"
+        },
+        {
+          "id": "matrices-operaciones-renata",
+          "titulo": "2. Matrices y sus operaciones",
+          "descripcion": "Dimensiones, suma, resta, escalares, producto matricial y transpuesta con fórmulas revelables, ejemplos guiados y práctica.",
+          "fecha": "2026-09-03",
+          "ruta": "/Casilleros/renata/matrices-y-operaciones/"
         }
       ]
     },
     {
-      "id": "elizabeth",
-      "nombreVisible": "Elizabeth",
-      "rol": "Asesora",
-      "titulo": "Elizabeth",
-      "descripcion": "Asesora de matemáticas universitarias especializada en Álgebra Lineal y Cálculo I, II y III, con una enseñanza ordenada, paciente y rigurosa.",
-      "sobre": [
-        "Elizabeth trabaja con estudiantes que buscan comprender las matemáticas con mayor profundidad, reforzar una materia, recuperar bases o prepararse para evaluaciones universitarias.",
-        "Cuenta con experiencia acompañando a estudiantes de ingeniería, ciencias y otras carreras con formación matemática, adaptando el ritmo y los ejercicios a cada dificultad."
-      ],
-      "metodologia": [
-        "Identifica primero qué conceptos domina el alumno y dónde se originan sus dificultades.",
-        "Explica cada tema desde su significado antes de introducir procedimientos y fórmulas.",
-        "Combina ejemplos guiados con ejercicios que el estudiante debe resolver de manera independiente.",
-        "Utiliza gráficas, interpretaciones geométricas y distintas representaciones cuando ayudan a comprender conceptos abstractos.",
-        "Corrige errores mediante preguntas y pistas antes de mostrar directamente la solución.",
-        "Mantiene un seguimiento de los errores recurrentes para retomarlos en sesiones posteriores.",
-        "Adapta los ejercicios y recursos de cada sesión al progreso individual del estudiante."
-      ],
-      "estado": "activo",
-      "ruta": "/asesores/elizabeth/",
-      "imagen": "/asesores/elizabeth/recursos/elizabeth.jpg",
-      "imagenAlt": "Ilustración de mujer rubia con detalles verdes, imagen del salón de Elizabeth",
-      "imagenAjuste": "cover",
-      "banner": {
-        "colorInicial": "#17241e",
-        "colorFinal": "#62754f"
+      "id": "kenisa-erik",
+      "nombreVisible": "KENISA",
+      "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
+      "ruta": "/Casilleros/kenisa/",
+      "personalizacion": {
+        "simbolo": "K",
+        "acento": "#205c3e",
+        "fondo": "#ffacd2"
       },
-      "ubicacion": {
-        "pais": "México",
-        "region": "Nuevo León",
-        "ciudad": "San Pedro"
-      },
-      "modalidad": {
-        "tipo": "individual"
-      },
-      "disponibilidad": {
-        "aceptaNuevosAlumnos": true,
-        "etiquetaDisponible": "Aceptando nuevos alumnos",
-        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-      },
-      "precios": [
+      "ultimaActividad": "2026-10-10",
+      "sesiones": [
         {
-          "id": "sesion-individual-90",
-          "titulo": "Sesión",
-          "duracionMinutos": 90,
-          "importe": 650,
-          "moneda": "MXN",
-          "nota": "Sesión individual universitaria con teoría, ejemplos guiados y ejercicios adaptados al progreso del estudiante."
-        }
-      ],
-      "alumnos": [
-        {
-          "id": "renata-elizabeth",
-          "nombreVisible": "Renata",
-          "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
-          "ruta": "/asesores/elizabeth/renata/",
-          "personalizacion": {
-            "simbolo": "R",
-            "acento": "#526a42",
-            "fondo": "#edf2e7"
-          },
-          "ultimaActividad": "2026-09-03",
-          "sesiones": [
-            {
-              "id": "espacio-vectorial-renata",
-              "titulo": "1. Propiedades de un espacio vectorial",
-              "descripcion": "Axiomas y criterio de subespacio con fórmulas revelables, demostraciones, contraejemplos y práctica en vectores y polinomios.",
-              "fecha": "2026-09-03",
-              "ruta": "/asesores/elizabeth/renata/propiedades-de-un-espacio-vectorial/"
-            },
-            {
-              "id": "matrices-operaciones-renata",
-              "titulo": "2. Matrices y sus operaciones",
-              "descripcion": "Dimensiones, suma, resta, escalares, producto matricial y transpuesta con fórmulas revelables, ejemplos guiados y práctica.",
-              "fecha": "2026-09-03",
-              "ruta": "/asesores/elizabeth/renata/matrices-y-operaciones/"
-            }
-          ]
+          "id": "examen-geometria-kenisa-erik",
+          "titulo": "EXAMEN GEOMETRÍA",
+          "descripcion": "Material de estudio, series A–D, práctica de ecuaciones y despejes y LABORATORIO con seis estaciones interactivas de fórmulas.",
+          "fecha": "2026-10-10",
+          "ruta": "/Casilleros/kenisa/examen-geometria/"
         },
         {
-          "id": "gloria-elizabeth",
-          "nombreVisible": "Gloria",
-          "descripcion": "Sesiones universitarias sobre derivación, integración y el teorema fundamental del cálculo.",
-          "ruta": "/asesores/elizabeth/gloria/",
-          "personalizacion": {
-            "simbolo": "G",
-            "acento": "#7a5f37",
-            "fondo": "#f5efe4"
-          },
-          "ultimaActividad": "2026-08-20",
-          "sesiones": [
-            {
-              "id": "reglas-derivacion-gloria",
-              "titulo": "1. Reglas de derivación",
-              "descripcion": "Mapa interactivo de reglas de derivación con método de elección, ejemplos desarrollados y práctica.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/gloria/reglas-de-derivacion/"
-            },
-            {
-              "id": "reglas-integracion-gloria",
-              "titulo": "2. Reglas esenciales de integración",
-              "descripcion": "Antiderivadas y fórmulas de integración con consulta interactiva, ejemplos detallados y práctica.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/gloria/reglas-de-integracion/"
-            },
-            {
-              "id": "teorema-fundamental-gloria",
-              "titulo": "3. Teorema fundamental del cálculo",
-              "descripcion": "Construcción gradual del teorema fundamental con fórmulas revelables, ejemplos y práctica.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/gloria/teorema-fundamental-del-calculo/"
-            }
-          ]
+          "id": "extra-mate-parte-4-kenisa-erik",
+          "titulo": "Extra mate parte 4",
+          "descripcion": "Semejanza y congruencia de triángulos con animaciones y prácticas, más un mini examen de 14 temas de geometría y ecuaciones de Extra mate.",
+          "fecha": "2026-10-09",
+          "ruta": "/Casilleros/kenisa/extra-mate-parte-4/"
         },
         {
-          "id": "jimena-elizabeth",
-          "nombreVisible": "Jimena",
-          "descripcion": "Sesiones universitarias de cálculo paramétrico e integrales de curva.",
-          "ruta": "/asesores/elizabeth/jimena/",
-          "personalizacion": {
-            "simbolo": "J",
-            "acento": "#6b5878",
-            "fondo": "#f0ebf3"
-          },
-          "ultimaActividad": "2026-08-20",
-          "sesiones": [
-            {
-              "id": "derivada-parametrica-jimena",
-              "titulo": "1. Derivada paramétrica",
-              "descripcion": "Pendiente, tangentes, segunda derivada y rapidez de curvas paramétricas con ejemplos detallados.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/jimena/derivada-parametrica/"
-            },
-            {
-              "id": "integral-curva-jimena",
-              "titulo": "2. Integral de curva",
-              "descripcion": "Integrales escalares, elemento de longitud y longitud de arco con ejemplos planos y espaciales.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/jimena/integral-de-curva/"
-            }
-          ]
+          "id": "extra-mate-parte-3-kenisa-erik",
+          "titulo": "Extra mate parte 3",
+          "descripcion": "Explora nombres, partes y fórmulas de los polígonos regulares: batalla arcade, reconocimiento visual y retos para calcular o descubrir datos.",
+          "fecha": "2026-10-07",
+          "ruta": "/Casilleros/kenisa/extra-mate-parte-3/"
         },
         {
-          "id": "kevin-elizabeth",
-          "nombreVisible": "Kevin",
-          "descripcion": "Sesiones universitarias sobre conjuntos, límites y derivada como límite.",
-          "ruta": "/asesores/elizabeth/kevin/",
-          "personalizacion": {
-            "simbolo": "K",
-            "acento": "#4b6670",
-            "fondo": "#e8f0f2"
-          },
-          "ultimaActividad": "2026-08-20",
-          "sesiones": [
-            {
-              "id": "conjuntos-kevin",
-              "titulo": "1. Conjuntos",
-              "descripcion": "Notación, operaciones, cardinalidad, intervalos y leyes de conjuntos con ejemplos detallados.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/kevin/conjuntos/"
-            },
-            {
-              "id": "limites-kevin",
-              "titulo": "2. Límites",
-              "descripcion": "Aproximación, límites laterales, indeterminaciones y comportamiento al infinito con ejemplos detallados.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/kevin/limites/"
-            },
-            {
-              "id": "derivada-limite-kevin",
-              "titulo": "3. La derivada como límite",
-              "descripcion": "Construcción de la derivada desde secantes, cociente incremental y límite con aplicaciones y ejemplos.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/elizabeth/kevin/derivada-como-limite/"
-            }
-          ]
+          "id": "extra-mate-parte-2-kenisa-erik",
+          "titulo": "Extra mate parte 2",
+          "descripcion": "Área y perímetro de triángulos, cuadrados, rectángulos y trapecios. Laboratorios visuales, diagonales y problemas planteados sencillos con ejercicios ilimitados.",
+          "fecha": "2026-10-02",
+          "ruta": "/Casilleros/kenisa/extra-mate-parte-2/"
+        },
+        {
+          "id": "biologia-parte-1-kenisa-erik",
+          "titulo": "Biología parte 1",
+          "descripcion": "Tres actividades para repasar Biología: célula animal con dos cuestionarios internos, biomoléculas y ocho niveles de organización. Guías ilustradas, clasificación, construcción del orden y evaluación con repaso de errores.",
+          "fecha": "2026-09-29",
+          "ruta": "/Casilleros/kenisa/biologia-parte-1/"
+        },
+        {
+          "id": "extra-mate-parte-1-kenisa-erik",
+          "titulo": "Extra mate parte 1",
+          "descripcion": "Repaso visual de geometría: ángulos, paralelas, triángulos, cuadriláteros, trapecios y círculos. Laboratorios y juegos con medidas, propiedades, perímetro, área y conversiones de grados y radianes.",
+          "fecha": "2026-09-29",
+          "ruta": "/Casilleros/kenisa/extra-mate-parte-1/"
+        },
+        {
+          "id": "laboratorio-de-despejes-lineales-kenisa-erik",
+          "titulo": "Laboratorio de despejes lineales",
+          "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
+          "fecha": "2026-09-29",
+          "ruta": "/Casilleros/kenisa/laboratorio-de-despejes-lineales/"
+        },
+        {
+          "id": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
+          "titulo": "Aplicaciones de las funciones trigonométricas",
+          "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
+          "fecha": "2026-09-28",
+          "ruta": "/Casilleros/kenisa/aplicaciones-de-las-funciones-trigonometricas/"
+        },
+        {
+          "id": "teorema-de-pitagoras-kenisa-erik",
+          "titulo": "Teorema de Pitágoras",
+          "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
+          "fecha": "2026-09-28",
+          "ruta": "/Casilleros/kenisa/teorema-de-pitagoras/"
+        },
+        {
+          "id": "funciones-trigonometricas-kenisa-erik",
+          "titulo": "Funciones trigonométricas",
+          "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
+          "fecha": "2026-09-23",
+          "ruta": "/Casilleros/kenisa/funciones-trigonometricas/"
+        },
+        {
+          "id": "despejes-lineales-kenisa",
+          "titulo": "Despejes lineales",
+          "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
+          "fecha": "2026-09-22",
+          "ruta": "/Casilleros/kenisa/despejes-lineales/"
         }
       ]
     },
     {
-      "id": "erick-chan",
-      "nombreVisible": "Erick Chan",
-      "rol": "Asesor",
-      "titulo": "Erick Chan",
-      "descripcion": "Asesor con experiencia en ventas que utiliza la estadística para comparar productos, interpretar información comercial y tomar decisiones útiles en contextos reales.",
-      "sobre": [
-        "Erick Chan tiene experiencia en ventas y utiliza la estadística en su trabajo para comparar teléfonos, accesorios y otros productos.",
-        "Su enfoque busca que cada concepto matemático tenga una utilidad reconocible en la vida diaria o en una situación laboral."
-      ],
-      "metodologia": [
-        "Parte de una pregunta concreta de ventas, tecnología o trabajo para mostrar dónde aparece la matemática.",
-        "Organiza los datos antes de calcular para que el alumno distinga categorías, cantidades y unidades.",
-        "Desarrolla tres ejemplos por sesión y explica qué información aporta cada resultado.",
-        "Cierra cada caso relacionando la interpretación matemática con una decisión útil del contexto real."
-      ],
-      "estado": "activo",
-      "ruta": "/asesores/erick-chan/",
-      "imagen": "/asesores/erick-chan/recursos/erick-chan.jpg",
-      "imagenAlt": "Ilustración en blanco y negro del salón de Erick Chan",
-      "imagenAjuste": "contain",
-      "banner": {
-        "colorInicial": "#171b1c",
-        "colorFinal": "#276b70"
+      "id": "elyan-claudia",
+      "nombreVisible": "Elyan",
+      "descripcion": "Sumas molonas y una aventura de restas para explorar, jugar y descubrir. 3.º de Primaria.",
+      "ruta": "/Casilleros/elyan/",
+      "personalizacion": {
+        "simbolo": "🐰",
+        "acento": "#087254",
+        "fondo": "#fff1d6"
       },
-      "ubicacion": {
-        "pais": "México",
-        "region": "Yucatán",
-        "ciudad": "Mérida"
-      },
-      "modalidad": {
-        "tipo": "individual"
-      },
-      "disponibilidad": {
-        "aceptaNuevosAlumnos": true,
-        "etiquetaDisponible": "Acepta nuevos alumnos",
-        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-      },
-      "precios": [
+      "ultimaActividad": "2026-10-07",
+      "sesiones": [
         {
-          "id": "sesion-individual-60",
-          "titulo": "Sesión",
-          "duracionMinutos": 60,
-          "importe": 200,
-          "moneda": "MXN",
-          "nota": "Sesión individual con ejemplos de estadística aplicados a ventas, tecnología y situaciones de trabajo."
-        }
-      ],
-      "alumnos": [
+          "id": "bosque-restas-elyan",
+          "titulo": "🍃 El bosque de las restas",
+          "descripcion": "De Pollito aprendiz a Super Dinosaurio Rex Mega pro: 55 misiones, 11 rangos con iconos propios, premios de tres estrellas y una ventana de juego para vertical y horizontal. Incluye restas de tres cifras.",
+          "fecha": "2026-10-07",
+          "ruta": "/Casilleros/elyan/bosque-de-las-restas/"
+        },
         {
-          "id": "alex-erick-chan",
-          "nombreVisible": "Alex",
-          "descripcion": "Sesiones de estadística aplicada a ventas y tecnología.",
-          "ruta": "/asesores/erick-chan/alex/",
-          "personalizacion": {
-            "simbolo": "A",
-            "acento": "#276b70",
-            "fondo": "#e7f1f1"
-          },
-          "ultimaActividad": "2026-08-20",
-          "sesiones": [
-            {
-              "id": "graficas-barras-ventas-alex",
-              "titulo": "Gráficas de barras en ventas",
-              "descripcion": "Recorrido interactivo para leer, construir y evaluar gráficas de barras mediante datos de ventas y decisiones rápidas.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/erick-chan/alex/graficas-de-barras-en-ventas/"
-            }
-          ]
+          "id": "sumas-molonas-elyan",
+          "titulo": "✨ Sumas Molonas",
+          "descripcion": "🐰 Seis juegos para saltar, construir números con billetes y descubrir las llevadas, con voz opcional.",
+          "fecha": "2026-10-01",
+          "ruta": "/Casilleros/elyan/sumas-molonas/"
         }
       ]
     },
     {
-      "id": "erik-estrella",
-      "nombreVisible": "Erik",
-      "rol": "Asesor",
-      "titulo": "Erik",
-      "descripcion": "Asesor y administrador de Matemáticas a Domicilio. Coordina sesiones personalizadas y desarrolla materiales adaptados a los objetivos de cada estudiante.",
-      "sobre": [
-        "Erik coordina las asesorías de Matemáticas a Domicilio y prepara experiencias de aprendizaje individuales para estudiantes de secundaria, preparatoria y universidad.",
-        "Su trabajo parte de las necesidades, conocimientos previos y objetivos de cada alumno para convertirlos en una planificación clara y progresiva."
-      ],
-      "metodologia": [
-        "Identifica junto con el estudiante la necesidad concreta y define un objetivo de trabajo verificable.",
-        "Selecciona explicaciones, ejercicios, materiales y herramientas de acuerdo con el proceso particular del alumno.",
-        "Relaciona las matemáticas con situaciones cotidianas y promueve que el estudiante explique, compruebe y utilice lo aprendido.",
-        "Evalúa el avance a partir del objetivo acordado y adapta las sesiones cuando las necesidades del alumno cambian."
-      ],
-      "estado": "activo",
-      "ruta": "/asesores/erik/",
-      "imagen": "/asesores/erik/recursos/admin.jpg",
-      "imagenAlt": "Erik, asesor de Matemáticas a Domicilio",
-      "banner": {
-        "colorInicial": "#11110f",
-        "colorFinal": "#2f5d50"
+      "id": "alejandrina",
+      "nombreVisible": "Alejandrina",
+      "descripcion": "Espacio de sesiones y recursos personalizados.",
+      "ruta": "/Casilleros/alejandrina/",
+      "personalizacion": {
+        "simbolo": "A",
+        "acento": "#15784e",
+        "fondo": "#302044"
       },
-      "ubicacion": {
-        "pais": "México",
-        "region": "Yucatán",
-        "ciudad": "Mérida"
-      },
-      "modalidad": {
-        "tipo": "individual"
-      },
-      "disponibilidad": {
-        "aceptaNuevosAlumnos": true,
-        "etiquetaDisponible": "Aceptando nuevos alumnos",
-        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-      },
-      "precios": [
+      "ultimaActividad": "2026-09-30",
+      "sesiones": [
         {
-          "id": "sesion-domicilio-150",
-          "titulo": "Sesión",
-          "duracionMinutos": 150,
-          "importe": 250,
-          "moneda": "MXN",
-          "nota": "Incluye la planificación y los materiales necesarios para la sesión."
-        }
-      ],
-      "alumnos": [
-        {
-          "id": "kenisa-erik",
-          "nombreVisible": "KENISA",
-          "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
-          "ruta": "/asesores/erik/kenisa/",
-          "personalizacion": {
-            "simbolo": "K",
-            "acento": "#205c3e",
-            "fondo": "#ffacd2"
-          },
-          "ultimaActividad": "2026-10-10",
-          "sesiones": [
-            {
-              "id": "examen-geometria-kenisa-erik",
-              "titulo": "EXAMEN GEOMETRÍA",
-              "descripcion": "Material de estudio, series A–D, práctica de ecuaciones y despejes y LABORATORIO con seis estaciones interactivas de fórmulas.",
-              "fecha": "2026-10-10",
-              "ruta": "/asesores/erik/kenisa/examen-geometria/"
-            },
-            {
-              "id": "extra-mate-parte-4-kenisa-erik",
-              "titulo": "Extra mate parte 4",
-              "descripcion": "Semejanza y congruencia de triángulos con animaciones y prácticas, más un mini examen de 14 temas de geometría y ecuaciones de Extra mate.",
-              "fecha": "2026-10-09",
-              "ruta": "/asesores/erik/kenisa/extra-mate-parte-4/"
-            },
-            {
-              "id": "extra-mate-parte-3-kenisa-erik",
-              "titulo": "Extra mate parte 3",
-              "descripcion": "Explora nombres, partes y fórmulas de los polígonos regulares: batalla arcade, reconocimiento visual y retos para calcular o descubrir datos.",
-              "fecha": "2026-10-07",
-              "ruta": "/asesores/erik/kenisa/extra-mate-parte-3/"
-            },
-            {
-              "id": "extra-mate-parte-2-kenisa-erik",
-              "titulo": "Extra mate parte 2",
-              "descripcion": "Área y perímetro de triángulos, cuadrados, rectángulos y trapecios. Laboratorios visuales, diagonales y problemas planteados sencillos con ejercicios ilimitados.",
-              "fecha": "2026-10-02",
-              "ruta": "/asesores/erik/kenisa/extra-mate-parte-2/"
-            },
-            {
-              "id": "biologia-parte-1-kenisa-erik",
-              "titulo": "Biología parte 1",
-              "descripcion": "Tres actividades para repasar Biología: célula animal con dos cuestionarios internos, biomoléculas y ocho niveles de organización. Guías ilustradas, clasificación, construcción del orden y evaluación con repaso de errores.",
-              "fecha": "2026-09-29",
-              "ruta": "/asesores/erik/kenisa/biologia-parte-1/"
-            },
-            {
-              "id": "extra-mate-parte-1-kenisa-erik",
-              "titulo": "Extra mate parte 1",
-              "descripcion": "Repaso visual de geometría: ángulos, paralelas, triángulos, cuadriláteros, trapecios y círculos. Laboratorios y juegos con medidas, propiedades, perímetro, área y conversiones de grados y radianes.",
-              "fecha": "2026-09-29",
-              "ruta": "/asesores/erik/kenisa/extra-mate-parte-1/"
-            },
-            {
-              "id": "laboratorio-de-despejes-lineales-kenisa-erik",
-              "titulo": "Laboratorio de despejes lineales",
-              "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
-              "fecha": "2026-09-29",
-              "ruta": "/asesores/erik/kenisa/laboratorio-de-despejes-lineales/"
-            },
-            {
-              "id": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
-              "titulo": "Aplicaciones de las funciones trigonométricas",
-              "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
-              "fecha": "2026-09-28",
-              "ruta": "/asesores/erik/kenisa/aplicaciones-de-las-funciones-trigonometricas/"
-            },
-            {
-              "id": "teorema-de-pitagoras-kenisa-erik",
-              "titulo": "Teorema de Pitágoras",
-              "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
-              "fecha": "2026-09-28",
-              "ruta": "/asesores/erik/kenisa/teorema-de-pitagoras/"
-            },
-            {
-              "id": "funciones-trigonometricas-kenisa-erik",
-              "titulo": "Funciones trigonométricas",
-              "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
-              "fecha": "2026-09-23",
-              "ruta": "/asesores/erik/kenisa/funciones-trigonometricas/"
-            },
-            {
-              "id": "despejes-lineales-kenisa",
-              "titulo": "Despejes lineales",
-              "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
-              "fecha": "2026-09-22",
-              "ruta": "/asesores/erik/kenisa/despejes-lineales/"
-            }
-          ]
+          "id": "examen-series-alejandrina",
+          "titulo": "Examen series",
+          "descripcion": "Práctica progresiva de sucesiones y series aritméticas y geométricas, con 8 actividades, mini exámenes fijos y medios con casillas editables.",
+          "fecha": "2026-09-30",
+          "ruta": "/Casilleros/alejandrina/examen-series/"
         },
         {
-          "id": "alejandrina",
-          "nombreVisible": "Alejandrina",
-          "descripcion": "Espacio de sesiones y recursos personalizados.",
-          "ruta": "/asesores/erik/alejandrina/",
-          "personalizacion": {
-            "simbolo": "A",
-            "acento": "#15784e",
-            "fondo": "#302044"
-          },
-          "ultimaActividad": "2026-09-30",
-          "sesiones": [
-            {
-              "id": "examen-series-alejandrina",
-              "titulo": "Examen series",
-              "descripcion": "Práctica progresiva de sucesiones y series aritméticas y geométricas, con 8 actividades, mini exámenes fijos y medios con casillas editables.",
-              "fecha": "2026-09-30",
-              "ruta": "/asesores/erik/alejandrina/examen-series/"
-            },
-            {
-              "id": "series-geometricas-alejandrina",
-              "titulo": "Series geométricas",
-              "descripcion": "Sucesiones, raíces, sumas y medios geométricos con prácticas guiadas, exploradores y una misión aleatoria de 24 retos.",
-              "fecha": "2026-09-22",
-              "ruta": "/asesores/erik/alejandrina/series-geometricas/"
-            },
-            {
-              "id": "alejandrina-medios-y-sumas",
-              "titulo": "Medios y sumas aritméticas",
-              "descripcion": "Medios aritméticos y sumas: ejemplos breves, práctica paso a paso y dos juegos independientes.",
-              "fecha": "2026-09-10",
-              "ruta": "/asesores/erik/alejandrina/medios-y-sumas/"
-            },
-            {
-              "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
-              "titulo": "Fórmulas de sucesiones aritméticas",
-              "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
-              "fecha": "2026-08-28",
-              "ruta": "/asesores/erik/alejandrina/formulas-de-sucesiones/"
-            },
-            {
-              "id": "sucesiones-aritmeticas-sesion-1",
-              "titulo": "Elementos de una sucesión aritmética",
-              "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
-              "fecha": "2026-08-25",
-              "ruta": "/asesores/erik/alejandrina/sucesiones-aritmeticas/"
-            },
-            {
-              "id": "multiplicacion-de-binomios",
-              "titulo": "Multiplicación de binomios",
-              "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
-              "fecha": "2026-08-21",
-              "ruta": "/asesores/erik/alejandrina/multiplicacion-de-binomios/"
-            },
-            {
-              "id": "diagramas-de-arboles",
-              "titulo": "Diagramas de árboles",
-              "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
-              "fecha": "2026-07-29",
-              "ruta": "/asesores/erik/alejandrina/diagramas-de-arboles/"
-            },
-            {
-              "id": "medidas-de-posicion",
-              "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
-              "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
-              "fecha": "2026-07-29",
-              "ruta": "/asesores/erik/alejandrina/medidas-de-posicion/"
-            },
-            {
-              "id": "datos-no-agrupados",
-              "titulo": "Datos no agrupados",
-              "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
-              "fecha": "2026-07-24",
-              "ruta": "/asesores/erik/alejandrina/datos-no-agrupados/"
-            }
-          ]
+          "id": "series-geometricas-alejandrina",
+          "titulo": "Series geométricas",
+          "descripcion": "Sucesiones, raíces, sumas y medios geométricos con prácticas guiadas, exploradores y una misión aleatoria de 24 retos.",
+          "fecha": "2026-09-22",
+          "ruta": "/Casilleros/alejandrina/series-geometricas/"
         },
         {
-          "id": "andres",
-          "nombreVisible": "Andrés",
-          "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
-          "ruta": "/asesores/erik/andres/",
-          "personalizacion": {
-            "simbolo": "A",
-            "acento": "#b84d18",
-            "fondo": "#fff3ec"
-          },
-          "ultimaActividad": "2026-09-22",
-          "sesiones": [
-            {
-              "id": "teorema-de-tales-andres",
-              "titulo": "Teorema de Tales",
-              "descripcion": "Sesión interactiva sobre proporcionalidad en configuraciones con rectas paralelas.",
-              "fecha": "2026-09-22",
-              "ruta": "/asesores/erik/andres/teorema-de-tales/"
-            },
-            {
-              "id": "porcentajes-andres",
-              "titulo": "Porcentajes",
-              "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
-              "fecha": "2026-08-10",
-              "ruta": "/asesores/erik/andres/porcentajes/"
-            }
-          ]
+          "id": "alejandrina-medios-y-sumas",
+          "titulo": "Medios y sumas aritméticas",
+          "descripcion": "Medios aritméticos y sumas: ejemplos breves, práctica paso a paso y dos juegos independientes.",
+          "fecha": "2026-09-10",
+          "ruta": "/Casilleros/alejandrina/medios-y-sumas/"
         },
         {
-          "id": "raul-erik",
-          "nombreVisible": "Raúl",
-          "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
-          "ruta": "/asesores/erik/raul/",
-          "personalizacion": {
-            "simbolo": "R",
-            "acento": "#1f5fbd",
-            "fondo": "#eef4fb"
-          },
-          "ultimaActividad": "2026-09-22",
-          "sesiones": [
-            {
-              "id": "repaso-en-fisica-raul-erik",
-              "titulo": "Repaso en física",
-              "descripcion": "Sesión de repaso organizada por actividades. Incluye prefijos del SI, conversiones, operaciones en notación científica, Ley de Coulomb, electricidad básica, Ley de Ohm, potencia eléctrica, efecto Joule, leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia. Incluye práctica personalizada de errores, variantes numéricas y un laboratorio interactivo de circuitos.",
-              "fecha": "2026-09-22",
-              "ruta": "/asesores/erik/raul/repaso-en-fisica/"
-            },
-            {
-              "id": "raul-erik-examen-de-fisica",
-              "titulo": "Examen de Física",
-              "descripcion": "Guía de capacitancia, corriente alterna, magnetismo y leyes del electromagnetismo, con fórmulas y explicaciones. Incluye dos exámenes teóricos de 18 preguntas cada uno: magnetismo y corriente alterna, con respuestas explicadas.",
-              "fecha": "2026-09-17",
-              "ruta": "/asesores/erik/raul/examen-de-fisica/"
-            },
-            {
-              "id": "raul-erik-practica-de-matematicas",
-              "titulo": "Práctica de Matemáticas",
-              "descripcion": "Cuarenta y seis niveles de juego con operaciones, fracciones y sustitución, despejes, factorización y fracciones algebraicas, cuadráticas, sistemas, problemas verbales y división de polinomios y residuos dinámicos, cuatro respuestas, progreso y tiempo limitado. Reinicio con problemas nuevos al fallar. Cantidad y tiempo editables por nivel.",
-              "fecha": "2026-09-16",
-              "ruta": "/asesores/erik/raul/practica-de-matematicas/"
-            },
-            {
-              "id": "raul-erik-electricidad-3",
-              "titulo": "Electricidad 3",
-              "descripcion": "Explicaciones paso a paso de Joule, Kirchhoff, batería real y capacitores, con ejemplos numéricos resueltos, diagramas y veinte preguntas conceptuales.",
-              "fecha": "2026-09-13",
-              "ruta": "/asesores/erik/raul/electricidad-3/"
-            },
-            {
-              "id": "raul-erik-examen-matematicas",
-              "titulo": "Examen Matemáticas",
-              "descripcion": "Preguntas dinámicas mezcladas, con ayuda por sustitución disponible desde el inicio y recordatorio visual de la división.",
-              "fecha": "2026-09-12",
-              "ruta": "/asesores/erik/raul/examen-matematicas/"
-            },
-            {
-              "id": "raul-erik-repaso-parte-2",
-              "titulo": "Repaso Parte 2",
-              "descripcion": "Laboratorios de notación científica y expresiones algebraicas, más práctica rápida de aritmética, fracciones, potencias y sustitución.",
-              "fecha": "2026-09-11",
-              "ruta": "/asesores/erik/raul/repaso-parte-2/"
-            },
-            {
-              "id": "raul-erik-electricidad-parte-2",
-              "titulo": "Electricidad Parte 2",
-              "descripcion": "Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule: siete laboratorios, veinte comparaciones guiadas y reto conceptual y numérico.",
-              "fecha": "2026-09-10",
-              "ruta": "/asesores/erik/raul/electricidad-parte-2/"
-            },
-            {
-              "id": "raul-erik-matematicas-parte-2",
-              "titulo": "Matemáticas Parte 2",
-              "descripcion": "Factorización algebraica: factor común, agrupación, cuadrados, trinomios, cubos y retos interactivos.",
-              "fecha": "2026-09-10",
-              "ruta": "/asesores/erik/raul/matematicas-parte-2/"
-            },
-            {
-              "id": "raul-erik-repaso",
-              "titulo": "Repaso",
-              "descripcion": "Fracciones, sustitución, despejes sencillos, proporcionalidad directa e inversa y factorización numérica: repaso visual e interactivo.",
-              "fecha": "2026-09-09",
-              "ruta": "/asesores/erik/raul/repaso/"
-            },
-            {
-              "id": "raul-erik-fisica-parte-1",
-              "titulo": "Electricidad 1",
-              "descripcion": "Introducción a magnitudes eléctricas, símbolos, unidades, prefijos del SI y conversiones para el contexto técnico de planta exterior.",
-              "fecha": "2026-09-08",
-              "ruta": "/asesores/erik/raul/fisica-parte-1/"
-            },
-            {
-              "id": "raul-erik-matematicas-parte-1",
-              "titulo": "Matemáticas, parte 1",
-              "descripcion": "Presentación, monomios, polinomios, suma, resta y multiplicación de expresiones algebraicas.",
-              "fecha": "2026-09-08",
-              "ruta": "/asesores/erik/raul/matematicas-parte-1/"
-            }
-          ]
+          "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
+          "titulo": "Fórmulas de sucesiones aritméticas",
+          "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
+          "fecha": "2026-08-28",
+          "ruta": "/Casilleros/alejandrina/formulas-de-sucesiones/"
         },
         {
-          "id": "erik-jose-perez",
-          "nombreVisible": "José Pérez",
-          "descripcion": "Sesiones de matemáticas para construir bases y conectar ideas de ingeniería.",
-          "ruta": "/asesores/erik/jose-perez/",
-          "personalizacion": {
-            "simbolo": "JP",
-            "acento": "#176c80",
-            "fondo": "#eaf5f8"
-          },
-          "ultimaActividad": "2026-09-11",
-          "sesiones": [
-            {
-              "id": "erik-jose-perez-introduccion",
-              "titulo": "Introducción",
-              "descripcion": "Presentación, historia matemática y plan de estudio; después, un recorrido guiado de las bases al cálculo.",
-              "fecha": "2026-09-11",
-              "ruta": "/asesores/erik/jose-perez/introduccion/"
-            }
-          ]
+          "id": "sucesiones-aritmeticas-sesion-1",
+          "titulo": "Elementos de una sucesión aritmética",
+          "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
+          "fecha": "2026-08-25",
+          "ruta": "/Casilleros/alejandrina/sucesiones-aritmeticas/"
         },
         {
-          "id": "jose",
-          "nombreVisible": "José",
-          "descripcion": "Espacio personal para organizar pendientes de estudio.",
-          "ruta": "/asesores/erik/jose/",
-          "personalizacion": {
-            "simbolo": "J",
-            "acento": "#1f5fbd",
-            "fondo": "#eef5ff"
-          },
-          "ultimaActividad": null,
-          "sesiones": []
+          "id": "multiplicacion-de-binomios",
+          "titulo": "Multiplicación de binomios",
+          "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
+          "fecha": "2026-08-21",
+          "ruta": "/Casilleros/alejandrina/multiplicacion-de-binomios/"
+        },
+        {
+          "id": "diagramas-de-arboles",
+          "titulo": "Diagramas de árboles",
+          "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
+          "fecha": "2026-07-29",
+          "ruta": "/Casilleros/alejandrina/diagramas-de-arboles/"
+        },
+        {
+          "id": "medidas-de-posicion",
+          "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
+          "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
+          "fecha": "2026-07-29",
+          "ruta": "/Casilleros/alejandrina/medidas-de-posicion/"
+        },
+        {
+          "id": "datos-no-agrupados",
+          "titulo": "Datos no agrupados",
+          "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
+          "fecha": "2026-07-24",
+          "ruta": "/Casilleros/alejandrina/datos-no-agrupados/"
         }
       ]
     },
     {
-      "id": "karen-mariana",
-      "nombreVisible": "Karen Mariana",
-      "rol": "Asesora",
-      "titulo": "Karen Mariana",
-      "descripcion": "Asesora de secundaria que acompaña la regularización mediante teoría clara, fórmulas, procedimientos y ejercicios vinculados con los contenidos actuales de la escuela.",
-      "sobre": [
-        "Karen Mariana trabaja con estudiantes de secundaria que necesitan regularización y acostumbra acompañarlos en grupos pequeños, principalmente de cuatro a seis alumnos.",
-        "Mantiene comunicación con las familias para conocer los temas y tareas que el estudiante está trabajando actualmente en la escuela."
-      ],
-      "metodologia": [
-        "Revisa los contenidos y tareas actuales para identificar las dificultades concretas del estudiante.",
-        "Explica la teoría y las fórmulas con procedimientos ordenados, ejemplos manejables y apoyos visuales.",
-        "Propone ejercicios progresivos para practicar cada paso antes de integrar el procedimiento completo.",
-        "Destaca la información importante con una jerarquía visual clara y verifica qué necesita reforzarse en la siguiente sesión."
-      ],
-      "estado": "activo",
-      "ruta": "/asesores/karen-mariana/",
-      "imagen": "/asesores/karen-mariana/recursos/karen-mariana.png",
-      "imagenAlt": "Gata tricolor dormida, imagen del salón de Karen Mariana",
-      "imagenAjuste": "cover",
-      "banner": {
-        "colorInicial": "#184f49",
-        "colorFinal": "#d39a45"
+      "id": "raul-erik",
+      "nombreVisible": "Raúl",
+      "descripcion": "Sesiones personalizadas de matemáticas y física para Raúl.",
+      "ruta": "/Casilleros/raul/",
+      "personalizacion": {
+        "simbolo": "R",
+        "acento": "#1f5fbd",
+        "fondo": "#eef4fb"
       },
-      "ubicacion": {
-        "pais": "México",
-        "region": "Estado de México",
-        "ciudad": "Toluca"
-      },
-      "modalidad": {
-        "tipo": "grupal",
-        "maximoAlumnos": 6
-      },
-      "disponibilidad": {
-        "aceptaNuevosAlumnos": true,
-        "etiquetaDisponible": "Acepta nuevos alumnos",
-        "etiquetaNoDisponible": "Sin disponibilidad para nuevos alumnos"
-      },
-      "precios": [
+      "ultimaActividad": "2026-09-22",
+      "sesiones": [
         {
-          "id": "sesion-grupal-60",
-          "titulo": "Sesión",
-          "duracionMinutos": 60,
-          "importe": 360,
-          "moneda": "MXN",
-          "nota": "Sesión grupal para un máximo de seis alumnos, con teoría y ejercicios preparados según los contenidos escolares actuales."
-        }
-      ],
-      "alumnos": [
-        {
-          "id": "raul-karen",
-          "nombreVisible": "Raul",
-          "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
-          "ruta": "/asesores/karen-mariana/raul/",
-          "personalizacion": {
-            "simbolo": "R",
-            "acento": "#a45c18",
-            "fondo": "#fff2da"
-          },
-          "ultimaActividad": "2026-08-20",
-          "sesiones": [
-            {
-              "id": "triangulos-semejantes-raul",
-              "titulo": "Triángulos semejantes",
-              "descripcion": "Criterios AA, LAL y LLL, figuras comparables y cálculo de longitudes por proporcionalidad.",
-              "fecha": "2026-08-20",
-              "ruta": "/asesores/karen-mariana/raul/triangulos-semejantes/"
-            }
-          ]
+          "id": "repaso-en-fisica-raul-erik",
+          "titulo": "Repaso en física",
+          "descripcion": "Sesión de repaso organizada por actividades. Incluye prefijos del SI, conversiones, operaciones en notación científica, Ley de Coulomb, electricidad básica, Ley de Ohm, potencia eléctrica, efecto Joule, leyes de Kirchhoff, fuerza electromotriz, resistencia interna y capacitancia. Incluye práctica personalizada de errores, variantes numéricas y un laboratorio interactivo de circuitos.",
+          "fecha": "2026-09-22",
+          "ruta": "/Casilleros/raul/repaso-en-fisica/"
         },
         {
-          "id": "esteba-karen",
-          "nombreVisible": "Esteba",
-          "descripcion": "Sesiones de secundaria para comprender exponentes desconocidos y logaritmos.",
-          "ruta": "/asesores/karen-mariana/esteba/",
-          "personalizacion": {
-            "simbolo": "E",
-            "acento": "#84509a",
-            "fondo": "#f5ecf8"
-          },
-          "ultimaActividad": "2026-08-19",
-          "sesiones": [
-            {
-              "id": "logaritmos-esteba",
-              "titulo": "Logaritmos",
-              "descripcion": "Relación entre forma exponencial y logarítmica, identificación de sus partes y cálculos básicos.",
-              "fecha": "2026-08-19",
-              "ruta": "/asesores/karen-mariana/esteba/logaritmos/"
-            },
-            {
-              "id": "encontrar-exponente-esteba",
-              "titulo": "Encontrar el exponente",
-              "descripcion": "Ecuaciones exponenciales sencillas resueltas al reconocer potencias conocidas.",
-              "fecha": "2026-08-11",
-              "ruta": "/asesores/karen-mariana/esteba/encontrar-el-exponente/"
-            }
-          ]
+          "id": "raul-erik-examen-de-fisica",
+          "titulo": "Examen de Física",
+          "descripcion": "Guía de capacitancia, corriente alterna, magnetismo y leyes del electromagnetismo, con fórmulas y explicaciones. Incluye dos exámenes teóricos de 18 preguntas cada uno: magnetismo y corriente alterna, con respuestas explicadas.",
+          "fecha": "2026-09-17",
+          "ruta": "/Casilleros/raul/examen-de-fisica/"
         },
         {
-          "id": "milndred-karen",
-          "nombreVisible": "Milndred",
-          "descripcion": "Sesiones de secundaria sobre exponentes y geometría del círculo.",
-          "ruta": "/asesores/karen-mariana/milndred/",
-          "personalizacion": {
-            "simbolo": "M",
-            "acento": "#1f6f65",
-            "fondo": "#e8f5f1"
-          },
-          "ultimaActividad": "2026-08-18",
-          "sesiones": [
-            {
-              "id": "partes-circulo-milndred",
-              "titulo": "Partes del círculo",
-              "descripcion": "Centro, radio, diámetro, cuerda, arco, circunferencia y fórmulas básicas.",
-              "fecha": "2026-08-18",
-              "ruta": "/asesores/karen-mariana/milndred/partes-del-circulo/"
-            },
-            {
-              "id": "teoria-exponentes-milndred",
-              "titulo": "Teoría de exponentes",
-              "descripcion": "Multiplicación repetida, base, exponente, potencia y primeras expresiones algebraicas.",
-              "fecha": "2026-08-12",
-              "ruta": "/asesores/karen-mariana/milndred/teoria-de-exponentes/"
-            }
-          ]
+          "id": "raul-erik-practica-de-matematicas",
+          "titulo": "Práctica de Matemáticas",
+          "descripcion": "Cuarenta y seis niveles de juego con operaciones, fracciones y sustitución, despejes, factorización y fracciones algebraicas, cuadráticas, sistemas, problemas verbales y división de polinomios y residuos dinámicos, cuatro respuestas, progreso y tiempo limitado. Reinicio con problemas nuevos al fallar. Cantidad y tiempo editables por nivel.",
+          "fecha": "2026-09-16",
+          "ruta": "/Casilleros/raul/practica-de-matematicas/"
         },
         {
-          "id": "jonny-karen",
-          "nombreVisible": "Jonny",
-          "descripcion": "Sesiones de secundaria sobre ecuaciones cuadráticas y cuadriláteros.",
-          "ruta": "/asesores/karen-mariana/jonny/",
-          "personalizacion": {
-            "simbolo": "J",
-            "acento": "#a44548",
-            "fondo": "#fcebec"
-          },
-          "ultimaActividad": "2026-08-17",
-          "sesiones": [
-            {
-              "id": "cuadrilateros-jonny",
-              "titulo": "Cuadriláteros",
-              "descripcion": "Clasificación visual, propiedades, perímetros y áreas de los cuadriláteros principales.",
-              "fecha": "2026-08-17",
-              "ruta": "/asesores/karen-mariana/jonny/cuadrilateros/"
-            },
-            {
-              "id": "formula-general-jonny",
-              "titulo": "Fórmula general",
-              "descripcion": "Identificación de coeficientes y resolución paso a paso de ecuaciones cuadráticas.",
-              "fecha": "2026-08-13",
-              "ruta": "/asesores/karen-mariana/jonny/formula-general/"
-            }
-          ]
+          "id": "raul-erik-electricidad-3",
+          "titulo": "Electricidad 3",
+          "descripcion": "Explicaciones paso a paso de Joule, Kirchhoff, batería real y capacitores, con ejemplos numéricos resueltos, diagramas y veinte preguntas conceptuales.",
+          "fecha": "2026-09-13",
+          "ruta": "/Casilleros/raul/electricidad-3/"
+        },
+        {
+          "id": "raul-erik-examen-matematicas",
+          "titulo": "Examen Matemáticas",
+          "descripcion": "Preguntas dinámicas mezcladas, con ayuda por sustitución disponible desde el inicio y recordatorio visual de la división.",
+          "fecha": "2026-09-12",
+          "ruta": "/Casilleros/raul/examen-matematicas/"
+        },
+        {
+          "id": "raul-erik-repaso-parte-2",
+          "titulo": "Repaso Parte 2",
+          "descripcion": "Laboratorios de notación científica y expresiones algebraicas, más práctica rápida de aritmética, fracciones, potencias y sustitución.",
+          "fecha": "2026-09-11",
+          "ruta": "/Casilleros/raul/repaso-parte-2/"
+        },
+        {
+          "id": "raul-erik-electricidad-parte-2",
+          "titulo": "Electricidad Parte 2",
+          "descripcion": "Coulomb, corriente, voltaje, resistencia, Ohm, potencia y Joule: siete laboratorios, veinte comparaciones guiadas y reto conceptual y numérico.",
+          "fecha": "2026-09-10",
+          "ruta": "/Casilleros/raul/electricidad-parte-2/"
+        },
+        {
+          "id": "raul-erik-matematicas-parte-2",
+          "titulo": "Matemáticas Parte 2",
+          "descripcion": "Factorización algebraica: factor común, agrupación, cuadrados, trinomios, cubos y retos interactivos.",
+          "fecha": "2026-09-10",
+          "ruta": "/Casilleros/raul/matematicas-parte-2/"
+        },
+        {
+          "id": "raul-erik-repaso",
+          "titulo": "Repaso",
+          "descripcion": "Fracciones, sustitución, despejes sencillos, proporcionalidad directa e inversa y factorización numérica: repaso visual e interactivo.",
+          "fecha": "2026-09-09",
+          "ruta": "/Casilleros/raul/repaso/"
+        },
+        {
+          "id": "raul-erik-fisica-parte-1",
+          "titulo": "Electricidad 1",
+          "descripcion": "Introducción a magnitudes eléctricas, símbolos, unidades, prefijos del SI y conversiones para el contexto técnico de planta exterior.",
+          "fecha": "2026-09-08",
+          "ruta": "/Casilleros/raul/fisica-parte-1/"
+        },
+        {
+          "id": "raul-erik-matematicas-parte-1",
+          "titulo": "Matemáticas, parte 1",
+          "descripcion": "Presentación, monomios, polinomios, suma, resta y multiplicación de expresiones algebraicas.",
+          "fecha": "2026-09-08",
+          "ruta": "/Casilleros/raul/matematicas-parte-1/"
         }
       ]
     },
     {
-      "id": "rainer",
-      "nombreVisible": "Rainer",
-      "rol": "Asesor",
-      "titulo": "Rainer",
-      "descripcion": "Matemático teórico con interés especial por el rigor, la escritura formal y la construcción ordenada de argumentos matemáticos.",
-      "sobre": [
-        "Rainer acompaña a estudiantes universitarios que desean comprender las definiciones con precisión y construir argumentos matemáticos sólidos.",
-        "Su capacidad de liderazgo le permite organizar el trabajo en etapas claras sin perder de vista las preguntas conceptuales de cada tema."
-      ],
-      "metodologia": [
-        "Presenta la teoría y fija con cuidado las definiciones y la notación que se utilizarán.",
-        "Desarrolla ejemplos que muestran tanto el alcance como los límites de cada concepto.",
-        "Propone problemas graduados para convertir las definiciones en herramientas de razonamiento.",
-        "Cierra con demostraciones en las que cada afirmación debe estar justificada con claridad."
-      ],
-      "estado": "activo",
-      "ruta": "/asesores/rainer/",
-      "imagen": "/asesores/rainer/recursos/rainer.jpg",
-      "imagenAlt": "Rainer, asesor de Matemáticas a Domicilio",
-      "banner": {
-        "colorInicial": "#172033",
-        "colorFinal": "#38506f"
+      "id": "erik-jose-perez",
+      "nombreVisible": "José Pérez",
+      "descripcion": "Sesiones de matemáticas para construir bases y conectar ideas de ingeniería.",
+      "ruta": "/Casilleros/jose-perez/",
+      "personalizacion": {
+        "simbolo": "JP",
+        "acento": "#976d38",
+        "fondo": "#172f36"
       },
-      "ubicacion": {
-        "pais": "México",
-        "region": "Quintana Roo",
-        "ciudad": "Cozumel"
-      },
-      "modalidad": {
-        "tipo": "grupal",
-        "maximoAlumnos": 2
-      },
-      "disponibilidad": {
-        "aceptaNuevosAlumnos": true,
-        "etiquetaDisponible": "Solo para alumnos universitarios",
-        "etiquetaNoDisponible": "Sin disponibilidad"
-      },
-      "precios": [
+      "ultimaActividad": "2026-09-11",
+      "sesiones": [
         {
-          "id": "sesion-universitaria-80",
-          "titulo": "Sesión",
-          "duracionMinutos": 80,
-          "importe": 750,
-          "moneda": "MXN",
-          "nota": "Sesión individual con desarrollo teórico, ejemplos y problemas."
-        }
-      ],
-      "alumnos": [
-        {
-          "id": "sofia-rainer",
-          "nombreVisible": "Sofía",
-          "descripcion": "Recorrido universitario de Topología: estructuras básicas y conjuntos derivados.",
-          "ruta": "/asesores/rainer/sofia/",
-          "personalizacion": {
-            "simbolo": "S",
-            "acento": "#315c88",
-            "fondo": "#eef3f7"
-          },
-          "ultimaActividad": "2026-08-19",
-          "sesiones": [
-            {
-              "id": "espacios-topologicos-sofia",
-              "titulo": "Espacios topológicos",
-              "descripcion": "Definición axiomática, vocabulario, método de verificación, ejemplos y práctica con topologías finitas e infinitas.",
-              "fecha": "2026-08-19",
-              "ruta": "/asesores/rainer/sofia/espacios-topologicos/"
-            },
-            {
-              "id": "interior-clausura-frontera-sofia",
-              "titulo": "Interior, clausura y frontera",
-              "descripcion": "Interior, clausura, exterior y frontera mediante vecindades, propiedades, ejemplos en la recta y espacios finitos y práctica resuelta.",
-              "fecha": "2026-08-16",
-              "ruta": "/asesores/rainer/sofia/interior-clausura-frontera/"
-            }
-          ]
-        },
-        {
-          "id": "mateo-rainer",
-          "nombreVisible": "Mateo",
-          "descripcion": "Recorrido universitario de Topología centrado en continuidad y aplicaciones entre espacios.",
-          "ruta": "/asesores/rainer/mateo/",
-          "personalizacion": {
-            "simbolo": "M",
-            "acento": "#465b3f",
-            "fondo": "#f0f4ed"
-          },
-          "ultimaActividad": "2026-08-18",
-          "sesiones": [
-            {
-              "id": "continuidad-topologica-mateo",
-              "titulo": "Continuidad topológica",
-              "descripcion": "Continuidad mediante abiertos, cerrados y vecindades, método de verificación, ejemplos finitos y reales, composición y práctica resuelta.",
-              "fecha": "2026-08-18",
-              "ruta": "/asesores/rainer/mateo/continuidad-topologica/"
-            }
-          ]
+          "id": "erik-jose-perez-introduccion",
+          "titulo": "Introducción",
+          "descripcion": "Presentación, historia matemática y plan de estudio; después, un recorrido guiado de las bases al cálculo.",
+          "fecha": "2026-09-11",
+          "ruta": "/Casilleros/jose-perez/introduccion/"
         }
       ]
+    },
+    {
+      "id": "alex-erick-chan",
+      "nombreVisible": "Alex",
+      "descripcion": "Sesiones de estadística aplicada a ventas y tecnología.",
+      "ruta": "/Casilleros/alex/",
+      "personalizacion": {
+        "simbolo": "A",
+        "acento": "#276b70",
+        "fondo": "#e7f1f1"
+      },
+      "ultimaActividad": "2026-08-20",
+      "sesiones": [
+        {
+          "id": "graficas-barras-ventas-alex",
+          "titulo": "Gráficas de barras en ventas",
+          "descripcion": "Recorrido interactivo para leer, construir y evaluar gráficas de barras mediante datos de ventas y decisiones rápidas.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/alex/graficas-de-barras-en-ventas/"
+        }
+      ]
+    },
+    {
+      "id": "gloria-elizabeth",
+      "nombreVisible": "Gloria",
+      "descripcion": "Sesiones universitarias sobre derivación, integración y el teorema fundamental del cálculo.",
+      "ruta": "/Casilleros/gloria/",
+      "personalizacion": {
+        "simbolo": "G",
+        "acento": "#7a5f37",
+        "fondo": "#f5efe4"
+      },
+      "ultimaActividad": "2026-08-20",
+      "sesiones": [
+        {
+          "id": "reglas-derivacion-gloria",
+          "titulo": "1. Reglas de derivación",
+          "descripcion": "Mapa interactivo de reglas de derivación con método de elección, ejemplos desarrollados y práctica.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/gloria/reglas-de-derivacion/"
+        },
+        {
+          "id": "reglas-integracion-gloria",
+          "titulo": "2. Reglas esenciales de integración",
+          "descripcion": "Antiderivadas y fórmulas de integración con consulta interactiva, ejemplos detallados y práctica.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/gloria/reglas-de-integracion/"
+        },
+        {
+          "id": "teorema-fundamental-gloria",
+          "titulo": "3. Teorema fundamental del cálculo",
+          "descripcion": "Construcción gradual del teorema fundamental con fórmulas revelables, ejemplos y práctica.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/gloria/teorema-fundamental-del-calculo/"
+        }
+      ]
+    },
+    {
+      "id": "jimena-elizabeth",
+      "nombreVisible": "Jimena",
+      "descripcion": "Sesiones universitarias de cálculo paramétrico e integrales de curva.",
+      "ruta": "/Casilleros/jimena/",
+      "personalizacion": {
+        "simbolo": "J",
+        "acento": "#6b5878",
+        "fondo": "#f0ebf3"
+      },
+      "ultimaActividad": "2026-08-20",
+      "sesiones": [
+        {
+          "id": "derivada-parametrica-jimena",
+          "titulo": "1. Derivada paramétrica",
+          "descripcion": "Pendiente, tangentes, segunda derivada y rapidez de curvas paramétricas con ejemplos detallados.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/jimena/derivada-parametrica/"
+        },
+        {
+          "id": "integral-curva-jimena",
+          "titulo": "2. Integral de curva",
+          "descripcion": "Integrales escalares, elemento de longitud y longitud de arco con ejemplos planos y espaciales.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/jimena/integral-de-curva/"
+        }
+      ]
+    },
+    {
+      "id": "kevin-elizabeth",
+      "nombreVisible": "Kevin",
+      "descripcion": "Sesiones universitarias sobre conjuntos, límites y derivada como límite.",
+      "ruta": "/Casilleros/kevin/",
+      "personalizacion": {
+        "simbolo": "K",
+        "acento": "#4b6670",
+        "fondo": "#e8f0f2"
+      },
+      "ultimaActividad": "2026-08-20",
+      "sesiones": [
+        {
+          "id": "conjuntos-kevin",
+          "titulo": "1. Conjuntos",
+          "descripcion": "Notación, operaciones, cardinalidad, intervalos y leyes de conjuntos con ejemplos detallados.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/kevin/conjuntos/"
+        },
+        {
+          "id": "limites-kevin",
+          "titulo": "2. Límites",
+          "descripcion": "Aproximación, límites laterales, indeterminaciones y comportamiento al infinito con ejemplos detallados.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/kevin/limites/"
+        },
+        {
+          "id": "derivada-limite-kevin",
+          "titulo": "3. La derivada como límite",
+          "descripcion": "Construcción de la derivada desde secantes, cociente incremental y límite con aplicaciones y ejemplos.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/kevin/derivada-como-limite/"
+        }
+      ]
+    },
+    {
+      "id": "pamela-cortes",
+      "nombreVisible": "Pamela",
+      "descripcion": "Sesiones de secundaria con geometría visual y práctica interactiva.",
+      "ruta": "/Casilleros/pamela/",
+      "personalizacion": {
+        "simbolo": "P",
+        "acento": "#087f8c",
+        "fondo": "#e5f5f5"
+      },
+      "ultimaActividad": "2026-08-20",
+      "sesiones": [
+        {
+          "id": "teorema-pitagoras-pamela",
+          "titulo": "Teorema de Pitágoras",
+          "descripcion": "Relación entre los lados de un triángulo rectángulo y práctica dinámica con respuestas enteras o raíces exactas.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/pamela/teorema-de-pitagoras/"
+        }
+      ]
+    },
+    {
+      "id": "pedro-cortes",
+      "nombreVisible": "Pedro",
+      "descripcion": "Sesiones universitarias de teoría y aplicación del color.",
+      "ruta": "/Casilleros/pedro/",
+      "personalizacion": {
+        "simbolo": "P",
+        "acento": "#b21f78",
+        "fondo": "#faeaf3"
+      },
+      "ultimaActividad": "2026-08-20",
+      "sesiones": [
+        {
+          "id": "color-modelos-pedro",
+          "titulo": "1. El color y los modelos del color",
+          "descripcion": "Percepción del color y diferencias de uso entre los modelos RGB, CMYK y HSL.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/pedro/color-y-modelos-del-color/"
+        },
+        {
+          "id": "propiedades-circulo-cromatico-pedro",
+          "titulo": "2. Propiedades del color y círculo cromático",
+          "descripcion": "Matiz, saturación, luminosidad y organización relacional del círculo cromático.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/pedro/propiedades-del-color-y-circulo-cromatico/"
+        },
+        {
+          "id": "armonia-temperaturas-pedro",
+          "titulo": "3. Armonía del color y temperaturas",
+          "descripcion": "Construcción de paletas análogas, complementarias y triádicas; lectura expresiva de colores cálidos y fríos.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/pedro/armonia-del-color-y-temperaturas/"
+        },
+        {
+          "id": "contraste-contexto-pedro",
+          "titulo": "4. Contraste y contexto",
+          "descripcion": "Contraste de valor, saturación, temperatura y extensión; influencia del entorno en la percepción del color.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/pedro/contraste-y-contexto/"
+        }
+      ]
+    },
+    {
+      "id": "ulises",
+      "nombreVisible": "Ulises",
+      "descripcion": "Sesiones de secundaria sobre geometría y proporcionalidad.",
+      "ruta": "/Casilleros/ulises/",
+      "personalizacion": {
+        "simbolo": "U",
+        "acento": "#a45c18",
+        "fondo": "#fff2da"
+      },
+      "ultimaActividad": "2026-08-20",
+      "sesiones": [
+        {
+          "id": "triangulos-semejantes-raul",
+          "titulo": "Triángulos semejantes",
+          "descripcion": "Criterios AA, LAL y LLL, figuras comparables y cálculo de longitudes por proporcionalidad.",
+          "fecha": "2026-08-20",
+          "ruta": "/Casilleros/ulises/triangulos-semejantes/"
+        }
+      ]
+    },
+    {
+      "id": "esteba-karen",
+      "nombreVisible": "Esteba",
+      "descripcion": "Sesiones de secundaria para comprender exponentes desconocidos y logaritmos.",
+      "ruta": "/Casilleros/esteba/",
+      "personalizacion": {
+        "simbolo": "E",
+        "acento": "#84509a",
+        "fondo": "#f5ecf8"
+      },
+      "ultimaActividad": "2026-08-19",
+      "sesiones": [
+        {
+          "id": "logaritmos-esteba",
+          "titulo": "Logaritmos",
+          "descripcion": "Relación entre forma exponencial y logarítmica, identificación de sus partes y cálculos básicos.",
+          "fecha": "2026-08-19",
+          "ruta": "/Casilleros/esteba/logaritmos/"
+        },
+        {
+          "id": "encontrar-exponente-esteba",
+          "titulo": "Encontrar el exponente",
+          "descripcion": "Ecuaciones exponenciales sencillas resueltas al reconocer potencias conocidas.",
+          "fecha": "2026-08-11",
+          "ruta": "/Casilleros/esteba/encontrar-el-exponente/"
+        }
+      ]
+    },
+    {
+      "id": "luca-claudia",
+      "nombreVisible": "Luca",
+      "descripcion": "Tres aventuras cortas para comprar, medir y jugar con las horas.",
+      "ruta": "/Casilleros/luca/",
+      "personalizacion": {
+        "simbolo": "🚀",
+        "acento": "#6f3dc4",
+        "fondo": "#f4efff"
+      },
+      "ultimaActividad": "2026-08-19",
+      "sesiones": [
+        {
+          "id": "consigue-el-cambio-luca",
+          "titulo": "Consigue el cambio",
+          "descripcion": "Una pequeña tienda para descubrir cuánto dinero regresa después de pagar.",
+          "fecha": "2026-08-19",
+          "ruta": "/Casilleros/luca/consigue-el-cambio/"
+        },
+        {
+          "id": "cuanto-mide-cuanto-pesa-luca",
+          "titulo": "¿Cuánto mide? ¿Cuánto pesa?",
+          "descripcion": "Un laboratorio de animales para explorar qué descubrimos con una báscula y con una regla.",
+          "fecha": "2026-08-17",
+          "ruta": "/Casilleros/luca/cuanto-mide-cuanto-pesa/"
+        },
+        {
+          "id": "las-horas-luca",
+          "titulo": "Las horas",
+          "descripcion": "Un reloj grande para mover la manecilla y resolver pequeños retos con horas exactas.",
+          "fecha": "2026-08-15",
+          "ruta": "/Casilleros/luca/las-horas/"
+        }
+      ]
+    },
+    {
+      "id": "sofia-rainer",
+      "nombreVisible": "Sofía",
+      "descripcion": "Recorrido universitario de Topología: estructuras básicas y conjuntos derivados.",
+      "ruta": "/Casilleros/sofia/",
+      "personalizacion": {
+        "simbolo": "S",
+        "acento": "#315c88",
+        "fondo": "#eef3f7"
+      },
+      "ultimaActividad": "2026-08-19",
+      "sesiones": [
+        {
+          "id": "espacios-topologicos-sofia",
+          "titulo": "Espacios topológicos",
+          "descripcion": "Definición axiomática, vocabulario, método de verificación, ejemplos y práctica con topologías finitas e infinitas.",
+          "fecha": "2026-08-19",
+          "ruta": "/Casilleros/sofia/espacios-topologicos/"
+        },
+        {
+          "id": "interior-clausura-frontera-sofia",
+          "titulo": "Interior, clausura y frontera",
+          "descripcion": "Interior, clausura, exterior y frontera mediante vecindades, propiedades, ejemplos en la recta y espacios finitos y práctica resuelta.",
+          "fecha": "2026-08-16",
+          "ruta": "/Casilleros/sofia/interior-clausura-frontera/"
+        }
+      ]
+    },
+    {
+      "id": "mateo-rainer",
+      "nombreVisible": "Mateo",
+      "descripcion": "Recorrido universitario de Topología centrado en continuidad y aplicaciones entre espacios.",
+      "ruta": "/Casilleros/mateo/",
+      "personalizacion": {
+        "simbolo": "M",
+        "acento": "#465b3f",
+        "fondo": "#f0f4ed"
+      },
+      "ultimaActividad": "2026-08-18",
+      "sesiones": [
+        {
+          "id": "continuidad-topologica-mateo",
+          "titulo": "Continuidad topológica",
+          "descripcion": "Continuidad mediante abiertos, cerrados y vecindades, método de verificación, ejemplos finitos y reales, composición y práctica resuelta.",
+          "fecha": "2026-08-18",
+          "ruta": "/Casilleros/mateo/continuidad-topologica/"
+        }
+      ]
+    },
+    {
+      "id": "milndred-karen",
+      "nombreVisible": "Milndred",
+      "descripcion": "Sesiones de secundaria sobre exponentes y geometría del círculo.",
+      "ruta": "/Casilleros/milndred/",
+      "personalizacion": {
+        "simbolo": "M",
+        "acento": "#1f6f65",
+        "fondo": "#e8f5f1"
+      },
+      "ultimaActividad": "2026-08-18",
+      "sesiones": [
+        {
+          "id": "partes-circulo-milndred",
+          "titulo": "Partes del círculo",
+          "descripcion": "Centro, radio, diámetro, cuerda, arco, circunferencia y fórmulas básicas.",
+          "fecha": "2026-08-18",
+          "ruta": "/Casilleros/milndred/partes-del-circulo/"
+        },
+        {
+          "id": "teoria-exponentes-milndred",
+          "titulo": "Teoría de exponentes",
+          "descripcion": "Multiplicación repetida, base, exponente, potencia y primeras expresiones algebraicas.",
+          "fecha": "2026-08-12",
+          "ruta": "/Casilleros/milndred/teoria-de-exponentes/"
+        }
+      ]
+    },
+    {
+      "id": "jonny-karen",
+      "nombreVisible": "Jonny",
+      "descripcion": "Sesiones de secundaria sobre ecuaciones cuadráticas y cuadriláteros.",
+      "ruta": "/Casilleros/jonny/",
+      "personalizacion": {
+        "simbolo": "J",
+        "acento": "#a44548",
+        "fondo": "#fcebec"
+      },
+      "ultimaActividad": "2026-08-17",
+      "sesiones": [
+        {
+          "id": "cuadrilateros-jonny",
+          "titulo": "Cuadriláteros",
+          "descripcion": "Clasificación visual, propiedades, perímetros y áreas de los cuadriláteros principales.",
+          "fecha": "2026-08-17",
+          "ruta": "/Casilleros/jonny/cuadrilateros/"
+        },
+        {
+          "id": "formula-general-jonny",
+          "titulo": "Fórmula general",
+          "descripcion": "Identificación de coeficientes y resolución paso a paso de ecuaciones cuadráticas.",
+          "fecha": "2026-08-13",
+          "ruta": "/Casilleros/jonny/formula-general/"
+        }
+      ]
+    },
+    {
+      "id": "jose",
+      "nombreVisible": "José",
+      "descripcion": "Espacio personal para organizar pendientes de estudio.",
+      "ruta": "/Casilleros/jose/",
+      "personalizacion": {
+        "simbolo": "J",
+        "acento": "#1f5fbd",
+        "fondo": "#eef5ff"
+      },
+      "ultimaActividad": null,
+      "sesiones": []
     }
   ]
 }

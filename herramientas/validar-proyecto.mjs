@@ -14,7 +14,6 @@ const metadataNames = new Set([
   "examen.json",
   "usuario.json",
   "sesion.json",
-  "maestro.json",
 ]);
 const errors = [];
 const warnings = [];
@@ -111,7 +110,6 @@ for (const file of metadataFiles) {
 
 const metadataById = new Map(metadata.filter(({ data }) => data.id).map(({ data }) => [data.id, data]));
 const allowedStates = {
-  maestro: new Set(["activo", "inactivo", "plantilla"]),
   usuario: new Set(["activo", "inactivo", "plantilla"]),
   sesion: new Set(["publicado", "borrador", "archivado", "plantilla"]),
 };
@@ -122,67 +120,13 @@ for (const { data, file } of metadata) {
     reportError(`${relative(file)}: estado "${data.estado}" no permitido para ${data.tipo}.`);
   }
 
-  if (data.tipo === "maestro" && data.estado === "activo") {
+  if (data.tipo === "usuario" && data.estado !== "plantilla") {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(data.slug ?? "")) {
-      reportError(`${relative(file)}: el asesor necesita un slug público válido sin espacios ni acentos.`);
+      reportError(`${relative(file)}: el casillero necesita un slug válido sin espacios ni acentos.`);
     }
-    const expectedRoute = `/asesores/${data.slug}/`;
-    if (data.ruta !== expectedRoute) {
-      reportError(`${relative(file)}: la ruta del asesor debe ser ${expectedRoute}.`);
-    }
-    for (const key of ["nombreVisible", "imagen", "ubicacion", "modalidad", "disponibilidad", "precios"]) {
-      if (!data[key]) reportError(`${relative(file)}: maestro activo sin "${key}".`);
-    }
-    if (!["individual", "grupal"].includes(data.modalidad?.tipo)) {
-      reportError(`${relative(file)}: modalidad debe ser "individual" o "grupal".`);
-    }
-    if (data.modalidad?.tipo === "grupal" && (!Number.isInteger(data.modalidad.maximoAlumnos) || data.modalidad.maximoAlumnos < 2)) {
-      reportError(`${relative(file)}: la modalidad grupal necesita maximoAlumnos entero mayor o igual a 2.`);
-    }
-    if (!Array.isArray(data.precios) || data.precios.length === 0) {
-      reportError(`${relative(file)}: maestro activo sin precios configurados.`);
-    } else {
-      for (const price of data.precios) {
-        if (!price.id || !price.titulo || !price.moneda) {
-          reportError(`${relative(file)}: cada precio necesita id, título y moneda.`);
-        }
-        if (!Number.isFinite(price.importe) || price.importe < 0) {
-          reportError(`${relative(file)}: importe inválido en el precio "${price.id}".`);
-        }
-        if (!Number.isInteger(price.duracionMinutos) || price.duracionMinutos <= 0) {
-          reportError(`${relative(file)}: duración inválida en el precio "${price.id}".`);
-        }
-      }
-    }
-    if (!data.ubicacion?.pais || !data.ubicacion?.ciudad) {
-      reportError(`${relative(file)}: maestro activo sin país o ciudad.`);
-    }
-    if (typeof data.disponibilidad?.aceptaNuevosAlumnos !== "boolean") {
-      reportError(`${relative(file)}: disponibilidad sin aceptaNuevosAlumnos booleano.`);
-    }
-    validateLocalReference(file, data.imagen, "imagen de maestro");
-    if (data.imagenAjuste && !["cover", "contain"].includes(data.imagenAjuste)) {
-      reportError(`${relative(file)}: imagenAjuste debe ser "cover" o "contain".`);
-    }
-  }
-
-  if (data.tipo === "usuario" && data.estado === "activo") {
-    const teacher = metadataById.get(data.maestro);
-    if (!teacher || teacher.tipo !== "maestro") {
-      reportError(`${relative(file)}: referencia al maestro inexistente "${data.maestro}".`);
-    } else if (teacher.estado !== "activo") {
-      reportError(`${relative(file)}: el maestro "${data.maestro}" no está activo.`);
-    }
-    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(data.slug ?? "")) {
-      reportError(`${relative(file)}: el alumno necesita un slug válido sin espacios ni acentos.`);
-    }
-    if (teacher?.ruta) {
-      const expectedRoute = `${teacher.ruta}${data.slug}/`;
-      if (data.ruta !== expectedRoute) {
-        reportError(
-          `${relative(file)}: la ruta del alumno debe ser ${expectedRoute} para evitar colisiones entre salones.`,
-        );
-      }
+    const expectedRoute = `/Casilleros/${data.slug}/`;
+    if (data.ruta !== expectedRoute || relative(path.dirname(file)) !== expectedRoute.slice(1, -1)) {
+      reportError(`${relative(file)}: el casillero debe vivir directamente en ${expectedRoute}.`);
     }
     for (const key of ["acento", "fondo"]) {
       const color = data.personalizacion?.[key];
@@ -337,6 +281,17 @@ for (const file of files.filter((item) => item.endsWith(".js"))) {
     new vm.Script(fs.readFileSync(file, "utf8"), { filename: relative(file) });
   } catch (error) {
     reportError(`${relative(file)}: JavaScript inválido (${error.message}).`);
+  }
+}
+
+for (const file of files.filter((item) => /\.m?js$/.test(item))) {
+  const source = fs.readFileSync(file, "utf8");
+  const imports = [...source.matchAll(/(?:\bfrom\s+|\bimport\s*\(|\bimport\s+)["']([^"']+)["']/g)];
+  for (const [, reference] of imports) {
+    if (reference.startsWith(".")) validateLocalReference(file, reference, "importación");
+    else if (!external.test(reference) && /\.m?js(?:[?#]|$)/.test(reference)) {
+      reportError(`${relative(file)}: la importación local "${reference}" debe usar ./ o ../.`);
+    }
   }
 }
 

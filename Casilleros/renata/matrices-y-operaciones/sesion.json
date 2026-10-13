@@ -1,0 +1,24 @@
+{
+  "id": "matrices-operaciones-renata",
+  "slug": "matrices-y-operaciones",
+  "tipo": "sesion",
+  "usuario": "renata-elizabeth",
+  "titulo": "2. Matrices y sus operaciones",
+  "descripcion": "Dimensiones, suma, resta, escalares, producto matricial y transpuesta con fórmulas revelables, ejemplos guiados y práctica.",
+  "objetivo": "Leer dimensiones y entradas, comprobar compatibilidad y resolver operaciones matriciales justificando cada paso.",
+  "conocimientosPrevios": [
+    "operaciones con números reales",
+    "manejo de signos",
+    "lectura de filas y columnas"
+  ],
+  "fecha": "2026-09-03",
+  "estado": "publicado",
+  "ruta": "/Casilleros/renata/matrices-y-operaciones/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

@@ -4,121 +4,47 @@
 
 | Área | Ruta | Responsabilidad |
 |---|---|---|
-| Sitio general | `/`, `/nosotros/`, `/contacto/`, `/legal/` | Identidad, servicio e información institucional |
+| Inicio | `/` | Hero, búsqueda y banners de todos los casilleros, paginación y pie |
+| Información | `/nosotros/`, `/contacto/`, `/legal/` | Proyecto y contacto |
 | Biblioteca | `/biblioteca/` | Catálogo público de temas, calculadoras y exámenes |
-| Tema | `/biblioteca/temas/[tema]/` | Agrupa componentes de un mismo conocimiento |
-| Salones | `/asesores/` | Asesores y acceso a los casilleros de cada salón |
-| Salón del asesor | `/asesores/[asesor]/` | Información, ubicación, disponibilidad, precios, metodología y casilleros |
-| Casillero | `/asesores/[asesor]/[alumno]/` | Perfil operativo y listado de sesiones dentro de su salón |
-| Sesión | `/asesores/[asesor]/[alumno]/[sesion]/` | Contenido personalizado de una sesión |
+| Tema | `/biblioteca/temas/[tema]/` | Componentes de un mismo conocimiento |
+| Casillero | `/Casilleros/[estudiante]/` | Espacio individual del estudiante |
+| Sesión | `/Casilleros/[estudiante]/[sesion]/` | Contenido y funcionamiento propios de cada sesión |
 
-## Unidad de aislamiento
+## Aislamiento
 
-La unidad mínima que puede entregarse a otra IA es una carpeta concreta con `index.html`, su `estilos.css`, `README.md` y metadatos. Si tiene comportamiento exclusivo, incluye también su JavaScript; si reutiliza comportamiento o estilos idénticos, enlaza el recurso del ancestro común más cercano. Las fotografías, ilustraciones y otros archivos exclusivos se conservan en un `recursos/` local. No se crean scripts vacíos.
+Cada módulo concreto conserva `index.html`, su `estilos.css`, `README.md` y metadatos. Añade JavaScript y recursos locales solo cuando los utiliza. Cada sesión es independiente y puede tener su propio diseño, navegación interna, componentes y reglas. No hay un formato educativo común obligatorio.
 
-Los componentes de un tema permanecen bajo la carpeta del tema. Los componentes personalizados permanecen bajo la sesión del usuario. Las colecciones globales enlazan esos módulos, pero no duplican su implementación.
+Los recursos idénticos que ya usan varios descendientes viven en el ancestro común más cercano. `Casilleros/recursos/README.md` documenta sus consumidores. La base global contiene solo identidad, accesibilidad, encabezado, pie y controles flotantes.
 
-## Relación académica
+## Datos y orden
 
-La fuente de verdad está distribuida junto a cada módulo:
+`usuario.json ← sesion.json` es la relación académica: el campo `usuario` de cada sesión apunta al ID estable del estudiante. No hay otro propietario intermedio.
 
-```text
-maestro.json ← usuario.json ← sesion.json
-      id          maestro       usuario + fecha + estado
-```
+`npm run catalogo` genera `recursos/datos/catalogo.json` y `recursos/datos/academia.json`. Este último contiene `alumnos`, una lista plana de casilleros activos con sus sesiones publicadas. Las sesiones se ordenan por fecha descendente y título. Los casilleros se ordenan por última actividad descendente y nombre; sin sesiones fechadas aparecen al final. El ID resuelve un eventual empate completo.
 
-`npm run catalogo` relaciona los metadatos y genera `recursos/datos/academia.json`. La interfaz muestra únicamente asesores y alumnos activos y sesiones publicadas. Cada asesor se representa públicamente como un salón; `maestro.json` continúa siendo el nombre técnico interno. No se mantienen listas manuales de alumnos ni sesiones.
+El buscador de la portada filtra toda la lista por nombre, sin distinguir mayúsculas ni acentos. Después aplica la paginación de 7; al cambiar la búsqueda vuelve a la primera página. No hay página adicional para el catálogo de casilleros.
 
-Los estados `plantilla`, `borrador`, `archivado` e `inactivo` quedan fuera de los índices públicos. La presencia física de una carpeta no implica su publicación.
+## Rutas y archivos
 
-## Dependencias
+La carpeta `Casilleros` conserva exactamente esa capitalización. Sus slugs descendientes son minúsculos, sin espacios ni acentos. Cada página pública corresponde a un directorio con `index.html`. Los enlaces e importaciones usan rutas relativas para admitir GitHub Pages bajo un subdirectorio. Cada componente permite volver a su sesión o casillero.
 
 ```text
-recursos/css/base.css ───── base visual realmente común
-recursos/js/navegacion.js ─ menú y controles flotantes comunes
-recursos/svg/ ────────────── identidad general
-
-carpeta/index.html ───────── carpeta/estilos.css
-                      ├───── carpeta/script.js, solo para lógica exclusiva
-                      └───── ancestro/recursos/, para código idéntico de una familia
-academia.json ────────────── scripts locales de catálogos académicos
+Casilleros/
+├── README.md
+├── recursos/{css,js}/
+└── [estudiante]/
+    ├── usuario.json
+    ├── README.md
+    ├── index.html
+    ├── estilos.css
+    ├── recursos/ (solo si los utiliza)
+    └── [sesion]/
+        ├── sesion.json
+        ├── README.md
+        ├── index.html
+        ├── estilos.css
+        └── contenido y recursos propios
 ```
 
-`base.css` contiene únicamente la base que todas las páginas necesitan: identidad, accesibilidad, encabezado, pie, botones comunes y controles flotantes. El diseño de portada, secciones institucionales, catálogos, perfiles, alumnos, sesiones y componentes se encuentra en el `estilos.css` de cada página o en recursos limitados a su familia. `navegacion.js` controla el menú y crea una sola instancia de WhatsApp y de volver arriba.
-
-Los módulos independientes no se acoplan entre sí. Cuando varios descendientes de una misma familia usan una implementación idéntica, esta vive en su ancestro común; no se asciende a la base global ni se duplica. Un recurso solo llega a `/recursos/` cuando es verdaderamente común a todo el sitio.
-
-## Rutas
-
-- Las rutas canónicas son minúsculas, sin espacios ni acentos.
-- Cada página pública canónica es un directorio con `index.html`.
-- Las referencias son relativas para funcionar en un dominio propio o en un subdirectorio de GitHub Pages.
-- Las páginas `.html` de la raíz son compatibilidad heredada; no se enlazan desde la navegación nueva.
-- Un componente siempre permite volver a su tema o sesión mediante migas de pan.
-
-## Componentes opcionales
-
-No se crean carpetas ni tarjetas vacías. `tema.json` y `sesion.json` indican exactamente qué existe. Al añadir o retirar un componente se actualizan en conjunto:
-
-1. el módulo;
-2. sus metadatos;
-3. el índice del tema o sesión;
-4. los datos generados mediante `npm run catalogo`.
-
-## Árbol actual resumido
-
-```text
-biblioteca/
-├── temas/
-│   ├── operaciones-con-fracciones/
-│   └── ley-de-los-signos/
-├── calculadoras/
-└── examenes/
-    └── simulador-admision-universidad/
-
-asesores/
-├── index.html
-├── estilos.css
-├── recursos/js/
-├── erik/
-│   ├── maestro.json
-│   ├── index.html
-│   ├── estilos.css
-│   ├── recursos/
-│   ├── alejandrina/
-│   │   ├── usuario.json
-│   │   ├── index.html
-│   │   ├── estilos.css
-│   │   ├── datos-no-agrupados/
-│   │   ├── diagramas-de-arboles/
-│   │   ├── medidas-de-posicion/
-│   │   ├── multiplicacion-de-binomios/
-│   │   └── sucesiones-aritmeticas/
-│   ├── andres/
-│   │   └── porcentajes/
-│   └── kenisa/
-│       └── despejes-lineales/
-├── claudia/
-│   └── luca/
-│       ├── consigue-el-cambio/
-│       ├── cuanto-mide-cuanto-pesa/
-│       └── las-horas/
-└── rainer/
-    ├── sofia/
-    │   ├── espacios-topologicos/
-    │   └── interior-clausura-frontera/
-    └── mateo/
-        └── continuidad-topologica/
-
-plantillas/
-├── maestro/
-├── alumno/
-│   └── nueva-sesion/
-└── sesion/README.md
-```
-
-## Archivos reemplazados
-
-Las antiguas páginas `.html` de la raíz son compatibilidad heredada cuando todavía existen; el contenido real vive en sus carpetas modulares.
-
-Los antiguos `assets/css/styles.css`, `assets/js/*.js`, `assets/img/*`, `admin.jpg` y `Simulador.pdf` fueron reemplazados por una base global mínima o por archivos dentro del módulo que los utiliza.
+Los estados `plantilla`, `borrador`, `archivado` e `inactivo` se excluyen del catálogo público. No se muestran componentes opcionales vacíos. Al añadir o retirar contenido, sincroniza el módulo, su README, sus metadatos y los índices generados.

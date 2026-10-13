@@ -1,0 +1,16 @@
+{
+  "id": "elyan-claudia",
+  "slug": "elyan",
+  "tipo": "usuario",
+  "titulo": "El casillero de Elyan",
+  "nombreVisible": "Elyan",
+  "descripcion": "Sumas molonas y una aventura de restas para explorar, jugar y descubrir. 3.º de Primaria.",
+  "estado": "activo",
+  "ruta": "/Casilleros/elyan/",
+  "personalizacion": {
+    "simbolo": "🐰",
+    "acento": "#087254",
+    "fondo": "#fff1d6"
+  },
+  "almacenamientoLocal": false
+}

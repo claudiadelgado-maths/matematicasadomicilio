@@ -1,0 +1,11 @@
+{
+  "id": "ruta-de-las-sucesiones",
+  "tipo": "juego",
+  "sesion": "sucesiones-aritmeticas-sesion-1",
+  "usuario": "alejandrina",
+  "titulo": "Ruta de las sucesiones",
+  "descripcion": "Juego de quince preguntas en tres niveles, resueltas con botones, para completar patrones, identificar elementos y utilizar la fórmula general.",
+  "estado": "publicado",
+  "ruta": "/Casilleros/alejandrina/sucesiones-aritmeticas/juegos/",
+  "interactivo": true
+}

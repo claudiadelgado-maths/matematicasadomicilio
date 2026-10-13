@@ -1,0 +1,61 @@
+/* Follaje botánico: identidad compartida por la portada y el índice de Renata. */
+.student-locker[data-student-id="renata-elizabeth"],
+.renata-banner {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  place-items: center;
+  min-height: clamp(210px, 27vw, 320px);
+  padding: 38px 23%;
+  overflow: hidden;
+  border: 1px solid #8a9b71;
+  border-radius: 20px;
+  background: url("plantas-izquierda.svg") left center / auto 100% no-repeat,
+    url("plantas-derecha.svg") right center / auto 100% no-repeat,
+    radial-gradient(ellipse at center, #fbfaeb, #e8eedb 65%, #dce6ce);
+  color: #315e46;
+  box-shadow: 0 8px 24px #334c2e14;
+}
+
+.student-locker[data-student-id="renata-elizabeth"]::after,
+.renata-banner::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 12px;
+  border: 1px solid #7a93624d;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.student-locker[data-student-id="renata-elizabeth"] .student-locker-symbol,
+.student-locker[data-student-id="renata-elizabeth"] .student-locker-arrow { display: none; }
+
+.student-locker[data-student-id="renata-elizabeth"] .student-locker-copy > strong,
+.renata-banner h1 {
+  margin: 0;
+  max-width: 100%;
+  color: #315e46;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 8.5vw, 6.4rem);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: .025em;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  text-shadow: 0 2px 0 #fffdf3;
+}
+
+.renata-hero { padding-block: 28px 16px; }
+.student-locker[data-student-id="renata-elizabeth"]:focus-visible { outline-color: #315e46; }
+.student-locker[data-student-id="renata-elizabeth"]:hover { box-shadow: 0 10px 26px #334c2e28; }
+
+@media (max-width: 640px) {
+  .student-locker[data-student-id="renata-elizabeth"],
+  .renata-banner { padding: 48px 16px; background-position: left top, right bottom, center; background-size: auto 75%, auto 75%, cover; }
+  .student-locker[data-student-id="renata-elizabeth"] .student-locker-copy > strong,
+  .renata-banner h1 { font-size: clamp(2.8rem, 12vw, 4.8rem); }
+}

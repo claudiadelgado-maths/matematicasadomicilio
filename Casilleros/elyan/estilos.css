@@ -1,0 +1,20 @@
+/* Casillero de Elyan: tarjetas generadas por alumno.js; identidad del banner en recursos/identidad.css. */
+.elyan-site { background: #fffaf0; color: #292443; }
+.elyan-site .breadcrumbs { padding-block: 1.4rem; font-size: .85rem; }
+.elyan-site .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: .6rem; list-style: none; padding: 0; margin: 0; }
+.elyan-site .breadcrumbs li:not(:last-child)::after { content: '/'; margin-left: .6rem; color: #81758e; }
+
+.elyan-site .user-module-section { padding: clamp(2.5rem, 6vw, 5rem) 0; }
+.elyan-site .learning-section-heading { margin-bottom: 2rem; }
+.elyan-site h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); margin: 0; letter-spacing: -.03em; }
+.elyan-site .student-session-list { display: grid; gap: 1.2rem; }
+.elyan-site .student-session-link { display: grid; grid-template-columns: 130px 1fr auto; align-items: center; gap: 1.5rem; padding: 1.8rem; border: 2px solid var(--student-accent, #6f3dc4); border-radius: 22px; background: white; color: inherit; text-decoration: none; box-shadow: 0 7px 0 #e5d8ff; }
+.elyan-site .student-session-link:hover { background: #f6f1ff; }
+.elyan-site .student-session-link:focus-visible { outline: 3px solid #245bc0; outline-offset: 5px; }
+.elyan-site .student-session-date { font-size: .85rem; font-weight: 750; color: #6539af; }
+.elyan-site .student-session-link strong, .elyan-site .student-session-link small { display: block; }
+.elyan-site .student-session-link strong { font-size: clamp(1.3rem, 3vw, 1.8rem); }
+.elyan-site .student-session-link small { margin-top: .5rem; font-size: 1rem; color: #655c71; line-height: 1.6; }
+.elyan-site .student-session-link > span:last-child { font-size: 1.8rem; color: #6539af; }
+.elyan-site :is(.academy-loading, .academy-data-error, .academy-empty-state) { padding: 1.5rem; background: #f4efff; border-radius: 18px; }
+@media (max-width: 640px) { .elyan-site .student-session-link { grid-template-columns: 1fr auto; gap: .8rem; padding: 1.2rem; }.elyan-site .student-session-date { grid-column: 1 / -1; } }

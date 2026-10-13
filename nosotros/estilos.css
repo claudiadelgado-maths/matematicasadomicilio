@@ -1,13 +1,39 @@
 :root {
   --chat-bg: #0b0d0c;
-  --chat-line: rgb(255 255 255 / 12%);
   --chat-white: #f8f8f3;
   --chat-green: #d7ead8;
   --chat-ink: #151815;
 }
 
-body {
-  background: var(--chat-bg);
+.about-heading {
+  padding-block: 2rem;
+}
+
+.about-heading h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 4.7vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+
+.about-controls:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.about-controls .button {
+  cursor: pointer;
+}
+
+.about-controls .button[aria-pressed="false"] {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.about-controls .button[aria-pressed="false"]:hover {
+  background: var(--color-surface);
 }
 
 .visually-hidden {
@@ -22,17 +48,18 @@ body {
   border: 0;
 }
 
-.about-chat-page {
+.about-chat {
   position: relative;
   isolation: isolate;
   min-height: 100vh;
+  padding: clamp(3rem, 7vw, 6.5rem) 0 clamp(4.5rem, 9vw, 8rem);
   overflow: hidden;
   background-color: var(--chat-bg);
   color: #f5f6f2;
 }
 
-.about-chat-page::before,
-.about-chat-page::after {
+.about-chat::before,
+.about-chat::after {
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -40,7 +67,7 @@ body {
   content: "";
 }
 
-.about-chat-page::before {
+.about-chat::before {
   background-image:
     radial-gradient(circle, rgb(255 255 255 / 22%) 1.25px, transparent 1.5px),
     radial-gradient(circle, rgb(215 234 216 / 16%) 1px, transparent 1.25px);
@@ -49,16 +76,12 @@ body {
   opacity: 0.34;
 }
 
-.about-chat-page::after {
+.about-chat::after {
   background-image:
     linear-gradient(45deg, transparent 49.5%, rgb(255 255 255 / 3.5%) 49.5% 50.5%, transparent 50.5%),
     linear-gradient(-45deg, transparent 49.5%, rgb(255 255 255 / 2.5%) 49.5% 50.5%, transparent 50.5%);
   background-size: 220px 220px;
   opacity: 0.72;
-}
-
-.about-chat {
-  padding: clamp(3rem, 7vw, 6.5rem) 0 clamp(4.5rem, 9vw, 8rem);
 }
 
 .chat-thread {
@@ -216,4 +239,212 @@ body {
   .chat-bubble {
     max-width: calc(100% - 41px);
   }
+}
+
+.philosophy-section {
+  padding: clamp(2.25rem, 3.3vw, 2.85rem) 0;
+  background: var(--color-surface);
+}
+
+.philosophy-title,
+.about-resources-title,
+.faq-title {
+  margin: 0 0 0.48rem;
+  font-size: clamp(2.7rem, 4.7vw, 4rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
+
+.philosophy-intro,
+.about-resources-intro {
+  max-width: 1010px;
+  margin: 0 0 clamp(1.35rem, 2.1vw, 1.65rem);
+  color: var(--color-muted);
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.55;
+}
+
+.philosophy-list {
+  display: grid;
+  gap: clamp(1.35rem, 2.25vw, 1.875rem);
+}
+
+.philosophy-card {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.philosophy-icon {
+  width: 90px;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.philosophy-icon svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.philosophy-answer {
+  margin: 0;
+  color: #2f2f2b;
+  font-size: clamp(1.03rem, 1.35vw, 1.15rem);
+  line-height: 1.65;
+}
+
+.about-resources-section {
+  padding: clamp(2.25rem, 3.3vw, 2.85rem) 0;
+  background: var(--color-background);
+}
+
+.about-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2.25rem);
+  margin: clamp(1.55rem, 2.6vw, 2.2rem) 0 0;
+}
+
+.about-resource-option {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  color: var(--color-text);
+  text-align: left;
+  text-decoration: none;
+  transition: transform 160ms ease;
+}
+
+.about-resource-option:hover {
+  transform: translateY(-4px);
+}
+
+.about-resource-option > strong {
+  margin-top: 0.45rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.25;
+}
+
+.about-resource-icon {
+  width: clamp(82px, 8vw, 104px);
+  margin: 0 0 0.25rem;
+  color: var(--color-text);
+}
+
+.about-resource-icon svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-resource-description {
+  max-width: 620px;
+  margin-top: 0.45rem;
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.about-resource-link {
+  margin-top: 0.75rem;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.faq-section {
+  padding-block: clamp(2.25rem, 3.3vw, 2.85rem);
+  background: var(--color-surface);
+}
+
+.faq-title {
+  margin-bottom: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.faq-list summary {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.85rem 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker { display: none; }
+
+.faq-list summary::after {
+  flex: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  content: "+";
+}
+
+.faq-list details[open] summary::after { content: "−"; }
+
+.faq-list details p {
+  max-width: 760px;
+  margin: 0;
+  padding: 0 2rem 1.5rem 0;
+  color: var(--color-muted);
+}
+
+.about-page h1,
+.about-page h2,
+.about-page p {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 640px) {
+  .about-controls .button {
+    flex: 1 1 140px;
+  }
+
+  .philosophy-section,
+  .about-resources-section,
+  .faq-section {
+    padding: 1.95rem 0 2.4rem;
+  }
+
+  .philosophy-title,
+  .about-resources-title,
+  .faq-title {
+    font-size: clamp(2.25rem, 10vw, 2.55rem);
+  }
+
+  .philosophy-intro,
+  .about-resources-intro { margin-bottom: 1.2rem; }
+  .philosophy-list { gap: 1.125rem; }
+
+  .philosophy-card {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .philosophy-icon { width: 64px; }
+  .philosophy-answer { line-height: 1.6; }
+
+  .about-resources-grid {
+    column-gap: 1rem;
+    row-gap: 2rem;
+    margin-top: 1.35rem;
+  }
+
+  .about-resource-icon { width: 100px; }
 }

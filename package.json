@@ -4,6 +4,7 @@
   "private": true,
   "description": "Sitio estático modular de Matemáticas a Domicilio.",
   "scripts": {
+    "test": "node --test herramientas/crear-sesion.test.mjs herramientas/generar-catalogo.test.mjs",
     "catalogo": "node herramientas/generar-catalogo.mjs",
     "validar": "node herramientas/validar-proyecto.mjs",
     "verificar": "npm run catalogo && npm run validar",

@@ -24,20 +24,16 @@ function elegir(items, name, tipo) {
   return matches[0];
 }
 
-export function crearSesion(base, asesor, alumno, titulo, fecha = new Date().toLocaleDateString("sv-SE")) {
-  if (![asesor, alumno, titulo].every((value) => typeof value === "string" && value.trim())) throw new Error("Uso: npm run crear-sesion -- \"Erik\" \"Andres\" \"Título\" [AAAA-MM-DD]");
+export function crearSesion(base, alumno, titulo, fecha = new Date().toLocaleDateString("sv-SE")) {
+  if (![alumno, titulo].every((value) => typeof value === "string" && value.trim())) throw new Error("Uso: npm run crear-sesion -- \"Andres\" \"Título\" [AAAA-MM-DD]");
   titulo = titulo.trim();
   if (/[\x00-\x1f\x7f]/.test(titulo) || titulo.length > 160) throw new Error("Título inválido o demasiado largo (máximo 160 caracteres).");
   const slug = normalizar(titulo).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   if (!slugValido(slug)) throw new Error("El título no produce un slug válido.");
   if (!/^\d{4}-\d{2}-\d{2}$/.test(fecha) || Number.isNaN(Date.parse(`${fecha}T00:00:00Z`)) || new Date(`${fecha}T00:00:00Z`).toISOString().slice(0, 10) !== fecha) throw new Error("Fecha inválida; usa AAAA-MM-DD.");
-  const teacher = elegir(entidades(path.join(base, "asesores"), "maestro.json"), asesor, "Asesor");
-  const student = elegir(entidades(teacher.dir, "usuario.json"), alumno, "Alumno");
-  if (student.data.maestro !== teacher.data.id) throw new Error("El alumno no pertenece al asesor.");
-  for (const entity of [teacher, student]) {
-    const rutaReal = `/${path.relative(base, entity.dir).replaceAll("\\", "/")}/`;
-    if (entity.data.ruta !== rutaReal || !slugValido(entity.data.slug) || path.basename(entity.dir) !== entity.data.slug) throw new Error("La ruta de los metadatos no coincide con la carpeta.");
-  }
+  const student = elegir(entidades(path.join(base, "Casilleros"), "usuario.json"), alumno, "Alumno");
+  const rutaReal = `/${path.relative(base, student.dir).replaceAll("\\", "/")}/`;
+  if (student.data.ruta !== rutaReal || !slugValido(student.data.slug) || path.basename(student.dir) !== student.data.slug) throw new Error("La ruta de los metadatos no coincide con la carpeta.");
   const destination = path.join(student.dir, slug);
   if (fs.existsSync(destination)) throw new Error(`La carpeta ya existe; no se sobrescribe: ${destination}`);
   const id = `${slug}-${student.data.id}`;
@@ -46,7 +42,7 @@ export function crearSesion(base, asesor, alumno, titulo, fecha = new Date().toL
       if ([".git", "node_modules"].includes(entry.name)) continue;
       const file = path.join(dir, entry.name);
       if (entry.isDirectory()) comprobarId(file);
-      else if (/^(tema|componente|ejercicio|juego|calculadora|examen|usuario|sesion|maestro)\.json$/.test(entry.name) && leer(file).id === id) throw new Error(`ID ya registrado: ${id}`);
+      else if (/^(tema|componente|ejercicio|juego|calculadora|examen|usuario|sesion)\.json$/.test(entry.name) && leer(file).id === id) throw new Error(`ID ya registrado: ${id}`);
     }
   };
   comprobarId(base);
@@ -56,9 +52,6 @@ export function crearSesion(base, asesor, alumno, titulo, fecha = new Date().toL
     if (!page.includes(original)) throw new Error(`La plantilla cambió; falta: ${original}`);
     page = page.replaceAll(original, () => replacement);
   };
-  sustituir("../../../", "../../../../");
-  sustituir("../../maestro/", "../../");
-  sustituir("Nombre del asesor", html(teacher.data.nombreVisible));
   sustituir("Nombre del alumno", html(student.data.nombreVisible));
   sustituir("Descripción breve de la sesión.", "Sesión en preparación.");
   sustituir("Reemplaza esta introducción con el propósito real de la sesión.", "Sesión en preparación.");
@@ -69,7 +62,7 @@ export function crearSesion(base, asesor, alumno, titulo, fecha = new Date().toL
     fecha, estado: "publicado", ruta: `${student.data.ruta}${slug}/` };
   const instructions = `# ${titulo}
 
-Sesión independiente de ${student.data.nombreVisible}, del asesor ${teacher.data.nombreVisible}.
+Sesión independiente de ${student.data.nombreVisible}. Cada sesión tiene su propio diseño, reglas y recursos; esta base solo aporta la navegación y los metadatos mínimos.
 Estado actual: vanilla visible, sin contenido educativo ni componentes. La fecha editorial inicial es ${fecha}.
 Lee este README y sesion.json antes de trabajar, también si eres una IA.
 
@@ -87,8 +80,8 @@ Lee este README y sesion.json antes de trabajar, también si eres una IA.
 - No cambies estos campos de sesion.json: id = ${id}; slug = ${slug}; tipo = sesion; usuario = ${student.data.id}; ruta = ${data.ruta}.
 - Conserva estado = publicado para que siga apareciendo en el alumno. Aquí publicado significa visible, aunque el contenido esté en preparación. No vuelvas a registrar la sesión.
 - La fecha editorial la administra quien incorpora la versión; conserva ${fecha} hasta que esa persona decida actualizarla en este JSON.
-- Conserva encabezado, logotipo, menú, pie, enlace de salto y main con id contenido; las migas enlazan al alumno (../) y al asesor (../../).
-- Conserva las referencias relativas a ../../../../recursos/css/base.css, ../../../../recursos/js/navegacion.js y ../../../../recursos/svg/. El script global genera los controles flotantes: no los dupliques.
+- Conserva encabezado, logotipo, menú, pie, enlace de salto y main con id contenido; las migas enlazan al alumno (../) y al inicio (../../../).
+- Conserva las referencias relativas a ../../../recursos/css/base.css, ../../../recursos/js/navegacion.js y ../../../recursos/svg/. El script global genera los controles flotantes: no los dupliques.
 - No hay exports, props ni componentes de framework obligatorios. No requiere JavaScript propio ni imports de otros alumnos.
 - No edites archivos fuera de esta carpeta. La carpeta utiliza recursos de la plataforma: por sí sola no es una copia autónoma del sitio.
 
@@ -100,7 +93,7 @@ Para reflejar también cambios de metadatos en las listas, el responsable ejecut
 
 ## Verificación de entrega
 
-Abre la URL ${data.ruta} desde el servidor de la plataforma. Revisa móvil, escritorio, teclado, menú con Escape, consola, enlaces al alumno y al asesor y ausencia de desbordamiento horizontal. Comprueba que los componentes declarados existen y que no se anuncian componentes vacíos.
+Abre la URL ${data.ruta} desde el servidor de la plataforma. Revisa móvil, escritorio, teclado, menú con Escape, consola, enlaces al alumno y al inicio y ausencia de desbordamiento horizontal. Comprueba que los componentes declarados existen y que no se anuncian componentes vacíos.
 `;
   const styles = fs.readFileSync(path.join(template, "estilos.css"), "utf8").replace("plantillas/alumno/nueva-sesion/index.html", `${data.ruta.slice(1)}index.html`);
   fs.mkdirSync(destination); // Falla también ante una creación concurrente; nunca sobrescribe.
@@ -113,7 +106,7 @@ Abre la URL ${data.ruta} desde el servidor de la plataforma. Revisa móvil, escr
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
-    if (process.argv.length < 5 || process.argv.length > 6) throw new Error('Uso: npm run crear-sesion -- "Asesor" "Alumno" "Título" [AAAA-MM-DD]');
+    if (process.argv.length < 4 || process.argv.length > 5) throw new Error('Uso: npm run crear-sesion -- "Alumno" "Título" [AAAA-MM-DD]');
     const destination = crearSesion(root, ...process.argv.slice(2));
     console.log(`Sesión creada: ${destination}`);
     for (const script of ["generar-catalogo.mjs", "validar-proyecto.mjs"]) execFileSync(process.execPath, [path.join(root, "herramientas", script)], { stdio: "inherit" });

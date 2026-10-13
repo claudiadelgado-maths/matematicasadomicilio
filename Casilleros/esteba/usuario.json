@@ -1,0 +1,16 @@
+{
+  "id": "esteba-karen",
+  "slug": "esteba",
+  "tipo": "usuario",
+  "titulo": "El casillero de Esteba",
+  "nombreVisible": "Esteba",
+  "descripcion": "Sesiones de secundaria para comprender exponentes desconocidos y logaritmos.",
+  "estado": "activo",
+  "ruta": "/Casilleros/esteba/",
+  "personalizacion": {
+    "simbolo": "E",
+    "acento": "#84509a",
+    "fondo": "#f5ecf8"
+  },
+  "almacenamientoLocal": false
+}

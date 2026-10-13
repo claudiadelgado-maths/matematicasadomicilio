@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matemáticas a Domicilio</title>
-  <meta name="description" content="Red de asesores y creadores que desarrolla sesiones personalizadas y recursos abiertos para aprender, enseñar y compartir matemáticas.">
+  <meta name="description" content="Casilleros de estudiantes con sesiones personalizadas y recursos abiertos para aprender, enseñar y compartir matemáticas.">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="Matemáticas a Domicilio">
   <meta property="og:description" content="Asesorías particulares y herramientas de enseñanza para aprender, enseñar y compartir matemáticas.">
@@ -13,7 +13,15 @@
   <link rel="icon" href="recursos/svg/favicon.svg?v=20260716-brand1" type="image/svg+xml">
 
   <link rel="stylesheet" href="recursos/css/base.css?v=20260902-global1">
-  <link rel="stylesheet" href="estilos.css?v=20260826-cita5">
+  <link rel="stylesheet" href="estilos.css?v=20261013-casilleros3">
+  <link rel="stylesheet" href="Casilleros/alejandrina/recursos/identidad.css?v=20261013-banner-completo">
+  <link rel="stylesheet" href="Casilleros/kenisa/recursos/identidad.css?v=20261013-banner-completo">
+  <link rel="stylesheet" href="Casilleros/raul/recursos/identidad.css?v=20261013-banner-completo">
+  <link rel="stylesheet" href="Casilleros/elyan/recursos/identidad.css?v=20261013-identidad1">
+  <link rel="stylesheet" href="Casilleros/andres/recursos/identidad.css?v=20261013-identidad1">
+  <link rel="stylesheet" href="Casilleros/jose-perez/recursos/identidad.css?v=20261013-identidad1">
+  <link rel="stylesheet" href="Casilleros/renata/recursos/identidad.css?v=20261013-identidad1">
+  <script src="script.js?v=20261013-casilleros2" defer></script>
   <script src="recursos/js/navegacion.js?v=20260902-global1" defer></script>
 </head>
 <body id="inicio">
@@ -31,7 +39,7 @@
           <li><a href="index.html?v=20260722-header2" aria-current="page">Inicio</a></li>
           <li><a href="nosotros/">Nosotros</a></li>
           <li><a href="biblioteca/">Biblioteca</a></li>
-          <li><a href="asesores/">Salones</a></li>
+
           <li><a href="contacto/">Contacto</a></li>
         </ul>
       </nav>
@@ -52,99 +60,15 @@
       </div>
     </section>
 
-    <section class="philosophy-section" id="filosofia" aria-labelledby="philosophy-title">
+    <section class="casilleros-section" id="casilleros" aria-label="Casilleros de estudiantes">
       <div class="container">
-        <h2 class="philosophy-title" id="philosophy-title">Nuestra filosofía</h2>
-        <p class="philosophy-intro">Matemáticas a Domicilio es una plataforma pública que ofrece espacios virtuales donde alumnos y profesores pueden crear y organizar los contenidos y recursos digitales que utilizan durante sus clases.</p>
-        <div class="philosophy-list">
-          <article class="philosophy-card">
-            <div class="philosophy-icon" aria-hidden="true">
-              <svg viewBox="0 0 140 140" fill="none">
-                <circle cx="57" cy="55" r="37" stroke="currentColor" stroke-width="4"/>
-                <path d="M83 82 118 117" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-                <path d="M79 78 88 87" stroke="#fff" stroke-width="4"/>
-                <text x="57" y="70" fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="52" text-anchor="middle">π</text>
-              </svg>
-            </div>
-            <p class="philosophy-answer">Para nosotros, las matemáticas son mucho más que una asignatura escolar. Son una forma de comprender el mundo, resolver problemas y construir herramientas que nos permitan afrontar con mayor libertad los desafíos de la vida.</p>
-          </article>
-
-          <article class="philosophy-card">
-            <div class="philosophy-icon" aria-hidden="true">
-              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m14 64 56-49 56 49"/>
-                <path d="M27 58v67h86V58M93 35V20h15v28"/>
-                <path d="M70 105 48 85c-15-14 7-34 22-15 15-19 37 1 22 15Z"/>
-              </svg>
-            </div>
-            <p class="philosophy-answer">Elegimos <strong>Matemáticas a Domicilio</strong> porque creemos que el aprendizaje ocurre mejor cuando el estudiante se encuentra en un entorno donde se siente cómodo, seguro y acompañado. Para nosotros, el mejor lugar para aprender siempre será el hogar.</p>
-          </article>
-
-          <article class="philosophy-card">
-            <div class="philosophy-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M10 13a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
-                <path d="M8 21v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/>
-                <path d="M15 5a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
-                <path d="M17 10h2a2 2 0 0 1 2 2v1"/>
-                <path d="M5 5a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
-                <path d="M3 13v-1a2 2 0 0 1 2-2h2"/>
-              </svg>
-            </div>
-            <p class="philosophy-answer">Creemos que el conocimiento se construye en comunidad y que todos tenemos algo que aportar. Al compartir nuestras ideas, podemos enriquecerlas y crear mejores herramientas para todos.</p>
-          </article>
+        <div class="casilleros-search" role="search">
+          <input type="search" aria-label="Buscar estudiantes por nombre" placeholder="Buscar estudiante…" aria-controls="casilleros-lista" autocomplete="off" data-casilleros-search disabled>
         </div>
-        <a class="text-link philosophy-more" href="nosotros/">Conoce más sobre nosotros</a>
-      </div>
-    </section>
-
-    <section class="home-resources-section" id="recursos" aria-labelledby="recursos-inicio-titulo">
-      <div class="container">
-        <h2 class="home-resources-title" id="recursos-inicio-titulo">Explora Matemáticas a Domicilio</h2>
-        <p class="home-resources-intro">Consulta nuestros recursos educativos y entra en los salones de alumnos y profesores.</p>
-
-        <div class="home-resources-grid">
-          <a class="home-resource-option" href="biblioteca/">
-            <span class="home-resource-icon" aria-hidden="true">
-              <svg viewBox="0 0 140 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 25h30v92H18ZM48 19h34v98H48ZM82 31h40v86H82Z"/>
-                <path d="M25 39h16M25 103h16M56 34h18M56 101h18M91 45h22M91 102h22M13 117h114"/>
-              </svg>
-            </span>
-            <strong>Biblioteca</strong>
-            <span class="home-resource-description">Recursos y herramientas</span>
-            <span class="home-resource-link">Ver biblioteca →</span>
-          </a>
-
-          <a class="home-resource-option" href="asesores/">
-            <span class="home-resource-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m22 9-10-4L2 9l10 4 10-4v6"/>
-                <path d="M6 10.6V16a6 3 0 0 0 12 0v-5.4"/>
-              </svg>
-            </span>
-            <strong>Salones</strong>
-            <span class="home-resource-description">Asesores, alumnos y sesiones</span>
-            <span class="home-resource-link">Ver salones →</span>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq-section" aria-labelledby="faq-titulo">
-      <div class="narrow">
-        <h2 class="faq-title" id="faq-titulo">Preguntas frecuentes</h2>
-        <div class="faq-list home-faq-list">
-          <details><summary>¿A quién están dirigidas las asesorías?</summary><p>A estudiantes de cualquier edad y nivel que necesiten aprender, reforzar o profundizar sus conocimientos de matemáticas. Cada asesor trabaja con diferentes temas y niveles, por lo que puedes elegir el que mejor se adapte a tus necesidades.</p></details>
-          <details><summary>¿Cómo puedo encontrar y contactar a un asesor?</summary><p>En <strong>Salones</strong> puedes conocer a los asesores disponibles, consultar información sobre sus sesiones y encontrar sus medios de contacto para solicitar una asesoría.</p></details>
-          <details><summary>¿Dónde se imparten las sesiones?</summary><p>Depende de cada asesor. Las sesiones pueden impartirse a domicilio, en línea o mediante otras modalidades acordadas con el estudiante. Esta información se encuentra disponible en el salón de cada profesor.</p></details>
-          <details><summary>¿Cuánto cuestan las asesorías?</summary><p>Cada asesor establece su propia tarifa de acuerdo con la duración, modalidad y lugar donde imparte sus sesiones. Puedes consultar y comparar los precios disponibles antes de contactar a un profesor.</p></details>
-          <details><summary>¿Qué es el salón de un alumno?</summary><p>Es el espacio donde el profesor organiza las sesiones y recursos de cada estudiante. El alumno puede regresar posteriormente para consultar explicaciones, practicar con ejercicios o juegos y repasar lo aprendido.</p></details>
-          <details><summary>¿Puedo utilizar los recursos de la Biblioteca?</summary><p>Sí. La Biblioteca contiene juegos, explicaciones, ejercicios, calculadoras y otros recursos que pueden ser utilizados para aprender o complementar una sesión.</p></details>
-          <details><summary>¿Cómo puedo participar como profesor?</summary><p>Cualquier profesor interesado puede participar, crear su salón, organizar las sesiones de sus alumnos y utilizar los recursos disponibles en la plataforma.</p></details>
-          <details><summary>¿Puedo colaborar como programador o científico?</summary><p>Sí. Programadores y científicos pueden colaborar creando o mejorando recursos para las sesiones y la Biblioteca. Sus contribuciones pueden formar parte de sus proyectos y estar disponibles para que otros profesores las utilicen.</p></details>
-        </div>
+        <p class="casilleros-status" role="status" data-casilleros-status>Cargando casilleros…</p>
+        <div class="student-locker-list" id="casilleros-lista" data-casilleros-list></div>
+        <nav class="casilleros-pages" aria-label="Páginas de casilleros" data-casilleros-pages hidden></nav>
+        <noscript><p>Activa JavaScript para buscar y abrir los casilleros.</p></noscript>
       </div>
     </section>
   </main>
@@ -155,7 +79,7 @@
         <a class="brand" href="index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="recursos/svg/logo-estrella.svg?v=20260716-logo3" width="204" height="48" alt=""></a>
         <p>Asesorías particulares de matemáticas</p>
       </div>
-      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="index.html">Inicio</a></li><li><a href="nosotros/">Nosotros</a></li><li><a href="biblioteca/">Biblioteca</a></li><li><a href="asesores/">Salones</a></li><li><a href="contacto/">Contacto</a></li></ul></nav>
+      <nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="index.html">Inicio</a></li><li><a href="nosotros/">Nosotros</a></li><li><a href="biblioteca/">Biblioteca</a></li><li><a href="contacto/">Contacto</a></li></ul></nav>
     </div>
     <div class="container footer-legal">
       <p class="footer-copyright">© 2026 Matemáticas a Domicilio</p>

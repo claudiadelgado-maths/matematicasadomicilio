@@ -1,0 +1,16 @@
+{
+  "id": "andres",
+  "slug": "andres",
+  "tipo": "usuario",
+  "titulo": "Espacio de Andrés",
+  "nombreVisible": "Andrés",
+  "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+  "estado": "activo",
+  "ruta": "/Casilleros/andres/",
+  "personalizacion": {
+    "simbolo": "A",
+    "acento": "#195c40",
+    "fondo": "#113f31"
+  },
+  "almacenamientoLocal": false
+}

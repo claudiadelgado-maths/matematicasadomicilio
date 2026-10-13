@@ -1,0 +1,63 @@
+/* Fútbol: identidad compartida por la portada y el índice de Andrés. */
+.student-locker[data-student-id="andres"],
+.andres-banner {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  place-items: center;
+  min-height: clamp(210px, 27vw, 320px);
+  padding: 38px 23%;
+  overflow: hidden;
+  border: 1px solid #789369;
+  border-radius: 16px;
+  background: url("futbol-izquierda.svg") left center / auto 100% no-repeat,
+    url("futbol-derecha.svg") right center / auto 100% no-repeat,
+    repeating-linear-gradient(110deg, #ffffff04 0 75px, #00000004 75px 150px),
+    radial-gradient(ellipse at center, #287347, #113f31 85%);
+  color: #f4f6df;
+  box-shadow: 0 8px 24px #123e281c;
+}
+
+.student-locker[data-student-id="andres"]::after,
+.andres-banner::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 12px;
+  border: 1px solid #e1ebae55;
+  border-radius: 7px;
+  pointer-events: none;
+}
+
+.student-locker[data-student-id="andres"] .student-locker-symbol,
+.student-locker[data-student-id="andres"] .student-locker-arrow { display: none; }
+
+.student-locker[data-student-id="andres"] .student-locker-copy > strong,
+.andres-banner h1 {
+  margin: 0;
+  max-width: 100%;
+  color: #f4f6df;
+  font-family: "Arial Black", "Segoe UI", sans-serif;
+  font-size: clamp(3.2rem, 8.6vw, 6.4rem);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: .035em;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 3px 4px 0 #092f28;
+}
+
+.andres-hero { padding-block: 28px 16px; }
+.student-locker[data-student-id="andres"]:focus-visible { outline-color: #195c40; }
+.student-locker[data-student-id="andres"]:hover { box-shadow: 0 10px 26px #163e3433; }
+
+@media (max-width: 640px) {
+  .student-locker[data-student-id="andres"],
+  .andres-banner { padding: 48px 16px; background-position: left top, right bottom, center, center; background-size: auto 55%, auto 55%, auto, cover; }
+  .student-locker[data-student-id="andres"] .student-locker-copy > strong,
+  .andres-banner h1 { font-size: clamp(2.5rem, 11vw, 4.3rem); }
+}

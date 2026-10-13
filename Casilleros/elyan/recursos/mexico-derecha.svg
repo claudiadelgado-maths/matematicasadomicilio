@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 360" fill="none">
+  <defs>
+    <g id="flor"><g fill="#d04b3e"><ellipse cy="-24" rx="14" ry="27"/><ellipse cy="-24" rx="14" ry="27" transform="rotate(60)"/><ellipse cy="-24" rx="14" ry="27" transform="rotate(120)"/><ellipse cy="-24" rx="14" ry="27" transform="rotate(180)"/><ellipse cy="-24" rx="14" ry="27" transform="rotate(240)"/><ellipse cy="-24" rx="14" ry="27" transform="rotate(300)"/></g><circle r="16" fill="#ebbc4e"/><circle r="7" fill="#fff2d7"/></g>
+  </defs>
+  <path d="M280 0H250C276 89 239 146 252 224S241 317 266 360H280Z" fill="#bf3b3b"/>
+  <path d="M245 0C271 92 233 153 245 224S237 315 255 360" stroke="#dfb250" stroke-width="5"/>
+  <path d="M24 27Q159 62 270 28" stroke="#be923e" stroke-width="2"/>
+  <g transform="translate(42 33) rotate(9)"><path d="M0 0H58V46L51 55 44 46 37 55 30 46 23 55 16 46 9 55 0 46Z" fill="#c3413d"/><path d="m29 9 13 13-13 13-13-13zM9 8v29M49 8v29" stroke="#fff2d7" stroke-width="3"/></g>
+  <g transform="translate(117 43) rotate(-2)"><path d="M0 0H58V46L51 55 44 46 37 55 30 46 23 55 16 46 9 55 0 46Z" fill="#eadab0"/><path d="m29 9 13 13-13 13-13-13zM9 8v29M49 8v29" stroke="#087254" stroke-width="3"/></g>
+  <g transform="translate(190 39) rotate(-10)"><path d="M0 0H58V46L51 55 44 46 37 55 30 46 23 55 16 46 9 55 0 46Z" fill="#087254"/><path d="m29 9 13 13-13 13-13-13zM9 8v29M49 8v29" stroke="#fff2d7" stroke-width="3"/></g>
+  <path d="M166 350Q156 284 190 210M167 313Q128 303 111 272" stroke="#1b694a" stroke-width="4"/>
+  <path d="M173 300Q202 264 229 278Q225 308 173 300ZM169 315Q149 267 128 286Q124 305 169 315ZM179 269Q149 238 157 222Q185 225 179 269Z" fill="#4d9364"/>
+  <use href="#flor" transform="translate(194 197) rotate(13)"/>
+  <use href="#flor" transform="translate(103 266) rotate(-14) scale(.63)"/>
+  <g transform="translate(73 139)" stroke="#d3a13c" stroke-width="3"><circle r="16" fill="#f3cf70"/><path d="M0-25v-9M0 25v9M-25 0h-9M25 0h9M-18-18-24-24M18 18l6 6M-18 18-24 24M18-18l6-6"/></g>
+  <path d="m50 329 10-10 10 10-10 10Z" fill="#087254"/><circle cx="43" cy="222" r="3" fill="#c3413d"/><circle cx="128" cy="112" r="3" fill="#087254"/>
+</svg>

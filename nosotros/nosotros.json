@@ -1,0 +1,15 @@
+{
+  "id": "nosotros",
+  "tipo": "pagina",
+  "titulo": "Nosotros",
+  "estado": "publicado",
+  "ruta": "/nosotros/",
+  "descripcion": "Historia, filosofía, recursos y preguntas frecuentes de Matemáticas a Domicilio.",
+  "seccionInicial": "historia",
+  "secciones": [
+    { "id": "historia", "titulo": "La historia de Matemáticas a Domicilio" },
+    { "id": "filosofia", "titulo": "Nuestra filosofía" },
+    { "id": "recursos", "titulo": "Explora Matemáticas a Domicilio" },
+    { "id": "preguntas", "titulo": "Preguntas frecuentes" }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "renata-elizabeth",
+  "slug": "renata",
+  "tipo": "usuario",
+  "titulo": "El casillero de Renata",
+  "nombreVisible": "Renata",
+  "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
+  "estado": "activo",
+  "ruta": "/Casilleros/renata/",
+  "personalizacion": {
+    "simbolo": "R",
+    "acento": "#315e46",
+    "fondo": "#e8eedb"
+  },
+  "almacenamientoLocal": false
+}

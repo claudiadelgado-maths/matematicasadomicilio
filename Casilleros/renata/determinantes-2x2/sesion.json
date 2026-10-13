@@ -1,0 +1,23 @@
+{
+  "id": "determinantes-2x2-renata-elizabeth",
+  "slug": "determinantes-2x2",
+  "tipo": "sesion",
+  "usuario": "renata-elizabeth",
+  "titulo": "Determinantes 2 × 2",
+  "descripcion": "Sesión interactiva en seis etapas: concepto, regla, calculadora, geometría, práctica autocorregible y desafío final.",
+  "objetivo": "Calcular e interpretar determinantes 2×2, comprender su relación con el área y reconocer la invertibilidad de una matriz.",
+  "conocimientosPrevios": [
+    "Lectura de matrices de dos filas y dos columnas",
+    "Multiplicación y resta de números enteros"
+  ],
+  "fecha": "2026-10-13",
+  "estado": "publicado",
+  "ruta": "/Casilleros/renata/determinantes-2x2/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": true,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
+}

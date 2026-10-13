@@ -1,0 +1,23 @@
+{
+  "id": "interes-simple-y-compuesto-andres",
+  "slug": "interes-simple-y-compuesto",
+  "tipo": "sesion",
+  "usuario": "andres",
+  "titulo": "Interés simple y compuesto",
+  "descripcion": "Sesión interactiva con explicación, simulador, gráfica, tabla dinámica y retos autocorregibles.",
+  "objetivo": "Distinguir interés simple y compuesto y calcular el monto final y el interés ganado con una tasa fija.",
+  "conocimientosPrevios": [
+    "Porcentajes y conversión a decimales",
+    "Multiplicación y potencias sencillas"
+  ],
+  "fecha": "2026-10-13",
+  "estado": "publicado",
+  "ruta": "/Casilleros/andres/interes-simple-y-compuesto/",
+  "componentes": {
+    "explicacion": true,
+    "demostraciones": true,
+    "ejercicios": true,
+    "juegos": true,
+    "calculadoras": true
+  }
+}

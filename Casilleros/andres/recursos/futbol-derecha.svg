@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360" fill="none">
+  <defs><clipPath id="red"><path d="M102 142H244L274 260H132Z"/></clipPath></defs>
+  <path d="M43 30H282V330H45M270 119H222V243H270" stroke="#e5f2d8" stroke-width="2" opacity=".35"/>
+  <path d="M40 300Q150 259 288 275" stroke="#e5f2d8" stroke-width="2" opacity=".5"/>
+  <path d="M102 142H244L274 260H132Z" fill="#072f29" fill-opacity=".45"/>
+  <g clip-path="url(#red)" stroke="#bfd8bc" stroke-width="1" opacity=".7"><path d="M100 166H252M107 190H258M115 214H266M120 238H272M121 137l30 129M144 137l30 129M167 137l30 129M190 137l30 129M213 137l30 129M236 137l30 129"/></g>
+  <path d="M80 255V120H225V254M80 120 102 142M225 120l19 22M244 142l30 118M80 255l52 5M225 254l49 6" stroke="#f3f6df" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 239Q83 192 175 206" stroke="#d6e879" stroke-width="3" stroke-dasharray="8 7"/>
+  <path d="m159 192 19 15-23 7" stroke="#d6e879" stroke-width="3"/>
+  <g transform="translate(160 73)"><circle r="23" stroke="#e4efad" stroke-width="2"/><path d="m0-12 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z" fill="#d6e879"/></g>
+  <path d="m61 56 13 13m0-13L61 69m134 224 13 13m0-13-13 13" stroke="#d6e879" stroke-width="3"/>
+  <g fill="#d6e879"><circle cx="38" cy="150" r="4"/><circle cx="87" cy="313" r="3"/></g>
+</svg>

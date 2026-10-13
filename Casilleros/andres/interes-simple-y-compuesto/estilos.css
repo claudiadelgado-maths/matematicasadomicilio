@@ -1,0 +1,72 @@
+/* Diseño local e independiente de esta sesión. */
+.interes-sesion { padding-bottom: 3rem; background: #faf8f1; color: #253f42; }
+.interes-sesion .interes-wrap { max-width: 920px; }
+.interes-sesion .breadcrumbs { padding-top: 1.3rem; font-size: .85rem; }
+.interes-sesion .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; list-style: none; }
+.interes-sesion .breadcrumbs li:not(:last-child)::after { content: '/'; margin-left: .5rem; color: #77817d; }
+.interes-intro { padding: 2.5rem 0 1.5rem; }
+.interes-sesion .interes-eyebrow { color: #5d706f; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; }
+.interes-sesion h1 { max-width: 760px; margin: .5rem 0 1rem; font-size: clamp(2.3rem, 5vw, 3.7rem); letter-spacing: -.035em; line-height: 1.08; }
+.interes-sesion h2 { margin: 0 0 1rem; font-size: clamp(1.45rem, 3vw, 2rem); line-height: 1.25; }
+.interes-sesion h3 { margin: 0 0 .5rem; font-size: 1.15rem; }
+.interes-sesion section { padding: 2rem 0; border-top: 1px solid #d6ddd6; }
+.interes-sesion p { max-width: 74ch; }
+.interes-sesion .interes-comparacion { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.interes-sesion .interes-comparacion article { padding: 1.2rem; background: #e7efea; border-radius: 10px; }
+.interes-sesion .interes-comparacion article:last-child { background: #f0e8d6; }
+.interes-sesion math { margin-top: 1rem; font-size: clamp(1.2rem, 3vw, 1.6rem); }
+.interes-sesion .interes-datos { margin-top: 1.5rem; }
+.interes-sesion .interes-datos div { display: flex; gap: .8rem; margin-block: .3rem; }
+.interes-sesion dt { min-width: 1.2rem; font-weight: 800; }
+.interes-sesion dd { margin: 0; }
+.interes-sesion .interes-nota { padding: 1rem; border-left: 3px solid #7c9184; background: white; }
+.interes-sesion table { width: 100%; margin: 1.5rem 0; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.interes-sesion caption { margin-bottom: .6rem; text-align: left; font-weight: 700; }
+.interes-sesion th, .interes-sesion td { padding: .75rem .6rem; border-bottom: 1px solid #cdd8ce; text-align: right; }
+.interes-sesion th:first-child { text-align: left; }
+.interes-sesion thead { background: #e7efea; }
+.interes-sesion details { margin-top: .75rem; }
+.interes-sesion summary { min-height: 44px; padding-block: .55rem; cursor: pointer; font-weight: 700; }
+.interes-sesion .interes-ejercicio { padding: 1.2rem 0; border-bottom: 1px solid #d6ddd6; }
+.interes-sesion .interes-volver { display: inline-block; min-height: 44px; padding-block: .65rem; font-weight: 700; }
+@media (max-width: 640px) { .interes-sesion .interes-comparacion { grid-template-columns: 1fr; } }
+/* Laboratorio interactivo: estilos encapsulados dentro de la sesión. */
+.interes-sesion .laboratorio,.interes-sesion .reto{padding-block:2.6rem}
+.interes-sesion .lab-heading{display:flex;align-items:start;justify-content:space-between;gap:1rem}
+.interes-sesion .lab-chip{flex:none;background:#d9ede5;border-radius:99px;padding:.5rem .85rem;font-weight:800;color:#20534a}
+.interes-sesion .lab-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:1rem;margin-top:1.5rem}
+.interes-sesion .lab-form,.interes-sesion .lab-results,.interes-sesion .lab-chart-wrap,.interes-sesion .lab-table-wrap,.interes-sesion .lab-steps,.interes-sesion .reto-card{background:#fff;border:1px solid #d7e1db;border-radius:18px;padding:1.4rem;box-shadow:0 5px 24px #193f3210}
+.interes-sesion .lab-form{display:flex;flex-direction:column;gap:.55rem}
+.interes-sesion .lab-form label,.interes-sesion .reto-card label{font-weight:750;margin-top:.4rem}
+.interes-sesion .lab-form input[type=number],.interes-sesion .reto-card input{width:100%;border:1px solid #9bada4;border-radius:9px;padding:.75rem;font:inherit;background:white;color:#253f42}
+.interes-sesion .lab-form input[type=range]{width:100%;accent-color:#237b6b}
+.interes-sesion .lab-presets,.interes-sesion .reto-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.65rem}
+.interes-sesion .lab-presets button,.interes-sesion .lab-reset,.interes-sesion .reto-actions button{border:1px solid #277a6b;border-radius:9px;padding:.7rem .85rem;background:#e9f5f0;color:#174b41;font:inherit;font-weight:750;cursor:pointer;min-height:44px}
+.interes-sesion .reto-actions button:first-child{background:#226b5d;color:white}
+.interes-sesion button:hover{filter:brightness(.95)}
+.interes-sesion button:focus-visible,.interes-sesion input:focus-visible{outline:3px solid #de9b38;outline-offset:2px}
+.interes-sesion .lab-reset{align-self:flex-start;background:transparent;border-color:#a4b6ad}
+.interes-sesion .lab-results{display:grid;align-content:center;gap:.9rem;background:#f1f8f4}
+.interes-sesion .lab-stat{display:grid;gap:.35rem;border-left:5px solid #268775;padding:1rem;background:white;border-radius:10px}
+.interes-sesion .lab-stat.compuesto{border-color:#cc8734}
+.interes-sesion .lab-stat strong{font-size:clamp(1.5rem,3vw,2.25rem);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.interes-sesion .lab-stat small{font-size:.9rem}
+.interes-sesion .lab-diferencia{padding:.75rem;background:#e2eee7;border-radius:10px}
+.interes-sesion .lab-chart-wrap,.interes-sesion .lab-table-wrap,.interes-sesion .lab-steps{margin-top:1rem}
+.interes-sesion #grafica-interes{display:block;width:100%;height:auto;min-height:190px}
+.interes-sesion .lab-legend{display:flex;gap:1.3rem;flex-wrap:wrap;font-weight:700;font-size:.9rem}
+.interes-sesion .lab-legend span{display:flex;align-items:center;gap:.4rem}
+.interes-sesion .lab-legend i{width:22px;border-top:4px solid #268775}
+.interes-sesion .lab-legend .line-compuesto{border-color:#cc8734}
+.interes-sesion .lab-scroll{overflow-x:auto}
+.interes-sesion .lab-table-wrap table{min-width:540px}
+.interes-sesion .lab-table-wrap th,.interes-sesion .lab-table-wrap td{white-space:nowrap}
+.interes-sesion .reto-card{max-width:720px;background:#f5f8f4}
+.interes-sesion .reto-pregunta{font-size:1.13rem;font-weight:700}
+.interes-sesion .reto-card input{display:block;max-width:300px;margin:.5rem 0}
+.interes-sesion .reto-feedback{font-weight:700;min-height:1.5em}
+.interes-sesion .reto-ayuda{padding:1rem;border-radius:10px;background:white}
+.interes-sesion .reto-marcador{font-size:.9rem;color:#53645c}
+.interes-sesion .lab-error{color:#a32d2d;font-weight:700}
+@media(max-width:700px){.interes-sesion .lab-layout{grid-template-columns:1fr}.interes-sesion .lab-heading{flex-direction:column}.interes-sesion .lab-form,.interes-sesion .lab-results,.interes-sesion .lab-chart-wrap,.interes-sesion .lab-table-wrap,.interes-sesion .lab-steps,.interes-sesion .reto-card{padding:1rem}}
+@media(prefers-reduced-motion:reduce){.interes-sesion *{scroll-behavior:auto!important}}

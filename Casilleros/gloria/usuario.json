@@ -1,0 +1,16 @@
+{
+  "id": "gloria-elizabeth",
+  "slug": "gloria",
+  "tipo": "usuario",
+  "titulo": "El casillero de Gloria",
+  "nombreVisible": "Gloria",
+  "descripcion": "Sesiones universitarias sobre derivación, integración y el teorema fundamental del cálculo.",
+  "estado": "activo",
+  "ruta": "/Casilleros/gloria/",
+  "personalizacion": {
+    "simbolo": "G",
+    "acento": "#7a5f37",
+    "fondo": "#f5efe4"
+  },
+  "almacenamientoLocal": false
+}

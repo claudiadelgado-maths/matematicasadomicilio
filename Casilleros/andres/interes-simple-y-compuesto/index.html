@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interés simple y compuesto | Matemáticas a Domicilio</title>
+  <meta name="description" content="Laboratorio interactivo para explorar el interés simple y compuesto con simulador, gráfica y ejercicios.">
+  <link rel="icon" href="../../../recursos/svg/favicon.svg" type="image/svg+xml">
+
+
+  <link rel="stylesheet" href="../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="estilos.css?v=20261013-sesion1">
+  <script src="../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../">Inicio</a></li><li><a href="../../../nosotros/">Nosotros</a></li><li><a href="../../../biblioteca/">Biblioteca</a></li><li><a href="../../../contacto/">Contacto</a></li></ul></nav></div></header>
+  <main id="contenido" class="interes-sesion">
+    <div class="container interes-wrap">
+      <nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="../../../index.html">Inicio</a></li><li><a href="../index.html">Andrés</a></li><li aria-current="page">Interés simple y compuesto</li></ol></nav>
+      <header class="interes-intro"><p class="interes-eyebrow">Andrés · Porcentajes</p><h1>Interés simple y compuesto</h1><p>La diferencia está en la cantidad sobre la que calculas el interés cada periodo.</p></header>
+      <section aria-labelledby="idea-titulo"><h2 id="idea-titulo">Dos maneras de crecer</h2>
+        <div class="interes-comparacion">
+          <article><h3>Interés simple</h3><p>Siempre se calcula sobre el <strong>capital inicial</strong>. Si la tasa es fija, cada periodo se añade la misma cantidad.</p><math display="block" aria-label="Monto con interés simple: C por uno más n por i"><mrow><msub><mi>M</mi><mi>s</mi></msub><mo>=</mo><mi>C</mi><mo>(</mo><mn>1</mn><mo>+</mo><mi>n</mi><mo>·</mo><mi>i</mi><mo>)</mo></mrow></math></article>
+          <article><h3>Interés compuesto</h3><p>Se calcula sobre el <strong>saldo acumulado</strong>. Los intereses se suman al capital y también generan intereses en el siguiente periodo.</p><math display="block" aria-label="Monto con interés compuesto: C por uno más i elevado a n"><mrow><msub><mi>M</mi><mi>c</mi></msub><mo>=</mo><mi>C</mi><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>i</mi><mo>)</mo></mrow><mi>n</mi></msup></mrow></math></article>
+        </div>
+        <dl class="interes-datos"><div><dt>C</dt><dd>Capital inicial.</dd></div><div><dt>i</dt><dd>Tasa por periodo en decimal: 10 % = 0.10.</dd></div><div><dt>n</dt><dd>Número de periodos.</dd></div><div><dt>M</dt><dd>Monto final: capital más intereses.</dd></div></dl>
+        <p class="interes-nota">La tasa y el tiempo deben usar el mismo periodo. Si la tasa es anual, cuenta años. El interés ganado es <strong>I = M − C</strong>.</p>
+      </section>
+      <section aria-labelledby="ejemplo-titulo"><h2 id="ejemplo-titulo">El mismo punto de partida</h2><p>Ejemplo hipotético: comienzas con <strong>$1,000</strong>, con tasa fija del <strong>10 % anual</strong>, durante <strong>3 años</strong>. En el caso compuesto, el interés se suma al saldo al final de cada año. No hay depósitos ni retiros adicionales.</p>
+        <table><caption>Saldo al final de cada año</caption><thead><tr><th scope="col">Año</th><th scope="col">Simple</th><th scope="col">Compuesto</th></tr></thead><tbody><tr><th scope="row">Inicio</th><td>$1,000</td><td>$1,000</td></tr><tr><th scope="row">1</th><td>$1,100</td><td>$1,100</td></tr><tr><th scope="row">2</th><td>$1,200</td><td>$1,210</td></tr><tr><th scope="row">3</th><td>$1,300</td><td>$1,331</td></tr></tbody></table>
+        <p><strong>Simple:</strong> cada año se añaden $100, que son el 10 % de $1,000. El interés total es $300.</p>
+        <p><strong>Compuesto:</strong> se añaden $100, luego $110 y después $121. Cada año multiplicas el saldo anterior por 1.10. El interés total es $331.</p>
+        <details><summary>Ver el cálculo con las fórmulas</summary><p>Simple: 1,000 × (1 + 3 × 0.10) = <strong>$1,300</strong>.</p><p>Compuesto: 1,000 × 1.10³ = <strong>$1,331</strong>.</p><p>En este ejemplo, el compuesto acumula $31 más.</p></details>
+      </section>
+      <section aria-labelledby="practica-titulo"><h2 id="practica-titulo">Practica con números pequeños</h2><p>Resuelve primero en tu cuaderno. Después abre cada respuesta.</p>
+        <article class="interes-ejercicio"><h3>1. Compara los montos</h3><p>Partes de <strong>$500 al 10 % anual durante 2 años</strong>. ¿Cuál es el monto final con interés simple? ¿Y con compuesto, capitalizado cada año?</p><details><summary>Ver respuesta del ejercicio 1</summary><p>Simple: 500 × (1 + 2 × 0.10) = <strong>$600</strong>.</p><p>Compuesto: 500 × 1.10 × 1.10 = <strong>$605</strong>.</p><p>Los intereses ganados son $100 y $105, respectivamente.</p></details></article>
+        <article class="interes-ejercicio"><h3>2. Sigue el saldo</h3><p>Partes de <strong>$200 al 5 % anual compuesto durante 2 años</strong>, capitalizado cada año. Encuentra el saldo al terminar cada año y el interés total.</p><details><summary>Ver respuesta del ejercicio 2</summary><p>Año 1: 200 × 1.05 = <strong>$210</strong>.</p><p>Año 2: 210 × 1.05 = <strong>$220.50</strong>.</p><p>Interés total: 220.50 − 200 = <strong>$20.50</strong>.</p></details></article>
+      </section>
+      <section class="laboratorio" aria-labelledby="lab-titulo">
+        <div class="lab-heading"><div><p class="interes-eyebrow">Laboratorio interactivo</p><h2 id="lab-titulo">Experimenta con tu propio dinero</h2><p>Cambia los datos y observa cómo evoluciona una misma inversión. Los resultados son ejemplos matemáticos, no predicciones financieras.</p></div><span class="lab-chip">¡Tú decides!</span></div>
+        <div class="lab-layout"><form id="simulador" class="lab-form"><label for="capital">Capital inicial ($)</label><input id="capital" name="capital" type="number" min="0.01" max="1000000000" step="any" value="1000" required><label for="tasa">Tasa por periodo (%)</label><input id="tasa" name="tasa" type="number" min="0" max="100" step="any" value="10" required><label for="periodos">Número de periodos <output id="periodos-valor" for="periodos">3</output></label><input id="periodos" name="periodos" type="range" min="1" max="30" step="1" value="3"><div class="lab-presets"><button type="button" data-preset="inicio">Ejemplo inicial</button><button type="button" data-preset="largo">A largo plazo</button><button type="button" data-preset="suave">Tasa pequeña</button></div><button class="lab-reset" type="reset">Restablecer</button><p id="lab-error" class="lab-error" role="alert" hidden></p></form>
+        <div class="lab-results" aria-live="polite"><div class="lab-stat"><span>Interés simple</span><strong id="monto-simple">$1,300.00</strong><small id="ganancia-simple">Ganancia: $300.00</small></div><div class="lab-stat compuesto"><span>Interés compuesto</span><strong id="monto-compuesto">$1,331.00</strong><small id="ganancia-compuesto">Ganancia: $331.00</small></div><div class="lab-diferencia">Diferencia entre ambos: <strong id="diferencia">$31.00</strong></div></div></div>
+        <div class="lab-chart-wrap"><h3>Observa cómo crecen</h3><p>Las líneas muestran el monto acumulado al terminar cada periodo.</p><div class="lab-legend"><span><i class="line-simple"></i> Simple</span><span><i class="line-compuesto"></i> Compuesto</span></div><svg id="grafica-interes" viewBox="0 0 700 310" role="img" aria-label="Gráfica comparativa de montos según el periodo" preserveAspectRatio="xMidYMid meet"></svg></div>
+        <div class="lab-table-wrap"><h3>Explora periodo por periodo</h3><div class="lab-scroll"><table><caption>Comparación de montos y crecimiento</caption><thead><tr><th scope="col">Periodo</th><th scope="col">Simple</th><th scope="col">Compuesto</th><th scope="col">Interés compuesto del periodo</th></tr></thead><tbody id="tabla-dinamica"></tbody></table></div></div>
+        <div class="lab-steps"><h3>¿De dónde salen los resultados?</h3><p id="explicacion-dinamica"></p><p><strong>Recuerda:</strong> el interés simple se suma sobre el capital original; el compuesto se calcula sobre el saldo que ya creció. Ambos coinciden después del primer periodo con una misma tasa.</p></div>
+      </section>
+      <section class="reto" aria-labelledby="reto-titulo"><p class="interes-eyebrow">Pon a prueba lo aprendido</p><h2 id="reto-titulo">Reto interactivo</h2><p>Responde, comprueba y recibe una explicación. Puedes generar un nuevo problema tantas veces como quieras.</p><div class="reto-card"><p id="reto-pregunta" class="reto-pregunta"></p><label for="reto-respuesta">Tu respuesta ($)</label><input id="reto-respuesta" type="number" step="any" min="0" inputmode="decimal" placeholder="Escribe tu resultado"><div class="reto-actions"><button id="reto-comprobar" type="button">Comprobar respuesta</button><button id="reto-pista" type="button" class="secundario">Dame una pista</button><button id="reto-nuevo" type="button" class="secundario">Otro reto ↻</button></div><p id="reto-feedback" class="reto-feedback" aria-live="polite"></p><p id="reto-ayuda" class="reto-ayuda" hidden></p><p id="reto-marcador" class="reto-marcador">Aciertos: 0 de 0 intentos</p></div></section>
+      <a class="interes-volver" href="../index.html">← Volver al casillero de Andrés</a>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../">Inicio</a></li><li><a href="../../../nosotros/">Nosotros</a></li><li><a href="../../../biblioteca/">Biblioteca</a></li><li><a href="../../../contacto/">Contacto</a></li></ul></nav></div></footer>
+  <script src="interactivo.js" defer></script>
+</body>
+</html>
