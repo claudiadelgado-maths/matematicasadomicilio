@@ -1,0 +1,22 @@
+{
+  "id": "biologia-parte-2-kenisa-erik",
+  "slug": "biologia-parte-2",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Biología parte 2",
+  "descripcion": "Sesión completa con cuatro actividades: ADN y cromosomas, Mitosis, Meiosis y Mitosis vs. meiosis y reproducción. Ilustraciones, recorridos interactivos, ocho prácticas y repasos de 14, 16, 18 y 22 preguntas con explicaciones.",
+  "objetivo": "Relacionar ADN y cromosomas; comprender y comparar mitosis y meiosis, distinguir homólogos de hermanas y conectar gametos, fecundación, cigoto, desarrollo y variabilidad genética mediante exploración y práctica.",
+  "conocimientosPrevios": [
+    "Núcleo y estructura básica de la célula"
+  ],
+  "fecha": "2026-10-14",
+  "estado": "publicado",
+  "ruta": "/Casilleros/kenisa/biologia-parte-2/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

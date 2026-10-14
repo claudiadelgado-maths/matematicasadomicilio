@@ -10,6 +10,8 @@ El selector de la tarjeta es exclusivo de `kenisa-erik`. Revisar ambos consumido
 
 ## Sesiones
 
+**Biología parte 2** (`biologia-parte-2/`): sesión completa de cuatro actividades: **01 — ADN y cromosomas**, **02 — Mitosis**, **03 — Meiosis** y **04 — Mitosis vs. meiosis y reproducción**. Incluye recorridos ilustrados, ocho prácticas y repasos de 14, 16, 18 y 22 preguntas. La última actividad compara los procesos, explora gametos → fecundación → cigoto → mitosis, permite construir el ciclo y ofrece un test integrador con cuatro dibujos, explicación, revisión de errores y repetición. Menú y cierres enlazan las cuatro actividades. SVG locales, teclado, móvil y movimiento reducido; sin persistencia ni dependencias nuevas.
+
 **Laboratorio de despejes lineales** (`laboratorio-de-despejes-lineales/`): actividad manipulativa de ecuaciones (a/d)x + b = c con coeficientes simplificados, bloques animados, transformaciones reversibles de constantes y factores, reordenación y combinación opcional, visor LaTeX, deshacer y reiniciar. Genera ejercicios ilimitados con solución entera; el signo igual permanece fijo. Referencia visual: Transforma la ecuación, de Raúl → Repaso, sin modificar esa sesión.
 
 **Aplicaciones de las funciones trigonométricas** (`aplicaciones-de-las-funciones-trigonometricas/`): primera versión con cuatro ejemplos de despejes e inversas, cuatro ejercicios variables por ronda y tres aventuras de tres problemas (nueve en total). Reutiliza copias locales de las ilustraciones de Pitágoras con ángulos marcados; trabaja seno, coseno, tangente y los tres ángulos de un triángulo rectángulo.

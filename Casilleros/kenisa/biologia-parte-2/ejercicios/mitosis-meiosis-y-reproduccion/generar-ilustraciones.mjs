@@ -1,0 +1,17 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {sceneMarkup as mitosis} from '../mitosis/escena.mjs';
+import {sceneMarkup as meiosis} from '../meiosis/escena.mjs';
+import {fertilizationMarkup,coverMarkup,diversityMarkup} from './escena.mjs';
+import {comparisons,fertilization} from './datos.mjs';
+const path=new URL('./index.html',import.meta.url);
+let html=await readFile(path,'utf8');
+const illustrations={MITOSIS:mitosis(5),MEIOSIS:meiosis(8),SEPARATION_M:mitosis(3),SEPARATION_I:meiosis(3),SEPARATION_II:meiosis(7),FUSION:fertilizationMarkup(0),CROSS:diversityMarkup('cross'),ASSORT:diversityMarkup('assort'),COMBINE:diversityMarkup('combine')};
+for(const [key,svg] of Object.entries(illustrations)) html=html.replace(new RegExp(`<!-- ${key} -->[\\s\\S]*?<!-- /${key} -->`),`<!-- ${key} -->${svg}<!-- /${key} -->`);
+const escape=value=>value.replaceAll('&','&amp;').replaceAll('<','&lt;');
+const set=(id,value)=>{html=html.replace(new RegExp(`(id="${id}"[^>]*>)[^<]*`),`$1${escape(value)}`);};
+for(const key of ['mitosis','meiosis']) for(const part of ['title','count','note']) set(`${key}-${part}`,comparisons[2][key][part]);
+set('compare-prompt',comparisons[2].prompt);
+for(const part of ['title','equation','text','note'])set(`fusion-${part}`,fertilization[0][part]);
+await writeFile(path,html);
+await writeFile(new URL('../../recursos/reproduccion.svg',import.meta.url),coverMarkup()+'\n');
+console.log('Ilustraciones de la actividad 04 y portada sincronizadas.');

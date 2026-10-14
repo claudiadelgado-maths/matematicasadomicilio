@@ -1,0 +1,124 @@
+.meiosis { --purple: #765092; --teal: #237f78; --peach: #f6e4cb; }
+.meiosis figure { margin: 0; min-width: 0; }
+.meiosis .meiosis-hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 3rem; align-items: center; padding-block: 2rem 3.5rem; }
+.meiosis h1 { font-size: clamp(3.1rem, 5.5vw, 5.2rem); }
+.meiosis h1 span { color: var(--purple); }
+.meiosis .hero-lead { font-size: clamp(1.1rem, 1.7vw, 1.4rem); line-height: 1.45; margin-top: 1.4rem; }
+.meiosis .meiosis-hero .muted { max-width: 470px; margin-bottom: 1.5rem; }
+.meiosis .hero-art { position: relative; background: var(--lilac); padding: 4.5rem 1rem 1.5rem; border-radius: 45% 45% 24px 24px; }
+.meiosis .hero-art img { width: 100%; height: auto; display: block; }
+.meiosis .hero-sticker { position: absolute; right: 0; top: .6rem; border: 1px solid #7d8f56; background: var(--lime); border-radius: 12px; padding: .8rem 1rem; transform: rotate(5deg); font-weight: 750; line-height: 1.4; font-size: .8rem; }
+.meiosis .hero-numbers { display: flex; justify-content: center; gap: 1.3rem; text-align: center; margin-top: .8rem; }
+.meiosis .hero-numbers span { font-size: .65rem; }
+.meiosis .hero-numbers b { display: block; font: 500 2.4rem/1.1 BioFredoka, sans-serif; color: #684488; }
+.meiosis .hero-art figcaption { text-align: center; font-size: .78rem; font-weight: 650; }
+.meiosis .section-links { display: flex; flex-wrap: wrap; border-block: 1px solid var(--line); margin-bottom: 2rem; }
+.meiosis .section-links a { flex: 1 1 180px; padding: 1rem .5rem; text-align: center; font-weight: 650; font-size: .85rem; text-decoration: none; }
+.meiosis .section-links a:hover { background: var(--lilac); }
+.meiosis .mission-layout { display: grid; grid-template-columns: 1.25fr 1fr; gap: 3rem; align-items: center; }
+.meiosis .mission-card { padding: 2rem; background: var(--mint); border-radius: 24px; text-align: center; }
+.meiosis .mission-card a { font-size: .83rem; }
+.meiosis .human-count { display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin: 1.2rem 0 .8rem; }
+.meiosis .human-count b { font: 500 clamp(3rem, 5vw, 4.5rem)/1 BioFredoka, sans-serif; }
+.meiosis .human-count span { font-size: 2rem; }
+.meiosis .mission-card hr { border: 0; border-top: 1px solid #a4c5b3; margin-block: 1.4rem; }
+.meiosis .division-road { display: flex; justify-content: space-between; align-items: center; gap: .7rem; margin-top: 2rem; padding: 1.5rem; background: white; border: 1px solid var(--line); border-radius: 18px; text-align: center; }
+.meiosis .division-road b { display: block; font: 500 1.6rem/1.4 BioFredoka, sans-serif; }
+.meiosis .division-road span { font-size: .8rem; }
+.meiosis .division-road .road-arrow { font-weight: 750; color: var(--purple); }
+.meiosis .copy-route { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; list-style: none; padding: 0; }
+.meiosis .copy-route li { display: grid; gap: .5rem; padding: 1.5rem; border: 1px solid #cbbdd9; border-radius: 16px; background: #f0e9f8; }
+.meiosis .copy-route li:first-child { background: var(--mint); border-color: #9abcac; }
+.meiosis .copy-route li:last-child { background: var(--peach); border-color: #d9c3a3; }
+.meiosis .copy-route span { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.meiosis .copy-route strong { font-size: 1.1rem; }
+.meiosis .copy-route small { color: var(--muted); font-size: .8rem; }
+.meiosis .no-copy { padding: .8rem 1rem; background: #efeedd; border-radius: 10px; text-align: center; font-size: .9rem; }
+.meiosis .no-copy > span { font-size: 1.5rem; margin-right: .5rem; }
+.meiosis .journey-lab { border: 1px solid #bac5ae; border-radius: 24px; background: white; overflow: hidden; }
+.meiosis .lab-toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1.1rem 1.4rem; background: #f0f2e6; }
+.meiosis .lab-toolbar label { display: flex; gap: .5rem; align-items: center; min-height: 44px; font-size: .8rem; cursor: pointer; }
+.meiosis .lab-toolbar input { width: 18px; height: 18px; accent-color: var(--green); }
+.meiosis .phase-navigation { padding: 1rem 1.4rem; display: grid; gap: .5rem; border-bottom: 1px solid var(--line); }
+.meiosis .phase-navigation button { border: 1px solid #cab9dc; border-radius: 10px; padding: .6rem .4rem; background: #f1ebf8; color: var(--ink); font-size: .85rem; font-weight: 700; min-height: 55px; cursor: pointer; line-height: 1.35; }
+.meiosis .phase-navigation small { display: block; font-size: .68rem; font-weight: 400; }
+.meiosis .phase-navigation .preparation-step { background: #f5f7ee; border-color: #c3ceb7; text-align: left; padding-inline: 1rem; }
+.meiosis .preparation-step small { display: inline; margin-left: 1rem; }
+.meiosis .division-tabs { display: grid; grid-template-columns: 105px 1fr; align-items: center; gap: .7rem; }
+.meiosis .division-label { font: 500 1.7rem/1 BioFredoka, sans-serif; color: var(--purple); padding-left: .5rem; }
+.meiosis .division-label small { font: 600 .65rem/1.5 var(--font-sans); margin-top: .25rem; }
+.meiosis .phase-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; }
+.meiosis .second .division-label { color: #886132; }
+.meiosis .second button { background: #f9eedf; border-color: #dbc8ac; }
+.meiosis .phase-navigation button[aria-pressed="true"] { background: var(--green); color: white; border-color: var(--green); box-shadow: inset 0 -3px 0 #b8d899; }
+.meiosis .lab-stage { display: grid; grid-template-columns: 1.4fr 1fr; }
+.meiosis .lab-picture { background: #fbfaf3; padding: 1.2rem 1rem; }
+.meiosis .scene-meta { display: flex; justify-content: space-between; gap: .5rem; font-size: .66rem; font-weight: 700; color: var(--muted); letter-spacing: .03em; }
+.meiosis .meiosis-scene, .meiosis .cross-scene, .meiosis .cell-scene { display: block; width: 100%; height: auto; }
+.meiosis #main-scene { max-width: 690px; margin: auto; }
+.meiosis .origin-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem .8rem; font-size: .7rem; }
+.meiosis .origin-legend span { display: flex; align-items: center; gap: .4rem; }
+.meiosis .origin-legend i { width: 10px; height: 10px; border-radius: 3px; background: #8655a2; }
+.meiosis .origin-legend .paternal { background: #237f78; }
+.meiosis .origin-legend .center-dot { background: #f9df91; border: 1px solid #596349; border-radius: 50%; }
+.meiosis .lab-picture > .caption { font-size: .74rem; margin-block: .9rem; text-align: center; }
+.meiosis .scene-facts { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
+.meiosis .scene-facts p { margin: 0; padding: 1rem; border-radius: 12px; background: #e6edda; }
+.meiosis .scene-facts p + p { background: #eae1f3; }
+.meiosis .scene-facts b { display: block; font-size: 1rem; line-height: 1.35; margin-bottom: .3rem; }
+.meiosis .scene-facts span { display: block; font-size: .72rem; }
+.meiosis .phase-copy { border-left: 1px solid var(--line); padding: clamp(1.3rem, 2.6vw, 2rem); }
+.meiosis .phase-copy h3 { font: 500 clamp(2rem, 3.1vw, 2.8rem)/1.1 BioFredoka, sans-serif; margin-block: 1.3rem .8rem; }
+.meiosis .phase-verb { font-weight: 750; font-size: 1.1rem; }
+.meiosis .phase-note { margin-top: 1.5rem; border-top: 1px solid var(--line); padding-top: 1.2rem; color: #71458a; font-size: .9rem; font-weight: 600; }
+.meiosis .sequence-player { padding: 1.4rem; border-top: 1px solid var(--line); text-align: center; }
+.meiosis .player-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: .7rem; margin-bottom: .8rem; }
+.meiosis .player-buttons .btn:disabled { opacity: .5; background: #eff2e9; }
+.meiosis .sequence-player p { margin: 0; }
+.meiosis .lab-footnotes { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding-top: 1.3rem; font-size: .85rem; }
+.meiosis .reference { border-block: 1px solid var(--line); margin-block: 1.2rem; }
+.meiosis summary { min-height: 48px; padding-block: 1rem; font-weight: 700; cursor: pointer; }
+.meiosis .phase-reference { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2rem; padding-left: 1.5rem; }
+.meiosis .phase-reference strong { display: block; }
+.meiosis .phase-reference p { font-size: .9rem; }
+.meiosis .division-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.2rem; }
+.meiosis .division-compare article { padding: 1.5rem; border-radius: 24px; background: #eee6f7; }
+.meiosis .division-compare article + article { background: var(--peach); }
+.meiosis .compare-scene { max-width: 380px; margin: auto; }
+.meiosis .division-compare h3 { font: 500 1.8rem/1.2 BioFredoka, sans-serif; margin-top: .8rem; }
+.meiosis .variation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.meiosis .variation-grid h3 { margin-top: 1.3rem; font: 500 1.9rem/1.15 BioFredoka, sans-serif; }
+.meiosis .cross-card { background: #f3edf8; }
+.meiosis .cross-controls { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.2rem; }
+.meiosis .cross-controls .btn[aria-pressed="true"] { background: var(--purple); border-color: var(--purple); color: white; }
+.meiosis .cross-card figcaption { min-height: 4em; font-size: .85rem; margin-bottom: 1rem; }
+.meiosis .distribution-card { background: #edf3e5; }
+.meiosis .assortment-picture { margin-block: 1.2rem; }
+.meiosis .assortment-picture svg { width: 100%; height: auto; }
+.meiosis .family-note { padding: 1.3rem 1.5rem; margin-top: 1.5rem; border-left: 3px solid var(--purple); background: #f5eaf0; }
+.meiosis .result-sheet { display: grid; grid-template-columns: 1.1fr 1fr; gap: 2rem; padding: clamp(1.5rem,4vw,3rem); background: #e5edc6; border-radius: 24px; }
+.meiosis .result-formula { font: 500 clamp(1.7rem,3vw,2.5rem)/1.4 BioFredoka,sans-serif; margin-top: 1.5rem; }
+.meiosis .result-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; margin: 0; align-content: center; }
+.meiosis .result-facts div { border-top: 1px solid #94a575; padding-top: .7rem; }
+.meiosis .result-facts dt { font-size: .78rem; }
+.meiosis .result-facts dd { margin: .4rem 0 0; font-weight: 750; font-size: 1.25rem; }
+.meiosis .result-facts div:nth-child(-n+2) dd { font: 500 3rem/1 BioFredoka,sans-serif; }
+.meiosis .egg-note { max-width: 1000px; margin: 1.2rem auto 0; }
+.meiosis .practice { background: #f5f7ed; border: 2px solid #bccda5; margin-top: 1.5rem; }
+.meiosis .practice h3 { margin-top: 1rem; font: 500 2rem/1.2 BioFredoka,sans-serif; }
+.meiosis .separation-layout { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 2rem; }
+.meiosis .separation-layout figure { background: white; padding: 1rem; border-radius: 18px; border: 1px solid var(--line); }
+.meiosis .separation-layout figcaption { text-align: center; font-weight: 750; font-size: .9rem; padding-top: .5rem; }
+.meiosis .trail-context { display: grid; grid-template-columns: 210px 1fr; align-items: center; gap: 1.5rem; margin-block: 1rem; }
+.meiosis #trail-current { border: 1px solid var(--line); border-radius: 12px; background: white; }
+.meiosis .trail-options { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; }
+.meiosis .picture-option { display: flex; flex-direction: column; padding: .5rem; text-align: center; border-radius: 14px; }
+.meiosis .picture-option span { display: block; margin: .3rem; }
+.meiosis #quiz-image { max-width: 500px; margin: 0 auto 1.5rem; border-radius: 18px; background: #f6f8ef; }
+.meiosis .closing { border-radius: 24px; padding: clamp(1.5rem,5vw,4rem); background: var(--lilac); }
+.meiosis .closing h2 { margin-top: 1.5rem; }
+.meiosis .closing > p { max-width: 760px; }
+.meiosis .closing .reference { border-color: #c8b8dc; }
+@media (max-width: 1050px) { .meiosis .lab-stage { grid-template-columns: 1fr; } .meiosis .phase-copy { border-left: 0; border-top: 1px solid var(--line); } .meiosis .meiosis-hero { gap: 1.5rem; } }
+@media (max-width: 760px) { .meiosis .meiosis-hero, .meiosis .mission-layout, .meiosis .division-compare, .meiosis .variation-grid, .meiosis .result-sheet, .meiosis .separation-layout { grid-template-columns: 1fr; } .meiosis .meiosis-hero { padding-top: 1rem; } .meiosis .hero-art { max-width: 520px; width: 100%; margin-inline: auto; } .meiosis .division-tabs { grid-template-columns: 1fr; gap: .3rem; } .meiosis .division-label { display: flex; align-items: baseline; gap: .5rem; font-size: 1.2rem; padding-block: .3rem; } .meiosis .phase-buttons { gap: .35rem; } .meiosis .phase-navigation { padding: .8rem; } .meiosis .lab-footnotes, .meiosis .phase-reference { grid-template-columns: 1fr; gap: 0; } .meiosis .copy-route { grid-template-columns: 1fr; } .meiosis .copy-route li { padding: 1rem; } .meiosis .trail-context { grid-template-columns: 150px 1fr; gap: 1rem; } .meiosis .trail-options { gap: .5rem; } }
+@media (max-width: 470px) { .meiosis .section-links a { flex-basis: 130px; } .meiosis .mission-card { padding: 1.5rem; } .meiosis .division-road { flex-direction: column; gap: .6rem; } .meiosis .road-arrow { padding-block: .5rem; } .meiosis .phase-buttons { grid-template-columns: 1fr 1fr; } .meiosis .preparation-step small { display: block; margin: 0; } .meiosis .lab-picture { padding-inline: .5rem; } .meiosis .scene-facts { grid-template-columns: 1fr; } .meiosis .scene-facts p { padding: .8rem; } .meiosis .player-buttons { display: grid; grid-template-columns: 1fr 1fr; } .meiosis #play-sequence { grid-row: 2; grid-column: 1 / -1; } .meiosis .player-buttons .btn { padding-inline: .6rem; font-size: .9rem; } .meiosis .trail-context { grid-template-columns: 1fr; } .meiosis #trail-current { max-width: 220px; } .meiosis .trail-options { grid-template-columns: 1fr; } .meiosis .picture-option { flex-direction: row; justify-content: space-between; } .meiosis .picture-option svg { width: 70%; max-width: 200px; } .meiosis .picture-option span { font-size: .9rem; } .meiosis .separation-layout { gap: 1rem; } }

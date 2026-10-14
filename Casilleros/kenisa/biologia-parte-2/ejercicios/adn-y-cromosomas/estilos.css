@@ -1,0 +1,69 @@
+.bio2 .lesson-hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 3rem; align-items: center; padding-block: 2rem 3.5rem; }
+.bio2 .lesson-hero h1 { font-size: clamp(3.2rem, 6vw, 5.5rem); }
+.bio2 .lesson-hero h1 span { color: #735195; }
+.bio2 .lesson-subtitle { font-size: 1.45rem; font-weight: 700; }
+.bio2 .lesson-hero .muted { max-width: 490px; margin-bottom: 1.5rem; }
+.bio2 .lesson-art { margin: 0; background: var(--pink); border-radius: 48% 48% 24px 24px; padding: 1.5rem 1rem; transform: rotate(3deg); }
+.bio2 .lesson-art svg { max-height: 340px; }
+.bio2 .lesson-art figcaption { font-size: .8rem; text-align: center; padding-inline: 1rem; }
+.bio2 .lesson-nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; padding-block: 1rem 2rem; }
+.bio2 .lesson-nav a { padding: .9rem .6rem; text-align: center; border: 1px solid var(--line); background: white; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: .83rem; }
+.bio2 .lesson-nav a:hover { background: var(--lime); }
+.bio2 figure { margin: 0; min-width: 0; }
+.bio2 .mission { display: grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; padding: clamp(1.4rem, 4vw, 3rem); background: var(--mint); border-radius: 24px; margin-bottom: 3rem; align-items: center; }
+.bio2 .mission h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); }
+.bio2 .mission p:last-child { margin-bottom: 0; }
+.bio2 .mission figcaption { text-align: center; }
+.bio2 .selector { display: flex; flex-wrap: wrap; gap: .5rem; }
+.bio2 .selector button { min-height: 46px; padding: .65rem 1rem; border: 1px solid var(--line); border-radius: 9px; background: white; color: var(--ink); font-size: .88rem; font-weight: 700; cursor: pointer; }
+.bio2 .selector button[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: white; box-shadow: inset 0 -3px 0 #aad082; }
+.bio2 .selector button:hover:not([aria-pressed="true"]) { background: var(--mint); }
+.bio2 .explorer { background: #f2eef9; border-color: #d7cbe5; }
+.bio2 .explorer .selector { display: grid; grid-template-columns: repeat(4, 1fr); }
+.bio2 .explorer-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 2rem; padding-top: 1.5rem; }
+.bio2 .explorer figure { padding-bottom: .7rem; }
+.bio2 .explorer figcaption { text-align: center; }
+.bio2 .explorer-copy h3 { font-size: clamp(1.4rem, 2.4vw, 2rem); margin-top: 1.2rem; }
+.bio2 .explorer-copy .note { background: #e5ddf0; border-color: #735195; margin: 0; }
+.bio2 .connection-map { display: grid; grid-template-columns: repeat(3, 1fr); margin-block: 1.5rem; gap: 1rem; }
+.bio2 .connection-map p { display: grid; align-content: start; gap: .45rem; text-align: center; padding: 1rem; background: #f0f1e7; border-radius: 12px; margin: 0; }
+.bio2 .connection-map span { font-size: .78rem; color: var(--muted); }
+.bio2 .theory { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-block: 1.5rem; }
+.bio2 summary { padding-block: 1rem; min-height: 48px; font-weight: 700; cursor: pointer; }
+.bio2 .theory > div { max-width: 800px; padding-bottom: .5rem; }
+.bio2 .replication { background: #faf5e4; border-color: #e5d9b6; }
+.bio2 .replication .two-col { align-items: center; }
+.bio2 .replication h3 { font-size: 1.7rem; margin-top: 1rem; }
+.bio2 .replication figcaption { text-align: center; }
+.bio2 .replication .note { margin-top: 1.5rem; background: #efead4; }
+.bio2 .counts { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-block: 1rem; }
+.bio2 .counts p { font-size: .8rem; line-height: 1.4; }
+.bio2 .counts strong { display: block; font-family: BioFredoka, sans-serif; font-weight: 500; font-size: 3rem; line-height: 1.1; }
+.bio2 .concept-notes { padding-block: 2rem; }
+.bio2 .concept-notes article { border-left: 2px solid #b09ad6; padding-left: 1.3rem; }
+.bio2 .concept-notes h3 { margin-top: 1rem; }
+.bio2 .practice { margin-top: 2.5rem; border: 2px solid #b9cfa7; background: #f5f8ef; }
+.bio2 .practice-heading h3 { font-family: BioFredoka, sans-serif; font-weight: 500; font-size: 2rem; margin-top: 1rem; }
+.bio2 .practice .two-col { align-items: center; }
+.bio2 .practice figure { padding: 1rem; background: white; border: 1px solid var(--line); border-radius: 20px; }
+.bio2 .practice figcaption { font-size: .8rem; }
+.bio2 .comparison .homologs { background: #f7e9ef; }
+.bio2 .comparison .sisters { background: #efebf8; }
+.bio2 .comparison svg { max-height: 300px; margin-block: 1rem; }
+.bio2 .comparison p:last-child { margin-bottom: 0; }
+.bio2 .ploidy { margin-top: 2rem; }
+.bio2 .ploidy .two-col { align-items: center; }
+.bio2 .human-counts { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-block: 1rem; }
+.bio2 .human-counts p { display: grid; align-content: space-between; gap: .3rem; background: var(--mint); padding: 1.4rem; border-radius: 14px; font-size: .85rem; }
+.bio2 .human-counts p + p { background: var(--lilac); }
+.bio2 .human-counts strong { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.3; font-family: BioFredoka, sans-serif; font-weight: 500; }
+.bio2 .closing { padding: clamp(1.5rem, 5vw, 4rem); background: var(--lime); border-radius: 24px; }
+.bio2 .closing h2 { margin-top: 1.5rem; }
+.bio2 .closing > p { max-width: 760px; }
+.bio2 .closing .theory { border-color: #afbe80; }
+.bio2 .sources { max-width: 800px; }
+.bio2 .scene-change { animation: bio-appear .35s ease-out; }
+@keyframes bio-appear { from { opacity: .4; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 800px) { .bio2 .lesson-hero { gap: 1.5rem; grid-template-columns: 1.15fr .85fr; } .bio2 .mission { grid-template-columns: 1fr; } .bio2 .mission figure { max-width: 400px; margin-inline: auto; } .bio2 .explorer-grid { gap: 1rem; } }
+@media (max-width: 700px) { .bio2 .lesson-hero { grid-template-columns: 1fr; padding-top: 1rem; } .bio2 .lesson-art { max-width: 430px; margin-inline: auto; width: 100%; transform: none; } .bio2 .lesson-art svg { max-height: 245px; } .bio2 .lesson-nav { grid-template-columns: 1fr 1fr; } .bio2 .explorer-grid { grid-template-columns: 1fr; } .bio2 .explorer .selector { grid-template-columns: 1fr 1fr; } .bio2 .explorer svg { max-height: 270px; } .bio2 .connection-map { grid-template-columns: 1fr; } .bio2 .connection-map p { grid-template-columns: 1fr; gap: .15rem; } .bio2 .practice .diagram { max-height: 290px; } }
+@media (max-width: 430px) { .bio2 .human-counts { grid-template-columns: 1fr; } .bio2 .quiz-top { flex-direction: column; margin-bottom: 1rem; } .bio2 .quiz-top p { margin: 0; } .bio2 .selector button { padding-inline: .65rem; } }

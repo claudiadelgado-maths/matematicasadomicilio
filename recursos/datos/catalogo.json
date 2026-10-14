@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 275,
+  "total": 280,
   "tipos": {
     "examen": [
       {
@@ -662,6 +662,50 @@
         "estado": "publicado",
         "ruta": "/Casilleros/kenisa/biologia-parte-1/ejercicios/partes-de-la-celula-animal/",
         "archivoMetadatos": "Casilleros/kenisa/biologia-parte-1/ejercicios/partes-de-la-celula-animal/ejercicio.json"
+      },
+      {
+        "id": "adn-y-cromosomas-biologia-2-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "ADN y cromosomas",
+        "descripcion": "Actividad 01: cuatro vistas del material genético, replicación y anatomía, comparación de homólogos y hermanas, modelos diploide/haploide, dos prácticas con reintentos y test de 14 preguntas con retroalimentación y revisión.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-2/ejercicios/adn-y-cromosomas/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-2/ejercicios/adn-y-cromosomas/ejercicio.json"
+      },
+      {
+        "id": "meiosis-biologia-2-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Meiosis: formación de gametos",
+        "descripcion": "Actividad 03: recorrido animado de nueve vistas, entrecruzamiento explorable y distribución de homólogos. Dos prácticas visuales y repaso de 18 preguntas, tres con dibujos, con explicaciones y revisión.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-2/ejercicios/meiosis/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-2/ejercicios/meiosis/ejercicio.json"
+      },
+      {
+        "id": "mitosis-meiosis-reproduccion-biologia-2-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Mitosis vs. meiosis y reproducción",
+        "descripcion": "Actividad 04 y cierre: comparación visual, gametos, fecundación, cigoto y ciclo de reproducción. Dos prácticas con pistas y test integrador de 22 preguntas, cuatro con dibujos, explicaciones, revisión y repetición.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-2/ejercicios/mitosis-meiosis-y-reproduccion/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-2/ejercicios/mitosis-meiosis-y-reproduccion/ejercicio.json"
+      },
+      {
+        "id": "mitosis-biologia-2-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-2-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Mitosis: cómo se divide una célula",
+        "descripcion": "Actividad 02: célula animada en seis etapas, separación de cromátidas, huso y conteo de cromosomas. Dos prácticas para ordenar y reconocer fases, y repaso de 16 preguntas con dos dibujos, explicaciones y revisión.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-2/ejercicios/mitosis/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-2/ejercicios/mitosis/ejercicio.json"
       },
       {
         "id": "practica-despejes-kenisa",
@@ -2883,7 +2927,7 @@
         "tipo": "sesion",
         "usuario": "andres",
         "titulo": "Interés simple y compuesto",
-        "descripcion": "Comparación sencilla de interés simple y compuesto, tabla anual y dos ejercicios con respuesta.",
+        "descripcion": "Sesión interactiva con explicación, simulador, gráfica, tabla dinámica y retos autocorregibles.",
         "objetivo": "Distinguir interés simple y compuesto y calcular el monto final y el interés ganado con una tasa fija.",
         "conocimientosPrevios": [
           "Porcentajes y conversión a decimales",
@@ -2893,11 +2937,11 @@
         "estado": "publicado",
         "ruta": "/Casilleros/andres/interes-simple-y-compuesto/",
         "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
+          "explicacion": true,
+          "demostraciones": true,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
         },
         "archivoMetadatos": "Casilleros/andres/interes-simple-y-compuesto/sesion.json"
       },
@@ -3288,6 +3332,29 @@
           "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/kenisa/biologia-parte-1/sesion.json"
+      },
+      {
+        "id": "biologia-parte-2-kenisa-erik",
+        "slug": "biologia-parte-2",
+        "tipo": "sesion",
+        "usuario": "kenisa-erik",
+        "titulo": "Biología parte 2",
+        "descripcion": "Sesión completa con cuatro actividades: ADN y cromosomas, Mitosis, Meiosis y Mitosis vs. meiosis y reproducción. Ilustraciones, recorridos interactivos, ocho prácticas y repasos de 14, 16, 18 y 22 preguntas con explicaciones.",
+        "objetivo": "Relacionar ADN y cromosomas; comprender y comparar mitosis y meiosis, distinguir homólogos de hermanas y conectar gametos, fecundación, cigoto, desarrollo y variabilidad genética mediante exploración y práctica.",
+        "conocimientosPrevios": [
+          "Núcleo y estructura básica de la célula"
+        ],
+        "fecha": "2026-10-14",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-2/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-2/sesion.json"
       },
       {
         "id": "despejes-lineales-kenisa",
@@ -4108,8 +4175,8 @@
         "tipo": "sesion",
         "usuario": "renata-elizabeth",
         "titulo": "Determinantes 2 × 2",
-        "descripcion": "Regla ad − bc, un ejemplo resuelto y tres ejercicios con respuesta.",
-        "objetivo": "Calcular determinantes de matrices 2 × 2 respetando el orden de la resta y los signos.",
+        "descripcion": "Sesión interactiva en seis etapas: concepto, regla, calculadora, geometría, práctica autocorregible y desafío final.",
+        "objetivo": "Calcular e interpretar determinantes 2×2, comprender su relación con el área y reconocer la invertibilidad de una matriz.",
         "conocimientosPrevios": [
           "Lectura de matrices de dos filas y dos columnas",
           "Multiplicación y resta de números enteros"
@@ -4118,11 +4185,11 @@
         "estado": "publicado",
         "ruta": "/Casilleros/renata/determinantes-2x2/",
         "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
+          "explicacion": true,
+          "demostraciones": true,
+          "ejercicios": true,
+          "juegos": true,
+          "calculadoras": true
         },
         "archivoMetadatos": "Casilleros/renata/determinantes-2x2/sesion.json"
       },

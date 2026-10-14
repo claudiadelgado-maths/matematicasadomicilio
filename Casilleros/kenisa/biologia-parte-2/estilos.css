@@ -1,0 +1,33 @@
+.bio2 .session-hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(2rem, 5vw, 5rem); padding-block: 2rem 4rem; }
+.bio2 .session-hero h1 span { display: block; color: var(--green); }
+.bio2 .session-hero .lead { font-size: clamp(1.25rem, 2vw, 1.6rem); max-width: 440px; line-height: 1.45; }
+.bio2 .session-hero .muted { max-width: 450px; margin-block: 1.2rem 1.7rem; }
+.bio2 .hero-art { position: relative; margin: 0; padding: 1.4rem; background: var(--lilac); border-radius: 48% 48% 24px 24px; }
+.bio2 .hero-art img { width: 100%; height: auto; }
+.bio2 .hero-art figcaption { text-align: center; font-size: .85rem; font-weight: 650; padding: .5rem; }
+.bio2 .hero-tag { position: absolute; right: 0; top: 1.5rem; background: var(--lime); transform: rotate(7deg); border: 1px solid var(--green); border-radius: 12px; padding: .65rem 1rem; font-weight: 700; font-size: .85rem; }
+.bio2 .route-heading { display: flex; gap: 2rem; align-items: end; justify-content: space-between; }
+.bio2 .route-heading p { max-width: 360px; }
+.bio2 .activity-card { display: grid; grid-template-columns: .8fr 1.2fr; overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: white; margin: 1.3rem 0; }
+.bio2 .activity-art { position: relative; background: var(--pink); padding: 1.5rem; display: grid; align-content: center; }
+.bio2 .activity-art .number { position: absolute; left: 1.5rem; top: 1rem; font-family: BioFredoka, sans-serif; font-size: 3.5rem; color: #75445e; line-height: 1; }
+.bio2 .activity-art svg { width: 100%; max-height: 260px; }
+.bio2 .activity-copy { padding: clamp(1.5rem, 4vw, 3rem); }
+.bio2 .activity-copy h3 { font-family: BioFredoka, sans-serif; font-weight: 500; font-size: 2.4rem; margin-top: 1rem; }
+.bio2 .tags { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 1.4rem 0; list-style: none; font-size: .8rem; }
+.bio2 .tags li { background: #f1f3ed; border-radius: 6px; padding: .3rem .6rem; }
+.bio2 .next-note { display: flex; align-items: center; gap: 1rem; padding: 1rem 0; color: var(--muted); font-size: .9rem; }
+.bio2 .next-note p { margin: 0; }
+.bio2 .study-path { display: grid; grid-template-columns: repeat(3, 1fr); list-style: none; padding: 0; gap: 1.5rem; margin-top: 2rem; }
+.bio2 .study-path li { border-top: 3px solid var(--green); padding-top: 1rem; }
+.bio2 .study-path strong { display: block; margin-bottom: .5rem; font-size: 1.1rem; }
+@media (max-width: 760px) { .bio2 .session-hero { grid-template-columns: 1fr; padding-top: 1rem; } .bio2 .hero-art { max-width: 510px; width: 100%; margin-inline: auto; } .bio2 .route-heading { display: block; } .bio2 .activity-card { grid-template-columns: 1fr; } .bio2 .activity-art svg { max-height: 200px; } }
+@media (max-width: 550px) { .bio2 .study-path { grid-template-columns: 1fr; } }
+
+.bio2 .mitosis-card .activity-art { background: var(--mint); }
+.bio2 .mitosis-card .activity-art img { width: 100%; height: auto; }
+.bio2 .meiosis-card .activity-art { background: var(--lilac); }
+.bio2 .meiosis-card .activity-art img { width: 100%; height: auto; max-height: 300px; }
+
+.bio2 .reproduction-card .activity-art { background: #fae9dc; }
+.bio2 .reproduction-card .activity-art img { max-height: 320px; width: 100%; object-fit: contain; }

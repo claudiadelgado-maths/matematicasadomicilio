@@ -3,76 +3,6 @@
   "generadoDesde": "usuario.json y sesion.json",
   "alumnos": [
     {
-      "id": "andres",
-      "nombreVisible": "Andrés",
-      "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
-      "ruta": "/Casilleros/andres/",
-      "personalizacion": {
-        "simbolo": "A",
-        "acento": "#195c40",
-        "fondo": "#113f31"
-      },
-      "ultimaActividad": "2026-10-13",
-      "sesiones": [
-        {
-          "id": "interes-simple-y-compuesto-andres",
-          "titulo": "Interés simple y compuesto",
-          "descripcion": "Comparación sencilla de interés simple y compuesto, tabla anual y dos ejercicios con respuesta.",
-          "fecha": "2026-10-13",
-          "ruta": "/Casilleros/andres/interes-simple-y-compuesto/"
-        },
-        {
-          "id": "teorema-de-tales-andres",
-          "titulo": "Teorema de Tales",
-          "descripcion": "Sesión interactiva sobre proporcionalidad en configuraciones con rectas paralelas.",
-          "fecha": "2026-09-22",
-          "ruta": "/Casilleros/andres/teorema-de-tales/"
-        },
-        {
-          "id": "porcentajes-andres",
-          "titulo": "Porcentajes",
-          "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
-          "fecha": "2026-08-10",
-          "ruta": "/Casilleros/andres/porcentajes/"
-        }
-      ]
-    },
-    {
-      "id": "renata-elizabeth",
-      "nombreVisible": "Renata",
-      "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
-      "ruta": "/Casilleros/renata/",
-      "personalizacion": {
-        "simbolo": "R",
-        "acento": "#315e46",
-        "fondo": "#e8eedb"
-      },
-      "ultimaActividad": "2026-10-13",
-      "sesiones": [
-        {
-          "id": "determinantes-2x2-renata-elizabeth",
-          "titulo": "Determinantes 2 × 2",
-          "descripcion": "Regla ad − bc, un ejemplo resuelto y tres ejercicios con respuesta.",
-          "fecha": "2026-10-13",
-          "ruta": "/Casilleros/renata/determinantes-2x2/"
-        },
-        {
-          "id": "espacio-vectorial-renata",
-          "titulo": "1. Propiedades de un espacio vectorial",
-          "descripcion": "Axiomas y criterio de subespacio con fórmulas revelables, demostraciones, contraejemplos y práctica en vectores y polinomios.",
-          "fecha": "2026-09-03",
-          "ruta": "/Casilleros/renata/propiedades-de-un-espacio-vectorial/"
-        },
-        {
-          "id": "matrices-operaciones-renata",
-          "titulo": "2. Matrices y sus operaciones",
-          "descripcion": "Dimensiones, suma, resta, escalares, producto matricial y transpuesta con fórmulas revelables, ejemplos guiados y práctica.",
-          "fecha": "2026-09-03",
-          "ruta": "/Casilleros/renata/matrices-y-operaciones/"
-        }
-      ]
-    },
-    {
       "id": "kenisa-erik",
       "nombreVisible": "KENISA",
       "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
@@ -82,8 +12,15 @@
         "acento": "#205c3e",
         "fondo": "#ffacd2"
       },
-      "ultimaActividad": "2026-10-10",
+      "ultimaActividad": "2026-10-14",
       "sesiones": [
+        {
+          "id": "biologia-parte-2-kenisa-erik",
+          "titulo": "Biología parte 2",
+          "descripcion": "Sesión completa con cuatro actividades: ADN y cromosomas, Mitosis, Meiosis y Mitosis vs. meiosis y reproducción. Ilustraciones, recorridos interactivos, ocho prácticas y repasos de 14, 16, 18 y 22 preguntas con explicaciones.",
+          "fecha": "2026-10-14",
+          "ruta": "/Casilleros/kenisa/biologia-parte-2/"
+        },
         {
           "id": "examen-geometria-kenisa-erik",
           "titulo": "EXAMEN GEOMETRÍA",
@@ -160,6 +97,76 @@
           "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
           "fecha": "2026-09-22",
           "ruta": "/Casilleros/kenisa/despejes-lineales/"
+        }
+      ]
+    },
+    {
+      "id": "andres",
+      "nombreVisible": "Andrés",
+      "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+      "ruta": "/Casilleros/andres/",
+      "personalizacion": {
+        "simbolo": "A",
+        "acento": "#195c40",
+        "fondo": "#113f31"
+      },
+      "ultimaActividad": "2026-10-13",
+      "sesiones": [
+        {
+          "id": "interes-simple-y-compuesto-andres",
+          "titulo": "Interés simple y compuesto",
+          "descripcion": "Sesión interactiva con explicación, simulador, gráfica, tabla dinámica y retos autocorregibles.",
+          "fecha": "2026-10-13",
+          "ruta": "/Casilleros/andres/interes-simple-y-compuesto/"
+        },
+        {
+          "id": "teorema-de-tales-andres",
+          "titulo": "Teorema de Tales",
+          "descripcion": "Sesión interactiva sobre proporcionalidad en configuraciones con rectas paralelas.",
+          "fecha": "2026-09-22",
+          "ruta": "/Casilleros/andres/teorema-de-tales/"
+        },
+        {
+          "id": "porcentajes-andres",
+          "titulo": "Porcentajes",
+          "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
+          "fecha": "2026-08-10",
+          "ruta": "/Casilleros/andres/porcentajes/"
+        }
+      ]
+    },
+    {
+      "id": "renata-elizabeth",
+      "nombreVisible": "Renata",
+      "descripcion": "Sesiones universitarias de Álgebra Lineal sobre espacios vectoriales y matrices.",
+      "ruta": "/Casilleros/renata/",
+      "personalizacion": {
+        "simbolo": "R",
+        "acento": "#315e46",
+        "fondo": "#e8eedb"
+      },
+      "ultimaActividad": "2026-10-13",
+      "sesiones": [
+        {
+          "id": "determinantes-2x2-renata-elizabeth",
+          "titulo": "Determinantes 2 × 2",
+          "descripcion": "Sesión interactiva en seis etapas: concepto, regla, calculadora, geometría, práctica autocorregible y desafío final.",
+          "fecha": "2026-10-13",
+          "ruta": "/Casilleros/renata/determinantes-2x2/"
+        },
+        {
+          "id": "espacio-vectorial-renata",
+          "titulo": "1. Propiedades de un espacio vectorial",
+          "descripcion": "Axiomas y criterio de subespacio con fórmulas revelables, demostraciones, contraejemplos y práctica en vectores y polinomios.",
+          "fecha": "2026-09-03",
+          "ruta": "/Casilleros/renata/propiedades-de-un-espacio-vectorial/"
+        },
+        {
+          "id": "matrices-operaciones-renata",
+          "titulo": "2. Matrices y sus operaciones",
+          "descripcion": "Dimensiones, suma, resta, escalares, producto matricial y transpuesta con fórmulas revelables, ejemplos guiados y práctica.",
+          "fecha": "2026-09-03",
+          "ruta": "/Casilleros/renata/matrices-y-operaciones/"
         }
       ]
     },
