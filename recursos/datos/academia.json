@@ -3,6 +3,125 @@
   "generadoDesde": "usuario.json y sesion.json",
   "alumnos": [
     {
+      "id": "alejandrina",
+      "nombreVisible": "Alejandrina",
+      "descripcion": "Espacio de sesiones y recursos personalizados.",
+      "ruta": "/Casilleros/alejandrina/",
+      "personalizacion": {
+        "simbolo": "A",
+        "acento": "#15784e",
+        "fondo": "#302044"
+      },
+      "ultimaActividad": "2026-10-15",
+      "sesiones": [
+        {
+          "id": "despejes-exponenciales-logaritmicos-alejandrina",
+          "titulo": "Despejes exponenciales y logarítmicos",
+          "descripcion": "Dos actividades de práctica: 35 ejercicios en siete tipos y 14 ejercicios distintos mezclados, con reintentos y procedimientos a petición.",
+          "fecha": "2026-10-15",
+          "ruta": "/Casilleros/alejandrina/despejes-exponenciales-y-logaritmicos/"
+        },
+        {
+          "id": "examen-series-alejandrina",
+          "titulo": "Examen series",
+          "descripcion": "Práctica progresiva de sucesiones y series aritméticas y geométricas, con 8 actividades, mini exámenes fijos y medios con casillas editables.",
+          "fecha": "2026-09-30",
+          "ruta": "/Casilleros/alejandrina/examen-series/"
+        },
+        {
+          "id": "series-geometricas-alejandrina",
+          "titulo": "Series geométricas",
+          "descripcion": "Sucesiones, raíces, sumas y medios geométricos con prácticas guiadas, exploradores y una misión aleatoria de 24 retos.",
+          "fecha": "2026-09-22",
+          "ruta": "/Casilleros/alejandrina/series-geometricas/"
+        },
+        {
+          "id": "alejandrina-medios-y-sumas",
+          "titulo": "Medios y sumas aritméticas",
+          "descripcion": "Medios aritméticos y sumas: ejemplos breves, práctica paso a paso y dos juegos independientes.",
+          "fecha": "2026-09-10",
+          "ruta": "/Casilleros/alejandrina/medios-y-sumas/"
+        },
+        {
+          "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
+          "titulo": "Fórmulas de sucesiones aritméticas",
+          "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
+          "fecha": "2026-08-28",
+          "ruta": "/Casilleros/alejandrina/formulas-de-sucesiones/"
+        },
+        {
+          "id": "sucesiones-aritmeticas-sesion-1",
+          "titulo": "Elementos de una sucesión aritmética",
+          "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
+          "fecha": "2026-08-25",
+          "ruta": "/Casilleros/alejandrina/sucesiones-aritmeticas/"
+        },
+        {
+          "id": "multiplicacion-de-binomios",
+          "titulo": "Multiplicación de binomios",
+          "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
+          "fecha": "2026-08-21",
+          "ruta": "/Casilleros/alejandrina/multiplicacion-de-binomios/"
+        },
+        {
+          "id": "diagramas-de-arboles",
+          "titulo": "Diagramas de árboles",
+          "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
+          "fecha": "2026-07-29",
+          "ruta": "/Casilleros/alejandrina/diagramas-de-arboles/"
+        },
+        {
+          "id": "medidas-de-posicion",
+          "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
+          "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
+          "fecha": "2026-07-29",
+          "ruta": "/Casilleros/alejandrina/medidas-de-posicion/"
+        },
+        {
+          "id": "datos-no-agrupados",
+          "titulo": "Datos no agrupados",
+          "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
+          "fecha": "2026-07-24",
+          "ruta": "/Casilleros/alejandrina/datos-no-agrupados/"
+        }
+      ]
+    },
+    {
+      "id": "elyan-claudia",
+      "nombreVisible": "Elyan",
+      "descripcion": "Sumas, restas y tablas de multiplicar para explorar, jugar y descubrir. 3.º de Primaria.",
+      "ruta": "/Casilleros/elyan/",
+      "personalizacion": {
+        "simbolo": "🐰",
+        "acento": "#087254",
+        "fondo": "#fff1d6"
+      },
+      "ultimaActividad": "2026-10-15",
+      "sesiones": [
+        {
+          "id": "tablas-de-multiplicar-elyan",
+          "titulo": "Tablas de multiplicar",
+          "descripcion": "Dos juegos sin cronómetro: diez caminos de saltos para las tablas del 1 al 10 y trivia en orden o mezclada.",
+          "fecha": "2026-10-15",
+          "ruta": "/Casilleros/elyan/tablas-de-multiplicar/"
+        },
+        {
+          "id": "bosque-restas-elyan",
+          "titulo": "🍃 El bosque de las restas",
+          "descripcion": "De Pollito aprendiz a Super Dinosaurio Rex Mega pro: 55 misiones, 11 rangos con iconos propios, premios de tres estrellas y una ventana de juego para vertical y horizontal. Incluye restas de tres cifras.",
+          "fecha": "2026-10-07",
+          "ruta": "/Casilleros/elyan/bosque-de-las-restas/"
+        },
+        {
+          "id": "sumas-molonas-elyan",
+          "titulo": "✨ Sumas Molonas",
+          "descripcion": "🐰 Seis juegos para saltar, construir números con billetes y descubrir las llevadas, con voz opcional.",
+          "fecha": "2026-10-01",
+          "ruta": "/Casilleros/elyan/sumas-molonas/"
+        }
+      ]
+    },
+    {
       "id": "kenisa-erik",
       "nombreVisible": "KENISA",
       "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
@@ -167,111 +286,6 @@
           "descripcion": "Dimensiones, suma, resta, escalares, producto matricial y transpuesta con fórmulas revelables, ejemplos guiados y práctica.",
           "fecha": "2026-09-03",
           "ruta": "/Casilleros/renata/matrices-y-operaciones/"
-        }
-      ]
-    },
-    {
-      "id": "elyan-claudia",
-      "nombreVisible": "Elyan",
-      "descripcion": "Sumas molonas y una aventura de restas para explorar, jugar y descubrir. 3.º de Primaria.",
-      "ruta": "/Casilleros/elyan/",
-      "personalizacion": {
-        "simbolo": "🐰",
-        "acento": "#087254",
-        "fondo": "#fff1d6"
-      },
-      "ultimaActividad": "2026-10-07",
-      "sesiones": [
-        {
-          "id": "bosque-restas-elyan",
-          "titulo": "🍃 El bosque de las restas",
-          "descripcion": "De Pollito aprendiz a Super Dinosaurio Rex Mega pro: 55 misiones, 11 rangos con iconos propios, premios de tres estrellas y una ventana de juego para vertical y horizontal. Incluye restas de tres cifras.",
-          "fecha": "2026-10-07",
-          "ruta": "/Casilleros/elyan/bosque-de-las-restas/"
-        },
-        {
-          "id": "sumas-molonas-elyan",
-          "titulo": "✨ Sumas Molonas",
-          "descripcion": "🐰 Seis juegos para saltar, construir números con billetes y descubrir las llevadas, con voz opcional.",
-          "fecha": "2026-10-01",
-          "ruta": "/Casilleros/elyan/sumas-molonas/"
-        }
-      ]
-    },
-    {
-      "id": "alejandrina",
-      "nombreVisible": "Alejandrina",
-      "descripcion": "Espacio de sesiones y recursos personalizados.",
-      "ruta": "/Casilleros/alejandrina/",
-      "personalizacion": {
-        "simbolo": "A",
-        "acento": "#15784e",
-        "fondo": "#302044"
-      },
-      "ultimaActividad": "2026-09-30",
-      "sesiones": [
-        {
-          "id": "examen-series-alejandrina",
-          "titulo": "Examen series",
-          "descripcion": "Práctica progresiva de sucesiones y series aritméticas y geométricas, con 8 actividades, mini exámenes fijos y medios con casillas editables.",
-          "fecha": "2026-09-30",
-          "ruta": "/Casilleros/alejandrina/examen-series/"
-        },
-        {
-          "id": "series-geometricas-alejandrina",
-          "titulo": "Series geométricas",
-          "descripcion": "Sucesiones, raíces, sumas y medios geométricos con prácticas guiadas, exploradores y una misión aleatoria de 24 retos.",
-          "fecha": "2026-09-22",
-          "ruta": "/Casilleros/alejandrina/series-geometricas/"
-        },
-        {
-          "id": "alejandrina-medios-y-sumas",
-          "titulo": "Medios y sumas aritméticas",
-          "descripcion": "Medios aritméticos y sumas: ejemplos breves, práctica paso a paso y dos juegos independientes.",
-          "fecha": "2026-09-10",
-          "ruta": "/Casilleros/alejandrina/medios-y-sumas/"
-        },
-        {
-          "id": "formulas-de-sucesiones-aritmeticas-sesion-2",
-          "titulo": "Fórmulas de sucesiones aritméticas",
-          "descripcion": "Segunda sesión del bloque de sucesiones para encontrar a₁, d, n y aₙ a partir de los datos conocidos.",
-          "fecha": "2026-08-28",
-          "ruta": "/Casilleros/alejandrina/formulas-de-sucesiones/"
-        },
-        {
-          "id": "sucesiones-aritmeticas-sesion-1",
-          "titulo": "Elementos de una sucesión aritmética",
-          "descripcion": "Primera sesión del bloque de sucesiones aritméticas para reconocer la diferencia común, interpretar sus elementos y construir la fórmula general.",
-          "fecha": "2026-08-25",
-          "ruta": "/Casilleros/alejandrina/sucesiones-aritmeticas/"
-        },
-        {
-          "id": "multiplicacion-de-binomios",
-          "titulo": "Multiplicación de binomios",
-          "descripcion": "Multiplicación de binomios de la forma Ax+B con coeficientes enteros y fraccionarios.",
-          "fecha": "2026-08-21",
-          "ruta": "/Casilleros/alejandrina/multiplicacion-de-binomios/"
-        },
-        {
-          "id": "diagramas-de-arboles",
-          "titulo": "Diagramas de árboles",
-          "descripcion": "Sesión completa para estudiar diagramas de árbol con teoría, ejercicios generativos, calculadora y juego de recorrido.",
-          "fecha": "2026-07-29",
-          "ruta": "/Casilleros/alejandrina/diagramas-de-arboles/"
-        },
-        {
-          "id": "medidas-de-posicion",
-          "titulo": "Medidas de posición: cuartiles, deciles y percentiles",
-          "descripcion": "Sesión visual para reconocer y convertir cuartiles, deciles, percentiles y mediana como posiciones porcentuales.",
-          "fecha": "2026-07-29",
-          "ruta": "/Casilleros/alejandrina/medidas-de-posicion/"
-        },
-        {
-          "id": "datos-no-agrupados",
-          "titulo": "Datos no agrupados",
-          "descripcion": "Datos no agrupados, tabla completa, acumulados, gráficas, media, mediana y moda.",
-          "fecha": "2026-07-24",
-          "ruta": "/Casilleros/alejandrina/datos-no-agrupados/"
         }
       ]
     },

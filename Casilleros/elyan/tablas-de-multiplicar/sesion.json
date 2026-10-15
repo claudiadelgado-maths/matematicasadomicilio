@@ -1,0 +1,20 @@
+{
+  "id": "tablas-de-multiplicar-elyan",
+  "slug": "tablas-de-multiplicar",
+  "tipo": "sesion",
+  "usuario": "elyan-claudia",
+  "titulo": "Tablas de multiplicar",
+  "descripcion": "Dos juegos sin cronómetro: diez caminos de saltos para las tablas del 1 al 10 y trivia en orden o mezclada.",
+  "objetivo": "Practicar las tablas del 1 al 10 mediante sumas repetidas y multiplicaciones directas.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-10-15",
+  "estado": "publicado",
+  "ruta": "/Casilleros/elyan/tablas-de-multiplicar/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": true,
+    "calculadoras": false
+  }
+}

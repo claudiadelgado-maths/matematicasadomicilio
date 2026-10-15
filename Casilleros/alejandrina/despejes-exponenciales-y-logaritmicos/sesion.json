@@ -1,0 +1,20 @@
+{
+  "id": "despejes-exponenciales-logaritmicos-alejandrina",
+  "slug": "despejes-exponenciales-y-logaritmicos",
+  "tipo": "sesion",
+  "usuario": "alejandrina",
+  "titulo": "Despejes exponenciales y logarítmicos",
+  "descripcion": "Dos actividades de práctica: 35 ejercicios en siete tipos y 14 ejercicios distintos mezclados, con reintentos y procedimientos a petición.",
+  "objetivo": "Despejar ecuaciones exponenciales y logarítmicas, validar sus dominios y expresar resultados enteros o redondeados a dos decimales.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-10-15",
+  "estado": "publicado",
+  "ruta": "/Casilleros/alejandrina/despejes-exponenciales-y-logaritmicos/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

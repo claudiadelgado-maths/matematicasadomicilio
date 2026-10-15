@@ -1,0 +1,9 @@
+/* Estilos exclusivos de esta familia de actividades. */
+@import url("../../recursos/sesion.css?v=20261015");
+
+/* Los siete tipos son seleccionables desde el inicio. */
+.exponents .type-list li{padding:0;overflow:hidden}
+.exponents .type-list .type-choice{width:100%;display:flex;align-items:center;gap:.75rem;padding:.85rem;border:0;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.exponents .type-list .type-choice:hover{background:rgba(40,94,88,.10)}
+.exponents .type-list .type-choice:focus-visible{outline:3px solid #cc8a38;outline-offset:-3px}
+@media(max-width:850px){.exponents .type-list .type-choice{padding:.6rem .3rem;display:grid;gap:.3rem;justify-items:center;text-align:center}}

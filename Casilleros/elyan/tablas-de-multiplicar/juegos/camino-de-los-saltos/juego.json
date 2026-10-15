@@ -1,0 +1,11 @@
+{
+  "id": "camino-saltos-tablas-elyan",
+  "tipo": "juego",
+  "sesion": "tablas-de-multiplicar-elyan",
+  "usuario": "elyan-claudia",
+  "titulo": "El camino de los saltos",
+  "descripcion": "Diez niveles, uno por tabla: diez saltos desde cero, cuatro caminos, animación de salto o caída y desbloqueo con progreso local.",
+  "estado": "publicado",
+  "ruta": "/Casilleros/elyan/tablas-de-multiplicar/juegos/camino-de-los-saltos/",
+  "interactivo": true
+}

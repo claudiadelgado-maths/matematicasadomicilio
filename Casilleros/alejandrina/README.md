@@ -8,6 +8,8 @@ El índice carga automáticamente las sesiones publicadas desde `recursos/datos/
 
 ## Contenido actual
 
+- `despejes-exponenciales-y-logaritmicos/`: práctica de siete tipos con 35 ecuaciones ordenadas y desafío de 14 ecuaciones distintas mezcladas. Respuestas numéricas con punto/coma y dos decimales, reintentos, dominio validado, MathML nativo y procedimientos a petición. Sin teoría, dependencias nuevas ni almacenamiento.
+
 - `examen-series/`: ocho actividades de práctica aritmética y geométrica, generadores progresivos, 31 ejercicios y 20 problemas fijos en dos mini exámenes, medios con casillas editables y validación exacta de fracciones. Sin teoría adicional. Registro de implementación por etapas en `examen-series/ETAPAS.md`.
 
 - `series-geometricas/`: menú, trece páginas progresivas con LaTeX y prácticas generativas guiadas, exploradores de potencias y sumas, y Misión constelación de 24 retos aleatorios con reanudación y repaso de errores.

@@ -4,7 +4,7 @@
   "tipo": "usuario",
   "titulo": "El casillero de Elyan",
   "nombreVisible": "Elyan",
-  "descripcion": "Sumas molonas y una aventura de restas para explorar, jugar y descubrir. 3.º de Primaria.",
+  "descripcion": "Sumas, restas y tablas de multiplicar para explorar, jugar y descubrir. 3.º de Primaria.",
   "estado": "activo",
   "ruta": "/Casilleros/elyan/",
   "personalizacion": {

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 170" role="img" aria-label="Rana exploradora con pañuelo amarillo">
+ <ellipse cx="80" cy="153" rx="47" ry="10" fill="#306c4f" opacity=".15"/>
+ <path d="M46 96Q26 80 25 114V142H58Z" fill="#bd824f" stroke="#775238" stroke-width="3"/>
+ <ellipse cx="79" cy="119" rx="44" ry="35" fill="#459856" stroke="#276947" stroke-width="3"/>
+ <ellipse cx="79" cy="122" rx="28" ry="27" fill="#c8e887"/>
+ <ellipse cx="46" cy="147" rx="23" ry="10" fill="#63b869" stroke="#276947" stroke-width="3"/><ellipse cx="112" cy="147" rx="23" ry="10" fill="#63b869" stroke="#276947" stroke-width="3"/>
+ <path d="M111 102q28-30 30-6" fill="none" stroke="#276947" stroke-width="12" stroke-linecap="round"/><path d="M111 102q28-30 30-6" fill="none" stroke="#63b869" stroke-width="7" stroke-linecap="round"/>
+ <path d="M43 83Q79 107 115 83L107 108 82 110 57 106Z" fill="#f6c557" stroke="#c59635" stroke-width="2"/><path d="M80 108l21 27 1-31" fill="#f6c557" stroke="#c59635" stroke-width="2"/>
+ <path d="M30 57Q21 31 44 25Q64 14 73 38Q86 18 108 25Q135 29 126 57Q143 89 107 101Q73 115 41 98Q13 88 30 57Z" fill="#79c879" stroke="#276947" stroke-width="3"/>
+ <ellipse cx="51" cy="47" rx="13" ry="17" fill="#fffdeb"/><ellipse cx="102" cy="47" rx="13" ry="17" fill="#fffdeb"/>
+ <ellipse cx="55" cy="49" rx="6" ry="9" fill="#223e38"/><ellipse cx="106" cy="49" rx="6" ry="9" fill="#223e38"/>
+ <circle cx="57" cy="46" r="2" fill="white"/><circle cx="108" cy="46" r="2" fill="white"/>
+ <ellipse cx="42" cy="79" rx="10" ry="6" fill="#efab96"/><ellipse cx="111" cy="79" rx="10" ry="6" fill="#efab96"/>
+ <path d="M62 81Q77 95 94 79" fill="none" stroke="#276947" stroke-width="3" stroke-linecap="round"/>
+</svg>

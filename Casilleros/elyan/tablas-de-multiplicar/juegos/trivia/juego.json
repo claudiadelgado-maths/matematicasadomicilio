@@ -1,0 +1,11 @@
+{
+  "id": "trivia-tablas-elyan",
+  "tipo": "juego",
+  "sesion": "tablas-de-multiplicar-elyan",
+  "usuario": "elyan-claudia",
+  "titulo": "Trivia de multiplicaciones",
+  "descripcion": "Rondas de diez preguntas en orden por tabla o veinte mezcladas, con cuatro opciones, aciertos, errores, progreso y reinicio.",
+  "estado": "publicado",
+  "ruta": "/Casilleros/elyan/tablas-de-multiplicar/juegos/trivia/",
+  "interactivo": true
+}
