@@ -1,0 +1,5 @@
+@import url("recursos/sesion.css");
+
+.bio3 .plant-card{margin-top:1.5rem}.bio3 .plant-card .activity-art{background:#e4edca}.bio3 .plant-card .activity-art svg{width:100%;height:230px;padding:2rem}
+
+.bio3 .activity-card + .activity-card{margin-top:1.5rem}.bio3 .fungi-card .activity-art{background:#f0ddd0}

@@ -10,6 +10,8 @@ El selector de la tarjeta es exclusivo de `kenisa-erik`. Revisar ambos consumido
 
 ## Sesiones
 
+**Biología Parte 3** (`biologia-parte-3/`): nueva sesión con menú y actividad 01, Células procariotas y eucariotas. Bacteria de ocho estructuras con funciones y reto visual, recordatorio breve de la célula animal de Parte 1, comparación filtrable, 14 tarjetas de organismos y pistas, y banco de 20 preguntas en rondas de 10 o 20. Reutiliza el motor de cuestionarios de Parte 1 con revisión y práctica de errores. Las actividades futuras (vegetal, clasificación y Fungi) solo se mencionan como continuidad. No guarda ni envía respuestas.
+
 **Biología parte 2** (`biologia-parte-2/`): sesión completa de cuatro actividades: **01 — ADN y cromosomas**, **02 — Mitosis**, **03 — Meiosis** y **04 — Mitosis vs. meiosis y reproducción**. Incluye recorridos ilustrados, ocho prácticas y repasos de 14, 16, 18 y 22 preguntas. La última actividad compara los procesos, explora gametos → fecundación → cigoto → mitosis, permite construir el ciclo y ofrece un test integrador con cuatro dibujos, explicación, revisión de errores y repetición. Menú y cierres enlazan las cuatro actividades. SVG locales, teclado, móvil y movimiento reducido; sin persistencia ni dependencias nuevas.
 
 **Laboratorio de despejes lineales** (`laboratorio-de-despejes-lineales/`): actividad manipulativa de ecuaciones (a/d)x + b = c con coeficientes simplificados, bloques animados, transformaciones reversibles de constantes y factores, reordenación y combinación opcional, visor LaTeX, deshacer y reiniciar. Genera ejercicios ilimitados con solución entera; el signo igual permanece fijo. Referencia visual: Transforma la ecuación, de Raúl → Repaso, sin modificar esa sesión.
@@ -50,3 +52,9 @@ La quinta actividad de **EXAMEN GEOMETRÍA** es **EXAMEN DE PLANTEAMIENTO DE ECU
 EXAMEN GEOMETRÍA incorpora LABORATORIO: seis estaciones de fórmulas, editor de fracciones y exponentes, despejes, lados algebraicos, áreas/perímetros y círculos con π; 1299 consignas con reintentos y sin calificación. Entrada desde la portada de la sesión.
 
 La portada reutiliza el banner completo del índice y sus ajustes para móvil, centrado y a escala del 75 % en ancho y alto. La reducción conserva sus proporciones, texto y adornos; se aplica desde los estilos de la portada y no altera el banner interior.
+
+Biología Parte 3 incorpora **Célula vegetal** (actividad 02) completa: once elementos explorables y reto de funciones, dieciocho tarjetas animal/vegetal/ambas, laboratorios de fotosíntesis y día/noche y banco de 48 preguntas en rondas de 8/16, con explicaciones, resultados y práctica de errores. Mantiene el contenido preparado, sin almacenamiento ni envíos de respuestas.
+
+La actividad 03 de Biología Parte 3, `clasificacion-de-los-seres-vivos`, añade siete criterios de clasificación, siete pasaportes biológicos, seis retos verdadero/falso y 60 preguntas de repaso. Reino Fungi se estudia en la actividad 04, ya disponible.
+
+Biología Parte 3 queda completa con la actividad 04, `reino-fungi`: estructuras explorables, nutrición y reproducción, ocho casos de clasificación combinada y banco de 60 preguntas. El menú ofrece las cuatro actividades.

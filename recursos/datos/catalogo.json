@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 286,
+  "total": 291,
   "tipos": {
     "examen": [
       {
@@ -730,6 +730,50 @@
         "estado": "publicado",
         "ruta": "/Casilleros/kenisa/biologia-parte-2/ejercicios/mitosis/",
         "archivoMetadatos": "Casilleros/kenisa/biologia-parte-2/ejercicios/mitosis/ejercicio.json"
+      },
+      {
+        "id": "celula-vegetal-biologia-3-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Célula vegetal",
+        "descripcion": "Actividad 02 completa: célula vegetal explorable de 11 elementos, reto de identificación, 18 tarjetas animal/vegetal/ambas, laboratorios de fotosíntesis y día/noche, y banco de 48 preguntas en rondas de 8 o 16 con repaso de errores.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-3/ejercicios/celula-vegetal/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-3/ejercicios/celula-vegetal/ejercicio.json"
+      },
+      {
+        "id": "clasificacion-seres-vivos-biologia-3-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Clasificación de los seres vivos",
+        "descripcion": "Actividad 03: siete criterios de clasificación, siete pasaportes con etiquetas simultáneas, seis retos verdadero/falso y 60 preguntas en rondas de 10 o 20 con repaso de errores.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-3/ejercicios/clasificacion-de-los-seres-vivos/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-3/ejercicios/clasificacion-de-los-seres-vivos/ejercicio.json"
+      },
+      {
+        "id": "procariotas-eucariotas-biologia-3-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Células procariotas y eucariotas",
+        "descripcion": "Actividad 01: ocho estructuras explorables y reto de funciones, recordatorio breve de la célula animal, comparación filtrable, 14 tarjetas y 20 preguntas en rondas de 10 o 20 con práctica de errores.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-3/ejercicios/procariotas-y-eucariotas/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-3/ejercicios/procariotas-y-eucariotas/ejercicio.json"
+      },
+      {
+        "id": "reino-fungi-biologia-3-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-3-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Reino Fungi",
+        "descripcion": "Actividad 04: cinco estructuras explorables, reto de funciones, secuencia de nutrición, tres mecanismos reproductivos, ocho casos de clasificación combinada y 60 preguntas con repaso de errores. Cierra Biología Parte 3.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-3/ejercicios/reino-fungi/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-3/ejercicios/reino-fungi/ejercicio.json"
       },
       {
         "id": "practica-despejes-kenisa",
@@ -3445,6 +3489,29 @@
           "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/kenisa/biologia-parte-2/sesion.json"
+      },
+      {
+        "id": "biologia-parte-3-kenisa-erik",
+        "slug": "biologia-parte-3",
+        "tipo": "sesion",
+        "usuario": "kenisa-erik",
+        "titulo": "Biología Parte 3",
+        "descripcion": "Cuatro actividades completas: procariotas y eucariotas, célula vegetal, clasificación de los seres vivos y Reino Fungi. Exploradores, laboratorios, casos combinados y bancos de 20, 48, 60 y 60 preguntas con repaso de errores.",
+        "objetivo": "Distinguir tipos celulares, comprender estructuras vegetales y fotosíntesis, combinar criterios de clasificación y relacionar estructura, nutrición, reproducción e importancia del Reino Fungi.",
+        "conocimientosPrevios": [
+          "Estructura básica de la célula animal estudiada en Biología Parte 1"
+        ],
+        "fecha": "2026-10-16",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-3/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-3/sesion.json"
       },
       {
         "id": "despejes-lineales-kenisa",

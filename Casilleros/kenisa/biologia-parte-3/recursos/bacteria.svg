@@ -1,0 +1,11 @@
+<svg viewBox="0 0 720 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Esquema de una bacteria: capas externas, ADN sin envoltura nuclear, ribosomas, plásmidos y flagelo. No está a escala.">
+<g data-part="flagelo"><path class="flagellum" d="M448 210 C505 142 526 290 573 211 S628 123 669 181" fill="none" stroke="#288d7b" stroke-width="12" stroke-linecap="round"/></g>
+<g data-part="capsula"><rect x="60" y="95" width="410" height="230" rx="115" fill="#dcd0f5" stroke="#a58bc9" stroke-width="3" stroke-dasharray="6 6"/></g>
+<g data-part="pared"><rect x="74" y="109" width="382" height="202" rx="101" fill="#a2dfcb" stroke="#4c9c88" stroke-width="3"/></g>
+<g data-part="membrana"><rect x="88" y="123" width="354" height="174" rx="87" fill="#fff3cf" stroke="#257365" stroke-width="8"/></g>
+<g data-part="citoplasma"><path d="M167 139 Q112 156 110 209 Q113 261 167 280 L373 280 Q425 260 426 210 Q425 156 373 139Z" fill="#fff3cf"/></g>
+<g data-part="nucleoide"><path d="M235 196 C204 170 266 155 281 182 S340 250 322 218 S294 155 319 171 S371 222 339 238 S273 226 251 251 S215 213 244 214 S303 239 286 201 S243 165 235 196" fill="none" stroke="#8b56a6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g data-part="ribosomas" fill="#4d8fbb" stroke="#326789" stroke-width="2"><circle cx="203" cy="153" r="6"/><circle cx="172" cy="183" r="6"/><circle cx="193" cy="238" r="6"/><circle cx="351" cy="150" r="6"/><circle cx="393" cy="200" r="6"/><circle cx="323" cy="267" r="6"/><circle cx="226" cy="270" r="6"/><circle cx="135" cy="204" r="6"/></g>
+<g data-part="plasmidos" fill="none" stroke="#d18436" stroke-width="5"><ellipse cx="379" cy="248" rx="17" ry="11" transform="rotate(-25 379 248)"/><ellipse cx="198" cy="203" rx="10" ry="15" transform="rotate(28 198 203)"/></g>
+<g class="diagram-sparkles" fill="#8b56a6"><path d="m506 87 4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/><circle cx="97" cy="354" r="5"/><path d="m428 364 3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></g>
+</svg>

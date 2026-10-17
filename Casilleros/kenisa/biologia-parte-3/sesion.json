@@ -1,0 +1,22 @@
+{
+  "id": "biologia-parte-3-kenisa-erik",
+  "slug": "biologia-parte-3",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Biología Parte 3",
+  "descripcion": "Cuatro actividades completas: procariotas y eucariotas, célula vegetal, clasificación de los seres vivos y Reino Fungi. Exploradores, laboratorios, casos combinados y bancos de 20, 48, 60 y 60 preguntas con repaso de errores.",
+  "objetivo": "Distinguir tipos celulares, comprender estructuras vegetales y fotosíntesis, combinar criterios de clasificación y relacionar estructura, nutrición, reproducción e importancia del Reino Fungi.",
+  "conocimientosPrevios": [
+    "Estructura básica de la célula animal estudiada en Biología Parte 1"
+  ],
+  "fecha": "2026-10-16",
+  "estado": "publicado",
+  "ruta": "/Casilleros/kenisa/biologia-parte-3/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}

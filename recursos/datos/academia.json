@@ -3,6 +3,111 @@
   "generadoDesde": "usuario.json y sesion.json",
   "alumnos": [
     {
+      "id": "kenisa-erik",
+      "nombreVisible": "KENISA",
+      "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
+      "ruta": "/Casilleros/kenisa/",
+      "personalizacion": {
+        "simbolo": "K",
+        "acento": "#205c3e",
+        "fondo": "#ffacd2"
+      },
+      "ultimaActividad": "2026-10-16",
+      "sesiones": [
+        {
+          "id": "biologia-parte-3-kenisa-erik",
+          "titulo": "Biología Parte 3",
+          "descripcion": "Cuatro actividades completas: procariotas y eucariotas, célula vegetal, clasificación de los seres vivos y Reino Fungi. Exploradores, laboratorios, casos combinados y bancos de 20, 48, 60 y 60 preguntas con repaso de errores.",
+          "fecha": "2026-10-16",
+          "ruta": "/Casilleros/kenisa/biologia-parte-3/"
+        },
+        {
+          "id": "biologia-parte-2-kenisa-erik",
+          "titulo": "Biología parte 2",
+          "descripcion": "Sesión completa con cuatro actividades: ADN y cromosomas, Mitosis, Meiosis y Mitosis vs. meiosis y reproducción. Ilustraciones, recorridos interactivos, ocho prácticas y repasos de 14, 16, 18 y 22 preguntas con explicaciones.",
+          "fecha": "2026-10-14",
+          "ruta": "/Casilleros/kenisa/biologia-parte-2/"
+        },
+        {
+          "id": "examen-geometria-kenisa-erik",
+          "titulo": "EXAMEN GEOMETRÍA",
+          "descripcion": "Material de estudio, series A–D, práctica de ecuaciones y despejes y LABORATORIO con seis estaciones interactivas de fórmulas.",
+          "fecha": "2026-10-10",
+          "ruta": "/Casilleros/kenisa/examen-geometria/"
+        },
+        {
+          "id": "extra-mate-parte-4-kenisa-erik",
+          "titulo": "Extra mate parte 4",
+          "descripcion": "Semejanza y congruencia de triángulos con animaciones y prácticas, más un mini examen de 14 temas de geometría y ecuaciones de Extra mate.",
+          "fecha": "2026-10-09",
+          "ruta": "/Casilleros/kenisa/extra-mate-parte-4/"
+        },
+        {
+          "id": "extra-mate-parte-3-kenisa-erik",
+          "titulo": "Extra mate parte 3",
+          "descripcion": "Explora nombres, partes y fórmulas de los polígonos regulares: batalla arcade, reconocimiento visual y retos para calcular o descubrir datos.",
+          "fecha": "2026-10-07",
+          "ruta": "/Casilleros/kenisa/extra-mate-parte-3/"
+        },
+        {
+          "id": "extra-mate-parte-2-kenisa-erik",
+          "titulo": "Extra mate parte 2",
+          "descripcion": "Área y perímetro de triángulos, cuadrados, rectángulos y trapecios. Laboratorios visuales, diagonales y problemas planteados sencillos con ejercicios ilimitados.",
+          "fecha": "2026-10-02",
+          "ruta": "/Casilleros/kenisa/extra-mate-parte-2/"
+        },
+        {
+          "id": "biologia-parte-1-kenisa-erik",
+          "titulo": "Biología parte 1",
+          "descripcion": "Tres actividades para repasar Biología: célula animal con dos cuestionarios internos, biomoléculas y ocho niveles de organización. Guías ilustradas, clasificación, construcción del orden y evaluación con repaso de errores.",
+          "fecha": "2026-09-29",
+          "ruta": "/Casilleros/kenisa/biologia-parte-1/"
+        },
+        {
+          "id": "extra-mate-parte-1-kenisa-erik",
+          "titulo": "Extra mate parte 1",
+          "descripcion": "Repaso visual de geometría: ángulos, paralelas, triángulos, cuadriláteros, trapecios y círculos. Laboratorios y juegos con medidas, propiedades, perímetro, área y conversiones de grados y radianes.",
+          "fecha": "2026-09-29",
+          "ruta": "/Casilleros/kenisa/extra-mate-parte-1/"
+        },
+        {
+          "id": "laboratorio-de-despejes-lineales-kenisa-erik",
+          "titulo": "Laboratorio de despejes lineales",
+          "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
+          "fecha": "2026-09-29",
+          "ruta": "/Casilleros/kenisa/laboratorio-de-despejes-lineales/"
+        },
+        {
+          "id": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
+          "titulo": "Aplicaciones de las funciones trigonométricas",
+          "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
+          "fecha": "2026-09-28",
+          "ruta": "/Casilleros/kenisa/aplicaciones-de-las-funciones-trigonometricas/"
+        },
+        {
+          "id": "teorema-de-pitagoras-kenisa-erik",
+          "titulo": "Teorema de Pitágoras",
+          "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
+          "fecha": "2026-09-28",
+          "ruta": "/Casilleros/kenisa/teorema-de-pitagoras/"
+        },
+        {
+          "id": "funciones-trigonometricas-kenisa-erik",
+          "titulo": "Funciones trigonométricas",
+          "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
+          "fecha": "2026-09-23",
+          "ruta": "/Casilleros/kenisa/funciones-trigonometricas/"
+        },
+        {
+          "id": "despejes-lineales-kenisa",
+          "titulo": "Despejes lineales",
+          "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
+          "fecha": "2026-09-22",
+          "ruta": "/Casilleros/kenisa/despejes-lineales/"
+        }
+      ]
+    },
+    {
       "id": "alejandrina",
       "nombreVisible": "Alejandrina",
       "descripcion": "Espacio de sesiones y recursos personalizados.",
@@ -118,104 +223,6 @@
           "descripcion": "🐰 Seis juegos para saltar, construir números con billetes y descubrir las llevadas, con voz opcional.",
           "fecha": "2026-10-01",
           "ruta": "/Casilleros/elyan/sumas-molonas/"
-        }
-      ]
-    },
-    {
-      "id": "kenisa-erik",
-      "nombreVisible": "KENISA",
-      "descripcion": "Sesiones y recursos personalizados para desarrollar procedimientos algebraicos con claridad.",
-      "ruta": "/Casilleros/kenisa/",
-      "personalizacion": {
-        "simbolo": "K",
-        "acento": "#205c3e",
-        "fondo": "#ffacd2"
-      },
-      "ultimaActividad": "2026-10-14",
-      "sesiones": [
-        {
-          "id": "biologia-parte-2-kenisa-erik",
-          "titulo": "Biología parte 2",
-          "descripcion": "Sesión completa con cuatro actividades: ADN y cromosomas, Mitosis, Meiosis y Mitosis vs. meiosis y reproducción. Ilustraciones, recorridos interactivos, ocho prácticas y repasos de 14, 16, 18 y 22 preguntas con explicaciones.",
-          "fecha": "2026-10-14",
-          "ruta": "/Casilleros/kenisa/biologia-parte-2/"
-        },
-        {
-          "id": "examen-geometria-kenisa-erik",
-          "titulo": "EXAMEN GEOMETRÍA",
-          "descripcion": "Material de estudio, series A–D, práctica de ecuaciones y despejes y LABORATORIO con seis estaciones interactivas de fórmulas.",
-          "fecha": "2026-10-10",
-          "ruta": "/Casilleros/kenisa/examen-geometria/"
-        },
-        {
-          "id": "extra-mate-parte-4-kenisa-erik",
-          "titulo": "Extra mate parte 4",
-          "descripcion": "Semejanza y congruencia de triángulos con animaciones y prácticas, más un mini examen de 14 temas de geometría y ecuaciones de Extra mate.",
-          "fecha": "2026-10-09",
-          "ruta": "/Casilleros/kenisa/extra-mate-parte-4/"
-        },
-        {
-          "id": "extra-mate-parte-3-kenisa-erik",
-          "titulo": "Extra mate parte 3",
-          "descripcion": "Explora nombres, partes y fórmulas de los polígonos regulares: batalla arcade, reconocimiento visual y retos para calcular o descubrir datos.",
-          "fecha": "2026-10-07",
-          "ruta": "/Casilleros/kenisa/extra-mate-parte-3/"
-        },
-        {
-          "id": "extra-mate-parte-2-kenisa-erik",
-          "titulo": "Extra mate parte 2",
-          "descripcion": "Área y perímetro de triángulos, cuadrados, rectángulos y trapecios. Laboratorios visuales, diagonales y problemas planteados sencillos con ejercicios ilimitados.",
-          "fecha": "2026-10-02",
-          "ruta": "/Casilleros/kenisa/extra-mate-parte-2/"
-        },
-        {
-          "id": "biologia-parte-1-kenisa-erik",
-          "titulo": "Biología parte 1",
-          "descripcion": "Tres actividades para repasar Biología: célula animal con dos cuestionarios internos, biomoléculas y ocho niveles de organización. Guías ilustradas, clasificación, construcción del orden y evaluación con repaso de errores.",
-          "fecha": "2026-09-29",
-          "ruta": "/Casilleros/kenisa/biologia-parte-1/"
-        },
-        {
-          "id": "extra-mate-parte-1-kenisa-erik",
-          "titulo": "Extra mate parte 1",
-          "descripcion": "Repaso visual de geometría: ángulos, paralelas, triángulos, cuadriláteros, trapecios y círculos. Laboratorios y juegos con medidas, propiedades, perímetro, área y conversiones de grados y radianes.",
-          "fecha": "2026-09-29",
-          "ruta": "/Casilleros/kenisa/extra-mate-parte-1/"
-        },
-        {
-          "id": "laboratorio-de-despejes-lineales-kenisa-erik",
-          "titulo": "Laboratorio de despejes lineales",
-          "descripcion": "Laboratorio de ecuaciones con coeficientes enteros y fraccionarios: tarjetas de coeficiente y x con selección independiente, bloques animados, transformaciones reversibles, reordenación y combinación opcional y visor LaTeX.",
-          "fecha": "2026-09-29",
-          "ruta": "/Casilleros/kenisa/laboratorio-de-despejes-lineales/"
-        },
-        {
-          "id": "aplicaciones-de-las-funciones-trigonometricas-kenisa-erik",
-          "titulo": "Aplicaciones de las funciones trigonométricas",
-          "descripcion": "Seno, coseno y tangente para encontrar lados y ángulos: cuatro ejemplos, práctica breve y nueve misiones ilustradas.",
-          "fecha": "2026-09-28",
-          "ruta": "/Casilleros/kenisa/aplicaciones-de-las-funciones-trigonometricas/"
-        },
-        {
-          "id": "teorema-de-pitagoras-kenisa-erik",
-          "titulo": "Teorema de Pitágoras",
-          "descripcion": "Una explicación corta, ejercicios numéricos y doce misiones de la vida real en tres partidas de cuatro niveles.",
-          "fecha": "2026-09-28",
-          "ruta": "/Casilleros/kenisa/teorema-de-pitagoras/"
-        },
-        {
-          "id": "funciones-trigonometricas-kenisa-erik",
-          "titulo": "Funciones trigonométricas",
-          "descripcion": "Las seis razones trigonométricas con triángulos, tres niveles de identificación, práctica de fracciones y un reto integrador de doce casillas. Incluye el juego Consultorio Trigonométrico con tres niveles progresivos.",
-          "fecha": "2026-09-23",
-          "ruta": "/Casilleros/kenisa/funciones-trigonometricas/"
-        },
-        {
-          "id": "despejes-lineales-kenisa",
-          "titulo": "Despejes lineales",
-          "descripcion": "Despejes paso a paso: nueve ideas breves con exploraciones, ejemplos guiados y comprobaciones.",
-          "fecha": "2026-09-22",
-          "ruta": "/Casilleros/kenisa/despejes-lineales/"
         }
       ]
     },

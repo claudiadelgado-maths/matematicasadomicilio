@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" role="img" aria-labelledby="fungi-title fungi-desc">
+<title id="fungi-title">Un hongo con seta y su micelio</title><desc id="fungi-desc">La seta sobresale del sustrato; debajo hay una red de hifas. A la derecha se amplía una hifa para señalar la pared celular. Esporas visibles como puntos cerca del sombrero. Esquema sin escala.</desc>
+<rect x="15" y="20" width="770" height="500" rx="35" fill="#faf4e9"/>
+<path d="M28 337Q150 324 270 341T548 337V505H28Z" fill="#ead8c0"/><path d="M28 337Q150 324 270 341T548 337" fill="none" stroke="#a3b58b" stroke-width="10"/>
+<g data-part="micelio" fill="none" stroke="#a38bad" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M279 325v55l-54 30-74-14-67 37M225 410l-10 47-77 28M278 370l61 33 38 36 115 16M339 403l44-34 71 13M279 380l-2 70 55 38M277 450l-36 41M151 396l-21-30-48-8M84 433l-29 33M151 396l-16 50M377 439l-15 57M215 457l-38-21M383 369l17-19M454 382l48-19M492 455l26 30"/></g>
+<g data-part="hifa" fill="none" stroke="#bf795d" stroke-width="7" stroke-linecap="round"><path d="M279 380l62 22 48 25 34-14 61 11M389 427l-5 46 36 24"/></g>
+<g data-part="fructifero"><path d="M251 176q15 75-8 156 39 24 74 0-20-77-13-156" fill="#f4e1c6" stroke="#ae8b71" stroke-width="5"/><path d="M124 176C135 32 416 24 437 176Q282 224 124 176Z" fill="#dca799" stroke="#a76d64" stroke-width="5"/><path d="M136 181q149 33 288 0" fill="none" stroke="#885c65" stroke-width="6"/><path d="M159 183l76 17m-34-12 48 12m22-8v12m20-11 16 8m25-6 34-7" stroke="#b5848a" stroke-width="4"/><path d="M178 110q62-55 147-38" fill="none" stroke="#f4d4c6" stroke-width="12" stroke-linecap="round"/></g>
+<g data-part="esporas" fill="#9775ad" stroke="#78558e" stroke-width="2"><ellipse cx="410" cy="213" rx="6" ry="8"/><ellipse cx="436" cy="226" rx="5" ry="7"/><ellipse cx="459" cy="251" rx="6" ry="8"/><ellipse cx="486" cy="225" rx="5" ry="7"/><ellipse cx="416" cy="274" rx="6" ry="8"/><ellipse cx="469" cy="303" rx="5" ry="7"/></g>
+<path d="M431 402 550 341" fill="none" stroke="#ac9c89" stroke-dasharray="6 6" stroke-width="2"/>
+<rect x="550" y="302" width="230" height="183" rx="24" fill="#fffaf2" stroke="#d2c3af" stroke-width="2"/>
+<g data-part="pared"><rect x="564" y="360" width="202" height="73" rx="34" fill="#dfb88a" stroke="#bc875c" stroke-width="5"/><rect x="574" y="369" width="182" height="55" rx="27" fill="#e5dded" stroke="#8d769d" stroke-width="3"/></g>
+<g fill="#a387b3"><ellipse cx="609" cy="396" rx="13" ry="11"/><ellipse cx="719" cy="396" rx="13" ry="11"/></g><path d="M665 371v51" stroke="#bc875c" stroke-width="4"/>
+<text x="665" y="335" text-anchor="middle" fill="#6c5a71" font-family="sans-serif" font-size="14">HIFA AMPLIADA</text>
+<g fill="#a8b98b"><path d="m79 298 8-12 7 13-7 13Z"/><path d="m701 169 11-17 10 17-10 17Z"/></g>
+</svg>

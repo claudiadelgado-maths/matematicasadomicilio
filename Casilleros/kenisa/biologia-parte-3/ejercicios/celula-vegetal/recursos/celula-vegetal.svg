@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-labelledby="plant-title plant-desc">
+<title id="plant-title">Una célula vegetal fotosintética</title><desc id="plant-desc">Pared externa, membrana interna, citoplasma, gran vacuola central, núcleo, cloroplastos, mitocondrias, ribosomas, retículo y Golgi. A la derecha se amplía un cloroplasto para mostrar la clorofila en sus membranas internas. Esquema sin escala.</desc>
+<defs><pattern id="wall-pattern" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="12" height="12" fill="#c6d998"/><path d="M0 0V12" stroke="#b2ca7f" stroke-width="3"/></pattern></defs>
+<g data-part="pared"><rect x="55" y="70" width="550" height="400" rx="66" fill="url(#wall-pattern)" stroke="#718b4c" stroke-width="6"/></g>
+<g data-part="membrana"><rect x="77" y="92" width="506" height="356" rx="47" fill="#eef3d8" stroke="#397d68" stroke-width="6"/></g>
+<g data-part="citoplasma"><path d="M126 106H531Q569 106 569 146V393Q569 434 529 434H130Q91 434 91 394V149Q91 106 126 106Z" fill="#edf2d5"/></g>
+<g data-part="vacuola"><path d="M293 178C237 182 239 225 245 270S228 344 281 360 440 380 470 339 485 247 471 209 355 169 293 178Z" fill="#cae5ed" stroke="#7fb9ca" stroke-width="5"/><path d="M280 212Q321 186 408 210" fill="none" stroke="#eaf7fa" stroke-width="7" stroke-linecap="round"/></g>
+<g data-part="nucleo"><ellipse cx="173" cy="295" rx="53" ry="48" fill="#e7c9e9" stroke="#9a70ae" stroke-width="5"/><circle cx="186" cy="298" r="15" fill="#c995d1"/><path d="M145 286q13-22 26-4m-22 30q8-10 19 0" fill="none" stroke="#9a70ae" stroke-width="4" stroke-linecap="round"/></g>
+<g data-part="cloroplastos" fill="#aed7a3" stroke="#518157" stroke-width="4"><ellipse cx="163" cy="155" rx="41" ry="23" transform="rotate(-20 163 155)"/><ellipse cx="512" cy="154" rx="39" ry="22" transform="rotate(25 512 154)"/><ellipse cx="490" cy="401" rx="40" ry="22" transform="rotate(-12 490 401)"/>
+<g fill="none" stroke="#487b4e" stroke-width="4"><path d="m145 156 15-5m-14 12 15-5m8-5 14-5m-13 12 14-5M493 143l13 6m-16 1 13 6m11-3 13 6m-16 1 13 6M472 398l14-2m-13 9 14-2m7-7 14-2m-13 9 14-2"/></g></g>
+<g data-part="mitocondrias"><g fill="#efd38d" stroke="#ba964c" stroke-width="3"><ellipse cx="352" cy="140" rx="31" ry="17" transform="rotate(12 352 140)"/><ellipse cx="535" cy="290" rx="18" ry="33" transform="rotate(-25 535 290)"/></g><path d="m330 137 8 10 8-13 9 15 10-12 7 6m159 121-5 10 16 1-12 13 14 3-8 12" fill="none" stroke="#b18a3c" stroke-width="3" stroke-linecap="round"/></g>
+<g data-part="ribosomas" fill="#637ba4" stroke="#456183" stroke-width="1.5"><circle cx="259" cy="131" r="5"/><circle cx="292" cy="153" r="5"/><circle cx="408" cy="146" r="5"/><circle cx="214" cy="221" r="5"/><circle cx="119" cy="215" r="5"/><circle cx="396" cy="414" r="5"/><circle cx="435" cy="391" r="5"/><circle cx="237" cy="404" r="5"/></g>
+<g data-part="reticulo"><path d="M111 350q27-17 52 1t52-8m-101 26q28-15 53 0t45-4m-91 22q26-12 48 0t38-4" stroke="#69a690" stroke-width="7" stroke-linecap="round" fill="none"/><g fill="#637ba4"><circle cx="135" cy="343" r="3"/><circle cx="167" cy="358" r="3"/><circle cx="145" cy="367" r="3"/></g></g>
+<g data-part="golgi"><path d="M275 393q28 24 61 0m-56 15q24 22 51 0m-44 14q17 12 35 0" fill="none" stroke="#c08698" stroke-width="7" stroke-linecap="round"/><g fill="#d3a0b2"><circle cx="345" cy="404" r="6"/><circle cx="266" cy="417" r="5"/></g></g>
+<path d="M545 148 646 95" stroke="#869c74" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+<rect x="627" y="75" width="151" height="219" rx="22" fill="#f9f8ec" stroke="#d4ddbd" stroke-width="2"/>
+<text x="702" y="103" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#496a47">AMPLIACIÓN</text>
+<ellipse cx="702" cy="175" rx="62" ry="45" fill="#d6e9bb" stroke="#578252" stroke-width="4"/>
+<g data-part="clorofila" fill="none" stroke="#3f783f" stroke-width="6" stroke-linecap="round"><path d="M666 163h25m-25 10h25m-25 10h25m20-20h25m-25 10h25m-25 10h25"/><path d="M691 174h20" stroke-width="2"/></g>
+<text x="702" y="248" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#496a47">Membranas internas</text><text x="702" y="265" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#496a47">del cloroplasto</text>
+<g fill="#a4b879"><path d="m657 377 4 13 13 4-13 4-4 13-4-13-13-4 13-4z"/><circle cx="723" cy="342" r="5"/></g>
+</svg>

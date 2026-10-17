@@ -24,6 +24,8 @@ La portada conserva el plan Comprende → Practica → Refuerza y la autoevaluac
 
 ## Contrato
 
+Desde 2026-10-16, `../biologia-parte-3/ejercicios/procariotas-y-eucariotas/` también consume `recursos/cuestionarios.css`, `cuestionarios.mjs` y `modelo-repaso.mjs` sin modificarlos. Al cambiar estos recursos compartidos, revisar además las rondas 10/20 y el repaso de errores de esa actividad. Su diseño propio está en Parte 3.
+
 Conservar slug biologia-parte-1, ID biologia-parte-1-kenisa-erik, usuario kenisa-erik y ruta /Casilleros/kenisa/biologia-parte-1/. Los módulos conservan sus identidades y rutas. No renombrar los anclajes históricos de la célula. Estado publicado y fecha editorial 2026-09-29.
 
 Recursos globales: marca, base.css, navegacion.js, pie y controles flotantes. Rutas relativas con index.html y profundidad de cuatro niveles en portada/seis en ejercicios. JavaScript nativo, sin dependencias, cuentas, almacenamiento ni envíos. Resultados y progreso viven solo mientras se mantiene abierta cada página.
@@ -35,3 +37,9 @@ Ejecutar npm run catalogo y npm run validar. Ejecutar los cuatro archivos modelo
 Revisar las cuatro páginas a 360/768/1024/1440 px: menú con exactamente tres tarjetas, enlaces y anclajes históricos, teclado, foco, tacto, movimiento reducido, consola y ausencia de desbordamiento. Comprobar independencia entre tableros, cuestionarios y repaso de errores.
 
 En niveles: ocho paradas en cualquier orden; anterior/siguiente; comparación persona/bacteria; escalera con error, corrección, final y reinicio; rondas de 8/16, explicación, puntaje único, resultado perfecto sin controles vacíos y repaso con calificación inicial inalterada. Revisar también los bancos previos al modificar cualquier recurso compartido.
+
+La actividad 02 de Parte 3, `../biologia-parte-3/ejercicios/celula-vegetal/`, también reutiliza `recursos/cuestionarios.css`, `cuestionarios.mjs` y `modelo-repaso.mjs` sin modificarlos. Incluir sus rondas 8/16 y sus prácticas en la revisión de futuros cambios a estos recursos.
+
+La actividad 03 de Parte 3 (`../biologia-parte-3/ejercicios/clasificacion-de-los-seres-vivos/`) también consume `recursos/cuestionarios.css`, `cuestionarios.mjs` y el modelo de repaso, sin modificarlos. Su banco contiene diez categorías y 60 preguntas; las rondas son de 10/20. Incluirla al revisar cambios de estos recursos compartidos.
+
+La actividad 04 de Parte 3 (`../biologia-parte-3/ejercicios/reino-fungi/`) consume el motor `cuestionarios.mjs`, `cuestionarios.css` y `modelo-repaso.mjs` sin cambios. Diez categorías y 60 preguntas; rondas 10/20. Revisar este consumidor al modificar el motor compartido.
