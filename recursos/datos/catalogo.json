@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 291,
+  "total": 296,
   "tipos": {
     "examen": [
       {
@@ -774,6 +774,50 @@
         "estado": "publicado",
         "ruta": "/Casilleros/kenisa/biologia-parte-3/ejercicios/reino-fungi/",
         "archivoMetadatos": "Casilleros/kenisa/biologia-parte-3/ejercicios/reino-fungi/ejercicio.json"
+      },
+      {
+        "id": "fermentacion-biologia-4-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-4-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Fermentación",
+        "descripcion": "Guía de fermentación láctica y alcohólica, simulador de NAD⁺, cinco relaciones, comparación de ATP, doce casos y 48 preguntas con repaso de errores. Cierra Biología parte 4.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-4/ejercicios/fermentacion/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-4/ejercicios/fermentacion/ejercicio.json"
+      },
+      {
+        "id": "membrana-y-transporte-biologia-4-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-4-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Membrana plasmática y transporte celular",
+        "descripcion": "Actividad 01: cinco componentes explorables, funciones, tres transportes pasivos, laboratorio de ósmosis animal/vegetal, bomba sodio-potasio, tres recorridos vesiculares, 12 casos y 60 preguntas con repaso de errores.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-4/ejercicios/membrana-y-transporte/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-4/ejercicios/membrana-y-transporte/ejercicio.json"
+      },
+      {
+        "id": "metabolismo-y-atp-biologia-4-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-4-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Metabolismo celular y ATP",
+        "descripcion": "Actividad 02 completa: guía ilustrada, cinco estaciones interactivas con diez procesos, ciclo ATP/ADP, tres enzimas, cinco retos experimentales, ocho situaciones energéticas y 48 preguntas en rondas de 8 o 16.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-4/ejercicios/metabolismo-y-atp/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-4/ejercicios/metabolismo-y-atp/ejercicio.json"
+      },
+      {
+        "id": "respiracion-celular-biologia-4-kenisa-erik",
+        "tipo": "ejercicio",
+        "sesion": "biologia-parte-4-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Respiración celular",
+        "descripcion": "Guía ilustrada, mapa de cuatro etapas, ordenamiento, dieciséis casos, ocho afirmaciones y 48 preguntas con explicación y repaso de errores.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-4/ejercicios/respiracion-celular/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-4/ejercicios/respiracion-celular/ejercicio.json"
       },
       {
         "id": "practica-despejes-kenisa",
@@ -3050,11 +3094,11 @@
         "estado": "publicado",
         "ruta": "/Casilleros/andres/interes-simple-y-compuesto/",
         "componentes": {
-          "explicacion": true,
-          "demostraciones": true,
-          "ejercicios": true,
-          "juegos": true,
-          "calculadoras": true
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/andres/interes-simple-y-compuesto/sesion.json"
       },
@@ -3512,6 +3556,29 @@
           "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/kenisa/biologia-parte-3/sesion.json"
+      },
+      {
+        "id": "biologia-parte-4-kenisa-erik",
+        "slug": "biologia-parte-4",
+        "tipo": "sesion",
+        "usuario": "kenisa-erik",
+        "titulo": "Biología parte 4",
+        "descripcion": "Cuatro actividades completas: transporte celular, metabolismo y ATP, respiración celular y fermentación. Guías ilustradas, laboratorios, casos y 204 preguntas con repaso de errores.",
+        "objetivo": "Comprender el transporte celular y conectar nutrientes, metabolismo, ATP, respiración y fermentación con las funciones de las células.",
+        "conocimientosPrevios": [
+          "Membrana, pared y organelos básicos de células animales y vegetales."
+        ],
+        "fecha": "2026-10-18",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-parte-4/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "archivoMetadatos": "Casilleros/kenisa/biologia-parte-4/sesion.json"
       },
       {
         "id": "despejes-lineales-kenisa",
@@ -4342,11 +4409,11 @@
         "estado": "publicado",
         "ruta": "/Casilleros/renata/determinantes-2x2/",
         "componentes": {
-          "explicacion": true,
-          "demostraciones": true,
-          "ejercicios": true,
-          "juegos": true,
-          "calculadoras": true
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/renata/determinantes-2x2/sesion.json"
       },

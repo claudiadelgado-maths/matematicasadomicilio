@@ -14,10 +14,10 @@
   "estado": "publicado",
   "ruta": "/Casilleros/renata/determinantes-2x2/",
   "componentes": {
-    "explicacion": true,
-    "demostraciones": true,
-    "ejercicios": true,
-    "juegos": true,
-    "calculadoras": true
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
   }
 }

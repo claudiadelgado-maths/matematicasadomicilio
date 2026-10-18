@@ -24,6 +24,8 @@ La portada conserva el plan Comprende → Practica → Refuerza y la autoevaluac
 
 ## Contrato
 
+Desde 2026-10-17, `../biologia-parte-4/ejercicios/membrana-y-transporte/` también consume `recursos/cuestionarios.css`, `cuestionarios.mjs` y `modelo-repaso.mjs` sin cambios. Incluye 60 preguntas, diez categorías, rondas 10/20 y repaso de errores con nota inicial conservada. Revisar este consumidor si se modifica el motor compartido.
+
 Desde 2026-10-16, `../biologia-parte-3/ejercicios/procariotas-y-eucariotas/` también consume `recursos/cuestionarios.css`, `cuestionarios.mjs` y `modelo-repaso.mjs` sin modificarlos. Al cambiar estos recursos compartidos, revisar además las rondas 10/20 y el repaso de errores de esa actividad. Su diseño propio está en Parte 3.
 
 Conservar slug biologia-parte-1, ID biologia-parte-1-kenisa-erik, usuario kenisa-erik y ruta /Casilleros/kenisa/biologia-parte-1/. Los módulos conservan sus identidades y rutas. No renombrar los anclajes históricos de la célula. Estado publicado y fecha editorial 2026-09-29.
@@ -43,3 +45,9 @@ La actividad 02 de Parte 3, `../biologia-parte-3/ejercicios/celula-vegetal/`, ta
 La actividad 03 de Parte 3 (`../biologia-parte-3/ejercicios/clasificacion-de-los-seres-vivos/`) también consume `recursos/cuestionarios.css`, `cuestionarios.mjs` y el modelo de repaso, sin modificarlos. Su banco contiene diez categorías y 60 preguntas; las rondas son de 10/20. Incluirla al revisar cambios de estos recursos compartidos.
 
 La actividad 04 de Parte 3 (`../biologia-parte-3/ejercicios/reino-fungi/`) consume el motor `cuestionarios.mjs`, `cuestionarios.css` y `modelo-repaso.mjs` sin cambios. Diez categorías y 60 preguntas; rondas 10/20. Revisar este consumidor al modificar el motor compartido.
+
+Desde 2026-10-17, `../biologia-parte-4/ejercicios/metabolismo-y-atp/` también reutiliza `recursos/cuestionarios.css`, `cuestionarios.mjs` y `modelo-repaso.mjs` sin cambios: banco de 48 preguntas, ocho categorías, rondas 8/16 y repaso de errores. Incluir este consumidor al revisar cambios del motor.
+
+La actividad 03 de Parte 4 (`../biologia-parte-4/ejercicios/respiracion-celular/`) también consume el motor y estilos de cuestionarios sin cambios: 48 preguntas, ocho temas, rondas 8/16 y repaso de errores. Incluirla al revisar futuras modificaciones compartidas.
+
+La actividad 04 de Parte 4 (`../biologia-parte-4/ejercicios/fermentacion/`) también consume `cuestionarios.mjs`, `cuestionarios.css` y `modelo-repaso.mjs` sin cambios: 48 preguntas, ocho categorías, rondas 8/16 y repaso de errores. Incluirla al revisar cambios del motor compartido.

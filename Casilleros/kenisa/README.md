@@ -10,6 +10,8 @@ El selector de la tarjeta es exclusivo de `kenisa-erik`. Revisar ambos consumido
 
 ## Sesiones
 
+**Biología parte 4** (`biologia-parte-4/`): nueva sesión sobre transporte y energía celular. Disponible la actividad 01, **Membrana plasmática y transporte celular**, con cinco componentes explorables, funciones, difusión, laboratorio de ósmosis animal/vegetal, bomba sodio-potasio, vesículas, doce casos y sesenta preguntas en rondas 10/20 con repaso de errores. La actividad 02, Metabolismo celular y ATP, está completa: guía ilustrada, cinco laboratorios con clasificación de diez procesos, ciclo ATP/ADP, tres enzimas, cinco experimentos y ocho situaciones energéticas; conserva ocho casos guiados y 48 preguntas en rondas 8/16. Respiración y fermentación se anuncian como continuidad futura. Sin almacenamiento ni envío de respuestas.
+
 **Biología Parte 3** (`biologia-parte-3/`): nueva sesión con menú y actividad 01, Células procariotas y eucariotas. Bacteria de ocho estructuras con funciones y reto visual, recordatorio breve de la célula animal de Parte 1, comparación filtrable, 14 tarjetas de organismos y pistas, y banco de 20 preguntas en rondas de 10 o 20. Reutiliza el motor de cuestionarios de Parte 1 con revisión y práctica de errores. Las actividades futuras (vegetal, clasificación y Fungi) solo se mencionan como continuidad. No guarda ni envía respuestas.
 
 **Biología parte 2** (`biologia-parte-2/`): sesión completa de cuatro actividades: **01 — ADN y cromosomas**, **02 — Mitosis**, **03 — Meiosis** y **04 — Mitosis vs. meiosis y reproducción**. Incluye recorridos ilustrados, ocho prácticas y repasos de 14, 16, 18 y 22 preguntas. La última actividad compara los procesos, explora gametos → fecundación → cigoto → mitosis, permite construir el ciclo y ofrece un test integrador con cuatro dibujos, explicación, revisión de errores y repetición. Menú y cierres enlazan las cuatro actividades. SVG locales, teclado, móvil y movimiento reducido; sin persistencia ni dependencias nuevas.
@@ -58,3 +60,5 @@ Biología Parte 3 incorpora **Célula vegetal** (actividad 02) completa: once el
 La actividad 03 de Biología Parte 3, `clasificacion-de-los-seres-vivos`, añade siete criterios de clasificación, siete pasaportes biológicos, seis retos verdadero/falso y 60 preguntas de repaso. Reino Fungi se estudia en la actividad 04, ya disponible.
 
 Biología Parte 3 queda completa con la actividad 04, `reino-fungi`: estructuras explorables, nutrición y reproducción, ocho casos de clasificación combinada y banco de 60 preguntas. El menú ofrece las cuatro actividades.
+
+Biología parte 4 incorpora la actividad 03 · Respiración celular: guía, mapa de cuatro etapas, ordenamiento, 16 casos, ocho afirmaciones y 48 preguntas. La actividad 04 · Fermentación completa la sesión: guía ilustrada, simulador de NAD⁺, cinco relaciones entre organismos y productos, comparación de ATP, doce casos y 48 preguntas. Las cuatro actividades están disponibles desde el menú.

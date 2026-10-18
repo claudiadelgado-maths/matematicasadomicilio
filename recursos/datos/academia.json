@@ -12,8 +12,15 @@
         "acento": "#205c3e",
         "fondo": "#ffacd2"
       },
-      "ultimaActividad": "2026-10-16",
+      "ultimaActividad": "2026-10-18",
       "sesiones": [
+        {
+          "id": "biologia-parte-4-kenisa-erik",
+          "titulo": "Biología parte 4",
+          "descripcion": "Cuatro actividades completas: transporte celular, metabolismo y ATP, respiración celular y fermentación. Guías ilustradas, laboratorios, casos y 204 preguntas con repaso de errores.",
+          "fecha": "2026-10-18",
+          "ruta": "/Casilleros/kenisa/biologia-parte-4/"
+        },
         {
           "id": "biologia-parte-3-kenisa-erik",
           "titulo": "Biología Parte 3",

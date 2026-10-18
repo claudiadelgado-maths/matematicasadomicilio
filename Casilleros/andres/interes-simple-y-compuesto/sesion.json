@@ -14,10 +14,10 @@
   "estado": "publicado",
   "ruta": "/Casilleros/andres/interes-simple-y-compuesto/",
   "componentes": {
-    "explicacion": true,
-    "demostraciones": true,
-    "ejercicios": true,
-    "juegos": true,
-    "calculadoras": true
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
   }
 }

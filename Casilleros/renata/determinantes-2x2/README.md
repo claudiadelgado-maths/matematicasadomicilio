@@ -43,3 +43,11 @@ La URL de entrada no cambia. Las rutas hacia `../../../recursos/` desde la porta
 - Resolución 360, 768, 1024 y 1440 píxeles, sin desplazamiento horizontal ni mensajes de error en consola.
 
 El sitio completo no venía en la carpeta recibida; los vínculos globales se conservaron, pero deben verificarse una vez instalada allí.
+
+## Metadatos de componentes (2026-10-18)
+
+El contenido educativo está integrado en la portada `index.html` y las seis etapas de `paginas/`, con `js/sesion.js`. Los campos de `componentes` representan subcarpetas modulares independientes, no secciones o capacidades de la interfaz. Se declaran `false` para `explicacion`, `demostraciones`, `ejercicios`, `juegos` y `calculadoras`, porque esas cinco carpetas no existen en esta sesión. Las explicaciones, prácticas y herramientas existentes siguen disponibles en sus rutas originales. No se crean carpetas vacías ni se cambian páginas o interacciones.
+
+Regenerar índices con `npm run catalogo` y comprobar `npm run validar` después de modificar metadatos.
+
+Verificación 2026-10-18: catálogo regenerado; sesión sigue publicada. `npm run validar` pasa sin errores ni avisos. Auditoría de referencias locales, incluidos los archivos de esta sesión, sin destinos rotos.

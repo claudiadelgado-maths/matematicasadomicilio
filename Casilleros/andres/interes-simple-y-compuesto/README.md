@@ -17,3 +17,11 @@ Tasa fija por periodo, capitalización al final de cada periodo, sin depósitos 
 
 ## Comprobación al publicar
 Visita la ruta original, comprueba que el enlace de regreso funcione, el menú del sitio abra correctamente y los recursos compartidos carguen. Prueba el simulador, retos y visualización en móvil y escritorio.
+
+## Metadatos de componentes (2026-10-18)
+
+El contenido educativo está integrado en la página principal `index.html`, con sus secciones y `interactivo.js`. Los campos de `componentes` representan subcarpetas modulares independientes, no secciones o capacidades de la interfaz. Se declaran `false` para `explicacion`, `demostraciones`, `ejercicios`, `juegos` y `calculadoras`, porque esas cinco carpetas no existen en esta sesión. Las explicaciones, prácticas y herramientas existentes siguen disponibles en sus rutas originales. No se crean carpetas vacías ni se cambian páginas o interacciones.
+
+Regenerar índices con `npm run catalogo` y comprobar `npm run validar` después de modificar metadatos.
+
+Verificación 2026-10-18: catálogo regenerado; sesión sigue publicada. `npm run validar` pasa sin errores ni avisos. Auditoría de referencias locales, incluidos los archivos de esta sesión, sin destinos rotos.

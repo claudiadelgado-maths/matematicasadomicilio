@@ -1,0 +1,22 @@
+{
+  "id": "biologia-parte-4-kenisa-erik",
+  "slug": "biologia-parte-4",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Biología parte 4",
+  "descripcion": "Cuatro actividades completas: transporte celular, metabolismo y ATP, respiración celular y fermentación. Guías ilustradas, laboratorios, casos y 204 preguntas con repaso de errores.",
+  "objetivo": "Comprender el transporte celular y conectar nutrientes, metabolismo, ATP, respiración y fermentación con las funciones de las células.",
+  "conocimientosPrevios": [
+    "Membrana, pared y organelos básicos de células animales y vegetales."
+  ],
+  "fecha": "2026-10-18",
+  "estado": "publicado",
+  "ruta": "/Casilleros/kenisa/biologia-parte-4/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  }
+}
