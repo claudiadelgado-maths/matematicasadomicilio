@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 296,
+  "total": 300,
   "tipos": {
     "examen": [
       {
@@ -38,6 +38,72 @@
         "ruta": "/biblioteca/examenes/simulador-admision-universidad/",
         "archivo": "recursos/simulador.pdf",
         "archivoMetadatos": "biblioteca/examenes/simulador-admision-universidad/examen.json"
+      },
+      {
+        "id": "biologia-examen-opcion-multiple-kenisa-erik",
+        "tipo": "examen",
+        "sesion": "biologia-examen-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Examen de opción múltiple · Biología",
+        "descripcion": "690 preguntas de 15 actividades; modos aleatorio, por tema y una de cada actividad. Historial común entre rondas y modos, explicaciones y calificación de 0 a 100.",
+        "area": "Biología",
+        "nivel": [
+          "preparatoria"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
+        "interactivo": true,
+        "preguntas": 690,
+        "temas": 15,
+        "calificacionFinal": true,
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-examen/examenes/opcion-multiple/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-examen/examenes/opcion-multiple/examen.json"
+      },
+      {
+        "id": "biologia-examen-practica-20-kenisa-erik",
+        "tipo": "examen",
+        "sesion": "biologia-examen-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Examen de práctica · 20 preguntas",
+        "descripcion": "Dos versiones de 20 preguntas cada una: diez de opción múltiple y diez V/F. Entrega completa, nota de 0 a 100, revisión y guardado independiente por versión.",
+        "area": "Biología",
+        "nivel": [
+          "preparatoria"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
+        "interactivo": true,
+        "preguntas": 40,
+        "versiones": 2,
+        "opcionMultiple": 20,
+        "verdaderoFalso": 20,
+        "calificacionFinal": true,
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-examen/examenes/practica-20/",
+        "preguntasPorVersion": 20,
+        "archivoMetadatos": "Casilleros/kenisa/biologia-examen/examenes/practica-20/examen.json"
+      },
+      {
+        "id": "biologia-examen-temario-maestra-kenisa-erik",
+        "tipo": "examen",
+        "sesion": "biologia-examen-kenisa-erik",
+        "usuario": "kenisa-erik",
+        "titulo": "Examen del temario · Biología",
+        "descripcion": "300 preguntas originales de opción múltiple y verdadero o falso en 11 temas, con distribución según contenido, tres modos, explicaciones e historial independiente.",
+        "area": "Biología",
+        "nivel": [
+          "preparatoria"
+        ],
+        "formato": "web",
+        "duracionMinutos": null,
+        "interactivo": true,
+        "preguntas": 300,
+        "temas": 11,
+        "calificacionFinal": true,
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-examen/examenes/temario-maestra/",
+        "archivoMetadatos": "Casilleros/kenisa/biologia-examen/examenes/temario-maestra/examen.json"
       },
       {
         "id": "kenisa-examen-geometria-a",
@@ -3489,6 +3555,25 @@
           "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/kenisa/aplicaciones-de-las-funciones-trigonometricas/sesion.json"
+      },
+      {
+        "id": "biologia-examen-kenisa-erik",
+        "slug": "biologia-examen",
+        "tipo": "sesion",
+        "usuario": "kenisa-erik",
+        "titulo": "Biología examen",
+        "descripcion": "Tres exámenes: banco general de 690 preguntas, temario de 300 y práctica con dos versiones de 20 preguntas, entrega completa, calificación final y revisión. Avances independientes.",
+        "objetivo": "Repasar Biología con bancos sin repeticiones y simular un examen completo por versiones, aprendiendo de las explicaciones y de los errores.",
+        "conocimientosPrevios": [
+          "Contenidos de Biología partes 1, 2, 3 y 4."
+        ],
+        "fecha": "2026-10-18",
+        "estado": "publicado",
+        "ruta": "/Casilleros/kenisa/biologia-examen/",
+        "componentes": {
+          "examenes": true
+        },
+        "archivoMetadatos": "Casilleros/kenisa/biologia-examen/sesion.json"
       },
       {
         "id": "biologia-parte-1-kenisa-erik",

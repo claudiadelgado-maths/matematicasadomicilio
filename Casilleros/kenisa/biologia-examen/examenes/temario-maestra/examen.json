@@ -1,0 +1,20 @@
+{
+  "id": "biologia-examen-temario-maestra-kenisa-erik",
+  "tipo": "examen",
+  "sesion": "biologia-examen-kenisa-erik",
+  "usuario": "kenisa-erik",
+  "titulo": "Examen del temario · Biología",
+  "descripcion": "300 preguntas originales de opción múltiple y verdadero o falso en 11 temas, con distribución según contenido, tres modos, explicaciones e historial independiente.",
+  "area": "Biología",
+  "nivel": [
+    "preparatoria"
+  ],
+  "formato": "web",
+  "duracionMinutos": null,
+  "interactivo": true,
+  "preguntas": 300,
+  "temas": 11,
+  "calificacionFinal": true,
+  "estado": "publicado",
+  "ruta": "/Casilleros/kenisa/biologia-examen/examenes/temario-maestra/"
+}

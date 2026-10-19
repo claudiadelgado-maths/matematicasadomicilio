@@ -1,0 +1,23 @@
+{
+  "id": "biologia-examen-practica-20-kenisa-erik",
+  "tipo": "examen",
+  "sesion": "biologia-examen-kenisa-erik",
+  "usuario": "kenisa-erik",
+  "titulo": "Examen de práctica · 20 preguntas",
+  "descripcion": "Dos versiones de 20 preguntas cada una: diez de opción múltiple y diez V/F. Entrega completa, nota de 0 a 100, revisión y guardado independiente por versión.",
+  "area": "Biología",
+  "nivel": [
+    "preparatoria"
+  ],
+  "formato": "web",
+  "duracionMinutos": null,
+  "interactivo": true,
+  "preguntas": 40,
+  "versiones": 2,
+  "opcionMultiple": 20,
+  "verdaderoFalso": 20,
+  "calificacionFinal": true,
+  "estado": "publicado",
+  "ruta": "/Casilleros/kenisa/biologia-examen/examenes/practica-20/",
+  "preguntasPorVersion": 20
+}

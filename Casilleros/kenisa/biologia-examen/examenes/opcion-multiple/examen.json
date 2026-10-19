@@ -1,0 +1,20 @@
+{
+  "id": "biologia-examen-opcion-multiple-kenisa-erik",
+  "tipo": "examen",
+  "sesion": "biologia-examen-kenisa-erik",
+  "usuario": "kenisa-erik",
+  "titulo": "Examen de opción múltiple · Biología",
+  "descripcion": "690 preguntas de 15 actividades; modos aleatorio, por tema y una de cada actividad. Historial común entre rondas y modos, explicaciones y calificación de 0 a 100.",
+  "area": "Biología",
+  "nivel": [
+    "preparatoria"
+  ],
+  "formato": "web",
+  "duracionMinutos": null,
+  "interactivo": true,
+  "preguntas": 690,
+  "temas": 15,
+  "calificacionFinal": true,
+  "estado": "publicado",
+  "ruta": "/Casilleros/kenisa/biologia-examen/examenes/opcion-multiple/"
+}

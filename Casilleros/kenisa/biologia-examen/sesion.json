@@ -1,0 +1,18 @@
+{
+  "id": "biologia-examen-kenisa-erik",
+  "slug": "biologia-examen",
+  "tipo": "sesion",
+  "usuario": "kenisa-erik",
+  "titulo": "Biología examen",
+  "descripcion": "Tres exámenes: banco general de 690 preguntas, temario de 300 y práctica con dos versiones de 20 preguntas, entrega completa, calificación final y revisión. Avances independientes.",
+  "objetivo": "Repasar Biología con bancos sin repeticiones y simular un examen completo por versiones, aprendiendo de las explicaciones y de los errores.",
+  "conocimientosPrevios": [
+    "Contenidos de Biología partes 1, 2, 3 y 4."
+  ],
+  "fecha": "2026-10-18",
+  "estado": "publicado",
+  "ruta": "/Casilleros/kenisa/biologia-examen/",
+  "componentes": {
+    "examenes": true
+  }
+}

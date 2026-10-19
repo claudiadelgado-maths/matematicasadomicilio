@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Examen de práctica · 20 preguntas | Biología</title>
+  <meta name="description" content="Versiones 1 y 2 del examen de práctica de Biología: 10 preguntas de opciones y 10 de verdadero o falso por versión. Responde todo, entrega y revisa tu calificación.">
+  <meta name="theme-color" content="#204f43">
+  <link rel="icon" href="../../../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="../../../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+  <script type="module" src="script.mjs"></script>
+</head>
+<body id="inicio">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="../../../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+    <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../../../index.html">Inicio</a></li><li><a href="../../../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../../../contacto/index.html">Contacto</a></li></ul></nav>
+  </div></header>
+  <main class="bio-exam practice-exam" id="contenido" tabindex="-1"><div class="container">
+    <nav class="crumbs" aria-label="Migas de pan"><a href="../../index.html">← Biología examen</a><span>KENISA · Actividad 03</span></nav>
+    <header class="exam-heading"><div><p class="eyebrow">Biología 1 / Examen de práctica</p><h1>Piensa. Responde.<br><em>Descubre lo que sabes.</em></h1><p class="lead">20 preguntas, una entrega.<br>Las explicaciones llegan al final.</p><div class="hero-tags"><span>10 de opción múltiple</span><span>10 de verdadero / falso</span><span>Sin límite de tiempo</span></div></div><img src="../../recursos/examen.svg" width="640" height="480" alt="Un examen acompañado de una célula, una hoja y un cromosoma."></header>
+    <ol class="practice-steps" aria-label="Cómo funciona"><li><span>01</span><strong>Responde las 20</strong><p>Puedes cambiar de opinión antes de entregar.</p></li><li><span>02</span><strong>Entrega tu examen</strong><p>Cada respuesta vale 5 puntos. Total: 100.</p></li><li><span>03</span><strong>Aprende al revisar</strong><p>Ve tus errores, la clave y el porqué de cada respuesta.</p></li></ol>
+    <p id="loading-note" class="notice">Cargando tu examen…</p>
+    <noscript><p class="notice">Activa JavaScript para responder y calificar el examen. También puedes volver a <a href="../../index.html#origen">las guías de estudio</a>.</p></noscript>
+    <div id="practice-app" hidden>
+      <div class="version-bar"><div><label for="version-select">Elige tu versión</label><select id="version-select"></select></div><div><p id="version-description"></p><p class="small">Versiones 1 y 2 disponibles. Cada versión conserva su propio intento en este navegador.</p></div></div>
+      <p class="small key-policy" id="key-policy"></p>
+      <p id="storage-status" class="small" role="status"></p>
+      <div id="draft-panel" class="practice-layout">
+        <aside class="answer-map" aria-label="Tu avance"><p class="eyebrow" id="attempt-label"></p><h2>Tu recorrido</h2><strong id="answered-count" aria-live="polite" aria-atomic="true">0 de 20 respondidas</strong><progress id="answered-meter" max="20" value="0" aria-label="Preguntas respondidas"></progress><p class="small">I · Opciones, 1–10<br>II · Verdadero / falso, 11–20</p><nav id="question-map" aria-label="Ir a una pregunta"></nav><p class="small">● Contestada &nbsp; ○ Pendiente</p><button type="button" class="button subtle" id="first-missing">Ir a la primera pendiente ↓</button><a class="button primary" href="#delivery">Ir a entregar ↓</a></aside>
+        <form id="practice-form" novalidate>
+          <section aria-labelledby="mc-heading"><div class="section-heading"><span aria-hidden="true">I</span><div><p class="eyebrow">Preguntas 1–10 · 50 puntos</p><h2 id="mc-heading">Elige una opción.</h2><p>Marca una respuesta por pregunta. Elige la opción más específica cuando una categoría incluya a otra.</p></div></div><div id="mc-questions" class="question-list"></div></section>
+          <section aria-labelledby="tf-heading"><div class="section-heading"><span aria-hidden="true">II</span><div><p class="eyebrow">Preguntas 11–20 · 50 puntos</p><h2 id="tf-heading">¿Verdadero o falso?</h2><p>Lee la afirmación completa antes de decidir.</p></div></div><div id="tf-questions" class="question-list"></div></section>
+          <div id="delivery" class="delivery"><p class="eyebrow">Último paso</p><h2>¿Lista para entregar?</h2><p id="delivery-count"></p><p>Al entregar se cerrarán tus respuestas y podrás ver la calificación y las explicaciones.</p><p id="submit-error" class="notice" role="alert" hidden></p><button type="submit" class="button primary">Entregar y ver calificación →</button></div>
+        </form>
+      </div>
+      <section id="result-panel" class="exam-panel" aria-labelledby="result-title" hidden>
+        <div class="result-head"><div><p class="eyebrow" id="result-version"></p><h2 id="result-title" tabindex="-1">Tu resultado,<br>tu siguiente paso.</h2><p id="result-summary"></p></div><div class="score-bubble"><strong id="score"></strong><span>de 100 puntos</span></div></div>
+        <ul class="result-topics"><li>Opción múltiple <strong id="mc-score"></strong></li><li>Verdadero / falso <strong id="tf-score"></strong></li></ul>
+        <p class="notice" id="result-policy"></p>
+        <div class="review-toolbar"><div><p class="eyebrow">Revisar también es aprender</p><h3>Tu respuesta + la explicación</h3></div><fieldset class="review-filter"><legend class="sr-only">Preguntas para revisar</legend><label><input type="radio" name="review-filter" value="errors" checked> Solo errores <span id="error-count"></span></label><label><input type="radio" name="review-filter" value="all"> Las 20 preguntas</label></fieldset></div>
+        <p id="review-empty" class="notice" hidden>No tienes errores según la clave. Selecciona «Las 20 preguntas» para leer las explicaciones y las aclaraciones del examen.</p>
+        <div id="review-list"></div>
+        <div class="retry-panel"><h3>Otra oportunidad para practicar.</h3><p>Un nuevo intento repite esta versión desde cero. El resultado actual se reemplazará al comenzar.</p><button type="button" class="button primary" id="retry">Comenzar otro intento ↻</button><a class="button" href="../../index.html#origen">Volver a las guías ↗</a></div>
+      </section>
+    </div>
+    <nav class="bottom-links" aria-label="Regresar"><a href="../../index.html">← Menú de Biología examen</a><a href="../../../index.html">Casillero de KENISA ↗</a></nav>
+  </div></main>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../../../index.html">Inicio</a></li><li><a href="../../../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../../../contacto/index.html">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p class="footer-copyright">© 2026 Matemáticas a Domicilio</p><p class="footer-legal-links"><a href="../../../../../legal/aviso-de-privacidad/index.html">Aviso de Privacidad</a><span aria-hidden="true">·</span><a href="../../../../../legal/terminos-y-condiciones/index.html">Términos y Condiciones</a></p><p class="footer-location">Mérida, Yucatán, México</p></div></footer>
+</body></html>

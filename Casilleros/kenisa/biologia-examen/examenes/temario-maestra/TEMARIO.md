@@ -1,0 +1,178 @@
+# Temario proporcionado por la usuaria
+
+Transcripción de referencia recibida el 18-10-2026. Los encabezados genéricos se interpretan según el bloque contiguo. El mapa verificable de cobertura está en `cobertura.mjs` y `COBERTURA.md`.
+
+- Concepto de ser vivo.
+- Características que distinguen a los seres vivos.
+- Concepto de desarrollo.
+- Cambios durante el ciclo de vida.
+- Diferencia entre crecimiento y desarrollo.
+- Concepto de adaptación.
+- Adaptación fisiológica.
+- Adaptación morfológica.
+- Adaptación conductual o etológica.
+- Hibernación.
+- Estivación.
+- Camuflaje.
+- Mimetismo.
+- Diferencias entre los tipos de adaptación.
+- Diferencias entre hibernación y estivación.
+- Diferencias entre camuflaje y mimetismo.
+- Concepto de reproducción.
+- Reproducción sexual.
+- Reproducción asexual.
+- Concepto general.
+- Importancia para los seres vivos.
+- Concepto de crecimiento.
+- Aumento del número y tamaño de las células.
+- Relación con la herencia genética.
+- Concepto de irritabilidad.
+- Estímulos.
+- Respuestas ante estímulos.
+- Ejemplos de irritabilidad.
+- Concepto de célula.
+- La célula como unidad básica de la vida.
+- Importancia de las células.
+- Robert Hooke.
+- Observación del corcho.
+- Origen del término célula.
+- Células procariotas.
+- Células eucariotas.
+- Características de las procariotas.
+- Características de las eucariotas.
+- Presencia o ausencia de núcleo.
+- Material genético.
+- Bacterias.
+- Diferencias entre procariotas y eucariotas.
+- Características de la célula animal.
+- Características de la célula vegetal.
+- Estructuras presentes en cada una.
+- Diferencias entre célula animal y vegetal.
+Núcleo
+- Función.
+- ADN.
+- Información genética.
+Mitocondria
+- Función.
+- Producción de energía.
+- ATP.
+Ribosomas
+- Función.
+- Síntesis de proteínas.
+Lisosomas
+- Función.
+- Digestión y degradación de sustancias.
+Aparato de Golgi
+- Función.
+- Modificación, organización y empaquetamiento de proteínas y lípidos.
+Retículo endoplasmático
+- Función.
+- Retículo endoplasmático liso.
+- Retículo endoplasmático rugoso.
+- Síntesis de lípidos.
+- Síntesis y transporte de proteínas.
+- Diferencias entre el liso y el rugoso.
+Vacuolas
+- Función.
+- Almacenamiento de agua.
+- Almacenamiento de nutrientes y sustancias.
+- Importancia en las células vegetales.
+- Identificar los organelos por su función.
+- Relacionar estructuras celulares con sus funciones.
+- Reconocer diferencias entre los tipos de células.
+- Identificar estructuras en representaciones de células.
+- Concepto de biomolécula.
+- Importancia de las biomoléculas.
+- Principales tipos.
+- Concepto de proteína.
+- Aminoácidos.
+- Relación entre aminoácidos y proteínas.
+- Funciones de las proteínas.
+- Ejemplos.
+- Concepto de lípido.
+- Características.
+- Propiedad hidrofóbica.
+- Funciones.
+- Participación en la membrana celular.
+- Ejemplos.
+- Concepto de carbohidrato.
+- Composición química: carbono, hidrógeno y oxígeno.
+- Funciones de los carbohidratos.
+Monosacáridos
+- Concepto.
+- Características.
+- Glucosa.
+- Fructosa.
+Disacáridos
+- Concepto.
+- Características.
+- Sacarosa.
+- Lactosa.
+Polisacáridos
+- Concepto.
+- Características.
+- Almidón.
+- Glucógeno.
+- Celulosa.
+- Proteínas, lípidos y carbohidratos.
+- Monosacáridos, disacáridos y polisacáridos.
+- Identificación de biomoléculas mediante ejemplos.
+- Concepto.
+- Reacciones químicas.
+- Importancia del metabolismo.
+- Concepto de anabolismo.
+- Construcción de moléculas complejas.
+- Uso de energía.
+- Formación de músculo.
+- Síntesis de proteínas.
+- Ejemplos de procesos anabólicos.
+- Concepto de catabolismo.
+- Descomposición de moléculas.
+- Liberación de energía.
+- Degradación de nutrientes.
+- Ejemplos de procesos catabólicos.
+- Anabolismo y catabolismo.
+- Construcción y degradación de moléculas.
+- Consumo y liberación de energía.
+- Identificación de ejemplos de ambos procesos.
+- Concepto de reproducción celular.
+- Importancia de la división celular.
+- Tipos de división celular.
+- Concepto.
+- Características.
+- Células somáticas.
+- Crecimiento.
+- Reparación de tejidos.
+- Reemplazo celular.
+- Resultado de la mitosis.
+- Concepto.
+- Características.
+- Formación de células sexuales.
+- Gametos.
+- Reducción del número de cromosomas.
+- Resultado de la meiosis.
+- Diferencias en su función.
+- Diferencias en las células que producen.
+- Número de células resultantes.
+- Número de cromosomas.
+- Células somáticas y sexuales.
+- Concepto de hongo.
+- Características de los hongos.
+- Importancia del reino Fungi.
+- Hifas.
+- Micelio.
+- Esporas.
+- Estructuras reproductoras.
+- Concepto.
+- Características.
+- Esporas.
+- Gemación.
+- Fragmentación.
+- Bipartición como mecanismo de reproducción asexual (aclarando que no es típico de los hongos).
+- Concepto.
+- Participación de las hifas.
+- Fusión de estructuras compatibles.
+- Formación de esporas sexuales.
+- Reproducción sexual y asexual.
+- Diferencias entre los mecanismos reproductivos.
+- Identificación de ejemplos.

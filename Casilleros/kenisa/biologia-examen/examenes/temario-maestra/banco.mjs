@@ -1,0 +1,15 @@
+import {vida,crecimiento,adaptaciones,reproduccion,irritabilidad} from './vida.mjs';
+import {celulas,organelos} from './celulas.mjs';
+import {biomoleculas,metabolismo} from './moleculas.mjs';
+import {division,fungi} from './division-hongos.mjs';
+import {syllabus} from './cobertura.mjs';
+import * as moreLife from './ampliacion-vida.mjs';
+import * as moreCells from './ampliacion-celulas.mjs';
+import * as moreMolecules from './ampliacion-moleculas.mjs';
+import * as moreDivision from './ampliacion-division-hongos.mjs';
+const additions={...moreLife,...moreCells,...moreMolecules,...moreDivision};
+const originals={vida,crecimiento,adaptaciones,reproduccion,irritabilidad,celulas,organelos,biomoleculas,metabolismo,division,fungi};
+const sections=Object.fromEntries(Object.entries(originals).map(([id,questions])=>[id,[...questions,...additions[id]]]));
+export const topics=syllabus.map(t=>({...t,count:sections[t.id].length,guide:`index.html#temario-${t.id}`}));
+export const bank=topics.flatMap(t=>sections[t.id].map(q=>({...q,id:`${t.id}/${q.id}`,topicId:t.id,part:t.part,guide:t.guide})));
+export const STORAGE_KEY='kenisa-biologia-examen-temario-v1';

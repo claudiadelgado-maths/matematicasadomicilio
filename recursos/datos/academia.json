@@ -15,6 +15,13 @@
       "ultimaActividad": "2026-10-18",
       "sesiones": [
         {
+          "id": "biologia-examen-kenisa-erik",
+          "titulo": "Biología examen",
+          "descripcion": "Tres exámenes: banco general de 690 preguntas, temario de 300 y práctica con dos versiones de 20 preguntas, entrega completa, calificación final y revisión. Avances independientes.",
+          "fecha": "2026-10-18",
+          "ruta": "/Casilleros/kenisa/biologia-examen/"
+        },
+        {
           "id": "biologia-parte-4-kenisa-erik",
           "titulo": "Biología parte 4",
           "descripcion": "Cuatro actividades completas: transporte celular, metabolismo y ATP, respiración celular y fermentación. Guías ilustradas, laboratorios, casos y 204 preguntas con repaso de errores.",

@@ -51,3 +51,7 @@ Desde 2026-10-17, `../biologia-parte-4/ejercicios/metabolismo-y-atp/` también r
 La actividad 03 de Parte 4 (`../biologia-parte-4/ejercicios/respiracion-celular/`) también consume el motor y estilos de cuestionarios sin cambios: 48 preguntas, ocho temas, rondas 8/16 y repaso de errores. Incluirla al revisar futuras modificaciones compartidas.
 
 La actividad 04 de Parte 4 (`../biologia-parte-4/ejercicios/fermentacion/`) también consume `cuestionarios.mjs`, `cuestionarios.css` y `modelo-repaso.mjs` sin cambios: 48 preguntas, ocho categorías, rondas 8/16 y repaso de errores. Incluirla al revisar cambios del motor compartido.
+
+## Consumidor adicional: Biología examen (2026-10-18)
+
+`../biologia-examen/examenes/opcion-multiple/banco.mjs` importa los bancos de todas las actividades de esta parte sin modificar sus fuentes ni motores. El README de ese examen enumera los archivos y cantidades. Al cambiar esos datos o ilustraciones, revisar el examen combinado, sus claves, persistencia y pruebas; sincronizar sus metadatos y cantidades si cambia el total.

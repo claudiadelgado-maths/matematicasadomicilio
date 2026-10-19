@@ -1,0 +1,11 @@
+@import url('../../recursos/examen.css');
+.bio-exam.temario-exam .history-strip{background:var(--lilac);border-color:#c8b8d5}
+.bio-exam.temario-exam h1 em{color:#786191}
+.bio-exam .syllabus{margin-top:3rem;border-top:1px solid var(--line);padding-top:2rem}
+.bio-exam .syllabus-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.5rem}
+.bio-exam .syllabus-topic{border:1px solid var(--line);border-radius:18px;padding:1rem 1.2rem;background:white;scroll-margin-top:100px}
+.bio-exam .syllabus-topic summary{font-size:1rem;line-height:1.6}
+.bio-exam .syllabus-topic ul{font-size:.84rem;line-height:1.8;padding-left:1.2rem}
+.bio-exam .syllabus-topic p{font-size:.87rem}
+.bio-exam .syllabus-note{max-width:780px}
+@media(max-width:760px){.bio-exam .syllabus-grid{grid-template-columns:1fr}}
