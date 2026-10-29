@@ -1,0 +1,17 @@
+{
+  "id": "traslados-asintotas-traslados-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "traslados-y-asintotas-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "01 · Traslados de funciones",
+  "descripcion": "Explora desplazamientos horizontales y verticales, especialmente en funciones exponenciales y logarítmicas.",
+  "area": "Matemáticas",
+  "nivel": [
+    "preparatoria"
+  ],
+  "interactivo": true,
+  "ejerciciosPorRonda": 8,
+  "estado": "publicado",
+  "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/ejercicios/traslados/",
+  "cantidadEjercicios": 120
+}

@@ -5,35 +5,184 @@
   --chat-ink: #151815;
 }
 
-.about-heading {
-  padding-block: 2rem;
+.about-page {
+  min-height: calc(100svh - var(--header-height));
+  background: var(--chat-bg);
+  color: var(--chat-white);
 }
 
-.about-heading h1 {
-  margin: 0;
-  font-size: clamp(2.25rem, 4.7vw, 4rem);
-  line-height: 1.08;
-  letter-spacing: -0.05em;
+.about-page [hidden] {
+  display: none;
 }
 
-.about-controls:not([hidden]) {
+.conversation-header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  border-bottom: 1px solid #2b332e;
+  background: #141a16;
+}
+
+.conversation-header-inner {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
+  max-width: 1060px;
+  min-height: 112px;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1.25rem;
 }
 
-.about-controls .button {
-  cursor: pointer;
+.conversation-heading {
+  min-width: 0;
 }
 
-.about-controls .button[aria-pressed="false"] {
-  background: var(--color-background);
-  color: var(--color-text);
+.conversation-heading h1 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.6vw, 1.9rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
 
-.about-controls .button[aria-pressed="false"]:hover {
-  background: var(--color-surface);
+.conversation-heading h1:focus {
+  outline: none;
+}
+
+.conversation-heading p {
+  margin: 0.3rem 0 0;
+  color: #b2bdb5;
+  font-size: 0.85rem;
+}
+
+.conversation-back {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--chat-green);
+}
+
+.conversation-back:hover {
+  background: #2b332e;
+}
+
+.conversation-avatar {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.conversation-avatar-history {
+  background: #eddbc1;
+}
+
+.conversation-avatar-philosophy {
+  background: var(--chat-green);
+}
+
+.conversation-avatar-questions {
+  background: #d8e7ef;
+}
+
+.conversation-inbox {
+  max-width: 1060px;
+  padding-bottom: 4rem;
+}
+
+.conversation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.conversation-list li + li {
+  border-top: 1px solid #2b332e;
+}
+
+.conversation-link {
+  display: flex;
+  min-height: 120px;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.35rem 0.5rem;
+  text-decoration: none;
+}
+
+.conversation-link:hover {
+  background: #141a16;
+}
+
+.conversation-link:focus-visible,
+.conversation-back:focus-visible {
+  outline: 3px solid var(--chat-green);
+  outline-offset: -3px;
+}
+
+.conversation-preview {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+  gap: 0.25rem;
+}
+
+.conversation-name {
+  font-size: 1.12rem;
+  line-height: 1.4;
+}
+
+.conversation-preview > span {
+  overflow: hidden;
+  color: #b2bdb5;
+  font-size: 0.95rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.conversation-chevron {
+  color: #b2bdb5;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 760px) {
+  .conversation-header-inner {
+    min-height: 96px;
+    gap: 0.6rem;
+    padding-block: 1rem;
+  }
+
+  .conversation-header .conversation-avatar {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+    font-size: 1.4rem;
+  }
+
+  .conversation-link {
+    min-height: 106px;
+    gap: 0.85rem;
+    padding-inline: 0;
+  }
+
+  .conversation-avatar {
+    width: 52px;
+    height: 52px;
+    flex-basis: 52px;
+    font-size: 1.5rem;
+  }
+
+  .conversation-name {
+    font-size: 1rem;
+  }
+
+  .conversation-preview > span {
+    font-size: 0.87rem;
+  }
 }
 
 .visually-hidden {
@@ -241,210 +390,8 @@
   }
 }
 
-.philosophy-section {
-  padding: clamp(2.25rem, 3.3vw, 2.85rem) 0;
-  background: var(--color-surface);
-}
-
-.philosophy-title,
-.about-resources-title,
-.faq-title {
-  margin: 0 0 0.48rem;
-  font-size: clamp(2.7rem, 4.7vw, 4rem);
-  font-weight: 900;
-  line-height: 1.08;
-  letter-spacing: -0.05em;
-  text-align: left;
-}
-
-.philosophy-intro,
-.about-resources-intro {
-  max-width: 1010px;
-  margin: 0 0 clamp(1.35rem, 2.1vw, 1.65rem);
-  color: var(--color-muted);
-  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
-  line-height: 1.55;
-}
-
-.philosophy-list {
-  display: grid;
-  gap: clamp(1.35rem, 2.25vw, 1.875rem);
-}
-
-.philosophy-card {
-  display: grid;
-  grid-template-columns: 112px minmax(0, 1fr);
-  align-items: center;
-  gap: clamp(1.5rem, 3vw, 2.5rem);
-  padding: 0;
-  border: 0;
-  background: transparent;
-}
-
-.philosophy-icon {
-  width: 90px;
-  margin: 0;
-  color: var(--color-text);
-}
-
-.philosophy-icon svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.philosophy-answer {
-  margin: 0;
-  color: #2f2f2b;
-  font-size: clamp(1.03rem, 1.35vw, 1.15rem);
-  line-height: 1.65;
-}
-
-.about-resources-section {
-  padding: clamp(2.25rem, 3.3vw, 2.85rem) 0;
-  background: var(--color-background);
-}
-
-.about-resources-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1.25rem, 2.5vw, 2.25rem);
-  margin: clamp(1.55rem, 2.6vw, 2.2rem) 0 0;
-}
-
-.about-resource-option {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  color: var(--color-text);
-  text-align: left;
-  text-decoration: none;
-  transition: transform 160ms ease;
-}
-
-.about-resource-option:hover {
-  transform: translateY(-4px);
-}
-
-.about-resource-option > strong {
-  margin-top: 0.45rem;
-  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
-  line-height: 1.25;
-}
-
-.about-resource-icon {
-  width: clamp(82px, 8vw, 104px);
-  margin: 0 0 0.25rem;
-  color: var(--color-text);
-}
-
-.about-resource-icon svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.about-resource-description {
-  max-width: 620px;
-  margin-top: 0.45rem;
-  color: var(--color-muted);
-  font-size: 0.88rem;
-  line-height: 1.45;
-}
-
-.about-resource-link {
-  margin-top: 0.75rem;
-  font-size: 0.86rem;
-  font-weight: 800;
-}
-
-.faq-section {
-  padding-block: clamp(2.25rem, 3.3vw, 2.85rem);
-  background: var(--color-surface);
-}
-
-.faq-title {
-  margin-bottom: clamp(1.5rem, 3vw, 2.2rem);
-}
-
-.faq-list {
-  display: grid;
-  gap: 0.35rem;
-}
-
-.faq-list summary {
-  display: flex;
-  min-height: 44px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  padding: 0.85rem 0;
-  font-size: 1.05rem;
-  font-weight: 800;
-  cursor: pointer;
-  list-style: none;
-}
-
-.faq-list summary::-webkit-details-marker { display: none; }
-
-.faq-list summary::after {
-  flex: none;
-  font-size: 1.5rem;
-  font-weight: 400;
-  content: "+";
-}
-
-.faq-list details[open] summary::after { content: "−"; }
-
-.faq-list details p {
-  max-width: 760px;
-  margin: 0;
-  padding: 0 2rem 1.5rem 0;
-  color: var(--color-muted);
-}
-
 .about-page h1,
 .about-page h2,
 .about-page p {
   overflow-wrap: break-word;
-}
-
-@media (max-width: 640px) {
-  .about-controls .button {
-    flex: 1 1 140px;
-  }
-
-  .philosophy-section,
-  .about-resources-section,
-  .faq-section {
-    padding: 1.95rem 0 2.4rem;
-  }
-
-  .philosophy-title,
-  .about-resources-title,
-  .faq-title {
-    font-size: clamp(2.25rem, 10vw, 2.55rem);
-  }
-
-  .philosophy-intro,
-  .about-resources-intro { margin-bottom: 1.2rem; }
-  .philosophy-list { gap: 1.125rem; }
-
-  .philosophy-card {
-    grid-template-columns: 64px minmax(0, 1fr);
-    gap: 1rem;
-  }
-
-  .philosophy-icon { width: 64px; }
-  .philosophy-answer { line-height: 1.6; }
-
-  .about-resources-grid {
-    column-gap: 1rem;
-    row-gap: 2rem;
-    margin-top: 1.35rem;
-  }
-
-  .about-resource-icon { width: 100px; }
 }

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" width="600" height="440">
+  <rect x="14" y="16" width="572" height="408" rx="40" fill="#eee7f3"/>
+  <g transform="translate(42 44) rotate(-4 200 140)">
+    <rect width="322" height="270" rx="20" fill="#fffdfa" stroke="#c9bdd4"/>
+    <g stroke="#e4ddea"><path d="M30 60H290M30 110H290M30 160H290M30 210H290M70 35V235M120 35V235M170 35V235M220 35V235M270 35V235"/></g>
+    <path d="M30 210H295M120 25V240" stroke="#a092ab" stroke-width="2"/>
+    <path d="M30 207C100 207 130 190 161 153S203 72 210 28" fill="none" stroke="#b7a6c6" stroke-width="3" stroke-dasharray="5 5"/>
+    <path d="M30 164C133 164 188 159 213 126S250 55 258 25" fill="none" stroke="#704a9b" stroke-width="4"/>
+    <path d="M35 165H290" stroke="#087d78" stroke-dasharray="8 6" stroke-width="2"/>
+    <circle cx="214" cy="125" r="6" fill="#704a9b" stroke="white" stroke-width="2"/>
+    <rect x="24" y="227" width="240" height="29" rx="10" fill="#e2efeb"/>
+    <text x="39" y="248" font-family="Georgia,serif" font-size="19" fill="#403052">g(x) = f(x − h) + k</text>
+  </g>
+  <g transform="translate(321 162) rotate(6 114 110)">
+    <rect width="230" height="235" rx="20" fill="#fffdfa" stroke="#c9bdd4"/>
+    <path d="M25 120H205M115 28V203" stroke="#a092ab" stroke-width="1.5"/>
+    <path d="M150 25V205" stroke="#a2581c" stroke-width="2" stroke-dasharray="7 5"/>
+    <path d="M25 75H205" stroke="#087d78" stroke-width="2" stroke-dasharray="7 5"/>
+    <path d="M25 87C85 89 121 100 134 135S143 185 144 204M156 27C157 48 165 64 178 68S197 72 205 72" stroke="#704a9b" stroke-width="3" fill="none"/>
+    <text x="162" y="193" font-family="Georgia,serif" font-size="18" fill="#a2581c">x = a</text>
+    <text x="28" y="61" font-family="Georgia,serif" font-size="18" fill="#087d78">y = b</text>
+  </g>
+  <circle cx="466" cy="69" r="38" fill="#e2efeb"/><path d="M447 69H485M466 50V88M447 69L455 61M447 69L455 77M485 69L477 61M485 69L477 77M466 50L458 58M466 50L474 58M466 88L458 80M466 88L474 80" fill="none" stroke="#087d78" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="78" cy="365" r="29" fill="#f5e6d5"/><text x="78" y="374" font-family="Georgia,serif" text-anchor="middle" font-size="31" fill="#a2581c">∞</text>
+</svg>

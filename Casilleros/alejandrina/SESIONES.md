@@ -4,6 +4,7 @@ Cada subcarpeta representa una sesión o unidad de trabajo independiente. Debe i
 
 ## Sesiones actuales
 
+- `traslados-y-asintotas/`: sesión publicada de preparatoria con cuatro actividades de traslados, asíntotas horizontales, verticales y ambas; laboratorios y ejercicios con procedimiento.
 - `datos-no-agrupados/`: sesión publicada de estadística descriptiva.
 - `diagramas-de-arboles/`: sesión publicada con teoría, ejercicios, calculadora y juego.
 - `medidas-de-posicion/`: sesión publicada con teoría, ejercicios, conversor y juego.

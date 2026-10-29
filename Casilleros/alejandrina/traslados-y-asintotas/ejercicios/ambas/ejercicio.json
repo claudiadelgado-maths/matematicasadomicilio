@@ -1,0 +1,17 @@
+{
+  "id": "traslados-asintotas-ambas-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "traslados-y-asintotas-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "04 · Asíntotas horizontales y verticales",
+  "descripcion": "Combina las dos estrategias con numeradores lineales, cuadráticos o cúbicos y denominadores cuadráticos.",
+  "area": "Matemáticas",
+  "nivel": [
+    "preparatoria"
+  ],
+  "interactivo": true,
+  "ejerciciosPorRonda": 8,
+  "estado": "publicado",
+  "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/ejercicios/ambas/",
+  "cantidadEjercicios": 58
+}

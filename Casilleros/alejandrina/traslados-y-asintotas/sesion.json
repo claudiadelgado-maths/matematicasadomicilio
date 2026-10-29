@@ -1,0 +1,20 @@
+{
+  "id": "traslados-y-asintotas-alejandrina",
+  "slug": "traslados-y-asintotas",
+  "tipo": "sesion",
+  "usuario": "alejandrina",
+  "titulo": "Traslados y asíntotas",
+  "descripcion": "Cuatro actividades con gráficas manipulables: traslados exponenciales y logarítmicos, asíntotas horizontales, verticales y retos combinados con denominador cuadrático.",
+  "objetivo": "Interpretar g(x)=f(x−h)+k e identificar asíntotas horizontales y verticales distinguiendo discontinuidades removibles.",
+  "conocimientosPrevios": [
+    "Potencias y logaritmos básicos",
+    "Factorización de cuadráticas",
+    "Operaciones con fracciones"
+  ],
+  "fecha": "2026-10-29",
+  "estado": "publicado",
+  "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/",
+  "componentes": {
+    "ejercicios": true
+  }
+}

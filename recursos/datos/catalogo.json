@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 300,
+  "total": 305,
   "tipos": {
     "examen": [
       {
@@ -684,6 +684,78 @@
         "ruta": "/Casilleros/alejandrina/sucesiones-aritmeticas/ejercicios/",
         "interactivo": true,
         "archivoMetadatos": "Casilleros/alejandrina/sucesiones-aritmeticas/ejercicios/ejercicio.json"
+      },
+      {
+        "id": "traslados-asintotas-ambas-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "traslados-y-asintotas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "04 · Asíntotas horizontales y verticales",
+        "descripcion": "Combina las dos estrategias con numeradores lineales, cuadráticos o cúbicos y denominadores cuadráticos.",
+        "area": "Matemáticas",
+        "nivel": [
+          "preparatoria"
+        ],
+        "interactivo": true,
+        "ejerciciosPorRonda": 8,
+        "estado": "publicado",
+        "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/ejercicios/ambas/",
+        "cantidadEjercicios": 58,
+        "archivoMetadatos": "Casilleros/alejandrina/traslados-y-asintotas/ejercicios/ambas/ejercicio.json"
+      },
+      {
+        "id": "traslados-asintotas-horizontales-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "traslados-y-asintotas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "02 · Asíntotas horizontales",
+        "descripcion": "Tres casos para saber a qué altura se acerca una función racional cuando x se aleja mucho.",
+        "area": "Matemáticas",
+        "nivel": [
+          "preparatoria"
+        ],
+        "interactivo": true,
+        "ejerciciosPorRonda": 8,
+        "estado": "publicado",
+        "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/ejercicios/horizontales/",
+        "cantidadEjercicios": 52,
+        "archivoMetadatos": "Casilleros/alejandrina/traslados-y-asintotas/ejercicios/horizontales/ejercicio.json"
+      },
+      {
+        "id": "traslados-asintotas-traslados-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "traslados-y-asintotas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "01 · Traslados de funciones",
+        "descripcion": "Explora desplazamientos horizontales y verticales, especialmente en funciones exponenciales y logarítmicas.",
+        "area": "Matemáticas",
+        "nivel": [
+          "preparatoria"
+        ],
+        "interactivo": true,
+        "ejerciciosPorRonda": 8,
+        "estado": "publicado",
+        "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/ejercicios/traslados/",
+        "cantidadEjercicios": 120,
+        "archivoMetadatos": "Casilleros/alejandrina/traslados-y-asintotas/ejercicios/traslados/ejercicio.json"
+      },
+      {
+        "id": "traslados-asintotas-verticales-alejandrina",
+        "tipo": "ejercicio",
+        "sesion": "traslados-y-asintotas-alejandrina",
+        "usuario": "alejandrina",
+        "titulo": "03 · Asíntotas verticales",
+        "descripcion": "El denominador siempre será cuadrático. Aprende a distinguir dos raíces, una raíz doble, ninguna raíz real y los huecos.",
+        "area": "Matemáticas",
+        "nivel": [
+          "preparatoria"
+        ],
+        "interactivo": true,
+        "ejerciciosPorRonda": 8,
+        "estado": "publicado",
+        "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/ejercicios/verticales/",
+        "cantidadEjercicios": 55,
+        "archivoMetadatos": "Casilleros/alejandrina/traslados-y-asintotas/ejercicios/verticales/ejercicio.json"
       },
       {
         "id": "practica-porcentajes-andres",
@@ -3118,6 +3190,27 @@
           "calculadoras": true
         },
         "archivoMetadatos": "Casilleros/alejandrina/sucesiones-aritmeticas/sesion.json"
+      },
+      {
+        "id": "traslados-y-asintotas-alejandrina",
+        "slug": "traslados-y-asintotas",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Traslados y asíntotas",
+        "descripcion": "Cuatro actividades con gráficas manipulables: traslados exponenciales y logarítmicos, asíntotas horizontales, verticales y retos combinados con denominador cuadrático.",
+        "objetivo": "Interpretar g(x)=f(x−h)+k e identificar asíntotas horizontales y verticales distinguiendo discontinuidades removibles.",
+        "conocimientosPrevios": [
+          "Potencias y logaritmos básicos",
+          "Factorización de cuadráticas",
+          "Operaciones con fracciones"
+        ],
+        "fecha": "2026-10-29",
+        "estado": "publicado",
+        "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/",
+        "componentes": {
+          "ejercicios": true
+        },
+        "archivoMetadatos": "Casilleros/alejandrina/traslados-y-asintotas/sesion.json"
       },
       {
         "id": "graficas-barras-ventas-alex",

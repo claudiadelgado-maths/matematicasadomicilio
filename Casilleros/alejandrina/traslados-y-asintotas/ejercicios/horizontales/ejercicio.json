@@ -1,0 +1,17 @@
+{
+  "id": "traslados-asintotas-horizontales-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "traslados-y-asintotas-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "02 · Asíntotas horizontales",
+  "descripcion": "Tres casos para saber a qué altura se acerca una función racional cuando x se aleja mucho.",
+  "area": "Matemáticas",
+  "nivel": [
+    "preparatoria"
+  ],
+  "interactivo": true,
+  "ejerciciosPorRonda": 8,
+  "estado": "publicado",
+  "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/ejercicios/horizontales/",
+  "cantidadEjercicios": 52
+}

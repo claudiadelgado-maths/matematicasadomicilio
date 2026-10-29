@@ -1,0 +1,17 @@
+{
+  "id": "traslados-asintotas-verticales-alejandrina",
+  "tipo": "ejercicio",
+  "sesion": "traslados-y-asintotas-alejandrina",
+  "usuario": "alejandrina",
+  "titulo": "03 · Asíntotas verticales",
+  "descripcion": "El denominador siempre será cuadrático. Aprende a distinguir dos raíces, una raíz doble, ninguna raíz real y los huecos.",
+  "area": "Matemáticas",
+  "nivel": [
+    "preparatoria"
+  ],
+  "interactivo": true,
+  "ejerciciosPorRonda": 8,
+  "estado": "publicado",
+  "ruta": "/Casilleros/alejandrina/traslados-y-asintotas/ejercicios/verticales/",
+  "cantidadEjercicios": 55
+}

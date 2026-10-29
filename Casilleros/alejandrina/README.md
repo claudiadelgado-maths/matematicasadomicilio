@@ -8,6 +8,8 @@ El índice carga automáticamente las sesiones publicadas desde `recursos/datos/
 
 ## Contenido actual
 
+- `traslados-y-asintotas/`: cuatro actividades con teoría, laboratorios gráficos y 285 ejercicios en total. Traslados exponenciales/logarítmicos, los tres casos horizontales, verticales con denominadores cuadráticos y práctica de ambas. Rondas de ocho, pistas, procedimientos, huecos y revisión final; MathML nativo y sin almacenamiento.
+
 - `despejes-exponenciales-y-logaritmicos/`: práctica de siete tipos con 35 ecuaciones ordenadas y desafío de 14 ecuaciones distintas mezcladas. Respuestas numéricas con punto/coma y dos decimales, reintentos, dominio validado, MathML nativo y procedimientos a petición. Sin teoría, dependencias nuevas ni almacenamiento.
 
 - `examen-series/`: ocho actividades de práctica aritmética y geométrica, generadores progresivos, 31 ejercicios y 20 problemas fijos en dos mini exámenes, medios con casillas editables y validación exacta de fracciones. Sin teoría adicional. Registro de implementación por etapas en `examen-series/ETAPAS.md`.
