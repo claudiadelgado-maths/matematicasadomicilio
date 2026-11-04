@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 305,
+  "total": 308,
   "tipos": {
     "examen": [
       {
@@ -1031,6 +1031,26 @@
         "estado": "publicado",
         "ruta": "/Casilleros/kenisa/teorema-de-pitagoras/ejercicios/lado-faltante/",
         "archivoMetadatos": "Casilleros/kenisa/teorema-de-pitagoras/ejercicios/lado-faltante/ejercicio.json"
+      },
+      {
+        "id": "newstudent-revision-ejercicios",
+        "tipo": "ejercicio",
+        "sesion": "newstudent-revision",
+        "titulo": "Actividades de Revisión",
+        "descripcion": "18 ejercicios independientes de diagnóstico, con 25 campos de respuesta y comprobación matemática.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/newstudent/revision/ejercicios/",
+        "interactivo": true,
+        "areas": [
+          "Aritmética",
+          "Álgebra",
+          "Geometría"
+        ],
+        "almacenamientoLocal": {
+          "clave": "newstudent-revision-v1",
+          "contenido": "Respuestas y última actividad visitada. No se envían datos."
+        },
+        "archivoMetadatos": "Casilleros/newstudent/revision/ejercicios/ejercicio.json"
       },
       {
         "id": "raul-erik-electricidad-parte-2-conexiones",
@@ -2850,6 +2870,23 @@
         "archivoMetadatos": "Casilleros/milndred/usuario.json"
       },
       {
+        "id": "newstudent",
+        "slug": "newstudent",
+        "tipo": "usuario",
+        "titulo": "El casillero de NewStudent",
+        "nombreVisible": "NewStudent",
+        "descripcion": "Sesiones de matemáticas: diagnóstico de aritmética, álgebra y geometría.",
+        "estado": "activo",
+        "ruta": "/Casilleros/newstudent/",
+        "personalizacion": {
+          "simbolo": "N",
+          "acento": "#222222",
+          "fondo": "#f3f3f0"
+        },
+        "almacenamientoLocal": true,
+        "archivoMetadatos": "Casilleros/newstudent/usuario.json"
+      },
+      {
         "id": "pamela-cortes",
         "slug": "pamela",
         "tipo": "usuario",
@@ -4188,6 +4225,32 @@
           "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/milndred/teoria-de-exponentes/sesion.json"
+      },
+      {
+        "id": "newstudent-revision",
+        "slug": "revision",
+        "tipo": "sesion",
+        "usuario": "newstudent",
+        "titulo": "Revisión",
+        "descripcion": "Diagnóstico de conocimientos matemáticos en aritmética, álgebra y geometría.",
+        "objetivo": "Identificar las bases que domina el alumno y las dificultades iniciales en aritmética, álgebra y geometría.",
+        "conocimientosPrevios": [],
+        "fecha": "2026-11-04",
+        "estado": "publicado",
+        "ruta": "/Casilleros/newstudent/revision/",
+        "duracionMinutos": 150,
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "almacenamientoLocal": {
+          "clave": "newstudent-revision-v1",
+          "contenido": "Respuestas y última actividad visitada, únicamente en el navegador."
+        },
+        "archivoMetadatos": "Casilleros/newstudent/revision/sesion.json"
       },
       {
         "id": "teorema-pitagoras-pamela",

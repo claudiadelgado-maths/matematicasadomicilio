@@ -1,0 +1,16 @@
+{
+  "id": "newstudent",
+  "slug": "newstudent",
+  "tipo": "usuario",
+  "titulo": "El casillero de NewStudent",
+  "nombreVisible": "NewStudent",
+  "descripcion": "Sesiones de matemáticas: diagnóstico de aritmética, álgebra y geometría.",
+  "estado": "activo",
+  "ruta": "/Casilleros/newstudent/",
+  "personalizacion": {
+    "simbolo": "N",
+    "acento": "#222222",
+    "fondo": "#f3f3f0"
+  },
+  "almacenamientoLocal": true
+}

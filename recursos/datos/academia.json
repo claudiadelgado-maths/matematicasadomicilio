@@ -3,6 +3,27 @@
   "generadoDesde": "usuario.json y sesion.json",
   "alumnos": [
     {
+      "id": "newstudent",
+      "nombreVisible": "NewStudent",
+      "descripcion": "Sesiones de matemáticas: diagnóstico de aritmética, álgebra y geometría.",
+      "ruta": "/Casilleros/newstudent/",
+      "personalizacion": {
+        "simbolo": "N",
+        "acento": "#222222",
+        "fondo": "#f3f3f0"
+      },
+      "ultimaActividad": "2026-11-04",
+      "sesiones": [
+        {
+          "id": "newstudent-revision",
+          "titulo": "Revisión",
+          "descripcion": "Diagnóstico de conocimientos matemáticos en aritmética, álgebra y geometría.",
+          "fecha": "2026-11-04",
+          "ruta": "/Casilleros/newstudent/revision/"
+        }
+      ]
+    },
+    {
       "id": "alejandrina",
       "nombreVisible": "Alejandrina",
       "descripcion": "Espacio de sesiones y recursos personalizados.",

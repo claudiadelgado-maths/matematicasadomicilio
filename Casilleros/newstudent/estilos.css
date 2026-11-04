@@ -1,0 +1,17 @@
+@import url('recursos/comun.css?v=20261104-1');
+.student-site .student-hero { padding-block: clamp(3rem, 8vw, 6rem); }
+.student-site h1 { margin: 0; font-size: clamp(2.7rem, 8vw, 6rem); overflow-wrap: anywhere; }
+.student-site .student-hero p:last-child { font-size: 1.15rem; color: var(--color-muted); margin-bottom: 0; }
+.student-site .student-sessions { padding-block: clamp(3rem, 6vw, 5rem); background: var(--color-surface); }
+.student-site h2 { font-size: 2rem; margin: 0 0 2rem; }
+.student-site .student-session-list { display: grid; gap: 1rem; }
+.student-site .student-session-link { display: grid; grid-template-columns: 140px 1fr auto; gap: 2rem; align-items: center; padding: 2rem; background: white; border: 1px solid var(--color-border); text-decoration: none; }
+.student-site .student-session-link:hover { border-color: var(--color-text); }
+.student-site .student-session-date { color: var(--color-muted); font-size: .85rem; }
+.student-site .student-session-link strong { display: block; font-size: 1.6rem; }
+.student-site .student-session-link small { display: block; color: var(--color-muted); margin-top: .4rem; font-size: .95rem; }
+.student-site .student-session-link > span:last-child { font-size: 1.5rem; }
+@media (max-width: 640px) {
+  .student-site .student-session-link { grid-template-columns: 1fr auto; gap: .75rem; padding: 1.3rem; }
+  .student-site .student-session-date { grid-column: 1 / -1; }
+}

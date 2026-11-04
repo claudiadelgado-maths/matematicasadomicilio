@@ -1,0 +1,25 @@
+{
+  "id": "newstudent-revision",
+  "slug": "revision",
+  "tipo": "sesion",
+  "usuario": "newstudent",
+  "titulo": "Revisión",
+  "descripcion": "Diagnóstico de conocimientos matemáticos en aritmética, álgebra y geometría.",
+  "objetivo": "Identificar las bases que domina el alumno y las dificultades iniciales en aritmética, álgebra y geometría.",
+  "conocimientosPrevios": [],
+  "fecha": "2026-11-04",
+  "estado": "publicado",
+  "ruta": "/Casilleros/newstudent/revision/",
+  "duracionMinutos": 150,
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": true,
+    "juegos": false,
+    "calculadoras": false
+  },
+  "almacenamientoLocal": {
+    "clave": "newstudent-revision-v1",
+    "contenido": "Respuestas y última actividad visitada, únicamente en el navegador."
+  }
+}
