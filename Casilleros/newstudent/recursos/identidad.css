@@ -1,0 +1,18 @@
+/* Daniel: atlas meteorológico, compartido por portada y casillero. */
+.student-locker[data-student-id="newstudent"], .daniel-banner {
+  position:relative; isolation:isolate; display:grid; grid-template-columns:1fr; place-items:center;
+  min-height:clamp(250px,30vw,380px); padding:60px 26%; overflow:hidden; text-align:center;
+  border:1px solid #4f7984; border-radius:16px; background:#102b40 url('banner-clima.svg') center/cover; color:#faf2df;
+}
+.student-locker[data-student-id="newstudent"] .student-locker-symbol,
+.student-locker[data-student-id="newstudent"] .student-locker-arrow {display:none;}
+.student-locker[data-student-id="newstudent"] .student-locker-copy>strong,
+.student-site .daniel-banner h1 {
+  position:relative; margin:0; color:#fff4dc; font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(3.6rem,8vw,6.7rem); font-weight:400; letter-spacing:.025em; line-height:1.2;
+  text-shadow:0 3px 24px #061b2b; white-space:nowrap;
+}
+@media(max-width:640px){
+  .student-locker[data-student-id="newstudent"],.daniel-banner{min-height:300px;padding:72px 16px;background-image:url('banner-clima-movil.svg');}
+  .student-locker[data-student-id="newstudent"] .student-locker-copy>strong,.student-site .daniel-banner h1{font-size:clamp(3.6rem,16vw,5.2rem);}
+}

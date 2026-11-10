@@ -11,3 +11,5 @@ Cada sesión conserva su identidad, estructura, recursos, estilos y funciones. N
 Los IDs técnicos se mantienen estables para conservar relaciones y progreso local; no definen agrupaciones ni carpetas intermedias. El nombre, ID y slug del casillero renombrado son `Ulises`, `ulises` y `ulises`.
 
 Ejecuta `npm run catalogo` y `npm run validar` al actualizar metadatos. Para una sesión nueva: `npm run crear-sesion -- "Estudiante" "Título" [AAAA-MM-DD]`. No registres alumnos ni sesiones manualmente en los JSON generados.
+
+Daniel (ID y ruta estables `newstudent`) comparte su banner meteorológico entre la portada y su casillero mediante `newstudent/recursos/identidad.css`; su SVG atmosférico también se usa en la sesión Funciones.

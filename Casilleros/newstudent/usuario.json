@@ -2,15 +2,15 @@
   "id": "newstudent",
   "slug": "newstudent",
   "tipo": "usuario",
-  "titulo": "El casillero de NewStudent",
-  "nombreVisible": "NewStudent",
-  "descripcion": "Sesiones de matemáticas: diagnóstico de aritmética, álgebra y geometría.",
+  "titulo": "El casillero de Daniel",
+  "nombreVisible": "Daniel",
+  "descripcion": "Matemáticas para un estudiante de Geografía, con la mirada puesta en la climatología.",
   "estado": "activo",
   "ruta": "/Casilleros/newstudent/",
   "personalizacion": {
-    "simbolo": "N",
-    "acento": "#222222",
-    "fondo": "#f3f3f0"
+    "simbolo": "D",
+    "acento": "#164e63",
+    "fondo": "#e9f2f3"
   },
   "almacenamientoLocal": true
 }

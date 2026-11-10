@@ -1,6 +1,6 @@
 # Revisión
 
-Primera sesión de NewStudent. Diagnóstico inicial de conocimientos matemáticos en aritmética, álgebra y geometría, con duración aproximada de **2 h 30 min**. Fecha editorial: **2026-11-04**.
+Primera sesión de Daniel. Diagnóstico inicial de conocimientos matemáticos en aritmética, álgebra y geometría, con duración aproximada de **2 h 30 min**. Fecha editorial: **2026-11-04**.
 
 ## Recorrido
 

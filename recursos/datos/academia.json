@@ -4,16 +4,23 @@
   "alumnos": [
     {
       "id": "newstudent",
-      "nombreVisible": "NewStudent",
-      "descripcion": "Sesiones de matemáticas: diagnóstico de aritmética, álgebra y geometría.",
+      "nombreVisible": "Daniel",
+      "descripcion": "Matemáticas para un estudiante de Geografía, con la mirada puesta en la climatología.",
       "ruta": "/Casilleros/newstudent/",
       "personalizacion": {
-        "simbolo": "N",
-        "acento": "#222222",
-        "fondo": "#f3f3f0"
+        "simbolo": "D",
+        "acento": "#164e63",
+        "fondo": "#e9f2f3"
       },
-      "ultimaActividad": "2026-11-04",
+      "ultimaActividad": "2026-11-10",
       "sesiones": [
+        {
+          "id": "daniel-funciones",
+          "titulo": "Funciones: tipos, dominio y evaluación",
+          "descripcion": "Reconoce funciones, encuentra su dominio y explora cómo una entrada se convierte en un punto de la gráfica.",
+          "fecha": "2026-11-10",
+          "ruta": "/Casilleros/newstudent/funciones/"
+        },
         {
           "id": "newstudent-revision",
           "titulo": "Revisión",

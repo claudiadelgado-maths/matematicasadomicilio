@@ -1,8 +1,9 @@
 @import url('recursos/comun.css?v=20261104-1');
-.student-site .student-hero { padding-block: clamp(3rem, 8vw, 6rem); }
+@import url('recursos/identidad.css?v=20261110-2');
+.student-site .student-hero { padding-block: 1rem 2.5rem; }
 .student-site h1 { margin: 0; font-size: clamp(2.7rem, 8vw, 6rem); overflow-wrap: anywhere; }
 .student-site .student-hero p:last-child { font-size: 1.15rem; color: var(--color-muted); margin-bottom: 0; }
-.student-site .student-sessions { padding-block: clamp(3rem, 6vw, 5rem); background: var(--color-surface); }
+.student-site .student-sessions { padding-block: clamp(3rem, 6vw, 5rem); background-color:#e9f2f3; background-image:linear-gradient(#c4d9dd55 1px,transparent 1px),linear-gradient(90deg,#c4d9dd55 1px,transparent 1px);background-size:48px 48px; }
 .student-site h2 { font-size: 2rem; margin: 0 0 2rem; }
 .student-site .student-session-list { display: grid; gap: 1rem; }
 .student-site .student-session-link { display: grid; grid-template-columns: 140px 1fr auto; gap: 2rem; align-items: center; padding: 2rem; background: white; border: 1px solid var(--color-border); text-decoration: none; }

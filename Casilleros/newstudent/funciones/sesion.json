@@ -1,0 +1,35 @@
+{
+  "id": "daniel-funciones",
+  "slug": "funciones",
+  "tipo": "sesion",
+  "usuario": "newstudent",
+  "titulo": "Funciones: tipos, dominio y evaluación",
+  "descripcion": "Reconoce funciones, encuentra su dominio y explora cómo una entrada se convierte en un punto de la gráfica.",
+  "objetivo": "Clasificar funciones, determinar su dominio real y evaluar entradas numéricas y algebraicas.",
+  "conocimientosPrevios": [
+    "Operaciones con números reales",
+    "Potencias y expresiones algebraicas"
+  ],
+  "fecha": "2026-11-10",
+  "estado": "publicado",
+  "ruta": "/Casilleros/newstudent/funciones/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  },
+  "contenidoIntegrado": [
+    "Tipos de funciones",
+    "Dominio de funciones",
+    "Evaluación de funciones"
+  ],
+  "almacenamientoLocal": false,
+  "representacionMatematica": {
+    "formato": "LaTeX",
+    "motor": "KaTeX 0.18.1",
+    "origen": "jsDelivr",
+    "contenido": "Expresiones estáticas, preguntas, opciones, retroalimentación y valores de la gráfica"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 308,
+  "total": 309,
   "tipos": {
     "examen": [
       {
@@ -2873,15 +2873,15 @@
         "id": "newstudent",
         "slug": "newstudent",
         "tipo": "usuario",
-        "titulo": "El casillero de NewStudent",
-        "nombreVisible": "NewStudent",
-        "descripcion": "Sesiones de matemáticas: diagnóstico de aritmética, álgebra y geometría.",
+        "titulo": "El casillero de Daniel",
+        "nombreVisible": "Daniel",
+        "descripcion": "Matemáticas para un estudiante de Geografía, con la mirada puesta en la climatología.",
         "estado": "activo",
         "ruta": "/Casilleros/newstudent/",
         "personalizacion": {
-          "simbolo": "N",
-          "acento": "#222222",
-          "fondo": "#f3f3f0"
+          "simbolo": "D",
+          "acento": "#164e63",
+          "fondo": "#e9f2f3"
         },
         "almacenamientoLocal": true,
         "archivoMetadatos": "Casilleros/newstudent/usuario.json"
@@ -4225,6 +4225,42 @@
           "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/milndred/teoria-de-exponentes/sesion.json"
+      },
+      {
+        "id": "daniel-funciones",
+        "slug": "funciones",
+        "tipo": "sesion",
+        "usuario": "newstudent",
+        "titulo": "Funciones: tipos, dominio y evaluación",
+        "descripcion": "Reconoce funciones, encuentra su dominio y explora cómo una entrada se convierte en un punto de la gráfica.",
+        "objetivo": "Clasificar funciones, determinar su dominio real y evaluar entradas numéricas y algebraicas.",
+        "conocimientosPrevios": [
+          "Operaciones con números reales",
+          "Potencias y expresiones algebraicas"
+        ],
+        "fecha": "2026-11-10",
+        "estado": "publicado",
+        "ruta": "/Casilleros/newstudent/funciones/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "contenidoIntegrado": [
+          "Tipos de funciones",
+          "Dominio de funciones",
+          "Evaluación de funciones"
+        ],
+        "almacenamientoLocal": false,
+        "representacionMatematica": {
+          "formato": "LaTeX",
+          "motor": "KaTeX 0.18.1",
+          "origen": "jsDelivr",
+          "contenido": "Expresiones estáticas, preguntas, opciones, retroalimentación y valores de la gráfica"
+        },
+        "archivoMetadatos": "Casilleros/newstudent/funciones/sesion.json"
       },
       {
         "id": "newstudent-revision",

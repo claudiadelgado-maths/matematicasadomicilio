@@ -1,0 +1,59 @@
+.functions-site{--ink:#163b49;--teal:#116d70;--paper:#f2f6f4;color:var(--ink);background:var(--paper);padding-bottom:4rem;}
+.functions-site .container{max-width:1080px;}
+.functions-site .crumbs{padding:1.5rem 0;font-size:.82rem;line-height:2;color:#48636b;}
+.functions-site .lesson-hero{padding:clamp(2rem,6vw,5rem);border-radius:14px;background:#102e40 url('../recursos/atmosfera.svg') center/cover;color:#fff;margin:1rem 0 2rem;}
+.functions-site .eyebrow{font-size:.72rem;letter-spacing:.16em;font-weight:700;margin:0 0 1rem;}
+.functions-site .lesson-hero .eyebrow{color:#c0dadb;}
+.functions-site h1{font-family:Georgia,serif;font-size:clamp(2.7rem,6vw,4.7rem);font-weight:400;line-height:1.1;letter-spacing:-.04em;margin:0 0 1.5rem;}
+.functions-site h1 em{color:#e7cc93;font-weight:400;}
+.functions-site .lesson-hero>p:not(.eyebrow){max-width:540px;font-size:1.12rem;}
+.functions-site .lesson-tag{display:inline-block;border-top:1px solid #68909b;padding-top:1rem;margin-top:.75rem;color:#d3e7e8;font-size:.85rem;}
+.functions-site .lesson-nav{display:flex;flex-wrap:wrap;gap:.5rem;border-bottom:1px solid #cbdcdd;padding-bottom:1.5rem;}
+.functions-site .lesson-nav a{padding:.8rem 1rem;border:1px solid #bdcfd1;border-radius:4px;text-decoration:none;background:white;font-weight:600;font-size:.9rem;}
+.functions-site .activity{padding-top:4rem;scroll-margin-top:1rem;}
+.functions-site h2{font:400 clamp(2rem,4.2vw,3.2rem)/1.15 Georgia,serif;letter-spacing:-.035em;margin:0 0 1rem;}
+.functions-site h3{line-height:1.3;margin:0 0 .8rem;font-size:1.25rem;}
+.functions-site .intro{max-width:800px;font-size:1.1rem;color:#48636b;margin-bottom:2rem;}
+.functions-site .concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;}
+.functions-site .concept{padding:1.6rem;border:1px solid #cbdcdd;border-top:3px solid #579699;background:white;border-radius:5px;min-width:0;}
+.functions-site .concept>p{color:#48636b;}
+.functions-site .formula{font-family:Georgia,serif;font-size:clamp(1.15rem,2.3vw,1.5rem);padding:.8rem 0;line-height:1.8;overflow-wrap:anywhere;}
+.functions-site details{border-top:1px solid #d2dfe0;margin-top:1rem;}
+.functions-site summary{padding:.85rem .15rem;min-height:48px;cursor:pointer;font-weight:600;font-size:.93rem;}
+.functions-site .solution{padding:0 .5rem .5rem;color:#375963;}
+.functions-site .practice{background:#e1efed;border:1px solid #b3cecb;border-radius:8px;padding:clamp(1.2rem,3vw,2rem);margin-top:2rem;}
+.functions-site button{min-height:46px;padding:.65rem 1rem;border:1px solid var(--teal);border-radius:4px;color:white;background:var(--teal);cursor:pointer;font-weight:600;}
+.functions-site button:hover{background:#0a5055;}
+.functions-site button:disabled{opacity:.55;cursor:default;}
+.functions-site .choices{display:flex;flex-wrap:wrap;gap:.65rem;}
+.functions-site .choices button{background:white;color:#164f56;text-align:left;font-weight:500;}
+.functions-site .choices button[aria-pressed=true]{outline:2px solid #164f56;outline-offset:2px;}
+.functions-site .choices button:hover{background:#f1f8f6;}
+.functions-site .feedback{min-height:1.6em;margin:1rem 0;line-height:1.65;}
+.functions-site .fields{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;}
+.functions-site label{display:grid;gap:.4rem;font-weight:600;font-size:.9rem;}
+.functions-site input[type=number]{width:100%;max-width:220px;font:inherit;padding:.6rem;border:1px solid #73979b;border-radius:3px;min-height:46px;}
+.functions-site .next-link{display:inline-block;padding:1.4rem 0;color:var(--teal);font-weight:700;}
+.functions-site .rule-list{display:grid;gap:1px;background:#cfdddd;border:1px solid #cfdddd;}
+.functions-site .rule{display:grid;grid-template-columns:45px 1fr;gap:1rem;background:white;padding:1.5rem;}
+.functions-site .rule>span{color:var(--teal);font-family:Georgia,serif;font-size:1.4rem;}
+.functions-site .rule p{margin:.5rem 0;}
+.functions-site .rule-example{color:#3c626a;}
+.functions-site .note{border-left:3px solid #c19b58;padding:.7rem 1.2rem;color:#54666b;background:#f7f2e7;}
+.functions-site .worked{background:white;border:1px solid #cfdddd;padding:1.6rem;margin-top:2rem;}
+.functions-site .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;}
+.functions-site .steps article{padding:1.3rem;background:white;border-top:2px solid #599798;}
+.functions-site .steps article>span{font:italic 2rem Georgia,serif;color:#418082;display:block;margin-bottom:1rem;}
+.functions-site .plot-lab{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:2rem;padding:1.8rem;margin-top:2rem;background:white;border:1px solid #cfdddd;}
+.functions-site .plot-lab input{display:block;width:100%;accent-color:#147479;min-height:44px;}
+.functions-site .plot-lab output{display:block;font-weight:700;margin:.8rem 0;}
+.functions-site .plot-lab svg{width:100%;}
+.functions-site .closing{padding:2rem 0;margin-top:2rem;border-top:1px solid #bbd0d1;}
+@media(max-width:700px){.functions-site .concept-grid,.functions-site .steps,.functions-site .plot-lab{grid-template-columns:1fr;}.functions-site .lesson-nav{display:grid;}.functions-site .rule{grid-template-columns:28px 1fr;padding:1rem;gap:.65rem;}.functions-site .activity{padding-top:3rem;}.functions-site .lesson-hero{padding:2rem 1.3rem;}.functions-site .plot-lab{padding:1.2rem;}}
+
+/* LaTeX permanece legible sin ensanchar la página en móvil. */
+.functions-site .katex {display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding-block:.18em;font-size:1.08em;}
+.functions-site .formula {max-width:100%;min-width:0;overflow-x:auto;}
+.functions-site .choices button {max-width:100%;}
+.functions-site .steps article,.functions-site .plot-lab>div {min-width:0;}
+.functions-site .solution p,.functions-site .feedback,.functions-site #substitution {max-width:100%;}
