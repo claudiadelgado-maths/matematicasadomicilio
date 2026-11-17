@@ -1,0 +1,194 @@
+/* Estilos locales. [hidden] es la utilidad para estados inactivos de los interactivos. */
+.exponential-session{--forest:#173e32;--green:#287052;--cream:#faf8f1;--gold:#d4a85b;--muted:#627269;--border:#dce3d9;background:var(--cream);color:#263d32;padding:1.3rem 0 0;line-height:1.65}
+.exponential-session *,.exponential-session *::before,.exponential-session *::after{box-sizing:border-box}
+.exponential-session [hidden]{display:none!important}
+.exponential-session .container{max-width:1160px}
+.exponential-session a{color:var(--forest)}
+.exponential-session .breadcrumbs{display:flex;flex-wrap:wrap;gap:.6rem;font-size:.8rem;margin:0 0 1.3rem;color:var(--muted)}
+.exponential-session .lesson-hero{background:var(--forest);border-radius:24px;padding:3.4rem 3.3rem;display:grid;grid-template-columns:1.1fr 1fr;gap:1.4rem;overflow:hidden;color:#f7f1df}
+.exponential-session .eyebrow{font-size:.65rem;font-weight:750;letter-spacing:.16em;margin:0 0 1rem}
+.exponential-session .lesson-hero .eyebrow{color:#bdd1bc}
+.exponential-session h1{font:400 clamp(2.4rem,4.3vw,3.8rem)/1.08 Georgia,serif;letter-spacing:-.04em;margin:0 0 1.5rem;color:inherit}
+.exponential-session h1 em{color:#cce5b8;font-weight:400}
+.exponential-session .hero-lead{font-size:1rem;color:#d9e5d6;line-height:1.6}
+.exponential-session .hero-link{display:inline-flex;align-items:center;gap:3rem;margin-top:.9rem;padding:.5rem 0;border-bottom:1px solid #71937a;color:#f7f1df;font-size:.9rem;font-weight:650;text-decoration:none}
+.exponential-session .hero-link span{font-size:1.4rem}
+.exponential-session .hero-visual{align-self:center;min-width:0}
+.exponential-session .hero-visual svg{display:block;width:100%;height:auto}
+.exponential-session .hero-key{display:flex;justify-content:center;gap:2rem;margin-top:1rem;font-size:.66rem;color:#d9e5d6;letter-spacing:.08em}
+.exponential-session .hero-key i{display:inline-block;width:20px;border-top:3px solid #cce5b8;vertical-align:middle;margin-right:.5rem}
+.exponential-session .hero-key span:last-child i{border-top:3px dashed #e9b96b}
+.exponential-session .continuity{display:grid;grid-template-columns:auto auto 1fr;gap:1rem;align-items:center;padding:1.3rem .4rem;border-bottom:1px solid var(--border)}
+.exponential-session .continuity>span{font-size:.58rem;letter-spacing:.14em;color:var(--muted);font-weight:750}
+.exponential-session .continuity>a{font-size:.8rem;font-weight:700}
+.exponential-session .continuity p{font-size:.77rem;color:var(--muted);margin:0;padding-left:1rem;border-left:1px solid #c9d6c7}
+.exponential-session .lesson-nav{display:flex;gap:2rem;padding:1.2rem .4rem}
+.exponential-session .lesson-nav a{font-size:.82rem;font-weight:650;text-decoration:none}
+.exponential-session .lesson-nav b{font-size:.65rem;margin-right:.4rem;color:var(--muted)}
+.exponential-session .lesson-section{padding-top:3.7rem;scroll-margin-top:90px}
+.exponential-session .section-title{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
+.exponential-session .section-title>span{width:42px;height:42px;flex-shrink:0;display:grid;place-items:center;border-radius:50%;border:1px solid #b7c6b5;font:italic 1.1rem Georgia,serif}
+.exponential-session .section-title .eyebrow{color:var(--muted);font-size:.6rem;margin:0 0 .35rem}
+.exponential-session h2{font:400 clamp(1.8rem,3vw,2.6rem)/1.18 Georgia,serif;letter-spacing:-.03em;margin:0;color:var(--forest)}
+.exponential-session h3{font-size:1.05rem;line-height:1.35;color:var(--forest);margin:0 0 .7rem}
+.exponential-session .intro{max-width:850px;font-size:.96rem;color:#596c60;margin:0 0 1.8rem}
+.exponential-session .comparison{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.exponential-session .comparison article{padding:1.5rem;border:1px solid var(--border);border-radius:16px;background:white}
+.exponential-session .comparison article:last-child{background:#eaf1e6;border-color:#cad8c2}
+.exponential-session .small-label{display:block;color:var(--muted);font-size:.59rem;font-weight:750;letter-spacing:.13em;margin-bottom:.7rem}
+.exponential-session .comparison p:last-child{font-size:.87rem;color:#596c60;margin-bottom:0}
+.exponential-session .math-line{overflow-x:auto;overflow-y:hidden;padding:.4rem .05rem}
+.exponential-session .katex{font-size:1.08em}
+.exponential-session .model-card{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:1.8rem 2rem;margin-top:1.5rem;background:var(--forest);color:#ecf0df;border-radius:16px}
+.exponential-session .model-card .small-label{color:#bfd4b7}
+.exponential-session .model-equation{font-size:2rem;margin:.5rem 0 .7rem}
+.exponential-session .model-card p:last-child{font-size:.85rem;color:#c4d4c2}
+.exponential-session .model-card dl{margin:0;display:grid;gap:.65rem}
+.exponential-session .model-card dl>div{display:flex;gap:1rem;align-items:baseline}
+.exponential-session .model-card dt{min-width:32px}
+.exponential-session .model-card dd{font-size:.85rem;margin:0;color:#d3dfcb}
+.exponential-session .note{font-size:.85rem;color:#657167;padding:.9rem 1.2rem;margin:1rem 0 1.6rem;border-left:2px solid #acbda5}
+.exponential-session .factor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.6rem}
+.exponential-session .factor-grid article{padding:1.4rem;background:white;border:1px solid var(--border);border-radius:16px}
+.exponential-session .factor-grid .direction{font-size:1.5rem;color:var(--green)}
+.exponential-session .factor-grid article:nth-child(2) .direction{color:#9c6a22}
+.exponential-session .factor-grid p{font-size:.86rem;margin:.65rem 0;color:#5b6e60}
+.exponential-session .factor-grid .math-line{font-size:1.1rem;color:var(--forest)}
+.exponential-session .subheading{font:400 1.6rem Georgia,serif;margin:2.6rem 0 1rem}
+.exponential-session .examples details{border:1px solid var(--border);border-radius:14px;background:white;margin-top:.85rem;overflow:hidden}
+.exponential-session summary{padding:1.2rem 1.4rem;cursor:pointer;font-weight:650;font-size:.97rem;color:var(--forest)}
+.exponential-session summary>span{font-size:.7rem;color:var(--muted);margin:0 .65rem}
+.exponential-session .example-content{padding:.1rem 1.5rem 1.4rem;font-size:.9rem}
+.exponential-session .example-content>.math-line{font-size:1.2rem}
+.exponential-session .sequence{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin:1.2rem 0;padding:1rem;background:#f1f5ed;border-radius:10px}
+.exponential-session .sequence>span{font-size:1.2rem;text-align:center}
+.exponential-session .sequence small{display:block;font-size:.6rem;color:var(--muted)}
+.exponential-session .sequence>b{font-size:.7rem;color:var(--green);font-weight:550}
+.exponential-session button{font:inherit;cursor:pointer;min-height:44px;padding:.6rem 1rem;border:1px solid #aaba9f;border-radius:8px;background:#f2f6ed;color:var(--forest);font-weight:650;font-size:.82rem}
+.exponential-session button:hover{background:#e4eddc}
+.exponential-session button:disabled{cursor:default;opacity:.6}
+.exponential-session .text-button{padding:.4rem 0;border:0;background:none;color:var(--green)}
+.exponential-session .trap{padding:1.4rem 1.5rem;margin-top:1.3rem;background:#f3ecdb;border:1px solid #e1d3b5;border-radius:16px}
+.exponential-session .trap h3{color:#6b502b}
+.exponential-session .trap p{font-size:.9rem;color:#6b5b42;margin:.6rem 0}
+.exponential-session .lab-layout{display:grid;grid-template-columns:.9fr 1.5fr;gap:1.2rem}
+.exponential-session .controls{display:flex;flex-direction:column;background:white;border:1px solid var(--border);border-radius:16px;padding:1.5rem;gap:.5rem}
+.exponential-session .controls label{font-size:.84rem;font-weight:650;margin-top:.45rem;display:block}
+.exponential-session .controls label[for=periods]{display:flex;justify-content:space-between;gap:.5rem}
+.exponential-session input[type=text]{width:100%;min-width:0;padding:.75rem .9rem;font:inherit;font-size:1rem;border:1px solid #adbea8;border-radius:8px;background:#fcfdfa;color:var(--forest)}
+.exponential-session input[type=range]{width:100%;accent-color:var(--green);min-height:32px}
+.exponential-session input[aria-invalid=true]{border-color:#b14f39;background:#fff8f4}
+.exponential-session .input-help{font-size:.74rem;color:var(--muted);line-height:1.6;margin:.6rem 0}
+.exponential-session .presets{display:flex;flex-wrap:wrap;gap:.5rem}
+.exponential-session .presets button{font-size:.7rem;padding:.45rem .7rem}
+.exponential-session .result-panel{display:flex;flex-direction:column;justify-content:center;background:#e8efdf;border:1px solid #cbd9bc;border-radius:16px;padding:2rem;min-width:0}
+.exponential-session .model-chip{align-self:flex-start;padding:.25rem .6rem;border:1px solid #afc39f;border-radius:30px;font-size:.66rem;font-weight:650;letter-spacing:.05em}
+.exponential-session .result-formula{font-size:clamp(1.25rem,2.3vw,1.85rem);margin:1.2rem 0}
+.exponential-session .result-summary{display:grid;grid-template-columns:1fr 1.5fr;gap:1rem;padding:1.2rem 0;border-block:1px solid #c1d0b5}
+.exponential-session .result-summary>div{min-width:0}
+.exponential-session .result-summary>div>span{display:block;font-size:.7rem;color:#5f7258;margin-bottom:.7rem}
+.exponential-session .result-summary strong{display:block;font-size:1.1rem;overflow-x:auto;padding:.3rem 0;font-weight:400}
+.exponential-session .result-panel>p{font-size:.85rem;margin:.85rem 0 0;color:#526b48}
+.exponential-session .graph-card{margin:1.5rem 0 0;border:1px solid var(--border);border-radius:16px;background:white;overflow:hidden}
+.exponential-session .graph-title{display:flex;justify-content:space-between;align-items:center;padding:1.4rem 1.5rem 0;gap:1rem}
+.exponential-session .graph-title h3{margin:0}
+.exponential-session .graph-title+ p{margin:.5rem 1.5rem 1rem;font-size:.78rem;color:var(--muted)}
+.exponential-session .graph-key{font-size:.7rem;white-space:nowrap;color:var(--muted)}
+.exponential-session .graph-key i{display:inline-block;width:20px;height:3px;background:var(--green);vertical-align:middle;margin-right:.3rem}
+.exponential-session .graph-scroll{overflow-x:auto;width:100%}
+.exponential-session #growth-graph{display:block;width:100%;min-width:560px;height:auto}
+.exponential-session .graph-card figcaption{padding:.85rem 1.5rem;background:#f5f7f0;border-top:1px solid var(--border);font-size:.76rem;color:var(--muted)}
+.exponential-session .inspect-panel{display:grid;grid-template-columns:1fr 1.4fr;gap:.2rem 2rem;align-items:center;padding:1.3rem 1.5rem;margin-top:1rem;background:#f3ecdb;border:1px solid #e1d3b5;border-radius:14px}
+.exponential-session .inspect-panel label{font-size:.9rem;font-weight:650}
+.exponential-session .inspect-panel output{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#e2c995;margin-left:.5rem}
+.exponential-session .inspect-panel p{grid-column:1/-1;font-size:.85rem;color:#6b5b42;margin:.4rem 0}
+.exponential-session .inspect-panel .math-line{font-size:1.2rem;color:#634b26}
+.exponential-session .table-card{margin-top:1.4rem;border:1px solid var(--border);border-radius:16px;background:white;overflow:hidden}
+.exponential-session .table-card>h3{padding:1.3rem 1.5rem 0;margin:0}
+.exponential-session .table-card>.input-help{margin:.6rem 1.5rem 1rem}
+.exponential-session .table-scroll{width:100%;overflow-x:auto}
+.exponential-session table{width:100%;min-width:500px;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums}
+.exponential-session th,.exponential-session td{padding:.8rem 1.5rem;text-align:right;border-bottom:1px solid #e4eadf}
+.exponential-session th:first-child{text-align:left}
+.exponential-session thead{background:#f1f5ec;color:var(--muted);font-size:.75rem}
+.exponential-session tbody tr:last-child>*{border-bottom:0}
+.exponential-session .selected-row{background:#faf1da}
+.exponential-session .small-challenge{margin:1.7rem 0 0;padding:.3rem 0 .3rem 1.2rem;border-left:3px solid #a4bb8f}
+.exponential-session .small-challenge h3{font-size:.96rem}
+.exponential-session .small-challenge p{font-size:.87rem;color:var(--muted);margin:0;max-width:850px}
+.exponential-session .notice{padding:1rem 1.3rem;background:#f7eed7;border:1px solid #dcccaa;border-radius:10px;font-size:.9rem}
+.exponential-session .notice.error{background:#fff0e9;border-color:#e5bead;color:#91442e}
+.exponential-session .practice-card{padding:2rem;background:white;border:1px solid var(--border);border-radius:18px}
+.exponential-session .practice-top{display:flex;justify-content:space-between;gap:1rem;font-size:.7rem;color:var(--muted);font-weight:650}
+.exponential-session progress{width:100%;height:7px;margin:.8rem 0 1.5rem;accent-color:var(--green);border:0;border-radius:20px}
+.exponential-session progress::-webkit-progress-bar{background:#eaf0e3;border-radius:20px}
+.exponential-session progress::-webkit-progress-value{background:var(--green);border-radius:20px}
+.exponential-session #question-title{font:400 1.6rem Georgia,serif;line-height:1.25}
+.exponential-session #question-text{font-size:1.02rem;max-width:850px;margin:1rem 0 1.3rem}
+.exponential-session #answer-label{display:block;font-size:.82rem;font-weight:650;margin-bottom:.5rem}
+.exponential-session #answer{max-width:320px}
+.exponential-session .practice-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
+.exponential-session .primary-button{background:var(--forest);border-color:var(--forest);color:white}
+.exponential-session .primary-button:hover{background:#2c6149}
+.exponential-session .feedback{font-size:.9rem;padding:1rem 1.2rem;border-radius:10px;margin:1rem 0}
+.exponential-session .feedback[data-state=correct]{background:#e8f3e2;color:#275237}
+.exponential-session .feedback[data-state=retry]{background:#fff0e6;color:#854626}
+.exponential-session .feedback[data-state=review]{background:#edf1f7;color:#425c76}
+.exponential-session .hint,.exponential-session .solution{padding:1rem 1.3rem;margin-top:.8rem;border-radius:10px;font-size:.9rem;background:#f4f6ee;border:1px solid #dfe5d4}
+.exponential-session .solution li{margin:.6rem 0}
+.exponential-session .solution ol{padding-left:1.2rem;margin-bottom:0}
+.exponential-session .next-button{margin-top:1.3rem;background:var(--forest);color:white}
+.exponential-session .next-button:hover{background:#2c6149}
+.exponential-session .finish p{font-size:.95rem;max-width:850px}
+.exponential-session .closing{padding:4rem 0 3.5rem;text-align:center}
+.exponential-session .closing>.eyebrow{color:var(--muted)}
+.exponential-session .closing>p:not(.eyebrow){font:400 clamp(1.6rem,3vw,2.3rem)/1.4 Georgia,serif;color:var(--forest);margin:.5rem 0 2rem}
+.exponential-session .closing em{color:#78885b}
+.exponential-session .closing a{font-size:.85rem;font-weight:650}
+.exponential-session :focus-visible{outline:3px solid #b47e25;outline-offset:4px}
+.exponential-session .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;padding:0;margin:-1px;border:0}
+@media(max-width:1024px){
+.exponential-session .lesson-hero{padding:2.7rem 2.2rem}
+.exponential-session .continuity{grid-template-columns:auto 1fr}
+.exponential-session .continuity p{grid-column:1/-1;padding:0;border:0}
+.exponential-session .result-summary{grid-template-columns:1fr}
+.exponential-session .result-panel{padding:1.6rem}
+}
+@media(max-width:767px){
+.exponential-session .lesson-hero{grid-template-columns:1fr;padding:2rem 1.4rem;gap:1rem}
+.exponential-session h1{font-size:clamp(2.2rem,7.8vw,3.3rem)}
+.exponential-session .lesson-hero .eyebrow{font-size:.54rem}
+.exponential-session .hero-visual{max-width:380px;justify-self:center;width:100%}
+.exponential-session .hero-key{margin-top:0}
+.exponential-session .lesson-nav{justify-content:space-between;gap:.5rem;padding-inline:0}
+.exponential-session .lesson-nav a{font-size:.7rem}
+.exponential-session .lesson-nav b{font-size:.57rem}
+.exponential-session .lesson-section{padding-top:2.7rem}
+.exponential-session .section-title{gap:.7rem}
+.exponential-session .section-title .eyebrow{font-size:.51rem;letter-spacing:.1em}
+.exponential-session .section-title>span{width:35px;height:35px;font-size:1rem}
+.exponential-session .comparison,.exponential-session .model-card,.exponential-session .factor-grid,.exponential-session .lab-layout{grid-template-columns:1fr}
+.exponential-session .model-card{padding:1.4rem;gap:1rem}
+.exponential-session .factor-grid{gap:.8rem}
+.exponential-session .factor-grid article{padding:1.2rem}
+.exponential-session .comparison article{padding:1.2rem}
+.exponential-session .sequence{gap:.8rem}
+.exponential-session .sequence>span{font-size:1.05rem}
+.exponential-session .sequence>b{font-size:.6rem}
+.exponential-session summary{padding:1rem;font-size:.88rem}
+.exponential-session .example-content{padding:.1rem 1rem 1rem}
+.exponential-session .trap{padding:1.2rem}
+.exponential-session .controls,.exponential-session .result-panel{padding:1.25rem}
+.exponential-session .result-summary{grid-template-columns:1fr}
+.exponential-session .graph-title{padding:1.2rem 1rem 0;align-items:start}
+.exponential-session .graph-title+ p{margin-inline:1rem}
+.exponential-session .graph-card figcaption{padding:.8rem 1rem}
+.exponential-session .inspect-panel{grid-template-columns:1fr;gap:.5rem;padding:1.2rem}
+.exponential-session .table-card>h3{padding:1.2rem 1rem 0}
+.exponential-session .table-card>.input-help{margin-inline:1rem}
+.exponential-session .practice-card{padding:1.2rem}
+.exponential-session .practice-top{font-size:.62rem}
+.exponential-session .practice-actions button{font-size:.73rem}
+.exponential-session #question-title{font-size:1.4rem}
+}
+@media(prefers-reduced-motion:reduce){.exponential-session{scroll-behavior:auto}}

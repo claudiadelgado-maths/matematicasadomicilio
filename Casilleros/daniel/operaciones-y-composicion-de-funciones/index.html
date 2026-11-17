@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operaciones y composición de funciones | Matemáticas a Domicilio</title>
+  <meta name="description" content="Daniel: suma, resta, producto, cociente y composición de funciones en ambos órdenes, con ejemplos sencillos y Python con SymPy para copiar LaTeX.">
+  <link rel="icon" href="../../../recursos/svg/favicon.svg" type="image/svg+xml">
+
+
+  <link rel="stylesheet" href="../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css?v=20261117-1">
+  <script src="../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" crossorigin="anonymous" defer></script>
+  <script src="sesion.js?v=20261117-1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../index.html">Inicio</a></li><li><a href="../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../contacto/index.html">Contacto</a></li></ul></nav></div></header>
+  <main id="contenido" class="operations-session"><div class="container">
+    <nav class="breadcrumbs" aria-label="Migas de pan"><a href="../index.html">Casillero de Daniel</a><span aria-hidden="true"> / </span><span>Operaciones con funciones</span></nav>
+    <header class="lesson-hero"><div><p class="eyebrow">DANIEL / CUADERNO DE FUNCIONES</p><h1>Operaciones y<br><em>composición.</em></h1><p>Dos funciones sencillas para aprender a combinar, sustituir y simplificar.</p><a href="#operaciones" class="hero-link">Empezar con el mismo par <span aria-hidden="true">↗</span></a></div><div class="hero-pair"><span class="pair-tag">NUESTRO PAR, DE PRINCIPIO A FIN</span><div class="function-f">\(f(x)=x+1\)<small>Sumar uno</small></div><span class="pair-connection" aria-hidden="true">↕</span><div class="function-g">\(g(x)=2x\)<small>Multiplicar por dos</small></div></div></header>
+    <nav class="lesson-nav" aria-label="Partes de la sesión"><a href="#operaciones"><b>01</b> Operar</a><a href="#composicion"><b>02</b> Componer</a><a href="#python"><b>03</b> Copiar Python</a></nav>
+    <p class="continuity">Continuación de <a href="../funciones/index.html">Funciones: tipos, dominio y evaluación</a>.</p>
+    <noscript><p class="notice">Puedes leer la sesión y copiar el código manualmente. Activa JavaScript para ver LaTeX renderizado y explorar la composición.</p></noscript>
+    <p id="math-notice" class="notice" hidden>El servicio de LaTeX no cargó. Las expresiones conservan su código; recarga con conexión para verlas renderizadas.</p>
+
+    <section id="operaciones" class="lesson-section"><div class="section-heading"><span>01</span><div><p class="eyebrow">MISMA ENTRADA, DOS RESULTADOS</p><h2>Cuatro operaciones. Dos órdenes.</h2></div></div>
+      <p class="intro">En suma, resta, multiplicación y división, ambas funciones reciben la misma entrada \(x\). Después operamos sus resultados. Conservaremos siempre \(f(x)=x+1\) y \(g(x)=2x\).</p>
+      <div class="operation-grid">
+        <article class="operation-card"><span class="operation-symbol" aria-hidden="true">+</span><h3>Suma</h3><p>Sumamos las expresiones completas.</p><p class="order-label">Orden \(f+g\)</p><div class="math-line">\((f+g)(x)=(x+1)+2x=3x+1\)</div><p class="order-label">En el otro orden</p><div class="math-line">\((g+f)(x)=2x+(x+1)=3x+1\)</div><span class="conclusion">El orden no cambia la suma.</span></article>
+        <article class="operation-card"><span class="operation-symbol" aria-hidden="true">−</span><h3>Resta</h3><p>Los paréntesis ayudan a conservar los signos.</p><p class="order-label">Orden \(f-g\)</p><div class="math-line">\((f-g)(x)=(x+1)-2x=1-x\)</div><p class="order-label">En el otro orden</p><div class="math-line">\((g-f)(x)=2x-(x+1)=x-1\)</div><span class="conclusion">Aquí el orden sí cambia el resultado.</span></article>
+        <article class="operation-card"><span class="operation-symbol" aria-hidden="true">×</span><h3>Multiplicación</h3><p>Multiplicamos un resultado por el otro.</p><p class="order-label">Orden \(f\cdot g\)</p><div class="math-line">\((fg)(x)=(x+1)(2x)=2x(x+1)\)</div><p class="order-label">En el otro orden</p><div class="math-line">\((gf)(x)=(2x)(x+1)=2x(x+1)\)</div><span class="conclusion">El orden no cambia el producto.</span></article>
+        <article class="operation-card"><span class="operation-symbol" aria-hidden="true">÷</span><h3>División</h3><p>La función del denominador no puede valer cero.</p><p class="order-label">Orden \(f/g\)</p><div class="math-line">\(\left(\frac fg\right)(x)=\frac{x+1}{2x},\quad x\ne0\)</div><p class="order-label">En el otro orden</p><div class="math-line">\(\left(\frac gf\right)(x)=\frac{2x}{x+1},\quad x\ne-1\)</div><span class="conclusion">Cambian el cociente y su restricción.</span></article>
+      </div>
+      <aside class="notation-note"><strong>Producto y composición usan ideas distintas.</strong> \((fg)(x)\) significa multiplicar \(f(x)\) por \(g(x)\). En cambio, \((f\circ g)(x)=f(g(x))\) significa meter una función dentro de la otra.</aside>
+      <div class="simplify-card"><div><p class="eyebrow">UN EJEMPLO CORTO</p><h3>Simplificar es reunir lo que se puede reunir.</h3><p>En la resta, quitamos los paréntesis y juntamos los términos con \(x\):</p></div><div class="math-line">\((x+1)-2x=x+1-2x=1-x\)</div><p>Con este par de polinomios, suma, resta y producto están definidos para todo \(x\in\mathbb R\). Al dividir, conserva la restricción del denominador aunque más adelante simplifiques.</p></div>
+    </section>
+
+    <section id="composicion" class="lesson-section"><div class="section-heading"><span>02</span><div><p class="eyebrow">DE DENTRO HACIA FUERA</p><h2>Una función entra en la otra.</h2></div></div>
+      <p class="intro">En una composición, la salida de la función de dentro se convierte en la entrada de la función de fuera. <strong>Empieza por el paréntesis interior.</strong></p>
+      <div class="composition-grid">
+        <article class="composition-card"><p class="function-title">\(f(g(x))\)</p><div class="roles"><span class="inner-role">Dentro: \(g(x)=2x\)</span><span>Fuera: \(f\), que suma \(1\)</span></div><ol><li>Calcula primero \(g(x)=2x\).</li><li>En \(f(x)=x+1\), cambia la entrada \(x\) por <strong>todo</strong> \(g(x)\).</li></ol><div class="math-line">\(f(g(x))=\underbrace{(2x)}_{\text{va dentro}}+1=2x+1\)</div><p class="route">Multiplicar por dos → sumar uno.</p></article>
+        <article class="composition-card"><p class="function-title">\(g(f(x))\)</p><div class="roles"><span class="inner-role">Dentro: \(f(x)=x+1\)</span><span>Fuera: \(g\), que multiplica por \(2\)</span></div><ol><li>Calcula primero \(f(x)=x+1\).</li><li>En \(g(x)=2x\), cambia la entrada \(x\) por <strong>todo</strong> \(f(x)\).</li></ol><div class="math-line">\(g(f(x))=2\underbrace{(x+1)}_{\text{va dentro}}=2x+2\)</div><p class="route">Sumar uno → multiplicar por dos.</p></article>
+      </div>
+      <aside class="notation-note">Con este par, \(f(g(x))\ne g(f(x))\). La composición, en general, <strong>depende del orden</strong>. Ambas están definidas para todos los reales porque estamos componiendo polinomios.</aside>
+      <div id="composition-lab" class="composition-lab" hidden><div class="lab-header"><div><p class="eyebrow">PRUÉBALO CON UNA ENTRADA</p><h3>Cambia el orden y sigue el recorrido.</h3></div><label for="entry">Valor de la entrada<select id="entry"><option value="0">0</option><option value="1/2" selected>1/2</option><option value="1">1</option><option value="2">2</option><option value="-1">−1</option></select></label></div><div class="order-buttons" role="group" aria-label="Orden de la composición"><button type="button" data-order="fg" aria-pressed="true">\(f(g(x))\) · primero \(g\)</button><button type="button" data-order="gf" aria-pressed="false">\(g(f(x))\) · primero \(f\)</button></div><div class="flow"><div><span>ENTRADA</span><p id="flow-entry"></p></div><b aria-hidden="true">→</b><div class="inner-step"><span id="inner-label"></span><p id="flow-inner"></p></div><b aria-hidden="true">→</b><div class="outer-step"><span id="outer-label"></span><p id="flow-outer"></p></div></div><p id="composition-result" class="math-line"></p><p id="composition-status" class="lab-status" role="status"></p></div>
+    </section>
+
+    <section id="python" class="lesson-section python-section"><div class="section-heading"><span>03</span><div><p class="eyebrow">DEL CÁLCULO AL DOCUMENTO</p><h2>Python que escribe tu LaTeX.</h2></div></div>
+      <p class="intro">Copia el bloque completo en Python con SymPy instalado. La función <code>of(f, g, operacion, evaluar=None)</code> imprime <strong>texto plano</strong> con los delimitadores literales <code>\[</code> y <code>\]</code>, listo para pegar en tu documento. No tiene menú ni usa <code>input()</code>.</p>
+      <div class="key-grid"><div><code>s</code><span>Suma: \(f+g\)</span></div><div><code>r</code><span>Resta: \(f-g\)</span></div><div><code>m</code><span>Producto: \(f\cdot g\)</span></div><div><code>d</code><span>Cociente: \(f/g\)</span></div><div><code>fg</code><span>\(f(g(x))\)</span></div><div><code>gf</code><span>\(g(f(x))\)</span></div></div>
+      <div class="code-guide"><p><strong>Funciones:</strong> texto como <code>"p + 1"</code> o expresiones como <code>p + sp.Rational(1, 2)</code>, definiendo antes <code>p = sp.Symbol("p")</code>. Escribe las potencias con <code>**</code> y la multiplicación con <code>*</code>.</p><p><strong>Variable:</strong> se detecta a partir de las funciones; admite \(p,v,u,t,x,y,z\), entre otras. Usa una única variable común. Si ambas son constantes o hay varias variables, el código pide corregir la entrada en lugar de adivinar.</p><p><strong>Fracciones exactas:</strong> escribe <code>"1/2"</code> o <code>sp.Rational(1, 2)</code>, también en <code>evaluar</code>. El valor <code>0</code> sí activa la evaluación. Para invertir suma, resta, producto o cociente, intercambia los dos primeros argumentos; los nombres locales \(f\) y \(g\) seguirán ese nuevo orden.</p><p><strong>Original y simplificada:</strong> se guardan por separado. Solo aparece «Simplificando» si cambia la forma algebraica mostrada; <code>sp.simplify</code> puede conservar un producto factorizado. Una expresión de SymPy que ya llegó simplificada no permite reconstruir los pasos anteriores.</p></div>
+      <details class="output-preview"><summary>Ver el texto que imprimen las dos llamadas finales</summary><div class="output-grid"><div><h3>Sin evaluar · primero \(f\), después \(g\)</h3><pre id="example-plain" tabindex="0" aria-label="Salida LaTeX sin evaluar">Para las funciones
+\[ f = p + 1 \]
+\[ g = 2 p \]
+La operación composición g después de f es
+\[ g\left(f\left(p\right)\right) = 2 \left(p + 1\right) \]
+Simplificando
+\[ g\left(f\left(p\right)\right) = 2 p + 2 \]
+</pre></div><div><h3>Evaluando una fracción · primero \(g\)</h3><pre id="example-evaluated" tabindex="0" aria-label="Salida LaTeX al evaluar">Para la función
+\[ f\left(g\left(p\right)\right) = 2 p + 1 \]
+Al evaluar $p = \frac{1}{2}$ obtenemos
+\[ f\left(g\left(\frac{1}{2}\right)\right) = 2 \]
+</pre></div></div></details>
+      <p class="source-note">El bloque utiliza las opciones de <a href="https://docs.sympy.org/latest/modules/core.html#sympy.core.sympify.sympify">lectura sin evaluación automática</a> y de <a href="https://docs.sympy.org/latest/modules/printing.html#sympy.printing.latex.latex">impresión LaTeX de SymPy</a>. La sesión muestra el código para ejecutarlo en Python.</p>
+      <div class="code-panel"><div class="code-toolbar"><span><i aria-hidden="true"></i> operaciones.py · Python + SymPy</span><div><a href="operaciones.py" download>Descargar .py</a><button id="copy-code" type="button">Copiar código</button></div></div><p id="copy-status" class="copy-status" role="status" hidden></p><pre class="python-code" tabindex="0" aria-label="Código Python completo para copiar"><code id="python-source">import sympy as sp
+
+
+def of(f, g, operacion, evaluar=None):
+    &quot;&quot;&quot;Imprime LaTeX literal. Usa expresiones propias de una misma variable.&quot;&quot;&quot;
+    nombres = {
+        &quot;s&quot;: &quot;suma&quot;, &quot;r&quot;: &quot;resta&quot;, &quot;m&quot;: &quot;multiplicación&quot;,
+        &quot;d&quot;: &quot;división&quot;, &quot;fg&quot;: &quot;composición f después de g&quot;,
+        &quot;gf&quot;: &quot;composición g después de f&quot;,
+    }
+    if operacion not in nombres:
+        raise ValueError(&quot;Usa s, r, m, d, fg o gf.&quot;)
+
+    # Reutiliza los símbolos de las expresiones al leer entradas de texto.
+    locales = {}
+    for funcion in (f, g):
+        if isinstance(funcion, sp.Expr):
+            for simbolo in funcion.free_symbols:
+                if simbolo.name in locales and locales[simbolo.name] != simbolo:
+                    raise ValueError(&quot;Usa el mismo símbolo en ambas funciones.&quot;)
+                locales[simbolo.name] = simbolo
+
+    def leer(funcion):
+        expresion = sp.sympify(
+            funcion, locals=locales, rational=True, evaluate=False
+        )
+        if not isinstance(expresion, sp.Expr):
+            raise ValueError(&quot;Cada función debe ser una expresión de SymPy.&quot;)
+        return expresion
+
+    f, g = leer(f), leer(g)
+    variables = f.free_symbols | g.free_symbols
+    if len(variables) != 1:
+        raise ValueError(&quot;Debe haber una sola variable común; no se puede inferir entre varias o ninguna.&quot;)
+    variable = next(iter(variables))
+
+    def sustituir(expresion, valor):
+        # .subs() puede operar antes de imprimir; esta copia conserva el árbol.
+        if expresion == variable:
+            return valor
+        if not expresion.has(variable):
+            return expresion
+        argumentos = [sustituir(a, valor) for a in expresion.args]
+        return expresion.func(*argumentos, evaluate=False)
+
+    F, G = sp.latex(f), sp.latex(g)
+    if operacion == &quot;s&quot;:
+        original = sp.Add(f, g, evaluate=False)
+        original_tex = rf&quot;\left({F}\right)+\left({G}\right)&quot;
+    elif operacion == &quot;r&quot;:
+        original = sp.Add(f, sp.Mul(-1, g, evaluate=False), evaluate=False)
+        original_tex = rf&quot;\left({F}\right)-\left({G}\right)&quot;
+    elif operacion == &quot;m&quot;:
+        original = sp.Mul(f, g, evaluate=False)
+        original_tex = rf&quot;\left({F}\right)\cdot\left({G}\right)&quot;
+    elif operacion == &quot;d&quot;:
+        if sp.simplify(g) == 0:
+            raise ValueError(&quot;La función del denominador no puede ser cero.&quot;)
+        original = sp.Mul(f, sp.Pow(g, -1, evaluate=False), evaluate=False)
+        original_tex = rf&quot;\frac{{{F}}}{{{G}}}&quot;
+    else:
+        exterior, interior = (f, g) if operacion == &quot;fg&quot; else (g, f)
+        original = sustituir(exterior, interior)
+        # Los paréntesis muestran exactamente qué se coloca dentro.
+        dentro = rf&quot;\left({sp.latex(interior)}\right)&quot;
+        original_tex = sp.latex(exterior, symbol_names={variable: dentro})
+
+    simplificada = sp.simplify(original)
+    simple_tex = sp.latex(simplificada)
+    cambia = sp.latex(original) != simple_tex
+
+    def etiqueta(argumento):
+        if operacion == &quot;fg&quot;:
+            return rf&quot;f\left(g\left({argumento}\right)\right)&quot;
+        if operacion == &quot;gf&quot;:
+            return rf&quot;g\left(f\left({argumento}\right)\right)&quot;
+        signo = {&quot;s&quot;: &quot;+&quot;, &quot;r&quot;: &quot;-&quot;, &quot;m&quot;: r&quot;\cdot&quot;, &quot;d&quot;: &quot;/&quot;}[operacion]
+        return rf&quot;\left(f{signo}g\right)\left({argumento}\right)&quot;
+
+    def ecuacion(izquierda, derecha):
+        print(r&quot;\[ &quot; + izquierda + &quot; = &quot; + derecha + r&quot; \]&quot;)
+
+    if evaluar is None:
+        print(&quot;Para las funciones&quot;)
+        ecuacion(&quot;f&quot;, F)
+        ecuacion(&quot;g&quot;, G)
+        print(f&quot;La operación {nombres[operacion]} es&quot;)
+        ecuacion(etiqueta(sp.latex(variable)), original_tex)
+        if cambia:
+            print(&quot;Simplificando&quot;)
+            ecuacion(etiqueta(sp.latex(variable)), simple_tex)
+    else:
+        numero = sp.sympify(evaluar, rational=True)
+        if not isinstance(numero, sp.Expr) or not numero.is_number or numero.is_finite is not True:
+            raise ValueError(&quot;El valor de evaluación debe ser un número finito.&quot;)
+
+        def comprobar(expresion, valor):
+            calculo = sustituir(expresion, valor).doit()
+            if calculo.has(sp.zoo, sp.nan, sp.oo, -sp.oo):
+                raise ValueError(&quot;La operación original no está definida en ese valor.&quot;)
+            return calculo
+
+        # Comprueba las entradas originales antes de evaluar la simplificada.
+        if operacion == &quot;fg&quot;:
+            comprobar(f, comprobar(g, numero))
+        elif operacion == &quot;gf&quot;:
+            comprobar(g, comprobar(f, numero))
+        else:
+            comprobar(f, numero)
+            valor_g = comprobar(g, numero)
+            if operacion == &quot;d&quot; and sp.simplify(valor_g) == 0:
+                raise ValueError(&quot;El denominador vale cero en ese número.&quot;)
+
+        resultado = sp.simplify(simplificada.subs(variable, numero))
+        print(&quot;Para la función&quot;)
+        ecuacion(etiqueta(sp.latex(variable)), simple_tex)
+        print(f&quot;Al evaluar ${sp.latex(variable)} = {sp.latex(numero)}$ obtenemos&quot;)
+        ecuacion(etiqueta(sp.latex(numero)), sp.latex(resultado))
+
+
+if __name__ == &quot;__main__&quot;:
+    of(&quot;p + 1&quot;, &quot;2*p&quot;, &quot;gf&quot;)
+    of(&quot;p + 1&quot;, &quot;2*p&quot;, &quot;fg&quot;, evaluar=sp.Rational(1, 2))
+</code></pre></div>
+    </section>
+    <a class="back-link" href="../index.html">← Volver al casillero de Daniel</a>
+  </div></main>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../index.html">Inicio</a></li><li><a href="../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../contacto/index.html">Contacto</a></li></ul></nav></div></footer>
+</body>
+</html>

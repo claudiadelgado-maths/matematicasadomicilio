@@ -13,14 +13,14 @@ La sesión usa estilos propios, `../recursos/comun.css` y la estructura global d
 
 ## Persistencia
 
-Las actividades almacenan respuestas y última área visitada en la clave local `newstudent-revision-v1`. No existe transmisión de respuestas ni sincronización entre dispositivos. Si falla el almacenamiento, la página permite seguir trabajando y comunica que debe mantenerse abierta.
+Las actividades almacenan respuestas y última área visitada en la clave local `daniel-revision-v1`. No existe transmisión de respuestas ni sincronización entre dispositivos. Si falla el almacenamiento, la página permite seguir trabajando y comunica que debe mantenerse abierta.
 
 ## Validación
 
 Desde la raíz:
 
 ```powershell
-node --test Casilleros/newstudent/revision/ejercicios/matematicas.test.mjs
+node --test Casilleros/daniel/revision/ejercicios/matematicas.test.mjs
 npm run catalogo
 npm run validar
 ```

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seno y coseno · Alejandrina | Matemáticas a Domicilio</title>
+  <meta name="description" content="Formulario y laboratorio de seno y coseno para Alejandrina: dominio, rango, amplitud, período y cinco puntos especiales con inicio y saltos.">
+  <link rel="icon" href="../../../recursos/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../recursos/css/base.css?v=20260902-global1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css?v=20261114-1">
+  <script src="../../../recursos/js/navegacion.js?v=20260902-global1" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/contrib/auto-render.min.js" crossorigin="anonymous" defer></script>
+  <script src="script.js?v=20261114-1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o cerrar menú" data-menu-toggle><span class="menu-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu><ul class="nav-list"><li><a href="../../../index.html">Inicio</a></li><li><a href="../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../contacto/index.html">Contacto</a></li></ul></nav></div></header>
+  <main id="contenido" class="trig-session">
+    <div class="container">
+      <nav class="crumbs" aria-label="Migas de pan"><a href="../index.html">Casillero de Alejandrina</a><span aria-hidden="true"> / </span><span>Seno y coseno</span></nav>
+      <header class="lesson-hero">
+        <div class="hero-copy"><p class="eyebrow">ALEJANDRINA · PREPARATORIA</p><h1>Un ciclo.<br><em>Cinco puntos.</em></h1><p>Descubre el ritmo del seno y del coseno con el método de <strong>inicio y saltos</strong>.</p><a class="hero-link" href="#laboratorio">Explorar en el laboratorio <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-art" aria-hidden="true"><svg viewBox="0 0 500 340" fill="none"><defs><pattern id="hero-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#fff" stroke-opacity=".08"/></pattern><linearGradient id="hero-glow" x2="0" y2="1"><stop stop-color="#d8c8ec" stop-opacity=".2"/><stop offset="1" stop-color="#d8c8ec" stop-opacity="0"/></linearGradient></defs><rect x="20" y="20" width="460" height="300" rx="24" fill="url(#hero-grid)"/><circle cx="250" cy="170" r="135" stroke="#d6c3e9" stroke-opacity=".18"/><circle cx="250" cy="170" r="96" stroke="#d6c3e9" stroke-opacity=".13"/><path d="M50 170C85 170 115 70 150 70S215 170 250 170 315 270 350 270 415 170 450 170V310H50Z" fill="url(#hero-glow)"/><path d="M30 170H470M50 70H450M50 270H450" stroke="#c7b5d8" stroke-opacity=".3" stroke-dasharray="4 7"/><path d="M50 170V300M150 70V300M250 170V300M350 270V300M450 170V300" stroke="#c7b5d8" stroke-opacity=".2"/><path d="M50 170C85 170 115 70 150 70S215 170 250 170 315 270 350 270 415 170 450 170" stroke="#f4d49d" stroke-width="4" stroke-linecap="round"/><g fill="#f4d49d" stroke="#302044" stroke-width="4"><circle cx="50" cy="170" r="8"/><circle cx="150" cy="70" r="8"/><circle cx="250" cy="170" r="8"/><circle cx="350" cy="270" r="8"/><circle cx="450" cy="170" r="8"/></g><path d="M423 39V59M413 49H433M75 257V273M67 265H83" stroke="#f4d49d" stroke-width="2"/><circle cx="394" cy="102" r="4" fill="#d994ad"/><circle cx="112" cy="217" r="3" fill="#9bbfa6"/></svg><span>EL MISMO PATRÓN, UNA Y OTRA VEZ</span></div>
+      </header>
+      <nav class="lesson-nav" aria-label="Partes de la sesión"><a href="#formulario"><span>01</span> Formulario de consulta</a><a href="#laboratorio"><span>02</span> Laboratorio interactivo</a><span class="unit-tag">Siempre en radianes</span></nav>
+      <noscript><p class="notice">Puedes consultar el formulario. Activa JavaScript para representar las fórmulas y utilizar el laboratorio.</p></noscript>
+      <p id="math-notice" class="notice" hidden>El servicio de LaTeX no está disponible. Las expresiones se muestran como código LaTeX; recarga con conexión para verlas renderizadas.</p>
+
+      <section id="formulario" class="lesson-section">
+        <div class="section-heading"><span class="section-number">01</span><div><p class="eyebrow">TENLO A MANO</p><h2>Tu formulario de consulta</h2></div></div>
+        <div class="formula-pair"><div>\(f(x)=A\sin(Bx+C)+K\)</div><div>\(f(x)=A\cos(Bx+C)+K\)</div></div>
+        <p class="section-intro">Estas reglas describen una onda cuando \(A\ne0\) y \(B\ne0\). Todas las medidas angulares de esta sesión están en <strong>radianes</strong>.</p>
+        <div class="reference-grid">
+          <article class="reference-card"><span class="small-label">ENTRADAS</span><h3>Dominio</h3><p class="math-line">\(D=\mathbb R=(-\infty,\infty)\)</p><p>Puedes sustituir cualquier número real.</p></article>
+          <article class="reference-card"><span class="small-label">ALTURAS</span><h3>Rango</h3><p class="math-line">\(R=[K-|A|,\ K+|A|]\)</p><p>Los extremos se incluyen: la curva <strong>sí alcanza</strong> el mínimo y el máximo.</p></article>
+          <article class="reference-card"><span class="small-label">DISTANCIA VERTICAL</span><h3>Amplitud</h3><p class="math-line">\(a=|A|\)</p><p>Distancia de la línea media al máximo o al mínimo. Siempre es positiva.</p></article>
+          <article class="reference-card"><span class="small-label">UN CICLO COMPLETO</span><h3>Período</h3><p class="math-line">\(T=\frac{2\pi}{|B|}\)</p><p>Longitud horizontal del patrón que se repite.</p></article>
+        </div>
+        <aside class="midline-note"><span class="note-symbol" aria-hidden="true">↔</span><div><h3>El medio tiene su propia altura</h3><p>La línea media es \(y=K\). “Punto del medio” significa que su altura es \(K\), <strong>no necesariamente cero</strong>.</p></div></aside>
+
+        <h3 class="subheading">De la fórmula a cinco puntos</h3>
+        <div class="method-steps">
+          <article><span class="step-number">1</span><h4>Encuentra el inicio</h4><p>Haz cero el argumento y despeja:</p><p>\(Bx+C=0\)</p><p class="math-line">\(x_0=-\frac{C}{B}\)</p></article>
+          <article><span class="step-number">2</span><h4>Calcula el salto</h4><p>Divide el período entre cuatro:</p><p class="math-line">\(s=\frac{T}{4}=\frac{\pi}{2|B|}\)</p><p>El salto es positivo: avanzamos de izquierda a derecha.</p></article>
+          <article><span class="step-number">3</span><h4>Da cuatro saltos</h4><p>El inicio más cuatro saltos da cinco puntos:</p><p class="math-line">\(x=x_0+zs\)</p><p>\(z=0,1,2,3,4\)</p></article>
+        </div>
+        <div class="pattern-box"><h3>Elige las alturas de izquierda a derecha</h3><p>Medio: \(K\) · Máximo: \(K+|A|\) · Mínimo: \(K-|A|\).</p><div class="table-scroll" tabindex="0" role="region" aria-label="Patrones de los cinco puntos"><table class="pattern-table"><thead><tr><th scope="col">Caso</th><th scope="col">Alturas de los cinco puntos</th></tr></thead><tbody>
+          <tr><th scope="row">Seno, si \(AB&gt;0\)</th><td>Medio → máximo → medio → mínimo → medio</td></tr>
+          <tr><th scope="row">Seno, si \(AB&lt;0\)</th><td>Medio → mínimo → medio → máximo → medio</td></tr>
+          <tr><th scope="row">Coseno, si \(A&gt;0\)</th><td>Máximo → medio → mínimo → medio → máximo</td></tr>
+          <tr><th scope="row">Coseno, si \(A&lt;0\)</th><td>Mínimo → medio → máximo → medio → mínimo</td></tr>
+        </tbody></table></div><p class="pattern-key"><strong>El seno empieza en la línea media; el coseno, en un extremo.</strong> Une los cinco puntos con una curva suave y repite ese patrón hacia ambos lados.</p></div>
+        <details class="worked-example"><summary>Ver un ejemplo completo: \(f(x)=2\sin(2x-\pi)+1\)</summary><div class="example-body"><p>\(A=2,\ B=2,\ C=-\pi,\ K=1\). Dominio: \(\mathbb R\); rango: \([-1,3]\); amplitud: \(2\); línea media: \(y=1\).</p><div class="example-calculations"><p>Inicio: \(2x-\pi=0\Rightarrow x_0=\frac\pi2\).</p><p>Período: \(T=\frac{2\pi}{2}=\pi\).</p><p>Salto: \(s=\frac\pi4\).</p></div><p>Como \(AB=4&gt;0\), las alturas son medio, máximo, medio, mínimo, medio:</p><p class="math-line">\(\left(\frac\pi2,1\right),\ \left(\frac{3\pi}4,3\right),\ (\pi,1),\ \left(\frac{5\pi}4,-1\right),\ \left(\frac{3\pi}2,1\right)\)</p><button type="button" class="text-button" data-preset="example">Abrir este ejemplo en el laboratorio →</button></div></details>
+      </section>
+
+      <section id="laboratorio" class="lesson-section lab-section">
+        <div class="section-heading"><span class="section-number">02</span><div><p class="eyebrow">CAMBIA, OBSERVA, COMPRENDE</p><h2>Laboratorio de ondas</h2></div></div>
+        <p class="section-intro">Elige una función y modifica sus parámetros. Antes de cambiar algo, intenta anticipar qué ocurrirá con su curva.</p>
+        <form id="parameters" class="controls" aria-label="Parámetros de la función">
+          <div class="parameter-grid"><label class="function-control" for="function-kind">Función<select id="function-kind" name="kind"><option value="sin">Seno</option><option value="cos">Coseno</option></select></label>
+          <label for="param-a">\(A\)<input id="param-a" aria-label="A, escala vertical" name="A" type="text" value="1" maxlength="40" autocomplete="off" spellcheck="false" aria-describedby="input-help input-error"><span>Escala vertical</span></label>
+          <label for="param-b">\(B\)<input id="param-b" aria-label="B, ritmo del ciclo" name="B" type="text" value="1" maxlength="40" autocomplete="off" spellcheck="false" aria-describedby="input-help input-error"><span>Ritmo del ciclo</span></label>
+          <label for="param-c">\(C\)<input id="param-c" aria-label="C, ajuste del inicio" name="C" type="text" value="0" maxlength="40" autocomplete="off" spellcheck="false" aria-describedby="input-help input-error"><span>Ajuste del inicio</span></label>
+          <label for="param-k">\(K\)<input id="param-k" aria-label="K, altura media" name="K" type="text" value="0" maxlength="40" autocomplete="off" spellcheck="false" aria-describedby="input-help input-error"><span>Altura media</span></label></div>
+          <p id="input-help" class="input-help">Admite decimales y fracciones, como <code>-2</code> o <code>1/2</code>. En \(C\) también puedes escribir <code>pi</code>, <code>-pi/2</code> o <code>3pi/4</code>. Usa valores entre −1 000 000 y 1 000 000; el menor valor no nulo admitido es 0.000001.</p>
+          <div class="preset-row"><span>Prueba:</span><button type="button" data-preset="basic">Seno básico</button><button type="button" data-preset="example">Onda desplazada</button><button type="button" data-preset="negative">Seno con B negativo</button><button type="button" data-preset="cosine">Coseno invertido</button></div>
+        </form>
+        <p id="input-error" class="notice error-notice" role="status" hidden></p>
+        <p id="lab-status" class="sr-only" role="status"></p>
+        <div id="lab-results" hidden>
+          <div class="live-formula"><span class="small-label">TU FUNCIÓN · RADIANES</span><div id="current-formula" class="math-line"></div></div>
+          <div id="constant-notice" class="notice" hidden></div>
+          <dl class="result-grid"><div><dt>Dominio</dt><dd id="domain"></dd></div><div><dt>Rango</dt><dd id="range"></dd></div><div><dt>Amplitud</dt><dd id="amplitude"></dd></div><div><dt>Período</dt><dd id="period"></dd></div><div><dt id="midline-label">Línea media</dt><dd id="midline"></dd></div></dl>
+          <div id="cycle-method" class="live-method"><div><span>1 · INICIO</span><p id="start-equation"></p><p id="start"></p></div><div><span>2 · SALTO</span><p id="jump-equation"></p><p id="jump"></p></div><div><span>3 · CINCO POSICIONES</span><p id="positions"></p><p>\(z=0,1,2,3,4\)</p></div></div>
+          <figure class="graph-card"><div class="graph-heading"><h3 id="graph-heading">Un ciclo, paso a paso</h3><span id="cycle-legend"><i aria-hidden="true"></i> Ciclo destacado</span></div><p class="graph-help">Las referencias de altura están a la izquierda. La curva continúa hacia ambos lados. En pantallas pequeñas, desliza la gráfica para verla completa.</p><div class="graph-scroll" tabindex="0" role="region" aria-label="Gráfica de la función; desplazable horizontalmente"><div class="graph-stage"><svg id="wave-graph" viewBox="0 0 960 360" role="img" aria-labelledby="graph-title graph-description"><title id="graph-title">Gráfica de la función</title><desc id="graph-description"></desc><g id="graph-drawing"></g></svg><div id="height-labels"></div><div id="x-labels"></div></div></div><figcaption id="graph-caption"></figcaption></figure>
+          <div id="five-points" class="points-card"><div class="points-heading"><h3>Tus cinco puntos especiales</h3><p id="pattern-description"></p></div><div class="table-scroll" tabindex="0" role="region" aria-label="Coordenadas exactas de los cinco puntos"><table class="points-table"><thead><tr><th scope="col">Salto \(z\)</th><th scope="col">Posición \(x=x_0+zs\)</th><th scope="col">Punto \((x,y)\)</th><th scope="col">Altura</th></tr></thead><tbody id="point-rows"></tbody></table></div></div>
+        </div>
+        <aside class="explore-note"><h3>Una pequeña exploración</h3><p>Comienza con “Seno básico”. Cambia solo \(K\) a \(2\): ¿dónde queda el medio? Después cambia \(B\) a \(-1\): ¿hacia qué extremo va primero? Comprueba tus ideas en la tabla y en la gráfica.</p></aside>
+      </section>
+      <a class="back-link" href="../index.html">← Volver al casillero de Alejandrina</a>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="../../../index.html" aria-label="Matemáticas a Domicilio, inicio"><img src="../../../recursos/svg/logo-estrella.svg" width="204" height="48" alt=""></a><p>Asesorías particulares de matemáticas</p></div><nav aria-label="Navegación del pie de página"><ul class="footer-nav"><li><a href="../../../index.html">Inicio</a></li><li><a href="../../../nosotros/index.html">Nosotros</a></li><li><a href="../../../biblioteca/index.html">Biblioteca</a></li><li><a href="../../../contacto/index.html">Contacto</a></li></ul></nav></div><div class="container footer-legal"><p>© 2026 Matemáticas a Domicilio</p><p><a href="../../../legal/aviso-de-privacidad/index.html">Aviso de Privacidad</a> · <a href="../../../legal/terminos-y-condiciones/index.html">Términos y Condiciones</a></p><p>Mérida, Yucatán, México</p></div></footer>
+</body>
+</html>

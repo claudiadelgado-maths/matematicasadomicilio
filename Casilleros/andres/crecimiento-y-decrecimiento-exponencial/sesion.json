@@ -1,0 +1,35 @@
+{
+  "id": "crecimiento-y-decrecimiento-exponencial-andres",
+  "slug": "crecimiento-y-decrecimiento-exponencial",
+  "tipo": "sesion",
+  "usuario": "andres",
+  "titulo": "Crecimiento y decrecimiento exponencial",
+  "descripcion": "Del interés compuesto al cambio exponencial: factores de crecimiento y disminución, gráfica, tabla, recuperación del inicio y diez retos guiados.",
+  "objetivo": "Modelar cambios porcentuales repetidos mediante Q_n=Q_0 b^n, interpretar crecimiento y decrecimiento, calcular el cambio acumulado y recuperar la cantidad inicial.",
+  "conocimientosPrevios": [
+    "Porcentajes y factores multiplicativos",
+    "Interés simple y compuesto",
+    "Potencias y despejes sencillos"
+  ],
+  "fecha": "2026-11-15",
+  "estado": "publicado",
+  "ruta": "/Casilleros/andres/crecimiento-y-decrecimiento-exponencial/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  },
+  "contenidoIntegrado": [
+    "Explicación y tres ejemplos resueltos",
+    "Laboratorio de cambio exponencial",
+    "Práctica de diez retos con pistas y procedimientos"
+  ],
+  "almacenamientoLocal": false,
+  "representacionMatematica": {
+    "formato": "LaTeX",
+    "motor": "KaTeX 0.18.1",
+    "origen": "jsDelivr"
+  }
+}

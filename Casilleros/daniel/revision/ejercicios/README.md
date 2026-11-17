@@ -1,6 +1,6 @@
 # Actividades de Revisión
 
-Ruta: `/Casilleros/newstudent/revision/ejercicios/`. Componente de la sesión `newstudent-revision`, propiedad de `newstudent`. Contiene exactamente las actividades solicitadas, sin explicaciones ni soluciones en la interfaz.
+Ruta: `/Casilleros/daniel/revision/ejercicios/`. Componente de la sesión `daniel-revision`, propiedad de `daniel`. Contiene exactamente las actividades solicitadas, sin explicaciones ni soluciones en la interfaz.
 
 ## Contenido y resultados de referencia para mantenimiento
 
@@ -43,10 +43,10 @@ Son 6 ejercicios de aritmética, 5 de álgebra y 7 de geometría; las operacione
 
 `script.mjs` controla las tres áreas, foco al navegar, comprobación individual, resumen y persistencia. Cada comprobación solo indica correcta/incorrecta; área y perímetro tienen veredictos separados. Editar una respuesta retira su veredicto anterior. Finalizar también permite respuestas pendientes, que no cuentan como correctas.
 
-Clave `localStorage`: `newstudent-revision-v1`, objeto `{ version: 1, area, answers }`. Guarda solo respuestas y área, no datos personales ni resultados enviados. Tolera JSON corrupto o almacenamiento bloqueado. Recargar restaura los valores; las comprobaciones se recalculan al solicitarlas.
+Clave `localStorage`: `daniel-revision-v1`, objeto `{ version: 1, area, answers }`. Guarda solo respuestas y área, no datos personales ni resultados enviados. Tolera JSON corrupto o almacenamiento bloqueado. Recargar restaura los valores; las comprobaciones se recalculan al solicitarlas.
 
 Depende de `../../recursos/comun.css`, base/navegación/identidad de la raíz y archivos propios. MathML y SVG no requieren red ni librerías. El encabezado, pie y botones flotantes se mantienen mediante los recursos existentes.
 
 ## Pruebas
 
-`node --test Casilleros/newstudent/revision/ejercicios/matematicas.test.mjs` cubre resultados, fracciones no reducidas, raíces invertidas, álgebra equivalente, restricciones de dominio, ecuaciones de recta, redondeo, entradas vacías/malformadas y expresiones incorrectas. Además ejecutar `npm run catalogo` y `npm run validar` y revisar el recorrido por HTTP en móvil/escritorio, teclado, consola y enlaces.
+`node --test Casilleros/daniel/revision/ejercicios/matematicas.test.mjs` cubre resultados, fracciones no reducidas, raíces invertidas, álgebra equivalente, restricciones de dominio, ecuaciones de recta, redondeo, entradas vacías/malformadas y expresiones incorrectas. Además ejecutar `npm run catalogo` y `npm run validar` y revisar el recorrido por HTTP en móvil/escritorio, teclado, consola y enlaces.

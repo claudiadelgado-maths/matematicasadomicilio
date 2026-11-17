@@ -1,7 +1,7 @@
 {
   "esquema": 1,
   "generadoDesde": "metadatos locales",
-  "total": 309,
+  "total": 312,
   "tipos": {
     "examen": [
       {
@@ -770,6 +770,26 @@
         "archivoMetadatos": "Casilleros/andres/porcentajes/ejercicios/practica-de-porcentajes/ejercicio.json"
       },
       {
+        "id": "daniel-revision-ejercicios",
+        "tipo": "ejercicio",
+        "sesion": "daniel-revision",
+        "titulo": "Actividades de Revisión",
+        "descripcion": "18 ejercicios independientes de diagnóstico, con 25 campos de respuesta y comprobación matemática.",
+        "estado": "publicado",
+        "ruta": "/Casilleros/daniel/revision/ejercicios/",
+        "interactivo": true,
+        "areas": [
+          "Aritmética",
+          "Álgebra",
+          "Geometría"
+        ],
+        "almacenamientoLocal": {
+          "clave": "daniel-revision-v1",
+          "contenido": "Respuestas y última actividad visitada. No se envían datos."
+        },
+        "archivoMetadatos": "Casilleros/daniel/revision/ejercicios/ejercicio.json"
+      },
+      {
         "id": "bosque-elyan-tres-cifras",
         "tipo": "ejercicio",
         "sesion": "bosque-restas-elyan",
@@ -1031,26 +1051,6 @@
         "estado": "publicado",
         "ruta": "/Casilleros/kenisa/teorema-de-pitagoras/ejercicios/lado-faltante/",
         "archivoMetadatos": "Casilleros/kenisa/teorema-de-pitagoras/ejercicios/lado-faltante/ejercicio.json"
-      },
-      {
-        "id": "newstudent-revision-ejercicios",
-        "tipo": "ejercicio",
-        "sesion": "newstudent-revision",
-        "titulo": "Actividades de Revisión",
-        "descripcion": "18 ejercicios independientes de diagnóstico, con 25 campos de respuesta y comprobación matemática.",
-        "estado": "publicado",
-        "ruta": "/Casilleros/newstudent/revision/ejercicios/",
-        "interactivo": true,
-        "areas": [
-          "Aritmética",
-          "Álgebra",
-          "Geometría"
-        ],
-        "almacenamientoLocal": {
-          "clave": "newstudent-revision-v1",
-          "contenido": "Respuestas y última actividad visitada. No se envían datos."
-        },
-        "archivoMetadatos": "Casilleros/newstudent/revision/ejercicios/ejercicio.json"
       },
       {
         "id": "raul-erik-electricidad-parte-2-conexiones",
@@ -2666,6 +2666,23 @@
         "archivoMetadatos": "Casilleros/andres/usuario.json"
       },
       {
+        "id": "daniel",
+        "slug": "daniel",
+        "tipo": "usuario",
+        "titulo": "El casillero de Daniel",
+        "nombreVisible": "Daniel",
+        "descripcion": "Matemáticas para un estudiante de Geografía, con la mirada puesta en la climatología.",
+        "estado": "activo",
+        "ruta": "/Casilleros/daniel/",
+        "personalizacion": {
+          "simbolo": "D",
+          "acento": "#164e63",
+          "fondo": "#e9f2f3"
+        },
+        "almacenamientoLocal": true,
+        "archivoMetadatos": "Casilleros/daniel/usuario.json"
+      },
+      {
         "id": "elyan-claudia",
         "slug": "elyan",
         "tipo": "usuario",
@@ -2868,23 +2885,6 @@
         },
         "almacenamientoLocal": false,
         "archivoMetadatos": "Casilleros/milndred/usuario.json"
-      },
-      {
-        "id": "newstudent",
-        "slug": "newstudent",
-        "tipo": "usuario",
-        "titulo": "El casillero de Daniel",
-        "nombreVisible": "Daniel",
-        "descripcion": "Matemáticas para un estudiante de Geografía, con la mirada puesta en la climatología.",
-        "estado": "activo",
-        "ruta": "/Casilleros/newstudent/",
-        "personalizacion": {
-          "simbolo": "D",
-          "acento": "#164e63",
-          "fondo": "#e9f2f3"
-        },
-        "almacenamientoLocal": true,
-        "archivoMetadatos": "Casilleros/newstudent/usuario.json"
       },
       {
         "id": "pamela-cortes",
@@ -3178,6 +3178,42 @@
         "archivoMetadatos": "Casilleros/alejandrina/multiplicacion-de-binomios/sesion.json"
       },
       {
+        "id": "seno-y-coseno-alejandrina",
+        "slug": "seno-y-coseno",
+        "tipo": "sesion",
+        "usuario": "alejandrina",
+        "titulo": "Seno y coseno: cinco puntos especiales",
+        "descripcion": "Formulario y laboratorio interactivo: dominio, rango, amplitud, período y cinco puntos con el método de inicio y saltos.",
+        "objetivo": "Reconocer las propiedades de las funciones seno y coseno y trazar un ciclo a partir del inicio y cuatro saltos, trabajando en radianes.",
+        "conocimientosPrevios": [
+          "Radianes y el número pi",
+          "Sustitución algebraica",
+          "Coordenadas cartesianas y valor absoluto"
+        ],
+        "fecha": "2026-11-14",
+        "estado": "publicado",
+        "ruta": "/Casilleros/alejandrina/seno-y-coseno/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "contenidoIntegrado": [
+          "Formulario de consulta",
+          "Laboratorio interactivo de seno y coseno"
+        ],
+        "almacenamientoLocal": false,
+        "representacionMatematica": {
+          "formato": "LaTeX",
+          "motor": "KaTeX 0.18.1",
+          "origen": "jsDelivr",
+          "contenido": "Formulario, fórmulas dinámicas, propiedades, cinco coordenadas y referencias de la gráfica"
+        },
+        "archivoMetadatos": "Casilleros/alejandrina/seno-y-coseno/sesion.json"
+      },
+      {
         "id": "series-geometricas-alejandrina",
         "slug": "series-geometricas",
         "tipo": "sesion",
@@ -3275,6 +3311,42 @@
         "archivoMetadatos": "Casilleros/alex/graficas-de-barras-en-ventas/sesion.json"
       },
       {
+        "id": "crecimiento-y-decrecimiento-exponencial-andres",
+        "slug": "crecimiento-y-decrecimiento-exponencial",
+        "tipo": "sesion",
+        "usuario": "andres",
+        "titulo": "Crecimiento y decrecimiento exponencial",
+        "descripcion": "Del interés compuesto al cambio exponencial: factores de crecimiento y disminución, gráfica, tabla, recuperación del inicio y diez retos guiados.",
+        "objetivo": "Modelar cambios porcentuales repetidos mediante Q_n=Q_0 b^n, interpretar crecimiento y decrecimiento, calcular el cambio acumulado y recuperar la cantidad inicial.",
+        "conocimientosPrevios": [
+          "Porcentajes y factores multiplicativos",
+          "Interés simple y compuesto",
+          "Potencias y despejes sencillos"
+        ],
+        "fecha": "2026-11-15",
+        "estado": "publicado",
+        "ruta": "/Casilleros/andres/crecimiento-y-decrecimiento-exponencial/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "contenidoIntegrado": [
+          "Explicación y tres ejemplos resueltos",
+          "Laboratorio de cambio exponencial",
+          "Práctica de diez retos con pistas y procedimientos"
+        ],
+        "almacenamientoLocal": false,
+        "representacionMatematica": {
+          "formato": "LaTeX",
+          "motor": "KaTeX 0.18.1",
+          "origen": "jsDelivr"
+        },
+        "archivoMetadatos": "Casilleros/andres/crecimiento-y-decrecimiento-exponencial/sesion.json"
+      },
+      {
         "id": "interes-simple-y-compuesto-andres",
         "slug": "interes-simple-y-compuesto",
         "tipo": "sesion",
@@ -3347,6 +3419,103 @@
           "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/andres/teorema-de-tales/sesion.json"
+      },
+      {
+        "id": "daniel-funciones",
+        "slug": "funciones",
+        "tipo": "sesion",
+        "usuario": "daniel",
+        "titulo": "Funciones: tipos, dominio y evaluación",
+        "descripcion": "Reconoce funciones, encuentra su dominio y explora cómo una entrada se convierte en un punto de la gráfica.",
+        "objetivo": "Clasificar funciones, determinar su dominio real y evaluar entradas numéricas y algebraicas.",
+        "conocimientosPrevios": [
+          "Operaciones con números reales",
+          "Potencias y expresiones algebraicas"
+        ],
+        "fecha": "2026-11-10",
+        "estado": "publicado",
+        "ruta": "/Casilleros/daniel/funciones/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "contenidoIntegrado": [
+          "Tipos de funciones",
+          "Dominio de funciones",
+          "Evaluación de funciones"
+        ],
+        "almacenamientoLocal": false,
+        "representacionMatematica": {
+          "formato": "LaTeX",
+          "motor": "KaTeX 0.18.1",
+          "origen": "jsDelivr",
+          "contenido": "Expresiones estáticas, preguntas, opciones, retroalimentación y valores de la gráfica"
+        },
+        "archivoMetadatos": "Casilleros/daniel/funciones/sesion.json"
+      },
+      {
+        "id": "operaciones-y-composicion-de-funciones-daniel",
+        "slug": "operaciones-y-composicion-de-funciones",
+        "tipo": "sesion",
+        "usuario": "daniel",
+        "titulo": "Operaciones y composición de funciones",
+        "descripcion": "Un mismo par de funciones para sumar, restar, multiplicar, dividir y componer en ambos órdenes; ejemplos sencillos y código SymPy que imprime LaTeX listo para copiar.",
+        "objetivo": "Distinguir operaciones y composición, reconocer la función interior, simplificar expresiones sencillas y obtener operaciones o evaluaciones exactas en LaTeX con SymPy.",
+        "conocimientosPrevios": [
+          "Tipos, dominio y evaluación de funciones",
+          "Sustitución y operaciones algebraicas básicas"
+        ],
+        "fecha": "2026-11-17",
+        "estado": "publicado",
+        "ruta": "/Casilleros/daniel/operaciones-y-composicion-de-funciones/",
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": false,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "contenidoIntegrado": [
+          "Operaciones en ambos órdenes",
+          "Composición guiada e interactiva",
+          "Código Python con SymPy y salida LaTeX literal"
+        ],
+        "almacenamientoLocal": false,
+        "representacionMatematica": {
+          "formato": "LaTeX",
+          "motor": "KaTeX 0.18.1",
+          "origen": "jsDelivr"
+        },
+        "archivoMetadatos": "Casilleros/daniel/operaciones-y-composicion-de-funciones/sesion.json"
+      },
+      {
+        "id": "daniel-revision",
+        "slug": "revision",
+        "tipo": "sesion",
+        "usuario": "daniel",
+        "titulo": "Revisión",
+        "descripcion": "Diagnóstico de conocimientos matemáticos en aritmética, álgebra y geometría.",
+        "objetivo": "Identificar las bases que domina el alumno y las dificultades iniciales en aritmética, álgebra y geometría.",
+        "conocimientosPrevios": [],
+        "fecha": "2026-11-04",
+        "estado": "publicado",
+        "ruta": "/Casilleros/daniel/revision/",
+        "duracionMinutos": 150,
+        "componentes": {
+          "explicacion": false,
+          "demostraciones": false,
+          "ejercicios": true,
+          "juegos": false,
+          "calculadoras": false
+        },
+        "almacenamientoLocal": {
+          "clave": "daniel-revision-v1",
+          "contenido": "Respuestas y última actividad visitada, únicamente en el navegador."
+        },
+        "archivoMetadatos": "Casilleros/daniel/revision/sesion.json"
       },
       {
         "id": "bosque-restas-elyan",
@@ -4225,68 +4394,6 @@
           "calculadoras": false
         },
         "archivoMetadatos": "Casilleros/milndred/teoria-de-exponentes/sesion.json"
-      },
-      {
-        "id": "daniel-funciones",
-        "slug": "funciones",
-        "tipo": "sesion",
-        "usuario": "newstudent",
-        "titulo": "Funciones: tipos, dominio y evaluación",
-        "descripcion": "Reconoce funciones, encuentra su dominio y explora cómo una entrada se convierte en un punto de la gráfica.",
-        "objetivo": "Clasificar funciones, determinar su dominio real y evaluar entradas numéricas y algebraicas.",
-        "conocimientosPrevios": [
-          "Operaciones con números reales",
-          "Potencias y expresiones algebraicas"
-        ],
-        "fecha": "2026-11-10",
-        "estado": "publicado",
-        "ruta": "/Casilleros/newstudent/funciones/",
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": false,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "contenidoIntegrado": [
-          "Tipos de funciones",
-          "Dominio de funciones",
-          "Evaluación de funciones"
-        ],
-        "almacenamientoLocal": false,
-        "representacionMatematica": {
-          "formato": "LaTeX",
-          "motor": "KaTeX 0.18.1",
-          "origen": "jsDelivr",
-          "contenido": "Expresiones estáticas, preguntas, opciones, retroalimentación y valores de la gráfica"
-        },
-        "archivoMetadatos": "Casilleros/newstudent/funciones/sesion.json"
-      },
-      {
-        "id": "newstudent-revision",
-        "slug": "revision",
-        "tipo": "sesion",
-        "usuario": "newstudent",
-        "titulo": "Revisión",
-        "descripcion": "Diagnóstico de conocimientos matemáticos en aritmética, álgebra y geometría.",
-        "objetivo": "Identificar las bases que domina el alumno y las dificultades iniciales en aritmética, álgebra y geometría.",
-        "conocimientosPrevios": [],
-        "fecha": "2026-11-04",
-        "estado": "publicado",
-        "ruta": "/Casilleros/newstudent/revision/",
-        "duracionMinutos": 150,
-        "componentes": {
-          "explicacion": false,
-          "demostraciones": false,
-          "ejercicios": true,
-          "juegos": false,
-          "calculadoras": false
-        },
-        "almacenamientoLocal": {
-          "clave": "newstudent-revision-v1",
-          "contenido": "Respuestas y última actividad visitada, únicamente en el navegador."
-        },
-        "archivoMetadatos": "Casilleros/newstudent/revision/sesion.json"
       },
       {
         "id": "teorema-pitagoras-pamela",

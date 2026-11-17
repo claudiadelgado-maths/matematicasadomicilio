@@ -1,5 +1,5 @@
 @import url('recursos/comun.css?v=20261104-1');
-@import url('recursos/identidad.css?v=20261110-2');
+@import url('recursos/identidad.css?v=20261117-daniel-banner1');
 .student-site .student-hero { padding-block: 1rem 2.5rem; }
 .student-site h1 { margin: 0; font-size: clamp(2.7rem, 8vw, 6rem); overflow-wrap: anywhere; }
 .student-site .student-hero p:last-child { font-size: 1.15rem; color: var(--color-muted); margin-bottom: 0; }

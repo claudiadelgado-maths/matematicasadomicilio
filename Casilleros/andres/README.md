@@ -6,14 +6,16 @@ El índice carga automáticamente las sesiones publicadas desde `recursos/datos/
 
 ## Contenido actual
 
-- `interes-simple-y-compuesto/`: introducción breve con fórmulas, comparación anual y dos ejercicios con respuestas desplegables. Diseño y recursos independientes.
+- crecimiento-y-decrecimiento-exponencial/: continuación de interés compuesto. Modelos de aumento y disminución, tres ejemplos resueltos, laboratorio con gráfica y tabla, recuperación de la cantidad inicial y diez retos con LaTeX.
+
+- `interes-simple-y-compuesto/`: fórmulas, comparación anual, dos ejercicios desplegables, simulador con gráfica y tabla, y retos autocorregibles. Diseño y recursos independientes.
 
 - `porcentajes/`: sesión publicada sobre razonamiento porcentual aplicado a datos, descuentos, aumentos e IVA; incluye teoría, ejercicios, calculadoras y juego final.
 - `teorema-de-tales/`: sesión publicada con explicación visual, laboratorio de paralelas, ejemplo guiado y juego interactivo. Su contrato está en el README de la sesión.
 
 ## Estado de la sesión
 
-La explicación, los ejercicios, las calculadoras y el juego de Porcentajes se encuentran en estado `publicado`. Teorema de Tales está publicado con sus actividades integradas en la página de la sesión.
+La explicación, los ejercicios, las calculadoras y el juego de Porcentajes se encuentran en estado `publicado`. Teorema de Tales, Interés simple y compuesto y Crecimiento y decrecimiento exponencial están publicados con sus actividades integradas en sus respectivas páginas de sesión.
 
 ## Para una IA
 

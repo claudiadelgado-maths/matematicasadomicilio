@@ -1,11 +1,11 @@
 {
-  "id": "newstudent-revision-ejercicios",
+  "id": "daniel-revision-ejercicios",
   "tipo": "ejercicio",
-  "sesion": "newstudent-revision",
+  "sesion": "daniel-revision",
   "titulo": "Actividades de Revisión",
   "descripcion": "18 ejercicios independientes de diagnóstico, con 25 campos de respuesta y comprobación matemática.",
   "estado": "publicado",
-  "ruta": "/Casilleros/newstudent/revision/ejercicios/",
+  "ruta": "/Casilleros/daniel/revision/ejercicios/",
   "interactivo": true,
   "areas": [
     "Aritmética",
@@ -13,7 +13,7 @@
     "Geometría"
   ],
   "almacenamientoLocal": {
-    "clave": "newstudent-revision-v1",
+    "clave": "daniel-revision-v1",
     "contenido": "Respuestas y última actividad visitada. No se envían datos."
   }
 }

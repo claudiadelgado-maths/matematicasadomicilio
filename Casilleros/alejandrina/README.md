@@ -8,6 +8,8 @@ El índice carga automáticamente las sesiones publicadas desde `recursos/datos/
 
 ## Contenido actual
 
+- `seno-y-coseno/`: formulario breve y laboratorio de preparatoria con LaTeX. Dominio, rango, amplitud, período, línea media y cinco puntos por inicio y saltos; parámetros editables, coordenadas exactas, gráfica de un ciclo y tratamiento de funciones constantes.
+
 - `traslados-y-asintotas/`: cuatro actividades con teoría, laboratorios gráficos y 285 ejercicios en total. Traslados exponenciales/logarítmicos, los tres casos horizontales, verticales con denominadores cuadráticos y práctica de ambas. Rondas de ocho, pistas, procedimientos, huecos y revisión final; MathML nativo y sin almacenamiento.
 
 - `despejes-exponenciales-y-logaritmicos/`: práctica de siete tipos con 35 ecuaciones ordenadas y desafío de 14 ecuaciones distintas mezcladas. Respuestas numéricas con punto/coma y dos decimales, reintentos, dominio validado, MathML nativo y procedimientos a petición. Sin teoría, dependencias nuevas ni almacenamiento.

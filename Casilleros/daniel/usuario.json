@@ -1,12 +1,12 @@
 {
-  "id": "newstudent",
-  "slug": "newstudent",
+  "id": "daniel",
+  "slug": "daniel",
   "tipo": "usuario",
   "titulo": "El casillero de Daniel",
   "nombreVisible": "Daniel",
   "descripcion": "Matemáticas para un estudiante de Geografía, con la mirada puesta en la climatología.",
   "estado": "activo",
-  "ruta": "/Casilleros/newstudent/",
+  "ruta": "/Casilleros/daniel/",
   "personalizacion": {
     "simbolo": "D",
     "acento": "#164e63",

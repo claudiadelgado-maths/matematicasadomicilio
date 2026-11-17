@@ -1,0 +1,172 @@
+/* La utilidad [hidden] conserva los estados ocultos del laboratorio ante cualquier regla de layout. */
+.trig-session{--plum:#422c57;--muted:#6f6677;--green:#226749;--paper:#fbf8f2;--line:#e5dfe9;background:var(--paper);color:#302b36;padding:1.3rem 0 4rem;line-height:1.65}
+.trig-session *, .trig-session *::before,.trig-session *::after{box-sizing:border-box}
+.trig-session [hidden]{display:none!important}
+.trig-session .container{max-width:1180px}
+.trig-session a{color:var(--plum)}
+.trig-session .crumbs{display:flex;flex-wrap:wrap;gap:.6rem;font-size:.84rem;margin:0 0 1.3rem;color:var(--muted)}
+.trig-session .lesson-hero{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:3.4rem 3.8rem;background:#302044;border-radius:26px;color:#faf1de;overflow:hidden}
+.trig-session .hero-copy{position:relative;z-index:1}
+.trig-session .eyebrow{font-size:.7rem;font-weight:800;letter-spacing:.17em;margin:0 0 .7rem}
+.trig-session .lesson-hero .eyebrow{color:#dac8e9}
+.trig-session .lesson-hero h1{font:400 clamp(2.7rem,5.4vw,4.6rem)/1.08 Georgia,serif;letter-spacing:-.035em;margin:.7rem 0 1.3rem;color:inherit}
+.trig-session .lesson-hero h1 em{font-weight:400;color:#f4d49d}
+.trig-session .hero-copy>p:not(.eyebrow){max-width:390px;color:#e4dbea;font-size:1.04rem}
+.trig-session .lesson-hero .hero-link{display:inline-flex;gap:1.4rem;align-items:center;color:#faf1de;border-bottom:1px solid #9b84ad;padding:.65rem 0;text-decoration:none;font-weight:650;font-size:.9rem}
+.trig-session .hero-link span{font-size:1.5rem}
+.trig-session .hero-art{align-self:center;text-align:center;min-width:0}
+.trig-session .hero-art svg{display:block;width:112%;max-width:none;margin-left:-4%}
+.trig-session .hero-art>span{font-size:.57rem;letter-spacing:.23em;color:#d5c5df}
+.trig-session .lesson-nav{display:flex;align-items:center;gap:1.8rem;padding:1.4rem .1rem;border-bottom:1px solid var(--line)}
+.trig-session .lesson-nav a{text-decoration:none;font-size:.88rem;font-weight:700}
+.trig-session .lesson-nav a span{font-size:.74rem;color:var(--muted);margin-right:.45rem}
+.trig-session .unit-tag{margin-left:auto;font-size:.75rem;color:var(--green);background:#eaf1e7;padding:.35rem .7rem;border-radius:30px;white-space:nowrap}
+.trig-session .lesson-section{padding-top:3.8rem;scroll-margin-top:100px}
+.trig-session .section-heading{display:flex;gap:1rem;align-items:center;margin-bottom:1.6rem}
+.trig-session .section-number{display:grid;place-items:center;width:48px;height:48px;flex-shrink:0;border:1px solid #cabbcf;border-radius:50%;font:italic 1.35rem Georgia,serif;color:var(--plum)}
+.trig-session .section-heading .eyebrow{color:var(--muted);font-size:.64rem;margin:0 0 .25rem}
+.trig-session h2{font:400 clamp(1.8rem,3vw,2.4rem)/1.2 Georgia,serif;letter-spacing:-.025em;color:var(--plum);margin:0}
+.trig-session h3{color:var(--plum);margin:0 0 .55rem;font-size:1.07rem}
+.trig-session .section-intro{max-width:850px;color:#62596a;font-size:.98rem;margin:1rem 0 1.6rem}
+.trig-session .formula-pair{display:grid;grid-template-columns:1fr 1fr;border-radius:16px;background:#ece5f1;padding:1.5rem 1rem;gap:1rem;text-align:center;font-size:1.2rem;color:var(--plum)}
+.trig-session .formula-pair>div{overflow-x:auto;padding:.3rem}
+.trig-session .reference-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.trig-session .reference-card{padding:1.4rem 1.2rem;background:white;border:1px solid var(--line);border-radius:16px}
+.trig-session .small-label{display:block;font-size:.59rem;font-weight:750;letter-spacing:.13em;color:var(--muted);margin-bottom:.45rem}
+.trig-session .reference-card .math-line{font-size:1.02rem;color:var(--plum);margin:1rem 0}
+.trig-session .reference-card p:last-child{font-size:.85rem;color:#6a6271;margin:0}
+.trig-session .math-line{overflow-x:auto;overflow-y:hidden;padding:.4rem .1rem}
+.trig-session .katex{font-size:1.08em}
+.trig-session .midline-note{margin:1rem 0 2.6rem;padding:1.2rem 1.4rem;background:#eaf0e7;border:1px solid #d7e2d3;border-radius:16px;display:flex;gap:1.2rem;align-items:center}
+.trig-session .midline-note h3{color:var(--green);font-size:.97rem}
+.trig-session .midline-note p{margin:0;font-size:.9rem;color:#3f5b49}
+.trig-session .note-symbol{font-size:2rem;color:var(--green)}
+.trig-session .subheading{font:400 1.6rem Georgia,serif;margin:0 0 1.3rem}
+.trig-session .method-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin-bottom:1.8rem}
+.trig-session .method-steps article{position:relative;padding:0 1.2rem 0 0;border-right:1px solid var(--line)}
+.trig-session .method-steps article:last-child{border:0}
+.trig-session .step-number{display:inline-grid;place-items:center;width:30px;height:30px;background:#e9dfef;color:var(--plum);border-radius:50%;font-size:.83rem;font-weight:700}
+.trig-session .method-steps h4{font-size:.98rem;margin:.7rem 0;color:var(--plum)}
+.trig-session .method-steps p{font-size:.89rem;margin:.5rem 0;color:#62596a}
+.trig-session .method-steps .math-line{font-size:1.2rem;color:var(--plum)}
+.trig-session .pattern-box{padding:1.6rem;border:1px solid var(--line);background:white;border-radius:18px}
+.trig-session .pattern-box>p{font-size:.88rem;color:#62596a}
+.trig-session .table-scroll{max-width:100%;overflow-x:auto;border-radius:10px}
+.trig-session table{width:100%;border-collapse:collapse;text-align:left;font-size:.88rem}
+.trig-session th{font-weight:650}
+.trig-session th,.trig-session td{padding:.9rem 1rem;border-bottom:1px solid var(--line)}
+.trig-session thead{color:#6f6279;background:#f4f0f6;font-size:.78rem}
+.trig-session tbody tr:last-child>*{border-bottom:0}
+.trig-session .pattern-table{min-width:610px}
+.trig-session .pattern-table th{width:30%;color:var(--plum)}
+.trig-session .pattern-key{margin:1.2rem 0 0;padding-top:1rem;border-top:1px solid var(--line)}
+.trig-session .pattern-key strong{color:var(--plum)}
+.trig-session .worked-example{margin-top:1.4rem;background:#f2ece3;border:1px solid #e5dbcb;border-radius:16px}
+.trig-session .worked-example summary{padding:1.25rem 1.5rem;cursor:pointer;font-weight:650;color:#5e4936}
+.trig-session .example-body{padding:0 1.5rem 1.5rem;font-size:.91rem}
+.trig-session .example-calculations{display:flex;flex-wrap:wrap;gap:.3rem 2rem}
+.trig-session button{font:inherit;cursor:pointer;transition:background-color .15s,color .15s}
+.trig-session .text-button{color:var(--plum);border:0;background:transparent;padding:.6rem 0;text-align:left;font-weight:700}
+.trig-session .lab-section{padding-top:4.5rem}
+.trig-session .controls{padding:1.5rem;background:#fff;border:1px solid var(--line);border-radius:18px}
+.trig-session .parameter-grid{display:grid;grid-template-columns:1.4fr repeat(4,minmax(0,1fr));gap:1rem}
+.trig-session .parameter-grid label{display:flex;flex-direction:column;gap:.4rem;font-weight:650;color:var(--plum);font-size:.9rem;min-width:0}
+.trig-session .parameter-grid label>span:last-child{font-size:.65rem;font-weight:400;color:var(--muted)}
+.trig-session .parameter-grid select,.trig-session .parameter-grid input{height:46px;width:100%;min-width:0;padding:.65rem .8rem;border:1px solid #c9bdcf;border-radius:9px;background:#fbf9fc;color:#392546;font:inherit}
+.trig-session .parameter-grid input[aria-invalid="true"]{border-color:#ae3242;background:#fff1f2}
+.trig-session .input-help{font-size:.75rem;color:var(--muted);margin:1.1rem 0;line-height:1.7}
+.trig-session .input-help code{background:#f1ecf3;padding:.12rem .25rem;border-radius:4px;color:var(--plum)}
+.trig-session .preset-row{border-top:1px solid var(--line);padding-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;font-size:.75rem}
+.trig-session .preset-row>span{color:var(--muted);margin-right:.2rem}
+.trig-session .preset-row button{padding:.5rem .8rem;background:#f5f1f7;border:1px solid #ded4e5;color:var(--plum);border-radius:30px}
+.trig-session .preset-row button:hover{background:#e9ddef}
+.trig-session .live-formula{text-align:center;padding:1.8rem .7rem 1rem}
+.trig-session .live-formula .math-line{font-size:clamp(1.1rem,2.2vw,1.55rem);color:var(--plum);margin-top:.6rem}
+.trig-session .result-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--line);border-radius:14px;background:#fff;margin:0 0 1.2rem;overflow:hidden}
+.trig-session .result-grid>div{padding:1.1rem .8rem;border-right:1px solid var(--line);min-width:0}
+.trig-session .result-grid>div:last-child{border-right:0}
+.trig-session .result-grid dt{font-size:.72rem;color:var(--muted);margin-bottom:.6rem}
+.trig-session .result-grid dd{font-size:.96rem;margin:0;color:var(--plum);overflow-x:auto;overflow-y:hidden;padding:.2rem 0}
+.trig-session .live-method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;background:#ece5f1;border-radius:14px;padding:1.3rem;margin-bottom:1.4rem;color:var(--plum)}
+.trig-session .live-method>div{min-width:0}
+.trig-session .live-method>div>span{font-size:.64rem;font-weight:750;letter-spacing:.12em}
+.trig-session .live-method p{font-size:1rem;margin:.6rem 0 .2rem;overflow-x:auto;overflow-y:hidden;padding:.25rem 0}
+.trig-session .graph-card{margin:0;background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.trig-session .graph-heading{display:flex;gap:1rem;justify-content:space-between;align-items:center;padding:1.5rem 1.5rem 0}
+.trig-session .graph-heading h3{margin:0}
+.trig-session .graph-heading>span{font-size:.73rem;color:var(--muted);white-space:nowrap}
+.trig-session .graph-heading i{display:inline-block;width:20px;height:3px;background:var(--plum);vertical-align:middle;margin-right:.3rem}
+.trig-session .graph-help{font-size:.75rem;color:var(--muted);margin:.5rem 1.5rem 0}
+.trig-session .graph-scroll{overflow-x:auto;max-width:100%}
+.trig-session .graph-stage{position:relative;min-width:800px;aspect-ratio:960/360}
+.trig-session .graph-stage svg{display:block;width:100%;height:auto}
+.trig-session .height-label{position:absolute;left:1%;width:13%;transform:translateY(-50%);text-align:right;font-size:.83rem;line-height:1.45;color:var(--plum);overflow:hidden}
+.trig-session .height-label small{display:block;font-size:.58rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:.15rem}
+.trig-session .x-label{position:absolute;top:85%;transform:translateX(-50%);text-align:center;font-size:.83rem;max-width:15%;overflow-x:auto;overflow-y:hidden;padding:.25rem 0;color:var(--plum)}
+.trig-session .graph-card figcaption{border-top:1px solid #eee8f1;padding:1rem 1.5rem;background:#fcfafd;font-size:.84rem;color:#66576f}
+.trig-session .points-card{margin-top:1.5rem;background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.trig-session .points-heading{padding:1.5rem 1.5rem .8rem}
+.trig-session .points-heading p{margin:.2rem 0;font-size:.87rem;color:var(--muted)}
+.trig-session .points-table{min-width:650px}
+.trig-session .points-table td:first-child{width:80px;color:var(--muted)}
+.trig-session .points-table td:nth-child(2){color:var(--muted)}
+.trig-session .points-table td:nth-child(3){color:var(--plum);font-size:1rem}
+.trig-session .role-chip{display:inline-block;border-radius:20px;padding:.2rem .6rem;background:#f0eaf5;color:var(--plum);font-size:.74rem}
+.trig-session .role-chip.extreme{background:#edf1e7;color:var(--green)}
+.trig-session .notice{padding:1rem 1.3rem;background:#f2ecdf;border:1px solid #dfd2b8;color:#674e2c;border-radius:12px;font-size:.9rem}
+.trig-session .notice p{margin:.4rem 0}
+.trig-session .error-notice{background:#fff1f2;border-color:#edc4cb;color:#962f40}
+.trig-session .explore-note{border-left:3px solid #a2b79a;padding:.3rem 0 .3rem 1.3rem;margin-top:2rem}
+.trig-session .explore-note h3{font-size:.95rem;color:var(--green)}
+.trig-session .explore-note p{font-size:.88rem;max-width:850px;color:#62596a;margin:0}
+.trig-session .back-link{display:inline-block;font-size:.9rem;margin-top:3rem;font-weight:650}
+.trig-session :focus-visible{outline:3px solid #9b650b;outline-offset:4px}
+.trig-session .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:1024px){.trig-session .lesson-hero{padding:2.5rem}
+.trig-session .reference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.trig-session .result-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.trig-session .result-grid>div{border-bottom:1px solid var(--line)}
+.trig-session .result-grid>div:nth-child(3){border-right:0}
+.trig-session .result-grid>div:nth-child(n+4){border-bottom:0}
+.trig-session .lesson-nav{gap:1rem}}
+@media(max-width:767px){.trig-session{padding-top:1rem}
+.trig-session .lesson-hero{grid-template-columns:1fr;padding:2rem 1.5rem;border-radius:20px}
+.trig-session .lesson-hero h1{font-size:3.1rem}
+.trig-session .hero-art{max-width:420px;width:100%;justify-self:center;margin-top:-.4rem}
+.trig-session .hero-art svg{width:100%;margin:0}
+.trig-session .hero-art>span{font-size:.52rem}
+.trig-session .lesson-nav{flex-wrap:wrap;gap:.8rem 1.2rem}
+.trig-session .lesson-nav a{font-size:.76rem}
+.trig-session .unit-tag{margin-left:0;font-size:.66rem}
+.trig-session .formula-pair{grid-template-columns:1fr;font-size:1rem;gap:.4rem}
+.trig-session .reference-card{padding:1.1rem}
+.trig-session .reference-card .math-line{font-size:.94rem}
+.trig-session .method-steps{grid-template-columns:1fr;gap:1rem}
+.trig-session .method-steps article{border-right:0;border-bottom:1px solid var(--line);padding:0 0 1rem}
+.trig-session .pattern-box{padding:1.1rem}
+.trig-session .section-heading{gap:.75rem}
+.trig-session .section-number{width:40px;height:40px}
+.trig-session .section-heading .eyebrow{font-size:.54rem}
+.trig-session .lesson-section{padding-top:2.8rem}
+.trig-session .parameter-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem}
+.trig-session .function-control{grid-column:1/-1}
+.trig-session .controls{padding:1.1rem}
+.trig-session .live-method{grid-template-columns:1fr;gap:.7rem}
+.trig-session .live-method>div{border-bottom:1px solid #d9cce1;padding-bottom:.5rem}
+.trig-session .live-method>div:last-child{border:0}
+.trig-session .result-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.trig-session .result-grid>div:nth-child(3){border-right:1px solid var(--line)}
+.trig-session .result-grid>div:nth-child(even){border-right:0}
+.trig-session .result-grid>div:nth-child(4){border-bottom:1px solid var(--line)}
+.trig-session .result-grid>div:last-child{grid-column:1/-1;border:0}
+.trig-session .graph-heading{padding:1.2rem 1.1rem 0;align-items:start;flex-direction:column;gap:.4rem}
+.trig-session .graph-help{margin:.5rem 1.1rem 0}
+.trig-session .graph-card figcaption{padding:1rem 1.1rem}
+.trig-session .points-heading{padding:1.2rem 1.1rem .7rem}
+.trig-session .worked-example summary{padding:1rem}
+.trig-session .example-body{padding:0 1rem 1.2rem}
+.trig-session .example-calculations{display:block}}
+@media(max-width:400px){.trig-session .reference-grid{grid-template-columns:1fr}
+.trig-session .lesson-hero h1{font-size:2.8rem}
+.trig-session .hero-copy>p:not(.eyebrow){font-size:.95rem}}
+@media(prefers-reduced-motion:reduce){.trig-session button{transition:none}}

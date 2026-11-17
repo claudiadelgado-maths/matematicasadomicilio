@@ -1,0 +1,28 @@
+{
+  "id": "seno-y-coseno-alejandrina",
+  "slug": "seno-y-coseno",
+  "tipo": "sesion",
+  "usuario": "alejandrina",
+  "titulo": "Seno y coseno: cinco puntos especiales",
+  "descripcion": "Formulario y laboratorio interactivo: dominio, rango, amplitud, período y cinco puntos con el método de inicio y saltos.",
+  "objetivo": "Reconocer las propiedades de las funciones seno y coseno y trazar un ciclo a partir del inicio y cuatro saltos, trabajando en radianes.",
+  "conocimientosPrevios": ["Radianes y el número pi", "Sustitución algebraica", "Coordenadas cartesianas y valor absoluto"],
+  "fecha": "2026-11-14",
+  "estado": "publicado",
+  "ruta": "/Casilleros/alejandrina/seno-y-coseno/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  },
+  "contenidoIntegrado": ["Formulario de consulta", "Laboratorio interactivo de seno y coseno"],
+  "almacenamientoLocal": false,
+  "representacionMatematica": {
+    "formato": "LaTeX",
+    "motor": "KaTeX 0.18.1",
+    "origen": "jsDelivr",
+    "contenido": "Formulario, fórmulas dinámicas, propiedades, cinco coordenadas y referencias de la gráfica"
+  }
+}

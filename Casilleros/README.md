@@ -12,4 +12,4 @@ Los IDs técnicos se mantienen estables para conservar relaciones y progreso loc
 
 Ejecuta `npm run catalogo` y `npm run validar` al actualizar metadatos. Para una sesión nueva: `npm run crear-sesion -- "Estudiante" "Título" [AAAA-MM-DD]`. No registres alumnos ni sesiones manualmente en los JSON generados.
 
-Daniel (ID y ruta estables `newstudent`) comparte su banner meteorológico entre la portada y su casillero mediante `newstudent/recursos/identidad.css`; su SVG atmosférico también se usa en la sesión Funciones.
+Daniel usa la carpeta, ID y slug `daniel`, con entrada en `/Casilleros/daniel/index.html`. Comparte su banner meteorológico entre la portada y su casillero mediante `daniel/recursos/identidad.css`; su SVG atmosférico también se usa en la sesión Funciones. Revisión guarda las respuestas bajo `daniel-revision-v1`.

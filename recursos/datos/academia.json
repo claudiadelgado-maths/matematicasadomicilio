@@ -3,30 +3,79 @@
   "generadoDesde": "usuario.json y sesion.json",
   "alumnos": [
     {
-      "id": "newstudent",
+      "id": "daniel",
       "nombreVisible": "Daniel",
       "descripcion": "Matemáticas para un estudiante de Geografía, con la mirada puesta en la climatología.",
-      "ruta": "/Casilleros/newstudent/",
+      "ruta": "/Casilleros/daniel/",
       "personalizacion": {
         "simbolo": "D",
         "acento": "#164e63",
         "fondo": "#e9f2f3"
       },
-      "ultimaActividad": "2026-11-10",
+      "ultimaActividad": "2026-11-17",
       "sesiones": [
+        {
+          "id": "operaciones-y-composicion-de-funciones-daniel",
+          "titulo": "Operaciones y composición de funciones",
+          "descripcion": "Un mismo par de funciones para sumar, restar, multiplicar, dividir y componer en ambos órdenes; ejemplos sencillos y código SymPy que imprime LaTeX listo para copiar.",
+          "fecha": "2026-11-17",
+          "ruta": "/Casilleros/daniel/operaciones-y-composicion-de-funciones/"
+        },
         {
           "id": "daniel-funciones",
           "titulo": "Funciones: tipos, dominio y evaluación",
           "descripcion": "Reconoce funciones, encuentra su dominio y explora cómo una entrada se convierte en un punto de la gráfica.",
           "fecha": "2026-11-10",
-          "ruta": "/Casilleros/newstudent/funciones/"
+          "ruta": "/Casilleros/daniel/funciones/"
         },
         {
-          "id": "newstudent-revision",
+          "id": "daniel-revision",
           "titulo": "Revisión",
           "descripcion": "Diagnóstico de conocimientos matemáticos en aritmética, álgebra y geometría.",
           "fecha": "2026-11-04",
-          "ruta": "/Casilleros/newstudent/revision/"
+          "ruta": "/Casilleros/daniel/revision/"
+        }
+      ]
+    },
+    {
+      "id": "andres",
+      "nombreVisible": "Andrés",
+      "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
+      "ruta": "/Casilleros/andres/",
+      "personalizacion": {
+        "simbolo": "A",
+        "acento": "#195c40",
+        "fondo": "#113f31"
+      },
+      "ultimaActividad": "2026-11-15",
+      "sesiones": [
+        {
+          "id": "crecimiento-y-decrecimiento-exponencial-andres",
+          "titulo": "Crecimiento y decrecimiento exponencial",
+          "descripcion": "Del interés compuesto al cambio exponencial: factores de crecimiento y disminución, gráfica, tabla, recuperación del inicio y diez retos guiados.",
+          "fecha": "2026-11-15",
+          "ruta": "/Casilleros/andres/crecimiento-y-decrecimiento-exponencial/"
+        },
+        {
+          "id": "interes-simple-y-compuesto-andres",
+          "titulo": "Interés simple y compuesto",
+          "descripcion": "Sesión interactiva con explicación, simulador, gráfica, tabla dinámica y retos autocorregibles.",
+          "fecha": "2026-10-13",
+          "ruta": "/Casilleros/andres/interes-simple-y-compuesto/"
+        },
+        {
+          "id": "teorema-de-tales-andres",
+          "titulo": "Teorema de Tales",
+          "descripcion": "Sesión interactiva sobre proporcionalidad en configuraciones con rectas paralelas.",
+          "fecha": "2026-09-22",
+          "ruta": "/Casilleros/andres/teorema-de-tales/"
+        },
+        {
+          "id": "porcentajes-andres",
+          "titulo": "Porcentajes",
+          "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
+          "fecha": "2026-08-10",
+          "ruta": "/Casilleros/andres/porcentajes/"
         }
       ]
     },
@@ -40,8 +89,15 @@
         "acento": "#15784e",
         "fondo": "#302044"
       },
-      "ultimaActividad": "2026-10-29",
+      "ultimaActividad": "2026-11-14",
       "sesiones": [
+        {
+          "id": "seno-y-coseno-alejandrina",
+          "titulo": "Seno y coseno: cinco puntos especiales",
+          "descripcion": "Formulario y laboratorio interactivo: dominio, rango, amplitud, período y cinco puntos con el método de inicio y saltos.",
+          "fecha": "2026-11-14",
+          "ruta": "/Casilleros/alejandrina/seno-y-coseno/"
+        },
         {
           "id": "traslados-y-asintotas-alejandrina",
           "titulo": "Traslados y asíntotas",
@@ -272,41 +328,6 @@
           "descripcion": "🐰 Seis juegos para saltar, construir números con billetes y descubrir las llevadas, con voz opcional.",
           "fecha": "2026-10-01",
           "ruta": "/Casilleros/elyan/sumas-molonas/"
-        }
-      ]
-    },
-    {
-      "id": "andres",
-      "nombreVisible": "Andrés",
-      "descripcion": "Espacio de sesiones y recursos personalizados para nivel preparatoria.",
-      "ruta": "/Casilleros/andres/",
-      "personalizacion": {
-        "simbolo": "A",
-        "acento": "#195c40",
-        "fondo": "#113f31"
-      },
-      "ultimaActividad": "2026-10-13",
-      "sesiones": [
-        {
-          "id": "interes-simple-y-compuesto-andres",
-          "titulo": "Interés simple y compuesto",
-          "descripcion": "Sesión interactiva con explicación, simulador, gráfica, tabla dinámica y retos autocorregibles.",
-          "fecha": "2026-10-13",
-          "ruta": "/Casilleros/andres/interes-simple-y-compuesto/"
-        },
-        {
-          "id": "teorema-de-tales-andres",
-          "titulo": "Teorema de Tales",
-          "descripcion": "Sesión interactiva sobre proporcionalidad en configuraciones con rectas paralelas.",
-          "fecha": "2026-09-22",
-          "ruta": "/Casilleros/andres/teorema-de-tales/"
-        },
-        {
-          "id": "porcentajes-andres",
-          "titulo": "Porcentajes",
-          "descripcion": "Sesión de preparatoria para razonar con porcentajes mediante descuentos, aumentos, IVA y relaciones entre cantidades.",
-          "fecha": "2026-08-10",
-          "ruta": "/Casilleros/andres/porcentajes/"
         }
       ]
     },

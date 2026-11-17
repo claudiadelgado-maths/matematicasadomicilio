@@ -1,4 +1,4 @@
-/* Identidad neutral compartida únicamente por el casillero NewStudent. */
+/* Identidad neutral compartida únicamente por el casillero Daniel. */
 :is(.student-site, .review-site, .diagnostic-site) { min-height: 60vh; }
 :is(.student-site, .review-site, .diagnostic-site) .eyebrow {
   margin: 0 0 1rem; color: var(--color-muted); font-size: .75rem;

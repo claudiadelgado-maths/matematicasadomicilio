@@ -2,7 +2,7 @@ import { grade } from './matematicas.mjs';
 
 const root = document.querySelector('.diagnostic-site');
 if (root) {
-  const key = 'newstudent-revision-v1';
+  const key = 'daniel-revision-v1';
   const forms = [...root.querySelectorAll('[data-exercise]')];
   const areas = ['aritmetica', 'algebra', 'geometria'];
   let current = 'aritmetica';
@@ -16,7 +16,10 @@ if (root) {
   };
   const save = () => {
     const answers = Object.fromEntries(forms.map(form => [form.dataset.exercise, inputs(form).map(input => input.value)]));
-    try { localStorage.setItem(key, JSON.stringify({ version: 1, area: current, answers })); storageAvailable = true; }
+    try {
+      localStorage.setItem(key, JSON.stringify({ version: 1, area: current, answers }));
+      storageAvailable = true;
+    }
     catch { storageAvailable = false; }
     storageMessage();
   };

@@ -1,6 +1,6 @@
 # Funciones: tipos, dominio y evaluación
 
-Sesión de Daniel, estudiante de Geografía interesado en climatología. Ruta `/Casilleros/newstudent/funciones/`; propietario estable `newstudent`. Fecha editorial 2026-11-10.
+Sesión de Daniel, estudiante de Geografía interesado en climatología. Ruta `/Casilleros/daniel/funciones/`; propietario estable `daniel`. Fecha editorial 2026-11-10.
 
 Tres actividades integradas, en orden: tipos de funciones, dominio real y evaluación numérica/algebraica. Incluye cuatro fichas conceptuales, ejemplos resueltos desplegables, un ejercicio de grado y coeficiente, 8 preguntas de clasificación, 8 de dominio, 6 de evaluación y una gráfica SVG de f(x)=x²−2x+1 controlada por un deslizador. Los ejercicios ofrecen retroalimentación explicativa y se pueden repetir. No se califican logros globales ni se guarda progreso.
 

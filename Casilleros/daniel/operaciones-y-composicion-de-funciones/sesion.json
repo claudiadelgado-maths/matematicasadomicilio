@@ -1,0 +1,34 @@
+{
+  "id": "operaciones-y-composicion-de-funciones-daniel",
+  "slug": "operaciones-y-composicion-de-funciones",
+  "tipo": "sesion",
+  "usuario": "daniel",
+  "titulo": "Operaciones y composición de funciones",
+  "descripcion": "Un mismo par de funciones para sumar, restar, multiplicar, dividir y componer en ambos órdenes; ejemplos sencillos y código SymPy que imprime LaTeX listo para copiar.",
+  "objetivo": "Distinguir operaciones y composición, reconocer la función interior, simplificar expresiones sencillas y obtener operaciones o evaluaciones exactas en LaTeX con SymPy.",
+  "conocimientosPrevios": [
+    "Tipos, dominio y evaluación de funciones",
+    "Sustitución y operaciones algebraicas básicas"
+  ],
+  "fecha": "2026-11-17",
+  "estado": "publicado",
+  "ruta": "/Casilleros/daniel/operaciones-y-composicion-de-funciones/",
+  "componentes": {
+    "explicacion": false,
+    "demostraciones": false,
+    "ejercicios": false,
+    "juegos": false,
+    "calculadoras": false
+  },
+  "contenidoIntegrado": [
+    "Operaciones en ambos órdenes",
+    "Composición guiada e interactiva",
+    "Código Python con SymPy y salida LaTeX literal"
+  ],
+  "almacenamientoLocal": false,
+  "representacionMatematica": {
+    "formato": "LaTeX",
+    "motor": "KaTeX 0.18.1",
+    "origen": "jsDelivr"
+  }
+}
